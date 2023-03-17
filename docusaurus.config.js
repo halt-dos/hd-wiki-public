@@ -43,8 +43,12 @@ const config = {
           lastVersion: 'current',
           versions:{
             current: {
+              label: 'v7'
+            },
+            '6.0': {
               label: 'v6',
               banner: 'none',
+              path: 'v6'
             }
           },
           routeBasePath: '/',

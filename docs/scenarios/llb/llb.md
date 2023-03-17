@@ -20,5 +20,3 @@ Here, we have created some scenarios to understand the basic configuration of th
 [Scenario 4](scenario-4.md)​: Company ABC is having two ISPs with different service providers. The users want the traffic of some websites should be moved from the WAN 1 connection and some websites traffic should be moved from the WAN 2 connection.  
 
 [Scenario 5](scenario-5.md)​: Company ABC, which is having two ISPs from two different service providers. The first ISP link is having IP from network 2.2.2.0/28 and other is having network ID of 3.3.3.0/28.The ISP link that is having static IP addresses  (2.2.2.2) handle all the DMZ traffic. Both ISPs are connected with LLB then there's one link which is connected to firewall. 
-
-[Scenario 6](scenario-6.md)​: Company ABC is having two ISPs from two different service providers. The user wants to use one ISP as primary and second as backup link. The user also has DMZ zone. The user has bonded one public IP from both ISPs to its DMZ servers. User wants to configure SNAT for both ISPs links.  
