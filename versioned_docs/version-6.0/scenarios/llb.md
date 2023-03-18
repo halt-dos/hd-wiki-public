@@ -1,4 +1,4 @@
-# Link Load Balancers (LLB)
+# Haltdos LLB Deployment Scenarios
 
 LLB configuration under different Scenarios
 
@@ -19,4 +19,4 @@ Here, we have created some scenarios to understand the basic configuration of th
 
 [Scenario 4](llb/scenario-4.md)​: Company ABC is having two ISPs with different service providers. The users want the traffic of some websites should be moved from the WAN 1 connection and some websites traffic should be moved from the WAN 2 connection.  
 
-[Scenario 5](llb/scenario-5.md)​: Company ABC, which is having two ISPs from two different service providers. The first ISP link is having IP from network 2.2.2.0/28 and other is having network ID of 3.3.3.0/28.The ISP link that is having static IP addresses  (2.2.2.2) handle all the DMZ traffic. Both ISPs are connected with LLB then there's one link which is connected to firewall.
+[Scenario 5](llb/scenario-5.md)​: Company ABC, which is having two ISPs from two different service providers. The first ISP link is having IP from network 2.2.2.0/28 and other is having network ID of 3.3.3.0/28.The ISP link that is having static IP addresses  (2.2.2.2) handle all the DMZ traffic. Both ISPs are connected with LLB then there's one link which is connected to firewall. 

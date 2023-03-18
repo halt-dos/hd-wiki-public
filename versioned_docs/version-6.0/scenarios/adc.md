@@ -2,9 +2,9 @@
 pagination_prev: null
 ---
 
-# Application Delivery Controller
+# Haltdos ADC Deployment Scenarios
 
-ADC configuration under different Scenarios
+ADC configuration under different scenarios
 
 ---
 
