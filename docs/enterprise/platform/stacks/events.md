@@ -22,25 +22,21 @@ Depending upon the type of event, clicking on any Event shows details of the inc
 
 Further to detailing the incident through Events, users can perform various actions. For example, virtual patching functionality is implemented through actions in Event Details. Virtual Patching is the ability to create custom WAF rules from the result of a security scan.
 
-![stackevents](/img/platform/v6/docs/stack-events1.png)
+![stackevents](/img/platform/v7/docs/events_newui_.png)
 
 ### Event Types
 
 | Type         | Description                                           | App  | Email | Actions                                                                   |
 |--------------|-------------------------------------------------------|------|-------|---------------------------------------------------------------------------|
-| Scan Result  | Details of security scan results                      | SCAN | Yes   | Create WAF Rule                                                           |
+| All         | Displays all the events for configured Resoruce                  | ALL  | No    | --                                                                        |
+| Alarm        | Displays details of configured alarms triggered       | ALL  | Yes   | --                                                                        |
 | Download     | Displays all the file download events                 | --   | Yes   | --                                                                        |
-| WAF Attack   | Details of blocked HTTP request/response              | WAF  | No    | 1. Whitelist Rule
-2. Deploy Rule to Staging
-3. Deploy Rule to Production
- |
-| Health Alert | Details of healthy and unhealthy upstream web servers | SLB  | No    | No                                                                        |
-| Audit        | Displays the events for Configuration changes         | ALL  | No    | --                                                                        |
-| Server       | Displays details of server error observed.            | WAF  | No    | --                                                                        |
-| Alarm        | Displays detials of configured alarms triggered       | ALL  | Yes   | --                                                                        |
-| Failed Jobs  | Displays the events for failed jobs                   | ALL  | No    | --                                                                        |
 | Report       | Displays the report generated to be downloaded        | ALL  | Yes   | --                                                                        |
 | Instance     | Displays details of any instance notification         | --   | No    | --                                                                        |
+| Jobs         | Displays the events for failed jobs                   | ALL  | No    | --                                                                        |
+| Backup       | Displays the events for backup                        | ALL  | No    | --                                                                        |
+
+
 
 **Filter**
 
@@ -57,3 +53,5 @@ Users can enable auto-refresh in order to refresh the real-time alerts for reque
 :::note
 Events are not notified via email or API. To receive alerts, you have to create Alarms. All alarm triggers are notified to selected authorised users on the platform.
 :::
+
+

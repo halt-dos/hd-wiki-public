@@ -1,19 +1,26 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 
 # Cache Pools
 
+Haltdos  SLB Cache Pools are the logical repositories of cache items. They perform all the common operations on items, such as saving them or looking for them. Cache pools are independent of the actual cache implementation.
+
 ---
+
+
+:::note
+Cache Pool is only part of Haltdos SLB.
+:::
 
 ### How to Use:
 
-1. Go to Stack > Resorces > Cache Pools
-2.  Select the Add Cache Pool.
+1. Go to **Stack > Resources > Cache Pools**
+2.  Select the **Add Cache Pool.**
 3. Configure your settings. 
-4. Click on save changes.
+4. Click on **Save changes.**
 
-![cache](/img/platform/v6/docs/cache1.png)
+![cache](/img/platform/v7/docs/cachepool_newui.png)
 
 | SETTINGS        | ACCEPTED VALUES | DEFAULT |
 |-----------------|-----------------|---------|
@@ -23,8 +30,6 @@ sidebar_position: 1
 | Max-object Size | Integer         | 1000    |
 | Max Cache Size  | Integer         | 60      |
 
-
-![cache](/img/platform/v6/docs/cache2.png)
 
 #### Description 
 

@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# DHCP Settings
+# DHCP
 
 Configuring DHCP settings on Haltdos solution
 
@@ -12,13 +12,13 @@ The Dynamic Host Configuration Protocol (DHCP) is a network management protocol 
 
 This section details how to configure the Haltdos solution as a DHCP server for assigning IP addresses.
 
-![dhcp](/img/platform/v6/docs/dhcp1.png)
+![dhcp](/img/platform/v7/docs/dhcp.png)
 
 ### How to Use:
 
-1. Go to **Stack > Instances > Instance > DHCP**
+1. Go to **Stack > Instances > > DHCP**
 2. Configure your settings
-3. Click Save Changes
+3. Click **Save Changes**
 
 | PARAMETERS            | ACCEPTED VALUES    | DEFAULT       |
 |-----------------------|--------------------|---------------|
@@ -37,7 +37,7 @@ This section details how to configure the Haltdos solution as a DHCP server for 
 | Allowed IP Range      | String             | Empty         |
 | BlackList Mac Address | String             | Empty         |
 
-#### Description
+## Description
 
 **Enable**
 

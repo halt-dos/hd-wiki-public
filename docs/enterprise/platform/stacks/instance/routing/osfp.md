@@ -12,13 +12,13 @@ OSFP is the dynamic routing protocol used in large to very large IP networks. Th
 
 Haltdos solution supports dynamic routing over OSFP protocol. This section details how to configure Haltdos to support OSFP.
 
-![osfp](/img/platform/v6/docs/osfp1.png)
+![osfp](/img/platform/v7/docs/ospf.png)
 
 ### How to Use:
 
-1. Go to Stack > Instances > Instance > Routing > OSFP
+1. Go to **Stack > Instances > Instance > Routing > OSFP**
 2. Configure your settings
-3. Click Save Changes
+3. Click **Save Changes**
 
 | PARAMETERS    | DESCRIPTION                | ACCEPTED VALUES    | DEFAULT  |
 |---------------|----------------------------|--------------------|----------|

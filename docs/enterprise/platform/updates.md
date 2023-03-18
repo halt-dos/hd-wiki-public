@@ -12,6 +12,15 @@ Versioning, Patch management and installation of updates and upgrades
 
 From time to time, Haltdos pushes updates consisting of performance, security, features and patches to all valid licensed solutions. This module lists the current deployed version on all Haltdos appliances and list of patches available for upgrade.
 
+### How to Use:
+1. Go to  **Administrator** (Present at the Top Right Side) 
+2. Click on **System** 
+3. Select  **Updates** 
+
+
+![Updates](/img/platform/v7/docs/updates.png)
+
+
 
 **Types of Updates**
 

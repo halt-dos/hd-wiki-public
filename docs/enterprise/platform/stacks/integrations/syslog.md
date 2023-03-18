@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Syslog
 
-Integration with Syslog Server for monitoring Haltdos appliances
+### Integration with Syslog Server for monitoring Haltdos appliances
 
 ---
 
@@ -16,13 +16,13 @@ Integration with Syslog Server for monitoring Haltdos appliances
 It is recommended to configure Syslog (if available) for centralized monitoring of all Haltdos appliances
 :::
 
-![syslog](/img/platform/v6/docs/syslog1.png)
+![syslog](/img/platform/v7/docs/syslog_new_ui.png)
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Integration> Syslog**.
+1. Go to **Stack > Settings > Integration > Syslog**.
 2. Configure your settings
-3. Click Save
+3. Click **Save Changes**
 
 | PARAMETERS            | ACCEPTED VALUES | DEFAULT |
 |-----------------------|-----------------|---------|
@@ -31,7 +31,7 @@ It is recommended to configure Syslog (if available) for centralized monitoring 
 | Host Name             | String          | Blank   |
 | Syslog Server Port    | String          | Blank   |
 
-#### Description:
+### Description:
 
 **Syslog Export Enabled**
 

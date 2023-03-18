@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# API Tokens
+# API Tokens 
 
-Generating API tokens for enabling API functionality
+### Generating API tokens for enabling API functionality
 
 ---
 
@@ -13,20 +13,19 @@ Haltdos platform is an API first solution supporting API access via JSON (RESTFu
 :::info
 All API requests are **Authorization: Bearer `<TOKEN>`** header. Depending upon requirement, specify **Content-Type: application/xml** for XML and **Content-Type**: **application/json** for JSON output. If not Content-Type header is found, API will resort to JSON output. 
 :::
-
-![apitokens](/img/platform/v6/docs/token1.png)
+![apitokens](/img/platform/v7/docs/api_token_newui.png)
 
 ### How to Use:
 
-1. Go to Stack > Settings > API Tokens
-2. Configure your settings
-3. Click Save
+1. Go to **Stack** > **Integration** > **API Tokens**
+2. Click on the button  Generate API token.
+3. Configure your settings
+4. Click **Save Changes**
 
 | PARAMETERS       | DESCRIPTION                                | ACCEPTED VALUES | DEFAULT        |
 |------------------|--------------------------------------------|-----------------|----------------|
-| Create API Token | Click on the button to create API token    | Button          | NA             |
 | Token Name       | Enter a name for the token                 | String          | Blank          |
-| Access           | Select the scope of access for the token   | Dropdown        | Read And Write |
+| Token Access           | Select the scope of access for the token   | Dropdown        | Read And Write / Read Only |
 | Scope            | Displays the scope of access for the token | NA              | NA             |
 | Token            | Displays the token generated               | NA              | NA             |
 | Action           | Let's copy and delete the token            | NA              | Icon           |

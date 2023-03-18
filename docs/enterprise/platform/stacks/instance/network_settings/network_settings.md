@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Network Settings
+# Network 
 
 Overview of Instance network settings
 
