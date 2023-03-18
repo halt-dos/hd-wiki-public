@@ -12,7 +12,7 @@ Destination NAT changes the destination address in the IP header of a packet. It
 
 The typical usage of this is to redirect incoming packets with a destination of a public address/port to a private IP address/port inside your network.
 
-![destination_nat](/img/llb/v6/docs/llb14.png)
+![destination_nat](/img/llb/v7/docs/dnat.png)
 
 ### **How to Use:**
 
@@ -26,7 +26,6 @@ The typical usage of this is to redirect incoming packets with a destination of 
 
 5. Click Save
 
-![dnat_rule_condition](/img/llb/v6/docs/llb15.png)
 
 | Setting            | Accepted Value                 | Default           |
 |--------------------|--------------------------------|-------------------|

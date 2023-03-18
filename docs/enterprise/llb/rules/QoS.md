@@ -10,21 +10,18 @@ Traffic Shaper Rules & Setings
 
 Traffic shaping (also known as packet shaping) is a bandwidth management technique that delays the flow of certain types of network packets in order to ensure network performance for higher priority applications. Traffic shaping essentially limits the amount of bandwidth that can be consumed by certain types of applications. It is primarily used to ensure a high quality of service for business-related network traffic.
 
-![traffic_shaper](/img/llb/v6/docs/llb20.png)
+![traffic_shaper](/img/llb/v7/docs/qos.png)
 
 ### **How to Use:**
 
-1. Go to **Stack > LLB > Rules**.
+1. Go to **Apps > LLB > Rules > Traffic Shaper**.
 
-2. Select Traffic Shaper Rule
+2. Click Add Rule button.
 
-3. Click Add Rule button.
+3. Configure your settings.
 
-4. Configure your settings.
+4. Click **Save Changes**.
 
-5. Click Save.
-
-![traffic_shaper_rule_condition](/img/llb/v6/docs/llb21.png)
 
 | Settings           | Text                           | Text             |
 |--------------------|--------------------------------|------------------|
@@ -41,7 +38,7 @@ Traffic shaping (also known as packet shaping) is a bandwidth management techniq
 | Traffic Rate       | Integer                        | 1                |
 | Traffic Burst      | Integer                        | 5                |
 
-### **Description**
+### Description
 
 ##### **Rule Name**
 
@@ -91,5 +88,6 @@ It specifies the request rate for the page. The limit rate specified will valida
 
 It specifies the traffic burst rate for the page. The burst rate specified will validate the total number of requests received. 
 
-Note: Always traffic burst must be greater than or equal to traffic rate.
-
+:::note
+Always traffic burst must be greater than or equal to traffic rate.
+:::

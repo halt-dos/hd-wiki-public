@@ -11,10 +11,9 @@ For increasing scalability and availability of network resources
 
 A Link balancing is designed to balance the load between the local area network (LAN) and the Internet. Positioned between the LAN and the WAN (Wide Area Network), a link balancer uses traffic management algorithms to make sure that each link is being used to the best of its ability. It can potentially work out the fastest route for the information by taking into account which ISP link has the most bandwidth available. A typical use would be to combine multiple Internet links to increase the aggregate available bandwidth, performance and redundancy. The link balancer directs traffic by using algorithms to determine which router and ISP has the most available bandwidth.
 
-![LLB](/img/llb/v6/docs/llb1.jpg)
+![LLB](/img/llb/v7/docs/llb1.jpg)
 
-### **Benefits**
-
+### Benefits
 
 ##### **Improve Network Utilization**
 

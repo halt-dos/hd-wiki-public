@@ -8,7 +8,7 @@ Haltdos allows users to configure custom monitoring that can monitor the interfa
 
 If any of the links are monitored and marked as down, the traffic will not redirect to the same link unless the link comes up and complete the pass threshold.
 
-![adding_monitor](/img/llb/v6/docs/llb5.png)
+![adding_monitor](/img/llb/v7/docs/monitor.png)
 
 ### How to Use:
 
@@ -20,7 +20,7 @@ If any of the links are monitored and marked as down, the traffic will not redir
 
 4. Click **Save**.
 
-![monitor_settings](/img/llb/v6/docs/llb6.png)
+![monitor_settings](/img/llb/v7/docs/monitor1.png)
 
 | SETTINGS             | ACCEPTED VALUES                      | DEFAULT                |
 |----------------------|--------------------------------------|------------------------|
@@ -39,7 +39,7 @@ If any of the links are monitored and marked as down, the traffic will not redir
 | Jitter Threshold     | Integer                              | 0 (Mandatory)          |
 | Packet Loss Treshold | Integer                              | 0 (Mandatory)          |
 
-![monitor_settings](/img/llb/v6/docs/llb7.png)
+![monitor_settings](/img/llb/v7/docs/monitor2.png)
 
 ### **Description:**
 

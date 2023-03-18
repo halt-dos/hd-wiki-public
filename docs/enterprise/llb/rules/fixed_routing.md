@@ -10,7 +10,7 @@ Fixed Routing Rules & settings
 
 Fixed Routing is a static mechanism that is used to transfer data packets from the source to the destination. Users can set fixed routing rules by specifying rule name, priority, destination IPs, Outgoing Interface, etc.
 
-![fixed_routing](/img/llb/v6/docs/llb16.png)
+![fixed_routing](/img/llb/v7/docs/fixedroute.png)
 
 ### **How to Use:**
 
@@ -24,7 +24,6 @@ Fixed Routing is a static mechanism that is used to transfer data packets from t
 
 5. Click Save.
 
-![fixed_routing_rule_condition](/img/llb/v6/docs/llb17.png)
 
 | Setting            | Accepted Values                | Default           |
 |--------------------|--------------------------------|-------------------|

@@ -12,7 +12,7 @@ Source NAT is the translation of the source IP address of a packet. It changes t
 
 In static SNAT all internal IP addresses are always mapped to the same public IP address.
 
-![source_net](/img/llb/v6/docs/llb11.png)
+![source_net](/img/llb/v7/docs/snat.png)
 
 ### **How to Use:**
 
@@ -43,9 +43,9 @@ In static SNAT all internal IP addresses are always mapped to the same public IP
 | Translate IP Range   | Intger                         | Integer (Mandatory)  |
 | Port Mapping         | Boolean                        | False                |
 
-![snat_rule_condition](/img/llb/v6/docs/llb12.png)
+![snat_rule_condition](/img/llb/v7/docs/llb12.png)
 
-### **Description:**
+### Description
 
 ##### **Rule Name**
 
@@ -97,15 +97,15 @@ It allows users to select the type of translation. By default, Overload is selec
 
 In Haltdos LLB, we have three types of NAT translation which are mentioned below;
 
-a). **Overload:** SNAT maps the private IP addresses to the first available public address from a pool of addresses. An IP pool defines a single IP address or a range of IP addresses to be used as the source address for the duration of the session. If 
+ - **Overload:** SNAT maps the private IP addresses to the first available public address from a pool of addresses. An IP pool defines a single IP address or a range of IP addresses to be used as the source address for the duration of the session. If 
 
 The Users need to define an external IP range that contains one or more IP addresses. For example, assume, we have defined an overload type IP pool with two external IP addresses (172.16.200.1â€”172.16.200.2), since there are 60,416 available port numbers per IP, this IP pool can handle 60,416*2 internal IP addresses.
 
-![overload_translation](/img/llb/v6/docs/llb13.png)
+![overload_translation](/img/llb/v7/docs/llb13.png)
 
-b). **Outgoing Interface IP:** If this option is selected as translation mode then all internal traffic will be moved to the public domain by changing its source IP address to the WAN outgoing port IP.
+ - **Outgoing Interface IP:** If this option is selected as translation mode then all internal traffic will be moved to the public domain by changing its source IP address to the WAN outgoing port IP.
 
-c). **Fixed Port Range:** If this is selected as a translation method, all internal traffic will not be affected. Users can manually define the Source IP range and translation IP range. it will automatically bind the source IP with the translation IP.
+ - **Fixed Port Range:** If this is selected as a translation method, all internal traffic will not be affected. Users can manually define the Source IP range and translation IP range. it will automatically bind the source IP with the translation IP.
 
 ##### **Translate IP Range**
 
