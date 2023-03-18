@@ -78,23 +78,37 @@ const config = {
         }
       },
       navbar: {
-        title: 'Haltdos Docs',
+        title: 'Haltdos',
         logo: {
           alt: 'Haltdos',
           src: 'img/logo/icon_light.png',
           srcDark: 'img/logo/icon_dark.png'
         },
         items: [
-          {to: 'api', label: 'API', position: 'left'},
-          {to: 'kb', label: 'Knowledge Base', position: 'left'},
-          {to: 'glossary', label: 'Glossary', position: 'left'},
-          {href: 'https://haltdos.com/blogs',label: 'Blogs',target: '_blank', rel: null},
-          {href: 'https://haltdos.com',label: 'Haltdos',target: '_blank', rel: null},
+          {to: 'enterprise', label: 'Enterprise', position: 'left'},
+          {to: 'community', label: 'Community', position: 'left'},
+          {to: 'cloud', label: 'Cloud', position: 'left'},
+          {
+            type: 'search',
+            position: 'right',
+          },
           {
             type: 'docsVersionDropdown',
             position: 'right',
             dropdownActiveClassDisabled: true,
-          }
+          },
+          {
+            type: 'dropdown',
+            label: 'More',
+            position: 'left',
+            className: 'custom',
+            items: [
+              {to: 'api', label: 'API'},
+              {to: 'kb', label: 'Knowledge Base'},
+              {to: 'glossary', label: 'Glossary'},
+              {href: 'https://haltdos.com/blogs',label: 'Blogs', target: '_blank', rel: null}
+            ],
+          },
         ],
       },
       prism: {
