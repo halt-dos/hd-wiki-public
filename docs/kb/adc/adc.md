@@ -1,5 +1,4 @@
-# **Application Delivery Controller**
-
+# Application Delivery Controller
 
 This section describes the knowledge base of how to use Haltdos SLB for the various use cases.
 
