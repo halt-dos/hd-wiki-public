@@ -4,8 +4,6 @@ sidebar_position: 3
 
 # Alarms
 
-Overview of alarms in Haltdos Platform
-
 ---
 
 ## Overview
@@ -16,9 +14,9 @@ Alarms in Haltdos Platform is a mechanism for raising alerts to the configured u
 
 **How to Use:**
 
-1. Go to Stack >Alarms
-2. Configure your settings
-3. Click Save
+1. Go to **Stack** > **Alarms**
+2. Configure your settings as per request.
+3. Click **Save Changes**
 
 | PARAMETERS            | DESCRIPTION                                                                | ACCEPTED VALUES                      | DEFAULT      |
 |-----------------------|----------------------------------------------------------------------------|--------------------------------------|--------------|

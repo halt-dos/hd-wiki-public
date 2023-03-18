@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Incidents
@@ -22,44 +22,17 @@ Depending upon the type of event, clicking on any Event shows details of the inc
 
 Further to detailing the incident through Events, users can perform various actions. For example, virtual patching functionality is implemented through actions in Event Details. Virtual Patching is the ability to create custom WAF rules from the result of a security scan.
 
-![Events](/img/waf/v6/docs/incidents.png)
+![Events](/img/platform/v7/docs/incidents.png)
 
 ## How to Use:
 
-1. Go to **WAF** > **Incidents**.
+1. Click on **Apps** 
+2. Select **WAF**
+3. By Selecting different **Category** on Incident User can view different Incident like Drop, Record, Error or Health.
+4. From **Resources**, User can select desired resource of listed listener.
+5. From **Date Range** User can select customize date to view Incidents.
 
 
-## Event Types
-
-**Scan Result** -  Details of security scan results
-
-**Download** - Displays all the file download events
-
-**WAF Attack** - Details of blocked HTTP request/response
-
-**Health Alert** - Details of healthy and unhealthy upstream web servers
-
-**Audit** - Displays the events for Configuration changes
-
-**Server** - Displays details of server error observed
-
-**Alarm** - Displays details of configured alarms triggered
-
-**Failed Jobs** - Displays the events for failed jobs
-
-**Report** - Displays the report generated to be downloaded
-
-
-
--Displays detiails of any instance notification
-
-**Filter**
-
-Users can filter out the events based on All,App,Zone, and Listner configured for the specific app.
-
-**Download**
-
-Users can download the events specifying the event count, start time & date, and category i.e All, Attack, Health. Upon specifying the fields user will click on the Download button and a spreadsheet will be downloaded.
 
 **Auto-Refresh**
 

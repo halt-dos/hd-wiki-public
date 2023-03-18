@@ -4,8 +4,6 @@ sidebar_position: 3
 
 # Alarms
 
-### Overview of alarms in Haltdos Platform
-
 ---
 
 ## Overview
