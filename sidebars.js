@@ -48,6 +48,22 @@ const sidebars = {
           dirName: 'troubleshooting'
         }
       ]
+    },
+    {
+      type: 'html',
+      value: '<br><br>',
+      defaultStyle: true,
+      className: 'sidebar-title'
+    },
+    {
+      type: 'html',
+      value: '<br>Knowledge Base<br>',
+      defaultStyle: true,
+      className: 'sidebar-title', // Use the default menu item styling
+    },
+    {
+      type: 'doc', 
+      id: 'kb/waf/waf'
     }
   ],
   adc_sidebar: [
@@ -65,6 +81,22 @@ const sidebars = {
           dirName: 'enterprise/adc'
         }
       ]
+    },
+    {
+      type: 'html',
+      value: '<br><br>',
+      defaultStyle: true,
+      className: 'sidebar-title'
+    },
+    {
+      type: 'html',
+      value: '<br>Knowledge Base<br>',
+      defaultStyle: true,
+      className: 'sidebar-title', // Use the default menu item styling
+    },
+    {
+      type: 'doc', 
+      id: 'kb/adc/adc'
     }
   ],
   platform_sidebar: [
@@ -82,6 +114,22 @@ const sidebars = {
           dirName: 'enterprise/platform'
         }
       ]
+    },
+    {
+      type: 'html',
+      value: '<br><br>',
+      defaultStyle: true,
+      className: 'sidebar-title'
+    },
+    {
+      type: 'html',
+      value: '<br>Knowledge Base<br>',
+      defaultStyle: true,
+      className: 'sidebar-title', // Use the default menu item styling
+    },
+    {
+      type: 'doc', 
+      id: 'kb/platform/platform'
     }
   ],
   llb_sidebar: [
@@ -133,6 +181,22 @@ const sidebars = {
           dirName: 'enterprise/gslb'
         }
       ]
+    },
+    {
+      type: 'html',
+      value: '<br><br>',
+      defaultStyle: true,
+      className: 'sidebar-title'
+    },
+    {
+      type: 'html',
+      value: '<br>Knowledge Base<br>',
+      defaultStyle: true,
+      className: 'sidebar-title', // Use the default menu item styling
+    },
+    {
+      type: 'doc', 
+      id: 'kb/gslb/gslb'
     }
   ],
   vpn_sidebar: [
