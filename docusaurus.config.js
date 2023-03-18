@@ -33,7 +33,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  
   presets: [
     [
       'classic',
@@ -76,20 +76,6 @@ const config = {
           hideable: true,
           autoCollapseCategories: true
         }
-      },
-      typesense: {
-        typesenseCollectionName: 'haltdos-wiki',
-        typesenseServerConfig: {
-          nodes: [
-            {
-              host: '170.187.254.243',
-              port: 8108,
-              protocol: 'http',
-            },
-          ],
-          apiKey: 'dpBvnGc20BVYUzcykDbaGsHSiEPon1qTBzziJsNMNZwW1pT8',
-        },
-        contextualSearch: true,
       },
       navbar: {
         title: 'Haltdos',

@@ -120,7 +120,7 @@ This option is only applicable in the case of service type HTTP. This option all
 
 Users can specify the action to take when max session count exceeds.
 
-#### **Max Session Forward URL**
+##### **Max Session Forward URL**
 
 Users can specify the redirected URL when max session count exceeds. This option will only visible when user has selected redirect option under 'Max Session Exceeded Action' option.
 

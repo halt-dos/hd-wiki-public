@@ -12,7 +12,7 @@ If a user has defined server group and wants to use different groups depending u
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](../../adc.md) > [**Listeners**](../../listeners/listeners.md) > **Rules**.
+1. Go to Stack > [**SLB**](../../../adc.md) > [**Listeners**](../../listeners/listeners.md) > **Rules**.
 2. Select the **Load Balancing Rules**.
 3. Click **Add Rule** button.
 4. Configure your settings. 
@@ -28,23 +28,23 @@ If a user has defined server group and wants to use different groups depending u
 
 ### Description
 
-##### **Rule Name **
+#### **Rule Name **
 
 User can specify the rule name.
 
-##### **Rule Message**
+#### **Rule Message**
 
 User can specify the rule message.
 
-##### **Rule Enabled**
+#### **Rule Enabled**
 
 Users can enable or disable the rule.
 
-##### **Rule Priority**
+#### **Rule Priority**
 
 User can specify the rule priority among other created rules in LB rules.
 
-##### **Server Group**
+#### **Server Group**
 
 User can specify which server group to associate with this particular rule.
 
@@ -60,7 +60,7 @@ User can specify which server group to associate with this particular rule.
 | Match Value     | String         | Blank           |
 | Negation        | Drop-Down      | False           |
 
-### Description
+#### Description
 
 ##### **Find Location**
 
