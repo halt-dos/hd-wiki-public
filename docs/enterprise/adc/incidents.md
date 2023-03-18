@@ -19,7 +19,7 @@ Depending upon the type of event, clicking on any incident shows details of the 
 
 ### Description
 
-##### **Date Range**
+#### Date Range
 
 In this section you can select date range for which user wants to see the logs.
 

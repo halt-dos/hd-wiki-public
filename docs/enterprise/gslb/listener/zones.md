@@ -10,10 +10,10 @@ Creation of DNS zones and records in GSLB
 
 Zones provide you an opportunity to create and manage domains. End users can also choose a list of Apps they want to configure for that root domain. DNS Service type should be Authoritative.  
 
-![zones](/img/gslb/v6/docs/zones.png)
+![zones](/img/gslb/v7/docs/zones.png)
 
 ### How to Use:
-1. Go to  **Stack** > **GSLB** > **Listener** > **Zones**
+1. Go to  **Apps** > **GSLB** > **Listener** > **Zones**
 2. Click **Add Zone** button.
 3. Configure your settings.
 4. Click **Save**.
@@ -31,7 +31,7 @@ Zones provide you an opportunity to create and manage domains. End users can als
 
 A DNS Record is a database entry that maps a URL to a specified IP address. These records are then stored in the DNS Servers, which can be accessed by different users globally using the URL address. When you search the URL, the browser forwards the URL to the DNS server, and it redirects you to the specific Web server. This web server then serves the site or directs the user to an email server that takes care of the incoming mail.
 
-![records](/img/gslb/v6/docs/records.png)
+![records](/img/gslb/v7/docs/zones.png)
 
 #### Types of DNS Records :
 
@@ -52,7 +52,7 @@ SOA|Start of Authority|Stores important information about a domain such as email
 #### Creating A Record
 
 The process is quite intuitive. Steps included: 
-1. Go to **Stack** > **GSLB** > **Zones** > **Records.**
+1. Go to **Apps** > **GSLB** > **Zones** > **Records.**
 2. Click On **Add Record**. 
 3. Configure your settings. 
 4. Click **Create Record**.
