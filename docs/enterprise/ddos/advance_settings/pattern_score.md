@@ -6,25 +6,25 @@ sidebar_position: 1
 
 ---
 
-### **Overview**
+## Overview
 
 In today’s networks, cyber-attacks cause damage or theft and disrupt services with enormous economic and financial impacts. Software implementations cannot meet performance goals; a combination of software and hardware can be more effective for high-performance pattern matching. Packet content scanning at high speed has become extremely important due to its applications in network security, network monitoring, and traffic management in general. 
 
 Haltdos supports pattern scoring on the behalf of the behavior of the packet.
 
-![](\img\ddos\v6\docs\ddos27.png)
+![pattern_score](/img/ddos/v7/docs/paternscore.png)
 
-![](\img\ddos\v6\docs\ddos28.png)
+![pattern_score](/img/ddos/v7/docs/patternscore1.png)
 
-### **How to Use:**
+### How to Use
 
-1. **Stack > Resource > DDoS > Advance Settings > Pattern Score**
+1. Go to **Apps > DDoS > Advance Settings > Pattern Score**
 
-2. Conifgure the settings.
+2. Configure the settings as per requirement.
 
-3. Click on Save Changes.
+3. Click on **Save Changes**.
 
-![](\img\ddos\v6\docs\ddos29.png)
+![pattern_score](/img/ddos/v7/docs/patternscore2.png)
 
 | Parameter                        | Accepted Values   | Description                                    |
 |----------------------------------|-------------------|------------------------------------------------|

@@ -8,13 +8,13 @@ sidebar_position: 2
 
 ![](\img\ddos\v6\docs\ddos26.png)
 
-### **How to Use:**
+### How to Use
 
-1. **Stack > Resource > DDoS > Advance Settings > Top Talkers**
+1. Go to **Apps > DDoS > Advance Settings > Top Talkers**
 
-2. Configure the settings
+2. Configure the settings.
 
-3. Click on the Save Changes button.
+3. Click on **Save Changes**.
 
 | Parameters      | Accepted Values | Description                                    |
 |-----------------|-----------------|------------------------------------------------|

@@ -8,15 +8,15 @@ sidebar_position: 4
 
 In addition to DDoS mitigation, the Offload mechanism can be used for features like SSL offloading, WAF, DNS Server Protection, just add the TCP/UDP stream specifying the server IP, Source port and Destination port.
 
-![offload_stream](\img\ddos\v6\docs\ddos23.png)
+![offload_stream](\img\ddos\v7\docs\ssloffloading.png)
 
-### **How to Use:**
+### How to Use
 
-1. **Stack > Resource > DDoS > Profile > Offload**
+1. Go to **Apps > DDoS > SSL Offloading**
 
-2. Add Offload with specific configuration required.
+2. Add **Offload Stream** with specific configuration required
 
-3. Click on Save Changes
+3. Click on **Save Changes**
 
 | Settings      | Accepted Values | Default |
 |---------------|-----------------|---------|
@@ -24,16 +24,16 @@ In addition to DDoS mitigation, the Offload mechanism can be used for features l
 | Listening IP  | String          | Blank   |
 | Forwarding IP | String          | Blank   |
 
-### **Description:**
+### Description
 
-##### **Server IP**
+#### Server IP
 
 Specify the IP address
 
-##### **Listening Port**
+#### Listening IP
 
 Specify listening port for offloading
 
-##### **Forwarding Port**
+#### Forwarding IP
 
 Specify forwarding port for offloading

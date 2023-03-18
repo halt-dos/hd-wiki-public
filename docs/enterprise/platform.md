@@ -5,8 +5,6 @@ pagination_prev: null
 
 # Haltdos Platform
 
-Overview of Haltdos Platform
-
 ---
 
 ## Overview
@@ -17,7 +15,7 @@ Haltdos is a security company providing next-generation security products. Our s
 
 ## Infrastructure Agnostic  
 
-hdPlatform separates logical entities from physical infrastructure. This allows hdPlatform to be installed in various flavors - SaaS, Hardware, or Virtual form factor. Separating logical entities from physical infrastructure provide the following benefits:
+Haltdos Platform separates logical entities from physical infrastructure. This allows hdPlatform to be installed in various flavors - SaaS, Hardware, or Virtual form factor. Separating logical entities from physical infrastructure provide the following benefits:
 
 - Horizontally scale by adding more hardware
 - Flexible Deployment for any environment
@@ -27,7 +25,7 @@ hdPlatform separates logical entities from physical infrastructure. This allows 
 
 ## Separation of Planes
 
-hdPlatform is divided into multiple planes - each with its dedicated functions and purpose.  
+Haltdos Platform is divided into multiple planes - each with its dedicated functions and purpose.  
 
 - **Management Plane**  
 Covers all managerial aspects of installing, managing, and operating solutions provided by Haltdos. Operations such as updating policy, user management, installing updates, and reporting are done in this plane. This plane also exposes GUI, CLI, and API interfaces for user interaction and integration with 3rd party tools. For security reasons, except user creation, deletion, and change of user permission and administrator capabilities, all functionality of GUI can be managed through CLI as well.  
