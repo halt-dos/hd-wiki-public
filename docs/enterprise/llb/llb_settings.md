@@ -11,11 +11,11 @@ Setting for Haltdos LLB
 
 Link load balancing is a term that refers to the management of the traffic that is initiated within a local network that is destined to go out through one of a set of WAN connections. The link load balancer sits at the LAN-WAN boundary. It will redirect requests coming from the LAN segment that is destined to go out to the public Internet, by directing the traffic onto one of the various WAN connections.
 
-![llbsettings](/img/llb/v6/docs/llb2.png)
+![llbsettings](/img/llb/v7/docs/llb_settings.png)
 
 ### **How to Use :**
 
-1. Go to **Stack > LLB**
+1. Go to **Apps > LLB**
 
 2. Enable **Load Balancing**
 
@@ -65,7 +65,7 @@ This option will show a list of all WAN links with their names along with their 
 
 This option allows the user to set the weight value for an interface. This is a static numerical weighting. Interface with higher ratings gets more requests sent to them.
 
-![addinginterfaces](/img/llb/v6/docs/llb3.png)
+![addinginterfaces](/img/llb/v7/docs/adding_interfaces.png)
 
 
 

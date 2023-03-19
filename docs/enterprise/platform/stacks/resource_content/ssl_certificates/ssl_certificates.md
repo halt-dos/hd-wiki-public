@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 # SSL Certificates
@@ -12,8 +12,6 @@ An SSL certificate is a few lines of code on your web server that provides secur
 
 Haltdos platform supports SSL certificate management that allows customers to upload their existing SSL certificates or create new certificates using Let's Encrypt. The platform periodically checks the validity of the certificate and notifies users when the renewal is 2 weeks away from due date. If the certificate was created by Let's Encrypt, Haltdos platform automatically renews the certificate without requiring human intervention. 
 
-![ssl certificates](/img/platform/v6/docs/ssl_cert1.png)
-![ssl certificates](/img/platform/v6/docs/ssl_cert2.png)
 
 ### How to Use:
 
@@ -21,7 +19,8 @@ Haltdos platform supports SSL certificate management that allows customers to up
 2. Configure your settings. 
 3. Click Save. 
 
-![ssl certificates](/img/platform/v6/docs/ssl_cert3.png)
+
+![ssl_certificates](/img/platform/v7/docs/ssl_certi_newui.png)
 
 Users can either upload a certificate or generate a new certificate with Let's Encrypt for their FQDN. For successfully generating Let's Encrypt certificate, you will have validate ownership of those domains. The solution supports 2-types of validations:
 

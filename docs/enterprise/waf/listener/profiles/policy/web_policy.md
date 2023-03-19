@@ -3,14 +3,17 @@ sidebar_position: 1
 ---
 
 # WEB Policy
+Configure Web Security Policy for HTML based websites - , Dynamic, Wordpress, etc.
 
-**Configure Web Security Policy for HTML based websites - Static, Dynamic, Wordpress, etc.**
+---
 
-### Overview
+## Overview
 
 A web policy or policies are constraints or mandates in relation to technical constraints, legal, editorial, and compliance. Configure policies that HTTP(s) requests must conform to when requesting data from the backend web application.
    
-IMAGE
+![Web Policy](/img/waf/v7/docs/profile_webpolicy.png)
+
+![webpolicy](/img/waf/v7/docs/profile_webpolicy1.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Profiles** > **Policy** > **Web Policy**.
@@ -33,18 +36,18 @@ IMAGE
 | Immutable Cookie Validity         | Integer          | 86400        |
 | Cookie Name                       | String           | Blank        |
 
-**Maximum Allowed Header Fields**
+##### **Maximum Allowed Header Fields**
 HTTP header fields provide necessary data about the request or response. It also provides the details about the object sent in the message body.
 This field specifies the maximum number of allowed HTTP header fields in the HTTP request header. If the header field exceeds, then the request gets dropped.
 
-**Maximum Header Field Name Length**
+##### **Maximum Header Field Name Length**
 This field specifies the maximum allowed length of the HTTP header field name. If the header field name length exceeds the specified length then the request gets dropped.
 
-**Maximum Header Field Value Length**
+##### **Maximum Header Field Value Length**
 This field specifies the maximum allowed length of the HTTP header field value. If the header field value length exceeds the specified length then the request gets dropped.
 
-**Allowed HTTP Methods**
-HTTP methods are a set of common request methods for HTTP. These request methods indicate the specific action that you need to take care of a specific resource. Each of the request methods implements a different semantic. A group of these methods represents some common features. E.g. a request method can be safe, cache-able, or idempotent.  
+##### **Allowed HTTP Methods**
+HTTP Methods are a set of common request methods for HTTP. These request methods indicate the specific action that you need to take care of a specific resource. Each of the request methods implements a different semantic. A group of these methods represents some common features. E.g. a request method can be safe, cache-able, or idempotent.  
 
 We support the following HTTP Methods:  
 1. **GET**:  It requests a specified resource representation. It helps to retrieve data.
@@ -55,30 +58,30 @@ We support the following HTTP Methods:
 6. **OPTIONS**:  It helps to indicate the communication options for the target resource.
 This field specifies all the allowed HTTP methods. If the request includes any methods other than the stated ones, then the request gets dropped.
 
-**Allowed MIME Types**
+##### **Allowed MIME Types**
 MIME Type, also known as media type or a Multipurpose Internet Mail Extensions is a standard that indicates both format and nature of a file, document, or bytes assortment.
 MIME-type helps browsers to determine how to process a URL. A browser must send an exact MIME type Content-Type header response. In case, it isn't configured correctly; the browser will misinterpret file content. The Website will not function properly, and there will be mishandling of downloaded files.
 This field specifies the list of the allowed HTTP MIME type. If the request contains any mime types other than specified ones, then the request gets dropped.
 
-**Web Extensions**
+##### **Web Extensions**
 Users are allowed to specify the list of extensions for which Human Authentication will be enabled.
 
-**Restricted Extention**
+##### **Restricted Extention**
 Restricted extensions are files that don't reside on a web server. This field specifies the list of extensions that should be blocked or restricted.
 
-**Restricted File Upload**
+##### **Restricted File Upload**
 Restricted file uploads restrict or block the request with a file that is malicious or corrupted based on the file extensions specified, such requests are dropped.
 
-**X-FRAME OPTIONS**
+##### **X-FRAME OPTIONS**
 X-frame is used for adding a header to stop clickjacking. Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
 
-**CAPTCHA VALIDATION EXPIRY**
+##### **CAPTCHA VALIDATION EXPIRY**
 In order to protect the web application from automated attacks. Captcha is used to validate the user but its validity is set in seconds for which the captcha will be valid.
 
-**CSRF**
+##### **CSRF**
 Cross-Site Request Forgery (CSRF) is an attack-type in which a malicious blog, email, instant message, or program causes a browser of the user to execute an unwanted action on a trusted site in case of user authentication. Enable cookie-based CSRF protection for incoming HTTP requests.
 
-#### Immutable Cookie Validity
+##### **Immutable Cookie Validity**
 An HTTP cookie, also known as a browser cookie or web cookie is a small data piece that a server sends to the web browser of the user. A browser can store it and send it back to the same server with the next request. It tells whether the two requests are coming from the same browser. It reminisces accurate data for the stateless HTTP protocol.  
 
 Three primary purposes of cookies:

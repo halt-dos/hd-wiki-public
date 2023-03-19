@@ -18,9 +18,20 @@
 
 /* Custom Styles */
 .sidebar-title{
-  margin-top: 10%;
   font-size: medium;
   font-weight: bold;
+}
+
+.navbar__item.navbar__link{
+  font-size: 16px;
+}
+
+.navbar__title{
+  font-size: 20px;
+}
+
+.dropdown__link{
+  font-size: 0.975rem
 }
 
 .no-shadow {

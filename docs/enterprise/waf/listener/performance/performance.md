@@ -7,4 +7,3 @@ Web server optimization allows for improved performance and speed required for e
 
 2. [**Compression**](compression.md)
 
-3. [**RUM Metric**](rum.md)

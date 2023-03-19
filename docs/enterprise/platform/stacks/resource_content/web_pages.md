@@ -1,21 +1,21 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 ---
 
 # Web pages
 
 ---
 
-Haltdos SLB allows users to set the custom pages to customize connectivity. Users can add custom pages as per need.
+Haltdos allows users to set the custom pages to customize connectivity. Users can add custom pages as per need.
 
-![webpages](/img/platform/v6/docs/webpages1.png)
+![webpages](/img/platform/v7/docs/webpages_newui.png)
 
 ### How to Use:
 
-1. Go to **Stack > Resources  > Pages**.
-2. Select the Add Pages.
+1. Go to **Stack > Resources  > Web Pages**.
+2. Select the **Add Pages.**
 3. Configure your settings. 
-4. Click Save Changes.
+4. Click **Save Changes.**
 
 | SETTINGS    | ACCEPTED VALUES | DEFAULT |
 |-------------|-----------------|---------|

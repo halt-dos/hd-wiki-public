@@ -12,7 +12,7 @@ Policy-based routing (PBR) is a technique that forwards and routes data packets 
 
 Policy-based routing  provides flexible, granular traffic-handling capabilities for forwarding packets. In this way, PBR enables users to achieve optimal bandwidth utilization for business-critical applications.
 
-![policy_routing](/img/llb/v6/docs/llb18.png)
+![policy_routing](/img/llb/v7/docs/policyroute.png)
 
 ### **How to Use:**
 
@@ -26,7 +26,6 @@ Policy-based routing  provides flexible, granular traffic-handling capabilities 
 
 5. Click Save.
 
-![policy_routing_rule_condition](/img/llb/v6/docs/llb19.png)
 
 | Setting                | Accepted Values                | Default            |
 |------------------------|--------------------------------|--------------------|

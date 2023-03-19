@@ -6,22 +6,21 @@ sidebar_position: 5
 
 ---
 
-A Faster, Automated Approach to Comprehensive DDoS Mitigation Enterprises need comprehensive, integrated protection from the data center edge to the service provider cloud. For example, when data center operators discover they are under a service-disrupting DDoS attack, they should be able to quickly mitigate the attack in the cloud by triggering a signal to upstream infrastructure of their provider’s network. 
+A faster, automated approach to comprehensive DDoS Mitigation Enterprises need comprehensive, integrated protection from the data center edge to the service provider cloud. For example, when data center operators discover they are under a service-disrupting DDoS attack, they should be able to quickly mitigate the attack in the cloud by triggering a signal to upstream infrastructure of their provider’s network. 
 
-![signaling_settings](\img\ddos\v6\docs\ddos24.png)
+![signaling_settings](\img\ddos\v7\docs\cloudsignaling.png)
 
-### **How to Use:**
+### How to Use
 
-1. **Stack > Resource > DDoS > Signaling**
+1. Go to **Apps > DDoS > Cloud Signaling**
+2. Add **Provider** and configure the details as per the requirement.
+3. Click on **Save Changes**
 
-2. Add provider and Mention the details as per the requirements
-
-3. Click on Save Provider
 
 | Settings                | Accepted Values  | Default |
 |-------------------------|------------------|---------|
-| Provider Name           | String           | Empty   |
 | Enabled                 | Boolean          | False   |
+| Provider Name           | String           | Empty   |
 | Signalling URL          | String           | Empty   |
 | Authentication User     | String           | Empty   |
 | Authentication Password | String           | Empty   |
@@ -29,36 +28,36 @@ A Faster, Automated Approach to Comprehensive DDoS Mitigation Enterprises need c
 | Managed Object IDs      | Integer          | Empty   |
 | IP Range                | Integer          | Empty   |
 
-### **Description:**
+### Description
 
-**Provider Name**
-
-Specify the name of the upstream provider
-
-**Enabled**
+#### Enabled
 
 Enable to allow the signaling to operate.
 
-**Signaling URL**
+#### Provider Name
+
+Specify the name of the upstream provider.
+
+#### Signaling URL
 
 Specify API endpoint of upstream provider for sending cloud signal
 
-**Authentication User**
+#### Authentication User
 
 Specify password user credentials for interactive with upstream cloud signaling API
 
-**Authentication password**
+#### Authentication password
 
 Specify password credentials for interactive with upstream cloud signaling API
 
-**Signaling Trigger**
+#### Signaling Trigger
 
 Specify the bandwidth threshold (in Mbps) beyond with a cloud signal that will be sent to the upstream provider
 
-**Managed Object ID**
+#### Managed Object ID
 
 Specify unique customer ID provided by the upstream providers for further authentication
 
-**IP Range**
+#### IP Range
 
 Specify the IP range

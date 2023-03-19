@@ -9,53 +9,49 @@ sidebar_position: 3
 ### How to Use:
 
 1. Go to Stack > [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > [** Server Groups**](../server_groups/).
-
 2. Select the group name.
-
 3. Select the Add Server option.
-
 3. Configure your settings. 
+4. Click **Save Changes**.
 
-4. Click Save Changes.
-
-![snmp](/img/adc/v6/docs/snmp.png)
+![snmp](/img/adc/v7/docs/snmp.png)
 
 | SETTINGS             | ACCEPTED VALUE | DEFAULT           |
 |----------------------|----------------|-------------------|
 | Enable Monitoring    | Boolean        | Disabled          |
-| SNMP port            | Integer        | 80                |
+| SNMP port            | Integer        | 161               |
 | SNMP Version         | Drop-Down      | SNMP v2c          |
 | SNMP Username        | String         | Blank             |
 | SNMP Community       | String         | public            |
 | SNMP Security level  | Drop-Down      | No Auth & privacy |
 | SNMP Check Type      | Drop-Down      | CPU Measurement   |
 
-#### Description:
+### Description:
 
-#### Enable Monitoring
+##### **Enable Monitoring**
 
 This option allows users to specify enabling SNMP monitoring.
 
-#### SNMP port
+##### **SNMP port**
 
 This option allows users to specify the SNMP port.
 
-#### SNMP Version
+##### **SNMP Version**
 
 This option allows users to specify the SNMP version for monitoring.
 
-#### SNMP Username
+##### **SNMP Username**
 
 This option allows users to specify SNMP usernames.
 
-#### SNMP Community
+##### **SNMP Community**
 
 This option allows users to specify SNMP Community.
 
-#### SNMP Security level 
+##### **SNMP Security level **
 
 This option allows users to specify the SNMP security level.
 
-#### SNMP Check Type
+##### **SNMP Check Type**
 
 This option allows users to specify SNMP checks.

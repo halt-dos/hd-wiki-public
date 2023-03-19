@@ -8,15 +8,15 @@ sidebar_position: 3
 
 The Aggressive aging feature is used to set the age value for non-responsive established & non-established connections.
 
-![](\img\ddos\v6\docs\ddos13.png)
+![aggressive aging](/img/ddos/v7/docs/aggressive_aging.png)
 
-### **How to Use:**
+### How to Use
 
-1. **Go to Stack > DDoS > Profile > Connection > -Aggressive Aging**
+1. Go to **Apps > DDoS > Profile > Connection Settings > Aggressive Aging**
 
-2. Configure the settings
+2. Configure the settings.
 
-3. Click on Save Changes
+3. Click on **Save Changes**
 
 | Parameter                               | Accepted Values | Default |
 |-----------------------------------------|-----------------|---------|
@@ -27,28 +27,28 @@ The Aggressive aging feature is used to set the age value for non-responsive est
 | Outbound Connection Time Out            | Integer         | 600     |
 | Outbound Incomplete Connection Time Out | Integer         | 30      |
 
-### **Description:**
+### Description
 
-##### **INBOUND AGING ENABLED**
+#### Inbound Aging Enabled
 
-Enable Connection Timeout
+Enable Inbound Connection Timeout
 
-##### **INBOUND CONNECTION TIMEOUT**
+#### Inbound Connection Timeout
 
-Specify the TCP connection timeout
+Specify the TCP inbound connection timeout
 
-##### **INBOUND INCOMPLETE CONNECTION TIMEOUT**
+#### Inbound Incomplete Connection Timeout
 
-Specify the half-open TCP connection timeout
+Specify the half-open TCP inbound connection timeout
 
-##### **OUTBOUND AGING ENABLED**
+#### Outbound Aging Enabled
 
-Enable Connection Timeout
+Enable Outbound Connection Timeout
 
-##### **OUTBOUND CONNECTION TIMEOUT**
+#### Outbound Connection Timeout
 
-Specify the TCP connection timeout
+Specify the TCP outbound connection timeout
 
-##### **OUTBOUND INCOMPLETE CONNECTION TIMEOUT**
+#### Outbound Incomplete Connection Timeout
 
-Specify the half-open TCP connection timeout
+Specify the half-open TCP outbound connection timeout

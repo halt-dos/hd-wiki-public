@@ -1,21 +1,21 @@
 ---
-sidebar_position: 7
+sidebar_position: 9
 ---
 
-# Custom Scripts
+# Scripts
 
 ---
 
-Haltdos SLB allows users to set the custom script to customize connectivity. Users can add custom scripts as per need.
+Haltdos allows users to set the custom script to customize connectivity. Users can add custom scripts as per need.
 
-![Custom Scripts](/img/platform/v6/docs/custom_scripts1.png)
+![Scripts](/img/platform/v7/docs/script_newui.png)
 
 ### How to Use:
 
 1. Go to **Stack > Resources > Scripts**.
-2. Select the Add Scripts.
+2. Select the **Add Scripts.**
 3. Configure your settings. 
-4. Click Save Changes.
+4. Click **Save Changes.**
 
 | SETTINGS    | ACCEPTED VALUES | DEFAULT |
 |-------------|-----------------|---------|
@@ -23,7 +23,7 @@ Haltdos SLB allows users to set the custom script to customize connectivity. Use
 | Scope       | Drop-down       | Blank   |
 | Script Area | String          | Blank   |
 
-**Description:**
+#### Description:
 
 **Name**
 

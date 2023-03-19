@@ -5,15 +5,15 @@ sidebar_position: 7
 # Signatures
 These are in-built rules of WAF.
 
-## Overview 
+### Overview 
 Signatures contain rules that are evaluated for each request that passes through WAF. The rules offer protection from many different types of attacks for Web Service/API including OWASP top 10 as well as it can help users to specify the behavior for their application. The WAF has multiple types of Rules designed to target specific use cases.
 
-![Signatures](/img/waf/v6/docs/signatures.png)
+![Signatures](/img/waf/v7/docs/profile_signatures.png)
 
 ## How to Use :
-1.Go to **WAF** > **Listeners** > **Security Profiles** > **Rules** > **Signatures**
-2.You can change the status of the signature to AUTO, PROD, STAGED, DISABLED.
-3.Configurations will be deployed successfully.
+1. Go to **WAF** > **Listeners** > **Profiles** > **Signatures**
+2. You can change the status of the signature to AUTO, PROD, STAGED, DISABLED.
+3. Configurations will be deployed successfully.
 
 | Parameters | Accepted Values | Default
 | ----------- | ----------- |--------- |
@@ -26,36 +26,34 @@ Requests|Specifies the count of hits |Blank
 Match|Specifies the count when the rule is matched.|Blank
 Action|Delete the rule |None
 
-## Description
-1.**Rule Id:**
+### Description
+##### **Rule ID**
 
-Predefined rule id for the signatures. The Id is unique for each rule.
+Predefined rule ID for the signatures. The ID is unique for each rule.
 
-2.**Type:**
-
+##### **Type**
 It specifies the type of signature like Firewall, Response, etc.
-
-3.**Name:**
+##### **Name**
 
 It specifies the name of the signatures. The name describes the identity of the rule which helps the user understand what is the use of that rule.
 
-4.**Status:**
+##### **Status**
 
 It specifies the status of the signature and can be set accordingly to PROD, STAGED, DISABLED.
 
-5.**Timestamp:**
+##### **Timestamp**
 
 It specifies the date time stamp at which the rule has been updated.
 
-6.**Requests:**
+##### **Requests**
 
 It specifies the number of times request matched with the current rule while learning-enabled with the current security profile.
 
-7.**Match**
+##### **Match**
 
 It specifies the number of requests matched with the current rule in the current security profile.
 
-8.**Action:**
+##### **Action**
 
 It specifies the action need to perform on the current rule. In order to delete the rule, we can click on the delete button to remove certain rules in the current security profile.
 

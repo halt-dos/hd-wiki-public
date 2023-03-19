@@ -2,11 +2,15 @@
 
 Configure the application servers
 
+---
+
 ## Overview 
 
 Configuration of upstream servers in a server group can be modified on-the-fly by using Servers.
 
-![Servers](/img/waf/v6/docs/Servers.png)
+![Servers](/img/waf/v7/docs/server.png)
+
+![Servers](/img/waf/v7/docs/server1.png)
 
 ## How to Use :
 
@@ -30,48 +34,48 @@ Connection Timeout |Integer|0
 Send Timeout|Integer|0
 Read Timeout|Integer|0
 
-## Description:
+### Description:
 
-1.**Server** 
+##### **Server** 
 
 This option allows user to specify the IP address for the server for serving the request for the application.
 
-2.**Port** 
+##### **Port** 
 
 This option allows user to set the port for the back-end application server for communication.
 
-3.**Weight** 
+##### **Weight** 
 
 This option allows user to specify the weight of the server. Higher the weight more requests will be served by that server. 
 
-4.**Remote** 
+##### **Remote** 
 
 This option allows user to specify if the server can be accessed remotely or not.
 
-5.**Monitor** 
+##### **Monitor** 
 
-This option alows user to select from the monitors created. Monitors help in monitoring the health of the server.
+This option allows user to select from the monitors created. Monitors help in monitoring the health of the server.
 
-6.**Backup** 
+##### **Backup** 
 
 This option allows user to specify if backup is allowed for the server. In case of primary failure, the backup will be up and running.
 
-7.**Mode** 
+##### **Mode** 
 
-This option allows user to makes the server active/inactive. When marked Down the server will not be able to serve requests.
+This option allows user to make the server active/inactive. When marked Down the server will not be able to serve requests.
 
-8.**Max Connection** 
+##### **Max Connection** 
 
 This option allows user to specify the number of maximum connections allowed to the specific server.
 
-9.**Connection Timeout** 
+##### **Connection Timeout** 
 
 This option allows user to specify the connection timeout for the server.
 
-10.**Send Timeout** 
+##### **Send Timeout** 
 
-This option allows user to specify the send timeout for the server. 
+This option allows user to specify to send timeout for the server. 
 
-11.**Read Timeout**
+##### **Read Timeout**
 
 This option allows user to specify the read timeout for the server.

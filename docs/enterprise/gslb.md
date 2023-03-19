@@ -1,6 +1,5 @@
 ---
 pagination_prev: null
-sidebar_position: 0
 ---
 
 # Global Server Load Balancer

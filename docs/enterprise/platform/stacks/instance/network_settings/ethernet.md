@@ -8,17 +8,15 @@ Listing of ethernet cards (NIC) on the hardware / VM
 
 ---
 
-This section allows you to configure Ethernet settings on available NIC cards on the physical or virtual instance. You can configure IP addresses, gateway, routes and routing policies per interface.  
-
-![Ethernet](/img/platform/v6/docs/ethernet1.png)
+This section allows you to configure Ethernet settings on available NIC cards on the physical or virtual instance. You can configure IP addresses, gateway, routes and routing policies per interface. 
 
 ### How to Use:
 
-1. Go to **Stack > Instances > Instance > Network > Ethernet**
+1. Go to **Stack > Instances  > Network > Ethernet**
 2. Configure your settings
-3. Click Save
+3. Click **Save CHanges**
 
-![Ethernet](/img/platform/v6/docs/ethernet2.png)
+![Ethernet](/img/platform/v7/docs/ethernet.png)
 
 | PARAMETERS           | ACCEPTED VALUES       | DEFAULT              |
 |----------------------|-----------------------|----------------------|
@@ -114,7 +112,7 @@ This option provides users to select the IP version of the interface. Either it 
 
 **Nameserver** is a server on the internet specialized in handling queries regarding the location of a domain name's various services. **Nameservers** are a fundamental part of the Domain Name System (DNS). They allow using domains instead of IP addresses. 
 
-![Ethernet](/img/platform/v6/docs/ethernet3.png)
+
 
 | PARAMETERS  | ACCEPTED VALUES                              | DEFAULT |
 |-------------|----------------------------------------------|---------|
@@ -125,7 +123,7 @@ This option provides users to select the IP version of the interface. Either it 
 | Route Scope | GLOBAL / LINK / HOST                         | GLOBAL  |
 | Metric      | Integer                                      | 0       |
 
-#### Description
+### Description
 
 **Route From**
 
@@ -151,7 +149,7 @@ This option allows us to set the credential.
 
 Users can specify the metric value for the route defined in the rule.
 
-![Ethernet](/img/platform/v6/docs/ethernet4.png)
+
 
 **Route Policy**
 
@@ -164,7 +162,7 @@ Users can specify the metric value for the route defined in the rule.
 | Policy Mark     | Integer         | 1       |
 | Policy Service  | String          | Empty   |
 
-#### Description
+### Description
 
 **Policy From**
 

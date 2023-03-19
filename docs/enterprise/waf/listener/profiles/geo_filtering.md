@@ -6,12 +6,12 @@ sidebar_position: 2
 
 ### Overview
 **Geo-filtering** is the practice of restricting access to Internet content, based upon the user's geographical location. With the help of Internet geolocation techniques, check user's IP address against a blacklist or whitelist, accounts, and measuring the end-to-end delay of a network connection to estimate the physical location of the user and restrict them.
-Our solution restricts user's based upon BlackListed IP Prefixes and Countries. It also allows permanently to access website through WhiteListed IP Prefixes.  
+Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. It also allows permanently to access website through Whitelisted IP Prefixes.  
 
-![geo-filtering](/img/waf/v6/docs/geo_filtering.png)  
+![Geo-filtering](/img/waf/v7/docs/profile_geofiltering.png)  
 
 ### How to Use:
-1. Go to WAF > Listener > Security Profiles > Geo Filtering.
+1. Go to **WAF** > **Listener** > **Profiles** > **Geo Filtering**.
 2. Configure your settings.
 3. Click on Save Changes.  
 
@@ -25,13 +25,13 @@ Our solution restricts user's based upon BlackListed IP Prefixes and Countries. 
 
 ### Description  
 
-1.**Blacklist Countries:**
+##### **Blacklist Countries**
 This section specify the list of countries that will be permanently disallowed from accessing the website. Countries can be selected by typing the name of the country and any request coming from the specified countries will be dropped.  
 
-2.**Whitelist IP Prefixes:**
+##### **Whitelist IP Prefixes**
 This section specify the list of IPs that will be permanently allowed for accessing the website. IP whitelisting is when you grant network access only to specific IP addresses.  
 
-3.**Blacklist IP Prefixes:**
+##### **Blacklist IP Prefixes**
 This section specify the list of IPs that will be permanently disallowed from accessing the website. IP blacklisting is a method used to filter out illegitimate or malicious IP addresses from accessing your networks. Blacklists are lists containing ranges of or individual IP addresses that you want to block.  
 
 #### Use Cases

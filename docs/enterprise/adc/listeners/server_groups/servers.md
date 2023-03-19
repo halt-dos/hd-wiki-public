@@ -4,19 +4,19 @@ sidebar_position: 1
 
 # Servers
 
-![servers](/img/adc/v6/docs/servers1.png)
+![servers](/img/adc/v7/docs/server.png)
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > Server Groups.
+1. Go to Stack > [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > **Server Groups**.
 
-2. Select the group name.
+2. Select the **Group name**.
 
-3. Select the Add Server option.
+3. Select the **Add Server** option.
 
 4. Configure your settings. 
 
-5. Click Save Changes.
+5. Click **Save Changes**.
 
 | SETTING        | ACCEPTED VALUE | DEFAULT |
 |----------------|----------------|---------|
@@ -25,37 +25,50 @@ sidebar_position: 1
 | Port           | Integer        | 80      |
 | Weight         | Integer        | 1       |
 | Back up        | Drop-Down      | False   |
-| Down           | Drop-Down      | False   |
+| Mode           | Drop-Down      | Ready   |
+| Forwarded HTTP Version           | Drop-Down      | any   |
+| Slow Start           | Integer      | 0   |
 | Max Connection | Integer        | Integer |
 
-![servers2](/img/adc/v6/docs/servers2.png)
+![servers2](/img/adc/v7/docs/server1.png)
 
-#### Description:
+### Description:
 
-#### Server ID
+##### **Server ID**
 
 Server ID is used to identify the upstream servers. It will be always unique for every original/upstream server.
 
-#### Server
+##### **Server**
 
 This option allows users to add the server domain name/IPv4/IPv6 address of the server.
 
-#### Port
+##### **Port**
 
 This option allows users to set the port number that is being used for the server.
 
-#### Weight
+##### **Weight**
 
-This option allows users to set the weight value for the server. server with a higher weight value will get more requests than servers with less weight value.
+This option allows users to set the weight value for the server. Server with a higher weight value will get more requests than servers with less weight value.
 
-#### Back up
+##### **Back up**
 
-This option allows users to enable or disable the backup server. If the user enables this opton, that server will act as a backup server and after the set threshold limit this backup server will start. If the user disabled this option, that server will act as a normal server in the server group.
+This option allows users to enable or disable the backup server. If the user enables this option, that server will act as a backup server and after the set threshold limit this backup server will start. If the user disabled this option, that server will act as a normal server in the server group.
 
-#### Down
+##### **Mode**
 
-This option allows users to true or false the down setting for server. If the user has set the true value in this option then server will not take part actively in  
+This option allows users to configure the server ready or down setting. 
 
-#### Max Connection
+1. **Ready** - If the user has set the Ready value in this option then server will take part actively in handling the client requests.
+2. **Down** - If the user has set the Down value in this option then server will not take part actively in handling the client requests. 
+3. **Gracefully Down** - Gracefully Down option will ensure no active connection will be break during the server down activity, server will be handling the old connection until con-current connection count reach to 0. Once con-current connection will be 0 then server will be marked as down at SLB level. Hence, with the help this option, user can gracefully down any server.
 
-The user can define how many maximum connection can be made on this particular server.
+##### Forwarded HTTP Version
+
+This option allows user to select HTTP version while forwarding request to the backend server.
+
+##### **Slow Start**
+ This option allows users to select the graceful start time for newly added servers.
+
+##### **Max Connection**
+
+The user can define how many maximum connections can be made on this particular server.

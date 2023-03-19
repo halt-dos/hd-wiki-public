@@ -11,15 +11,17 @@ It helps in stopping different kinds of HTTP flood attacks.
 
 The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web and is used to load web pages using hypertext links. HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a client machine making a request to a server, which then sends a response message.
 
-![http_settings](\img\ddos\v6\docs\ddos14.png)
+![http_settings](\img\ddos\v7\docs\http.png)
 
-### **How to go to HTTP:**
+### How to use
 
-1. **Stack > Resource > DDoS > Profile > Application > HTTP**
+1. Go to **Apps > DDoS > Profile > Application Layer**
 
-2. Configure the settings 
+2. Scroll to **HTTP Settings**
 
-3. Click on Save Changes.
+3. Configure the settings.
+
+4. Click on **Save Changes**.
 
 | Settings                              | Accepted Values | Default |
 |---------------------------------------|-----------------|---------|

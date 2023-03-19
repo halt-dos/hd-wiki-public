@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 2
 ---
 
 # Client Certificates
@@ -8,14 +8,14 @@ sidebar_position: 5
 
 Haltdos allows users to set the client certificate to customize connectivity. Users can add certificates as per need.
 
-![client certificates](/img/platform/v6/docs/client_cert1.png)
+![client certificates](/img/platform/v7/docs/client_certi_newui.png)
 
 ### How to Use:
 
 1. Go to **Stack > Resources  > Client Certificate**.
-2. Select the Add Client Certificates.
+2. Select the **Add Client Certificates.**
 3. Configure your settings. 
-4. Click Save Changes.
+4. Click **Save Changes.**
 
 | SETTINGS    | ACCEPTED VALUES | DEFAULT |
 |-------------|-----------------|---------|

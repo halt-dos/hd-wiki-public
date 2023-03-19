@@ -4,17 +4,17 @@ sidebar_position: 9
 # Advanced Bot
 User can specify advanced bot settings on this page for Listener
 
-## Overview
+---
+
+### Overview
 Bot Protection helps you quickly determine, manage, and mitigate automated requests. You can configure Advance bot settings in order to ensure advanced bot protection.
 
-![advancedbot](/img/waf/v6/docs/advancedbot.png)
+![advancedbot](/img/waf/v7/docs/advancebot1.png)
 
-## How to Use:
-1.Go to **WAF** > **Listeners** > **Advanced Settings** > **Bot Settings**
-
-2.Configure your settings
-
-3.Click **Save Changes**
+### How to Use:
+1. Go to **WAF** > **Listeners** > **Advanced Settings** > **Bot Settings**
+2. Configure your settings
+3. Click **Save Changes**
 
 | Parameter | Accepted Values | Default
 | ----------- | ----------- | -------- |
@@ -34,69 +34,70 @@ Tarpit Delay|Integer|5
 Tarpit Duration|Integer|300
 Fingerprint Expiry|Integer|86400|
 
-![advancedbot](/img/waf/v6/docs/advancedbotsetting.png)
+![advancedbot](/img/waf/v7/docs/advancebot2.png)
 
-## Description 
+### Description 
 
-1.**Token Request URI**:
+##### **Token Request URI**
 
 Users can specify the URI for requesting a token. By default, it is /__verify/token/.
 
-2.**Token Rotation Duration**:
+##### **Token Rotation Duration**
 
 Users can specify the duration after which the token should be rotated. By default, it is 86400 seconds.
 
-3.**Token Error Margin Duration**:
+##### **Token Error Margin Duration**
 
 Users can specify the duration for error margin for validating token. By default, it is 60 seconds.
 
-4.**Token Name**:
+##### **Token Name**
 
 Users can specify the name of the token to be validated. By default, it is X-Bot-Token.
 
-5.**Allow Rooted Devices**:
+##### **Allow Rooted Devices**
 
-Users can specifyenable it to allow rooted devices.
+Users can specify enable it to allow rooted devices.
 
-6.**Allow Emulator:**
+##### **Allow Emulator**
 Enable it to allow emulator devices.
 
 
-7.**Bot Token Location**:
+##### **Bot Token Location**
 
-Users can specifythe location where the token is expected. By default, it is HEADER.
+Users can specify the location where the token is expected. By default, it is HEADER.
 
-8.**Token Encryption Key**:
+##### **Token Encryption Key**
 
 Users can specify the encryption key which will be used for token validation. By default, it is blank. To generate, click on Generate button and To download, click on the Download button.
 
-9.**CSRF Cookie Expiry**:
+##### **CSRF Cookie Expiry**
 
 Users can specify the expiry time of the CSRF cookie in seconds. Set 0 to disable CSRF. This value is dependent on the profile CSRF setting that should be enabled to perform mitigation.
 
-10.**CSRF Token Validity**:
+##### **CSRF Token Validity**
 
 Users can specify the grace time period in seconds for which CSRF token will be allowed.
 
-11.**Captcha Failed Threshold**:
+##### **Captcha Failed Threshold**
 
 Users can specify the captcha failed threshold count.
 
-12.**Captcha Unanswered Threshold**:
+##### **Captcha Unanswered Threshold**
 
 Users can specify the captcha unanswered threshold.
 
-13.**Tarpit Delay**:
+##### **Tarpit Delay**
 
-Users can specify the trapit delay.
+Users can specify the tarpit delay.
 
-14.**Tarpit Duration**:
+##### **Tarpit Duration**
 
-Users can specify the trapit duration.
+Users can specify the tarpit duration.
 
-**Note** : 
-Tarpit delay and tarpit duration are two different values. for example, user has created a rule of rate limiting of 5mbps and resultant it'll tarpit the end user IP for the tarpit delay of 5 seconds and tarpit duration is set to 10 minutes. it means the end user IP will be get a tarpit delay for 5 seconds for next 10 minutes. After the time end user's IP will be free from tarpit delay and will start getting normal reponse from WAF device.
+:::note 
+Tarpit delay and tarpit duration are two different values. For example, user has created a rule of rate limiting of 5mbps and resultant it'll tarpit the end user IP for the tarpit delay of 5 seconds and tarpit duration is set to 10 minutes. It means the end user IP will be got a tarpit delay for 5 seconds for next 10 minutes. After the time end user's IP will be free from tarpit delay and will start getting normal response from WAF device.
+:::
 
-15.**Fingerprint Expiry**:
+##### **Fingerprint Expiry**
 
 Specify the duration after which fingerprinting will be re-evaluated. By default, it is 86400 seconds.

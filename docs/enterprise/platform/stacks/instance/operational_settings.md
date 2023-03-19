@@ -24,21 +24,22 @@ Haltdos platform supports multiple modes of operations of various Apps depending
     - Netflow / IPFIX / SFlow
     - Parsing access logs
 
-![Operational setting](/img/platform/v6/docs/operational_settings1.png)
+![Operational setting](/img/platform/v7/docs/operational_img.png)
 
 ### How to Use:
 
-1. Go to **Stack > Instances > Instance > Operational**
+1. Go to **Stack > Instances  > Operational**
 2. Configure your settings
-3. Click Save
+3. Click **Save Changes**
 
-| Enable Bypass    | Enable Hardware Bypass on instance   | ENABLED / DISABLED              | DISABLED |
+| PARAMETERS      | DESCRIPTION                                     | ACCEPTED VALUES | DEFAULT         |
 |------------------|--------------------------------------|---------------------------------|----------|
-| Operational Mode | Choose the mode of operation         | LAYER 3 / LAYER 2
-/ OFFLINE     | LAYER 3  |
-| Management IP    | Configure instance management IP     | Integer                         | Blank    |
-| Offline Mode     | Choose the mode of offline operation | SPAN / NETFLOW / 
-SFLOW / IPFIX | SPAN     |
+| Management IP | Management IP address         | Integer  | Blank
+| SSL Engine     | Engine to be used for SSL Offloading  | Drop Down | Software Engine 
+| Operational Mode    | Mode of operation     | Drop Don | Inline Mode    |
+| CPU Affinity     | CPU affinity for opimization | Integer |Blank | 
+| Huge Pages     | Configure Huge Pages for optimization | Integer |Blank | 
+
 
 **High Watermark Threshold**
 

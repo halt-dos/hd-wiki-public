@@ -10,7 +10,7 @@ Load Balancing Rule & Settings
 
 A load balancer rule is used to define how incoming traffic is distributed to all outgoing interfaces.  These rules settings help you to enable/disable the load balancing rule by specifying the rule name, message, priority, Along with various rule conditions such as Outgoing Interface, Source IP, Destination IP, Protocol, and Criteria.
 
-![load_balancing](/img/llb/v6/docs/llb9.png)
+![load_balancing](/img/llb/v7/docs/loadbalancing.png)
 
 ### **How to Use:**
 

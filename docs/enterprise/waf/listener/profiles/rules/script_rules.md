@@ -8,13 +8,12 @@ Developer Script strategies will be implemented as a developer script rule. This
    
 For the given URI, the developer script will be executed and if the condition matches the rule the appropriate action will be taken as per the rule. User can define their own logic which may not be present in the WAF rules and thus could mitigate the specific attack.
 
-![Script Rule](/img/waf/v6/docs/Script_rule.png)
+![Script Rule](/img/waf/v7/docs/script_rule.png)
    
 The developer script defines two phases:
 1. **Request Phase**: This developer script is executed before sending the request to web-servers.
-2. **Response Phase**: This developer script is executed after getting the response from the webservers and before reaching the web client.  
+2. **Response Phase**: This developer script is executed after getting the response from the web servers and before reaching the web client.  
 
-![Script Rule](/img/waf/v6/docs/script_rule2.png)
 The script for this rule is written in Lua scripting language. In this, we define the Lua script which will be executed for the required phase. In order to perform the action, the script must return 1 (Numeric) as a value. We also provide some utility methods such as MD5, Base64 encoding, and much more. We can access the Nginx variable too.  
 
 If somehow the script faces a compilation error, the script will fail to perform an action and the request will be processed.  
@@ -25,9 +24,9 @@ The behavior of the script may vary for the following configurations:
 3. If multiple scripts are matched for the request URI, then the first matched script will be executed and other scripts will be ignored.
 
 ### How to Use:
-1. Go to **WAF** > **Listeners** >  **Profiles** > **Rules** > **Developer Script Rules**  
+1. Go to **WAF** > **Listeners** > **Profiles** > **Rules** > **Developer Script Rules**  
 2. Click on Add Rule and set relevant parameters.  
-3. Click on Save Changes.  
+3. Click on **Save Changes**.  
 
 | Parameters       | Accepted value |  Default      |
 |------------------|----------------|---------------|
@@ -42,30 +41,29 @@ The behavior of the script may vary for the following configurations:
    
 ### Description 
 
-#### Rule Name
-Users are allowe to specify the rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
+##### **Rule Name**
+Users are allowed to specify the rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
-#### Rule Message
+##### **Rule Message**
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
 
-#### Rule Priority
+##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
 
-#### URI
+##### **URI**
 Users are allowed to specify the URI on which the tamper rule will be applied.
 
-#### Method
+##### **Method**
 Users are allowed to select the HTTP method for the rule to extract when matched with the request.
 
-#### Evaluation Phase
+##### **Evaluation Phase**
 Users are allowed to select the evaluation phase for the rule i.e. Request or Response.
 
-#### Rule Action 
-
+##### **Rule Action**
 The following actions are available to the User:  
 
 1. **NO ACTION** - If the request satisfies the rule, then no action will be performed on the current request.
-2. **DROP  & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated but the request will not be allowed through the WAF.
+2. **DROP & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated but the request will not be allowed through the WAF.
 3. **RECORD REQUEST** - An event is generated whenever the Request satisfies the Rule, but whenever the request passes through other rules its events are logged by Haltdos.
 4. **BYPASS REQUEST** - If the Request tests positive for the rule, no other rule is tested and the Request will be allowed through the WAF.
 5. **REDIRECT** - If the request satisfies the rule, then the user is redirected to another page.

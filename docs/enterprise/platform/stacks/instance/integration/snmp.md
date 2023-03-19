@@ -18,88 +18,78 @@ SNMP relies on the concept of an MIB to organize how information about device me
 
 SNMP uses a blend of pull and push communications between network devices and the network management system. Haltdos devices that communicate through SNMP respond to it by delivering protocol data units, commonly known as SNMP GET requests. All of these communications are recorded, and network monitoring software uses them to obtain SNMP data. Network admins can track the data value they specify using these queries.
 
-![snmp](/img/platform/v6/docs/snmp1.png)
+![snmp](/img/platform/v7/docs/snmp.png)
 
 ### How to Use:
 
 1. Go to **Stack > Instances > (Select Instance) > Network > SNMP**
 2. Configure your settings.
-3. Click on save changes.
+3. Click on **Save changes**.
 
 | SETTINGS              | ACCEPTED VALUES | DEFAULT              |
 |-----------------------|-----------------|----------------------|
-| SNMP Client Name      | String          | Blank                |
-| SNMP Version          | Drop Down       | SNMPv1               |
-| SNMP Port             | Integer         | 161                  |
-| SNMP  Community       | String          | default              |
-| Enable SNMP Trap      | Boolean         | False                |
+| SNMP  Name      | String          | Blank                |
+| System Description          | String       | Blank               |
+| System Location         | String       | Blank               |
+| System Contact          | String       | Blank               |
+| Layer4 Protocol         | Drop Down       | Blank               |
+| Agent Port             | Integer         | 161                  |
+| Agent Address            | Integer         | Blank                |
+| Enable Traps      | Boolean         | False                |
+| Trap Username / Community             | Drop Down       | Link Detection       |
 | Manager Address       | Integer         | Blank                |
 | Manager Port          | Integer         | 162                  |
-| Trap Type             | Drop Down       | Link Detection       |
-| SNMP Username         | String          | Blank                |
-| SNMP Security Level   | Drop Down       | Auth but no Privacy  |
-| SNMP Auth Protocol    | Drop Down       | MD5                  |
-| SNMP Auth Password    | String          | Blank                |
-| SNMP Privacy Protocol | Drop Down       | DES                  |
-| SNMP Privacy Password | String          | Blank                |
 
 #### Description
 
-**SNMP Client Name** 
+**SNMP Name** 
 
 User can specify the SNMP client name.
 
-**SNMP Version**
+**System Description** 
 
-User can select the SNMP version.
+User can describe about the SNMP Machine
 
-**SNMP Port**
+**System Location**
 
-User can specify the SNMP port number used for communication.
+User can enter the location of the Machine.
 
-**SNMP Commnunity**
-Users can specify the SNMP community details. SNMP community details only need in case of SNMP v1 and v2.
+**System Contact**
 
-**Enable SNMP Trap**
+User can specify contact information for the machine
 
-Users can enable or disable to send SNMP Trap data. SNMP Trap is an asynchronous alert sent by the agent to the SNMP manager to indicate a significant event, such as an error or failure, has occurred.
+**Layer4 Protocol**
+
+Users can select underlying protocol for SNMP Communication
+
+**Agent Port**
+
+User can select SNMP agent port number for SNMP communication
+
+**Agent Address**
+
+User select SNMP agent IP addresses for SNMP communication
+
+**Enable Traps**
+
+Users can enable or disable SNMP traps
+
+**Trap Username / Community**
+
+User can select the username / community to use when sending traps
 
 **Manager Address**
 
-Users can specify the SNMP manager address. When any event occurs, SNMP Trap alert will be sent to this manager IP address.
+Users can enter SNMP monitor IP address.
 
 **Manager Port**
 
-Users can specify the SNMP manager port number. By default the port used for communution to manager is 162.
+Users can enter SNMP monitor port address.
 
-**Trap Type**
 
-User can specify the SNMP trap type.
 
-**SNMP Username**
 
-User can specify the SNMP Username. 
 
-**SNMP Security Level**
 
-Users can specify the SNMP security level. Users can select any from following three options.
 
-- No Auth and No Privacy
-- Auth but No Privacy
-- Auth and Privacy
 
-**SNMP Auth Protocol**
-
-Users can specify the authentication protocol used to communicate between SNMP manager and agent.
-
-**SNMP Auth Password**
-
-Users can specify the auth password used to communicate between SNMP manager and agent.
-
-**SNMP Privacy Protocol**
-
-Users can specify the privacy protocol used to communicate between SNMP manager and agent.
-
-**SNMP Privacy Password**
-
-Users can specify the password used to communicate between SNMP manager and agent.

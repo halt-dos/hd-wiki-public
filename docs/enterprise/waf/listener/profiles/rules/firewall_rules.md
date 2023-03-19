@@ -5,7 +5,7 @@ sidebar_position: 3
 
 ### Overview
  A Firewall Rule is used to set up regulations on a particular domain. When a request is made to that domain, the WAF checks for the violation of a rule and carries out the appropriate action that is configured by the User.
-![Firewall Rule](/img/waf/v6/docs/firewall_rules.png)
+![Firewall Rule](/img/waf/v7/docs/firewallrule.png)
 
 The following actions are available to the User :
 1. **DROP  & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated but the request will not be allowed through the WAF.
@@ -22,7 +22,7 @@ The following actions are available to the User :
 12. **SKIP LEARNING** - If the request satisfies the rule, then no learning will be performed on the current request.
 13. **SEND EMPTY RESPONSE** - If the request satisfies the rule, the end-user will get empty response / blank page in return.
 
-![Firewall Condition](/img/waf/v6/docs/firewall_rules_condition.png)
+![Firewall Condition](/img/waf/v7/docs/firewallrule1.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listener** >  **Profiles** > **Rules** > **Firewall Rules**
@@ -43,43 +43,44 @@ The following actions are available to the User :
 | Match Condition | Drop-Down      | Pattern Exists |
 | Match Value     | String         | Blank          |
 
+  
 
 ### Description
 
-#### Rule Name
+##### **Rule Name**
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
-#### Rule Message
+##### **Rule Message**
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
 
-#### Rule Priority
+##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
 
-#### URI
+##### **URI**
 Users are allowed to specify the URI. Specify the URI on which the firewall rule will be applied.
 
-#### Method
+##### **Method**
 Users are allowed to specify the HTTP method on which the rule will be applied i.e. All, GET, POST, PUT, DELETE, HEAD, OPTIONS.
 
-#### Rule Action
+##### **Rule Action**
 Users are allowed to specify the action to be taken for the request matched i.e. No Action, Drop, Record, Bypass, Redirect, Temporary Blacklist, Send Challenge, Skip Learning.
 
-#### Match Condition
+##### **Match Condition**
 This drop-down allows to set the match condition i.e. Pattern Match or Pattern Not Match for the request.
 
-#### Match Pattern
+##### **Match Pattern**
 Users are allowed to specify the keyword to match when the rule is invoked. The entered value can be a regex pattern.
 
-#### Find Location
+##### **Find Location**
 Users can define the source location where this condition needs to be applied.
 
-#### Variable
+##### **Variable**
 Users can select the variable.
 
-#### Match Condition
+##### **Match Condition**
 The user can define the match condition for the parameter and match value.
 
-#### Match Value
+##### **Match Value**
 The user can define what value needs to be matched with the match condition.
 
 

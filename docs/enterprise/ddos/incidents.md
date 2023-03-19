@@ -8,13 +8,13 @@ sidebar_position: 6
 
 On the incident page, users can check what packets are dropped by haltdos mitigation solution.
 
-![](\img\ddos\v6\docs\ddos25.png)
+![incidents](\img\ddos\v7\docs\incidents.png)
 
-### **How to Use**
+### How to Use
 
-1. **Stack > Resource > DDoS > Incident**
+1. Go to **Apps > DDoS > Incident**
 
-Users can customize the date range for the incident details & check incident details about specific network profiles. Users can see the following incident details. 
+Users can customize the date range for the incident details & check incident details about specific network profiles. Users can see the following incident details.  
 
 | Fields     |
 |------------|
@@ -23,8 +23,8 @@ Users can customize the date range for the incident details & check incident det
 | RULE       |
 | SRC IP     |
 | SRC PORT   |
-| DEST IP    |
-| DEST PORT  |
+| DST IP     |
+| DST PORT   |
 | PROTOCOL   |
 | FLAG       |
 | DIRECTION  |
