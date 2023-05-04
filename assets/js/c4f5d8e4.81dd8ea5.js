@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhaltdos_wiki=self.webpackChunkhaltdos_wiki||[]).push([[64195],{1257:(t,e,i)=>{i.r(e),i.d(e,{default:()=>s});var a=i(67294),l=i(16550);function s(){return a.createElement(l.l_,{to:"/haltdos-wiki/intro"})}}}]);
