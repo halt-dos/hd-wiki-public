@@ -23,7 +23,8 @@ const CustomDocItem = props => {
     <div
       className={
         props.location.pathname === `/v6/intro` || props.location.pathname === `/v6/enterprise` || props.location.pathname === `/v6/community` ||
-        props.location.pathname === `/intro` || props.location.pathname === `/enterprise` || props.location.pathname === `/community`
+        props.location.pathname === `/intro` || props.location.pathname === `/enterprise` || props.location.pathname === `/community` ||
+        props.location.pathname === `/haltdos-wiki/intro` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community`
           ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
           : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
       }
@@ -32,7 +33,8 @@ const CustomDocItem = props => {
       <div
         className={
           props.location.pathname === `/v6/intro` || props.location.pathname === `/v6/enterprise` || props.location.pathname === `/v6/community` ||
-        props.location.pathname === `/intro` || props.location.pathname === `/enterprise` || props.location.pathname === `/community`
+        props.location.pathname === `/intro` || props.location.pathname === `/enterprise` || props.location.pathname === `/community` ||
+        props.location.pathname === `/haltdos-wiki/intro` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community`
             ? `custom_doc_item_footer-x-wide`
             : styles['custom_doc_item_footer']
         }
