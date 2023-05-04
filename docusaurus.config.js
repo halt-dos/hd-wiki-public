@@ -8,10 +8,11 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo/icon_light.ico',
-  url: 'https://docs.haltdos.com',
+  url: 'https://halt-dos.github.io',
   baseUrl: '/',
   organizationName: 'haltdos',
   projectName: 'haltdos-wiki',
+
   webpack: {
     jsLoader: (isServer) => ({
       loader: require.resolve('swc-loader'),
@@ -29,11 +30,6 @@ const config = {
       },
     }),
   },
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-  
   presets: [
     [
       'classic',

@@ -53,16 +53,24 @@
 }
 
 .dark-theme-logo {
+  margin-top: 5%;
   display: none;
+}
+
+.light-theme-logo {
+  margin-top: 5%;
+  display: initial;
 }
 
 html[data-theme='dark'] {
   .custom-footer-wrapper {
     .dark-theme-logo {
       display: initial;
+      margin-top: 5%;
     }
     .light-theme-logo {
       display: none;
+      margin-top: 5%;
     }
   }
 
@@ -70,6 +78,7 @@ html[data-theme='dark'] {
     display: initial;
     margin-top: 5%;
   }
+
   .light-theme-logo {
     display: none;
     margin-top: 5%;
