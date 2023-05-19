@@ -28,11 +28,11 @@ export default function NotFound() {
                 alt='404'
               />
               <div>
-                <h1>
+                <h3>
                   <Translate id='theme.NotFound.title' description='The title of the 404 page'>
                     The URL entered doesn't exist in our docs, please go back to home page.
                   </Translate>
-                </h1>
+                </h3>
               </div>
             </div>
           </div>

@@ -18,10 +18,10 @@ sidebar_label: Features
     Users can configure WAF to determine, manage and mitigate automated requests / bot attacks. Enterprise can specify the action to take against this malicious traffic.
 
 - #### **Built-in Signatures**  
-    Haltdos CE Signatures offer protection from many types of attacks for Web Service/API including OWASP top 10 as well as it can help users to specify the behavior for their application.  
+    Haltdos PE Signatures offer protection from many types of attacks for Web Service/API including OWASP top 10 as well as it can help users to specify the behavior for their application.  
 
 - #### **Custom Signatures**  
-    Users can configure Haltdos CE by creating rules such as regulations on particular requests, rate limiting, redirecting requests to another site etc. 
+    Users can configure Haltdos PE by creating rules such as regulations on particular requests, rate limiting, redirecting requests to another site etc. 
 
 - #### **Load Balancing**  
-    Load balancing can be used to optimize resource utilization, maximize throughput, reduce latency, and ensure fault‑tolerant configurations. It reduces load on any single server eliminating a single point of failure. Haltdos CE supports for multiple algorithms to distribute traffic across server farms.  
+    Load balancing can be used to optimize resource utilization, maximize throughput, reduce latency, and ensure fault‑tolerant configurations. It reduces load on any single server eliminating a single point of failure. Haltdos PE supports for multiple algorithms to distribute traffic across server farms.  

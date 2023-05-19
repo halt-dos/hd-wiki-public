@@ -28,7 +28,7 @@ From time to time, Haltdos pushes updates consisting of performance, security, f
 - **Software Upgrades**: These are major releases that will require OEM support for upgradation and installation
 
 
-Steps to update Solutions:
+### Steps to update Solutions:
 
 :::note
 1. All updates are staggered deployments and should be carried out during off-hours to ensure smooth event-less update.
@@ -37,7 +37,7 @@ Steps to update Solutions:
 
 | PARAMETERS       | DESCRIPTION                                        | VALUES       |
 |------------------|----------------------------------------------------|--------------|
-| License          | Displays the license                               | Alphanumeric |
+| License          | Displays the License ID                            | Alphanumeric |
+| Build Version    | Displays the current Build version of the instance | Integer      |
 | Intel Version    | Displays the current Intel version of the instance | Integer      |
-| Binary Version   | Displays the current Binary version of the instance| Integer      |
 | Check For Update | Click on the button to check for an update         | Button       |
