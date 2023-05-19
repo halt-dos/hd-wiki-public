@@ -32,6 +32,19 @@ const config = {
   },
   presets: [
     [
+      'redocusaurus',
+      {
+        specs: [{
+          route: '/api',
+          spec: 'api/api-docs.json',
+        }],
+        theme: {
+          // Change with your site colors
+          primaryColor: '#1890ff',
+        },
+      }
+    ],
+    [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
