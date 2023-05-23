@@ -15,7 +15,7 @@ Haltdos Professional WAF currently supports the following OS:
 
 ## Minimum System Requirements
 
-Haltdos Professional WAF currently supports the following OS:
+Haltdos Professional WAF currently supports the following mininum system requirements:
 
 - **Minimum 2GB RAM**  
 - **Minimum 2GB Disk Space**  
