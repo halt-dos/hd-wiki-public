@@ -13,6 +13,14 @@ As many applications are running over HTTPS, for the WAF / ADC solution to inspe
 
 ![SSL Settings](/img/pro-waf/docs/v7/ssl_settings.png)
 
+| Parameters            | Accepted Values | Default      |
+|-----------------------|-----------------|--------------|
+| Enable SSL Offloading | Boolean         | Disabled     |
+| SSL Certificate       | Drop-Down       | Blank        |
+| SSL Cipher Suites     | Drop-Down       | Intermediate |
+| SSL Session Caching   | Decimal         | 10           |
+| SSL Session Timeout   | Decimal         | 5            |
+
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.
@@ -20,15 +28,7 @@ As many applications are running over HTTPS, for the WAF / ADC solution to inspe
 3. Configure Your Settings 
 4. Click **Save Changes**. 
 
-#### Encrypt Traffic to Upstream
-
-This specifies WAF should re-encrypt traffic before sending it to the back-end web application. 
-
-:::note
-**We can listen to non-HTTPS traffic and send it as HTTPS traffic to the back end server.**
-:::
-
-
+### **Description**
 
 ##### **Enable SSL Offloading**
 This option specifies if the WAF should enable HTTPS traffic for the configured website.

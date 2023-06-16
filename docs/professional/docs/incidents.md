@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 ---
+
 # Incidents
    
 ---
@@ -11,7 +12,7 @@ Haltdos solutions provide real-time alerts for various types of incidents from a
 
 #### Incident Page
 
-All incidents are listed on the Incidents Page. Filters are available to view incidents of a specific incident type. Each incident is identified by a unique Incident ID which can also be used for searching a specific incidents on the Incidents Page. All Incidents are listed in decreasing chronological order.
+All incidents are listed on the Incidents Page. Filters are available to view incidents of a specific incident type. Each incident is identified by a unique Incident ID which can also be used for searching a specific incident on the Incidents Page. All Incidents are listed in decreasing chronological order.
 
 #### Incident Details
 
@@ -19,14 +20,14 @@ Depending upon the type of incidents, clicking on any Incident shows details of 
 
 Further to detailing the incident through Incidents, users can perform various actions. For example, virtual patching functionality is implemented through actions in Incident Details. Virtual Patching is the ability to create custom WAF rules from the result of a security scan.
 
-![incidents](/img/pro-waf/docs/v7/incidents.png)
+![Incidents](/img/pro-waf/docs/v7/incidents.png)
 
 #### Type of Incidents  
 - **Drop Incidents**
 
 - **Recorded Incidents**
 
-- **Server Errors**
+- **Server Errors**WAF
 
 - **Health Incidents**
 

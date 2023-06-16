@@ -72,7 +72,7 @@ To upload custom certificates, follow the steps below:
 Users are allowed to specify the name for the certification.
 
 **Certificate Domain**  
-Users are allowed to specify the domain name fo the certifiate.
+Users are allowed to specify the domain name of the certificate.
 
 **App Option**  
 Users are allowed to select the certificate generate options.
