@@ -49,7 +49,9 @@ You can access Haltdos Professional GUI from https://IP:9000.
 
 ### Step 3: License Registration
 
-Next, after verification, to start using our Professional WAF Solution, you will require a License to enable the WAF Solution.
+Next, after verification, to start using our Professional WAF Solution, you will require a License to enable the WAF Solution. 
+
+Haltdos Professional WAF, unlike Community Edition, is a Freemium Product.
 
 Fill in the details to request for Haltdos Professional WAF license. License verification code will be sent via mail. Check your spam / junk if you cannot find the mail in inbox.
 
