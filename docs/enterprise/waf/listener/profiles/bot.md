@@ -76,7 +76,7 @@ This field specifies the maximum allowed Bot request burst from a single client 
     Default: 50  
 
 
-:::note
+:::note Note
 Bot Request Burst must be greater than or equal to Bot Request Rate
 :::
 
@@ -126,6 +126,6 @@ Perform token-based validation. API requests will be authenticated using tokens 
 On the basis of application configuration, the required challenge will be thrown on the requests.
 
 
-:::note
+:::note Note
 User can configure Advance Bot Settings in the Advanced settings for the listener by using the link: [Advance Bot Settings](../advancedbot.md)  
 :::

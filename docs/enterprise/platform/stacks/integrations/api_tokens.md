@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # API Tokens 
 
-### Generating API tokens for enabling API functionality
+Generating API tokens for enabling API functionality
 
 ---
 

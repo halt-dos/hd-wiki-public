@@ -12,7 +12,7 @@ Haltdos solutions comes with Haltdos Threat Steam which provides periodic threat
 
 Custom threat intel can be pulled into Haltdos appliances from three sources: pull APIs, FTP or File upload. This section explains various options to include threat intel feeds into Haltdos products.
 
-:::note
+:::note Note
 Only IPv4/IPv6 addresses / prefix having poor reputation is currently supported.
 :::
 

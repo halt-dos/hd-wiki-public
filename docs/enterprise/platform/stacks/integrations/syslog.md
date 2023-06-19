@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Syslog
 
-### Integration with Syslog Server for monitoring Haltdos appliances
+Integration with Syslog Server for monitoring Haltdos appliances
 
 ---
 

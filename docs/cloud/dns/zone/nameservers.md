@@ -27,7 +27,7 @@ If you would like to change your DNS Provider over Haltdos DNS, read more to lea
 7. Paste the new Name Servers to your current registrar.
 8. Click Save.
 
-:::note 
+:::note Note 
 It will take up to 24 hours to propagate.
 If you find any DNS provider instructions need an update, please notify our 24x7 Support Team.
 :::

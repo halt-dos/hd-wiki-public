@@ -24,7 +24,7 @@ const CustomDocItem = props => {
       className={
         props.location.pathname === `/v6/intro` || props.location.pathname === `/v6/enterprise` || props.location.pathname === `/v6/community` ||
         props.location.pathname === `/intro` || props.location.pathname === `/enterprise` || props.location.pathname === `/community` ||
-        props.location.pathname === `/haltdos-wiki/intro` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community` ||
+        props.location.pathname === `/haltdos-wiki/intro` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community` || props.location.pathname === `/haltdos-wiki/professional` ||
         props.location.pathname === `/haltdos-wiki/v6/intro` || props.location.pathname === `/haltdos-wiki/v6/enterprise` || props.location.pathname === `/haltdos-wiki/v6/community`
           ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
           : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`

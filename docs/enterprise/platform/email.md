@@ -10,7 +10,7 @@ Integration with E-Mail Service
 
 Haltdos Platform supports integration with Email Services via SMTP to send alerts and notifications to registered users. This section describes various SMTP settings for the integration of Haltdos solutions with your existing email provider.
 
-:::note
+:::note Note
 It is recommended to integrate Haltdos solutions with SMTP for receiving timely alerts and notifications.
 :::
 

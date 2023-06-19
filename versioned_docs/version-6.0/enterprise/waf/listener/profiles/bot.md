@@ -77,7 +77,7 @@ This field specifies the maximum allowed Bot request burst from a single client 
     Default: 50  
 
   
-:::note
+:::note Note
 Bot Request Burst must be greater than or equal to Bot Request Rate
 :::
 

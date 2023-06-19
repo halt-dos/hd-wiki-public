@@ -9,7 +9,7 @@ Haltdos  SLB Cache Pools are the logical repositories of cache items. They perfo
 ---
 
 
-:::note
+:::note Note
 Cache Pool is only part of Haltdos SLB.
 :::
 

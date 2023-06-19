@@ -94,7 +94,7 @@ Users can specify the tarpit delay.
 
 Users can specify the tarpit duration.
 
-:::note 
+:::note Note 
 Tarpit delay and tarpit duration are two different values. For example, user has created a rule of rate limiting of 5mbps and resultant it'll tarpit the end user IP for the tarpit delay of 5 seconds and tarpit duration is set to 10 minutes. It means the end user IP will be got a tarpit delay for 5 seconds for next 10 minutes. After the time end user's IP will be free from tarpit delay and will start getting normal response from WAF device.
 :::
 

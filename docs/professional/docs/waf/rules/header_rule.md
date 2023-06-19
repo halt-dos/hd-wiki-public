@@ -57,7 +57,7 @@ If the action is **REMOVE**, then the specified parameter is removed.
 
 If the action is **OVERWRITE**, then two other fields are required first is **Search Pattern** (string/regex that should match the existing value) and **Replace** (the string that should be overwritten). We can capture string from the PCRE capturing group using position with a prefix of '$'. 
 
-:::note
+:::note Note
  In order to escape the dollar($) character in the replace, add the dollar symbol twice.
 :::
 

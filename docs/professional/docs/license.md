@@ -30,7 +30,7 @@ From time to time, Haltdos pushes updates consisting of performance, security, f
 
 ### Steps to update Solutions:
 
-:::note
+:::note Note
 1. All updates are staggered deployments and should be carried out during off-hours to ensure smooth event-less update.
 2. As always, Haltdos support is there to help. We recommend raising ticket to Haltdos support for assisting you in installation and commissioning of the latest patches in your Haltdos appliances.
 :::

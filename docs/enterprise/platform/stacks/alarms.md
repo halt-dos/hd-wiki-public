@@ -16,7 +16,8 @@ Alarms in Haltdos Platform is a mechanism for raising alerts to the configured u
 
 1. Go to **Stack** > **Alarms**
 2. Configure your settings
-3. Click **Save Changes**
+3. Click **Save Changes**  
+  
 
 | PARAMETERS            | DESCRIPTION                                                                | ACCEPTED VALUES                      | DEFAULT      |
 |-----------------------|----------------------------------------------------------------------------|--------------------------------------|--------------|
@@ -29,6 +30,6 @@ Alarms in Haltdos Platform is a mechanism for raising alerts to the configured u
 | Resource Filter       | Select the resource : Listener, Network, App as desired                    | List of configured resources         | EMPTY        |
 | Enabled Reporting     | User want to report the alarm when it is triggered on configured mail      | Boolean      | Disable |
 
-
-
+  
+  
 Haltdos uses anomaly based alarms to generate alerts using machine learning and uses simple limit based validations for Threshold based alarms. Depending upon use case, the desired alarms can be created for managing network, zones and individual applications.

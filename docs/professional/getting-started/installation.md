@@ -3,37 +3,27 @@ sidebar_position: 1
 sidebar_label: Installation
 ---
 
-# Installation
+# Haltdos PE WAF Setup
 
-In this step, you'll pull Haltdos packages from the official software repository. SSH to your server and run the commands below
+### Step 1: Installation
 
-```
-$ sudo apt-get update
-```
+Download and install Haltdos Professional WAF edition using the installation script
 
 ```
-$ sudo apt-get install -y curl
-```
-
-### Step 1: Installing 
-
-Download and install the latest Haltdos Community WAF edition installation script
-
-```
-$ curl -s -k -o setup.sh https://binary.haltdos.com/community/waf/setup.sh
+$ curl -s -k -o setup.sh https://binary.haltdos.com/professional/waf/setup.sh
 ```
 
 ```
-$ sudo chmod +x setup.sh
+$ chmod +x setup.sh
 ```
 
 ```
-$ sudo bash setup.sh
+$ sudo ./setup
 ```
 
-The script will automatically download and prepare the system to run Haltdos Community WAF.
+The script will automatically download and prepare the system to run Haltdos Professional WAF.
 
-### Step 2: Verification
+### Step 2: Setup Verification
 
 After successful installation, you can verify the services by running the commands below:
 
@@ -51,7 +41,7 @@ $ sudo service offloader status
 ![haltdos](/img/ce-waf/docs/status/offloader.png)
 
 <br />
-You can access Haltdos Community GUI from https://IP:9000. 
+You can access Haltdos Professional GUI from https://IP:9000. 
 <br /><br />
 
 ![haltdos](/img/ce-waf/docs/setup/setup.png)  
@@ -59,21 +49,19 @@ You can access Haltdos Community GUI from https://IP:9000.
 
 ### Step 3: License Registration
 
-Next, after verification, to start using our Community WAF Solution, you will require a License to enable the WAF Solution.
+Next, after verification, to start using our Professional WAF Solution, you will require a License to enable the WAF Solution.
 
-Fill in the details to request for Haltdos Community WAF license. License verification code will be sent via mail. Check your spam / junk if you cannot find the mail in inbox.
+Fill in the details to request for Haltdos Professional WAF license. License verification code will be sent via mail. Check your spam / junk if you cannot find the mail in inbox.
 
-<br />
-Post OTP Verification, your community WAF license will be activated.
-
+Post OTP Verification, your Professional WAF license will be activated.  
 
 ![signup](/img/ce-waf/docs/setup/otp.png)
 
-You have successfully subscribed to Haltdos Community WAF.
+You have successfully subscribed to Haltdos Professional WAF.
 
-### Step 4: Accesing Haltdos Community UI
+### Step 4: Accesing Haltdos Professional GUI
 
-Login in to Haltdos Community WAF UI with the credentials provided during the sign-up.
+Login in to Haltdos Professional GUI with the credentials provided during the sign-up.
 
 ![login](/img/ce-waf/docs/setup/login.png)
 

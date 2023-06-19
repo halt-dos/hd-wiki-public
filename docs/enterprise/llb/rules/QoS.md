@@ -88,6 +88,6 @@ It specifies the request rate for the page. The limit rate specified will valida
 
 It specifies the traffic burst rate for the page. The burst rate specified will validate the total number of requests received. 
 
-:::note
+:::note Note
 Always traffic burst must be greater than or equal to traffic rate.
 :::

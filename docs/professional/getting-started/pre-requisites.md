@@ -11,21 +11,20 @@ To follow along the installation of Haltdos Community WAF and getting started, y
 
 Haltdos Community WAF currently supports the following OS:
 
-- **Ubuntu 18**
 - **Ubuntu 20**
 - **Ubuntu 22**
 - **Debian 11**
 
 
-## Minimum System Requirements
+### System Requirements
 
-Haltdos Community WAF currently supports the following OS:
+To run Haltdos Professional WAF, Haltdos recommends that the server must atleast have minimum specs requirements:
 
 - **Minimum 2GB RAM**  
-- **Minimum 2GB Disk Space**  
+- **Minimum 60GB Disk Space**  [Haltdos PE WAF will take up atleast 500MB, once installed!]
 - **Atleast 2 vCPU Cores**
 
-:::note
+:::note Note
 There is no VM size restriction. The throughput increases with higher system configuration.  
-Software can be deployed on **VM**, **Docker** or **Hardware**.
+Software can be deployed on **VM**, or **Hardware**.
 :::

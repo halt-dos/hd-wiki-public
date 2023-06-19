@@ -129,7 +129,7 @@ This option specify the list of allowed static extensions that don't require sec
 
 This field specifies the maximum allowed HTTP body size (in bytes) from a single client IP. If the size exceeds, then the request gets dropped. By default, it is 10485760 bytes.
 
-:::note
+:::note Note
 In the case of HTTP/0.9, no headers get transmitted.
 :::
 
@@ -175,6 +175,6 @@ This option helps you to add HTTP/S ports for Advance Settings. Here you can be 
 
 
 
-:::note
+:::note Note
 Proxy Buffer and Proxy Buffer are sensitive configurations that can affect applications that should be configured with prior knowledge.
 :::
