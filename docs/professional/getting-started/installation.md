@@ -35,10 +35,14 @@ sudo service controller status
 
 
 ```
-$ sudo service offloader status
+sudo service offloader status
 ```
 
-![haltdos](/img/pro-waf/docs/offloader.png)
+:::note Note 
+**Haltdos Professional WAF Service** at start will be at loaded state. It will be in active and running state, once the whole registration of the instance is done
+:::
+
+![haltdos](/img/pro-waf/docs/offloader_status.png)
 
 
 ### Step 3: Account Registration
@@ -62,7 +66,11 @@ If the user is configuring another instance, they will be redirected to the Logi
 
 ![step 3](/img/pro-waf/docs/step3.png)
 
-After the user has entered their details, the payment page below will be displayed. On this page, the user needs to enter their card details and click on the **Save Card** button.
+After the user has entered their details, user will be redirected to a payment gateway. A minimal amount transaction will take place to save the card, which will be refunded back by the card provider/bank. Card must be saved because Haltdos Professional WAF follows a usage based pricing. User will be charged at the end of the monthly billing period, based on the no. of requests that was processed by WAF in that billing period. User has to enter their credit card details and click on the **Save Card** button of the payment gateway.
+
+:::note Note
+Kindly only save Credit Cards. Any other form of cards can be saved, but these won't be processed and will lead to failure of registration of Professional WAF.
+:::
 
 ![payment page](/img/pro-waf/docs/payment.png)
 
@@ -70,14 +78,28 @@ Once the payment procedure is completed, the user will be prompted to enter thei
 
 ![step 4](/img/pro-waf/docs/step4.png)
 
-You have successfully subscribed to **Haltdos Professional WAF**.
+You have successfully subscribed to **Haltdos Professional Edition** and have registered your instance. You can verify your registration by checking if the Haltdos Professional WAF service is running.
+
+```
+sudo service offloader status
+```
+
+![haltdos](/img/pro-waf/docs/offloader.png)
+
+:::info CAUTION
+If the service is still shown as loaded and inactive, or if you face any other kind of issue, please contact [**Haltdos Support**](mailto:support@haltdos.com)
+:::
 
 ### Step 4: Accesing Haltdos Professional GUI
 
-Login to the Haltdos Professional GUI using the credentials provided during step 4 of the registration process.
+Login to the **GUI Console**, at **https://<SERVER_IP>:9000** using the credentials provided during the step 4 of the registration process.
 
 ![login](/img/pro-waf/docs/login.png)
 
-If the entered login credentials are correct, the overview page below will be visible to you.
+If provided login credentials are correct, you will be redirected to the Overview page, as visible below. Now you can start exploring **Haltdos Professional WAF**.  
 
 ![overview](/img/pro-waf/docs/overview.png)
+
+:::note Note
+Professional WAF Billing is a Monthly Subscription, whose billing period will start on the day of registering your first instance.
+:::
