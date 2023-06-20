@@ -22,8 +22,8 @@ The following actions are available to the User :
 12. **SKIP LEARNING** - If the request satisfies the rule, then no learning will be performed on the current request.
 13. **SEND EMPTY RESPONSE** - If the request satisfies the rule, the end-user will get empty response / blank page in return.
 
-![firewall_rules](/img/pro-waf/docs/v7/firewall_rules1.png)
-![firewall_rules](/img/pro-waf/docs/v7/firewall_rules2.png)
+![firewall_rules](/img/pro-waf/docs/firewall_rules1.png)
+![firewall_rules](/img/pro-waf/docs/firewall_rules2.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

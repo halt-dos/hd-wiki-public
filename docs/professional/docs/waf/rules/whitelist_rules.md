@@ -8,8 +8,8 @@ A whitelist is "the cybersecurity list," granting only programs, IP, and email a
 Whitelist Rules help to list services that access your site regularly (APIs, crawlers, payment providers, etc.). Whitelists are not one-size-fits-all; whitelists are tailor-made managers based on their particular needs and desires. YouTube, for example, has released a whitelisted YouTube Kids version that goes off of handpicked, age-appropriate videos rather than algorithmic recommendations.
 Here’s another use case: To reduce insider threat, a cyberattack caused behind company doors businesses with BYOL policies whitelist websites, they consider safe for employees to visit when using their private network.
    
-![whitelist_rules](/img/pro-waf/docs/v7/whitelist_rules1.png)
-![whitelist_rules](/img/pro-waf/docs/v7/whitelist_rules2.png)
+![whitelist_rules](/img/pro-waf/docs/whitelist_rules1.png)
+![whitelist_rules](/img/pro-waf/docs/whitelist_rules2.png)
 
 ### How to Use:
 

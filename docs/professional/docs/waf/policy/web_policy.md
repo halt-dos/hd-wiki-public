@@ -11,8 +11,8 @@ Configure Web Security Policy for HTML based websites -  Dynamic, Wordpress, etc
 
 A web policy or policies are constraints or mandates in relation to technical constraints, legal, editorial, and compliance. Configure policies that HTTP(s) requests must conform to when requesting data from the backend web application.
 
-![web_policy](/img/pro-waf/docs/v7/web_policy1.png)
-![web_policy](/img/pro-waf/docs/v7/web_policy2.png)
+![web_policy](/img/pro-waf/docs/web_policy1.png)
+![web_policy](/img/pro-waf/docs/web_policy2.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console. 

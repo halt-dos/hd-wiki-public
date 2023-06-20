@@ -6,7 +6,7 @@ sidebar_position: 6
 ## Overview
 Users can change the current account settings using **Account** tab. In the account tab, the first option is the account with the help of which users are allowed to change the username, email, name, password and can enable two-factor authentication using this option.
 
-![Account](/img/pro-waf/docs/v7/account.png)
+![Account](/img/pro-waf/docs/account.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

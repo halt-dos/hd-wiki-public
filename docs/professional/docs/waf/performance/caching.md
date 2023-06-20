@@ -8,8 +8,8 @@ sidebar_position: 1
 ### Overview
 When caching is enabled, WAF saves responses in a directory and uses them to respond to clients without having to proxy requests for the same content every time.
 
-![caching](/img/pro-waf/docs/v7/caching1.png)
-![caching](/img/pro-waf/docs/v7/caching2.png)
+![caching](/img/pro-waf/docs/caching1.png)
+![caching](/img/pro-waf/docs/caching2.png)
 
 ### How to Use :
 1. Log into the Haltdos WAF Professional edition web UI console. 

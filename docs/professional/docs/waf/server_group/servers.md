@@ -11,9 +11,9 @@ Configure the application servers
 
 Configuration of upstream servers in a server group can be modified on-the-fly by using Servers.
 
-![servers](/img/pro-waf/docs/v7/servers1.png)
-![servers](/img/pro-waf/docs/v7/servers2.png)
-![servers](/img/pro-waf/docs/v7/servers3.png)
+![servers](/img/pro-waf/docs/servers1.png)
+![servers](/img/pro-waf/docs/servers2.png)
+![servers](/img/pro-waf/docs/servers3.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

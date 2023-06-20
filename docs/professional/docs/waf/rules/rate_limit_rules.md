@@ -5,9 +5,9 @@ sidebar_position: 7
 ### Overview
 Rate Limiting is a feature of Haltdos WAF that allows application owners to enforce rate limiting on some of the pages which affect their website performance.
 
-![rate_limit_rules](/img/pro-waf/docs/v7/rate_limit_rules1.png)
-![rate_limit_rules](/img/pro-waf/docs/v7/rate_limit_rules2.png)
-![rate_limit_rules](/img/pro-waf/docs/v7/rate_limit_rules3.png)
+![rate_limit_rules](/img/pro-waf/docs/rate_limit_rules1.png)
+![rate_limit_rules](/img/pro-waf/docs/rate_limit_rules2.png)
+![rate_limit_rules](/img/pro-waf/docs/rate_limit_rules3.png)
 
 **Warning** Manual configuration of rate limit rules is risky for administrators without the relevant training and experience. Badly conceived or misconfigured rate limit rules can result in loss of performance, incorrect behavior.
 

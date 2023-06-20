@@ -7,7 +7,7 @@ sidebar_position: 5
 
 Haltdos allows users to set the custom pages to customize connectivity. Users can add custom pages as per need.
 
-![webpages](/img/pro-waf/docs/v7/web_pages.png)
+![webpages](/img/pro-waf/docs/web_pages.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

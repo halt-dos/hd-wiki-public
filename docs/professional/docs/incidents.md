@@ -20,7 +20,7 @@ Depending upon the type of incidents, clicking on any Incident shows details of 
 
 Further to detailing the incident through Incidents, users can perform various actions. For example, whitelisting is implemented through actions in Incident Details. Virtual Patching is the ability to create custom WAF rules from the result of a security scan.
 
-![Incidents](/img/pro-waf/docs/v7/incidents.png)
+![Incidents](/img/pro-waf/docs/incidents.png)
 
 #### Type of Incidents  
 - **Drop Incidents**

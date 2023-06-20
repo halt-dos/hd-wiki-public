@@ -5,8 +5,8 @@ sidebar_position: 4
 ### Overview
 Form Validation offers a positive security model of Application Firewall and allows enforcing specific values or a range of values for various form fields of a web application form.
 
-![form_rules](/img/pro-waf/docs/v7/form_rules1.png)
-![form_rules](/img/pro-waf/docs/v7/form_rules2.png)
+![form_rules](/img/pro-waf/docs/form_rules1.png)
+![form_rules](/img/pro-waf/docs/form_rules2.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

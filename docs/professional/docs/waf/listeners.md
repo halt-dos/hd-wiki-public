@@ -11,7 +11,7 @@ Used to configure websites and servers.
 
 Listeners are used for collecting set of websites and servers appropriately that it can help to reduce response time, increase throughput, optimize resource use and overload of any single resource.
 
-![Listener](/img/pro-waf/docs/v7/listeners1.png)
+![Listener](/img/pro-waf/docs/listeners1.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.
@@ -20,7 +20,7 @@ Listeners are used for collecting set of websites and servers appropriately that
 4. Configure your settings.
 5. Click **Save**.
 
-![Listener](/img/pro-waf/docs/v7/listeners2.png)
+![Listener](/img/pro-waf/docs/listeners2.png)
 
 | SETTINGS              | ACCEPTED VALUES                                    | DEFAULT |
 |-----------------------|----------------------------------------------------|---------|

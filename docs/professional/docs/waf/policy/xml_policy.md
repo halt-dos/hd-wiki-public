@@ -11,7 +11,7 @@ sidebar_position: 3
 
 XML Policy is a feature of Haltdos WAF. It allows application owners to block unwanted requests that feature malware XML documents or documents bigger than the allowed size. The owner can set their Minimum & Maximum size limit for the XML document.
 
-![xml_policy](/img/pro-waf/docs/v7/xml_policy.png)
+![xml_policy](/img/pro-waf/docs/xml_policy.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

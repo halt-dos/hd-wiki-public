@@ -20,15 +20,15 @@ $ sudo apt-get install -y curl
 Download and install the latest Haltdos Community WAF edition installtion script
 
 ```
-$ curl -s -k -o setup.sh https://binary.haltdos.com/community/waf/setup.sh
+curl -s -k -o setup.sh https://binary.haltdos.com/community/waf/setup.sh
 ```
 
 ```
-$ sudo chmod +x setup.sh
+chmod +x setup.sh
 ```
 
 ```
-$ sudo bash setup.sh
+sudo ./setup.sh
 ```
 
 The script will automatically download and prepare the system to run Haltdos Community WAF.

@@ -12,7 +12,7 @@ An SSL certificate is a few lines of code on your web server that provides secur
    
 Haltdos platform supports SSL certificate management that allows customers to upload their existing SSL certificates or create new certificates using Let's Encrypt. The platform periodically checks the validity of the certificate and notifies users when the renewal is 2 weeks away from due date. If the certificate was created by Let's Encrypt, Haltdos platform automatically renews the certificate without requiring human intervention. 
 
-![SSL Certificate](/img/pro-waf/docs/v7/ssl_certificate.png)
+![SSL Certificate](/img/pro-waf/docs/ssl_certificate.png)
    
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

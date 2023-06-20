@@ -10,8 +10,8 @@ Helps to modify headers, cookies, and arguments in the request sent to the back-
 ### Overview 
 We have introduced Header rules by which application owners can manipulate request headers, cookies, and arguments in request as well as response headers. Users can create/update header rules at run time with on-the-fly updates. It has the functionality to add/remove/update any cookie/header/arguments in the request to the web-server(back-end) as well as respond to the client.
 
-![header_rules](/img/pro-waf/docs/v7/header_rules1.png)
-![header_rules](/img/pro-waf/docs/v7/header_rules2.png)
+![header_rules](/img/pro-waf/docs/header_rules1.png)
+![header_rules](/img/pro-waf/docs/header_rules2.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

@@ -7,7 +7,7 @@ sidebar_position: 3
 ### Overview 
 Profile Setting specifies all the operational settings for user different application type (i.e. WEBSITE/WEB SERVICE/WEB SOCKET). It provides user protection and invokes signature rules to every configured specific settings for mentioned application type.
 
-![security](/img/pro-waf/docs/v7/security.png)
+![security](/img/pro-waf/docs/security.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

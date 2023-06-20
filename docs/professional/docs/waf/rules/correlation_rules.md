@@ -7,7 +7,7 @@ sidebar_position: 5
    
 Correlation rules support using compounding logic to make more advanced rules that address your security needs. For example, "(Condition 1 and Condition 2)" means that if Condition 1 and Condition 2 are met, WAF should take the action that's specified in the correlation rule. Different matching conditions within the same rule are always compounded by using 'and'. For example, a rule that uses and might specify to block traffic from a certain IP address, and only if a certain browser is being used. 
    
-![correlation_rules](/img/pro-waf/docs/v7/correlation_rules.png)
+![correlation_rules](/img/pro-waf/docs/correlation_rules.png)
    
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

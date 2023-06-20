@@ -7,8 +7,8 @@ sidebar_position: 9
    
 These rules prevent Haltdos WAF from logging sensitive information like passwords, etc., and adhere to your compliance policy. 
 
-![log_rules](/img/pro-waf/docs/v7/log_rules1.png)
-![log_rules](/img/pro-waf/docs/v7/log_rules2.png)
+![log_rules](/img/pro-waf/docs/log_rules1.png)
+![log_rules](/img/pro-waf/docs/log_rules2.png)
    
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

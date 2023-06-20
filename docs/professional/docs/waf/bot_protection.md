@@ -7,7 +7,7 @@ Detect and Block malicious bots in real-time
 ###  Overview
 Bot Protection helps you quickly determine, manage, and mitigate automated requests. You can configure Legitimate/Malicious Crawlers, Tor, Bot Request Rate, and Bad Traffics. HaltDos Threat Stream TM provides a list of malicious IPs, known as bad bots and crawlers. Enterprise can specify the action to take against this malicious traffic.
 
-![bot_protection](/img/pro-waf/docs/v7/bot_protection.png)
+![bot_protection](/img/pro-waf/docs/bot_protection.png)
 
 ### How To Use
 1. Log into the Haltdos WAF Professional edition web UI console.

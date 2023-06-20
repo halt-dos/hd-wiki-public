@@ -11,9 +11,9 @@ Configure Operational settings of Listeners.
 
 Users are allowed to configure many operational settings for the Listeners. Users can configure most common settings like timeout settings, operation modes, header/body timeouts, error handling, and request logging. Users can also add server aliases and VIPs to the configured listener with the help of operational settings
 
-![Operational](/img/pro-waf/docs/v7/Operational1.png)
-![Operational](/img/pro-waf/docs/v7/Operational2.png)
-![Operational](/img/pro-waf/docs/v7/Operational3.png)
+![Operational](/img/pro-waf/docs/Operational1.png)
+![Operational](/img/pro-waf/docs/Operational2.png)
+![Operational](/img/pro-waf/docs/Operational3.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

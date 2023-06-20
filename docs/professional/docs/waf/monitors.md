@@ -9,7 +9,7 @@ Continually test your upstream servers, avoid the servers that have failed, and 
 
 Monitoring provides a comprehensive overview of the status and performance of the Server Group and/or individual real servers inside the server group. If a monitor is attached to a server group, then it will get applied to all the servers inside that group automatically. If a monitor is attached to a particular server then it will override the configuration of the server-group monitor. Health Checks computes an overall health state for each upstream server in the listener. Backend(upstream) that responds successfully for the configured number of times is considered healthy. Backend(upstream) that fails to respond successfully for a separate number of times is unhealthy.
 
-![monitors](/img/pro-waf/docs/v7/monitors.png)
+![monitors](/img/pro-waf/docs/monitors.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

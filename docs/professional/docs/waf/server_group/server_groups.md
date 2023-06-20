@@ -21,8 +21,8 @@ This is useful for:
 
 - Monitoring, when you get the state of the server or server group with one command.
 
-![server_groups](/img/pro-waf/docs/v7/server_group1.png)
-![server_groups](/img/pro-waf/docs/v7/server_group2.png)
+![server_groups](/img/pro-waf/docs/server_group1.png)
+![server_groups](/img/pro-waf/docs/server_group2.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

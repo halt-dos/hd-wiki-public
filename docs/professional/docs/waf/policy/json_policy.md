@@ -11,7 +11,7 @@ sidebar_position: 2
 
 JSON Policy is a feature of Haltdos WAF. It allows application owners to block unwanted requests that include malware JSON or data size bigger than the allowed size. The owner can set their limit up to which he wants to accept the data or how many keys in JSON object he wants to allow. Minimum and Maximum limits are:
 
-![json_policy](/img/pro-waf/docs/v7/json_policy.png)
+![json_policy](/img/pro-waf/docs/json_policy.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console. 

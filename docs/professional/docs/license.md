@@ -11,7 +11,7 @@ Versioning, Patch management and installation of updates and upgrades
 
 From time to time, Haltdos pushes updates consisting of performance, security, features and patches to all valid licensed solutions. This module lists the current deployed version on all Haltdos appliances and list of patches available for upgrade.
 
-![license](/img/pro-waf/docs/v7/license.png)
+![license](/img/pro-waf/docs/license.png)
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.

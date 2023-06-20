@@ -1,4 +1,4 @@
-# WAF Professional Knowledge Base
+# WAF PE Knowledge Base
 
 This section describes the knowledge base of how to use Haltdos WAF Professional Edition for multiple use cases.
 

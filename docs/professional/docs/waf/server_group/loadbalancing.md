@@ -12,8 +12,8 @@ Load Balancing mechanism used for WAF
 
 Load balancing across multiple application instances is a commonly used technique for optimizing resource utilization, maximizing throughput, reducing latency, and ensuring fault-tolerant configurations.
 
-![loadbalancing](/img/pro-waf/docs/v7/load_balancing1.png)
-![loadbalancing](/img/pro-waf/docs/v7/load_balancing2.png)
+![loadbalancing](/img/pro-waf/docs/load_balancing1.png)
+![loadbalancing](/img/pro-waf/docs/load_balancing2.png)
 
 ### Load Balancing Algorithms
 This field specifies the load balancing algorithm according to the configured website.
