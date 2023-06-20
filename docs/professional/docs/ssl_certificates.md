@@ -34,7 +34,7 @@ In order to generate a certificate, it's a three-step based process i.e.
 3. **Issue/Renew Certificate** : Upon verifying the challenge, the user can click on the Issue/Renew certificate accordingly.
 
 
-:::note
+:::note Note
 Let's Encrypt certificate are valid for 3 months only. In order to renew, we have to re-issue the certificate with the same steps as mentioned above.
 :::
    
@@ -51,7 +51,7 @@ Let's Encrypt certificate are valid for 3 months only. In order to renew, we hav
 ##### Step 3: Issue/Renew Certificate
 1. Click on Issue/Renew Certificate.
    
-:::note 
+:::note Note 
 Certificate verification can fail if verification is not completed within stipulated time.
 :::
    
@@ -72,7 +72,7 @@ To upload custom certificates, follow the steps below:
 Users are allowed to specify the name for the certification.
 
 **Certificate Domain**  
-Users are allowed to specify the domain name fo the certifiate.
+Users are allowed to specify the domain name of the certificate.
 
 **App Option**  
 Users are allowed to select the certificate generate options.

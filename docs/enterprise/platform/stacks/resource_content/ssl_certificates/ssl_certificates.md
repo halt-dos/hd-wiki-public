@@ -35,7 +35,7 @@ In order to generate a certificate, it's a three-step based process i.e.
 2. Verify Challenge: Verify the challenge for generating the certificate.
 3. Issue/Renew Certificate: Upon verifying the challenge, the user can click on the Issue/Renew certificate accordingly.
 
-:::note
+:::note Note
 Let's Encrypt certificate are valid for 3 months only. In order to renew, we have to re-issue the certificate with the same steps as mentioned above. This is applicable only for DNS validations. For certificates issued via HTTP validation, Haltdos automatically renews the certificates.
 :::
 
@@ -53,7 +53,7 @@ Let's Encrypt certificate are valid for 3 months only. In order to renew, we hav
 **Step 3: Issue/Renew Certificate**
 1. Click on Issue/Renew Certificate.
 
-:::note
+:::note Note
 Certificate verification can fail if verification is not completed within stipulated time.  For any issues, please contact support. 
 :::
 

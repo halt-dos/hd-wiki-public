@@ -100,7 +100,7 @@ Cookies are primarily for session management. Attackers try to steal its data fo
 **STRICT** - This value ensures the cookie is not being sent to the target site in all cross-site browsing contexts.  
 **LAX** - This value provides both security and usability to the sites that need to manage the user's logged-in session once the user login from an external link.
 
-:::note
+:::note Note
 This value specifies no action would be taken, and cookies will be allowed to pass to an external site.
 :::
 

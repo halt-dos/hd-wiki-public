@@ -31,7 +31,7 @@ In order to generate a certificate, it's a three-step based process i.e.
 3. Issue/Renew Certificate: Upon verifying the challenge, the user can click on the Issue/Renew certificate accordingly.  
 
 
-:::note
+:::note Note
 Let's Encrypt certificate are valid for 3 months only. In order to renew, we have to re-issue the certificate with the same steps as mentioned above. This is applicable only for DNS validations. For certificates issued via HTTP validation, Haltdos automatically renews the certificates.
 :::
 
@@ -48,7 +48,7 @@ Let's Encrypt certificate are valid for 3 months only. In order to renew, we hav
 **Step 3: Issue/Renew Certificate**
 1. Click on Issue/Renew Certificate.
 
-:::note
+:::note Note
 Certificate verification can fail if verification is not completed within stipulated time. For any issues, please contact support.
 :::
 
@@ -65,6 +65,6 @@ Certificate verification can fail if verification is not completed within stipul
 
 **Private Key**: Enter the private key details. The private key is a separate file that's used in the encryption/decryption of data sent between your server and the connecting clients.  
 
-:::note
+:::note Note
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key 
 :::

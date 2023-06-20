@@ -66,7 +66,7 @@ This option specifies the destination port Prefixes where requests coming will b
 
 This drop-down is used to clone an existing profile with the same configuration to a new profile.
 
-:::note
+:::note Note
 User can clone existing profile with the same configuration to a new profile on the new user-specified URI.
 Following configurations are present under Security Profile.
 :::

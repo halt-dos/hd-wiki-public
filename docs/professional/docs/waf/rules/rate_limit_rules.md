@@ -60,7 +60,7 @@ Users are allowed to specify the time duration for which the rule will limit the
 ##### **Limit On**
 Users are allowed to specify the object on which we apply the limit such as Client IP, User-Agent, URI, Source Port, HTTP Method, HTTP Referrer.
 
-:::note
+:::note Note
 Always limit burst must be greater than or equal to limit rate.
 :::
 ##### **Condition Phase**

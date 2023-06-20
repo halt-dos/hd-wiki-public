@@ -18,7 +18,7 @@ Audit trails (or audit logs) act as record-keepers that document evidence of cer
 
 ![audit_trail](/img/platform/v7/docs/audit_trail-newuo.png)
 
-:::note
+:::note Note
 User can export it as well by clicking the export button user can download from **Events** function.
 
 User can also obtain audit trail of a specific date range or customize range as well.

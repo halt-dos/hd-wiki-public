@@ -5,7 +5,7 @@ If a user wants to extract or set a custom variable, then it can be done using V
 
 1. Form Validation : If a user wants a form field to be immutable, then he can create a variable for that field that is going to be immutable. This variable can be used in form validation to check whether the field is immutable or not. If the field is modified, then the request will be dropped
 
-:::note
+:::note Note
 Any parameter from the Request/Response can be stored in a variable.
 :::
 

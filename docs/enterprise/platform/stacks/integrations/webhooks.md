@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Webhooks
 
-### Integration with external 3rd party solutions for notification and alerts via APIs
+Integration with external 3rd party solutions for notification and alerts via APIs
 
 ---
 

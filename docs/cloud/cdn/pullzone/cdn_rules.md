@@ -42,7 +42,9 @@ This field allows you to specify the action that you need to take for the Create
 - **Block Request**: Allows you to block the request as per the condition.
 - **Force SSL**: Allows you to configure hostnames and automatically redirect HTTP to HTTPS requests.
 
-Note: It protects you against content plagiarism and ensures that a secure connection is available for users.
+:::note Note 
+It protects you against content plagiarism and ensures that a secure connection is available for users.
+:::
 
 - **Change Origin**: Allows you to add an Origin URL on which all traffic is forwarded.
 

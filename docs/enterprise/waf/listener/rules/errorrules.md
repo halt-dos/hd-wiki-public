@@ -38,7 +38,7 @@ If this field is enabled, then the custom error page will be displayed. If it is
 
 Select the desired custom error page which will be displayed when the specified error occurs. Or click the **Add** button which redirects to the custom pages screen to create a custom page and add HTML content and then select it from the drop-down list.
 
-:::note
+:::note Note
 We can globally disable error handling from WAF in the operational settings under advanced settings that we will learn later in Operational Settings.
 :::
 

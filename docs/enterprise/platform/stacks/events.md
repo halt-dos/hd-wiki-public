@@ -50,7 +50,7 @@ Users can download the events specifying the event count, start time & date, and
 
 Users can enable auto-refresh in order to refresh the real-time alerts for requests. The details will be displayed in events for the specific type of request.
 
-:::note
+:::note Note
 Events are not notified via email or API. To receive alerts, you have to create Alarms. All alarm triggers are notified to selected authorised users on the platform.
 :::
 

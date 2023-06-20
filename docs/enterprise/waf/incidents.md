@@ -39,7 +39,7 @@ Further to detailing the incident through Events, users can perform various acti
 Users can enable auto-refresh in order to refresh the real-time alerts for requests. The details will be displayed in events for the specific type of request.
 
 
-:::note
+:::note Note
 Events are not verified via email or API. To recieve alerts, you have to create Alarms. All alarm
  triggers are notified to selected authorized users on the platform
 :::

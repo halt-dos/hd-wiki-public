@@ -15,24 +15,24 @@ From time to time, Haltdos pushes updates consisting of performance, security, f
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.
-2. Select **license** from the sidebar menu.
+2. Select **License** from the sidebar menu.
 3. Configure Your Settings 
 4. Click **Save Changes** 
 
-**Types of Updates**
+### Types of Updates
 
-- **Intel Updates**: These are periodic updates that provide Global threat intel curated from multiple sources (OSINT, Paid sources, Community feeds from Haltdos deployments & Academia collaborations). The computed threat intel comprise of Geo IP feeds, IP Reputation feeds (Botnet, Cnc, Spammers, etc.), Tor IP feeds, Phishing & Spam content, Anonymous Proxies, etc. 
+- **Intel Updates**: These are periodic updates that provide Global threat intel curated from multiple sources (OSINT, Paid sources, Community feeds from Haltdos deployments & Academia collaborations). The computed threat intel comprise Geo IP feeds, IP Reputation feeds (Botnet, Cnc, Spammers, etc.), Tor IP feeds, Phishing & Spam content, Anonymous Proxies, etc. 
 
 - **Software Updates**: These are bug fixes and security patches that can be carried out by end user at appropriate date / time with or without OEM support.
 
-- **Software Upgrades**: These are major releases that will require OEM support for upgradation and installation
+- **Software Upgrades**: These are major releases that will require OEM support for upgrade and installation
 
 
 ### Steps to update Solutions:
 
-:::note
+:::note Note
 1. All updates are staggered deployments and should be carried out during off-hours to ensure smooth event-less update.
-2. As always, Haltdos support is there to help. We recommend raising ticket to Haltdos support for assisting you in installation and commissioning of latest patches in your Haltdos appliances.
+2. As always, Haltdos support is there to help. We recommend raising ticket to Haltdos support for assisting you in installation and commissioning of the latest patches in your Haltdos appliances.
 :::
 
 | PARAMETERS       | DESCRIPTION                                        | VALUES       |

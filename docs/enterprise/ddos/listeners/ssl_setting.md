@@ -25,7 +25,7 @@ As many applications are running over HTTPS, for the WAF / ADC solution to inspe
 
 This specifies DDOS should re-encrypt traffic before sending it to the back-end application. 
 
-:::note
+:::note Note
 **We can listen to non-HTTPS traffic and send it as HTTPS traffic to the back end server.**
 :::
 

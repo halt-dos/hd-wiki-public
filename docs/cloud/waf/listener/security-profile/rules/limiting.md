@@ -69,6 +69,6 @@ Specify the type of action to be taken such as Drop, Record, Temporary Blacklist
 
 Specify the object on which we apply the limit such as Client IP, User-Agent, URI, Source Port, HTTP Method, HTTP Referrer.
 
-:::note
+:::note Note
 Always limit burst must be greater than or equal to limit rate.
 :::

@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Config Synchronization
 
-### Synchronizing configurations across peer managements
+Synchronizing configurations across peer managements
 
 ---
 

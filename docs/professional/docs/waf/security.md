@@ -16,7 +16,7 @@ Profile Setting specifies all the operational settings for user different applic
 
 | Parameters                   | Accepted Values | Default |
 |------------------------------|-----------------|---------|
-| Operational Mode             | Drop-Down       | Bypass  |
+| Mitigation             | Boolean       | Disabled  |
 | Paranoia Level               | Drop-Down       | Low     |
 | Enable Signature Validation  | Boolean         | False   |
 | Enable LibInjection          | Boolean         | False   |
@@ -26,18 +26,13 @@ Profile Setting specifies all the operational settings for user different applic
 | Application Server            | Drop-Down       | Other   |
 | Application Database             | Drop-Down       | Other   |
 | Application OS            | Drop-Down       | Other   |
-| User Groups                  | Drop-down       | Blank   |
 | Temporary Blacklist Duration | Integer         |    0     |
    
 ### Description
 
-##### **Operational Mode**
-This option allows user to specify operational mode for every given security profile. Different operational modes are:
-- **MITIGATION:** In this mode, all the mitigation & rule sets will monitor the traffic. If any request matches the criteria, it gets dropped  
+##### **Mitigation**
+This option allows user to enable mitigation.
 
-- **BYPASS:** In this mode, all the requests get bypassed without any filtration of mitigation & rule sets.  
-
-- **RECORD:** In this mode, all the mitigation & rule sets will monitor the traffic. If any request is about to drop, then it gets captured and forwarded in the form of a Record Event.  
 
 ##### **Paranoia Level** 
 Paranoia Level configures the severity in which HTTP requests should be allowed. It lets you disable certain rules to minimize several false positives that they may encounter.  
@@ -77,9 +72,6 @@ Specify the database which is being used in the application (if any).
 
 ##### **Application OS**
 Specify the Operating system on which application is running.
-
-##### **User Groups**
-Create a user group for operating the API gateway. Detailed information can be found using this link User Group.  
 
 ##### **Temporary Blacklist Duration**
 The time duration for which a malicious IP is suspended by WAF is specified here. The WAF Rules and Web Policy use this value.

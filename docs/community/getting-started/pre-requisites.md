@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 # Pre-Requisites
@@ -22,10 +22,10 @@ Haltdos Community WAF currently supports the following OS:
 Haltdos Community WAF currently supports the following OS:
 
 - **Minimum 2GB RAM**  
-- **Minimum 2GB Disk Space**  
+- **Minimum 60GB Disk Space**  [Haltdos CE WAF will take up atleast 500MB, once installed!]
 - **Atleast 2 vCPU Cores**
 
-:::note
+:::note Note
 There is no VM size restriction. The throughput increases with higher system configuration.  
 Software can be deployed on **VM**, **Docker** or **Hardware**.
 :::

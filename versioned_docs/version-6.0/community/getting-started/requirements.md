@@ -25,7 +25,7 @@ Haltdos Community WAF currently supports the following OS:
 - **Minimum 2GB Disk Space**  
 - **Atleast 2 vCPU Cores**
 
-:::note
+:::note Note
 There is no VM size restriction. The throughput increases with higher system configuration.  
 Software can be deployed on **VM**, **Docker** or **Hardware**.
 :::
