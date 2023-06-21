@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhaltdos_wiki=self.webpackChunkhaltdos_wiki||[]).push([[64195],{1257:(t,e,i)=>{i.r(e),i.d(e,{default:()=>a});var n=i(67294),u=i(16550);function a(){return n.createElement(u.l_,{to:"/introduction"})}}}]);
