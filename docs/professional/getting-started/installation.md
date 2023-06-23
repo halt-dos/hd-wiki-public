@@ -18,7 +18,7 @@ chmod +x setup.sh
 ```
 
 ```
-sudo ./setup
+sudo ./setup.sh
 ```
 
 The script will automatically download and prepare the system to run Haltdos Professional WAF.
