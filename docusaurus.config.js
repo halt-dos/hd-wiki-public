@@ -99,7 +99,7 @@ const config = {
             items: [
               {to: 'kb', label: 'Knowledge Base'},
               {to: 'glossary', label: 'Glossary'},
-              {href: 'https://haltdos.com/blogs',label: 'Blogs', target: '_blank', rel: null}
+              {href: 'https://www.haltdos.com/blogs',label: 'Blogs', target: '_blank', rel: null}
             ],
           },
         ],
