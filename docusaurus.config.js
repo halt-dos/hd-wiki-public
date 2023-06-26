@@ -97,7 +97,6 @@ const config = {
             position: 'left',
             className: 'custom',
             items: [
-              {to: 'api', label: 'API'},
               {to: 'kb', label: 'Knowledge Base'},
               {to: 'glossary', label: 'Glossary'},
               {href: 'https://haltdos.com/blogs',label: 'Blogs', target: '_blank', rel: null}
