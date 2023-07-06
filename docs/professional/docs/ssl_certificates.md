@@ -1,7 +1,15 @@
 ---
 sidebar_position: 4
 ---
+
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # SSL Certificates
+
+<ProductBadge />
+<br />
+<br />
+
 It provides functionality to support SSL offloading based on configurations.
 
 ---

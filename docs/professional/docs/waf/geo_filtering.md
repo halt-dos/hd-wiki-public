@@ -2,9 +2,18 @@
 sidebar_position: 4
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Geo Filtering
 
+<ProductBadge />
+<br />
+<br />
+
+---
+
 ### Overview
+
 **Geo-filtering** is the practice of restricting access to Internet content, based upon the user's geographical location. With the help of Internet geolocation techniques, check user's IP address against a blacklist or whitelist, accounts, and measuring the end-to-end delay of a network connection to estimate the physical location of the user and restrict them.
 Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. It also allows permanently to access website through Whitelisted IP Prefixes.  
 

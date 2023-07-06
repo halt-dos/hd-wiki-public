@@ -3,7 +3,13 @@ sidebar_position: 2
 sidebar_label: Features
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Haltdos PE Features
+
+<ProductBadge />
+<br />
+<br />
 
 - #### **GUI Based WAF Configuration**  
     Simple management and monitoring with web based GUI. Easy to use policy customization supporting SSL management, Web, JSON & XML Policy, Redirection rules, header rules, etc.

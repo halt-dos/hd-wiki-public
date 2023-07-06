@@ -2,7 +2,14 @@
 sidebar_position: 1
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # WEB Policy
+
+<ProductBadge />
+<br />
+<br />
+
 Configure Web Security Policy for HTML based websites -  Dynamic, Wordpress, etc.
 
 ---

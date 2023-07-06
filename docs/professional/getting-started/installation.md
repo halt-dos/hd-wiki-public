@@ -1,9 +1,16 @@
 ---
 sidebar_position: 2
 sidebar_label: Installation
+hide-version-badge: true
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Haltdos PE WAF Setup
+
+<ProductBadge />
+<br />
+<br />
 
 ### Step 1: Installation
 
@@ -18,7 +25,7 @@ chmod +x setup.sh
 ```
 
 ```
-sudo ./setup.sh
+sudo ./setup
 ```
 
 The script will automatically download and prepare the system to run Haltdos Professional WAF.

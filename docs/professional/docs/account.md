@@ -1,7 +1,16 @@
 ---
 sidebar_position: 6
 ---
+
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Account
+
+<ProductBadge />
+<br />
+<br />
+
+---
 
 ## Overview
 Users can change the current account settings using **Account** tab. In the account tab, the first option is the account with the help of which users are allowed to change the username, email, name, password and can enable two-factor authentication using this option.

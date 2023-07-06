@@ -2,7 +2,13 @@
 sidebar_position: 3
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # XML Policy
+
+<ProductBadge />
+<br />
+<br />
 
 #### Configure XML Security Policy for XML based API web service.
 ---

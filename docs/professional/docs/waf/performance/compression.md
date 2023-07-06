@@ -2,8 +2,17 @@
 sidebar_position: 2
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Compression
+
+<ProductBadge />
+<br />
+<br />
+
 Configure compression or decompression of responses
+
+---
 
 ### Overview 
 Haltdos provides you the ability to compress or decompress the responses which often significantly reduce the size of transmitted data and increase performance. The compression level is defined based on which responses are compressed to an extent. It also allows configuring other settings for compression.

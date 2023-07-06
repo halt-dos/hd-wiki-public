@@ -3,7 +3,14 @@ sidebar_position: 1
 sidebar_label: Introduction
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Introduction
+
+<ProductBadge />
+<br />
+<br />
+  
 
 **Haltdos WAF Professional Edition (PE)**, the first of its type, is a user-friendly Web application firewall that is fit for any business. The **Haltdos WAF Professional Edition(PE)** protects your website from OWASP 10 threads, XSS, SQL injection, and other web-based dangerous attackers.
 

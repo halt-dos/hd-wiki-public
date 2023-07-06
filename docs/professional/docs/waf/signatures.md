@@ -2,8 +2,17 @@
 sidebar_position: 12
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Signatures
-These are in-built rules of WAF.
+
+<ProductBadge />
+<br />
+<br />
+
+These are in-built rules of WAF
+
+---
 
 ### Overview 
 Signatures contain rules that are evaluated for each request that passes through WAF. The rules offer protection from many different types of attacks for Web Service/API including OWASP top 10 as well as it can help users to specify the behavior for their application. The WAF has multiple types of Rules designed to target specific use cases.

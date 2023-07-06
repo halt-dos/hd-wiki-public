@@ -1,7 +1,14 @@
 ---
 sidebar_position: 2
 ---
+
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Servers
+
+<ProductBadge />
+<br />
+<br />
 
 Configure the application servers
 

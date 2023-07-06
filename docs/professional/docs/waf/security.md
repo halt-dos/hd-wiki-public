@@ -2,8 +2,15 @@
 sidebar_position: 3
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Security
-  
+
+<ProductBadge />
+<br />
+<br />
+
+---
 ### Overview 
 Profile Setting specifies all the operational settings for user different application type (i.e. WEBSITE/WEB SERVICE/WEB SOCKET). It provides user protection and invokes signature rules to every configured specific settings for mentioned application type.
 

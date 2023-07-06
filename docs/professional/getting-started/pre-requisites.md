@@ -2,12 +2,17 @@
 sidebar_position: 1
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # Pre-Requisites
 
-To follow along the installation of Haltdos Community WAF and getting started, you require the following:
+<ProductBadge />
+<br />
+<br />
+  
+To follow along the installation of Haltdos Community WAF and getting started, you require the following:  
 
-
-## Supported OS
+### Supported OS
 
 Haltdos Community WAF currently supports the following OS:
 

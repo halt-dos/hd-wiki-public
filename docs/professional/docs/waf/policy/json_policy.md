@@ -2,7 +2,15 @@
 sidebar_position: 2
 ---
 
+import ProductBadge from '@site/src/components/ProductBadge';
+
 # JSON Policy
+
+<ProductBadge />
+<br />
+<br />
+
+---
 
 #### Configure JSON Security Policy for Restful web service
 ---
