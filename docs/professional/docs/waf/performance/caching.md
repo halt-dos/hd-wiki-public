@@ -2,13 +2,10 @@
 sidebar_position: 1
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Caching
 
-<ProductBadge />
-<br />
-<br />
 
 It store data locally in order to speed up the performance
 

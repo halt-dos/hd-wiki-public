@@ -2,13 +2,10 @@
 sidebar_position: 7
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # License
 
-<ProductBadge />
-<br />
-<br />
 
 Versioning, Patch management and installation of updates and upgrades
 

@@ -2,13 +2,10 @@
 sidebar_position: 1
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Listeners
 
-<ProductBadge />
-<br />
-<br />
 
 Used to configure websites and servers.
 

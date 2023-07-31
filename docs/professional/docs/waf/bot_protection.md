@@ -2,13 +2,10 @@
 sidebar_position: 5
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Bot Protection 
 
-<ProductBadge />
-<br />
-<br />
 
 Detect and Block malicious bots in real-time
 

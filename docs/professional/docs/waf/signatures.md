@@ -2,13 +2,10 @@
 sidebar_position: 12
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Signatures
 
-<ProductBadge />
-<br />
-<br />
 
 These are in-built rules of WAF
 

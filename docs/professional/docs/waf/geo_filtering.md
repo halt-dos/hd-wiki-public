@@ -2,13 +2,10 @@
 sidebar_position: 4
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Geo Filtering
 
-<ProductBadge />
-<br />
-<br />
 
 ---
 

@@ -4,13 +4,10 @@ sidebar_label: Installation
 hide-version-badge: true
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Haltdos PE WAF Setup
 
-<ProductBadge />
-<br />
-<br />
 
 ### Step 1: Installation
 

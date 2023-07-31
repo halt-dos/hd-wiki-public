@@ -2,13 +2,10 @@
 sidebar_position: 10
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Monitors
 
-<ProductBadge />
-<br />
-<br />
 
 Continually test your upstream servers, avoid the servers that have failed, and gracefully add the recovered servers into the server group.
 

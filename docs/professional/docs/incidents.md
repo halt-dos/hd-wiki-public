@@ -2,13 +2,10 @@
 sidebar_position: 3
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Incidents
 
-<ProductBadge />
-<br />
-<br />
 
 ---
 

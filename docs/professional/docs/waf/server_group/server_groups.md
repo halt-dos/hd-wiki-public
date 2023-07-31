@@ -2,13 +2,10 @@
 sidebar_position: 1
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Server Groups
 
-<ProductBadge />
-<br />
-<br />
 
 User can select the Load Balancing mechanism and specify Origin Server IPs on this screen
 

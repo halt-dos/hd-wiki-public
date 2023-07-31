@@ -2,13 +2,10 @@
 sidebar_position: 1
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Pre-Requisites
 
-<ProductBadge />
-<br />
-<br />
   
 To follow along the installation of Haltdos Community WAF and getting started, you require the following:  
 

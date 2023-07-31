@@ -2,13 +2,10 @@
 sidebar_position: 1
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Overview
 
-<ProductBadge />
-<br />
-<br />
 
 ---
 

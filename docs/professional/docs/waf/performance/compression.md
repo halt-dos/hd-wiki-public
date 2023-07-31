@@ -2,13 +2,10 @@
 sidebar_position: 2
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Compression
 
-<ProductBadge />
-<br />
-<br />
 
 Configure compression or decompression of responses
 

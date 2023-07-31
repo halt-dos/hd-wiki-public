@@ -2,13 +2,10 @@
 sidebar_position: 5
 ---
 
-import ProductBadge from '@site/src/components/ProductBadge';
+
 
 # Web pages
 
-<ProductBadge />
-<br />
-<br />
 
 ---
 
