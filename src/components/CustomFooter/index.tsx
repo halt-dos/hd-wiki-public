@@ -13,7 +13,7 @@ const CustomFooter = () => (
     <img src={useBaseUrl("/img/logo/logo_light.png")} className={styles["light-theme-logo"]} />
   </div>
   <div className={styles["copyright"]}>
-    {`© ${new Date().getFullYear()} HaltDos Pvt Limited. All rights reserved`}
+    {`© ${new Date().getFullYear()} Haltdos, Inc. All rights reserved`}
   </div>
   <div className={styles["footerSocialIconsWrapper"]}>
     <div className={styles["socialBrands"]}>
