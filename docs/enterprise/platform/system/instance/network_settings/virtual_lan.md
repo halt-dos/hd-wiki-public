@@ -32,4 +32,37 @@ This section shows how users can create and maintain multiple VLANs on Haltdos a
 | Gateway 6    | IP String          | Empty    |
 | Name Servers | IP String          | Empty    |
 
+### Description
 
+##### **Name**
+This option allows users to set a user-friendly name for the VLANs.
+
+##### **Group Name**
+This option allows users to set a group name that group name will be identified by the application hence it can be same as Name.
+
+##### **VLAN ID**
+This option allows users to write a VLAN ID in decimal number system. This VLAN ID tag will be added into the packets that are moving outside the interface.
+
+##### **Link**
+This link option allows users to select interface for the VLAN configuration.
+
+##### **Addresses**
+This option allows users to set an IP addresses to the interface. This Interface should not be configured from the **Ethernet** section again.
+
+##### **Enable DHCP4**
+This option allows users to enable automatic IPv4 address configuration using DHCPv4.
+
+##### **Enable DHCP6**
+This option allows users to enable automatic IPv6 address configuration using DHCPv6.
+
+##### **Local Link**
+This option allows users to set the local link for the interface.
+
+##### **Gateway4**
+This option allows users to set an IPv4 gateway address. This gateway address will be used when packet destination address belongs to other networks.
+
+##### **Gateway6**
+This option allows users to set an IPv6 gateway address. This gateway address will be used packet's destination address belongs to other network.
+
+##### **Nameservers**
+This option allows users to set the name server or DNS server IP address.

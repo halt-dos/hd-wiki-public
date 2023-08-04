@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Operational Settings
+# Operational
 
 To configure Haltdos appliance in various operational modes
 

@@ -2,18 +2,20 @@
 sidebar_position: 9
 ---
 
-# Scripts
+# IP Feeds
 
 ---
 
-Haltdos allows users to set the custom script to customize connectivity. Users can add custom scripts as per need.
+Haltdos allows users to set the IP feed to customize connectivity. Users can add IP feed as per need and further add the IP feed in apps to blacklist or whitelist the traffic from the mentioned IP addresses.
 
-![Scripts](/img/platform/v7/docs/script_newui.png)
+![Scripts](/img/platform/v7/docs/ipfeed.png)
+
+![Scripts](/img/platform/v7/docs/ipfeed2.png)
 
 ### How to Use:
 
-1. Go to **Stack > Resources > Scripts**.
-2. Select the **Add Scripts.**
+1. Go to **Stack > Resources > IP Feeds**.
+2. Select the **Add IP Feed.**
 3. Configure your settings. 
 4. Click **Save Changes.**
 
@@ -21,20 +23,20 @@ Haltdos allows users to set the custom script to customize connectivity. Users c
 |-------------|-----------------|---------|
 | Name        | String          | Blank   |
 | Scope       | Drop-down       | Blank   |
-| Script Area | String          | Blank   |
+| Content | String          | Blank   |
 
-#### Description:
+### Description:
 
-**Name**
+##### **Name**
 
 Users can specify the name of the custom script.
 
-**Scope**
+##### **Scope**
 
 It specifies the particular scope on which the script works. By default, its value is set to none.
 
-**Script Area**
+##### **Content**
 
-It specifies the script area where the script is to be written.
+It specifies the area where the IP address list is to be written.
 
 
