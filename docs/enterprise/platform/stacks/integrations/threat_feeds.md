@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Threat Feeds
@@ -16,7 +16,9 @@ Custom threat intel can be pulled into Haltdos appliances from three sources: pu
 Only IPv4/IPv6 addresses / prefix having poor reputation is currently supported.
 :::
 
-![threat_feeds](/img/platform/threat_feeds1.png)
+![threat_feeds](/img/platform/v7/docs/threat_feeds1.png)
+
+![threat_feeds](/img/platform/v7/docs/threat_feeds2.png)
 
 ### How to Use:
 

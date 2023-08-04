@@ -33,5 +33,5 @@ Users need to specify the name of the encryption key.
 Users need to mention the scope for the link.
 
 :::note Note
-After generating the keys, the user can download them into .pem format.
-::::
+After generating the keys, the user can download them into .pem format
+:::
