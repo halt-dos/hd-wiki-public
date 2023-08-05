@@ -9,29 +9,17 @@ sidebar_position: 6
 
 The Analytics page allows users to monitor the dashboard of all the listeners together or individually. It also allows to view based on different types:
 
-1. **WAF Overview**
+1. **Traffic Summary** : Overall traffic summary with Geo heatmap, Top-N countries, Top-N Source IP, URL, etc.
 
-2. **WAF Device Fingerprinting**
+2. **Fingerprinting & Bot Summary**: Analytics regarding Fingerprinting, Challenge and Response status, Bot classification, etc.
 
-3. **WAF Attack Overview**
+3. **WAF Attack Overview**: Analytics of Top-N attacking sources (IP, countries), OWASP Top 10 dashboard, etc.
 
-4. **Attack Severity**
+4. **Attack Severity & Categorization**: Classification of attacks as Low, Medium, High, Critical along with summary of types of attacks detected
 
-5. **Attack Device Fingerprinting**
+5. **SLB**: Load balancer metrics regarding uptime, connection status, monitoring alerts
 
-6. **WAF HTTP Fingerprinting**
-
-7. **Attack HTTP Fingerprinting**
-
-8. **Real User Monitoring**
-
-9. **Attack Categorization**
-
-10. **Report**
-
-11. **SLB**
-
-12. **User Fingerprint**
+6. **Custom Dashboards**: Create your own custom dashboard
 
 You can customize the view based on the date range you want:
 

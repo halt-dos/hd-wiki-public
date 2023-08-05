@@ -74,11 +74,11 @@ const config = {
         }
       },
       navbar: {
-        title: 'Haltdos',
+        title: '',
         logo: {
           alt: 'Haltdos',
-          src: 'img/logo/icon_light.png',
-          srcDark: 'img/logo/icon_dark.png'
+          src: 'img/logo/dark_doc_logo.png',
+          srcDark: 'img/logo/light_doc_logo.png'
         },
         items: [
           {to: 'community', label: 'Community', position: 'left'},
