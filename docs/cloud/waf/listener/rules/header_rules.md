@@ -11,6 +11,12 @@ Helps to modify headers, cookies, and arguments in the request sent to the back-
 
 We have introduced Header rules by which application owners can manipulate request headers, cookies, and arguments in request as well as response headers. Users can create/update header rules at run time with on-the-fly updates. It has the functionality to add/remove/update any cookie/header/arguments in the request to the webserver(back-end) as well as respond to the client.
 
+### Content Security Policy Protection
+
+Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross-Site Scripting (XSS), Skimming, Formjacking, Megacart and other data injection attacks. These attacks are used for everything from data theft, to site defacement, to malware distribution.
+
+Header rules can be used for enforcing Content Security Policy (CSP). They provide a simple and effective way to enfore CSP to allow approved domains from where scripts, images and other web resources can be loaded into the web page while blocking unapproved ones.
+
 ### How to Use:
 
 1. Follow the links: **WAF > Zones > Listeners > Rules > Header Rules**.
