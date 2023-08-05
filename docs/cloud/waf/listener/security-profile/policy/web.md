@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Web Policy
 
-Configure Web Security Policy for HTML based websites - Static, Dynamic, Wordpress, etc.
+Configure Web Security Policy for HTML based websites - Static, Dynamic, Wordpress, etc. The solution inspects various protocols (HTML v1, v2, v3, v4, v5), web sockets as well as MQTT to validate against RFC compliance, detect violations and perform mitigations.
 
 ---
 

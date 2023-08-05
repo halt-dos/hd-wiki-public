@@ -7,7 +7,10 @@ sidebar_position: 9
 
 ## Overview
 
-HaltDos’s security is adaptive through automated learning and can make policy recommendations by learning about application behavior, which can make it easier for security teams to manage policies. Administrators retain full control over the activation and deactivation of each ruleset, with the opportunity to screen for false-positive before committing to production.
+Haltdos’s security is adaptive through automated learning and can make policy recommendations by learning about application behavior, which can make it easier for security teams to manage policies. Administrators retain full control over the activation and deactivation of each ruleset, with the opportunity to screen for false-positive before committing to production.
+
+### Threat Scoring & Classification
+AI /ML component of WAF solution inspects network and HTTP Request payload to generate a score for every HTTP request, header, cookie and parameter. The score is further adjusted based on behaviour analysis and fingerprinting. The final score is used to weigh and classify request as being genuine, attack, bot (along with classification). Each request or response dropped by WAF is recorded as an Events and furnishes detailed information including scoring and classification.
 
 ### How to Use:
 

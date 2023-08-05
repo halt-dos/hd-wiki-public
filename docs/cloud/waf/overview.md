@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Overview
 
-Secure your website with Enterprise Grade Web Application Firewall (WAF)
+Secure your website with Enterprise Grade Web Application Firewall (WAF / WAAP) & Anti-DDoS as a Service
 
 ---
 
