@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # RADIUS server
 
-Integration with organizaion's RADIUS server for user management.
+Integration with organization's RADIUS server for user management.
 
 ---
 
