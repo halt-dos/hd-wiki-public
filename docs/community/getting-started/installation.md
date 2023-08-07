@@ -8,11 +8,11 @@ sidebar_label: Installation
 In this step, you'll pull Haltdos packages from the official software repository. SSH to your server and run the commands below
 
 ```
-$ sudo apt-get update
+sudo apt-get update
 ```
 
 ```
-$ sudo apt-get install -y curl
+sudo apt-get install -y curl
 ```
 
 ### Step 1: Installing 
@@ -38,14 +38,14 @@ The script will automatically download and prepare the system to run Haltdos Com
 After successfull installation, you can verify the services by running the commands below:
 
 ```
-$ sudo service controller status
+sudo service controller status
 ```
 
 ![haltdos](/img/ce-waf/docs/status/controller.png)
 
 
 ```
-$ sudo service offloader status
+sudo service offloader status
 ```
 
 ![haltdos](/img/ce-waf/docs/status/offloader.png)

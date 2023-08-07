@@ -11,6 +11,16 @@ hide-version-badge: true
 
 ### Step 1: Installation
 
+Before we start, kindly update your system and install curl, if not installed.   
+
+```
+sudo apt-get update
+```
+
+```
+sudo apt-get install -y curl
+```
+
 Download and install Haltdos Professional WAF edition using the installation script
 
 ```
@@ -22,7 +32,7 @@ chmod +x setup.sh
 ```
 
 ```
-sudo ./setup
+sudo ./setup.sh
 ```
 
 The script will automatically download and prepare the system to run Haltdos Professional WAF.
