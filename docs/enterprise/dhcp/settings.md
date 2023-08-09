@@ -8,7 +8,7 @@ sidebar_position: 2
 
 This option allows to configure global settings for DHCP Network.
 
-![vpngroup](/img/vpn/v6/docs/usergroups.png)  
+![dhcp](/img/dhcp/dhcp1.png)  
   
 ### How to Use:  
 
@@ -21,7 +21,7 @@ This option allows to configure global settings for DHCP Network.
 |------------|----------------|---------|
 | Default Lease Time   | Integer (Seconds) | 3600   |
 | Max Lease Time | Interger (Seconds) | 7200   |
-| Match Filter | Toggle  | True   |
+| Match Filter | Toggle  | False   |
   
 
 ### Description
@@ -34,8 +34,10 @@ During the lease time, the DHCP server cannot assign that IP address to any othe
 **Max Lease Time**  
 This option allows users to set the maximum lease time for the IP assigned to the host device.
 
-**Allowed IP Range  **
+**Allowed IP Range**
 
 This option allows users to set the IP range which is allowed to the host device within the network.
 
-**Match Filter**  
+**Match Filter** 
+
+This Enables IP lookup on the basis of Client ID for IPv4 DHCP Server.

@@ -9,5 +9,6 @@ The Dynamic Host Configuration Protocol (DHCP) is a network management protocol 
 
 **Haltdos DHCP** allows user to configure DHCP using following options: 
 
-1. [**Settings**](dhcp/settings)
-2. [**Networks**](dhcp/network.md)
+1. [**Networks**](dhcp/network.md)
+2. [**Settings**](dhcp/settings.md)
+
