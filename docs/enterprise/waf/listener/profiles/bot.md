@@ -127,5 +127,5 @@ On the basis of application configuration, the required challenge will be thrown
 
 
 :::note Note
-User can configure Advance Bot Settings in the Advanced settings for the listener by using the link: [Advance Bot Settings](../advancedbot.md)  
+User can configure Advance Bot Settings in the Advanced settings for the listener by using the link: [Advance Settings](../advance-settings/advance-settings.md)  
 :::
