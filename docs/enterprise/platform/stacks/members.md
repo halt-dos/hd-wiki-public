@@ -16,9 +16,9 @@ Haltdos Cloud provides multi-level RBAC access control over Stack. This allows o
 ### How to Use:
 
 1. Go to **Stack** > **Members**.
-2. Click on the button  **Invite Members**    |
-3. Configure your settings
-4. Click **Save Changes**
+2. Click on the button  **Invite Members**.
+3. Configure your settings.
+4. Click **Save Changes**.
 
 #### Member Information  
 
@@ -31,15 +31,15 @@ Haltdos Cloud provides multi-level RBAC access control over Stack. This allows o
 | Enable Login      | User have to click the enable login button to access the application                      | Boolean           | Disable    |
 | Stack Level Permission       | User can provide stack level permission              | Boolean           | Disable     |
 
-#### Member Permission 
+#### Member Permission:
 
 | PARAMETERS       | DESCRIPTION                                              | ACCEPTED VALUES    | DEFAULT  |
 |------------------|----------------------------------------------------------|--------------------|----------|
 | Resource             | List of Configured Resoruces | DropDown | All  |
-| Access | User can select different access permission | Dropown | Owner |
+| Access | User can select different access permission | DropDown | Owner |
 | Enable Notification       | User whether wants to receive the notification regarding different events of application   | Boolean     | Disable   |
 
-#### Different User Permissions-:
+#### Different User Permissions:
 
 Haltdos supports three types of user permissions as follows:
 
@@ -56,3 +56,9 @@ Members have the right to accept/reject the invitation and remove membership if 
 Operations allowed are specific on membership levels for different user permissions. 
 If owner delete itself from the stack, and stack exists without OWNER authority. Please contact support to grant user access as OWNER. 
 :::
+
+#### Multi-stack access to a user:
+
+Haltdos offers the feature of granting a single user access to multiple stacks.
+
+In a clustered setup, if we include a user with the same username and emailID in another stack, whether with varying or identical permissions, the user is automatically granted access to that additional stack. In the scenario of adding a new user to a stack, they will receive a password from the default password field within the password policy.

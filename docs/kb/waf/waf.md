@@ -73,3 +73,4 @@ Some of the WAF use cases are mentioned below:
 63. [How WAF mitigate RCE attacks?](./kb-1063.md)
 64. [How to whitelist request based on particular pattern?](./kb-1064.md)
 65. [How to set rule staging from Haltdos console for managing Signatures?](./kb-1065.md)
+66. [How to check the backend server down incident on Haltdos console?](./kb-1066.md)

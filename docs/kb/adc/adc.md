@@ -47,3 +47,5 @@ Some of the SLB use cases are mentioned below:
 21. [How to generate API token on Haltdos SLB?](./kb-2021)
 
 22. [How to upload SSL certificate and use them for a Web Application(Listener)?](./kb-2022)
+
+23. [How to check the backend server down incident on Haltdos console?](./kb-2023)
