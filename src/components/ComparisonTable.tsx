@@ -62,8 +62,8 @@ const comparisonData =[
     },
     {
      "Features": "SIEM Integration",
-     "Community": "Yes",
-     "Professional": "Yes",
+     "Community": "No",
+     "Professional": "No",
      "Enterprise": "Yes"
     },
     {
