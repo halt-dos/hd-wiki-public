@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Backup Policy
 
+Integration with FTP server and S3 for backing up
+
 ---
 
 ## Overview
@@ -11,7 +13,9 @@ sidebar_position: 3
 Haltdos supports periodic or on-demand backup for storing logs and policies to external FTP / SFTP servers and S3 storage. The platform also supports restoring from FTP if needed.
 By default, Haltdos retains logs locally on the device for a duration of 90 days. This duration can be increased to at most 550 days depending upon organization policy.
 
-**Note** It is recommended to configure periodic backup to avoid data loss and ensure log availability for compliance and forensic examination
+:::note Note 
+It is recommended to configure periodic backup to avoid data loss and ensure log availability for compliance and forensic examination
+:::
 
 ![Backup Policy1](/img/platform/v7/docs/backup1.png)
 
