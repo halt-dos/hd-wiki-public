@@ -38,11 +38,11 @@ How to Use:
 | FTP Password         | String              | Empty   |
 | FTP Backup Directory | String              | Empty   |
 | S3 Backup Enabled    | Boolean             | false   |
-| Region               | String              | Empty   |
-| Bucket Name          | String              | Empty   |
-| Path                 | String              | Empty   |
-| Access Key           | String              | Empty   |
-| Secret Key           | String              | Empty   |
+| S3 Region            | String              | Empty   |
+| S3 Bucket Name       | String              | Empty   |
+| S3 Path              | String              | Empty   |
+| S3 Access Key        | String              | Empty   |
+| S3 Secret Key        | String              | Empty   |
 
 ## Description
 
