@@ -29,15 +29,15 @@ How to Use:
 | PARAMETERS           | ACCEPTED VALUES     | DEFAULT |
 |----------------------|---------------------|---------|
 | Log Retention Period | Integer             | 90 days |
-| Backup Enabled       | Boolean             | false   |
 | Cleanup Enabled      | Boolean             | false   |
-| Backup Host Name     | String              | Empty   |
-| Use SFTP             | Boolean             | false   |
-| Authentication       | Boolean             | false   |
-| Username             | String              | Empty   |
-| Password             | String              | Empty   |
-| Backup Directory     | String              | Empty   |
-| Use S3               | Boolean             | false   |
+| FTP Backup Enabled   | Boolean             | false   |
+| FTP Backup Host Name | String              | Empty   |
+| SFTP Enabled         | Boolean             | false   |
+| FTP Authentication   | Boolean             | false   |
+| FTP Username         | String              | Empty   |
+| FTP Password         | String              | Empty   |
+| FTP Backup Directory | String              | Empty   |
+| S3 Backup Enabled    | Boolean             | false   |
 | Region               | String              | Empty   |
 | Bucket Name          | String              | Empty   |
 | Path                 | String              | Empty   |
@@ -58,25 +58,25 @@ This option allows users to enable or disable the backup settings.
 
 This option allows users to enable or disable the backup settings.
 
-**Backup Host Name**
+**FTP Backup Host Name**
 
 This option allows users to specify the hostname or IP address of the backup server. 
 
-**Use SFTP**
+**SFTP Enabled**
 
 This option helps to choose if the user wants data transfer is over SFTP (Port 22), otherwise data will transfer using FTP (Port 21). Users can enable or disable the settings as per their chioce. By default, it is set to disable.
 
-**Authentication**
+**FTP Authentication**
 
 This option allows users to set a user authentication method to access the backup server. By default, this is set to disable.
 
-**Username**
+**FTP Username**
 Users can only use this option when Authentication is set to enable. This option allows users to set a username to authenticate the people
 
-**Password**
+**FTP Password**
 This option allows users to set the desired password to authenticate the user. This option will only be available when authentication is set to enable.
 
-**Backup Directory**
+**FTP Backup Directory**
 This option allows users to specify the directory on the backup server where they can use credential information to access the backup server.
 
 **S3 Backup Enabled**
