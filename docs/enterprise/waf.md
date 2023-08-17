@@ -42,3 +42,10 @@ Positive Model WAF looks to allow access to specific characters or via specific 
 Negative Model WAF works on the premise that most attackers are using exploits that have already been uncovered. By blocking these exploits and by creating patches or updates for new vulnerabilities that occur, the client will have to do very little besides ensuring that their WAF is up-to-date to remain secure.  
 
 Haltdos WAF is based on a Negative Security model that protects against known attacks and a Positive Security model that only admits pre-approved traffic. Think of a negative model as a club bouncer instructed to deny admittance to guests who don’t meet the dress code. Now in the positive model, this is like the bouncer at an exclusive party only admitting people who are invited. Both negative and positive have their advantages and drawbacks but when combined with Artificial Intelligence, Haltdos WAF provides comprehensive protection to your website.  
+
+- **Regular Expression based Policy Configuration**
+
+Haltdos WAF supports Regex engine for defining and enforcing rules and policies by using Regular Expressions. By leveraging the expressive syntax of Regex Engine, WAF Policy configurations can be finely tuned to match complex patterns, validate input data and also use it for configuring all the rules such as firewall, whitelist, redirection etc. With the support of Regex Engine, customers can create intricate rules that cater to specific URL patterns, headers, payload or other attributes within the HTTPS requests. This helps in optimizing the performance and the security of HTTPS request processing at WAF.  
+
+This feature allows the customer to use Haltdos WAF to create dynamic and precise rules increasing the robustness and adaptability of the WAF solution to protect their Web Application.  
+
