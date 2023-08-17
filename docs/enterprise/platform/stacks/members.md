@@ -52,7 +52,7 @@ Haltdos supports three types of user permissions as follows:
 
 Members have the right to accept/reject the invitation and remove membership if the invitation is already accepted.
 
-:::info
+:::info INFO
 Operations allowed are specific on membership levels for different user permissions. 
 If owner delete itself from the stack, and stack exists without OWNER authority. Please contact support to grant user access as OWNER. 
 :::
