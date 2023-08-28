@@ -3,7 +3,7 @@ sidebar_position: 4
 ---
 # Anti-DDoS
 
-Bullet-proof DDoS protection to ensure your website remains secure and online - all the time.
+Bullet-proof DDoS protection to ensure your website remains online and secure by instantaneous inline protection - all the time.
 
 ---
 
