@@ -12,7 +12,7 @@ Detection is a process to analyze the network traffic in which packets are monit
 
 User can set custom threshold values according to their network requirement. Detection is used to set the Alarm so that if any threshold value get breach user received an alert alarm for that.
 
-![ddos_detection_alarm_type](/img/ddos/v7/docs/13.png)
+![ddos_detection_alarm_type](/img/ddos/v7/docs/detect.png)
 
 ![ddos_detection_alarm_type](/img/ddos/v7/docs/detection1.png)
 
@@ -93,9 +93,9 @@ User can set custom threshold values according to their network requirement. Det
 | Outbound UDP Flood (bps)             | Threshold     | 0                   |  --                 | 0                        | Edit      |
 | Outbound UDP Flood (pps)             | Threshold     | 0                   |  --                 | 0                        | Edit      |
 
-![ddos_detection_alaram_type](/img/ddos/v7/docs/24.png)
+![ddos_detection_alaram_type](/img/ddos/v7/docs/ddosdetection.png)
 
-![ddos_detection_alaram_type](/img/ddos/v7/docs/25.png)
+![ddos_detection_alaram_type](/img/ddos/v7/docs/ddosdetection1.png)
 
 
 ### Description

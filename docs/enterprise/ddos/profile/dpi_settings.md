@@ -14,7 +14,7 @@ Deep Packet Inspection (DPI) is one of the most effective methods of analyzing a
 
 Deep packet inspection examines the headers of packets passing through the DDoS device and makes real-time decisions depending on packet information. We check the incoming/outgoing packets follow the RFC standards. User can customize which standard should be check for in/out traffic.
 
-![dpi_settings](/img/ddos/v7/docs/23.png)
+![dpi_settings](/img/ddos/v7/docs/dpisetting.png)
 
 
 ### How to Use

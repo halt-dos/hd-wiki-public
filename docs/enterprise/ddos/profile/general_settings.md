@@ -10,7 +10,7 @@ Settings for inspecting the packet
 
 General settings evaluates the data part and the headers of a packet that is transmitted through an inspection point, weeding out any non-compliant to protocol, spam, viruses, intrusions, and any other defined criteria to block the packet from passing through the inspection point.
 
-![general_setting](/img/ddos/v7/docs/1.png)
+![general_setting](/img/ddos/v7/docs/generalsetting.png)
 
 ### How to Use
 

@@ -21,7 +21,7 @@ It helps in stopping different kinds of HTTP flood attacks.
 
 The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web and is used to load web pages using hypertext links. HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a client machine making a request to a server, which then sends a response message.
 
-![http_settings](\img\ddos\v7\docs\30.png)
+![http_settings](\img\ddos\v7\docs\https.png)
 
 ### How to use
 
@@ -111,7 +111,7 @@ This section helps in stopping different kinds of DNS flood attack.
 
 ---
 
-![dns_setting](/img/ddos/v7/docs/31.png)
+![dns_setting](/img/ddos/v7/docs/dnss.png)
 
 ### How to use
 
@@ -144,7 +144,7 @@ It helps in stopping different kinds of SMTP flood attack.
 
 ---
 
-![miscellaneous_settings](\img\ddos\v7\docs\32.png)
+![miscellaneous_settings](\img\ddos\v7\docs\miscellaneous.png)
 
 ### How to Use
 

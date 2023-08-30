@@ -16,7 +16,7 @@ Network Rules are user-configured rules performed on network interfaces like IP,
 
 3. Click on **Save Changes**
 
-![network_rukes](/img/ddos/v7/docs/22.png)
+![network_rukes](/img/ddos/v7/docs/network.png)
 
 ### Rule Information
 
