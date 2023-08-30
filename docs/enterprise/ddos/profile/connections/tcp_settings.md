@@ -10,7 +10,7 @@ Overview
 
 In DDoS connection, you can configure Connection based protocols which will regulate the payload length, number of inbound & outbound connections, out of order drops, TCP ports, FIN time wait, TCP connection Proxy threshold & advertised MSS.
 
-![](/img/ddos/v7/docs/tcpsetting.png)
+![](/img/ddos/v7/docs/tcp1.png)
 
 ### **How to Use:**
 
@@ -20,117 +20,76 @@ In DDoS connection, you can configure Connection based protocols which will regu
 
 3. Click on Save Changes
 
-![](/img/ddos/v7/docs/tcpsetting1.png)
+![](/img/ddos/v7/docs/tcp2.png)
 
 ### **TCP Settings:**
 
 | Settings                                | Accepted Values  | Default  |
 |-----------------------------------------|------------------|----------|
 | TCP                                     | Boolean          | False    |
-| Max Inbound concurrent connections      | Integer          | 1000000  |
-| Max Outbound concurrent connections     | Integer          | 1000000  |
+| Max Inbound Concurrent Connections      | Integer          | 1000000  |
+| Max Outbound Concurrent Connections     | Integer          | 1000000  |
 | Max Connections Per Source              | Integer          | 0        |
-| Out of order drops                      | Integer          | False    |
+| Inbound Out of order Threshold          | Integer          | 10       |
+| Outbound Out of order Threshold         | Integer          | 1000     |
 | Window size validation                  | Boolean          | False    |
-| Payload Length Misbehaviour Threshold   | Integer          | 0        |
-| Minimum payload length                  | Integer          | 0        |
-| Allow beyond max connections            | Boolean          | False    |
 | Limit Tracking Connections on Ports     | Integer          | Blank    |
 | Connection FIN Time Wait                | Integer          | 10       |
-| Connection proxy                        | Boolean          | False    |
-| Connection proxy trigger threshold      | Integer          | 0        |
-| Connection proxy advertised MSS         | Integer          | 1460     |
-
-### **Agressive AGING**
-
-![tcp_aging](/img/ddos/v7/docs/tcp_aging.png)
+| Payload Length Misbehavior Threshold    | Integer          | 0        |
+| Minimum payload length                  | Integer          | 0        |
+| Minimum Initial Payload Time Window     | Integer          | 0        |
+| Minimum Initial Payload Threshold       | Integer          | 0        |
 
 ### **Description:**
 
 ##### **TCP**
 
-Enable/Disable validation checks for IPv4/ IPv6 packets
-
-##### **Payload Length Misbehaviour Threshold**
-
-Specify the threshold limit for misbehaviour. IP address breaching the threshold is temporarily blacklisted
-
-##### **Minimum payload length**
-
-Specify minimum payload length of packets in TCP connection
-
-##### **Allow beyond max connection**
-
-Specify if new TCP flows should be allowed beyond the max
-
-##### Note:- If Enabled, the new flows beyond the limit will not be tracked
+User can Enable/Disable the validation to check for TCP connection. By enabling it Haltdos Anti-DDoS solution will monitor the TCP traffic.
 
 ##### **Max Inbound concurrent connections**
 
-Sets the maximum inbound concurrent TCP connections to allow
+User can specify the maximum inbound concurrent TCP connections an application can handle.
 
 ##### **Max Outbound concurrent connections**
 
-Sets the maximum outbound concurrent TCP connections to allow
+User can specify the maximum outbound concurrent TCP connections an application can handle
 
 ##### **Max Connections Per Source**
 
-Specify the max concurrent connections from a single source IP address
+User can specify the maximum TCP connections established by any source IP address with the application server, when the application is not under attack. Set 0 to disable mitigation
 
-##### **Out of order drops**
+##### **Inbound Out of order Threshold**
 
-Specify if system should drop TCP packets not belonging to a TCP flow
+User can specify the maximum number of Out of order TCP packets can be allowed for Inbound traffic
+
+##### **Outbound Out of order Threshold**
+
+User can specify the maximum number of Out of order TCP packets can be allowed for Outbound traffic
 
 ##### **Window size validation**
 
-Specify if system should drop invalid window size header in TCP flow
-
-##### **Graceful Startup period**
-
-Specify the time till which Connection mitigations trigger will wait before starting mitigation on startup (in seconds)
+User can Enable/Disable the validation to drop invalid window size header in TCP flow. If the validation is enable Haltdos Anti-DDoS solution monitor the window size header in TCP flow according to configured policies, if not it will bypass it.
 
 ##### **Limit Tracking Connections on Ports**
 
-Specify TCP port(s) that will be tracked for flow monitoring
+User can specify the TCP port(s) that will be tracked and monitored in network flow. In this filed user can define particular ports need to be monitored, if there is no input Haltdos Anti-DDoS solution will by default monitor every ports.
 
 ##### **Connection FIN Time Wait**
 
-This field specifies the time duration for tracking TCP connections after graceful termination. This allows any unsent packets to be transmitted without getting dropped
+User can specify the time duration for tracking TCP connections after graceful termination. This field allows any unsent packets to be transmitted without getting dropped.
 
-##### **Connection proxy**
+##### **Payload Length Misbehavior Threshold**
 
-Enable TCP connection proxy for protecting against TCP Flood attacks such as TCP SYN Flood, etc
+User can specify the consecutive threshold value to limit the misbehavior of IP address. If an IP address breaches the threshold value that IP will temporarily blacklisted
 
-##### **Connection Proxy Trigger Threshold**
+##### **Minimum payload length**
 
-Specify the number of concurrent flows beyond with Connection Proxy should be enabled for subsequent concurrent TCP flows
+User can specify the minimum payload length of packets in TCP connection. If any TCP packet breaches the threshold it will trigger the Payload misbehavior mitigation and packet will be dropped
 
-##### Note:  Applicable only when Connection Proxy is enabled
+##### **Minimum Initial Payload Time Window**
 
-##### **Connection proxy advertised MSS**
+User can specify the minimum time window(in milli-seconds) for evaluating minimum initial payload threshold
 
-Specify the connection proxy advertised MSS
+##### **Minimum Initial Payload Threshold**
 
-##### **Aggressive Aging Settings:**
-
-| Settings                       | Accepted Values | Default |
-|--------------------------------|-----------------|---------|
-| Aging Enable                   | Boolen          | False   |
-| Connection Time Out            | Integer         | 30      |
-| Incomplete Connection Time Out | Integer         | 30      |
-
-### **Description:**
-
-##### **Aggresive Aging Settings**
-
-##### **Aging Enabled**
-
-Enable Aggressive Aging for protecting against TCP Connection flood attacks
-
-##### **Connection Timeout**
-
-Time after which the established inbound TCP connection will be considered stale and will be scheduled for deletion
-
-##### **Incomplete connection timeout**
-
-Specify the half open TCP connection timeout
+User can specify the minimum threshold value(bytes) of Initial Payload length for post connection. If the threshold value breaches it will trigger the Initial data timeout mitigation

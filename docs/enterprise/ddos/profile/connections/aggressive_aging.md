@@ -8,7 +8,7 @@ sidebar_position: 3
 
 The Aggressive aging feature is used to set the age value for non-responsive established & non-established connections.
 
-![aggressive aging](/img/ddos/v7/docs/aggressive_aging.png)
+![aggressive aging](/img/ddos/v7/docs/aging.png)
 
 ### How to Use
 

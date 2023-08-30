@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # Network Rules
@@ -16,7 +16,9 @@ Network Rules are user-configured rules performed on network interfaces like IP,
 
 3. Click on **Save Changes**
 
-![network_rukes](/img/ddos/v7/docs/network_rules.png)
+![network_rukes](/img/ddos/v7/docs/network.png)
+
+### Rule Information
 
 | Settings    | Accepted Values  | Default |
 |-------------|------------------|---------|
@@ -28,22 +30,48 @@ Network Rules are user-configured rules performed on network interfaces like IP,
 
 ### Description
 
-#### Name
+##### **Name**
 
 Specify the name of the rule
 
-#### Rule Description
+##### **Rule Description**
 
 Specify the description for the rule
 
-#### Priority
+##### **Priority**
 
-Specify the priority of the rule
+User can specify the priority of the rule. In case of multiple rules, user can set the priority accordingly
 
-#### Direction
+##### **Direction**
 
-Specify the direction of the rule i.e. Any, Inbound, Outbound
+Specify the direction of the rule on which rule can apply i.e. Any, Inbound, Outbound
 
-#### Action
+**Any**: Rule is applicable on both Inbound as well as Outbound traffic
 
-Select the action of the rule
+**Inbound**: Rule is applicable on Inbound traffic only
+
+**Outbound**: Rule is applicable on Outbound traffic only
+
+##### **Action**
+
+In this field user can select the action which should be applicable on the rule
+
+### Rule Conditions
+
+| Settings    | Accepted Values  | Default |
+|-------------|------------------|---------|
+| Protocol    | Drop Down        | IPV4    |
+| Field       | Drop Down        | Is IPV4 |
+| Criteria    | Drop Down        | None    |
+
+##### **Protocol**
+
+In this field user can specify the Protocol on which rule will be applicable.
+
+##### **Field**
+
+User can specify the Field according to the selected protocol. Field will be different for the different protocol
+
+##### **Criteria**
+
+User can specify the Criteria according to the slected field. Criteria will be differnt for the different field
