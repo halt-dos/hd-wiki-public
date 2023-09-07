@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ---
 
-### Overview
+## Overview
 
 In today’s networks, cyber-attacks cause damage or theft and disrupt services with enormous economic and financial impacts. Software implementations cannot meet performance goals; a combination of software and hardware can be more effective for high-performance pattern matching. Packet content scanning at high speed has become extremely important due to its applications in network security, network monitoring, and traffic management in general. 
 
