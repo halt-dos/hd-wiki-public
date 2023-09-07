@@ -76,7 +76,7 @@ User can specify the limits of HTTP request on per URLs basis.
 
 User can specify the number of request per second from default HTTP request for custom URLs, which means specified number of request can be passed on custom URLs per second by the default HTTP requests
 
-![url_threshold](\img\ddos\v6\docs\ddos15.png)
+![url_threshold](/img/ddos/v7/docs/url.png)
 
 #### **URL Threshold**
 
