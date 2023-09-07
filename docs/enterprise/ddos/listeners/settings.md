@@ -42,7 +42,7 @@ Specify if the WAF should allow HTTP 2.0 requests. By default, it supports other
 This option allows user to specify whether the solution supports HTTP 2.0 request. HTTP/2 aims to be a faster, more efficient protocol than HTTP. By default, it supports other versions like HTTP 1.1  
 
 ##### **Max Concurrent Connection**
-Users are allowed to configure maximum concurrent users for the mentione listener.By default, value is set to 0 i.e. configuration is disabled.
+Users are allowed to configure maximum concurrent connections for the mentioned listener.By default, value is set to 0 i.e. configuration is disabled.
 
 ##### **Client Connection Timeout**
 Users are allowed to configure client connection inactivity timeout. By default, value is set to 0 i.e. configuration is disabled.
