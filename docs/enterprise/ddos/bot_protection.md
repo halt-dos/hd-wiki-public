@@ -33,7 +33,7 @@ This option allows users to configure the time period for which misbehaving IP a
 
 #### Failed DNS Request Rate
 
-This mitigation helps users to safeguard against DNS based attack in which users tried to send non-existing domains resolving queries. If the rate exceeds this threshold, Haltdos will suspend the source IP for the time specified in Temporary Blacklist Duration.
+This option, when enabled, helps users to safeguard against DNS based attack in which users tried to send non-existing domains resolving queries. If the rate exceeds this threshold, Haltdos will suspend the source IP for the time specified in Temporary Blacklist Duration.
 
 #### Tor Traffic
 
