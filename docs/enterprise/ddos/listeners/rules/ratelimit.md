@@ -22,7 +22,7 @@ Rate limit rules are used to rate limit the user requests.
 
 ![Rate Limit rule](/img/ddos/v7/docs/ratelimit.png)
 
-![Rate limit rule](/img/ddos/v7/docs/ratelimit1.png)
+
 
 | SETTINGS       | ACCEPTED VALUE | DEFAULT      |
 |----------------|----------------|--------------|
