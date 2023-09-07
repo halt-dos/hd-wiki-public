@@ -31,24 +31,24 @@ The Aggressive aging feature is used to set the age value for non-responsive est
 
 #### Inbound Aging Enabled
 
-Enable Inbound Connection Timeout
+User can Enable/Disable the validation of timeout for inbound TCP connection. By default this field is disable by enabling it, Haltdos Anti-DDoS solution monitor the age of inbound TCP connection state according to the configured policies.
 
 #### Inbound Connection Timeout
 
-Specify the TCP inbound connection timeout
+User can specify the time limit for inbound TCP connections. By specifying this field user can limit the time for inbound TCP connections, if the connection is non-responsive or non-established it will disconnect the connection according to the input time automatically.
 
 #### Inbound Incomplete Connection Timeout
 
-Specify the half-open TCP inbound connection timeout
+User can specify the time limit for inbound incomplete TCP connections. By specifying this field user can limit the time for inbound half open TCP connections,if the connection is not established till the input time it will disconnect the connection.
 
 #### Outbound Aging Enabled
 
-Enable Outbound Connection Timeout
+User can Enable/Disable the validation of timeout for outbound TCP connection. By default this field is disable by enabling it, Haltdos Anti-DDoS solution monitor the age of outbound TCP connection state according to the configured policies.
 
 #### Outbound Connection Timeout
 
-Specify the TCP outbound connection timeout
+User can specify the time limit for outbound TCP connections. By specifying this field user can limit the time for outbound TCP connections, if the connection is non-responsive or non-established it will disconnect the connection according to the input time automatically.
 
 #### Outbound Incomplete Connection Timeout
 
-Specify the half-open TCP outbound connection timeout
+User can specify the time limit for outbound incomplete TCP connections. By specifying this field user can limit the time for outbound half open TCP connections,if the connection is not established till the input time it will disconnect the connection.
