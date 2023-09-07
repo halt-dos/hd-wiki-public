@@ -29,16 +29,25 @@ Bot protection protects your device from external malicious activities, authenti
 
 #### Temporary Blacklist Duration
 
-That time for which misbehaving IP addresses will be suspended.
+This option allows users to configure the time period for which misbehaving IP addresses will be suspended.
 
 #### Failed DNS Request Rate
 
-If the rate exceeds this threshold, HaltDos will suspend the source IP for the time specified in Temporary Blacklist Duration.
+This option, when enabled, helps users to safeguard against DNS based attack in which users tried to send non-existing domains resolving queries. If the rate exceeds this threshold, Haltdos will suspend the source IP for the time specified in Temporary Blacklist Duration.
 
 #### Tor Traffic
 
-Specify the action from the drop-down menu to be performed on incoming TOR Network traffic.
+This option allows users to specify the action from the drop-down menu to be performed on incoming TOR Network traffic. There are 4 actions that can be performed for the traffic generated from the Tor gateways;
+1. **No Action:** This option will be performed for the TOR traffic.
+2. **Record:** This option will record all request coming from TOR IPs
+3. **Add Suspicion:** This option will add suspicion for the packet, which will increase the packet scoring. The higher the packet score will tends to high chance of blocking that traffic.
+4. **Drop:** This option will drop all the TOR traffic.
+
 
 #### Bad Reputation Traffic
 
-Specify the action from the drop-down menu on incoming traffic coming from suspicious IPs.
+This option allows users to specify the action from the drop-down menu on incoming traffic coming from suspicious IPs. There are 4 actions that can be performed for the traffic generated from bad reputation sources;
+1. **No Action:** This option will be performed for the TOR traffic.
+2. **Record:** This option will record all request coming from TOR IPs
+3. **Add Suspicion:** This option will add suspicion for the packet, which will increase the packet scoring. The higher the packet score will tends to high chance of blocking that traffic.
+4. **Drop:** This option will drop all the TOR traffic.

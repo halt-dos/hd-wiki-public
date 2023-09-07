@@ -26,34 +26,41 @@ DDos Profile helps to differentiate the network by dividing the network into dif
 
 ### Description
 
-#### Profile Name
+##### **Profile Name**
 
-Specify a name for the security profile
+This field can be used to specify the new profile name. This name should be unique.
 
-#### Mode
+##### **Mode**
 
-Specify the mode for the profile i.e. Mitigation or Bypass etc
+This option allows users to specify the mode for the profile i.e. Mitigation, Bypass, Record etc.
 
-#### Parent
+There are four operational modes to select from
 
-Select the parent for the profile created
+- **Bypass**  
+After selecting this mode all the DDoS mitigation for that profile will be bypassed.
 
-#### Destination IP
+- **Record**  
+In this mode, all the mitigation & rule sets will monitor the traffic. No request will be dropped in the record mode. All requests get captured and forwarded in the form of a Record Event. After selecting this mode, Haltdos will Learn the traffic pattern through its Machine Learning based mechanism. All the static mitigation as configured by the user will be in active mode.
 
-Specify the destination IP for the profile
+- **Record with SSLi**  
+In this mode, all the mitigation & rule sets will monitor the traffic. This rule functions same as record mode but in this mode we also offload the traffic and do the inspection of the encrypted traffic.
 
-#### Operational Modes
+- **Mitigation**  
+In this mode, all DDoS mitigation will be turned on including both Static and Dynamic mitigation. When any request dropped by the any mitigation, it will be logged as an event and can be checked under [Incidents](/docs/enterprise/ddos/incidents.md)
 
-There are four operational modes to select
+##### **Stateless Mode**
 
-- **Bypass Mode**  
-After selecting this mode all the DDoS mitigations for that profile will be bypassed.
+This option allows users to change the profile mode from stateful to stateless mode. By default, all the newly configure profiles are configured in stateful mode. DDoS profile with **stateful mode**, will track all connection states of the traffic that is being transferred over the Haltdos Anti DDoS device.If we enable the stateless mode, DDoS device will not track any connection.
 
-- **Record Mode**  
-In this mode, all the mitigations & rule sets will monitor the traffic. If any request is about to drop, then it gets captured and forwarded in the form of a Record Event.
+:::note Note
+To enable connection state tracking, we also need to enable [TCP Settings](/docs/enterprise/ddos/profile/connections/tcp_settings.md).
+:::
 
-- **Learning Mode**  
-After selecting this mode, HaltDos will Learn the traffic pattern through its Machine Learning based mechanism. All the static mitigation as configured by the user will be in active mode.
+##### **Parent**
 
-- **Mitigation Mode**  
-In this mode, all DDoS mitigations will be turned on including both Static and Dynamic mitigation.
+This option allows users to select the parent profile for the profile created.
+
+##### **Destination IP**
+
+This option allows users to configure the destination IP. On the basis of destination IP traffic will be filtered and mitigation will be performed. Two profiles can not have same destination IP. This destination IP will only be checked for the Inbound traffic i.e. traffic coming from WAN and going towards LAN side.
+

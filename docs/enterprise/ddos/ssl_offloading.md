@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # SSL Offloading
@@ -16,24 +16,16 @@ In addition to DDoS mitigation, the Offload mechanism can be used for features l
 
 2. Add **Offload Stream** with specific configuration required
 
-3. Click on **Save Changes**
+3. Click on **Save Changes**.
+
+![offload_stream](\img\ddos\v7\docs\ssloffloading1.png)
 
 | Settings      | Accepted Values | Default |
 |---------------|-----------------|---------|
-| Server IP     | String          | Blank   |
-| Listening IP  | String          | Blank   |
-| Forwarding IP | String          | Blank   |
+| Virtual IP     | String          | Blank   |
 
 ### Description
 
-#### Server IP
+##### **Virtual IP**
 
-Specify the IP address
-
-#### Listening IP
-
-Specify listening port for offloading
-
-#### Forwarding IP
-
-Specify forwarding port for offloading
+Users need to add the virtual IP address on which traffic will be received. This IP will be checked for all inbound traffic whether the request has this VIP in their destination IP location or not.

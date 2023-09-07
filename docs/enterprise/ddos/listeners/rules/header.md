@@ -1,7 +1,11 @@
+---
+sidebar_position: 3
+---
+
 # Header Rules
 Helps to modify headers, cookies, and arguments in the request sent to the back-end server as well as modifying response sent to the client.
 
-## Overview 
+### Overview 
 We have introduced Header rules by which application owners can manipulate request headers, cookies, and arguments in request as well as response headers. Users can create/update header rules at run time with on-the-fly updates. It has the functionality to add/remove/update any cookie/header/arguments in the request to the web-server(back-end) as well as respond to the client.
 
 ![Header rule](/img/ddos/v7/docs/header.png)
@@ -16,19 +20,19 @@ We have introduced Header rules by which application owners can manipulate reque
 
 ### Description
 
-#### Rule Name
+##### **Rule Name**
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
-#### Rule Message
+##### **Rule Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
 
-#### Rule Priority
+##### **Rule Priority**
 
 User can define the rule's priority among various other custom error rules.
 
-#### Rule Action
+##### **Rule Action**
 
 The rule action determines what action (add/remove/overwrite) the rule will perform. The accepted values are:
 
@@ -48,47 +52,47 @@ If the action is **OVERWRITE**, then two other fields are required first is **Se
 In order to escape the dollar($) character in the replace, add the dollar symbol twice.
 :::
 
-#### Evaluation Phase
+##### **Evaluation Phase**
 
 Select the evaluation phase for the rule i.e. Request or Response.
 
-#### Attribute Name
+##### **Attribute Name**
 
 Specify the attribute name which need to add/delete/overwrite with rule.
 
-#### Attribute Value
+##### **Attribute Value**
 
 Specify the attribute value which will be mentioned in the attribute.
 
-#### Add Condition
+##### **Add Condition**
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
 For adding a condition, the required fields are:
 
-#### Check Response
+##### **Check Response**
 
 This field determines that the condition will be checked on request/response parameters.
 
-#### Find Location
+##### **Find Location**
 
 This field determines whether the condition should be checked on headers/cookies/arguments. The accepted values are:
 
-**HEADER_VAL:** Rule will be applicable on the header value in the request or response.
+ - **HEADER_VAL:** Rule will be applicable on the header value in the request or response.
 
-**COOKIE_VAL:** Rule will be applicable to the cookie value in the request or response.
+ - **COOKIE_VAL:** Rule will be applicable to the cookie value in the request or response.
 
-**AGRS_VAL:** Rule will be applicable to the argument value in the request or response. 
+ - **AGRS_VAL:** Rule will be applicable to the argument value in the request or response. 
 
-#### Find Parameter
+##### **Find Parameter**
 
 This field specifies the name of the header/cookie/ arguments on which condition will be validated. Search Pattern: This field specifies the pattern that will be matched against the header/cookie/ argument value to satisfy the condition.
 
-#### Match Condition
+##### **Match Condition**
 
 The user can define the match condition for the parameter and match value.
 
-#### Match Value
+##### **Match Value**
 
 The user can define what value needs to be matched with the match condition.
 

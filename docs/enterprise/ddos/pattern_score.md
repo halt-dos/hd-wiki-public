@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 
 # Pattern Score
@@ -13,8 +13,6 @@ In today’s networks, cyber-attacks cause damage or theft and disrupt services 
 Haltdos supports pattern scoring on the behalf of the behavior of the packet.
 
 ![pattern_score](/img/ddos/v7/docs/paternscore.png)
-
-![pattern_score](/img/ddos/v7/docs/patternscore1.png)
 
 ### How to Use
 
@@ -60,4 +58,7 @@ Haltdos supports pattern scoring on the behalf of the behavior of the packet.
 | DNS RARE QUERY TYPE              | LOW, MEDIUM, HIGH | Specify suspicion score as LOW, MEDIUM or HIGH |
 
 
-![](\img\ddos\v6\docs\ddos30.png)
+Under the packet scoring section, users can configure what kind of severity level should be used while setting up the packet score.
+In Haltdos Anti DDoS solution, we provide packet score to all packets those are going through the Anti DDoS solution. We have defined here three categories of packet scoring which can be customizable by the users. User can change the packet scoring mechanism from low, medium and high.
+The low level indicates that packet scoring will be start from lower level and 
+
