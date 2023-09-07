@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Cloud Signaling
@@ -30,34 +30,34 @@ A faster, automated approach to comprehensive DDoS Mitigation Enterprises need c
 
 ### Description
 
-#### Enabled
+##### **Enabled**
 
 Enable to allow the signaling to operate.
 
-#### Provider Name
+##### **Provider Name**
 
 Specify the name of the upstream provider.
 
-#### Signaling URL
+##### **Signaling URL**
 
 Specify API endpoint of upstream provider for sending cloud signal
 
-#### Authentication User
+##### **Authentication User**
 
 Specify password user credentials for interactive with upstream cloud signaling API
 
-#### Authentication password
+##### **Authentication password**
 
 Specify password credentials for interactive with upstream cloud signaling API
 
-#### Signaling Trigger
+##### **Signaling Trigger**
 
 Specify the bandwidth threshold (in Mbps) beyond with a cloud signal that will be sent to the upstream provider
 
-#### Managed Object ID
+##### **Managed Object ID**
 
 Specify unique customer ID provided by the upstream providers for further authentication
 
-#### IP Range
+##### **IP Range**
 
-Specify the IP range
+Users can specify the IP range

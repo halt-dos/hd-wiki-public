@@ -6,6 +6,7 @@ Make DDOS listen on specific ports to accept connections and mitigate the attack
 ## Overview 
 Listeners are used for configuring websites and servers appropriately that it can help to reduce response time, increase throughput, optimize resource use and overload of any single resource.
 
+
 ![listner](/img/ddos/v7/docs/listner.png)
 
 ### How to Use
@@ -16,23 +17,23 @@ Listeners are used for configuring websites and servers appropriately that it ca
 
 3. Configure listener as per requirement.
 
-4. Click on **Save Changes**
+4. Click on **Save Changes**.
 
 ![add-listner](/img/ddos/v7/docs/add_listner.png)
 
 |Parameter | Accepted Values | Default 
 | ----------- | ----------- |---------|
-| Sub Domain| Website Name | Blank
+| Domain/Virtual IP| Website Name | Blank
 |Service Type|Drop-down|HTTP
-|Origin Servers & port|Server IP’s with listening port(Ex. 8.8.8.8:80)|Blank
+|Origin Servers|Server IP’s with listening port(Ex. 192.168.0.15)|Blank
 
 ### Description 
 
-#### Sub Domain
+##### **Domain/Virtual IP**
 This option allows user to specify fully qualified domain name of the website. Whenever adding the root domain, ensure it is empty.
 
-#### Service Type
-This option allows user to specify service type based on the protocol of backend application. The listener/subdomain can be created service type with any of the three protocols i.e. HTTP, TCP.
+##### **Service Type**
+This option allows user to specify service type based on the protocol of backend application. The listener/subdomain can be created service type with any of the two protocols i.e. HTTP, TCP. When HTTP is selected, DDOS will provide L7 functionality and configurations. For TCP listeners, L4 configurations and functionalities will be available to configure.
 
-#### Origin Servers
-This option allows user to specify IP and listening port of the backend server wherein load balancing occurs. There can be combination of multiple IP and listening port.
+##### **Origin Servers**
+This option allows user to specify virtual IP the backend server IP where request will be forwarded post offloading. This IP can be added using SSL offloading option. Once the virtual IPs will be added in the SSL offloading, all those IPs will be visible in this field.

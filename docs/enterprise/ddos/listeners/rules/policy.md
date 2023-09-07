@@ -1,6 +1,10 @@
+---
+sidebar_position: 4
+---
 # Policy Rules
 
 ---
+### Overview
 
 Policy rule is the feature of Haltdos DDOS that allows application owners to set various policy rules based on their  requirements. 
 
@@ -27,23 +31,23 @@ Policy rule is the feature of Haltdos DDOS that allows application owners to set
 
 ### Description:
 
-#### Rule Name
+##### **Rule Name**
 
 User can define the rule name.
 
-#### Rule Message
+##### **Rule Message**
 
 User can define the rule message.
 
-#### Rule Priority
+##### **Rule Priority**
 
 User can define the rule priority among various other policy rules.
 
-#### Rule Action
+##### **Rule Action**
 
 User can define what action needs to be taken in case this rule is being satisfied.
 
-### Rule Condition
+##### **Rule Condition**
 
 ![Policy Condition](/img/ddos/v7/docs/policy_condition.png)
 
@@ -54,20 +58,20 @@ User can define what action needs to be taken in case this rule is being satisfi
 | Match Condition | Drop-Down      | Contains  |
 | Match Value     | String         | Blank     |
 
-### Description:
+### Description
 
-#### Find Location
+##### **Find Location**
 
 User can define the source location where this condition needs to be applied.
 
-#### Find Parameter
+##### **Find Parameter**
 
 The user can define the parameter based on the location of the condition.
 
-#### Match Condition
+##### **Match Condition**
 
 The user can define the match condition for the parameter and match value.
 
-#### Match Value
+##### **Match Value**
 
 The user can define what value needs to be matched with the match condition.
