@@ -14,6 +14,12 @@ User can set custom threshold values according to their network requirement. Det
 
 ![ddos_detection_alarm_type](/img/ddos/v7/docs/detect.png)
 
+![ddos_detection_alarm_type](/img/ddos/v7/docs/detection1.png)
+
+![ddos_detection_alarm_type](/img/ddos/v7/docs/detection2.png)
+
+![ddos_detection_alarm_type](/img/ddos/v7/docs/detection3.png)
+
 ### How to Use
 
 1. Go to **Apps > DDoS > Profile > Detection**
@@ -54,11 +60,7 @@ User can set custom threshold values according to their network requirement. Det
 | Inbound TCP RST Flood (pps)          | Threshold     | 0                   |  --                 | 0                        | Edit      |
 | Inbound TCP SYN Flood (pps)          | Threshold     | 0                   |  --                 | 0                        | Edit      |
 | Inbound UDP Flood (bps)              | Threshold     | 0                   |  --                 | 0                        | Edit      |
-| Inboun![ddos_detection_alarm_type](/img/ddos/v7/docs/detection1.png)
-
-![ddos_detection_alarm_type](/img/ddos/v7/docs/detection2.png)
-
-![ddos_detection_alarm_type](/img/ddos/v7/docs/detection3.png)d UDP Flood (pps)              | Threshold     | 0                   |  --                 | 0                        | Edit      |
+| Inbound UDP Flood (pps)              | Threshold     | 0                   |  --                 | 0                        | Edit      |
 | Outbound Connection Flood (cps)      | Threshold     | 0                   |  --                 | 0                        | Edit      |
 | Outbound DNS Flood (bps)             | Threshold     | 0                   |  --                 | 0                        | Edit      |
 | Outbound DNS Flood (pps)             | Threshold     | 0                   |  --                 | 0                        | Edit      |
