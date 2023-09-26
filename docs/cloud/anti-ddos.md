@@ -34,7 +34,7 @@ Our advanced global network leverages top-of-the-line, customized servers and ne
 
 ## How Does It Work?
 
-Haltdos Cloud is a managed deployment of Haltdos Platform across multiple Cloud Service Providers. While each CSP may offers Anti-DDoS protection against volumetric DDoS attacks, Haltdos Cloud uses its indigenious Anti-DDoS-as-a-Service as the first layer of defence for mitigating Layer 3 to Layer 7 attacks. In combination with leveraging the infrastructures of various CSP partners, Haltdos Cloud can protect DDoS attacks of any size, any type, and anywhere! 
+Haltdos Cloud is a managed deployment of Haltdos Platform across multiple Cloud Service Providers. While each CSP may offers Anti-DDoS protection against volumetric DDoS attacks, Haltdos Cloud uses its indigenious Anti-DDoS-as-a-Service as the first layer of defence for mitigating Layer 3 to Layer 7 attacks with mean time to respond to an incident of less than 30 seconds. In combination with leveraging the infrastructures of various CSP partners, Haltdos Cloud can protect DDoS attacks of any size, any type, and anywhere! 
 
 The benefits of Haltdos Cloud Scrubbing is as follows:
 
