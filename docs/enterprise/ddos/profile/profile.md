@@ -63,4 +63,3 @@ This option allows users to select the parent profile for the profile created.
 ##### **Destination IP**
 
 This option allows users to configure the destination IP. On the basis of destination IP traffic will be filtered and mitigation will be performed. Two profiles can not have same destination IP. This destination IP will only be checked for the Inbound traffic i.e. traffic coming from WAN and going towards LAN side.
-

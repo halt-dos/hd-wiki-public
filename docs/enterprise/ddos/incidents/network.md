@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ---
 
-On the incident page, users can check what packets are dropped by haltdos mitigation solution.
+On the incident page, users can check what packets are dropped by Haltdos mitigation solution.
 
 ![incidents](\img\ddos\v7\docs\incidents.png)
 
