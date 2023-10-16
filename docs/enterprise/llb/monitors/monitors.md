@@ -49,7 +49,7 @@ This option allows the user to set a name for his monitoring rule.
 
 ##### **Enabled**
 
-This option allows enable or disable monitor rule. by default, It is set to disable.
+This option allows to enable or disable monitor rule. by default, It is set to disable.
 
 ##### **Update Static Route**
 
@@ -65,7 +65,15 @@ This option allows the user to set a health check interval for monitoring the se
 
 ##### **Monitor Type**
 
-It specifies the health check type for monitoring. Users need to select the appropriate type of protocol to monitor the interfaces. By default, TCP is selected.
+It specifies the health check type for monitoring. Users need to select the appropriate type of protocol to monitor the interfaces. By default, TCP is selected. Monitor can be configured for the mentioned protocols using the drop-down;
+1. TCP,
+2. ICMP,
+3. DNS,
+4. HTTP,
+5. HTTPS,
+6. SCRIPTS,
+
+To enable monitor based on UDP, ARP or any other protocol, **CUSTOM SCRIPT** can be used.
 
 ##### **Query Server**
 
