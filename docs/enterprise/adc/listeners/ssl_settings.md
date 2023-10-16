@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 
 # SSL Settings
-**SSL (Secure Sockets Layer)** and its successor, **TLS (Transport Layer Security)**, are protocols for establishing authenticated and encrypted links between networked computers.
+**SSL (Secure Sockets Layer)** and its successor, **TLS (Transport Layer Security)**, are protocols for establishing authenticated and encrypted links between networked computers. SSL offloading is the process of removing the SSL-based encryption from incoming traffic to relieve a web server of the processing burden of decrypting and/or encrypting traffic sent via SSL. 
 
 ---
 ![SSL Settings](/img/adc/v7/docs/sslsetting.png)
@@ -55,6 +55,16 @@ This option allows users to specify an SSL certificate for Encryption / Decrypti
 ##### **SSL Cipher Suites**
 
 This option allows users to specify the security/compatibility of SSL with modern web browsers. It provides a set of algorithms and protocols to secure communication between client and server.
+
+##### **SSL Protocols**
+
+This option allows users to specify the SSL protocol for the secure communication. User can select any SSL protocol from the list mentioned below;
+1. SSLv2
+2. SSLv3
+3. TLSv1
+4. TLSv1.1
+5. TLSv1.2
+6. TLSv1.3
 
 ##### **SSL Session Caching**
 
@@ -112,7 +122,10 @@ This option allows users to specify header names for forwarding SSL certificate 
 
 ##### **Invalid Client Certificate Action**
 
-This option allows users to specify the action to be performed when client certificate verification fails.
+This option allows users to specify the action to be performed when client certificate verification fails. User can select any of the actions mentioned below;
+
+1. No Action : It means for invalid Client certificate, there will be no action taken
+2. Redirect : It means for an invalid client certificate, there w
 
 ##### **Custom Page**
 
