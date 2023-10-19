@@ -2,9 +2,9 @@
 sidebar_position: 0
 ---
 
-# WAF
+# WAF/WAAP
 
-This section describes the knowledge base of how to use Haltdos WAF to adequately protect Web & API applications.  
+This section describes the knowledge base of how to use Haltdos WAF / WAAP to adequately protect Web & API applications.  
 
 Some of the WAF use cases are mentioned below:
 
@@ -74,3 +74,4 @@ Some of the WAF use cases are mentioned below:
 64. [How to whitelist request based on particular pattern?](./kb-1064.md)
 65. [How to set rule staging from Haltdos console for managing Signatures?](./kb-1065.md)
 66. [How to check the backend server down incident on Haltdos console?](./kb-1066.md)
+67. [How to enable IP transparency mode in Haltdos WAF using Haltdos Web console?](./kb-3006)
