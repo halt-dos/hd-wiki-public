@@ -46,7 +46,7 @@ In this mode, all the mitigation & rule sets will monitor the traffic. No reques
 In this mode, all the mitigation & rule sets will monitor the traffic. This rule functions same as record mode but in this mode we also offload the traffic and do the inspection of the encrypted traffic.
 
 - **Mitigation**  
-In this mode, all DDoS mitigation will be turned on including both Static and Dynamic mitigation. When any request dropped by the any mitigation, it will be logged as an event and can be checked under [Incidents](/docs/enterprise/ddos/incidents.md)
+In this mode, all DDoS mitigation will be turned on including both Static and Dynamic mitigation. When any request dropped by the any mitigation, it will be logged as an event and can be checked under **Incidents**
 
 ##### **Stateless Mode**
 
