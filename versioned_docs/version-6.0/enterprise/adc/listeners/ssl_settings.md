@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ### How to Use:
 
-1. Go to [**SLB**](/adc/docs) > [**Listeners**](../listeners/) > SSL Settings
+1. Go to [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > SSL Settings
 
 2. Configure your settings.
 

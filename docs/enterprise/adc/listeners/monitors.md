@@ -10,7 +10,7 @@ Monitoring provides a comprehensive overview of the status and performance of th
 
 ### How to Use:
 
-1. Go to **Stack** > [**SLB**](/adc/docs)  > [**Listeners**](../listeners/) > **Monitors**.
+1. Go to **Stack** > [**SLB**](/enterprise/adc)  > [**Listeners**](./listeners.md) > **Monitors**.
 2. Select the **Add Monitor**.
 3. Configure your settings. 
 4. Click **Save Changes**.

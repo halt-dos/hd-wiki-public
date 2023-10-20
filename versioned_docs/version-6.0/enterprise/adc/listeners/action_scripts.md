@@ -13,7 +13,7 @@ Actions Scripts can be run on the set time intervals. Users can set the script w
 
 ### How to Use:
 
-1. Go to [**SLB**](/adc/docs)  > [**Listeners**](../listeners/) > Action Scripts.
+1. Go to [**SLB**](/enterprise/adc)  > [**Listeners**](./listeners.md) > Action Scripts.
 
 2. Configure your settings.
 

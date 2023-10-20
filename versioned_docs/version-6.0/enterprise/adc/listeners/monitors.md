@@ -8,7 +8,7 @@ sidebar_position: 5
 
 ### How to Use:
 
-1. Go to **Stack** > [**SLB**](/adc/docs)  > [**Listeners**](../listeners/) > **Monitors**.
+1. Go to **Stack** > [**SLB**](/enterprise/adc)  > [**Listeners**](./listeners.md) > **Monitors**.
 
 2. Select the Add Monitor.
 

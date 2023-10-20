@@ -11,7 +11,7 @@ Error Rules is a feature of Haltdos SLB that allows application owners to show c
 ![errorrules](/img/adc/v7/docs/errorrules.png)
 
 ### How to Use:
-1. Go to Stack > [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > **Rules**.
+1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 2. Select the **Error rules**.
 3. Click **Add Rule** button.
 4. Configure your settings. 

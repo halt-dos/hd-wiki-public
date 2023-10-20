@@ -12,7 +12,7 @@ We have introduced Header rules by which application owners can manipulate reque
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > **Rules**.
+1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 
 2. Select the **Header Rule**.
 

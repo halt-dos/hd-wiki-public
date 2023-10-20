@@ -12,7 +12,7 @@ Redirection Rules is a feature of Haltdos SLB that allows application owners to 
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > **Rules**.
+1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 
 2. Select the **Redirection Rule**.
 

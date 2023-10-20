@@ -20,7 +20,7 @@ Server Groups provide user two functionality at a page to add Server Group and V
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > Server groups.
+1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > Server groups.
 
 2. Click **Add Server Group** button.
 
@@ -52,4 +52,4 @@ This option allows users to enable/disable **SSL**. It helps to add more operati
 
 This option allows user to see the Server Analytics which is a dynamically report of server groups, show the analysis of resources, their upstream summary based on given date range. According to Date Range, dashboard shows report from past 5 Minutes to Custom Range.
 
-This analytics is different from the homepage's analytics because here the dashboard is organized on the basis of server group and the analytics located under the **Stack** option is organized on the basis of [**listeners**](../../listeners/).
+This analytics is different from the homepage's analytics because here the dashboard is organized on the basis of server group and the analytics located under the **Stack** option is organized on the basis of [**listeners**](../listeners.md).

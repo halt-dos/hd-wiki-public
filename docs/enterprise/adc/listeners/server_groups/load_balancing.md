@@ -36,7 +36,7 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 ### How to Use:
 
-1. Go to Stack > **SLB** > [**Listeners**](../../listeners/) >[** Server Groups**](../server_groups/) > **Select Server Name** > **Load Balancing**  
+1. Go to Stack > **SLB** > [**Listeners**](../listeners.md) >[** Server Groups**](./server_groups.md) > **Select Server Name** > **Load Balancing**  
 
 2. Configure your settings.  
 

@@ -6,7 +6,7 @@ Haltdos SLB has various types of rules for users to configure SLB as per their n
 
 ### How to Use:
 
-1. Go to [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > Rules.
+1. Go to [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > Rules.
 
 2. Select the appropriate rule.
 
@@ -26,7 +26,7 @@ In Haltdos SLB, users can set multiple types of rules based on their requirement
 
 3. [**Redirection Rules**](redirection_rules)
 
-4. [**Load Balancing Rules**](upstream_rule)
+4. [**Load Balancing Rules**](upstream_rules)
 
 5. [**Policy Rules**](policy_rules)
 

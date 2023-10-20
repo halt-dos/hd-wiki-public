@@ -11,7 +11,7 @@ Listeners are used for collecting set of websites and servers appropriately that
 
 ### How to Use:
 
-1. Go to **Stack** > [**SLB**](/adc/docs) > **Listeners** 
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > **Listeners** 
 2. Click **Add Listener** button.
 3. Configure your settings.
 4. Click **Save**.

@@ -58,10 +58,49 @@ const config = {
       }),
     ],
   ],
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: false,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/logo/icon_light.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json',
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(37, 194, 160)',
+          },
+        ],
+      }
+    ]
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    (
+      {
+      algolia: {
+        appId: '1ZIELJEF8N',
+        apiKey: 'a7af1e25b6dd3029f65b497136ac7a9d',
+        indexName: 'haltdos',
+        contextualSearch: true,
+        searchPagePath: 'search',
+        insights: true
+      },
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false,
@@ -86,6 +125,10 @@ const config = {
           {to: 'enterprise', label: 'Enterprise', position: 'left'},
           {to: 'cloud', label: 'Cloud', position: 'left'},
           {href: 'https://haltdos.com',label: 'Haltdos', target: '_blank', rel: null, position: 'right', className:'haltdos'},
+          {
+            type: 'search',
+            position: 'right',
+          },
           {
             type: 'docsVersionDropdown',
             position: 'right',

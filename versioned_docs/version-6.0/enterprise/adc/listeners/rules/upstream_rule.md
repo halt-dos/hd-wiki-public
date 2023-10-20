@@ -12,7 +12,7 @@ If a user has defined server group and wants to use different groups depending u
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > **Rules**.
+1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 
 2. Select the Load Balancing Rule.
 

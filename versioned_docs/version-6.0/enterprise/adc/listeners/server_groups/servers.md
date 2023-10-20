@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/adc/docs) > [**Listeners**](../../listeners/) > Server Groups.
+1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > Server Groups.
 
 2. Select the group name.
 

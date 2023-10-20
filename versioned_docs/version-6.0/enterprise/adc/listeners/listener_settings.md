@@ -13,7 +13,7 @@ Make WAF listen on specific ports to accept connections and distribute across on
 
 ### How to Use:
 
-1. Go to [**SLB**](/adc/docs) > [**Listeners**](../listeners/) > **Operational Settings**
+1. Go to [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Operational Settings**
 
 2. Configure your settings
 
