@@ -39,7 +39,12 @@ const config = {
           lastVersion: 'current',
           versions:{
             current: {
-              label: 'v7'
+              label: 'v8'
+            },
+            '7.0': {
+              label: 'v7',
+              banner: 'none',
+              path: 'v7'
             },
             '6.0': {
               label: 'v6',
