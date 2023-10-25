@@ -2,16 +2,13 @@
 sidebar_position: 1
 ---
 
-
-
 # Pre-Requisites
-
   
-To follow along the installation of Haltdos Community WAF and getting started, you require the following:  
+To follow along the installation of Haltdos Professional WAF and getting started, you require the following:  
 
 ### Supported OS
 
-Haltdos Community WAF currently supports the following OS:
+Haltdos Professional WAF currently supports the following OS:
 
 - **Ubuntu 20**
 - **Ubuntu 22**
