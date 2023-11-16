@@ -74,3 +74,5 @@ Some of the WAF use cases are mentioned below:
 64. [How to whitelist request based on particular pattern?](./kb-1064.md)
 65. [How to set rule staging from Haltdos console for managing Signatures?](./kb-1065.md)
 66. [How to check the backend server down incident on Haltdos console?](./kb-1066.md)
+67. [How to configure IP transparency through Haltdos Solution?](./kb-1067.md)
+68. [Why do we need to configure web application to accept traffic from WAF only?](./kb-1068.md)
