@@ -61,7 +61,7 @@ sudo service offloader status
 
 ### Step 3: Account Registration
 
-After completing the setup verification step, you will be able to access the Haltdos Professional GUI at https://IP:9000.
+After completing the setup verification step, you will be able to access the **Haltdos Professional GUI** at **https://<SERVER_IP_ADDRESS>:9000**
 
 After navigating to the IP, the below page will be displayed, where the user needs to enter their Email ID and click on the **Next** button.
 
@@ -106,7 +106,7 @@ If the service is still shown as loaded and inactive, or if you face any other k
 
 ### Step 4: Accesing Haltdos Professional GUI
 
-Login to the **GUI Console**, at **https://<SERVER_IP>:9000** using the credentials provided during the step 4 of the registration process.
+Login to the **GUI Console**, at **https://<SERVER_IP_ADDRESS>:9000** using the credentials provided during the step 4 of the registration process.
 
 ![login](/img/pro-waf/docs/login.png)
 
