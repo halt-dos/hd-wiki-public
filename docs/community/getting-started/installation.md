@@ -59,7 +59,7 @@ sudo service offloader status
 
 ![haltdos](/img/ce-waf/docs/status/offloader.png)
 
-You can access **Haltdos Community GUI** from **https://<MACHINE_IP_ADDRESS>:9000**
+You can access **Haltdos Community GUI** from **https://<SERVER_IP_ADDRESS>:9000**
 
 ![haltdos](/img/ce-waf/docs/setup/setup.png)  
 
