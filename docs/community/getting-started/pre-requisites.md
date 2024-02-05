@@ -11,11 +11,11 @@ To follow along the installation of Haltdos Community WAF and getting started, y
 
 Haltdos Community WAF currently supports the following OS:
 
-- **Ubuntu 18** **Ubuntu 20** **Ubuntu 22** **Debian 11**
-- **Rocky Linux 8** **Rocky Linux 9**
-- **CentOS 8 Stream** **CentOS 9 Stream**
-- **Fedora 38** **Fedora 39**
-- **Rhel 8**  **Rhel 9**
+- **Ubuntu 18**, **Ubuntu 20**, **Ubuntu 22**, **Debian 11**
+- **Rocky Linux 8**, **Rocky Linux 9**
+- **CentOS Stream 8**, **CentOS Stream 9**
+- **Fedora 38**, **Fedora 39**
+- **Rhel 8**,  **Rhel 9**
 
 ## Minimum System Requirements
 

@@ -14,6 +14,16 @@ sudo apt-get update
 ```
 sudo apt-get install -y curl
 ```
+For Enterprise Linux System
+
+```
+sudo dnf update
+```
+
+```
+sudo dnf install -y curl
+```
+
 
 ### Step 1: Installing 
 
