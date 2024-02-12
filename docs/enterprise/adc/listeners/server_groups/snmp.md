@@ -14,7 +14,7 @@ sidebar_position: 3
 3. Configure your settings. 
 4. Click **Save Changes**.
 
-![snmp](/img/adc/v7/docs/snmp.png)
+![snmp](/img/adc/v8/docs/snmp.png)
 
 | SETTINGS             | ACCEPTED VALUE | DEFAULT           |
 |----------------------|----------------|-------------------|

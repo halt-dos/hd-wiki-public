@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ---
 
-## Overview
+### Overview
 
 Simple Network Management Protocol (SNMP) is an application–layer protocol defined by the Internet Architecture Board (IAB) in RFC1157 for exchanging management information between network devices. It is a part of Transmission Control Protocol⁄Internet Protocol (TCP⁄IP) protocol suite.
 
@@ -42,54 +42,47 @@ SNMP uses a blend of pull and push communications between network devices and th
 
 #### Description
 
-**SNMP Name** 
+##### **SNMP Name** 
 
 User can specify the SNMP client name.
 
-**System Description** 
+##### **System Description** 
 
 User can describe about the SNMP Machine
 
-**System Location**
+##### **System Location**
 
 User can enter the location of the Machine.
 
-**System Contact**
+##### **System Contact**
 
 User can specify contact information for the machine
 
-**Layer4 Protocol**
+##### **Layer4 Protocol**
 
 Users can select underlying protocol for SNMP Communication
 
-**Agent Port**
+##### **Agent Port**
 
 User can select SNMP agent port number for SNMP communication
 
-**Agent Address**
+##### **Agent Address**
 
 User select SNMP agent IP addresses for SNMP communication
 
-**Enable Traps**
+##### **Enable Traps**
 
 Users can enable or disable SNMP traps
 
-**Trap Username / Community**
+##### **Trap Username / Community**
 
 User can select the username / community to use when sending traps
 
-**Manager Address**
+##### **Manager Address**
 
 Users can enter SNMP monitor IP address.
 
-**Manager Port**
+##### **Manager Port**
 
 Users can enter SNMP monitor port address.
-
-
-
-
-
-
-
 

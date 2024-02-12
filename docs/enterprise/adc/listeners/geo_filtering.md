@@ -23,8 +23,8 @@ Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. 
 | Blacklisted Countries   | Drop Down            | Blank          |
 | Whitelisted IP Prefixes | IP address with CIDR | Blank          |
 | Blacklisted IP Prefixes | IP address with CIDR | Blank          |
-| Bad Reputation Traffic  | Drop Down            | No Action      |
-| BlackListed ASN         |   String             | Blank          |
+| Bad Reputation Traffic  | Drop-Down            | No Action      |
+| Blacklisted ASN         |   String             | Blank          |
 
 ### Description:
 
@@ -42,8 +42,8 @@ This section specifies the list of IPs that will be permanently disallowed from 
 
 ##### **Bad Reputation Traffic**
 
-Users can specifies the action to be performed on traffic from suspicious IPs.
+Users can specify the action to be performed on traffic from suspicious IPs.
 
-##### BlackListed ASN 
+##### Blacklisted ASN 
 
 User need to specific Specify the list of Autonomous System Numbers that will be permanently disallowed from accessing the website.

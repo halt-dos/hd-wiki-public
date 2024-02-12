@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Servers
 
-![servers](/img/adc/v7/docs/server.png)
+![servers](/img/adc/v8/docs/server.png)
 
 ### How to Use:
 
@@ -30,17 +30,17 @@ sidebar_position: 1
 | Slow Start           | Integer      | 0   |
 | Max Connection | Integer        | Integer |
 
-![servers2](/img/adc/v7/docs/server1.png)
+![servers2](/img/adc/v8/docs/server1.png)
 
 ### Description:
 
 ##### **Server ID**
 
-Server ID is used to identify the upstream servers. It will be always unique for every original/upstream server.
+Server ID is used to identify the upstream servers. It will be always unique for every original/upstream server among multiple listeners.
 
 ##### **Server**
 
-This option allows users to add the server domain name/IPv4/IPv6 address of the server.
+This option allows users to add the server **domain name/IPv4/IPv6** address of the server.
 
 ##### **Port**
 

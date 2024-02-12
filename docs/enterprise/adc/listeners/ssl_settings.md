@@ -50,7 +50,7 @@ This option allows users to specify if the solution should offload SSL traffic. 
 
 ##### **SSL Certificate**
 
-This option allows users to specify an SSL certificate for Encryption / Decryption. It authenticates the identity of the website and more secure. It assures users that you are using a authentic website.
+This option allows users to specify an SSL certificate for Encryption / Decryption. It authenticates the identity of the website and more secure. It assures users that you are using an authentic website.
 
 ##### **SSL Cipher Suites**
 
@@ -84,7 +84,7 @@ This option allows users to specify an SSL certificate for Client Authentication
 
 This option allows users to specify an SSL certificate for Client Authentication. It provides the identity of the connecting users. User can redirect at **Client Certificate** and add certificate.
 
-##### **Certifcate Revocation List**
+##### **Certificate Revocation List**
 
 Users can specify client certificate revocation list.
 
