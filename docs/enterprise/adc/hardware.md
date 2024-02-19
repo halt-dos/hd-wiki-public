@@ -17,6 +17,9 @@ Haltdos hardware specs page introduce customers about various range of models al
 | L7 Transactions per Second     | 90K                     |
 | Max Concurrent Connections     | 7 M                     |
 | Induced Latency                | < 1 milli-second        |
+| Operating Temperature Range (°C)| 0° to 45° C             |
+| Storage Temperature Range (°C)  | 0° to 45° C             |
+| Operating Humidity (%RH)       | 0% to 90%               |
 
 
 ## Model - HD-CAN-1100 
@@ -33,6 +36,9 @@ Haltdos hardware specs page introduce customers about various range of models al
 | L7 Transactions per Second     | 170K                     |
 | Max Concurrent Connections     | 12                       |
 | Induced Latency                | < 1 milli-second         |
+| Operating Temperature Range (°C)| 0° to 45° C              |
+| Storage Temperature Range (°C)  | 0° to 45° C              |
+| Operating Humidity (%RH)       | 0% to 90%                |
 
 
 
@@ -48,8 +54,12 @@ Haltdos hardware specs page introduce customers about various range of models al
 | L4 Connection per Second       | 480K                     |
 | L7 Request per Second          | 750K                     |
 | L7 Transactions per Second     | 250K                     |
-| Max Concurrent Connections     | 24 M                       |
+| Max Concurrent Connections     | 24 M                     |
 | Induced Latency                | < 1 milli-second         |
+| Operating Temperature Range (°C)| 0° to 45° C             |
+| Storage Temperature Range (°C)  | 0° to 45° C             |
+| Operating Humidity (%RH)       | 0% to 90%               |
+
 
 
 ## Model - HD-CAN-4600
@@ -66,3 +76,7 @@ Haltdos hardware specs page introduce customers about various range of models al
 | L7 Transactions per Second     | 1M                     |
 | Max Concurrent Connections     | 32M                       |
 | Induced Latency                | < 1 milli-second         |
+| Operating Temperature Range (°C)| 0° to 45° C             |
+| Storage Temperature Range (°C)  | 0° to 45° C             |
+| Operating Humidity (%RH)       | 0% to 90%               |
+
