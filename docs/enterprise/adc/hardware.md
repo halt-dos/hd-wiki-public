@@ -1,6 +1,7 @@
 # Hardware Specs
 Haltdos hardware specs page introduce customers about various range of models along with their hardware specifications.
 
+---
 
 ## Model - HD-CAN-550
 

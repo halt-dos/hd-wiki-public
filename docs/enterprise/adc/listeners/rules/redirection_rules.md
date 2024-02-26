@@ -8,7 +8,7 @@ sidebar_position: 3
 
 Redirection Rules is a feature of Haltdos SLB that allows application owners to redirect a request to another URL, temporarily or permanently on matching a particular URL pattern.
 
-![Redirection rule](/img/adc/v7/docs/redirectionrule.png)
+![Redirection rule](/img/adc/v8/docs/redirection_rule.png)
 
 #### How to Use:
 

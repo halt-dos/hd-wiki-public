@@ -8,7 +8,7 @@ sidebar_position: 6
 
 Performance settings are designed to increase the performance of the traffic coming from the client-side. Users can enable the caching and compression method to increase the performance of the system.
 
-![performance](/img/adc/v7/docs/performance.png)
+![performance](/img/adc/v8/docs/performance.png)
 
 ### How to Use:
 

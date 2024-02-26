@@ -36,15 +36,22 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          lastVersion: 'current',
+          lastVersion: '7.0',
           versions:{
-            current: {
+            'current': {
+              label: 'v8',
+              banner: 'unreleased',
+              path: 'v8',
+              badge: true
+            },
+            '7.0': {
               label: 'v7'
             },
             '6.0': {
               label: 'v6',
               banner: 'none',
-              path: 'v6'
+              path: 'v6',
+              badge: true
             }
           },
           routeBasePath: '/',

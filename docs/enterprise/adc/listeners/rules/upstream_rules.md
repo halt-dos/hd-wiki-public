@@ -8,7 +8,7 @@ sidebar_position: 5
 
 If a user has defined server group and wants to use different groups depending upon different conditions then he can make use of Upstream Rules.
 
-![Upstream rule](/img/adc/v7/docs/upstream.png)
+![Upstream rule](/img/adc/v8/docs/upstream_rule_1.png)
 
 ### How to Use:
 
@@ -50,7 +50,7 @@ User can specify which server group to associate with this particular rule.
 
 #### **Rule Condition**
 
-![Upstream rule](/img/adc/v7/docs/upstreamrule1.png)
+![Upstream rule](/img/adc/v8/docs/upstream_rule_2.png)
 
 | SETTINGS        | ACCEPTED VALUE | DEFAULT         |
 |-----------------|----------------|-----------------|

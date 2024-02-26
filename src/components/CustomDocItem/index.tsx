@@ -22,6 +22,7 @@ const CustomDocItem = props => {
   return (
     <div
       className={
+        props.location.pathname === `/v8/introduction` || props.location.pathname === `/v8/enterprise` || props.location.pathname === `/v8/community` || props.location.pathname === `/v8/professional` ||
         props.location.pathname === `/v6/introduction` || props.location.pathname === `/v6/enterprise` || props.location.pathname === `/v6/community` ||
         props.location.pathname === `/introduction` || props.location.pathname === `/enterprise` || props.location.pathname === `/community` || props.location.pathname === `/professional` ||
         props.location.pathname === `/haltdos-wiki/introduction` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community` || props.location.pathname === `/haltdos-wiki/professional` ||
