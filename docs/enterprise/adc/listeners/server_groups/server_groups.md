@@ -16,9 +16,9 @@ Purpose of Server Groups:
 
 Server Groups provide user two functionality at a page to add Server Group and View Dashboard for optimal solution.
 
-![Server group](/img/adc/v8/server_group_1.png)
+![Server group](/img/adc/v8/docs/server_group_1.png)
 
-![Server group](/img/adc/v8/server_group_2.png)
+![Server group](/img/adc/v8/docs/server_group_2.png)
 
 ### How to Use:
 

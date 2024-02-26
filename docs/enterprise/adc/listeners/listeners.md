@@ -7,7 +7,7 @@ Used to configure websites and servers.
 
 Listeners are used for collecting set of websites and servers appropriately that it can help to reduce response time, increase throughput, optimize resource use and overload of any single resource.
 
-![Listener1](/img/adc/v8/listeners_1.png)
+![Listener1](/img/adc/v8/docs/listeners_1.png)
 
 ### How to Use:
 
@@ -16,7 +16,7 @@ Listeners are used for collecting set of websites and servers appropriately that
 3. Configure your settings.
 4. Click **Save**.
 
-![Listener2](/img/adc/v8/listeners_2.png)
+![Listener2](/img/adc/v8/docs/listeners_2.png)
 
 | SETTINGS              | ACCEPTED VALUES                                    | DEFAULT |
 |-----------------------|----------------------------------------------------|---------|

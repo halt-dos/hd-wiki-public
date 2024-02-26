@@ -4,10 +4,13 @@ sidebar_position: 3
 
 # Session Table
 
+
+---
+
 The session table show the connection details for the listener configured on the Haltdos SLB. Users can get details for the connection made to the application with the help of filters like date range filter, session ID filter & listener filter. User can get details like src IP, src port, country, request type, status, etc.
 
 
-![](/img/adc/v8/session_table.png)
+![](/img/adc/v8/docs/session_table.png)
 
 ### **How to reach**
 

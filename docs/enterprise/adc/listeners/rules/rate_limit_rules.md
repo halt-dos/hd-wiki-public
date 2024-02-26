@@ -16,9 +16,9 @@ Rate Limiting is a feature of Haltdos SLB that allows application owners to enfo
 4. Configure your settings. 
 5. Click **Save Changes**
 
-![Rate Limit rule](/img/adc/v8/rate_limit_1.png)
+![Rate Limit rule](/img/adc/v8/docs/rate_limit_1.png)
 
-![Rate limit rule](/img/adc/v8/rate_limit_2.png)
+![Rate limit rule](/img/adc/v8/docs/rate_limit_2.png)
 
 | SETTINGS       | ACCEPTED VALUE | DEFAULT      |
 |----------------|----------------|--------------|
@@ -67,7 +67,7 @@ Specify the time duration for which the rule will limit the request.
 
 ### **Rule Condition**
 
-![Rate Limit rule](/img/adc/v8/rate_limit_3.png)
+![Rate Limit rule](/img/adc/v8/docs/rate_limit_3.png)
 
 | SETTINGS        | ACCEPTED VALUE | DEFAULT   |
 |-----------------|----------------|-----------|

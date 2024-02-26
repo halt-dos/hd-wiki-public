@@ -15,7 +15,7 @@ Monitoring provides a comprehensive overview of the status and performance of th
 3. Configure your settings. 
 4. Click **Save Changes**.
 
-![monitor1](/img/adc/v8/monitor.png)
+![monitor1](/img/adc/v8/docs/monitor.png)
 
 | SETTINGS              | ACCEPTED VALUES | DEFAULT |
 |-----------------------|-----------------|---------|

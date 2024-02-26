@@ -15,7 +15,7 @@ Haltdos solutions provide real-time alerts for various types of health incidents
 
 Depending upon the type of event, clicking on any incident shows details of the incident. For example, a SLB health Event will detail the request/response that got dropped along with details of the request and the reason for dropping the request.
 
-![Event](/img/adc/v8/incidents.png)
+![Event](/img/adc/v8/docs/incidents.png)
 
 ### Description
 

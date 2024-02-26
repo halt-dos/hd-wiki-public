@@ -11,7 +11,7 @@ Make SLB listen on specific ports to accept connections and distribute across on
 
 Users are allowed to configure many operational settings for the Listeners.
 
-![Listener settings1](/img/adc/v8/listener_settings_1.png)
+![Listener settings1](/img/adc/v8/docs/listener_settings_1.png)
 
 ### How to Use:
 
@@ -19,9 +19,9 @@ Users are allowed to configure many operational settings for the Listeners.
 2. Configure your settings
 3. Click **Save Changes**.
 
-![Listener settings2](/img/adc/v8/listeners_settings_2.png)
+![Listener settings2](/img/adc/v8/docs/listeners_settings_2.png)
 
-![Listener settings3](/img/adc/v8/listeners_settings_3.png)
+![Listener settings3](/img/adc/v8/docs/listeners_settings_3.png)
 
 | PARAMETERS                   | ACCEPTED VALUES | DEFAULT  |
 |------------------------------|-----------------|----------|
@@ -48,7 +48,7 @@ Users are allowed to configure many operational settings for the Listeners.
 | Server Aliases               | String          | Blank    |
 | Virtual IPs                  | String          | Blank    |
 
-![Listener settings3](/img/adc/v8/listeners_settings_4.png)
+![Listener settings3](/img/adc/v8/docs/listeners_settings_4.png)
 
 ### Description:
 

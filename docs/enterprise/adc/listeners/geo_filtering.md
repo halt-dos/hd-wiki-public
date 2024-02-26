@@ -8,7 +8,7 @@ sidebar_position: 3
 Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. It also allows permanently to access website through Whitelisted IP Prefixes.
 
 ---
-![Geo Filtering](/img/adc/v8/geo_filtering.png)
+![Geo Filtering](/img/adc/v8/docs/geo_filtering.png)
 
 ### How to Use:
 
