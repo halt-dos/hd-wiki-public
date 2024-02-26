@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Servers
 
-![servers](/img/adc/v7/docs/server.png)
+![servers](/img/adc/v8/servers_1.png)
 
 ### How to Use:
 
@@ -30,7 +30,7 @@ sidebar_position: 1
 | Slow Start           | Integer      | 0   |
 | Max Connection | Integer        | Integer |
 
-![servers2](/img/adc/v7/docs/server1.png)
+![servers2](/img/adc/v8/servers_2.png)
 
 ### Description:
 

@@ -43,9 +43,9 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 3. Click **Save Changes**.  
 
 
-![Load balancing](/img/adc/v7/docs/loadbalancing.png)
+![Load balancing](/img/adc/v8/load_balancing_1.png)
 
-![Load balancing](/img/adc/v7/docs/loadbalancing1.png)
+![Load balancing](/img/adc/v8/load_balancing_2.png)
 
 | SETTINGS                  | ACCEPTED VALUE | DEFAULT     |
 |---------------------------|----------------|-------------|
@@ -64,7 +64,7 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 | Algorithm                 | Drop-Down      | Round Robin |
 | Sticky Session Cookie     | String         | Blank           |
 
-![Load balancing2](/img/adc/v7/docs/loadbalancing2.png)
+![Load balancing2](/img/adc/v8/load_balancing_3.png)
 
 ### Description:  
 

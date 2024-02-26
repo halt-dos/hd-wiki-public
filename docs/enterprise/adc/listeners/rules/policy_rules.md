@@ -8,7 +8,7 @@ sidebar_position: 4
 
 Policy rule is the feature of Haltdos SLB that allows application owners to set various policy rules based on their  requirements. 
 
-![Policy rule](/img/adc/v7/docs/policyrule.png)
+![Policy rule](/img/adc/v8/policy_rule_1.png)
 
 ### How to Use:
 
@@ -55,7 +55,7 @@ User can define what action needs to be taken in case this rule is being satisfi
 
 #### **Rule Condition**
 
-![Policy rule2](/img/adc/v7/docs/policyrule1.png)
+![Policy rule2](/img/adc/v8/policy_rule_2.png)
 
 | SETTINGS        | ACCEPTED VALUE | DEFAULT   |
 |-----------------|----------------|-----------|

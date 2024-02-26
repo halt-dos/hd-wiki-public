@@ -6,7 +6,7 @@ sidebar_position: 2
 **SSL (Secure Sockets Layer)** and its successor, **TLS (Transport Layer Security)**, are protocols for establishing authenticated and encrypted links between networked computers. SSL offloading is the process of removing the SSL-based encryption from incoming traffic to relieve a web server of the processing burden of decrypting and/or encrypting traffic sent via SSL. 
 
 ---
-![SSL Settings](/img/adc/v7/docs/sslsetting.png)
+![SSL Settings](/img/adc/v8/ssl_setting_1.png)
 
 ### How to Use:
 
@@ -16,7 +16,7 @@ sidebar_position: 2
 
 3. Click Save Changes. 
 
-![SSL Settings2](/img/adc/v7/docs/sslsetting1.png)
+![SSL Settings2](/img/adc/v8/ssl_setting_2.png)
 
 **Configure the following parameters to set up the desired settings:**
 
