@@ -15,4 +15,4 @@ Haltdos solutions provide real-time alerts for various types of incidents. Incid
 
 Depending upon the type of event, clicking on any incident shows details of the incident. For example, a gslb health event will detail the request/response that got dropped along with details of the request and the reason for dropping the request.
 
-![Event](/img/gslb/v7/docs/gslb_incident.png)
+![Event](/img/gslb/v8/incident.png)

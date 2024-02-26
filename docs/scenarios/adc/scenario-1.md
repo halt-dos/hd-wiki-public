@@ -10,20 +10,28 @@ Suppose company ABC is having a listener Test.com which is having a back-end ser
 
 **Step 1: Configuration of the management port**
    
-![Diagram](/img/adc/v6/scenarios/scenario1-2.png)
+![Diagram](/img/adc/v8/ethernet_1.png)
+
+![Diagram](/img/adc/v8/ethernet_2.png)
+
+![Diagram](/img/adc/v8/ethernet_3.png)
 
 **Step 2: Configuration of VLAN**
 Users need to mention the VLAN ID and mention the backend server IP address.
 
-![Diagram](/img/adc/v6/scenarios/scenario1-3.png)
+![Diagram](/img/adc/v8/vlan_1.png)
+
+![Diagram](/img/adc/v8/vlan_2.png)
+
+![Diagram](/img/adc/v8/vlan_3.png)
 
 **Step 3: Configuration of Listener**
 
-![Diagram](/img/adc/v6/scenarios/scenario1-4.png)
+![Diagram](/img/adc/v8/listeners_2.png)
 
 **Step 4: Verification of backend Server**
 
-![Diagram](/img/adc/v6/scenarios/scenario1-5.png)
+![Diagram](/img/adc/v8/listeners_1.png)
 
 
 
