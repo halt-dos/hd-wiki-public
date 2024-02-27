@@ -11,61 +11,52 @@ Setting for Haltdos LLB
 
 Link load balancing is a term that refers to the management of the traffic that is initiated within a local network that is destined to go out through one of a set of WAN connections. The link load balancer sits at the LAN-WAN boundary. It will redirect requests coming from the LAN segment that is destined to go out to the public Internet, by directing the traffic onto one of the various WAN connections.
 
-![llbsettings](/img/llb/v7/docs/llb_settings.png)
+![llbsettings](/img/llb/v8/llb_settings.png)
 
 ### **How to Use :**
 
 1. Go to **Apps > LLB**
 
-2. Enable **Load Balancing**
+2. Configure your setiings.
 
-3. Configure your setiings.
-
-4. Add Interfaces
-
-5. Click **Save Changes**
+3. Click **Save Changes**
 
 | SETTINGS                     | ACCEPTED VALUES                                | DEFAULT           |
 |------------------------------|------------------------------------------------|-------------------|
-| Enable Load Balancing        | Enables Load Balancing Accepted values: Boolen | False (Mandatory) |
-| WAN Algorithm                | Drop Down                                      | Round Robin       |
-| Connection Tuple Expiry      | Accepted Values: Integer                       | 10                |
-| Connection Less Tuple Expiry | Accepted Values: Integer                       | 10                |
-| Interface                    | Drop Down                                      | Empty             |
-| Weight                       | Accepted Values: Integer                       | 100(Mandatory)    |
-
+| Connection Tuple Expiry      | Accepted Values: Integer (Seconds)             | 600               |
+| Connectionless Tuple Expiry  | Accepted Values: Integer (Seconds)             | 60                |
+| Graceful Period On Startup   | Accepted Values: Integer (Seconds)             | 30                |
+| Learning Sampling Percentage | Accepted Values: Integer (Percentage)          | 100               |
+| Drop Sampling Percentage     | Accepted Values: Integer (Percentage)          | 100               |
+| SSL Renegotiation Threshold  | Accepted Values: Integer (Seconds)             | 0                 |
+| Scanning Threshold           | Accepted Values: Integer (Seconds)             | 0                 |
 
  ### **Description:**
 
-##### **Enable Load Balancing**
+##### **Connection Tuple Expiry**
 
-This field allows the user to enable or disable the load balancer. By default, It's set on disable.
+Tuple refers to a set of five different values that comprise a Transmission Control Protocol/Internet Protocol (TCP/IP) connection. When a tuple is active but is not getting any response we can set ty time for such type of connection tuple. Users can specify the expiry of the connection tuple in seconds.
 
-##### **WAN Algorithm**
-
-This option species the WAN Load Balancing algorithm used to balance the load between multiple WAN links. Users can select the WAN algorithm from the drop-down menu. In Haltdos LLB  users get many WAN algorithms which are mentioned below.
-
-**a) Round Robin:** The administrator assigns a weight to each WAN connection based on criteria of their choosing for their traffic-handling capability. If the WAN 1 connection is twice as better for data communication as WAN 2. then WAN 1 is to be given a double weight value in comparison to WAN 2.
-
-**b) Source IP:** Source IP hash load balancing algorithm that combines source and destination IP addresses of the users and websites to generate a unique hash key. The key is used to allocate the client to a particular server. As the key can be regenerated if the session is broken, the client request is directed to the same server it was using previously.
-
-**c) Bandwidth:** In the least bandwidth method Users are selected based on the WAN Link's bandwidth consumption i.e WAN connection that consumes the high bandwidth is selected (measured in Mbps).
-
-**d) Sessions:** Session load balancing is a dynamic load balancing algorithm where user requests are distributed to the WAN connection with the least number of active connections at the time the user's request is received.
-
-**Connection-Less Tuple Expiry**
+##### **Connectionless Tuple Expiry**
 
 When this Tuple is based on UDP protocol we can consider it a Connection-less tuple. This time specifies after how much time UDP or ICMP-based tuple should be closed. Users can specify the expiry of the connection-less tuple in seconds.
 
-##### **Interface**
+##### **Graceful Period On Startup**
 
-This option will show a list of all WAN links with their names along with their weight values.
+A grace period on startup is the amount of time required to gracefully start an interface or link a session is being closed.
 
-##### **Weight**
+##### **Learning Sampling Percentage**
 
-This option allows the user to set the weight value for an interface. This is a static numerical weighting. Interface with higher ratings gets more requests sent to them.
+It will help users to collect Learning packet samples for analyzing the traffic behavior. Users can set a limit in percentage so that Haltdos LLB solution collects the sample from the network traffic to learn its behavior.
 
-![addinginterfaces](/img/llb/v7/docs/adding_interfaces.png)
+##### **Drop Sampling Percentage**
 
+It will help users to collect Drop packet samples for analyzing the traffic behavior. Users can set a limit in percentage so that Haltdos LLB solution collects the sample from the network traffic to analyze the dropped packet behavior.
 
+##### **SSL Renegotiation Threshold**
 
+In this field users can specify the maximum connection allowed to be established in a SSL negotiation. SSL renegotiation threshold value allow the number of connection can be made in one session.
+
+##### **Scanning Threshold**
+
+In this field, users can specify the threshold value in seconds of scanning threshold. The Haltdos LLB solution scan the traffic for defined interval of time for identifying active devices on a network.

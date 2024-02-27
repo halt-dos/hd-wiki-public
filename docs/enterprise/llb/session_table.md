@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 7
 ---
 
 
@@ -15,11 +15,11 @@ This tables contain column with timestamp, source IP, source port, destination I
 
 Session table feature is by default configured in disable mode. To enable, we need to go to **Rules** > **Log Rules**. We need to create a new log rule in order to capture packet information. Users can refer [Log Rules](../llb/rules/snat.md) to configure log rule.
 
-![llbsettings](/img/llb/v7/docs/session_table.png)
+![llbsettings](/img/llb/v8/llb_session_table.png)
 
 ### **How to Use :**
 
-1. Go to **Apps > LLB**
+1. Go to **Apps > LLB > Session Table**
 
 2. Select **Session Table**.
 
