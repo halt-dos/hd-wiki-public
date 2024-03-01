@@ -24,6 +24,8 @@ Haltdos platform supports SSL certificate management that allows customers to up
 
 Users can either upload a certificate or generate a new certificate with Let's Encrypt for their FQDN. For successfully generating Let's Encrypt certificate, you will have validate ownership of those domains. The solution supports 2-types of validations:
 
+![ssl_certificate](/img/platform/v7/docs/export_certificate.png)
+
 - HTTP Validation for single domain certificate
 - DNS Validation for wildcard certificate
 
@@ -85,6 +87,10 @@ User can specify the public key of certificate.
 **Private Key**
 
 User can specify the private key of certificate.
+
+**Export Certificate**
+
+User can download the SSL certificate.
 
 :::info
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key
