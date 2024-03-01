@@ -9,21 +9,23 @@ Suppose company ABC is having two listeners example1.com and example2.com that a
 
 **Step 1: Configuration of the management port**
 
-![Diagram](/img/adc/v6/scenarios/scenario3-2.png)
+![Diagram](/img/adc/v8/ethernet_1.png)
 
 **Step 2: Configuration of VLAN**
 
-![Diagram](/img/adc/v6/scenarios/scenario3-3.png)
+![Diagram](/img/adc/v8/vlan_1.png)
 
-![Diagram](/img/adc/v6/scenarios/scenario3-4.png)
+![Diagram](/img/adc/v8/vlan_2.png)
+
+![Diagram](/img/adc/v8/vlan_3.png)
    
 **Step 3: Configuration of the listener**
    
-![Diagram](/img/adc/v6/scenarios/scenario3-5.png)
+![Diagram](/img/adc/v8/listeners_2.png)
 
 **Step 4: Verify the back-end server**
 
-![Diagram](/img/adc/v6/scenarios/scenario3-6.png)
+![Diagram](/img/adc/v8/server_group_1.png)
 
 
 

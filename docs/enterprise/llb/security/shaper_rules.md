@@ -1,10 +1,10 @@
 ---
-sidebar_position: 6
+sidebar_position: 4
 ---
 
-# Traffic Shaper / QoS
+# Shaper Rules
 
-Traffic Shaper Rules & Setings
+Shper Rules Settings
 
 ---
 
@@ -14,7 +14,7 @@ Traffic shaping (also known as packet shaping) is a bandwidth management techniq
 
 ### **How to Use:**
 
-1. Go to **Apps > LLB > Rules > Traffic Shaper**.
+1. Go to **Apps > LLB > Security > Shaper Rule**.
 
 2. Click Add Rule button.
 
@@ -25,11 +25,12 @@ Traffic shaping (also known as packet shaping) is a bandwidth management techniq
 
 | Settings           | Text                           | Text             |
 |--------------------|--------------------------------|------------------|
+| Enabled            | Boolean                        | True             |
 | Rule Name          | Specify Rule Name              | None (Mandatory) |
 | Rule Message       | User Friendly message for Rule | None (Mandatory) |
 | Rule Priority      | Integer                        | 0                |
-| Enabled            | Boolean                        | True             |
-| Outgoing Interface | Drop Down                      | None (Mandatory) |
+| Incoming Group     | Drop Down                      | None (Mandatory) |
+| Outgoing Group     | Drop Down                      | None (Mandatory) |
 | Source IP          | IP address with CIDR           | None             |
 | Destination IP     | IP address with CIDR           | None             |
 | Source Ports       | Integer                        | None             |
@@ -39,6 +40,10 @@ Traffic shaping (also known as packet shaping) is a bandwidth management techniq
 | Traffic Burst      | Integer                        | 5                |
 
 ### Description
+
+##### **Enabled**
+
+It Specify rule is enabled or disabled. By default, this option is enabled.
 
 ##### **Rule Name**
 
@@ -52,13 +57,13 @@ This option allows users to use specifies the custom message for the rule.
 
 This option allows the user to set rule priority. The rule with lower Priority Value will be prioritize.
 
-##### **Enabled**
+##### **Incoming Group**
 
-It Specify rule is enabled or disabled. By default, this option is enabled.
+This option allows the user to select the incoming group from the list of interfaces. If any data packet matches the policy mentioned above will be routed to the incoming group. Users can select the Group from the drop-down menu.
 
-##### **Outgoing Interface**
+##### **Outgoing Group**
 
-This option allows the user to select the outgoing interface from the list of interfaces. If any data packet matches the policy mentioned above will be routed to the Outgoing Interface. Users can select the Interface from the drop-down menu.
+This option allows the user to select the outgoing group from the list of interfaces. If any data packet matches the policy mentioned above will be routed to the Outgoing group. Users can select the group from the drop-down menu.
 
 ##### **Source IP**
 

@@ -10,23 +10,23 @@ Suppose company ABC is having a listener example.com which is having a back-end 
 
 **Step 1: Configuration of the management port**
 
-![Diagram](/img/adc/v6/scenarios/scenario2-2.png)
+![Diagram](/img/adc/v8/ethernet_1.png)
 
 **Step 2: Configuration of LACP Link Bond**
 
-![Diagram](/img/adc/v6/scenarios/scenario2-3.png)
+![Diagram](/img/adc/v8/link_bond.png)
 
 **Step 3: Configuration of VLAN**
 
-![Diagram](/img/adc/v6/scenarios/scenario2-4.png)
+![Diagram](/img/adc/v8/vlan_1.png)
 
 **Step 3: Configuration of the listener**
 
-![Diagram](/img/adc/v6/scenarios/scenario2-5.png)
+![Diagram](/img/adc/v8/listeners_1.png)
 
 **Step 4: Verify the backend server**
 
-![Diagram](/img/adc/v6/scenarios/scenario2-6.png)
+![Diagram](/img/adc/v8/server_group_1.png)
 
 
 

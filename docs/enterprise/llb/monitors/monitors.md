@@ -8,7 +8,7 @@ Haltdos allows users to configure custom monitoring that can monitor the interfa
 
 If any of the links are monitored and marked as down, the traffic will not redirect to the same link unless the link comes up and complete the pass threshold.
 
-![adding_monitor](/img/llb/v7/docs/monitor.png)
+![adding_monitor](/img/llb/v8/llb_monitors.png)
 
 ### How to Use:
 
@@ -20,18 +20,18 @@ If any of the links are monitored and marked as down, the traffic will not redir
 
 4. Click **Save**.
 
-![monitor_settings](/img/llb/v7/docs/monitor1.png)
+![monitor_settings](/img/llb/v8/llb_monitor_2.png)
 
 | SETTINGS             | ACCEPTED VALUES                      | DEFAULT                |
 |----------------------|--------------------------------------|------------------------|
-| Monitor Name         | User friendly monitor name           | Blank (Mandatory)      |
 | Enabled              | Boolen                               | False (Mandatory)      |
+| Monitor Name         | User friendly monitor name           | Blank (Mandatory)      |
 | Update Static Route  | Boolen                               | False                  |
 | Use IPv6             | Boolen                               | False                  |
-| Check Interval       | Integer                              | 10 seconds (Mandatory) |
 | Monitor type         | Drop Down                            | TCP (Mandatory)        |
 | Query Server         | IP Address of server to send request | None (Mandatory)       |
 | Port                 | Port Number to connect the server    | 80 (Mandatory)         |
+| Check Interval       | Integer                              | 10 seconds (Mandatory) |
 | Timeout              | Integer                              | 1 (Mandatory)          |
 | Fail Threshold       | Integer                              | 1 (Mandatory)          |
 | Pass Threshold       | Integer                              | 1 (Mandatory)          |
@@ -115,7 +115,7 @@ Latency is the time it takes for data to pass from one point on a network to ano
 
 Jitter is when there is a time delay in sending data packets over your network connection. This option specifies that the interface should be marked down if the jitter threshold is breached. By default, it is set to 0 which is the disabled state.
 
-##### **Packet Loss Theshold**
+##### **Packet Loss Threshold**
 
 Packet loss occurs when one or more packets of data traveling across a computer network fail to reach their destination. Packet loss is either caused by errors in data transmission, typically across wireless networks, or network congestion. It specifies interface should be marked down if the packet loss threshold is breached. Set 0 to disable.
 

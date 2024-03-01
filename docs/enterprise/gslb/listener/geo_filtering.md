@@ -12,7 +12,7 @@ Geo Filtering on DNS traffic
 
 Geo Filtering is a smart way to limit access to Internet content as per the geographic location of the user. Firstly, we determine the location of the user using the Geo location techniques (such as reviewing the IP address of the user against Whitelist or blacklist, accounts, calculating network connection end-to-end delay to assess the user's physical location). Lastly, result analysis takes place to determine whether the system will allow or deny access to the site or particular content. Geo -location also aids in content modification.
 
-![geo_filtering](/img/gslb/v7/docs/geo_filtering.png)
+![geo_filtering](/img/gslb/v8/geo_filtering.png)
 
 ### How to Use:
 1. Go to  **Apps** > **GSLB** > **Listener** > **Geo Filtering**
