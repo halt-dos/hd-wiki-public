@@ -18,9 +18,9 @@ Haltdos hardware specs page introduce customers about various range of models al
 | L7 Transactions per Second     | 90K                     |
 | Max Concurrent Connections     | 7 M                     |
 | Induced Latency                | < 1 milli-second        |
-| Operating Temperature Range (°C)| 0° to 45° C             |
-| Storage Temperature Range (°C)  | 0° to 45° C             |
-| Operating Humidity (%RH)       | 0% to 90%               |
+| Operating Temperature Range (°C)| 0° to 45° C            |
+| Storage Temperature Range (°C)  | 0° to 45° C            |
+| Operating Humidity (%RH)        | 0% to 90%              |
 
 
 ## Model - HD-CAN-1100 
@@ -37,8 +37,8 @@ Haltdos hardware specs page introduce customers about various range of models al
 | L7 Transactions per Second     | 170K                     |
 | Max Concurrent Connections     | 12                       |
 | Induced Latency                | < 1 milli-second         |
-| Operating Temperature Range (°C)| 0° to 45° C              |
-| Storage Temperature Range (°C)  | 0° to 45° C              |
+| Operating Temperature Range (°C)| 0° to 45° C             |
+| Storage Temperature Range (°C)  | 0° to 45° C             |
 | Operating Humidity (%RH)       | 0% to 90%                |
 
 
@@ -59,7 +59,7 @@ Haltdos hardware specs page introduce customers about various range of models al
 | Induced Latency                | < 1 milli-second         |
 | Operating Temperature Range (°C)| 0° to 45° C             |
 | Storage Temperature Range (°C)  | 0° to 45° C             |
-| Operating Humidity (%RH)       | 0% to 90%               |
+| Operating Humidity (%RH)       | 0% to 90%                |
 
 
 

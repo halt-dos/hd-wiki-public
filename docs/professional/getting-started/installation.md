@@ -4,8 +4,6 @@ sidebar_label: Installation
 hide-version-badge: true
 ---
 
-
-
 # Haltdos PE WAF Setup
 
 
