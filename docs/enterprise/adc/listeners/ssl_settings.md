@@ -10,11 +10,11 @@ sidebar_position: 2
 
 ### How to Use:
 
-1. Go to [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > SSL Settings
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **SSL Settings**
 
 2. Configure your settings.
 
-3. Click Save Changes. 
+3. Click **Save Changes**. 
 
 ![SSL Settings2](/img/adc/v8/docs/ssl_setting_2.png)
 
@@ -42,7 +42,7 @@ sidebar_position: 2
 | Custom Page                           | Drop Down       | Blank        |
 
 
-### Description
+### Description:
 
 ##### **Enable SSL Offloading**
 
@@ -58,7 +58,7 @@ This option allows users to specify the security/compatibility of SSL with moder
 
 ##### **SSL Protocols**
 
-This option allows users to specify the SSL protocol for the secure communication. User can select any SSL protocol from the list mentioned below;
+This option allows users to specify the SSL protocol for the secure communication. User can select any SSL protocol from the list mentioned below:
 1. SSLv2
 2. SSLv3
 3. TLSv1
@@ -90,7 +90,7 @@ Users can specify client certificate revocation list.
 
 ##### **Client Certificate Raw Header**
 
-Users can specify header name for forwarding raw SSL client certificate to upstream
+Users can specify header name for forwarding raw SSL client certificate to upstream.
 
 ##### **Client Certificate Fingerprint Header**
 
@@ -122,7 +122,7 @@ This option allows users to specify header names for forwarding SSL certificate 
 
 ##### **Invalid Client Certificate Action**
 
-This option allows users to specify the action to be performed when client certificate verification fails. User can select any of the actions mentioned below;
+This option allows users to specify the action to be performed when client certificate verification fails. User can select any of the actions mentioned below:
 
 1. No Action : It means for invalid Client certificate, there will be no action taken
 2. Redirect : It means for an invalid client certificate, there w

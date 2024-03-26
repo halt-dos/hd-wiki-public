@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Load balancing across multiple application instances is a commonly used technique for optimizing resource utilization, maximizing throughput, reducing latency, and ensuring fault‑tolerant configurations.
 
-### Load Balancing Algorithms
+##### **Load Balancing Algorithms**
 This field specifies the load balancing algorithm according to the configured website.
 
 1. **ROUND ROBIN**: 
@@ -36,7 +36,7 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 ### How to Use:
 
-1. Go to Stack > **SLB** > [**Listeners**](../listeners.md) >[** Server Groups**](./server_groups.md) > **Select Server Name** > **Load Balancing**  
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) >[** Server Groups**](./server_groups.md) > **Select Server Name** > **Load Balancing**  
 
 2. Configure your settings.  
 
@@ -68,63 +68,63 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 ### Description:  
 
-#### Connection Reuse Policy
+##### **Connection Reuse Policy**
 
 This option allows users to specify an HTTP connection reuse policy.
 
-#### Enable HTTP KeepAlive
+##### **Enable HTTP KeepAlive**
 
 This option allows users to specify enabling server connection keep-alive.
 
-#### HTTP KeepAlive Timeout
+##### **HTTP KeepAlive Timeout**
 
 This option allows users to specify a keep-alive server connection timeout.
 
-#### Tunnel Timeout
+##### **Tunnel Timeout**
 
 This option allows users to set the maximum inactivity time on the client and server-side for Websocket tunnels
 
-#### Request Timeout
+##### **Request Timeout**
 
 This option allows users to specify the maximum allowed time to wait for a complete HTTP request.
 
-#### Server Connect Timeout
+##### **Server Connect Timeout**
 
 This option allows users to specify a max time to wait for establishing server connection.
 
-#### Idle Connection Timeout
+##### **Idle Connection Timeout**
 
 This option allows users to specify idle server connection timeout.
 
-#### Resume Connection Timeout
+##### **Resume Connection Timeout**
 
 This option allows users to specify the time within which a lost server connection can resume.
 
-#### Queue Timeout
+##### **Queue Timeout**
 
 This option allows users to specify the maximum time to wait in the queue for a connection slot to be free.
 
-#### Connection Pool Size
+##### **Connection Pool Size**
 
 This option allows users to specify the maximum number of idling connections for a server. Set -1 for unlimited.
 
-#### Server Retries
+##### **Server Retries**
 
 This option allows users to specify the max number of connection retries.
 
-#### Client IP Pool
+##### **Client IP Pool**
 
 This option allows users to specify list of client IP to use when connecting to upstream. Leave blank for auto.
 
-#### Algorithm
+##### **Algorithm**
 
 This option allows users to specify the Server Group Algorithm.
 
-#### Sticky Session Cookie
+##### **Sticky Session Cookie**
 
 Users are allowed to specify enabling sticky session based on specified cookie.
 
-#### Adding Location
+##### **Adding Location**
 
 ![Load balancing3](/img/adc/v7/docs/loadbalancing3.png)
 

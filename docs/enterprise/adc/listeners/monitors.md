@@ -17,6 +17,8 @@ Monitoring provides a comprehensive overview of the status and performance of th
 
 ![monitor1](/img/adc/v8/docs/monitor.png)
 
+**Configure the following parameters to set up the desired settings:**
+
 | SETTINGS              | ACCEPTED VALUES | DEFAULT |
 |-----------------------|-----------------|---------|
 | Monitor Name          | String          | Blank   |

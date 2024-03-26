@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 
 # Geo Filtering
-**Geo-filtering** is the practice of restricting access to Internet content, based upon the user's geographical location. With the help of Internet geolocation techniques, check user's IP address against a blacklist or whitelist, accounts, and measuring the end-to-end delay of a network connection to estimate the physical location of the user and restrict them.
+**Geo-filtering** is the practice of restricting access to Internet content, based upon the user's geographical location. With the help of Internet geolocation techniques, check user's IP address against the blacklist or whitelist, accounts, and measuring the end-to-end delay of a network connection to estimate the physical location of the user and restrict them.
 
 Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. It also allows permanently to access website through Whitelisted IP Prefixes.
 
@@ -12,13 +12,13 @@ Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. 
 
 ### How to Use:
 
-1. Go to **Stack** > **SLB** > **Listener** > **Geo Filtering** 
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Geo Filtering** 
 2. Configure your settings.
 3. Click **Save**.
 
 **Configure the following parameters to set up the desired settings:**
 
-| Parameters              | Accepted value       |  Type          |
+| Parameters              | Accepted value       |  Default          |
 |-------------------------|----------------------|----------------|
 | Blacklisted Countries   | Drop Down            | Blank          |
 | Whitelisted IP Prefixes | IP address with CIDR | Blank          |
