@@ -10,7 +10,7 @@ Rate Limiting is a feature of Haltdos SLB that allows application owners to enfo
 
 #### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 2. Select the **Rate Limit Rules**.
 3. Click **Add Rule** button.
 4. Configure your settings. 
@@ -19,6 +19,8 @@ Rate Limiting is a feature of Haltdos SLB that allows application owners to enfo
 ![Rate Limit rule](/img/adc/v8/docs/rate_limit_1.png)
 
 ![Rate limit rule](/img/adc/v8/docs/rate_limit_2.png)
+
+**Configure the following parameters to set up the desired settings:**
 
 | SETTINGS       | ACCEPTED VALUE | DEFAULT      |
 |----------------|----------------|--------------|

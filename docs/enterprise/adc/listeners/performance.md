@@ -12,13 +12,13 @@ Performance settings are designed to increase the performance of the traffic com
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc)  > [**Listeners**](./listeners.md) > **performance**
+1. Go to **Stack** > [**SLB**](/enterprise/adc)  > [**Listeners**](./listeners.md) > **performance**
 2. Configure your settings.
 3. Click **Save Changes**.
 
 **Configure the following parameters to set up the desired settings:**
 
-| PARAMETERS                    | ACCEPTED VALUES | Type           |
+| PARAMETERS                    | ACCEPTED VALUES | DEFAULT           |
 |-------------------------------|-----------------|----------------|
 | Enable Caching                | Boolean         | Disabled       |
 | Cache Pool                    | Drop Down       | Blank          |
@@ -29,7 +29,7 @@ Performance settings are designed to increase the performance of the traffic com
 | Maximum Response To Compress  | Integer         | 0              |
 | Compression Mime Filter       | String          | File Extensions |
 
-### Description
+### Description:
 
 ##### **Enable Caching**
 

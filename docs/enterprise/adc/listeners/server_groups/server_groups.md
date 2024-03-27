@@ -4,7 +4,7 @@ User can determine load balancing mechanism and specify Server Groups.
 
 ---
 
-Server Groups helps user to distributes network traffic to load balance across group of servers, for this at first we define a group name. Creating a group name in Servers Group helps to optimize and increase throughput of solution.
+Server Groups helps user to distributes network traffic to load balance across group of servers, for this at first we define a group name. Creating a group name in Servers Group helps to optimize and increase throughput of the solution.
 
 Purpose of Server Groups:
 
@@ -23,7 +23,7 @@ Server Groups provide user two functionality at a page to add Server Group and V
 ### How to Use:
 
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Server groups**.
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Server groups**.
 2. Click **Add Server Group** button.
 3. Configure your settings. 
 4. Click **Save Changes**.
@@ -46,7 +46,7 @@ This option allows users to set the monitor type which continuously test upstrea
 
 ##### **SSL**
 
-This option allows users to enable/disable **SSL**. It helps to add more operational settings for send information safely and efficiently with the support of SSL Settings. 
+This option allows users to enable/disable **SSL**. It helps to add more operational settings for send information safely and efficiently with the support of **SSL Settings**. 
 
 ##### **View Dashboard**
 

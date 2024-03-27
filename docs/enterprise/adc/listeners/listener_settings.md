@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Listener Settings
-Make SLB listen on specific ports to accept connections and distribute across one or multiple origin servers.
+Make SLB listener on specific ports to accept connections and distribute across one or multiple origin servers.
 
 ---
 
@@ -15,13 +15,15 @@ Users are allowed to configure many operational settings for the Listeners.
 
 ### How to Use:
 
-1. Go to **SLB** > **Listeners** > **Operational Settings**
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Operational Settings**
 2. Configure your settings
 3. Click **Save Changes**.
 
 ![Listener settings2](/img/adc/v8/docs/listeners_settings_2.png)
 
 ![Listener settings3](/img/adc/v8/docs/listeners_settings_3.png)
+
+**Configure the following parameters to set up the desired settings:**
 
 | PARAMETERS                   | ACCEPTED VALUES | DEFAULT  |
 |------------------------------|-----------------|----------|
