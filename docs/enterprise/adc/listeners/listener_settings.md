@@ -62,7 +62,7 @@ This option allows user to enable traffic over IPv6 and applicable in the case o
 
 This option allows user to specify whether the solution supports HTTP 2.0 request. HTTP/2 aims to be a faster, more efficient protocol than HTTP. Read more about the differences between the two and how you can get started with HTTP2 today.
 
-##### ***Enable WebSocket***
+##### **Enable WebSocket**
 
 This option allows user to enable web-socket support for servers or server group. It is a communication, an upgraded, quick, and seamless protocol to use when one needs to establish constant client-server communication over a single TCP connection.
 

@@ -124,9 +124,16 @@ This option allows users to specify header names for forwarding SSL certificate 
 
 This option allows users to specify the action to be performed when client certificate verification fails. User can select any of the actions mentioned below:
 
-1. No Action : It means for invalid Client certificate, there will be no action taken
-2. Redirect : It means for an invalid client certificate, there w
+1. Drop : Under Drop for invalid client certificate client can simply drop the request coming from user if there is invalid certificate. 
+2. Redirect : In an invalid client certificate, client can redirect the user if there is invaild client certificate.
+3. Send Custom Response : In this section if there is invalid client certificate, client can generate a custom response to notify the user of the issue.
+4. Tarpit Src Ip : When a server detects an invalid client certificate during a connection attempt if client has selected Tarpit Src Ip it will get delayed or slow down connections from potential attackers.
+5. No Action : It means for invalid Client certificate, there will be no action taken
+
+##### **Response Code** 
+
+This option opens when user select "Send Custom Response" under "Invalid Client Certificate Action". It specify the response code on client certificate verification failure.
 
 ##### **Custom Page**
 
-Users can specify the response page to be shown on client certificate verification failure.
+Users can specify the response page to be shown on client certificate verification failure. This section is only for "DROP" & "Send Custom Response". 

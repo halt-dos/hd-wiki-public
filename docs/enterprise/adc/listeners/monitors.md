@@ -58,7 +58,15 @@ This option allows users to specify the timeout interval in seconds.
 
 ##### **Health Check Type**
 
-This option allows users to specify the health check type for the load balancer.
+This option allows users to specify the health check type for the load balancer. Under Health Check Type user have various option for different health check type for the load balancer from which user can select, that are as follows :- 
+
+1. TCP
+2. HTTP
+3. HTTPS
+4. SCRIPT
+5. SSL_HELLO
+6. SMTP
+7. POP
 
 ##### **Check Port**
 
@@ -69,11 +77,11 @@ This option allows users to specify the health check type HTTP monitoring. This 
 
 ##### **Check URI**
 
-This option allows users to specify the check URI. This option will only be visible when HTTP is selected in Health Check Type.
+This option allows users to specify the check URI. This option will only be visible when HTTP OR HTTPS is selected in Health Check Type.
 
 ##### **Match Status**
 
-This option allows users to specify the response HTTP status to verify. This option will only be visible when HTTP is selected in Health Check Type.
+This option allows users to specify the response HTTP status to verify. This option will only be visible when HTTP OR HTTPS is selected in Health Check Type.
 
 ##### **Match Content**
 
@@ -81,5 +89,5 @@ This option allows users to specify the content to match in the response. This o
 
 ##### **Health Script**
 
-This option allows users to select your custom health check script. This option will only be visible when HTTP is selected in Health Check Type.
+This option allows users to select your custom health check script. This option will only be visible when HTTP OR HTTPS is selected in Health Check Type.
 
