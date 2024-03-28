@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ---
 
-## Overview 
+### Overview 
 
 Load balancing across multiple application instances is a commonly used technique for optimizing resource utilization, maximizing throughput, reducing latency, and ensuring fault‑tolerant configurations.
 
@@ -141,4 +141,4 @@ The user can set the priority.
 The user can set the location for which load balancing is done.  
 
  - **Value**  
-The users are allowed to specify the location value. This option will only visible when location is selected to val fields.  
+The users are allowed to specify the location value. This option will only visible when location is selected to value fields.  
