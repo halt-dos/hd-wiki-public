@@ -10,7 +10,7 @@ sidebar_position: 3
 
 1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > [** Server Groups**](./server_groups.md).
 2. Select the group name.
-3. Select the Add Server option.
+3. Select the **Add Server option**.
 3. Configure your settings. 
 4. Click **Save Changes**.
 
