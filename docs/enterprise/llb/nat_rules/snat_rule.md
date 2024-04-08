@@ -28,7 +28,7 @@ In static SNAT all internal IP addresses are always mapped to the same public IP
 
 | Settings             | Accepted Values                | Default              |
 |----------------------|--------------------------------|----------------------|
-| Rule Enabled         | Boolen                         | True                 |
+| Rule Enabled         | Boolean                        | True                 |
 | Rule Name            | Specify Rule Name              | Blank (Mandatory)    |
 | Rule Message         | User Friendly Message for Rule | Blank (Mandatory)    |
 | Rule Priority        | Integer                        | 0                    |
@@ -39,7 +39,7 @@ In static SNAT all internal IP addresses are always mapped to the same public IP
 | Protocol             | Select the Protocol            | Blank                |
 | Preserve Source Port | Boolean                        | False                |
 | Translation          | Drop Down                      | Overload (Mandatory) |
-| Translate IP Range   | Intger                         | Integer (Mandatory)  |
+| Translate IP Range   | Integer                        | Integer (Mandatory)  |
 | Port Mapping         | Boolean                        | False                |
 
 ### Description
