@@ -10,7 +10,7 @@ Overview
 
 In DDoS connection, you can configure Connection based protocols which will regulate the payload length, number of inbound & outbound connections, out of order drops, TCP ports, FIN time wait, TCP connection Proxy threshold & advertised MSS.
 
-![](/img/ddos/v7/docs/tcp1.png)
+![](/img/ddos/v8/securityprofile_tcp_settings_1.png)
 
 ### **How to Use:**
 
@@ -20,7 +20,7 @@ In DDoS connection, you can configure Connection based protocols which will regu
 
 3. Click on Save Changes
 
-![](/img/ddos/v7/docs/tcp2.png)
+![](/img/ddos/v8/securityprofile_tcp_settings_2.png)
 
 ### **TCP Settings:**
 

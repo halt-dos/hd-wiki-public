@@ -39,17 +39,16 @@ If any of the links are monitored and marked as down, the traffic will not redir
 | Jitter Threshold     | Integer                              | 0 (Mandatory)          |
 | Packet Loss Treshold | Integer                              | 0 (Mandatory)          |
 
-![monitor_settings](/img/llb/v7/docs/monitor2.png)
 
 ### **Description:**
-
-##### **Monitor Name**
-
-This option allows the user to set a name for his monitoring rule.
 
 ##### **Enabled**
 
 This option allows to enable or disable monitor rule. by default, It is set to disable.
+
+##### **Monitor Name**
+
+This option allows the user to set a name for his monitoring rule.
 
 ##### **Update Static Route**
 
@@ -58,10 +57,6 @@ It specifies if the static route should be updated upon failure.
 ##### **Use IPv6**
 
 It specifies if the monitor should use the IPv6 stack.
-
-##### **Check Interval**
-
-This option allows the user to set a health check interval for monitoring the services in seconds. After the mentioned time period, defined monitor settings will be checked.
 
 ##### **Monitor Type**
 
@@ -91,9 +86,17 @@ This option will only appear when Monitor Type is selected to HTTP/HTTPS. This o
 
 This option will only appear when Monitor Type is selected to HTTP/HTTPS. HTTP/HTTPS response status codes indicate whether a specific HTTP/HTTPS request has been successfully completed. This option allows users to set the response we get for the HTTP request.
 
-##### **Match Conent**
+##### **Match Content**
 
-This option will only appear when Monitor Type is selected to HTTP/HTTPS. It will specify the content to match in the response. 
+This option will only appear when Monitor Type is selected to HTTP/HTTPS. It will specify the content to match in the response.
+
+##### **Health Script**
+
+This option will only appear when Monitor Type is selected to Script. It will allow user to select the custom health check script.
+
+##### **Check Interval**
+
+This option allows the user to set a health check interval for monitoring the services in seconds. After the mentioned time period, defined monitor settings will be checked.
 
 ##### **Timeout**
 
@@ -118,4 +121,3 @@ Jitter is when there is a time delay in sending data packets over your network c
 ##### **Packet Loss Threshold**
 
 Packet loss occurs when one or more packets of data traveling across a computer network fail to reach their destination. Packet loss is either caused by errors in data transmission, typically across wireless networks, or network congestion. It specifies interface should be marked down if the packet loss threshold is breached. Set 0 to disable.
-

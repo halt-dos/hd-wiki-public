@@ -1,9 +1,9 @@
-# Application
+# Layer 7 Incidents
 
 ### Overview
 All the application related events will be visible under application incidents.
 
-![Application Incidents](/img/ddos/v7/docs/apps.png)
+![Application Incidents](/img/ddos/v8/ddos_layer7incidents.png)
 
 ### How to Use
 

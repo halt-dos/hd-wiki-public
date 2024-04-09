@@ -12,7 +12,7 @@ In today’s networks, cyber-attacks cause damage or theft and disrupt services 
 
 Haltdos supports pattern scoring on the behalf of the behavior of the packet.
 
-![pattern_score](/img/ddos/v7/docs/paternscore.png)
+![pattern_score](/img/ddos/v8/ddos_pattern_score_1.png)
 
 ### How to Use
 
@@ -22,7 +22,7 @@ Haltdos supports pattern scoring on the behalf of the behavior of the packet.
 
 3. Click on **Save Changes**.
 
-![pattern_score](/img/ddos/v7/docs/patternscore2.png)
+![pattern_score](/img/ddos/v8/ddos_pattern_score_2.png)
 
 | Parameter                        | Accepted Values   | Description                                    |
 |----------------------------------|-------------------|------------------------------------------------|

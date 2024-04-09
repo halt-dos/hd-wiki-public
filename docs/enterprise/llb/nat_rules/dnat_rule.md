@@ -83,7 +83,7 @@ It specifies the mapped IP address range. This option allows the user to set the
 
 ##### **Service Protocol**
 
-This option allows users to select the servcice protocol on which rule will apply.
+This option allows users to select the service protocol on which rule will apply.
 
 ##### **Port**
 
