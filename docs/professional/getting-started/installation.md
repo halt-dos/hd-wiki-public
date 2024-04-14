@@ -37,7 +37,12 @@ The script will automatically download and prepare the system to run Haltdos Pro
 
 ### Step 2: Setup Verification
 
-After successful installation, you can verify the services by running the commands below:
+The setup script sets up three components of the Haltdos Professional WAF - 
+- **Haltdos Professional GUI**
+- **Haltdos Professional WAF**
+- **Haltdos Metric Collector**  
+
+After successful installation, you can verify the above services by running the commands below:
 
 ```
 sudo service controller status
@@ -45,17 +50,22 @@ sudo service controller status
 
 ![haltdos](/img/pro-waf/docs/controller.png)
 
+```
+sudo service collector status
+```
+
+![haltdos](/img/pro-waf/docs/collector.png)
+
 
 ```
 sudo service offloader status
 ```
 
+![haltdos](/img/pro-waf/docs/offloader_status.png)
+
 :::note Note 
 **Haltdos Professional WAF Service** at start will be at loaded state. It will be in active and running state, once the whole registration of the instance is done
 :::
-
-![haltdos](/img/pro-waf/docs/offloader_status.png)
-
 
 ### Step 3: Account Registration
 
@@ -80,10 +90,6 @@ If the user is configuring another instance, they will be redirected to the Logi
 
 After the user has entered their details, user will be redirected to a payment gateway. A minimal amount transaction will take place to save the card, which will be refunded back by the card provider/bank. Card must be saved because Haltdos Professional WAF follows a usage based pricing. User will be charged at the end of the monthly billing period, based on the no. of requests that was processed by WAF in that billing period. User has to enter their credit card details and click on the **Save Card** button of the payment gateway.
 
-:::note Note
-Kindly only save Credit Cards. Any other form of cards can be saved, but these won't be processed and will lead to failure of registration of Professional WAF.
-:::
-
 ![payment page](/img/pro-waf/docs/payment.png)
 
 Once the payment procedure is completed, the user will be prompted to enter their login details, which will enable them to access their account.
@@ -99,7 +105,7 @@ sudo service offloader status
 ![haltdos](/img/pro-waf/docs/offloader.png)
 
 :::info CAUTION
-If the service is still shown as loaded and inactive, or if you face any other kind of issue, please contact [**Haltdos Support**](mailto:support@haltdos.com)
+If the Professional WAF service is still shown as loaded and inactive, or if you face any other kind of issue, please contact [**Haltdos Support**](mailto:support@haltdos.com)
 :::
 
 ### Step 4: Accesing Haltdos Professional GUI
