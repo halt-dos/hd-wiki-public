@@ -39,8 +39,6 @@ This option allows users to enable content caching. Content Caching helps to imp
 
 This option allows users to enable content compression. It helps to increase throughput and significant for cost savings. 
 
-This option allows users to select a cache pool to use for content caching.
-
 ##### **Cache Pool**
 
 This option allows users to select a cache pool for content caching. It helps to increase read performance and speed up of solution. User can redirect at **Cache Pools** and add cache.
