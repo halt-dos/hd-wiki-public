@@ -44,8 +44,6 @@ Users are allowed to configure many operational settings for the Listeners.
 | Session Cookie               | String          | Blank    |
 | Max Concurrent User Sessions | Integer         | 0        |
 | MAX Session Exceeded Action  | Drop-down       | Redirect |
-| Max Session Forward URL      | String          | Blank    |
-| Max Session Exceeded Waiting Page | Drop-down  | Blank
 | Remote IP Header             | String          | Blank    |
 | Server Aliases               | String          | Blank    |
 | Virtual IPs                  | String          | Blank    |
@@ -100,7 +98,7 @@ This option is only applicable in the case of service type HTTP & TCP. This opti
 
 This option is only applicable in the case of service type HTTP & TCP. This option allows users to specify max allowed concurrent connections. By default, Set 0 to disable.
 
-##### **Client Keep-Alive Timeout**
+##### **Keep-Alive Timeout**
 
 This option is only applicable in the case of service type HTTP. This option allows users to specify a timeout of keep-alive connections with clients.
 
@@ -123,14 +121,6 @@ This option is only applicable in the case of service type HTTP. This option all
 ##### **Max Session Exceeded Action**
 
 Users can specify the action to take when max session count exceeds.
-
-##### **Max Session Forward URL**
-
-Users can specify the redirected URL when max session count exceeds. This option will only visible when user has selected redirect option under 'Max Session Exceeded Action' option.
-
-##### **Max Session Exceeded Waiting Page**
-
-Users are allowed to specify the waiting room page to show when max session count exceeds. This option will only visible when user has selected send custom response option under 'Max Session Exceeded Waiting Page' option.
 
 ##### **Remote IP Header**
 

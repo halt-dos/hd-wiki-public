@@ -12,7 +12,7 @@ Performance settings are designed to increase the performance of the traffic com
 
 ### How to Use:
 
-1. Go to **Stack** > [**SLB**](/enterprise/adc)  > [**Listeners**](./listeners.md) > **performance**
+1. Go to **Stack** > [**SLB**](/enterprise/adc)  > [**Listeners**](./listeners.md) > **Performance**
 2. Configure your settings.
 3. Click **Save Changes**.
 
@@ -22,12 +22,12 @@ Performance settings are designed to increase the performance of the traffic com
 |-------------------------------|-----------------|----------------|
 | Enable Caching                | Boolean         | Disabled       |
 | Cache Pool                    | Drop Down       | Blank          |
-| Enable Caching Unsafe Method| Boolean       | False          |
+| Enable Caching Unsafe Method  | Boolean         | False          |
 | Enable Compression            | Boolean         | Disabled       |
 | Compression Algorithm         | Drop Down       | Blank          |
 | Minimum Response To Compress  | Integer         | 0              |
 | Maximum Response To Compress  | Integer         | 0              |
-| Compression Mime Filter       | String          | File Extensions |
+| Compression Mime Filter       | String          | File Extensions|
 
 ### Description:
 
@@ -55,7 +55,7 @@ Users can specify minimum HTTP response content length to compress. If HTTP resp
 
 ##### **Maximum Response To Compress**
 
-Users can specify maximum HTTP response content length to compress.If HTTP response content length is smaller than the specified maximum limit, it will be compresses. If HTTP response content length is larger than the specified maximum limit, it will be skipped for compression.
+Users can specify maximum HTTP response content length to compress. If HTTP response content length is smaller than the specified maximum limit, it will be compresses. If HTTP response content length is larger than the specified maximum limit, it will be skipped for compression.
 
 ##### **Compression Mime Filter**
 
