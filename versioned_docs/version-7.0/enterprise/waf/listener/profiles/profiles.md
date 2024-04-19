@@ -1,3 +1,5 @@
+# Profiles
+
 Profiles create different security profiles for different sub-sections of your website.
 
 ---

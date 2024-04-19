@@ -8,15 +8,18 @@ sidebar_position: 2
 
 We have introduced Header rules by which application owners can manipulate request headers, cookies, in request as well as response headers. Users can create/update header rules at run time with on-the-fly updates. It has the functionality to add/remove/update any cookie/header in the request to the web-server (back-end) as well as respond to the client.
 
-![headerrules](/img/adc/v7/docs/headerrule.png)
+![headerrules](/img/adc/v8/docs/header_rule_1.png)
 
 #### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 2. Select the **Header Rule**.
 3. Click **Add Rule** button.
 4. Configure your settings. 
 5. Click **Save Changes**.
+
+**Configure the following parameters to set up the desired settings:**
+
 
 | SETTINGS        | ACCEPTED VALUE | DEFAULT            |
 |-----------------|----------------|--------------------|
@@ -31,7 +34,7 @@ We have introduced Header rules by which application owners can manipulate reque
 
 ### Rule Condition
 
-![headerrules2](/img/adc/v7/docs/headerrule1.png)
+![headerrules2](/img/adc/v8/docs/header_rule_2.png)
 
 | SETTINGS        | ACCEPTED VALUE | TYPE            |
 |-----------------|----------------|-----------------|

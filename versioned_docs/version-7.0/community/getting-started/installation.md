@@ -5,14 +5,23 @@ sidebar_label: Installation
 
 # Installation Steps
 
-In this step, you'll pull Haltdos packages from the official software repository. SSH to your server and run the commands below
+Before we start, kindly update your system and install curl, if not installed.
+
+For **Debian-based distributions**, execute below commands:
 
 ```
 sudo apt-get update
 ```
-
 ```
 sudo apt-get install -y curl
+```
+For **Red Hat-based Linux distributions**, execute below commands:
+
+```
+sudo dnf update
+```
+```
+sudo dnf install -y curl
 ```
 
 ### Step 1: Installing 
@@ -50,9 +59,11 @@ sudo service offloader status
 
 ![haltdos](/img/ce-waf/docs/status/offloader.png)
 
-<br />
-You can access Haltdos Community GUI from https://IP:9000. 
-<br /><br />
+:::note Note 
+**Haltdos Community WAF Service** at start will be at loaded state. It will be in active and running state, once the whole registration of the instance is done.
+:::
+
+You can access **Haltdos Community GUI** from **https://<SERVER_IP_ADDRESS>:9000**
 
 ![haltdos](/img/ce-waf/docs/setup/setup.png)  
 
@@ -64,16 +75,20 @@ Next, after verification, to start using our Community WAF Solution, you will re
 Fill in the details to request for Haltdos Community WAF license. License verification code will be sent via mail. Check your spam / junk if you cannot find the mail in inbox.
 
 <br />
-Post OTP Verification, your community WAF license will be activated.
+Post OTP Verification, your Haltdos Community WAF license will be activated.
 
 
 ![signup](/img/ce-waf/docs/setup/otp.png)
 
 You have successfully subscribed to Haltdos Community WAF.
 
-### Step 4: Accesing Haltdos Community UI
+:::info CAUTION
+If the Community WAF service is still shown as loaded and inactive, or if you face any other kind of issue, please contact [**Haltdos Support**](mailto:support@haltdos.com)
+:::
 
-Login in to Haltdos Community WAF UI with the credentials provided during the signup.
+### Step 4: Accesing Haltdos Community GUI
+
+Login in to Haltdos Community GUI with the credentials provided during the signup.
 
 ![login](/img/ce-waf/docs/setup/login.png)
 

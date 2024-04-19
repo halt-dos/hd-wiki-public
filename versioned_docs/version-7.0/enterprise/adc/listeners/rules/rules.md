@@ -14,7 +14,7 @@ Haltdos SLB has various types of rules for users to configure SLB as per their n
 
 4. Configure your settings. 
 
-5. Click Save Changes. 
+5. Click **Save Changes**. 
 
 ### Types of Rules
 

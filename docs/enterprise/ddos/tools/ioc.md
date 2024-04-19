@@ -10,7 +10,7 @@ sidebar_position: 1
 
 An Indicator of Compromise (IoC) is a piece of information or data that suggests a computer system or network may have been compromised by a cybersecurity incident. IoCs are used by cybersecurity professionals to detect and respond to security threats. Haltdos Anti DDoS solution provides drop IPs & drop countries along with their hit count to get better understanding about IoC.
 
-![Indicator of Compromise](/img/ddos/v7/docs/ioc.png)
+![Indicator of Compromise](/img/ddos/v8/ddos_ioc_exporter.png)
 
 ### How to Use
 

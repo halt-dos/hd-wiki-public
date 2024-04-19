@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Servers
 
-![servers](/img/adc/v8/docs/server.png)
+![servers](/img/adc/v8/docs/servers_1.png)
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Server Groups**.
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Server groups**.
 
 2. Select the **Group name**.
 
@@ -30,7 +30,7 @@ sidebar_position: 1
 | Slow Start           | Integer      | 0   |
 | Max Connection | Integer        | Integer |
 
-![servers2](/img/adc/v8/docs/server1.png)
+![servers2](/img/adc/v8/docs/servers_2.png)
 
 ### Description:
 

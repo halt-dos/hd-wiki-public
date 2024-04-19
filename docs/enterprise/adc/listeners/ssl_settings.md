@@ -6,17 +6,17 @@ sidebar_position: 2
 **SSL (Secure Sockets Layer)** and its successor, **TLS (Transport Layer Security)**, are protocols for establishing authenticated and encrypted links between networked computers. SSL offloading is the process of removing the SSL-based encryption from incoming traffic to relieve a web server of the processing burden of decrypting and/or encrypting traffic sent via SSL. 
 
 ---
-![SSL Settings](/img/adc/v7/docs/sslsetting.png)
+![SSL Settings](/img/adc/v8/docs/ssl_setting_1.png)
 
 ### How to Use:
 
-1. Go to [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > SSL Settings
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **SSL Settings**
 
 2. Configure your settings.
 
-3. Click Save Changes. 
+3. Click **Save Changes**. 
 
-![SSL Settings2](/img/adc/v7/docs/sslsetting1.png)
+![SSL Settings2](/img/adc/v8/docs/ssl_setting_2.png)
 
 **Configure the following parameters to set up the desired settings:**
 
@@ -42,7 +42,7 @@ sidebar_position: 2
 | Custom Page                           | Drop Down       | Blank        |
 
 
-### Description
+### Description:
 
 ##### **Enable SSL Offloading**
 
@@ -58,7 +58,7 @@ This option allows users to specify the security/compatibility of SSL with moder
 
 ##### **SSL Protocols**
 
-This option allows users to specify the SSL protocol for the secure communication. User can select any SSL protocol from the list mentioned below;
+This option allows users to specify the SSL protocol for the secure communication. User can select any SSL protocol from the list mentioned below:
 1. SSLv2
 2. SSLv3
 3. TLSv1
@@ -90,7 +90,7 @@ Users can specify client certificate revocation list.
 
 ##### **Client Certificate Raw Header**
 
-Users can specify header name for forwarding raw SSL client certificate to upstream
+Users can specify header name for forwarding raw SSL client certificate to upstream.
 
 ##### **Client Certificate Fingerprint Header**
 
@@ -122,11 +122,18 @@ This option allows users to specify header names for forwarding SSL certificate 
 
 ##### **Invalid Client Certificate Action**
 
-This option allows users to specify the action to be performed when client certificate verification fails. User can select any of the actions mentioned below;
+This option allows users to specify the action to be performed when client certificate verification fails. User can select any of the actions mentioned below:
 
-1. No Action : It means for invalid Client certificate, there will be no action taken
-2. Redirect : It means for an invalid client certificate, there w
+1. Drop : Under Drop for invalid client certificate client can simply drop the request coming from user if there is invalid certificate. 
+2. Redirect : In an invalid client certificate, client can redirect the user if there is invaild client certificate.
+3. Send Custom Response : In this section if there is invalid client certificate, client can generate a custom response to notify the user of the issue.
+4. Tarpit Src Ip : When a server detects an invalid client certificate during a connection attempt if client has selected Tarpit Src Ip it will get delayed or slow down connections from potential attackers.
+5. No Action : It means for invalid Client certificate, there will be no action taken
+
+##### **Response Code** 
+
+This option opens when user select "Send Custom Response" under "Invalid Client Certificate Action". It specify the response code on client certificate verification failure.
 
 ##### **Custom Page**
 
-Users can specify the response page to be shown on client certificate verification failure.
+Users can specify the response page to be shown on client certificate verification failure. This section is only for "DROP" & "Send Custom Response". 

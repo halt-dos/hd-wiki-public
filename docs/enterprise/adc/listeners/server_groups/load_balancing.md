@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Load balancing across multiple application instances is a commonly used technique for optimizing resource utilization, maximizing throughput, reducing latency, and ensuring fault-tolerance configurations.
 
-### Load Balancing Algorithms
+##### **Load Balancing Algorithms**
 This field specifies the load balancing algorithm according to the configured website.
 
 1. **ROUND ROBIN**: 
@@ -33,16 +33,16 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 ### How to Use:
 
-1. Go to Stack > **SLB** > [**Listeners**](../listeners.md) >[** Server Groups**](./server_groups.md) > **Select Server Name** > **Load Balancing**  
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) >[** Server Groups**](./server_groups.md) > **Select Server Name** > **Load Balancing**  
 
 2. Configure your settings.  
 
 3. Click **Save Changes**.  
 
 
-![Load balancing](/img/adc/v7/docs/loadbalancing.png)
+![Load balancing](/img/adc/v8/docs/load_balancing_1.png)
 
-![Load balancing](/img/adc/v7/docs/loadbalancing1.png)
+![Load balancing](/img/adc/v8/docs/load_balancing_2.png)
 
 | SETTINGS                  | ACCEPTED VALUE | DEFAULT     |
 |---------------------------|----------------|-------------|
@@ -59,7 +59,7 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 | Algorithm                 | Drop-Down      | Round Robin |
 | Sticky Session Cookie     | String         | Blank       |
 
-![Load balancing2](/img/adc/v7/docs/loadbalancing2.png)
+![Load balancing2](/img/adc/v8/docs/load_balancing_3.png)
 
 ### Description:  
 
@@ -67,11 +67,19 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 This option allows users to specify an HTTP connection reuse policy.
 
-##### **Enable HTTP Keep-Alive**
+##### **Enable HTTP KeepAlive**
 
 This option allows users to specify enabling server connection keep-alive.
 
+##### **HTTP KeepAlive Timeout**
+
+This option allows users to specify a keep-alive server connection timeout.
+
 ##### **Tunnel Timeout**
+
+This option allows users to set the maximum inactivity time on the client and server-side for Websocket tunnels
+
+##### **Request Timeout**  
 
 This option allows users to set the maximum inactivity time on the client and server-side for web-socket tunnels.
 
@@ -128,4 +136,4 @@ The user can set the priority.
 The user can set the location for which load balancing is done.  
 
  - **Value**  
-The users are allowed to specify the location value. This option will only visible when location is selected to val fields.  
+The users are allowed to specify the location value. This option will only visible when location is selected to value fields.  

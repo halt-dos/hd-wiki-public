@@ -8,15 +8,17 @@ sidebar_position: 4
 
 Policy rule is the feature of Haltdos SLB that allows application owners to set various policy rules based on their  requirements. 
 
-![Policy rule](/img/adc/v7/docs/policyrule.png)
+![Policy rule](/img/adc/v8/docs/policy_rule_1.png)
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 2. Select the **Policy Rule**.
 3. Click **Add Rule** button.
 4. Configure your settings. 
 5. Click **Save Changes**.
+
+**Configure the following parameters to set up the desired settings:**
 
 | SETTINGS      | ACCEPTED VALUE | DEFAULT      |
 |---------------|----------------|--------------|
@@ -55,7 +57,7 @@ User can define what action needs to be taken in case this rule is being satisfi
 
 #### **Rule Condition**
 
-![Policy rule2](/img/adc/v7/docs/policyrule1.png)
+![Policy rule2](/img/adc/v8/docs/policy_rule_2.png)
 
 | SETTINGS        | ACCEPTED VALUE | DEFAULT   |
 |-----------------|----------------|-----------|
