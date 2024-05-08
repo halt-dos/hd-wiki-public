@@ -54,21 +54,51 @@ Users are allowed to configure many operational settings for the Listeners confi
 #### Enable IPv6
 This option allows user to enable traffic over IPv6 and applicable in the case of all service types. Internet Protocol version 6 is the most recent version of the Internet Protocol that allows communication to take place over the network.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Enable HTTP 2.0
 Specify if the WAF should allow HTTP 2.0 requests. By default, it supports other versions like HTTP 1.1
 This option allows user to specify whether the solution supports HTTP 2.0 request. HTTP/2 aims to be a faster, more efficient protocol than HTTP. By default, it supports other versions like HTTP 1.1 
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Web-socket Enabled
 This option allows user to enable web-socket support for servers or server group. It is a communication, an upgraded, quick, and seamless protocol to use when one needs to establish constant client-server communication over a single TCP connection.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Enable Logging
 This option allows user to enable access logs in the case of service type HTTP & TCP.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Enable Static Extension Logging
 This option allows user to specify whether to do log requests for static extension.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Enable Error Handling
 This option allows user to specify whether to enable error handling by firewall.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Operational Mode
 This option allows user to specify operational mode for every given security profile. Different operational modes are:  
@@ -76,66 +106,171 @@ This option allows user to specify operational mode for every given security pro
 - **BYPASSED**: In this mode, all the requests get bypassed without any filtration of mitigations & rule sets.  
 - **RECORD**: In this mode, all the mitigations & rule sets will monitor the traffic. If any request is about to drop, then it gets captured and forwarded in the form of a Record Event.  
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Application Type
 This option allows users to specify the type of application ( i.e. website or web service). A website is a collection of linked web pages (plus their associated resources) that share a unique domain name. A web service is a collection of open protocols and standards used for exchanging data between applications or systems.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Connection Pool Size
 This option allows user to specify the connection pool size with upstream.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Client Keep-Alive Timeout
 This option specify the timeout of keep-alive connections of clients. Set 0 to disable.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Upstream Keep-Alive Timeout
 This option specify timeout of keep-alive connections of upstream. Set 0 to disable.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Operational Mode
 This option allows users to specify operational mode for the listener.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Limit MAX Collection
 Specify max allowed concurrent connections. Set 0 to disable
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Client Body Timeout
 This option specify the timeout for receiving the request body.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Client Header Timeout
 Specify timeout for receiving request header
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Client Send Timeout
 Specify timeout for send response
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Static Extensions
 This option specify the list of allowed static extensions that don't require security validation.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Maximum HTTP Body Size
 This field specifies the maximum allowed HTTP body size (in bytes) from a single client IP. If the size exceeds, then the request gets dropped. By default, it is 10485760 bytes.
 
 Note: In the case of HTTP/0.9, no headers get transmitted.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Maximum HTTP Header Size
 This field specifies the maximum allowed HTTP Header size (in bytes) from a single client IP. If size exceeds, then the request gets dropped. By default, it is 4096 bytes.
 It comprises types, capabilities, and versions of the browser that makes the request. These elements help in returning compatible data.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Proxy HTTP Version 
 Specify http version used while connecting upstream server.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Proxy Buffers
 This option specify the number of buffers used for reading a response from the server for a single connection.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Proxy Buffer Size
 This option specify the size of the buffer used for reading the first part of the server response. Proper value can cause improper utilization of proxy buffer optimally for each request.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Client IP Location
 This option specify the location of the client IP.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Host Header
 This option specify the host header allowed by the backend, if it's different from the listener sub-domain. This allows the incoming request to alter the host header in each request and transmit it to the backend server.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Server Aliases
 This option specify aliases means familiar name for the listener.
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
+
 #### Virtual IPs
 This option specify assigned virtual IPs for accepting traffic.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 
 #### Add Port
 This option helps you to add HTTP/S ports for Advance Settings. Here you can unique port either HTTP  or HTTPS enabled configuration without changing backend server port.
 **Note:** Proxy Buffer and Proxy Buffer are sensitive configurations that can affect applications that should be configured with prior knowledge.
+
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
