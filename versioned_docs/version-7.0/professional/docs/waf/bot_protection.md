@@ -24,13 +24,6 @@ Bot Protection helps you quickly determine, manage, and mitigate automated reque
 
 Configure the following parameters to set up the desired settings:
 
-  | Parameter | Description| Accepted Values | Default |
-  |---------- | ------------ | -----------  | --------- |
-  | Allowed Crawlers | Specify the list of good crawlers by specifying their user agents. Such requests will be allowed. | User Agent | Blank |
-  | Bad Crawlers | Specify the list of bad crawlers by specifying their user agents. Such requests will be dropped. | User Agent | Blank |
-  | Bad Reputation Traffic | Specifies the action to perform on traffic from suspicious IPs reported by Haltdos Threat Stream TM.| NO ACTION / DROP / SEND CHALLENGE | NO ACTION |
-  
-
 ### Description
 
 ##### **Allowed Crawlers**
@@ -58,6 +51,10 @@ This field specifies the list of bad crawlers by specifying their user agents. Y
 ##### **Bad Reputation Traffic**
 
 This field allows you to take action on traffic when Haltdos Threat Stream TM reports suspicious IPs. It includes two actions:
+
+    Accepted values: NO ACTION/ DROP/ SEND CHALLENGE
+
+    Default: NO ACTION  
 
 - **NO ACTION**
 Don't perform any action  

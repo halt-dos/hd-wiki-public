@@ -23,57 +23,78 @@ Haltdos provides you the ability to compress or decompress the responses which o
 3. Click on **Add Compression Configuration ** 
 4. Click **Save Changes**
 
-| Parameters | Accepted Values | Default |
-| ----------- | ----------- | --------- |
-| Enable Compression | Enabled/Disabled | Disabled
-| De-Compression | Enabled/Disabled | Disabled
-| Compression Level | Integer (1-9) | 1
-| Min Length Compression | Length in bytes | 1000
-| Disable Compression| Regex | Blank
-| Minimum HTTP version | Drop-down| HTTP 1.1
-| URI Filter | URI Regex | Blank
-| Proxy Response Filter | expired/no-cache/no-store/private/no_last_modified/no_etag/any/auth | expired, no-cache, no-store, private, no_last_modified, no_etag, any, auth
-| Mime Type Filter |Any mime type| text/xml , text/plain
-
-     
-
-
 ### Description 
 
 ##### **Enable Compression**
 
 To enable compression, enable the toggle button. It compresses the responses to an extent.
 
+    Accepted values: Enabled/Disabled	
+
+    Default: Disabled
+
 ##### **Enable Decompression**
 
 Some clients do not support responses with the GZIP encoding method. At the same time, it might be desirable to store compressed data, or compress responses on the fly and store them in the cache. To successfully serve both clients that do and do not accept compressed data, WAF can decompress data on the fly when sending it to the latter type of client.
+
+    Accepted values: Enabled/Disabled	
+
+    Default: Disabled
 
 ##### **Compression Level**
 
 The level of compression to be achieved. The greater the number more the compression. The range is 1 - 9.
 
+    Accepted values: Integer(1-9)	
+
+    Default: 1
+
 ##### **Min Length Compression**
 
 This field specifies the minimum length of the response to be compressed.
+
+    Accepted values: Length in bytes	
+
+    Default: 1000
 
 ##### **Disable Compression**
 
 Specify one or more regular expressions (Regex) that will be evaluated on HTTP requests and disable compression for matching requests.
 
+    Accepted values: Regex	
+
+    Default: Blank
+
 ##### **Minimum HTTP Version**
 
 Specify the minimum HTTP version from which compression will be applied. The response above the specified version is compressed.
+
+    Accepted values: Drop-Down	
+
+    Default: HTTP 1.1
 
 ##### **URI Filter**
 
 This field allows performing compression on the specific URI using one or more regex. If the field is empty then no filter perform.
 
+    Accepted values: UGI Regex	
+
+    Default: Blank
+
 ##### **Proxy Response Filter**
 
 This field allows performing compression on the specific type of HTTP requests. 
 
+    Accepted values: expired/no-cache/no-store/private/no_last_modified/no_etag/any/auth	
+
+    Default: expired, no-cache, no-store, private, no_last_modified, no_etag, any, auth
+
 ##### **Mime Type Filter**
 
 By default, WAF compresses responses only with MIME-type text/HTML. To compress responses with other MIME types then include them in this field.
+
+    Accepted values: Any mime type
+
+    Default: text/xml , text/plain
 
 

@@ -26,29 +26,41 @@ Listeners are used for collecting set of websites and servers appropriately that
 
 ![Listener](/img/pro-waf/docs/listeners2.png)
 
-| SETTINGS              | ACCEPTED VALUES                                    | DEFAULT |
-|-----------------------|----------------------------------------------------|---------|
-| Domain/ Virtual IP    | Website Name                                       | Blank   |
-| Reference             | Drop-down                                          | Empty   |
-| Service Type          | HTTP                                               | HTTP    |
-| Origin Servers & port | Server IPs with listening port(Ex. 8.8.8.8:80)     | Blank   |
-
 #### Description:
 
 ##### **Domain/ Virtual IP**
 
-This field specifies the fully qualified name of the website for protection. Ensure to keep it empty while adding the root domain. Listener with a specific domain name can be respectively configured for protection.
+This field specifies the fully qualified name of the website for protection. Ensure to keep it empty while adding the root domain. Listener with a specific domain name can be respectively configured for protection. 
+
+    Accepted values: Website Name
+
+    Default: Blank  
 
 ##### **Reference**
 
-This field allows the user to adapt the configurations of an existing listener to the newly created listener with a different sub-domain. It clones the same configuration in the new listener.
+This field allows the user to adapt the configurations of an existing listener to the newly created listener with a different sub-domain. It clones the same configuration in the new listener.  
+
+    Accepted values: Drop-Down
+
+    Default: Empty  
+
 
 ##### **Service Type**
 
-This field specifies the type of service for the subdomain i.e. **HTTP**.
+This field specifies the type of service for the subdomain i.e. **HTTP**.  
+
+    Accepted values: HTTP
+
+    Default: HTTP  
+
 
 ##### **Origin Servers**
 
-This field specifies the IP and listening port of the backend server on which load balancing will occur. There can be multiple IP and listening port combinations.
+This field specifies the IP and listening port of the backend server on which load balancing will occur. There can be multiple IP and listening port combinations.  
+
+    Accepted values: Server IPs with listening port(Ex. 8.8.8.8:80)
+
+    Default: Blank  
+
 
 Following configurations can be managed by clicking on the newly added listener name.
