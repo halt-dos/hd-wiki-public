@@ -11,3 +11,4 @@ This section describes the knowledge base of how to use Haltdos WAF Professional
 7. [Generating / Uploading custom SSL certificates](./kb-7007)
 8. [How to  Configure Geo Filtering?](./kb-7008)
 9. [Understanding Incidents](./kb-7009)
+10. [How to troubleshoot](./kb-7010)

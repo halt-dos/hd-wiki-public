@@ -221,7 +221,7 @@ This option specify the request log format.
 
 This option specify the location of the client IP.
 
-    Accepted values: String
+    Accepted values: Drop-Down
 
     Default: SRC IP  
 
