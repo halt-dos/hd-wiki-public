@@ -15,27 +15,39 @@ Under varaibles user can create user defiend variable by configuring it's scope 
 3. Configure your settings.
 4. Click **Save Changes**.  
 
-| Parameters     | Accepted value |  Default |
-|----------------|----------------|----------|
-| Variable Name  | String         | Blank    |
-| Variable Type  | Drop-down      | String   |
-| Variable Scope | Drop-down      | Transaction    |
-| Default Value  | String         | Blank    |
-| Value Expiry  | Integers         | 1    |
-
 ### Description
 
 #### Variable Name
 Users can specify the user-friendly variable name.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 #### Variable Type
 Users can specify the variable type either it is string or integer.
+
+    Accepted values: Drop-Down 
+
+    Default: String 
 
 #### Variable Scope
 Users can specify the scope of the variable. Users can select any of the following: **GLOBAL**, **TRANSACTION**, **SESSION**, **CUSTOM**.
 
+    Accepted values: Drop-Down 
+
+    Default: Transaction  
+
 #### Default Value
 Users can specify the default value for the variable.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 #### Value Expiry
 Users can specify the expiry for the variable in seconds.
+
+    Accepted values: Integer 
+
+    Default: 1  

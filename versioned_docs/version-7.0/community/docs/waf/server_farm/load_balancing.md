@@ -33,27 +33,40 @@ This algorithm is a smart approach to distribute client requests across an array
 1. Go to **WAF** > **Server Farm** > **Load Balancing**
 2. Set the configurations and **Save Changes**.
 
-| Parameters            | Accepted value |  Default         |
-|-----------------------|----------------|------------------|
-| Encrypt to Upstream                   |Boolean         |False             |
-| Upstream Retries      | Integer        | 1                |
-| Failover Threshold    | Integer        | 50               |
-| Load Balancing Algorithm             | Drop-down      | Least Connection |
-| Sticky Session Cookie | String         | Blank            |
-
 ### Description
 
 #### Encrypt to Upstream
 This option allows users to specify if WAF should re-encrypt traffic before sending to servers
 
+    Accepted values: Enable/Disable 
+
+    Default: Disable  
+
+
 #### Upstream Retries
 This option specify the upstream retries. By default, the value is set to 1.
+
+    Accepted values: Integer 
+
+    Default: 1  
 
 #### Fail-over Threshold
 This option specify the fail-over threshold in percentage of (active/total) primary servers for switching to backup servers. By default, the value is set to 50%.
 
+    Accepted values: Integer 
+
+    Default: 50  
+
 #### Load Balancing Algorithm
 This drop-down specify the algorithm used by the server group. By default, the value is selected as Round Robin.
 
+    Accepted values: Drop-Down 
+
+    Default: Least Connection  
+
 #### Sticky Session Cookie
 The users are allowed to specify enabling sticky session based on specified cookie
+
+    Accepted values: String 
+
+    Default: Blank  

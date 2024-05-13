@@ -16,34 +16,36 @@ Configure Web Security Policy for HTML based websites - Static, Dynamic, Wordpre
 2. Configure your settings.
 3. Click **Save Changes**.
 
-| Parameter                         | Acceptable Value | Default      |
-|-----------------------------------|------------------|--------------|
-| Maximum Allowed Header Fields     | Integer          | 30           |
-| Maximum Header Field Name Length  | Integer          | 50           |
-| Maximum Header Field Value Length | Integer          | 2048         |
-| Allowed HTTP Methods              | Drop-down        | Pre-selected |
-| ALLOWED MIME TYPES                | Drop-down        | Pre-selected |
-| WEB EXTENSIONS                    | Drop-down        | Pre-selected |
-| RESTRICTED EXTENSIONS             | Drop-down        | Pre-selected |
-| RESTRICTED FILE UPLOAD            | Drop-down        | Pre-selected |
-| X-FRAME OPTIONS                   | Drop-down        | Disabled     |
-| CAPTCHA VALIDATION EXPIRY         | Integer          | 86400        |
-| CSRF                              | Boolean          | OFF          |
-| Immutable Cookie Validity         | Integer          | 86400        |
-| Cookie Name                       | String           | Blank        |
+### Description
 
 **Maximum Allowed Header Fields**
 HTTP header fields provide necessary data about the request or response. It also provides the details about the object sent in the message body.
 This field specifies the maximum number of allowed HTTP header fields in the HTTP request header. If the header field exceeds, then the request gets dropped.
 
+    Accepted values: Integer 
+
+    Default: 30  
+
 **Maximum Header Field Name Length**
 This field specifies the maximum allowed length of the HTTP header field name. If the header field name length exceeds the specified length then the request gets dropped.
+
+    Accepted values: Integer 
+
+    Default: 50  
 
 **Maximum Header Field Value Length**
 This field specifies the maximum allowed length of the HTTP header field value. If the header field value length exceeds the specified length then the request gets dropped.
 
+    Accepted values: Integer 
+
+    Default: 2048  
+
 **Allowed HTTP Methods**
 HTTP methods are a set of common request methods for HTTP. These request methods indicate the specific action that you need to take care of a specific resource. Each of the request methods implements a different semantic. A group of these methods represents some common features. E.g. a request method can be safe, cache-able, or idempotent.  
+
+    Accepted values: Drop-Down 
+
+    Default: Pre-Selected  
 
 We support the following HTTP Methods:  
 1. **GET**:  It requests a specified resource representation. It helps to retrieve data.
@@ -59,17 +61,37 @@ MIME Type, also known as media type or a Multipurpose Internet Mail Extensions i
 MIME-type helps browsers to determine how to process a URL. A browser must send an exact MIME type Content-Type header response. In case, it isn't configured correctly; the browser will misinterpret file content. The Website will not function properly, and there will be mishandling of downloaded files.
 This field specifies the list of the allowed HTTP MIME type. If the request contains any mime types other than specified ones, then the request gets dropped.
 
+    Accepted values: Drop-Down 
+
+    Default: Pre-Selected  
+
 **Web Extensions**
 Users are allowed to specify the list of extensions for which Human Authentication will be enabled.
+
+    Accepted values: Drop-Down 
+
+    Default: Pre-Selected  
 
 **Restricted Extentions**
 Restricted extensions are files that don't reside on a web server. This field specifies the list of extensions that should be blocked or restricted.
 
+    Accepted values: Drop-Down 
+
+    Default: Pre-Selected  
+
 **Restricted File Upload**
 Restricted file uploads restrict or block the request with a file that is malicious or corrupted based on the file extensions specified, such requests are dropped.
 
+    Accepted values: Drop-Down 
+
+    Default: Pre-Selected  
+
 **X-FRAME OPTIONS**
 X-frame is used for adding a header to stop clickjacking. Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
+
+    Accepted values: Drop-Down 
+
+    Default: Disabled  
 
 
 ![Web Policy](/img/ce-waf/docs/web_policy4.png)

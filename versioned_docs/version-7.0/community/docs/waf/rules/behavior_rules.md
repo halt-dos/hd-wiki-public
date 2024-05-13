@@ -16,36 +16,49 @@ The Behavior rule is a feature of Haltdos WAF that that allows application owner
 4. Configure the fields that are present.
 5. Click on **Save Changes** and the rule will be reflected.
 
-| Parameters      | Accepted value |  Default       |
-|-----------------|----------------|----------------|
-| Rule Name       | String         | Blank          |
-| Rule Message    | String         | Blank          |
-| Rule Priority   | Integer        | 0              |
-| Rule Action     | Drop-down      | Record-request |
-| Redirection URL | String         | /              |
-| Variable Name   | Drop-down      | Blank          |
-| Condition       | Drop-down      | Pattern exist  |
-| Condition Value | String         | Blank          |
-
-
 ### Description
+
 #### Rule Name
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
+
+    Accepted values: String 
+
+    Default: Blank  
 
 #### Rule Message 
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 #### Rule Priority
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0.
+
+    Accepted values: Integer 
+
+    Default: 0 
 
 #### Rule Action
 Users are allowed to specify the action to be taken for the request matched i.e. no action, drop & record request, record request, bypass request, redirect.
 
+    Accepted values: Drop-Down 
+
+    Default: Record-request  
+
 #### Variable Name
 Users are allowed to select specify the variable from the drop down.
 
+    Accepted values: Drop-Down 
+
+    Default: Blank  
+
 #### Condition
 Users are allowed to specify the condition from the drop-down menu.
+
+    Accepted values: Drop-Down 
+
+    Default: Pattern Exist  
 
 #####  Pattern Exists
 This is selected if condition value pattern exist.
@@ -79,5 +92,9 @@ Select if condition value is greater than for selected variable.
    
 #### Condition Value
 Users are allowed to specify the condition value for the rule.
+
+    Accepted values: String 
+
+    Default: Blank  
 
 

@@ -15,27 +15,45 @@ It provides functionality to support SSL offloading based on configurations. As 
 2. Configure your Settings
 3. Click **Save Changes**
 
-| Parameters            | Accepted value |  Default     |
-|-----------------------|----------------|--------------|
-| Enable SSL Offloading | Boolean        | False        |
-| SSL Certificate       | Drop-down      | Blank        |
-| SSL Cipher Suites     | Drop-down      | Intermediate |
-| SSL Session Caching   | Integer        | 10           |
-| SSL Session Timeout   | Integer        | 5            |
-
 #### Description
 
 ##### Enable SSL Offloading
 Users are allowed to specify if the solution should offload SSL traffic.
 
+    Accepted values: Enable/Disable 
+
+    Default: Disable  
+
+
 ##### SSL Certificate
 Users are allowed to specify SSL certificate for Encryption / Decryption.
+
+    Accepted values: Drop-Down 
+
+    Default: Blank  
+
 
 ##### SSL Cipher Suites
 Users are allowed to specify the security / compatibility of SSL with modern web browsers.
 
+    Accepted values: Drop-Down 
+
+    Default: Intermediate  
+
+
 ##### SSL Session Caching
 Users are allowed to specify the ssl session caching
 
+    Accepted values: Integer 
+
+    Default: 10  
+
+
 ##### SSL Session Timeout
 Users are allowed to specify the ssl session timeout.
+Users are allowed to specify the ssl session caching
+
+    Accepted values: Integer 
+
+    Default: 5  
+

@@ -15,32 +15,42 @@ Monitoring provides a comprehensive overview of the status and performance of th
 2. Click on **Add Monitor**
 3. Click on the monitor name to configure the Health Check and click on **Save Changes**
 
-
-| Parameters            | Accepted value |  Default |
-|-----------------------|----------------|----------|
-| Monitor Name          | String         | Blank    |
-| Enable Health Check   | Boolean        | False    |
-| Health Check Interval | Integer        | 10       |
-| Fail Threshold        | Interger       | 1        |
-| Pass Threshold        | Integer        | 1        |
-| Health Check Type     | Drop-down      | TCP      |
-
 ### Description
 
 #### Monitor Name 
 Users are allowed to specify a user friendly name to monitor.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 #### Enable Health Check
 Users are allowed to enable to periodically check the health of upstream servers by sending special health‑check requests to each server and verifying the correct response.
+
+    Accepted values: Enable/Disable 
+
+    Default: Disable  
 
 #### Health Check Interval
 Set the seconds, say 10, then every 10 seconds WAF sends a request for “/” to each server. If any communication error or timeout occurs (the server responds with a status code other than the expected code) the health check fails. The server is marked as unhealthy, and WAF does not send client requests to it (if attached to server group) until it once again passes a health check.
 
+    Accepted values: Integer 
+
+    Default: 10  
+
 #### Fail Threshold
 Sets the number of failed attempts that must occur during the heath check interval period for the server to be marked unavailable (default is 1 attempt).
   
+    Accepted values: Integer 
+
+    Default: 1  
+
 #### Pass Threshold 
 Sets the number of passes that must occur during the heath check interval period for the server to be marked available (default is 1 attempt). If set as 2, then the server must pass two consecutive checks to be marked as healthy again instead of the default one.
+
+    Accepted values: Integer 
+
+    Default: 1  
 
 #### Health Check Type:
 1. **TCP**: 
@@ -60,3 +70,7 @@ This option is only visible when **Health Check Type** is set to HTTP/HTTPs. Thi
 
 #### Match Content
 This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows users to specify the content to match in the response.
+
+    Accepted values: Drop-Down 
+
+    Default: TCP  

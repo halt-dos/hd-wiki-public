@@ -21,13 +21,25 @@ We have introduced Header rules by which application owners can manipulate reque
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 #### Message
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 #### Rule Priority
 
 User can define the rule's priority among various other custom error rules.
+
+    Accepted values: Integer 
+
+    Default: 0  
 
 #### HTTP URI
 

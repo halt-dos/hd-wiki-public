@@ -20,42 +20,57 @@ Here’s another use case: To reduce insider threat, a cyber attack caused behin
    
 ![Whitelist Rule](/img/ce-waf/docs/whitelisting_rule2.png)
    
-| Parameters      | Accepted value |  Default       |
-|-----------------|----------------|----------------|
-| Rule Name       | String         | Blank          |
-| Rule Message    | String         | Blank          |
-| Rule Priority   | Integer        | 0              |
-| URI             | String         | Blank          |
-| Method          | Drop-down      | ALL            |
-| Custom Rule IDs | String         | Blank          |
-| Find Location   | Drop-Down      | Variable       |
-| Find Parameter  | String         | Blank          |
-| Match Condition | Drop-Down      | Pattern Exists |
-| Match Value     | String         | Blank          |
-   
 ### Description
 
 #### Rule Name
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 #### Rule Message
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
+
+    Accepted values: String 
+
+    Default: Blank  
 
 #### Rule Priority
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
 
+    Accepted values: Integer 
+
+    Default: 0  
+
 #### URI
 Users are allowed to specify the URI. Specify the URI on which the firewall rule will be applied.
+
+    Accepted values: String 
+
+    Default: Blank  
 
 #### Method
 Users are allowed to specify the HTTP method on which the rule will be applied i.e. ANY, GET, POST, PUT, DELETE, HEAD, OPTIONS.
 
+    Accepted values: Drop-Down 
+
+    Default: All  
+
 #### Custom Rule IDs
 Users are allowed to specify the rule/mitigation id that needs to be whitelisted so that action against that request will be allowed.
+
+    Accepted values: String 
+
+    Default: Blank  
 
 #### Find Location
 
 This field determines whether the condition should be checked on headers/cookies/arguments. The accepted values are:
+
+    Accepted values: Drop-Down 
+
+    Default: Variable  
 
 **URL:** Select this if the specified value has to be searched in the URL part of the HTTP Header.
    
@@ -93,5 +108,13 @@ Users can select the variable.
 #### Match Condition
 The user can define the match condition for the parameter and match value.
 
+    Accepted values: Drop-Down 
+
+    Default: Pattern Exists  
+
 #### Match Value
 The user can define what value needs to be matched with the match condition.
+
+    Accepted values: String 
+
+    Default: Blank  

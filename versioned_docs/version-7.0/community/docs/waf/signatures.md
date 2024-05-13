@@ -12,27 +12,35 @@ Signatures contain rules that are evaluated for each request that passes through
 2. You can change the status of the signature to **PROD** or **STAGED**.
 3. Configurations will be deployed successfully.
 
-| Parameters | Accepted value                                         |  Default |
-|------------|--------------------------------------------------------|----------|
-| Rule ID    | Integer                                                | None     |
-| Type       | Type of rule                                           | None     |
-| Name       | Name of the signature	                              | None     |
-| Status     | Choose the status of the signature from the drop-down  | None     |
-
-
 ### Description
 
 ##### Rule Id
 Predefined rule id for the signatures. The Id is unique for each rule.
 
+    Accepted values: Integer 
+
+    Default: None  
+
 ##### Type
 It specifies the type of signature like Firewall, Response, etc.
+
+    Accepted values: Type of rule 
+
+    Default: None  
 
 ##### Name
 
 It specifies the name of the signatures. The name describes the identity of the rule which helps the user understand what is the use of that rule.
 
+    Accepted values: Name of the signature 
+
+    Default: None  
+
 ##### Status
 
 It specifies the status of the signature and can be set accordingly to PROD / STAGED.
+
+    Accepted values: Choose the status of the signature from the drop-down 
+
+    Default: None  
 
