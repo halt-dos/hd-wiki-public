@@ -24,12 +24,20 @@ This field specifies the maximum number of allowed HTTP header fields in the HTT
 
     Accepted values: Integer 
 
+    Max: 128
+
+    Min: 1
+
     Default: 30  
 
 **Maximum Header Field Name Length**
 This field specifies the maximum allowed length of the HTTP header field name. If the header field name length exceeds the specified length then the request gets dropped.
 
     Accepted values: Integer 
+
+    Max: 4096
+
+    Min: 4
 
     Default: 50  
 
@@ -38,6 +46,10 @@ This field specifies the maximum allowed length of the HTTP header field value. 
 
     Accepted values: Integer 
 
+    Max: 8192
+
+    Min: 4
+    
     Default: 2048  
 
 **Allowed HTTP Methods**

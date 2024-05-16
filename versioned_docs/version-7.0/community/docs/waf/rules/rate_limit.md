@@ -50,15 +50,27 @@ Users are allowed to specify the action to be taken for the request matched i.e.
 Users are allowed to specify the request rate for the page. The limit rate specified will validate the number of requests coming per second which is not exceeding the limit rate.
 
     Accepted values: Integer 
+    
+    Max: 1000000
 
-    Default: 10  
+    Min: 0
+
+    Default: 10
+
+    Metric: Per Second  
 
 #### Limit Brust
 Specify the request burst rate for the page. The burst rate specified will validate the total number of requests received. 
 
     Accepted values: Integer 
 
-    Default: 20  
+    Max: 1000000
+
+    Min: 0
+
+    Default: 20 
+
+    Metric: Count 
 
 #### Limit Duration
 Users are allowed to specify the time duration for which the rule will limit the request.

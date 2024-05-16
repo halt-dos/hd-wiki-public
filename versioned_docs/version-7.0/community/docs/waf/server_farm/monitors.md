@@ -38,6 +38,8 @@ Set the seconds, say 10, then every 10 seconds WAF sends a request for “/” t
 
     Default: 10  
 
+    Metrics: Second
+
 #### Fail Threshold
 Sets the number of failed attempts that must occur during the heath check interval period for the server to be marked unavailable (default is 1 attempt).
   
@@ -71,6 +73,6 @@ This option is only visible when **Health Check Type** is set to HTTP/HTTPs. Thi
 #### Match Content
 This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows users to specify the content to match in the response.
 
-    Accepted values: Drop-Down 
+    Accepted values: TCP / SSL HELLO / HTTP / HTTPS
 
-    Default: TCP  
+    Default: TCP

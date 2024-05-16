@@ -54,13 +54,17 @@ This option specify the upstream retries. By default, the value is set to 1.
 This option specify the fail-over threshold in percentage of (active/total) primary servers for switching to backup servers. By default, the value is set to 50%.
 
     Accepted values: Integer 
+    
+    Max: 100
+
+    Min: 1
 
     Default: 50  
 
 #### Load Balancing Algorithm
 This drop-down specify the algorithm used by the server group. By default, the value is selected as Round Robin.
 
-    Accepted values: Drop-Down 
+    Accepted values: Roud-Robin / Least Connection / Least Response Time / Least Bandwidth / IP Hash / Least Request.
 
     Default: Least Connection  
 

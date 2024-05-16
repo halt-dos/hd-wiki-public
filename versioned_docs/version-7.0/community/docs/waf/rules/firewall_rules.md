@@ -58,16 +58,16 @@ Users are allowed to specify the URI. Specify the URI on which the firewall rule
 #### Method
 Users are allowed to specify the HTTP method on which the rule will be applied i.e. ANY, GET, POST, PUT, DELETE, HEAD, OPTIONS.
 
-    Accepted values: Drop-Down 
+    Accepted values: Any/ Get/ Post/ Put/ Delete/ Patch/ Head/ Options
 
-    Default: All  
+    Default: Any  
 
 #### Rule Action
 Users are allowed to specify the action to be taken for the request matched i.e. No Action, Drop, Record, Bypass, Redirect, Temporary Blacklist, Send Challenge, Skip Learning.
 
-    Accepted values: Drop-Down 
+    Accepted values: Drop & Record Request/  Record Request/ Bypass Request/ Redirect/ No Action.
 
-    Default: All  
+    Default: Record Request  
 
 #### Match Condition
 This drop-down allows to set the match condition i.e. Pattern Match or Pattern Not Match for the request.

@@ -37,6 +37,10 @@ Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
 
+    Max: 65535
+
+    Min: 0
+
     Default: 80  
 
 
@@ -46,6 +50,10 @@ This option allows user to specify the weight of the server. Higher the weight m
 Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
+
+    Max: 100
+
+    Min: 0
 
     Default: 1 
 
@@ -65,7 +73,7 @@ Users are allowed to specify the ssl session caching
 This option allows user to specify if backup is allowed for the server. In case of primary failure, the backup will be up and running.
 Users are allowed to specify the ssl session caching
 
-    Accepted values: TRUE/FALSE 
+    Accepted values: TRUE / FALSE 
 
     Default: FALSE  
 
@@ -74,7 +82,7 @@ Users are allowed to specify the ssl session caching
 This option allows user to specify the server mode, either it is ready or down.
 Users are allowed to specify the ssl session caching
 
-    Accepted values: Ready/Down 
+    Accepted values: Ready / Down 
 
     Default: Ready  
 
@@ -86,6 +94,10 @@ Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
 
+    Max: 1000000
+
+    Min: 0
+
     Default: 0  
 
 
@@ -96,6 +108,10 @@ Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
 
+    Max: 1000000
+
+    Min: 0
+
     Default: 0  
 
 
@@ -105,6 +121,10 @@ This option allows user to specify the send timeout for the server.
 Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
+    
+    Max: 1000000
+    
+    Min: 0
 
     Default: 0 
 
@@ -115,6 +135,10 @@ This option allows user to specify the read timeout for the server.
 Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
-
+    
+    Max: 1000000
+    
+    Min: 0
+    
     Default: 0  
 

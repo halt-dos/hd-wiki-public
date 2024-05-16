@@ -55,7 +55,7 @@ Users are allowed to specify the HTTP method on which the rule will be applied i
 
     Accepted values: Drop-Down 
 
-    Default: All  
+    Default: Any  
 
 #### Custom Rule IDs
 Users are allowed to specify the rule/mitigation id that needs to be whitelisted so that action against that request will be allowed.

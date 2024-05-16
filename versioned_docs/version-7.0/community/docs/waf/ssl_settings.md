@@ -20,7 +20,7 @@ It provides functionality to support SSL offloading based on configurations. As 
 ##### Enable SSL Offloading
 Users are allowed to specify if the solution should offload SSL traffic.
 
-    Accepted values: Enable/Disable 
+    Accepted values: Enable / Disable 
 
     Default: Disable  
 
@@ -36,7 +36,7 @@ Users are allowed to specify SSL certificate for Encryption / Decryption.
 ##### SSL Cipher Suites
 Users are allowed to specify the security / compatibility of SSL with modern web browsers.
 
-    Accepted values: Drop-Down 
+    Accepted values: Modern / Intermediate / Old / Custom 
 
     Default: Intermediate  
 
@@ -45,6 +45,10 @@ Users are allowed to specify the security / compatibility of SSL with modern web
 Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
+
+    Max: 1000
+
+    Min: 1
 
     Default: 10  
 
@@ -55,5 +59,9 @@ Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
 
+    Max: 3600
+
+    Min: 1
+    
     Default: 5  
 

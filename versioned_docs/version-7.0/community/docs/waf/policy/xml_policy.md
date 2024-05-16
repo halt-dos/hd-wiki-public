@@ -51,6 +51,10 @@ This field specifies the maximum child nodes of the XML document. In the above e
 
     Accepted values: Integer 
 
+    Max: 10000
+
+    Min: 0
+
     Default: 100  
 
 **Maximum Depth**  
@@ -58,12 +62,20 @@ This field specifies the maximum depth of an XML document. In the above example,
 
     Accepted values: Integer 
 
+    Max: 1000000
+
+    Min: 0
+
     Default: 100  
 
 **Maximum Attributes**  
 This field specifies the maximum attributes for a single node of an XML document. In the above example, the maximum attribute is 1, Tag ``<book>`` has 1 attribute. An XML document can have a minimum of 1 attribute and a maximum of 1000 attributes.
 
-    Accepted values: Integer 
+    Accepted values: Integer
+
+    Max: 1000
+
+    Min: 0
 
     Default: 100  
 
@@ -72,12 +84,20 @@ This field specifies the maximum node name size of an XML document. In the above
 
     Accepted values: Integer 
 
+    Max: 10000
+
+    Min: 0
+
     Default: 1000  
 
 **Maximum Node Value**  
 This field specifies the maximum node value of the XML document. In the above example, the maximum node value is 12, Tag ``<title>`` has a value of Harry Potter of length 12. An XML document can have a minimum of 1 node value and a maximum of 1000000 node values.
 
     Accepted values: Integer 
+
+    Max: 1000000
+
+    Min: 0
 
     Default: 1000  
 
@@ -86,6 +106,10 @@ This field specifies the maximum attribute name size of an XML document. In the 
 
     Accepted values: Integer 
 
+    Max: 10000
+
+    Min: 0
+
     Default: 1000  
 
 **Maximum Attribute Value**  
@@ -93,4 +117,8 @@ This field specifies the maximum attribute value size of the XML document. In th
 
     Accepted values: Integer 
 
+    Max: 1000000
+
+    Min: 0
+    
     Default: 1000  

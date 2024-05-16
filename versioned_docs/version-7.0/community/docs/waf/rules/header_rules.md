@@ -49,6 +49,10 @@ Specify the URI or regex for which rule will be applied.
 
 Select the HTTP method for the rule to validate when matched with the request.
 
+    Accepted values: Any, Get, Post, Put, Delete, Patch, Head, Options 
+
+    Default: Any  
+
 #### Rule Action
 The rule action determines what action (add/remove/overwrite) the rule will perform. The accepted values are:
 
@@ -69,6 +73,10 @@ If the action is **OVERWRITE**, then two other fields are required first is **Se
 #### Evaluation Phase
 
 Select the evaluation phase for the rule i.e. Request or Response.
+
+    Accepted values: Request Phase / Response Phase 
+
+    Default: Request Phase  
 
 #### Attribute Name
 

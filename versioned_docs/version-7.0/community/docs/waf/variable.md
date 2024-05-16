@@ -27,14 +27,14 @@ Users can specify the user-friendly variable name.
 #### Variable Type
 Users can specify the variable type either it is string or integer.
 
-    Accepted values: Drop-Down 
+    Accepted values: String / Integer
 
     Default: String 
 
 #### Variable Scope
 Users can specify the scope of the variable. Users can select any of the following: **GLOBAL**, **TRANSACTION**, **SESSION**, **CUSTOM**.
 
-    Accepted values: Drop-Down 
+    Accepted values: Global / Transaction /  Session / Custom
 
     Default: Transaction  
 
