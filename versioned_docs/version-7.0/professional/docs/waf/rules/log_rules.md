@@ -49,16 +49,16 @@ Users are allowed to specify the URI. Specify the URI on which the firewall rule
 ##### **Method**
 Users are allowed to specify the HTTP method on which the rule will be applied i.e. All, GET, POST, PUT, DELETE, HEAD, OPTIONS.
 
-    Accepted values: Drop-Down
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: All  
 
 ##### **Find Location**
 Users can define the source location where this condition needs to be applied.
 
-    Accepted values: Drop-Down
+    Accepted values: ALL / HEADER / COOKIE / ARGUMENTS / BODY
 
-    Default: Variable  
+    Default: ALL 
 
 ##### **Find Parameter**
 The user can define the parameter based on the location of the condition.
@@ -70,7 +70,7 @@ The user can define the parameter based on the location of the condition.
 ##### **Match Condition**
 The user can define the match condition for the parameter and match value.
 
-    Accepted values: Drop-Down
+    Accepted values: None / Pattern Exist / Pattern does not exiist / Equals / Not Equals
 
     Default: Pattern Exist  
 

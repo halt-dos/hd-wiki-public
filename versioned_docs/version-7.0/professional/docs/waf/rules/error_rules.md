@@ -25,30 +25,30 @@ Users are allowed to specify a rule name to identify the rule which is to be cre
 ##### **Rule Message**
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
 
+    Accepted values: String
+
+    Default: Blank  
+
+##### **Rule Priority**
+Users are allowed to specify the priority for the rule for execution when matched with the request.
+
     Accepted values: Integer
 
     Default: 0  
 
-##### **Rule Priority**
-Users are allowed to specify the priority for the rule for execution when matched with the request.
+##### **URI**
+Users are allowed to specify the URI.
 
     Accepted values: String
 
     Default: Blank  
 
-##### **URI**
-Users are allowed to specify the URI.
-
-    Accepted values: Drop-Down
-
-    Default: ALL  
-
 ##### **Method**
 Users are allowed to specify the method for the rule.
 
-    Accepted values: Integer
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
-    Default: 1  
+    Default: ALL
 
 ##### **HTTP Response Code**
 Users are allowed to specify the HTTP response code based on the custom error rule name.
@@ -60,9 +60,9 @@ Users are allowed to specify the HTTP response code based on the custom error ru
 ##### **Rule Action**
 Users are allowed to specify the rule action. Users can select either to take no action or send custom response.
 
-    Accepted values: 	Drop-Down
+    Accepted values: NO ACTION / SEND CUSTOM RESPONSE
 
-    Default: Blank  
+    Default: NO ACTION  
 
 ##### **Custom Error Page**
 Users are allowed to select the custom error page from the drop-down list.

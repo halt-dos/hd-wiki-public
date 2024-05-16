@@ -48,14 +48,14 @@ Users are allowed to specify the URI on which the tamper rule will be applied.
 ##### **Method**
 Users are allowed to select the HTTP method for the rule to extract when matched with the request.
 
-    Accepted values: Drop-Down
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: ALL  
 
 ##### **Rule Action**
 The following actions are available to the User-
    
-    Accepted values: Drop-Down
+    Accepted values: Record Request / DROP & RECORD REQUEST / BYPASS REQUEST / TEMPORARY BLACKLIST SRC IP / REDIRECT / SEND CAPCHA CHALLENEGE / SEND RESONSE WITH STATUUS CODE / SEND CUSTOM RESPONSES / CHANGE RESPONSE CODE / NO ACTION / SEND EMPTY RESPONSES
 
     Default: Record Request  
 
@@ -79,13 +79,13 @@ By clicking on Add Rule Condition button, the end-user can add specify the locat
 ##### **Rule ID**
 Users can specify the rule ID for which condition should be created. 
 
-    Accepted values: String
+    Accepted values: Drop-Down
 
     Default: Blank  
 
 ##### **Match**
 Users can specify whether the rule should be matched or not matched.  
 
-    Accepted values: String
+    Accepted values: MATCH / NO MATCH
 
-    Default: Blank  
+    Default: MATCH  

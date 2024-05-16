@@ -51,7 +51,7 @@ Users are allowed to specify the URI. Specify the URI on which the firewall rule
 ##### **Method**
 Users are allowed to specify the HTTP method on which the rule will be applied i.e. All, GET, POST, PUT, DELETE, HEAD, OPTIONS.
 
-    Accepted values: Drop-Down
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: All  
 
@@ -79,7 +79,7 @@ Users can select the variable.
 ##### **Match Condition**
 The user can define the match condition for the parameter and match value.
 
-    Accepted values: Drop-Down
+    Accepted values: Equal / Not Equal / Pattern Exist / Pattern Don't Exist / File Extension
 
     Default: Pattern Exists  
 

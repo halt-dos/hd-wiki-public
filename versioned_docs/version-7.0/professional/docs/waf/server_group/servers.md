@@ -41,8 +41,11 @@ Specify the IP address for the server. This IP address will be used for serving 
 Set the port for the backend application server will communicate.
 
     Accepted values: Integer
+    
     Max: 65535
+    
     Min: 0
+    
     Default: 80 
 
 ##### **Weight** 
@@ -50,8 +53,11 @@ Set the port for the backend application server will communicate.
 Specify the weight of the server. Higher the weight more requests will be served by that server. 
 
     Accepted values: Integer
+    
     Max: 100
+    
     Min:  1
+    
     Default: 1 
 
 ##### **Remote** 
@@ -91,8 +97,11 @@ Makes the server active/inactive. When marked Down the server will not be able t
 This option allows users to handle client request slowly in start.
 
     Accepted values: Integer
+    
     Max: 10800000
+    
     Min: 0
+    
     Default: 0 
 
 ##### **Max Connection** 
@@ -100,8 +109,11 @@ This option allows users to handle client request slowly in start.
 Specify the number of max connections allowed to the specific server.
 
     Accepted values: Integer
+    
     Max: 1000000
+    
     Min: 0
+    
     Default: 0 
 
 ##### **Connection Timeout** 
@@ -109,8 +121,11 @@ Specify the number of max connections allowed to the specific server.
 Specify the connection timeout for the server.
 
     Accepted values: Integer
+    
     Max: 1000000
+    
     Min: 0 
+    
     Default: 0 
 
 ##### **Send Timeout** 
@@ -118,8 +133,11 @@ Specify the connection timeout for the server.
 Specify the send timeout for the server. 
 
     Accepted values: Integer
+    
     Max: 1000000
+    
     Min: 0 
+    
     Default: 0 
 
 ##### **Read Timeout** 
@@ -127,8 +145,11 @@ Specify the send timeout for the server.
 Specify the read timeout for the server.
 
     Accepted values: Integer
+    
     Max: 1000000
+    
     Min: 0
+    
     Default: 0 
 
 

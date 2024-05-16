@@ -43,7 +43,7 @@ Users are allowed to specify the priority for the rule for execution when matche
 ##### **Rule Action**
 Users are allowed to specify the action to be taken for the request matched i.e. record request,Drop & record request, Bypass request, Temp Blacklist src IP, Tarpit Src IP etc.
 
-    Accepted values: Drop-Down
+    Accepted values: Drop & Record Request / Record Request / Bypass Request / Temprorary Blacklist Src IP / Send Captcha CHallenege
 
     Default: Record Request  
 
@@ -51,27 +51,45 @@ Users are allowed to specify the action to be taken for the request matched i.e.
 Users are allowed to specify the request rate for the page. The limit rate specified will validate the number of requests coming per second which is not exceeding the limit rate.
 
     Accepted values: Integer
-
+    
+    Max: 1000000
+    
+    Min: 0
+    
     Default: 10  
+
+    Metric: Per Second
 
 ##### **Limit Burst**
 Specify the request burst rate for the page. The burst rate specified will validate the total number of requests received. 
 
     Accepted values: Integer
-
+    
+    Max: 1000000
+    
+    Min: 0
+    
     Default: 20  
+
+    Metric: Count
 
 ##### **Limit Duration**
 Users are allowed to specify the time duration for which the rule will limit the request.
 
     Accepted values: Integer
-
+    
+    Max: 3600
+    
+    Min: 0
+    
     Default: 1  
+
+    Metric: Second
 
 ##### **Limit On**
 Users are allowed to specify the object on which we apply the limit such as Client IP, User-Agent, URI, Source Port, HTTP Method, HTTP Referrer.
 
-    Accepted values: Drop-Down
+    Accepted values: Request / Request-Size / Response-Size / Total Band Width
 
     Default: Request  
 
