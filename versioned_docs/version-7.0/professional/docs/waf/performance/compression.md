@@ -56,6 +56,8 @@ This field specifies the minimum length of the response to be compressed.
     Accepted values: Length in bytes	
 
     Default: 1000
+    
+    Metric: Bytes
 
 ##### **Disable Compression**
 

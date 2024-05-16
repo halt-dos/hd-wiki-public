@@ -40,9 +40,9 @@ This field specifies the fully qualified name of the website for protection. Ens
 
 This field allows the user to adapt the configurations of an existing listener to the newly created listener with a different sub-domain. It clones the same configuration in the new listener.  
 
-    Accepted values: Drop-Down
+    Accepted values: Listeners
 
-    Default: Empty  
+    Default: None  
 
 
 ##### **Service Type**

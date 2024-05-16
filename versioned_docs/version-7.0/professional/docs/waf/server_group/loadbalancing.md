@@ -64,6 +64,10 @@ This option specify the fail-over threshold in percentage of (active/total) prim
 
     Accepted values: Integer
 
+    Max: 100
+
+    Min: 1
+    
     Default: 50  
 
 ##### **Client IP Pool**

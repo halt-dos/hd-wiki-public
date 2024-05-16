@@ -99,7 +99,7 @@ Restricted file uploads restrict or block the request with a file that is malici
 ##### **X-FRAME OPTIONS**
 X-frame is used for adding a header to stop clickjacking. Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
 
-    Accepted values: Drop-Down
+    Accepted values: Deny / Disabled / Same Origin
 
     Default: Disabled    
 
@@ -108,23 +108,35 @@ X-frame is used for adding a header to stop clickjacking. Clickjacking is an int
 In order to protect the web application from automated attacks. Captcha is used to validate the user but its validity is set in seconds for which the captcha will be valid.
 
     Accepted values: Integer
+    
+    Max: 86400
 
-    Default: 86400    
+    Min : 30
+    
+    Default: 86400
+
+    Metric: Seconds    
 
 ##### **CSRF**
 Cross-Site Request Forgery (CSRF) is an attack-type in which a malicious blog, email, instant message, or program causes a browser of the user to execute an unwanted action on a trusted site in case of user authentication. Enable cookie-based CSRF protection for incoming HTTP requests.
 
-    Accepted values: Boolean
+    Accepted values: Enabled / Disabled
 
-    Default: OFF    
+    Default: Disabled    
 
 
 ##### **Immutable Cookie Validity**
 An HTTP cookie, also known as a browser cookie or web cookie is a small data piece that a server sends to the web browser of the user. A browser can store it and send it back to the same server with the next request. It tells whether the two requests are coming from the same browser. It reminisces accurate data for the stateless HTTP protocol.  
 
     Accepted values: Integer
-
+    
+    Max: 2592000
+    
+    Min: 30
+    
     Default: 86400    
+
+    Metric: Seconds
 
 Three primary purposes of cookies:
 

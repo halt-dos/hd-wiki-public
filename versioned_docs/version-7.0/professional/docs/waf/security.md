@@ -23,14 +23,14 @@ Profile Setting specifies all the operational settings for user different applic
 ##### **Mitigation**
 This option allows user to enable mitigation.  
 
-    Accepted values: Boolean
+    Accepted values: Enabled / Disabled
 
     Default: Disabled  
 
 ##### **Paranoia Level** 
 Paranoia Level configures the severity in which HTTP requests should be allowed. It lets you disable certain rules to minimize several false positives that they may encounter. 
 
-    Accepted values: Drop-Down
+    Accepted values: Low / Medium / High / Under Attack
 
     Default: Low  
    
@@ -49,56 +49,56 @@ Haltdos WAF comes with four Security Paranoia Levels:
 ##### **Enable Signature Validation**
 Users can specify to enable the signature validation for the present profile.  
 
-    Accepted values: Boolean
+    Accepted values: Enabled / Disabled
 
-    Default: False
+    Default: Disabled
 
 ##### **Enable LibInjection**
 Users can configure settings related to Specify whether to enable internal libinjection based validations.  
 
-    Accepted values: Boolean
+    Accepted values: Enabled / Disabled
 
-    Default: False  
+    Default: Disabled  
 
 ##### **Application Type**
 Specify the type of application (i.e. website or web service). A website is a collection of linked web pages (plus their associated resources) that share a unique domain name. A web service is a collection of open protocols and standards used for exchanging data between applications or systems.
 
-    Accepted values: Drop-Down
+    Accepted values: Web-Service / Website / Web-Socket
 
     Default: Other  
 
 ##### **Application Framework**
 Specify the framework used for developing the application (if any). 
 
-    Accepted values: Drop-Down
+    Accepted values: Drupal / Wordpress / joomla / Larvel / Magento / MediaWIKI / MYBB / OSCOMMERCE / PHBB / PHPMYADMIN / SYMFONY / VBULLETIN / TYPO3 / SHAREPOINT / SAP / DOMINO / PEOPLE-SOFT / Other
 
     Default: Other  
 
 ##### **Application Language**
 Specify the programming language in which application is developed. 
 
-    Accepted values: Drop-Down
+    Accepted values: JAVA / DOTNET / PHP / PYTHON / GO / Other
 
     Default: Other  
 
 ##### **Application Server**
 Specify the server on which application is running.  
 
-    Accepted values: Drop-Down
+    Accepted values: IIS / APACHE / TOMCAT / Other
 
     Default: Other  
 
 ##### **Application  Database**
 Specify the database which is being used in the application (if any).  
 
-    Accepted values: Drop-Down
+    Accepted values: MYSQL / PGSQL / MSSQL / ORACLE / NOSQL / MONGODB / MSACCESS / DB2 / EMC / FIREBIRD / FRONTBASE / HSQLDB / INFORMIX / INGRES / MAXDB / SQLITE / SYBASE / INTERBASE / Other
 
     Default: Other  
 
 ##### **Application OS**
 Specify the Operating system on which application is running.  
 
-    Accepted values: Drop-Down
+    Accepted values: Window / Unix / Other
 
     Default: Other  
 
@@ -108,4 +108,6 @@ The time duration for which a malicious IP is suspended by WAF is specified here
     Accepted values: Integer
 
     Default: 0  
+
+    Matric: Seconds
 

@@ -52,7 +52,7 @@ This field specifies the list of bad crawlers by specifying their user agents. Y
 
 This field allows you to take action on traffic when Haltdos Threat Stream TM reports suspicious IPs. It includes two actions:
 
-    Accepted values: NO ACTION/ DROP/ SEND CHALLENGE
+    Accepted values: NO ACTION / DROP / SEND CHALLENGE
 
     Default: NO ACTION  
 

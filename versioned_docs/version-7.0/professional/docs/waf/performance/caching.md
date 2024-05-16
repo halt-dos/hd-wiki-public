@@ -29,7 +29,7 @@ When caching is enabled, WAF saves responses in a directory and uses them to res
 
 To enable caching, enable the toggle button. It stores data so that future requests for that data can be served faster.
 
-    Accepted values: Boolean	
+    Accepted values: Enabled / Disabled	
 
     Default: Disabled 
 
@@ -37,7 +37,7 @@ To enable caching, enable the toggle button. It stores data so that future reque
 
 This toggle button allows the re-validation of expired cache items. It helps in storing the updated data.
 
-    Accepted values: Boolean	
+    Accepted values: Enabled / Disabled	
 
     Default: Enabled 
 
@@ -45,7 +45,7 @@ This toggle button allows the re-validation of expired cache items. It helps in 
 
 This toggle button enables the caching mechanism to update the cache in the background and store the updated data.
 
-    Accepted values: Boolean	
+    Accepted values: Enabled / Disabled		
 
     Default: Disabled 
 
@@ -53,7 +53,7 @@ This toggle button enables the caching mechanism to update the cache in the back
 
 Enable to force caching a resource item to complete before allowing new requests to the same resource item.
 
-    Accepted values: Boolean	
+    Accepted values: Enabled / Disabled		
 
     Default: Disabled 
 
@@ -70,8 +70,14 @@ To cache responses to requests with methods other than GET and HEAD, list them a
 This field specifies the maximum request size allowed for the caching to store data exceeding which will not be cached.
 
     Accepted values: Integer	
+    
+    Max: 999
 
+    Min: 10
+    
     Default: Blank
+
+    Metric: mb
 
 ##### **URI Filter**
 
@@ -110,8 +116,10 @@ This field specifies the list of HTTP status codes for which response will be ca
 To define the minimum number of times that a request with the same key must be made before the response is cached. It is specified in terms of a number of requests.
 
     Accepted values: Integer	
-
+    Max: 3600
+    Min: 1
     Default: 3
+    Metric: Request
 
 ##### **Cache Validity**
 
@@ -119,7 +127,7 @@ To limit how long cached responses with specific status codes are considered val
 
     Accepted values: Integer	
 
-    Default: 5
+    Metric: Minutes
 
 ##### **Browser Cache Expiry**
 

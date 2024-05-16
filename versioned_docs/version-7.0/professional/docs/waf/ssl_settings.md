@@ -29,14 +29,14 @@ As many applications are running over HTTPS, for the WAF / ADC solution to inspe
 ##### **Upstream SSL Protocols**
 Specify the ssl protocols. For empty, default SSL protocol will be usedred website.
 
-    Accepted values: Drop-Down
+    Accepted values: SSLv2 / SSLv3 / TLSv1 / TLSv1.1 / TLSv1.2 / TLSv1.3
 
     Default: Blank  
 
 ##### **Enable SSL Offloading**
 This option specifies if the WAF should enable HTTPS traffic for the configured website.
 
-    Accepted values: Boolean
+    Accepted values: Enabled / Disabled
 
     Default: Disabled  
 
@@ -53,7 +53,7 @@ It is a set of algorithms or a set of instructions/steps that helps to establish
 ##### **SSL Ciphers Suites**
 In order to secure or make SSL compatible with specific web browsers. Users can select from the drop-down i.e. Modern(Very Secure), Intermediate (Recommended),  Old(Backward Compatibility), Custom, etc.
 
-    Accepted values: Drop-Down
+    Accepted values: Modern / Intermediate / Old / Custom 
 
     Default: Intermediate  
 
@@ -61,12 +61,20 @@ In order to secure or make SSL compatible with specific web browsers. Users can 
 This option allows users to specify the number of SSL session cache for HTTPS requests on the listener.
 
     Accepted values: Decimal
+    
+    Max: 1000
 
+    Min: 0
+    
     Default: 10  
 
 ##### **SSL Session Timeout**
 This option allows users to specify the SSL session timeout in minutes for every HTTPS request on the listener.
 
     Accepted values: Decimal
+    
+    Max: 3600
 
+    Min: 1
+    
     Default: 5  
