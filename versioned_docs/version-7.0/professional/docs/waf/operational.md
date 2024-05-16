@@ -31,65 +31,69 @@ Users are allowed to configure many operational settings for the Listeners. User
 
 This option allows user to enable traffic over IPv6 and applicable in the case of all service types. Internet Protocol version 6 is the most recent version of the Internet Protocol that allows communication to take place over the network.
 
-    Accepted values: Boolean
+    Accepted values: Enable / Disable
 
-    Default: True  
+    Default: Enable  
 
 ##### **Enable HTTP 2.0**
 
 Specify if the WAF should allow HTTP 2.0 requests. By default, it supports other versions like HTTP 1.1
 This option allows user to specify whether the solution supports HTTP 2.0 request. HTTP/2 aims to be a faster, more efficient protocol than HTTP. By default, it supports other versions like HTTP 1.1  
 
-    Accepted values: Boolean
+    Accepted values: Enable / Disable
 
-    Default: False  
+    Default: Disable  
 
 ##### **Enable Host Check**
 
 Enforce host (SNI) validation for incoming request.
 
-    Accepted values: Boolean
+    Accepted values: Enable / Disable
 
-    Default: True  
+    Default: Enable  
     
 ##### **Web-socket Enabled**
 
 This option allows user to enable web-socket support for servers or server group. It is a communication, an upgraded, quick, and seamless protocol to use when one needs to establish constant client-server communication over a single TCP connection.
 
-    Accepted values: Boolean
+    Accepted values: Enable / Disable
 
-    Default: False  
+    Default: Disable 
 
 ##### **Enable Logging**
 
 This option allows user to enable access logs in the case of service type HTTP & TCP.
 
-    Accepted values: Boolean
+    Accepted values: Enable / Disable
 
-    Default: True  
+    Default: Enable 
     
 ##### **Enable Static Extension Logging**
 
 This option allows user to specify whether to do log requests for static extension.
 
-    Accepted values: Boolean
+    Accepted values: Enable / Disable
 
-    Default: False  
+    Default: Disable 
 
 ##### **Enable Error Handling**
 
 This option allows user to specify whether to enable error handling by firewall.
 
-    Accepted values: Boolean
+    Accepted values: Enable / Disable
 
-    Default: True  
+    Default: Enable  
 
 ##### **Connection Pool Size**
 
 This option allows user to specify the connection pool size with upstream.
 
     Accepted values: Integer
-
+    
+    Max: 20000
+    
+    Min: 0
+    
     Default: 0  
 
 ##### **Client Keep-Alive Timeout**
@@ -97,7 +101,11 @@ This option allows user to specify the connection pool size with upstream.
 This option specify the timeout of keep-alive connections of clients. Set 0 to disable.
 
     Accepted values: Integer
+    
+    Max: 1000000
 
+    Min: 0
+    
     Default: 0  
 
 ##### **Upstream Keep-Alive Timeout**
@@ -105,7 +113,11 @@ This option specify the timeout of keep-alive connections of clients. Set 0 to d
 This option specify timeout of keep-alive connections of upstream. Set 0 to disable.
 
     Accepted values: Integer
-
+    
+    Max: 3600
+    
+    Min: 0
+    
     Default: 0  
 
 ##### **Max Requests per Connection**
@@ -113,14 +125,18 @@ This option specify timeout of keep-alive connections of upstream. Set 0 to disa
 This option specify maximum allowed requests per keep-alive connection.
 
     Accepted values: Integer
+    
+    Max: 90000000
 
+    Min: 0
+    
     Default: 1000 
 
 ##### **Operational Mode**
 
 Specify operational mode for the listener
 
-    Accepted values: Drop-Down
+    Accepted values: Reverse Proxy / IP Transparency
 
     Default: Reverse Proxy  
 
@@ -146,7 +162,13 @@ Specify timeout for receiving request header
 
     Accepted values: Integer
 
+    Max: 1000000
+
+    Min: 0
+
     Default: 300  
+
+    Metrics: Seconds
 
 ##### **Client Send Timeout**
 
@@ -154,7 +176,14 @@ Specify timeout for send response
 
     Accepted values: Integer
 
+    Max: 1000000
+
+    Min: 0
+
     Default: 300  
+
+    Metrics: Seconds
+
 
 ##### **Static Extensions**
 
@@ -169,8 +198,14 @@ This option specify the list of allowed static extensions that don't require sec
 This field specifies the maximum allowed HTTP body size (in bytes) from a single client IP. If the size exceeds, then the request gets dropped. By default, it is 10485760 bytes.
 
     Accepted values: Integer
-
+    
+    Max: 4073741824L
+    
+    Min: 0
+    
     Default: 10485760  
+
+    Metric: Bytes
 
 :::note Note
 In the case of HTTP/0.9, no headers get transmitted.
@@ -182,14 +217,18 @@ This field specifies the maximum allowed HTTP Header size (in bytes) from a sing
 It comprises types, capabilities, and versions of the browser that makes the request. These elements help in returning compatible data.
 
     Accepted values: Integer
+    
+    Max: 40960
 
+    Min: 0
+    
     Default: 4096  
 
 ##### **Proxy HTTP Version **
 
 Specify http version used while connecting upstream server.
 
-    Accepted values: Drop-Down
+    Accepted values: Any / HTTP 1.0 / HTTP 1.1
 
     Default: ANY  
 
@@ -198,8 +237,14 @@ Specify http version used while connecting upstream server.
 This option specify the number of buffers used for reading a response from the server for a single connection.
 
     Accepted values: Integer
-
+    
+    Max: 64
+    
+    Min: 8
+    
     Default: 8
+
+    Metric: Count
 
 ##### **Proxy Buffer Size**
 
@@ -207,7 +252,13 @@ This option specify the size of the buffer used for reading the first part of th
 
     Accepted values: Integer
 
+    Max: 4096
+
+    Min: 8
+
     Default: 8 
+
+    Metric: KB
 
 ##### **Log Format**
 
@@ -221,7 +272,7 @@ This option specify the request log format.
 
 This option specify the location of the client IP.
 
-    Accepted values: String
+    Accepted values: SRC IP / X-Forwarded-For / X-Real-IP / X-ProxyUser-IP
 
     Default: SRC IP  
 
