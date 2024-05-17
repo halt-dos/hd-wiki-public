@@ -55,7 +55,7 @@ This field specifies the maximum allowed length of the HTTP header field value. 
 **Allowed HTTP Methods**
 HTTP methods are a set of common request methods for HTTP. These request methods indicate the specific action that you need to take care of a specific resource. Each of the request methods implements a different semantic. A group of these methods represents some common features. E.g. a request method can be safe, cache-able, or idempotent.  
 
-    Accepted values: Drop-Down 
+    Accepted values: GET / PUST / POST / DELETE /  HEAD / OPTIONS
 
     Default: Pre-Selected  
 
@@ -73,38 +73,57 @@ MIME Type, also known as media type or a Multipurpose Internet Mail Extensions i
 MIME-type helps browsers to determine how to process a URL. A browser must send an exact MIME type Content-Type header response. In case, it isn't configured correctly; the browser will misinterpret file content. The Website will not function properly, and there will be mishandling of downloaded files.
 This field specifies the list of the allowed HTTP MIME type. If the request contains any mime types other than specified ones, then the request gets dropped.
 
-    Accepted values: Drop-Down 
+    Accepted values: application/x-www-form-urlencoded / multipart/fprm-data / text/xml / application/xml / application/soap+xml / application/x-amf / application/json / application/octet-stream / text/plain / text/html
 
     Default: Pre-Selected  
 
 **Web Extensions**
 Users are allowed to specify the list of extensions for which Human Authentication will be enabled.
 
-    Accepted values: Drop-Down 
+    Accepted values: php / html / aspx / jsp 
 
     Default: Pre-Selected  
 
 **Restricted Extentions**
 Restricted extensions are files that don't reside on a web server. This field specifies the list of extensions that should be blocked or restricted.
 
-    Accepted values: Drop-Down 
+    Accepted values: asa / asax / ascx / axd / backup / bak / bat / cdx / cer / cfg / cmd / com / config / conf / cs / csproj / csr / dat / db / dbf / dos / htr / htw / ida / idc / idq / inc / ini / key / licx / link / log / mdb / old / pass / pdb / pol / printer / pwd / resources / resx / sql / sys / vb / vbs / vbproj / csdisco / webinfo / xsd / xsx / exe / dll / git / sh
 
     Default: Pre-Selected  
 
 **Restricted File Upload**
 Restricted file uploads restrict or block the request with a file that is malicious or corrupted based on the file extensions specified, such requests are dropped.
 
-    Accepted values: Drop-Down 
+    Accepted values: exe / sh / py / bak / wsf / bin / jar / bat / apk / sav / xml / sql / tar / mp3 / mp4 / csv / asp / cer / cgi / rss / ppt / pdf / doc / docx / pptx / html / odp / txt / log / mdp / php
 
     Default: Pre-Selected  
 
 **X-FRAME OPTIONS**
 X-frame is used for adding a header to stop clickjacking. Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
 
-    Accepted values: Drop-Down 
+    Accepted values: Disabled / deny / same origin 
 
     Default: Disabled  
 
+**Captcha Validation Expiry**
+Set the duration, in seconds, for which a CAPTCHA validation remains valid. If the CAPTCHA is not completed within this time, a new CAPTCHA will be required.
+
+    Accepted values: Integer 
+    
+    Max: 86400
+    
+    Min: 60
+    
+    Default: 86400  
+
+    Metric: Seconds 
+
+**CSRF**
+Enable cookie-based CSRF protection to secure incoming HTTP requests against cross-site request forgery attacks. Ensure the CSRF token expiry is set to a value greater than 0 seconds for it to be effective.
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
 
 ![Web Policy](/img/ce-waf/docs/web_policy4.png)
 

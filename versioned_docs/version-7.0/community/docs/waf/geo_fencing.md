@@ -21,7 +21,7 @@ Geo Fencing is a smart way to limit access to Internet content as per the geogra
 To block requests based on country of origin. It enables the request to be filtered based on the countries specified. Countries can be selected by typing the name of the country and any request coming from the specified countries will be dropped.
  Users are allowed to specify the ssl session caching
 
-    Accepted values: Drop-down 
+    Accepted values: list of country as per ISO 3166-1 alpha-2 standard 2 letter country-code.
 
     Default: Blank  
   

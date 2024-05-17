@@ -51,7 +51,7 @@ This field specifies the maximum allowed length of the HTTP header field value. 
 ##### **Allowed HTTP Methods**
 HTTP Methods are a set of common request methods for HTTP. These request methods indicate the specific action that you need to take care of a specific resource. Each of the request methods implements a different semantic. A group of these methods represents some common features. E.g. a request method can be safe, cache-able, or idempotent.
 
-    Accepted values: Drop-Down
+    Accepted values: GET / PUT / POST / DELETE / HEAD / OPTIONS
 
     Default: Pre-Selected    
 
