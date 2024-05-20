@@ -56,12 +56,12 @@ User can select the variable which should be earlier created under variables.
 
     Accepted values: Drop-Down 
 
-    Default: Blank  
+    Default: Please Select 
 
 #### Mutation action
 Users can specify the mutation action.
 
-    Accepted values: Drop-Down
+    Accepted values: SET / DELETE / INCREMENT / DECREMENT
 
     Default: SET          
 
@@ -84,16 +84,16 @@ User can specify the phase of the condition
 **Find Location**
 User can specify the location
 
-    Accepted values: Drop-Down 
+    Accepted values: Variable / Http Method / Https Scheme / Country / URL / Header Name / Header Values / Header / Cookie Name / Cookie Value / Cookie / Body Argument Name / Body Argument Value / Body / Argument Name / Arguement Value / Arguements / Client Browser / Clienet OS / Client Device  
 
     Default: Variable  
 
 **Match Condition**
 User can select the match condition.
 
-    Accepted values: Drop-Down 
+    Accepted values: Pattern Exists / Pattern Doesn't Exist / Variable Expression / Minimum Value / Maximum Value / Minimum Length / Maximum Length / Equals / Not Equals / Less Than / Less Than Equals / Greater Than / Greater Than Equals
 
-    Default: Pttern Exists  
+    Default: Pattern Exists  
 
 **Match Value**
 User can enter the match value

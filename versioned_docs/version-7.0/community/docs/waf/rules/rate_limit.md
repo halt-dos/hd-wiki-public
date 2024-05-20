@@ -42,7 +42,7 @@ Users are allowed to specify the priority for the rule for execution when matche
 #### Rule Action
 Users are allowed to specify the action to be taken for the request matched i.e. record request,Drop & record request, Bypass request, redirect, and no action.
 
-    Accepted values: Drop-Down 
+    Accepted values: Record Request / Drop & Record Request / Bypass Request
 
     Default: Record Request  
 
@@ -79,10 +79,12 @@ Users are allowed to specify the time duration for which the rule will limit the
 
     Default: 1  
 
+    Metrics: Second
+
 #### Limit On
 Users are allowed to specify the object on which we apply the limit such as Client IP, User-Agent, URI, Source Port, HTTP Method, HTTP Referrer.
 
-    Accepted values: Drop-Down 
+    Accepted values: Request / Request Size
 
     Default: Request  
 
@@ -91,14 +93,14 @@ Users are allowed to specify the object on which we apply the limit such as Clie
 #### Condition Phase
 This drop-down allows to set the match condition i.e. request or response for the request.
 
-    Accepted values: Drop-Down 
+    Accepted values: Request / Response
 
     Default: Request  
 
 #### Find Location
 Users can define the source location where this condition needs to be applied.
 
-    Accepted values: Drop-Down 
+    Accepted values: Drop-Down values mentioned below.
 
     Default: Variable  
 
@@ -152,9 +154,9 @@ The user can define the parameter based on the location of the condition.
 #### Match Condition
 The user can define the match condition for the parameter and match value.
 
-    Accepted values: Drop-Down 
+    Accepted values: IP Prefixes 
 
-    Default: Pattern Exists  
+    Default: IP Prefixes   
 
 #### Match Value
 The user can define what value needs to be matched with the match condition.

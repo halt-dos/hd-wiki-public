@@ -32,6 +32,8 @@ Users are allowed to specify the ssl session caching
 
     Default: Blank  
 
+ **Crawlers** refer to automated programs or scripts that browse the web to index content, gather information, or perform other automated tasks. 
+
 #### Bad Reputation Traffic
 Users are allowed to specifies the action to perform on traffic from suspicious IPs reported by Haltdos Threat Stream TM.
 Users are allowed to specify the ssl session caching

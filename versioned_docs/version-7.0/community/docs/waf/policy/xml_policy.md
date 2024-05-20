@@ -42,9 +42,9 @@ XML Policy is a feature of Haltdos WAF. It allows application owners to block un
 **Supported Header**  
  Users are allowed to specify supported header i.e. content-type, to identify request as XML.
 
-    Accepted values: Integer 
+    Accepted values: String 
 
-    Default: 100  
+    Default: application/xml / text/xml 
 
 **Maximum Children**  
 This field specifies the maximum child nodes of the XML document. In the above example, Tag ``<book>`` has 4 children. An XML document can have a minimum of 1 child and a maximum of 10000 children.

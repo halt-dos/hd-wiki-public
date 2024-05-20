@@ -20,14 +20,14 @@ Monitoring provides a comprehensive overview of the status and performance of th
 #### Monitor Name 
 Users are allowed to specify a user friendly name to monitor.
 
-    Accepted values: String 
+    Accepted values: String / Integer
 
     Default: Blank  
 
 #### Enable Health Check
 Users are allowed to enable to periodically check the health of upstream servers by sending special health‑check requests to each server and verifying the correct response.
 
-    Accepted values: Enable/Disable 
+    Accepted values: Enable / Disable 
 
     Default: Disable  
 
@@ -64,15 +64,31 @@ Health check sends HTTP request, if unable to receive response, then we make tha
 4.  **HTTPS**: 
 Health check sends HTTPS request, if unable to receive response, then we make that server as unhealthy
 
-#### Check URI
-This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows user to specify the URI for the health check.
-
-####  Match Status
-This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows user to specify the HTTP status code that need to be checked during the health check.
-
 #### Match Content
 This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows users to specify the content to match in the response.
 
     Accepted values: TCP / SSL HELLO / HTTP / HTTPS
 
     Default: TCP
+
+#### Check URI
+This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows user to specify the URI for the health check.
+
+    Accepted values: URI for health check
+
+    Default: GET /
+
+####  Match Status
+This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows user to specify the HTTP status code that need to be checked during the health check.
+
+    Accepted values: Integer
+
+    Default: 200
+
+####  Match Content
+This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows user to specify the HTTP status code that need to be checked during the health check.
+
+    Accepted values: String
+
+    Default: Blank
+

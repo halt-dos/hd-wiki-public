@@ -23,7 +23,6 @@ Users can add/delete the backend servers. Users are also allowed to modify the s
 #### **Server** 
 
 This option allows user to specify the IP address for the server for serving the request for the application.
-Users are allowed to specify the ssl session caching
 
     Accepted values: IP 
 
@@ -33,7 +32,6 @@ Users are allowed to specify the ssl session caching
 #### **Port** 
 
 This option allows user to set the port for the back-end application server for communication.
-Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
 
@@ -46,8 +44,7 @@ Users are allowed to specify the ssl session caching
 
 #### **Weight** 
 
-This option allows user to specify the weight of the server. Higher the weight more requests will be served by that server. 
-Users are allowed to specify the ssl session caching
+This option allows user to specify the weight of the server. Higher the weight more requests will be served by that server. (Higher weight values indicate that the server is more capable and should receive a larger share of incoming requests.)
 
     Accepted values: Integer 
 
@@ -61,7 +58,6 @@ Users are allowed to specify the ssl session caching
 #### **Monitor** 
 
 This option alows user to select from the monitors created. Monitors help in monitoring the health of the server.
-Users are allowed to specify the ssl session caching
 
     Accepted values: Existing Monitor
 
@@ -71,7 +67,6 @@ Users are allowed to specify the ssl session caching
 #### **Backup** 
 
 This option allows user to specify if backup is allowed for the server. In case of primary failure, the backup will be up and running.
-Users are allowed to specify the ssl session caching
 
     Accepted values: TRUE / FALSE 
 
@@ -80,7 +75,6 @@ Users are allowed to specify the ssl session caching
 
 #### **Mode**
 This option allows user to specify the server mode, either it is ready or down.
-Users are allowed to specify the ssl session caching
 
     Accepted values: Ready / Down 
 
@@ -90,7 +84,6 @@ Users are allowed to specify the ssl session caching
 #### **Max Connection** 
 
 This option allows user to specify the number of maximum connections allowed to the specific server.
-Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
 
@@ -104,7 +97,6 @@ Users are allowed to specify the ssl session caching
 #### **Connection Timeout** 
 
 This option allows user to specify the connection timeout for the server.
-Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
 
@@ -114,11 +106,12 @@ Users are allowed to specify the ssl session caching
 
     Default: 0  
 
+    Metric: Seconds
+
 
 #### **Send Timeout** 
 
 This option allows user to specify the send timeout for the server. 
-Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
     
@@ -128,11 +121,12 @@ Users are allowed to specify the ssl session caching
 
     Default: 0 
 
+    Metric: Seconds
+
 
 #### **Read Timeout**
 
 This option allows user to specify the read timeout for the server.
-Users are allowed to specify the ssl session caching
 
     Accepted values: Integer 
     
@@ -141,4 +135,6 @@ Users are allowed to specify the ssl session caching
     Min: 0
     
     Default: 0  
+
+    Metric: Seconds
 

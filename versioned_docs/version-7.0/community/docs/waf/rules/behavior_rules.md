@@ -42,7 +42,7 @@ It is a numeric field that specifies the priority of the rule in which the rule 
 #### Rule Action
 Users are allowed to specify the action to be taken for the request matched i.e. no action, drop & record request, record request, bypass request, redirect.
 
-    Accepted values: Drop-Down 
+    Accepted values: Record-request / Drop & Record-request / Bypass Request / Redirect / No Action
 
     Default: Record-request  
 
@@ -56,7 +56,7 @@ Users are allowed to select specify the variable from the drop down.
 #### Condition
 Users are allowed to specify the condition from the drop-down menu.
 
-    Accepted values: Drop-Down 
+    Accepted values: Pattern Exists / Pattern Doesn't Exist / Variable Expression / Minimum Value / Maximum Value / Minimum Length / Maximum Length / Equals / Not Equals / Less Than / Less Than Equals / Greater Than / Greater Than Equals
 
     Default: Pattern Exist  
 

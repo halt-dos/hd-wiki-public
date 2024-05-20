@@ -80,7 +80,7 @@ Users can define the source location where this condition needs to be applied.
 
     Accepted values: Drop-Down 
 
-    Default: Varible  
+    Default: Variable  
 
 **Find Location**
 

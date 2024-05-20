@@ -50,14 +50,14 @@ Users are allowed to specify the URI on which the tamper rule will be applied.
 #### Method
 Users are allowed to select the HTTP method for the rule to extract when matched with the request.
 
-    Accepted values: Drop-Down 
+    Accepted values: Any, Get, Post, Put, Delete, Patch, Head, Options 
 
-    Default: All  
+    Default: Any  
 
 #### Rule Action
 The following actions are available to the User-
 
-    Accepted values: Drop-Down
+    Accepted values: Record-request / Drop & Record-request / Bypass Request / Redirect / No Actions
 
     Default: Record-request  
 
@@ -81,8 +81,8 @@ Users can specify the rule Id for which condition should be created.
 #### Match
 Users can specify whether the rule should be matched or not matched.
 
-    Accepted values: Drop-Down 
+    Accepted values: MATCH 
 
-    Default: MATCH  
+    Default: MATCH / NOT MATCH
 
 

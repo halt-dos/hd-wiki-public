@@ -20,7 +20,7 @@ Under varaibles user can create user defiend variable by configuring it's scope 
 #### Variable Name
 Users can specify the user-friendly variable name.
 
-    Accepted values: String 
+    Accepted values: String / Integer 
 
     Default: Blank  
 
@@ -38,6 +38,13 @@ Users can specify the scope of the variable. Users can select any of the followi
 
     Default: Transaction  
 
+#### Extraction Location
+Users can specify the location of the extraction
+
+    Accepted values: URL / Header Value / Cookie Value / Argument Value / Body Value
+
+    Default: Blank  
+
 #### Default Value
 Users can specify the default value for the variable.
 
@@ -51,3 +58,5 @@ Users can specify the expiry for the variable in seconds.
     Accepted values: Integer 
 
     Default: 1  
+
+    Metric: Seconds

@@ -17,7 +17,7 @@ Users are allowed to configure many operational settings for the Listeners confi
 
 1. Go to **WAF** > **Operational**.
 2. Configure the settings.
-3. Click on Save changes.
+3. Click on **Save changes**.
    
 ### Description
 
@@ -36,12 +36,23 @@ This option allows user to specify whether the solution supports HTTP 2.0 reques
 
     Default: Disable  
 
+For more information about HTTP/2 , please refer this site : [**HTTP 2.0**](https://en.wikipedia.org/wiki/HTTP/2)
+
+#### Enable Host Check
+Enable Host Check to enforce validation of the host (SNI) for incoming requests, ensuring that the server name in the request matches the expected host. This helps improve security by verifying that requests are directed to the correct server.
+
+    Accepted values: Enable / Disable 
+
+    Default: Disable  
+
 #### Web-socket Enabled
 This option allows user to enable web-socket support for servers or server group. It is a communication, an upgraded, quick, and seamless protocol to use when one needs to establish constant client-server communication over a single TCP connection.
 
     Accepted values: Enable / Disable
 
     Default: Disable  
+
+For more information about Web-socket , please refer this site : [**Web-Socket**](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 
 #### Enable Logging
 This option allows user to enable access logs in the case of service type HTTP & TCP.
@@ -51,7 +62,7 @@ This option allows user to enable access logs in the case of service type HTTP &
     Default: Disable  
 
 #### Enable Static Extension Logging
-This option allows user to specify whether to do log requests for static extension.
+This option allows user to specify whether to do log requests for static extension. (logging of file extensions associated with static files served by a web server. In the context of web servers, static files are files that are served directly to the client without any server-side processing, such as HTML, CSS, JavaScript, images, and downloadable files like PDFs.)
 
     Accepted values: Enable / Disable
 
@@ -66,24 +77,27 @@ This option allows user to specify whether to enable error handling by firewall.
 
 #### Security Mode
 This option allows user to specify operational mode for every given security profile. Different operational modes are:  
-- **MITIGATION**:  In this mode, all the mitigations & rule sets will monitor the traffic. If any request matches the criteria, it gets dropped.  
-- **BYPASSED**: In this mode, all the requests get bypassed without any filtration of mitigations & rule sets.  
-- **RECORD**: In this mode, all the mitigations & rule sets will monitor the traffic. If any request is about to drop, then it gets captured and forwarded in the form of a Record Event.  
-
 
     Accepted values: Mitigation / Bypassed / Record.
 
     Default: Bypass  
 
+- **MITIGATION**:  In this mode, all the mitigations & rule sets will monitor the traffic. If any request matches the criteria, it gets dropped.  
+- **BYPASSED**: In this mode, all the requests get bypassed without any filtration of mitigations & rule sets.  
+- **RECORD**: In this mode, all the mitigations & rule sets will monitor the traffic. If any request is about to drop, then it gets captured and forwarded in the form of a Record Event.  
+
+For more information about the modes of Haltdos WAF, Please refer to this link: [**How to change WAF operational mode in between Record, Bypass & Mitigation?**](Halhttps://docs.haltdos.com/kb/waf/kb-1018/#how-to-change-waf-operational-mode-in-between-record-bypass--mitigation)
 
 #### Application Type
-This option allows users to specify the type of application ( i.e. website or web service). A website is a collection of linked web pages (plus their associated resources) that share a unique domain name. A web service is a collection of open protocols and standards used for exchanging data between applications or systems.
+This option allows users to specify the type of application ( i.e. website or web service or web socket).
 
     Accepted values: Website / WebService / Web Socket.
 
     Default: Website  
 
-
+- **Website** is a collection of linked web pages (plus their associated resources) that share a unique domain name.   
+- **Web service** is a collection of open protocols and standards used for exchanging data between applications or systems.  
+- **Web Socket** is a communication protocol that provides full-duplex communication channels over a single, long-lived connection. It allows for real-time, bidirectional communication between a client and a server.
 
 #### Connection Pool Size
 This option allows user to specify the connection pool size with upstream.
@@ -96,9 +110,11 @@ This option allows user to specify the connection pool size with upstream.
 
     Default: 0 
 
+**Connection Pool**: A connection pool is a cache of database or network connections maintained so that the connections can be reused when future requests to the database or network are required.  
+**Upstream server** refers to a backend server to which the web server forwards requests for processing.
 
 #### Client Keep-Alive Timeout
-This option specify the timeout of keep-alive connections of clients. Set 0 to disable.
+This option sets the duration (in seconds) for which the server keeps an idle connection open with a client. If set to 0, keep-alive connections are disabled, meaning the server will close the connection immediately after responding to a client's request.
 
     Accepted values: Integer
 
@@ -110,9 +126,10 @@ This option specify the timeout of keep-alive connections of clients. Set 0 to d
 
     Metric: Minutes  
 
+- **Keep-alive timeout** determines how long the server should wait for the next request from the client before closing the connection. If the server does not receive a new request within this period, it closes the connection to free up resources.
 
 #### Upstream Keep-Alive Timeout
-This option specify timeout of keep-alive connections of upstream. Set 0 to disable.
+This option sets the duration (in seconds) for which the server keeps an idle connection open with an upstream server. If set to 0, keep-alive connections are disabled, causing the server to close the connection immediately after receiving a response from the upstream server.
 
     Accepted values: Integer
 
@@ -132,9 +149,11 @@ This option allows users to specify operational mode for the listener.
 
     Default: Reverse-Proxy  
 
+- **Reverse proxy** is a server that sits between clients and one or more backend servers. It receives requests from clients on behalf of the backend servers and forwards those requests to the appropriate server.   
+- **IP Transparency** refers to a networking configuration where the original client IP address (source IP) is preserved and visible to the backend servers, even when traffic passes through a reverse proxy or load balancer.
 
 #### Limit MAX Collection
-Specify max allowed concurrent connections. Set 0 to disable
+This option sets the maximum number of concurrent connections allowed. If set to 0, no limit is enforced on the number of concurrent connections.
 
     Accepted values: Integer
 
@@ -147,7 +166,7 @@ Specify max allowed concurrent connections. Set 0 to disable
     Metric: Connections
 
 #### Client Body Timeout
-This option specify the timeout for receiving the request body.
+This option sets the maximum time allowed for receiving the request body from the client. If the request body is not fully received within this timeframe, the connection will be closed.
 
     Accepted values: Integer
 
@@ -160,7 +179,7 @@ This option specify the timeout for receiving the request body.
     Metrics: Seconds
 
 #### Client Header Timeout
-Specify timeout for receiving request header
+This option sets the maximum time allowed to receive the request header from the client. If the header is not completely received within this period, the connection will be terminated.
 
     Accepted values: Integer
 
@@ -173,7 +192,7 @@ Specify timeout for receiving request header
     Metrics: Seconds
 
 #### Client Send Timeout
-Specify timeout for send response
+This option sets the maximum time allowed to send the response to the client. If the response cannot be fully sent within this period, the connection will be terminated.
 
     Accepted values: Integer
 
@@ -186,16 +205,15 @@ Specify timeout for send response
     Metrics: Seconds
 
 #### Static Extensions
-This option specify the list of allowed static extensions that don't require security validation.
+This setting allows specifying a list of file extensions that are permitted to be served statically without undergoing security validation. Files with these extensions can be served directly without additional security checks.
 
-    Accepted values: png, gif, ico, jpg, jpeg, js, css, woff, woff2, ttf, svg  
+    Accepted values: String  
 
-    Default: default extension  
+    Default: png, gif, ico, jpg, jpeg, js, css, woff, woff2, ttf, svg  
 
 
 #### Maximum HTTP Body Size
-This field specifies the maximum allowed HTTP body size (in bytes) from a single client IP. If the size exceeds, then the request gets dropped. By default, it is 10485760 bytes.
-
+This field specifies the maximum allowed HTTP body size (in bytes) from a single client IP. If the size exceeds, then the request gets dropped. By default, it is 10485760 bytes.  
 Note: In the case of HTTP/0.9, no headers get transmitted.
 
     Accepted values: Integer
@@ -209,8 +227,7 @@ Note: In the case of HTTP/0.9, no headers get transmitted.
     Metric: Bytes 
 
 #### Maximum HTTP Header Size
-This field specifies the maximum allowed HTTP Header size (in bytes) from a single client IP. If size exceeds, then the request gets dropped. By default, it is 4096 bytes.
-It comprises types, capabilities, and versions of the browser that makes the request. These elements help in returning compatible data.
+This field specifies the maximum allowed HTTP Header size (in bytes) from a single client IP. If size exceeds, then the request gets dropped. By default, it is 4096 bytes. It comprises types, capabilities, and versions of the browser that makes the request. These elements help in returning compatible data.
 
     Accepted values: Integer
 
@@ -222,16 +239,17 @@ It comprises types, capabilities, and versions of the browser that makes the req
 
     Metric: Bytes
 
+**HTTP Headers** are components of the HTTP protocol used for communication between a client (such as a web browser) and a server. 
+
 #### Proxy HTTP Version 
-Specify http version used while connecting upstream server.
+This setting allows specifying the HTTP version used when connecting to the upstream server. It determines which version of the HTTP protocol is utilized for communication between the proxy server and the upstream server.
 
     Accepted values: Any / HTTP 1.0 / HTTP 1.1.
 
     Default: Any
 
-
 #### Proxy Buffers
-This option specify the number of buffers used for reading a response from the server for a single connection.
+This option specify the number of buffers used for reading a response from the server for a single connection. (Proxy buffers refer to memory buffers used by a proxy server to temporarily store data during the process of receiving, processing, and forwarding requests and responses between clients and backend servers.)
 
     Accepted values: Integer
 
@@ -241,8 +259,8 @@ This option specify the number of buffers used for reading a response from the s
 
     Default: 8  
 
-    Metric: count
 
+**Note:** Proxy Buffer are sensitive configurations that can affect applications that should be configured with prior knowledge.
 
 #### Proxy Buffer Size
 This option specify the size of the buffer used for reading the first part of the server response. Proper value can cause improper utilization of proxy buffer optimally for each request.
@@ -260,18 +278,25 @@ This option specify the size of the buffer used for reading the first part of th
 #### Client IP Location
 This option specify the location of the client IP.
 
-    Accepted values: Drop-Down
+    Accepted values: X-FORWARDED-FOR / X-REAL-IP / SRC IP / X-PROXYUSER-IP
 
     Default: SRC IP 
+
+- **X-FORWARDED-FOR** header contains the IP address of the client that initiated the request, allowing the destination server to identify the original client's IP address even though the request was forwarded through intermediaries.  
+
+- **X-REAL-IP** Similar to the X-Forwarded-For header, the X-Real-IP header is typically added by the proxy server or load balancer to the HTTP request before forwarding it to the destination server.
+
+- **X-PROXYUSER-IP** header likely contains the IP address of the client that initiated the request, allowing the backend server to identify the true client IP address. However, since it's a custom header, its usage and interpretation may vary depending on the specific configuration of the proxy server or load balancer.
 
 
 #### Host Header
 This option specify the host header allowed by the backend, if it's different from the listener sub-domain. This allows the incoming request to alter the host header in each request and transmit it to the backend server.
 
-    Accepted values: Integer
+    Accepted values: String
 
     Default: Blank  
 
+It's used by the client to specify the domain name of the server it's attempting to connect to and the port number if it's different from the default (80 for HTTP and 443 for HTTPS).
 
 #### Server Aliases
 This option specify aliases means familiar name for the listener.
@@ -280,16 +305,29 @@ This option specify aliases means familiar name for the listener.
 
     Default: Blank  
 
-
 #### Virtual IPs
+This option specify assigned virtual IPs for accepting traffic. (They are typically used in network configurations to abstract away the underlying physical infrastructure and provide a consistent interface for clients to access services.)
+
+    Accepted values: IP
+
+    Default: Blank  
+
+#### Port
+
+This option helps you to add HTTP/S ports for Advance Settings. Here you can unique port either HTTP  or HTTPS enabled configuration without changing backend server port.
+
+##### Port
 This option specify assigned virtual IPs for accepting traffic.
 
     Accepted values: Integer
 
-    Default: Blank  
+    Default: Blank 
 
+##### SSL Enabled
+This option used to select whether the SSL enabled or Disabled, that is uploaded by the user in the SSL Certificate section.
 
-#### Add Port
-This option helps you to add HTTP/S ports for Advance Settings. Here you can unique port either HTTP  or HTTPS enabled configuration without changing backend server port.
-**Note:** Proxy Buffer and Proxy Buffer are sensitive configurations that can affect applications that should be configured with prior knowledge.
+    Accepted values: True / False
+
+    Default: False 
+
 
