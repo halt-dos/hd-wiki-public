@@ -86,7 +86,7 @@ This option is only visible when **Health Check Type** is set to HTTP/HTTPs. Thi
     Default: 200
 
 ####  Match Content
-This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows user to specify the HTTP status code that need to be checked during the health check.
+This option is only visible when **Health Check Type** is set to HTTP/HTTPs. This option allows user to specify the content to match in the response.
 
     Accepted values: String
 
