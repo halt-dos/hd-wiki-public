@@ -19,21 +19,6 @@ Note: Any parameter from the Request/Response can be stored in a variable.
 3. Create rules with different conditions.  
 4. Click on **Save Changes**.  
 
-| Parameters       | Accepted value |  Default |
-|------------------|----------------|----------|
-| Rule Name        | String         | Blank    |
-| Rule Message     | String         | Blank    |
-| Rule Priority    | Integer        | 0        |
-| Evaluation Phase | Drop-Down      | Request  |
-| Variable         | Drop-down      | Blank    |
-| Mutation Action  | Drop-down      | SET      |
-| Value            | String         | None     |
-| Condition Phase  | Drop-down      | Request        |
-| Find Location    | Drop-Down      | Variable       |
-| Find Parameter   | String         | Blank          |
-| Match Condition  | Drop-Down      | Pattern Exists |
-| Match Value      | String         | Blank          |
-
 ![Variable Rule](/img/ce-waf/docs/variablerulescondition.png)
 
 ### Description
@@ -41,23 +26,81 @@ Note: Any parameter from the Request/Response can be stored in a variable.
 #### Rule Name
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 #### Rule Message 
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: String 
+
+    Default: Blank  
 
 #### Rule Priority
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0.
 
+    Accepted values: Integer 
+
+    Default: 0  
+
 #### Evaluation Phase
 Users can set the evaluation phase either for request coming from end users or for response sending back to end users.
+
+    Accepted values: Drop-Down 
+
+    Default: Request  
 
 #### Variable
 User can select the variable which should be earlier created under variables.
 
+    Accepted values: Drop-Down 
+
+    Default: Please Select 
+
 #### Mutation action
 Users can specify the mutation action.
 
+    Accepted values: SET / DELETE / INCREMENT / DECREMENT
+
+    Default: SET          
+
 #### Value
 Users can specify the value for the rule.
+
+    Accepted values: String 
+
+    Default: None  
+
+#### Condition
+User can specify specific Condition in various parameter.
+
+**Condition Phase**
+User can specify the phase of the condition
+
+    Accepted values: Drop-Down 
+
+    Default: Request  
+**Find Location**
+User can specify the location
+
+    Accepted values: Variable / Http Method / Https Scheme / Country / URL / Header Name / Header Values / Header / Cookie Name / Cookie Value / Cookie / Body Argument Name / Body Argument Value / Body / Argument Name / Arguement Value / Arguements / Client Browser / Clienet OS / Client Device  
+
+    Default: Variable  
+
+**Match Condition**
+User can select the match condition.
+
+    Accepted values: Pattern Exists / Pattern Doesn't Exist / Variable Expression / Minimum Value / Maximum Value / Minimum Length / Maximum Length / Equals / Not Equals / Less Than / Less Than Equals / Greater Than / Greater Than Equals
+
+    Default: Pattern Exists  
+
+**Match Value**
+User can enter the match value
+
+    Accepted values: String 
+
+    Default: Blank  
 
 
 

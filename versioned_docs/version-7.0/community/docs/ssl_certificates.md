@@ -59,28 +59,40 @@ Certificate verification can fail if verification is not completed within stipul
 ### Upload Certificate
 To upload custom certificates, follow the steps below:
 
-| Parameters  | Accepted value |  Default                    |
-|-------------|----------------|-----------------------------|
-| Name        | String         | Blank                       |
-| Domain      | String         | Blank                       |
-| App Option  | Drop-down      | Generate/upload certificate |
-| Public Key  | String         | Blank                       |
-| Private key | String         | Blank                       |
-
 ### Description
 
 **Certificate Name**  
 Users are allowed to specify the name for the certification.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 **Certificate Domain**  
 Users are allowed to specify the domain name fo the certifiate.
+
+    Accepted values: String 
+
+    Default: Blank  
 
 **App Option**  
 Users are allowed to select the certificate generate options.
 
+    Accepted values: Drop-Down 
+
+    Default: Genrate/Upload certificate  
+
 **Public Key**  
 User can specify the public key of certificate.
 
+    Accepted values: String 
+
+    Default: Blank  
+
 **Private key**  
 User can specify the private key of certificate.
+
+    Accepted values: String 
+
+    Default: Blank  
 

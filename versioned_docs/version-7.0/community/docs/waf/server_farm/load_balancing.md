@@ -22,7 +22,7 @@ This algorithm is a smart approach to distribute client requests across an array
 
 3. **LEAST RESPONSE TIME** : This load balancing algorithem is used to provide the response from the server which has the less response time. Suppose there are two servers in the backend which have repsonse time A and B. A is less than B. In this case, Haltdos WAF Solution will give preference to the server which is having less response time than others. 
 
-4. **LEAST BANDWIDTH** : This load balancing algorithem is used to load balance as per the bandwidth available for the backend to handle the load coming from the client side. 
+4. **LEAST BANDWIDTH** : This load balancing algorithm is used to load balance as per the bandwidth available for the backend to handle the load coming from the client side. 
 
 5. **IP HASH**: This algorithm takes the client's and server's source and destination IP address to generate a unique hash key. This key is used to assign the client to a specific server. In the case of a broken session, the key can be regenerated, and the client can be directed to the same server. 
 
@@ -33,27 +33,46 @@ This algorithm is a smart approach to distribute client requests across an array
 1. Go to **WAF** > **Server Farm** > **Load Balancing**
 2. Set the configurations and **Save Changes**.
 
-| Parameters            | Accepted value |  Default         |
-|-----------------------|----------------|------------------|
-| Encrypt to Upstream                   |Boolean         |False             |
-| Upstream Retries      | Integer        | 1                |
-| Failover Threshold    | Integer        | 50               |
-| Load Balancing Algorithm             | Drop-down      | Least Connection |
-| Sticky Session Cookie | String         | Blank            |
-
 ### Description
 
 #### Encrypt to Upstream
 This option allows users to specify if WAF should re-encrypt traffic before sending to servers
 
+    Accepted values: Enable / Disable 
+
+    Default: Disable  
+
+
 #### Upstream Retries
 This option specify the upstream retries. By default, the value is set to 1.
+
+    Accepted values: Integer 
+
+    Default: 1  
 
 #### Fail-over Threshold
 This option specify the fail-over threshold in percentage of (active/total) primary servers for switching to backup servers. By default, the value is set to 50%.
 
+    Accepted values: Integer 
+    
+    Max: 100
+
+    Min: 1
+
+    Default: 50 
+
+    Metric: Percentage 
+
 #### Load Balancing Algorithm
 This drop-down specify the algorithm used by the server group. By default, the value is selected as Round Robin.
 
+    Accepted values: Roud-Robin / Least Connection / Least Response Time / Least Bandwidth / IP Hash / Least Request.
+
+    Default: Least Connection  
+
 #### Sticky Session Cookie
 The users are allowed to specify enabling sticky session based on specified cookie
+
+    Accepted values: String 
+
+    Default: Blank  

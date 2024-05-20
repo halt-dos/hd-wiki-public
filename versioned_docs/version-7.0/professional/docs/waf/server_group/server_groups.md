@@ -34,35 +34,47 @@ This is useful for:
 3. Click **Add Server Group** and Configure details.
 4. Click **Save Changes**
 
-| PARAMETERS      | ACCEPTED VALUES               | DEFAULT |
-|-----------------|-------------------------------|---------|
-| Group Name      | String                        | blank   |
-| Monitor         | Select from existing monitors | None    |
-| Connect Timeout | Integer (Seconds)             | 100     |
-| Send Timeout    | Integer (Seconds)             | 100     |
-| Read Timeout    | Integer (Seconds)             | 100     |
-
 ### Description
 
 ##### **Group Name**
 
 Specify a user-friendly name to identify the server group. The group name takes alpha-numeric input.  
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Monitor**
 
 Attach any existing monitor to the server group.
+
+    Accepted values: Select from existing monitors
+
+    Default: None  
 
 ##### **Connect Timeout** 
 
 Defines a timeout for establishing a connection with a proxied server.
 
+    Accepted values: Integer(Seconds)
+
+    Default: 100 
+
 ##### **Send Timeout** 
 
 Sets a timeout for transmitting a request to the proxied server. The timeout is set only between two successive write operations, not for the transmission of the whole request. If the proxied server does not receive anything within this time, the connection is closed.
 
+    Accepted values: Integer(Seconds)
+
+    Default: 100 
+
 ##### **Read Timeout** 
 
 Defines a timeout for reading a response from the proxied server. The timeout is set only between two successive read operations, not for the transmission of the whole response. If the proxied server does not transmit anything within this time, the connection is closed. 
+
+    Accepted values: Integer(Seconds)
+
+    Default: 100 
 
 
 

@@ -26,71 +26,131 @@ Configuration of upstream servers in a server group can be modified on-the-fly b
 4. Set the configurations and **Save Changes**
 
 
-| PARAMETERS         | ACCEPTED VALUES  | DEFAULT |
-|--------------------|------------------|---------|
-| Server             | IP               | Blank   |
-| Port               | Integer          | 80      |
-| Weight             | Integer          | 1       |
-| Remote             | TRUE/FALSE       | FALSE   |
-| Monitor            | Existing monitor | NONE    |
-| Backup             | TRUE/FALSE       | FALSE   |
-| Mode               | TRUE/FALSE       | FALSE   |
-| Slow Start         | Integer          | 0       |
-| Max Connection     | Integer          | 0       |
-| Connection Timeout | Integer          | 0       |
-| Send Timeout       | Integer          | 0       |
-| Read Timeout       | Integer          | 0       |
-
-
 ### Description:
 
 ##### **Server**
 
 Specify the IP address for the server. This IP address will be used for serving the requests for the application.
 
+    Accepted values: IP
+
+    Default: Blank 
+
 ##### **Port** 
 
 Set the port for the backend application server will communicate.
+
+    Accepted values: Integer
+    
+    Max: 65535
+    
+    Min: 0
+    
+    Default: 80 
 
 ##### **Weight** 
 
 Specify the weight of the server. Higher the weight more requests will be served by that server. 
 
+    Accepted values: Integer
+    
+    Max: 100
+    
+    Min:  1
+    
+    Default: 1 
+
 ##### **Remote** 
 
 Specify if the server can be accessed remotely or not.
+
+    Accepted values: True/False
+
+    Default: False 
 
 ##### **Monitor** 
 
 Select from the monitors created. Monitors help in monitoring the health of the server.
 
+    Accepted values: Existing monitor
+
+    Default: None 
+
 ##### **Backup** 
 
 Specify if backup is allowed for the server. In case of primary failure, the backup will be up and running.
+
+    Accepted values: True/False
+
+    Default: False
 
 ##### **Mode** 
 
 Makes the server active/inactive. When marked Down the server will not be able to serve requests.
 
+    Accepted values: True/False
+
+    Default: False 
+
 ##### **Slow Start**
 
 This option allows users to handle client request slowly in start.
+
+    Accepted values: Integer
+    
+    Max: 10800000
+    
+    Min: 0
+    
+    Default: 0 
 
 ##### **Max Connection** 
 
 Specify the number of max connections allowed to the specific server.
 
+    Accepted values: Integer
+    
+    Max: 1000000
+    
+    Min: 0
+    
+    Default: 0 
+
 ##### **Connection Timeout** 
 
 Specify the connection timeout for the server.
+
+    Accepted values: Integer
+    
+    Max: 1000000
+    
+    Min: 0 
+    
+    Default: 0 
 
 ##### **Send Timeout** 
 
 Specify the send timeout for the server. 
 
+    Accepted values: Integer
+    
+    Max: 1000000
+    
+    Min: 0 
+    
+    Default: 0 
+
 ##### **Read Timeout** 
 
 Specify the read timeout for the server.
+
+    Accepted values: Integer
+    
+    Max: 1000000
+    
+    Min: 0
+    
+    Default: 0 
 
 
 

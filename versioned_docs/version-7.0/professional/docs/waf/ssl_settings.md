@@ -17,14 +17,6 @@ As many applications are running over HTTPS, for the WAF / ADC solution to inspe
 
 ![SSL Settings](/img/pro-waf/docs/ssl_settings.png)
 
-| Parameters            | Accepted Values | Default      |
-|-----------------------|-----------------|--------------|
-| Enable SSL Offloading | Boolean         | Disabled     |
-| SSL Certificate       | Drop-Down       | Blank        |
-| SSL Cipher Suites     | Drop-Down       | Intermediate |
-| SSL Session Caching   | Decimal         | 10           |
-| SSL Session Timeout   | Decimal         | 5            |
-
 
 ### How to Use:
 1. Log into the Haltdos WAF Professional edition web UI console.
@@ -34,21 +26,55 @@ As many applications are running over HTTPS, for the WAF / ADC solution to inspe
 
 ### **Description**
 
+##### **Upstream SSL Protocols**
+Specify the ssl protocols. For empty, default SSL protocol will be usedred website.
+
+    Accepted values: SSLv2 / SSLv3 / TLSv1 / TLSv1.1 / TLSv1.2 / TLSv1.3
+
+    Default: Blank  
+
 ##### **Enable SSL Offloading**
 This option specifies if the WAF should enable HTTPS traffic for the configured website.
+
+    Accepted values: Enabled / Disabled
+
+    Default: Disabled  
 
 ##### **SSL Certificate**
 This field allows us to Select or Upload an SSL Certificate for SSL Offloading in case of encrypted traffic. Users can select the SSL certificate from the drop-down or add a new certificate by clicking the ADD button which will redirect to the SSL Certificates page
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+    
 ##### **SSL Ciphers**
 It is a set of algorithms or a set of instructions/steps that helps to establish a secure connection between two entities — usually the client (a user's browser) and the web-server they're connecting to (your website). Users can select respective ciphers from the drop-down.
 
 ##### **SSL Ciphers Suites**
 In order to secure or make SSL compatible with specific web browsers. Users can select from the drop-down i.e. Modern(Very Secure), Intermediate (Recommended),  Old(Backward Compatibility), Custom, etc.
 
+    Accepted values: Modern / Intermediate / Old / Custom 
+
+    Default: Intermediate  
+
 ##### **SSL Session Caching**
 This option allows users to specify the number of SSL session cache for HTTPS requests on the listener.
+
+    Accepted values: Decimal
+    
+    Max: 1000
+
+    Min: 0
+    
+    Default: 10  
 
 ##### **SSL Session Timeout**
 This option allows users to specify the SSL session timeout in minutes for every HTTPS request on the listener.
 
+    Accepted values: Decimal
+    
+    Max: 3600
+
+    Min: 1
+    
+    Default: 5  

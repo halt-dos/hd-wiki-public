@@ -25,25 +25,49 @@ We have introduced Header rules by which application owners can manipulate reque
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Rule Priority**
 
 User can define the rule's priority among various other custom error rules.
 
+    Accepted values: Integer
+
+    Default: Blank  
+
 ##### **URI**
 
 Specify the URI or regex for which rule will be applied. 
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Method**
 
 Select the HTTP method for the rule to validate when matched with the request.
 
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: ALL
+
 ##### **Rule Action**
 
 The rule action determines what action (add/remove/overwrite) the rule will perform. The accepted values are:
+
+    Accepted values: ADD HEADER / ADD COOKIE / OVERWRITE HEADER / OVERWRITE COOKIE / REMOVE HEADER / REMOVE COOKIE
+
+    Default: REMOVE COOKIE 
 
 1) **ADD:** This condition will allow adding a value at the specified location.
 
@@ -65,13 +89,25 @@ If the action is **OVERWRITE**, then two other fields are required first is **Se
 
 Select the evaluation phase for the rule i.e. Request or Response.
 
+    Accepted values: Request Phase / Response Phase
+
+    Default: Request Phase  
+
 ##### **Attribute Name**
 
 Specify the attribute name which need to add/delete/overwrite with rule.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Attribute Value**
 
 Specify the attribute value which will be mentioned in the attribute.
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Parameter**
 
@@ -80,7 +116,6 @@ This field specifies the name of the header/cookie/ arguments on which action wi
 #### **Add Condition**
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
-
 
 For adding a condition, the required fields are:
 

@@ -16,46 +16,70 @@ These rules prevent Haltdos WAF from logging sensitive information like password
 3. Click on **Add Rule**.
 4. Configure the rule and click on save changes.
    
-| Parameters      | Accepted value |  Default       |
-|-----------------|----------------|----------------|
-| Rule Name       | String         | Blank          |
-| Rule Message    | String         | Blank          |
-| Rule Priority   | Integer        | 0              |
-| URI             | String         | Blank          |
-| Method          | Drop-down      | ALL            |
-| Find Location   | Drop-Down      | Variable       |
-| Find Parameter  | String         | Blank          |
-| Match Condition | Drop-Down      | Pattern Exists |
-| Match Value     | String         | Blank          |
-   
 ### Description
 
 ##### **Rule Name**
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Rule Message**
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
 
+    Accepted values: Integer
+
+    Default: 0  
+
 ##### **URI**
 Users are allowed to specify the URI. Specify the URI on which the firewall rule will be applied.
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Method**
 Users are allowed to specify the HTTP method on which the rule will be applied i.e. All, GET, POST, PUT, DELETE, HEAD, OPTIONS.
 
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: All  
+
 ##### **Find Location**
 Users can define the source location where this condition needs to be applied.
+
+    Accepted values: ALL / HEADER / COOKIE / ARGUMENTS / BODY
+
+    Default: ALL 
 
 ##### **Find Parameter**
 The user can define the parameter based on the location of the condition.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Match Condition**
 The user can define the match condition for the parameter and match value.
 
+    Accepted values: None / Pattern Exist / Pattern does not exiist / Equals / Not Equals
+
+    Default: Pattern Exist  
+
 ##### **Match Value**
 The user can define what value needs to be matched with the match condition.
+
+    Accepted values: String
+
+    Default: Blank  
 
 
 

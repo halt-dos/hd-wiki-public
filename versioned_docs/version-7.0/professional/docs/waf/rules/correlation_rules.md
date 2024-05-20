@@ -15,38 +15,50 @@ Correlation rules support using compounding logic to make more advanced rules th
 3. Click on **Add Rule**.
 4. Configure the rule and click on save changes.
    
-
-| Parameters    | Accepted value |  Default       |
-|---------------|----------------|----------------|
-| Rule Name     | String         | Blank          |
-| Rule Message  | String         | Blank          |
-| Rule Priority | Integer        | 0              |
-| URI           | String         | Blank          |
-| Method        | Drop-down      | ALL            |
-| Action        | Drop-down      | Record Request |
-| Rule ID       | String         | Blank          |
-| Match         | String         | Blank          |
-   
 ### Description
 
 ##### **Rule Name**
 Users are allowed to specify the rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Rule Message**
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
 
+    Accepted values: Integer
+
+    Default: 0  
+
 ##### **URI**
 Users are allowed to specify the URI on which the tamper rule will be applied.
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Method**
 Users are allowed to select the HTTP method for the rule to extract when matched with the request.
 
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: ALL  
+
 ##### **Rule Action**
 The following actions are available to the User-
    
+    Accepted values: Record Request / DROP & RECORD REQUEST / BYPASS REQUEST / TEMPORARY BLACKLIST SRC IP / REDIRECT / SEND CAPCHA CHALLENEGE / SEND RESONSE WITH STATUUS CODE / SEND CUSTOM RESPONSES / CHANGE RESPONSE CODE / NO ACTION / SEND EMPTY RESPONSES
+
+    Default: Record Request  
+
 1. **DROP & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated but the request will not be allowed through the WAF.
 2. **RECORD REQUEST** - An event is generated whenever the Request satisfies the Rule, but whenever the request passes through other rules its events are logged by Haltdos.
 3. **BYPASS REQUEST** - If the Request tests positive for the rule, no other rule is tested and the Request will be allowed through the WAF.
@@ -67,5 +79,13 @@ By clicking on Add Rule Condition button, the end-user can add specify the locat
 ##### **Rule ID**
 Users can specify the rule ID for which condition should be created. 
 
+    Accepted values: Drop-Down
+
+    Default: Blank  
+
 ##### **Match**
-Users can specify whether the rule should be matched or not matched. 
+Users can specify whether the rule should be matched or not matched.  
+
+    Accepted values: MATCH / NO MATCH
+
+    Default: MATCH  

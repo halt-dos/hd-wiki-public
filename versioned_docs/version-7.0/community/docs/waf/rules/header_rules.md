@@ -21,22 +21,43 @@ We have introduced Header rules by which application owners can manipulate reque
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String / Integer
+
+    Default: Blank  
+
 #### Message
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: String / Integer
+
+    Default: Blank  
 
 #### Rule Priority
 
 User can define the rule's priority among various other custom error rules.
 
+    Accepted values: Integer 
+
+    Default: 0  
+
 #### HTTP URI
 
 Specify the URI or regex for which rule will be applied. 
+
+    Accepted values: URI 
+
+    Default: Blank  
 
 #### HTTP Method
 
 Select the HTTP method for the rule to validate when matched with the request.
 
+    Accepted values: Any, Get, Post, Put, Delete, Patch, Head, Options 
+
+    Default: Any
+  
+For more information regarding HTTP method, please refer to this link: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods 
 #### Rule Action
 The rule action determines what action (add/remove/overwrite) the rule will perform. The accepted values are:
 
@@ -58,13 +79,25 @@ If the action is **OVERWRITE**, then two other fields are required first is **Se
 
 Select the evaluation phase for the rule i.e. Request or Response.
 
+    Accepted values: Request Phase / Response Phase 
+
+    Default: Request Phase  
+
 #### Attribute Name
 
 Specify the attribute name which need to add/delete/overwrite with rule.
 
+    Accepted values: String / Integer
+
+    Default: Blank  
+
 #### Attribute Value
 
 Specify the attribute value which will be mentioned in the attribute.
+
+    Accepted values: String / Integer
+
+    Default: Blank  
 
 #### Parameter
 
@@ -81,6 +114,10 @@ For adding a condition, the required fields are:
 #### Condition Phase
 
 This field determines that the condition will be checked on request/response parameters.
+
+    Accepted values: Request / Response
+
+    Default: Request 
 
 #### Find Location
 
@@ -128,13 +165,23 @@ This field determines whether the condition should be checked on headers/cookies
 
 #### Parameter
 
-This field specifies the name of the header/cookie/ arguments on which condition will be validated. Search Pattern: This field specifies the pattern that will be matched against the header/cookie/ argument value to satisfy the condition.
+This field specifies the name of the header/cookie/arguments on which condition will be validated. Search Pattern: This field specifies the pattern that will be matched against the header/cookie/argument value to satisfy the condition.
 
 #### Match Condition
 
 The user can define the match condition for the parameter and match value.
 
+    Accepted values: Equals / Not Equals / Pattern Exist / Pattern Doesn't Exist / File Extension
+
+    Default: Equals   
+
 #### Match Value
 
 The user can define what value needs to be matched with the match condition.
+
+    Accepted values: Integer / String
+
+    Default: Blank   
+
+
 

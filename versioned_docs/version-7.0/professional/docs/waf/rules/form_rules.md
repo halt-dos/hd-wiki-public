@@ -14,43 +14,60 @@ Form Validation offers a positive security model of Application Firewall and all
 3. Click on **Add Rule**.
 4. Configure the rule and click on save changes.
 
-| Parameters         | Accepted value |  Default |
-|--------------------|----------------|----------|
-| Rule Name          | String         | Blank    |
-| Rule Message       | String         | Blank    |
-| Rule Priority      | Integer        | 0        |
-| URI                | String         | Blank    |
-| Method             | Drop-down      | All      |
-| Request Validation | Drop-down      | Blank    |
-| Value              | String         | Blank    |
-| Field Name         | String         | Blank    |
-| Field Type         | Drop-down      | Blank    |
-| Field Value        | Drop-down      | Blank    |
 ### Description
 
 ##### **Rule Name**
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String
+
+    Default: None  
+
 ##### **Rule Message**
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
+
+    Accepted values: String
+
+    Default: None  
 
 ##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
 
+    Accepted values: Integer
+
+    Default: 0  
+
 ##### **URI**
 Users are allowed to specify the URI of the form for which the form validation rule will be applied. The request to specified URI will only be validated.
 Example: /login
+
+    Accepted values: String
+
+    Default: None  
 
 ##### **HTTP Method**
 
 Specify the HTTP method on which the rule will be applied. All the HTTP methods are supported like GET, POST, PUT, DELETE, OPTIONS, HEAD.
 By clicking on the Request Validation and Field Validation tab, the end-user can add the validation according to a particular set value.
 
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: GET  
+
 ##### **Request Validation**
 
 Specify the type of validation to be implemented by selecting the validation type from the drop-down list.
 
+    Accepted values: MINIMUM REQUEST SIZE / MAXIMUM REQUEST SIZE / MINIMUM HEADER COUNT / MAXIMUM HEADER COUNT / MINIMUM BODY LENGTH / MAXIMUM BODY LENGTH / MINIMUM HEADER LENGTH / MAXIMUM HEADER VALUE LENGTH
+
+    Default: Blank  
+
 Accepted Values:
+
+    Accepted values: String
+
+    Default: Blank  
+
 - **Minimum Request Size** - Specify the minimum size of the request.
 - **Maximum Request Size** - Specify the maximum size of the request.
 - **Minimum Header Count** - Specify the minimum header count of the request.
@@ -62,8 +79,7 @@ Accepted Values:
 
 ##### **Field Validation**
 
-- **Field Name** - Specify the name of the form field which you want the form validation rule to validate.
-
+- **Field Name** - Specify the name of the form field which you want the form validation rule to validate.  
 - **Field Type** - Select the type of the form field which you want the form validation rule to validate.
 - **Field Value** - Select the value of the form field which you want the form validation rule to validate.
 
