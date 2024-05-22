@@ -12,7 +12,7 @@ Detection is a process to analyze the network traffic in which packets are monit
 
 User can set custom threshold values according to their network requirement. Detection is used to set the Alarm so that if any threshold value get breach user received an alert alarm for that.
 
-![ddos_detection_alarm_type](/img/ddos/v7/docs/detect.png)
+![ddos_detection_alarm_type](/img/ddos/v8/securityprofile_detection_thresholds.png)
 
 ![ddos_detection_alarm_type](/img/ddos/v7/docs/detection1.png)
 

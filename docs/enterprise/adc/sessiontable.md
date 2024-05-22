@@ -14,7 +14,7 @@ The session table show the connection details for the listener configured on the
 
 ### **How to reach**
 
-1. Go to **Apps** > **SLB** > **Session Table**
+1. Go to **Apps** > [**SLB**](/enterprise/adc) > **Session Table**
 
 ### Description
 
@@ -26,6 +26,6 @@ In this section you can select date range for which user wants to see the logs.
 
 In this section user can search the session ID according to the requirement.
 
-##### **Listener**
+##### **Resource**
 
 In this section user can select the Listener for which logs are required.

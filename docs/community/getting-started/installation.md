@@ -59,6 +59,10 @@ sudo service offloader status
 
 ![haltdos](/img/ce-waf/docs/status/offloader.png)
 
+:::note Note 
+**Haltdos Community WAF Service** at start will be at loaded state. It will be in active and running state, once the whole registration of the instance is done.
+:::
+
 You can access **Haltdos Community GUI** from **https://<SERVER_IP_ADDRESS>:9000**
 
 ![haltdos](/img/ce-waf/docs/setup/setup.png)  
@@ -77,6 +81,10 @@ Post OTP Verification, your Haltdos Community WAF license will be activated.
 ![signup](/img/ce-waf/docs/setup/otp.png)
 
 You have successfully subscribed to Haltdos Community WAF.
+
+:::info CAUTION
+If the Community WAF service is still shown as loaded and inactive, or if you face any other kind of issue, please contact [**Haltdos Support**](mailto:support@haltdos.com)
+:::
 
 ### Step 4: Accesing Haltdos Community GUI
 

@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Listener Settings
-Make SLB listen on specific ports to accept connections and distribute across one or multiple origin servers.
+Make SLB listener on specific ports to accept connections and distribute across one or multiple origin servers.
 
 ---
 
@@ -15,13 +15,15 @@ Users are allowed to configure many operational settings for the Listeners.
 
 ### How to Use:
 
-1. Go to **SLB** > **Listeners** > **Operational Settings**
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Operational Settings**
 2. Configure your settings
 3. Click **Save Changes**.
 
 ![Listener settings2](/img/adc/v8/docs/listeners_settings_2.png)
 
 ![Listener settings3](/img/adc/v8/docs/listeners_settings_3.png)
+
+**Configure the following parameters to set up the desired settings:**
 
 | PARAMETERS                   | ACCEPTED VALUES | DEFAULT  |
 |------------------------------|-----------------|----------|
@@ -42,8 +44,6 @@ Users are allowed to configure many operational settings for the Listeners.
 | Session Cookie               | String          | Blank    |
 | Max Concurrent User Sessions | Integer         | 0        |
 | MAX Session Exceeded Action  | Drop-down       | Redirect |
-| Max Session Forward URL      | String          | Blank    |
-| Max Session Exceeded Waiting Page | Drop-down  | Blank
 | Remote IP Header             | String          | Blank    |
 | Server Aliases               | String          | Blank    |
 | Virtual IPs                  | String          | Blank    |
@@ -60,7 +60,7 @@ This option allows user to enable traffic over IPv6 and applicable in the case o
 
 This option allows user to specify whether the solution supports HTTP 2.0 request. HTTP/2 aims to be a faster, more efficient protocol than HTTP. Read more about the differences between the two and how you can get started with HTTP2 today.
 
-##### ***Enable WebSocket***
+##### **Enable WebSocket**
 
 This option allows user to enable web-socket support for servers or server group. It is a communication, an upgraded, quick, and seamless protocol to use when one needs to establish constant client-server communication over a single TCP connection.
 
@@ -98,7 +98,7 @@ This option is only applicable in the case of service type HTTP & TCP. This opti
 
 This option is only applicable in the case of service type HTTP & TCP. This option allows users to specify max allowed concurrent connections. By default, Set 0 to disable.
 
-##### **Client Keep-Alive Timeout**
+##### **Keep-Alive Timeout**
 
 This option is only applicable in the case of service type HTTP. This option allows users to specify a timeout of keep-alive connections with clients.
 
@@ -121,14 +121,6 @@ This option is only applicable in the case of service type HTTP. This option all
 ##### **Max Session Exceeded Action**
 
 Users can specify the action to take when max session count exceeds.
-
-##### **Max Session Forward URL**
-
-Users can specify the redirected URL when max session count exceeds. This option will only visible when user has selected redirect option under 'Max Session Exceeded Action' option.
-
-##### **Max Session Exceeded Waiting Page**
-
-Users are allowed to specify the waiting room page to show when max session count exceeds. This option will only visible when user has selected send custom response option under 'Max Session Exceeded Waiting Page' option.
 
 ##### **Remote IP Header**
 

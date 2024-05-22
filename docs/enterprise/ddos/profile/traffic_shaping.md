@@ -12,11 +12,9 @@ Traffic shaping is a computer network bandwidth management technique that delays
 
 It support protocols IPv4, IPv6, TCP, UDP, ICMP, IGMP, DNS, SIP, SNMP, NTP, SMTP, IRC, FTP etc.
 
-![traffic_shaping](/img/ddos/v7/docs/traffic1.png)
+![traffic_shaping](/img/ddos/v8/profile_traffic_shapping.png)
 
-![traffic_shaping](/img/ddos/v7/docs/traffic2.png)
-
-![traffic_shaping](/img/ddos/v7/docs/traffic3.png)
+![traffic_shaping](/img/ddos/v8/traffic_shaping.png)
 
 ### How to Use
 

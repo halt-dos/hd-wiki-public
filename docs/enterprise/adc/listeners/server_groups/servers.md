@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Server Groups**.
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Server groups**.
 
 2. Select the **Group name**.
 
@@ -36,11 +36,11 @@ sidebar_position: 1
 
 ##### **Server ID**
 
-Server ID is used to identify the upstream servers. It will be always unique for every original/upstream server.
+Server ID is used to identify the upstream servers. It will be always unique for every original/upstream server among multiple listeners.
 
 ##### **Server**
 
-This option allows users to add the server domain name/IPv4/IPv6 address of the server.
+This option allows users to add the server **domain name/IPv4/IPv6** address of the server.
 
 ##### **Port**
 

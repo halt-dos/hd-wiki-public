@@ -11,7 +11,7 @@ The session table show the connection details for the listener configured on the
 
 ### **How to reach**
 
-1. Go to **Apps** > **SLB** > **Session Table**
+1. Go to **Apps** > [**SLB**](/enterprise/adc) > **Session Table**
 
 ### Description
 
