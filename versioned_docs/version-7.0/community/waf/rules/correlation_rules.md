@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 6
 ---
 
 # Correlation Rules
@@ -12,24 +12,24 @@ Correlation rules support using compounding logic to make more advanced rules th
 ### How to Use:
 1. Log onto the Haltdos Community WAF portal.
 2. Go to **WAF** > **Rules** > **Correlation Rules**.
-3. Click on Add Rule and set relevant parameters described in the table below.
-4. Click on save changes.
+3. Click on **Add Rule** and set relevant parameters.
+4. Click on **Save changes**.
    
 ![correlation rule](/img/ce-waf/docs/correlation_rule22.png)
    
 ### Description
    
 #### Rule Name
-Users are allowe to specify the rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
+Users are allowed to specify the rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
-    Accepted values: String 
+    Accepted values: String
 
     Default: Blank  
 
 #### Rule Message
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
 
-    Accepted values: String 
+    Accepted values: Description for the rule in String format
 
     Default: Blank  
 
@@ -43,14 +43,14 @@ It is a numeric field that specifies the priority of the rule in which the rule 
 #### URI
 Users are allowed to specify the URI on which the tamper rule will be applied.
 
-    Accepted values: String 
+    Accepted values: URI 
 
     Default: Blank  
 
 #### Method
 Users are allowed to select the HTTP method for the rule to extract when matched with the request.
 
-    Accepted values: Any, Get, Post, Put, Delete, Patch, Head, Options 
+    Accepted values: Any / Get /  Post / Put / Delete / Patch / Head / Options 
 
     Default: Any  
 
@@ -66,7 +66,6 @@ The following actions are available to the User-
 3. **BYPASS REQUEST** - If the Request tests positive for the rule, no other rule is tested and the Request will be allowed through the WAF.
 4. **REDIRECT** - If the request satisfies the rule, then the user is redirected to another page.
 5. **NO ACTION** - If the request satisfies the rule, then no action will be performed on the current request.
-
 
 #### Add Rule Condition
 By clicking on Add Rule Condition button, the end-user can add specify the location to be whitelisted. At least, one location is mandatory for this rule.

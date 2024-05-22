@@ -1,9 +1,18 @@
 ---
 sidebar_position: 1
-sidebar_label: Features
+sidebar_label: Overview
 ---
 
-# Haltdos CE Features
+# Overview
+
+The overview page offers a concise summary of analytics for a specific application, allowing users to see key performance metrics and data at a glance. Users can easily switch between different applications within the platform, and the overview page will update to display the relevant summary for the selected application. This functionality provides a quick and efficient way for users to monitor and compare the performance of multiple applications, ensuring they have access to the most pertinent information for each one.
+   
+![Overview](/img/ce-waf/docs/overview_1.png)
+   
+
+![Overview](/img/ce-waf/docs/overview_2.png)
+
+# Features
 
 - #### **GUI Based WAF Configuration**  
     Simple management and monitoring with web based GUI. Easy to use policy customization supporting SSL management, Web, JSON & XML Policy, Redirection rules, header rules, etc.
