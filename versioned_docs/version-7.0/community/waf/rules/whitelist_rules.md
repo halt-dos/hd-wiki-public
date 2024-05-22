@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 
 # Whitelist Rules
-
+ 
 ## Overview
 Whitelist Rules are rules that tells the WAF to skip evaluation of specified built-in signature or custom rule under certain conditions.
    
@@ -16,7 +16,7 @@ Whitelist Rules are rules that tells the WAF to skip evaluation of specified bui
 4. Click on save changes.
    
 ### Description
-
+ 
 #### Rule Name
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
