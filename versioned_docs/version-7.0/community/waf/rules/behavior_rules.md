@@ -1,10 +1,10 @@
 ---
-sidebar_position: 6
+sidebar_position: 8
 ---
 # Behavior Rules
 
 ### Overview
-The Behavior rule is a feature of Haltdos WAF that that allows application owners to identify the malicious user intent with the help of the behavioral engine.
+The Behavior rule allows application owners to identify the malicious user intent with the help of the behavioral engine.
 
 ![behaviour Rule](/img/ce-waf/docs/behavior_rule_2.png)
 
@@ -21,14 +21,14 @@ The Behavior rule is a feature of Haltdos WAF that that allows application owner
 #### Rule Name
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
-    Accepted values: String 
+    Accepted values: String
 
     Default: Blank  
 
 #### Rule Message 
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
 
-    Accepted values: String 
+    Accepted values: Description for the rule in String format
 
     Default: Blank  
 
@@ -46,7 +46,9 @@ Users are allowed to specify the action to be taken for the request matched i.e.
 
     Default: Record-request  
 
-#### Variable Name
+### **Rule Condition**
+
+#### Variable 
 Users are allowed to select specify the variable from the drop down.
 
     Accepted values: Drop-Down 
@@ -56,7 +58,7 @@ Users are allowed to select specify the variable from the drop down.
 #### Condition
 Users are allowed to specify the condition from the drop-down menu.
 
-    Accepted values: Pattern Exists / Pattern Doesn't Exist / Variable Expression / Minimum Value / Maximum Value / Minimum Length / Maximum Length / Equals / Not Equals / Less Than / Less Than Equals / Greater Than / Greater Than Equals
+    Accepted values: Pattern Exists / Pattern Doesn't Exist / Minimum Value / Maximum Value / Minimum Length / Maximum Length / Equals / Not Equals / Less Than / Less Than Equals / Greater Than / Greater Than Equals
 
     Default: Pattern Exist  
 
@@ -93,7 +95,7 @@ Select if condition value is greater than for selected variable.
 #### Condition Value
 Users are allowed to specify the condition value for the rule.
 
-    Accepted values: String 
+    Accepted values: String / Integer
 
     Default: Blank  
 
