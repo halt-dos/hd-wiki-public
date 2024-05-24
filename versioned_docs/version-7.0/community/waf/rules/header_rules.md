@@ -98,7 +98,7 @@ Specify the attribute name which need to add/delete/overwrite with rule.
 
 Specify the attribute value which will be mentioned in the attribute.
 
-    Accepted values: String / Integer
+    Accepted values: String
 
     Default: Blank  
 

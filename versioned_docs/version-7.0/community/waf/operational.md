@@ -329,5 +329,3 @@ This option used to select whether the SSL enabled or Disabled, that is uploaded
     Accepted values: True / False
 
     Default: False 
-
-
