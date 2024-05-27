@@ -60,6 +60,8 @@ Users can configure settings related to Specify whether to enable internal libin
 
     Default: Disabled  
 
+For more information about libinjection, please refer to this link: [**libinjection**](https://github.com/client9/libinjection)
+
 ##### **Application Type**
 Specify the type of application (i.e. website or web service). A website is a collection of linked web pages (plus their associated resources) that share a unique domain name. A web service is a collection of open protocols and standards used for exchanging data between applications or systems.
 

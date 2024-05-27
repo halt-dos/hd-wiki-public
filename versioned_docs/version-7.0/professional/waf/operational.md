@@ -326,5 +326,5 @@ This option used to select whether the SSL enabled or Disabled, that is uploaded
     Default: False 
 
 :::note Note
-Proxy Buffer and Proxy Buffer are sensitive configurations that can affect applications that should be configured with prior knowledge.
+Proxy Buffer are sensitive configurations that can affect applications that should be configured with prior knowledge.
 :::
