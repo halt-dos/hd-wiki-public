@@ -140,7 +140,7 @@ This option specify maximum allowed requests per keep-alive connection.
 
 Specify operational mode for the listener
 
-    Accepted values: Drop-Down
+    Accepted values: Reverse Proxy / IP Transparency
 
     Default: Reverse Proxy  
 
@@ -193,9 +193,9 @@ This option sets the maximum time allowed to send the response to the client. If
 
 This setting allows specifying a list of file extensions that are permitted to be served statically without undergoing security validation. Files with these extensions can be served directly without additional security checks.
 
-    Accepted values: Specify the list of allowed static extensions that don't require security validation.
+    Accepted values: String
 
-    Default: png, gif, ico, etc.
+    Default: png, gif, ico, jpg, jpeg, js, css, woff, woff2, ttf, svg. 
     
 ##### **Maximum HTTP Body Size**
 
