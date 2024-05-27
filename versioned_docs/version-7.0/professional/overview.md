@@ -9,7 +9,7 @@ sidebar_label: Overview
 
 ---
 
-The overview page provides the summary of the analytics for specific application. Users are allowed to switch between the listeners and can see the summary of the particular app.
+The overview page offers a concise summary of analytics for a specific application, allowing users to see key performance metrics and data at a glance. Users can easily switch between different applications within the platform, and the overview page will update to display the relevant summary for the selected application. This functionality provides a quick and efficient way for users to monitor and compare the performance of multiple applications, ensuring they have access to the most pertinent information for each one.
 
 ![overview](/img/pro-waf/docs/overview1.png)
 ![overview](/img/pro-waf/docs/overview2.png)

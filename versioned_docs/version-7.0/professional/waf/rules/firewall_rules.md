@@ -45,7 +45,7 @@ Users are allowed to specify a rule message to understand the purpose of the rul
 
     Accepted values: String
 
-    Default: Blank  
+    Default: Description for the rule in String format  
 
 ##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 

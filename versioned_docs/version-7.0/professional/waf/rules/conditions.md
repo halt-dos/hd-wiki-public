@@ -14,7 +14,7 @@ This enables users to define conditions that are directly tied to the rules. The
 
 For adding a condition, the required fields are:
 
-##### **Check Response**
+#### Check Response
 
 This field determines that the condition will be checked on request/response parameters.
 

@@ -27,7 +27,7 @@ Users are allowed to specify the rule name to identify the rule which is to be c
 ##### **Rule Message**
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
 
-    Accepted values: String
+    Accepted values: Description for the rule in String format
 
     Default: Blank  
 

@@ -26,7 +26,7 @@ Users are allowed to specify a rule name to identify the rule which is to be cre
 ##### **Rule Message**
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
 
-    Accepted values: String
+    Accepted values: Description for the rule in String format
 
     Default: None  
 

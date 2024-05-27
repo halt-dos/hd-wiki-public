@@ -13,7 +13,7 @@ It provides functionality to support SSL offloading based on configurations.
 
 ## Overview
 
-An SSL certificate is a few lines of code on your web server that provides security for online communications. When a web browser contacts your secured website, the SSL certificate enables an encrypted connection. It's kind of like sealing a letter in an envelope before sending it through the mail.
+An SSL certificate provides security for online communications. When a web browser contacts your secured website, the SSL certificate enables an encrypted connection. It's kind of like sealing a letter in an envelope before sending it through the mail.
    
 Haltdos platform supports SSL certificate management that allows customers to upload their existing SSL certificates or create new certificates using Let's Encrypt. The platform periodically checks the validity of the certificate and notifies users when the renewal is 2 weeks away from due date. If the certificate was created by Let's Encrypt, Haltdos platform automatically renews the certificate without requiring human intervention. 
 
@@ -79,12 +79,7 @@ Users are allowed to specify the domain name of the certificate.
 
     Default: Blank  
 
-**App Option**  
-Users are allowed to select the certificate generate options.
-
-    Accepted values: Drop-Down
-
-    Default: Generate/upload certificate 
+##### Paste Certificate (PEM)
 
 **Public Key**  
 User can specify the public key of certificate.
@@ -100,3 +95,6 @@ User can specify the private key of certificate.
 
     Default: Blank  
 
+:::note Note
+User can also choose between Upload PFX certificate and Upload PEM certificate.
+:::  

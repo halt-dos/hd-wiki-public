@@ -27,13 +27,17 @@ Further to detailing the incident through Incidents, users can perform various a
 ![Incidents](/img/pro-waf/docs/incidents.png)
 
 #### Type of Incidents  
-- **Drop Incidents**
+- **Drop Incidents**  
+All the request that have been droped are listed here.
 
-- **Recorded Incidents**
+- **Recorded Incidents**  
+All the requests that have been allowed, but whose details have been recorded, are listed here.
 
-- **Server Errors**
+- **Server Errors**  
+In case if there is any issue in the servers then the list of servers with it's details is listed here.  
 
-- **Health Incidents**
+- **Health Incidents**  
+The health incident shows the health status.
 
 #### How to Use:
 1. Log into the Haltdos GUI.
