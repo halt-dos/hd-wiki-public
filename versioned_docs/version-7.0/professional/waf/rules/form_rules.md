@@ -39,9 +39,8 @@ It is a numeric field that specifies the priority of the rule in which the rule 
 
 ##### **URI**
 Users are allowed to specify the URI of the form for which the form validation rule will be applied. The request to specified URI will only be validated.
-Example: /login
 
-    Accepted values: URI
+    Accepted values: Regex
 
     Default: None  
 

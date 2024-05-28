@@ -46,31 +46,51 @@ Attach any existing monitor to the server group.
 
     Accepted values: Select from existing monitors
 
-    Default: None  
+    Default: None 
+
+##### **SSL**
+Select SSL depending upon requirement.
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
+##### **Max Connection**
+Mention the max Required connection
+
+    Accepted values: Integer
+
+    Default: Blank 
 
 ##### **Connect Timeout** 
 
 Defines a timeout for establishing a connection with a proxied server.
 
-    Accepted values: Integer(Seconds)
+    Accepted values: Integer
 
-    Default: 100 
+    Default: 100
+
+    Metrics: Seconds 
 
 ##### **Send Timeout** 
 
 Sets a timeout for transmitting a request to the proxied server. The timeout is set only between two successive write operations, not for the transmission of the whole request. If the proxied server does not receive anything within this time, the connection is closed.
 
-    Accepted values: Integer(Seconds)
+    Accepted values: Integer
 
     Default: 100 
+
+    Metrics: Seconds 
 
 ##### **Read Timeout** 
 
 Defines a timeout for reading a response from the proxied server. The timeout is set only between two successive read operations, not for the transmission of the whole response. If the proxied server does not transmit anything within this time, the connection is closed. 
 
-    Accepted values: Integer(Seconds)
+    Accepted values: Integer
 
     Default: 100 
+
+    Metrics: Seconds 
 
 
 

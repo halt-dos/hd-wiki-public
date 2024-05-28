@@ -42,7 +42,7 @@ It is a numeric field that specifies the priority of the rule in which the rule 
 ##### **URI**
 Users are allowed to specify the URI. Specify the URI on which the firewall rule will be applied.
 
-    Accepted values: String
+    Accepted values: Regex
 
     Default: Blank  
 
@@ -56,7 +56,7 @@ Users are allowed to specify the HTTP method on which the rule will be applied i
 ##### **Custom Rule IDs**
 Users are allowed to specify the rule/mitigation ID that needs to be whitelisted, so that action against that request will be allowed.
 
-    Accepted values: String
+    Accepted values: Select custom rule ID
 
     Default: Blank  
 

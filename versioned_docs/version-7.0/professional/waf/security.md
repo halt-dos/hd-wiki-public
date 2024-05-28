@@ -111,5 +111,5 @@ The time duration for which a malicious IP is suspended by WAF is specified here
 
     Default: 0  
 
-    Matric: Seconds
+    Metric: Seconds
 

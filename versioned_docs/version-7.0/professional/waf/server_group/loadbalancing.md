@@ -73,7 +73,7 @@ This option specify the fail-over threshold in percentage of (active/total) prim
 ##### **Client IP Pool**
 Specify list of client IP to use when connecting to upstream. Leave blank for auto
 
-    Accepted values: Integer
+    Accepted values: list of client IP
 
     Default: Blank  
 
@@ -87,6 +87,29 @@ This option is used to specify the algorithm used by the server group. By defaul
 ##### **Sticky Session Cookie**
 Specify enabling sticky session based on specified cookie
 
-    Accepted values: String & Integer
+    Accepted values: String
+
+    Default: Blank 
+
+#### Location
+
+##### **Priority**
+Set the priority
+
+    Accepted values: Integer
+
+    Default: Blank 
+
+##### **Location**
+Set the location
+
+    Accepted values: SRC_IP / DST_IP / SRC_PORT / DST_PORT / URL / ARG_VAL / HEADER_VAL / COOKIE_VAL
+
+    Default: SRC_IP 
+
+##### **Value**
+Set the location
+
+    Accepted values: String
 
     Default: Blank 

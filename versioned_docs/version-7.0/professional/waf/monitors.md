@@ -46,9 +46,11 @@ Set the seconds, say 10, then every 10 seconds WAF sends a request for “/” t
 
     Max: 17280
 
-    MIn: 0
+    Min: 0
 
     Default: 10  
+
+    Metrics: Seconds
 
 ##### **Fail Threshold**
 Sets the number of failed attempts that must occur during the heath check interval period for the server to be marked unavailable (default is 1 attempt).
@@ -74,7 +76,7 @@ Sets the number of passes that must occur during the heath check interval period
 
 ##### **Health Check Type**
 
-    Accepted values: TCP/HTTP/SSL HELLO/HTTPS
+    Accepted values: TCP / HTTP / SSL HELLO / HTTPS
 
     Default: TCP  
 
@@ -91,7 +93,7 @@ The specified URI is appended to the server domain name or IP address set for th
 
     Accepted values: URI
 
-    Default: GET  
+    Default: GET / 
 
 ##### **Match Status**
 Using this directive it is possible to verify whether the status is in a specified range. It contains one status code.This option only appears when HTTP/HTTPS is select in **Health check** option

@@ -96,6 +96,8 @@ Specify the connection timeout for the server.
     
     Default: 0 
 
+    Metrics: Seconds 
+
 ##### **Send Timeout** 
 
 Specify the send timeout for the server. 
@@ -108,6 +110,8 @@ Specify the send timeout for the server.
     
     Default: 0 
 
+    Metrics: Seconds 
+
 ##### **Read Timeout** 
 
 Specify the read timeout for the server.
@@ -119,6 +123,8 @@ Specify the read timeout for the server.
     Min: 0
     
     Default: 0 
+
+    Metrics: Seconds 
 
 
 

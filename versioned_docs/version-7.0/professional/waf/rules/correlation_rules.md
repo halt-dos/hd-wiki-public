@@ -41,7 +41,7 @@ It is a numeric field that specifies the priority of the rule in which the rule 
 ##### **URI**
 Users are allowed to specify the URI on which the tamper rule will be applied.
 
-    Accepted values: URI
+    Accepted values: Regex
 
     Default: Blank  
 

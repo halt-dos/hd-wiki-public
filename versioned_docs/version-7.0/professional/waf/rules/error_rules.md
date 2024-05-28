@@ -39,7 +39,7 @@ Users are allowed to specify the priority for the rule for execution when matche
 ##### **URI**
 Users are allowed to specify the URI.
 
-    Accepted values: URI
+    Accepted values: Regex
 
     Default: Blank  
 
@@ -69,6 +69,6 @@ Users are allowed to specify the rule action. Users can select either to take no
 ##### **Custom Error Page**
 Users are allowed to select the custom error page from the drop-down list.
 
-    Accepted values: Drop-Down
+    Accepted values: Custom Error Page
 
     Default: Blank  

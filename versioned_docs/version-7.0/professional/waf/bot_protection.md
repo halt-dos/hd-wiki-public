@@ -31,22 +31,14 @@ This field specifies the list of good crawlers by specifying their user agents. 
 
     Accepted values: User Agent
 
-    Default: Empty  
-
-    E.g. Google Crawler  
-
-    User-Agent: google  
+    Default: Blank  
 
 ##### **Bad Crawlers**
 Users are allowed to specify the list of bad crawlers by specifying their user agents. Such requests will be dropped.This field specifies the list of bad crawlers by specifying their user agents. You can add single or multiple user agents. All the user agent mentioned in Bad Crawlers, their requests will be dropped. Users are allowed to specify the ssl session caching
 
     Accepted values: User Agent  
     
-    Default: Empty  
-
-    E.g. Google Crawler  
-
-    User-Agent: google  
+    Default: Blank  
 
  **Crawlers** refer to automated programs or scripts that browse the web to index content, gather information, or perform other automated tasks. 
 

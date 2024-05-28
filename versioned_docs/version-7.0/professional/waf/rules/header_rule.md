@@ -7,7 +7,7 @@ sidebar_position: 2
 ---
 
 ### Overview 
-Header rules allow application owners to manipulate request headers, cookies, and arguments in request as well as response headers. Users can create/update header rules at run time with on-the-fly updates. It has the functionality to add/remove/update any cookie/header/arguments in the request to the web-server(back-end) as well as respond to the client.  
+Header rules allow application owners to manipulate request headers, cookies, and arguments in request as well as response headers. Users can create/update header rules at run time with on-the-fly updates. It has the functionality to add/remove/update any cookie/header/arguments in the request to the web-server(back-end) as well as respond to the client.    
 For more information about IP Header, please visit this link: [**IP Header**](https://en.wikipedia.org/wiki/IP_header#:~:text=An%20IP%20header%20is%20header,a%20payload%20for%20user%20data.)
 
 ![header_rules](/img/pro-waf/docs/header_rules1.png)
@@ -49,7 +49,7 @@ User can define the rule's priority among various other custom error rules.
 
 Specify the URI or regex for which rule will be applied. 
 
-    Accepted values: URI or Regex
+    Accepted values: Regex
 
     Default: Blank  
 

@@ -156,12 +156,32 @@ Three primary purposes of cookies:
  - **Personalization**: Themes, user preferences, and other settings.
  - **Tracking**: User behavior recording and analyzing.  
 
-Cookies are primarily for session management. Attackers try to steal its data for session hijacking. Parameters to consider while securing cookie:  
-- **Cookie Name**: This field specifies the cookie name for which you need to apply the policies.  
-- **Enable Immutable (Cookie Signing)**: This field allows you to ensure that the specified cookie remains unchanged by the client. Any request with a modified cookie value gets rejected.  
-- **Enable HTTP Only Flag**: This field prevents the client-side script from accessing and manipulating the cookie.  
-- **Enable Secure Flag**: This field allows you to ensure that the cookie is only sent over a secured HTTPS channel.  
-- **Same Site**: This field doesn't allow the browser to send this cookie along with cross-site requests. The main goal is to mitigate the risk of cross-origin data leakage. Even, it protects against cross-site request forgery attacks.  
+Cookies are primarily for session management. Attackers try to steal its data for session hijacking. Parameters to consider while securing cookie:   
+**Cookie Name**: This field specifies the cookie name for which you need to apply the policies.
+
+    Accepted values: String / Integer
+
+    Default: "Enter Cookie Name"      
+
+**Enable Immutable (Cookie Signing)**: This field allows you to ensure that the specified cookie remains unchanged by the client. Any request with a modified cookie value gets rejected.  
+
+    Accepted values: Enable / Disable
+
+    Default: Disable
+
+**Enable HTTP Only Flag**: This field prevents the client-side script from accessing and manipulating the cookie.  
+
+    Accepted values: Enable / Disable
+
+    Default: Disable      
+
+**Enable Secure Flag**: This field allows you to ensure that the cookie is only sent over a secured HTTPS channel.  
+ 
+    Accepted values: Enable / Disable
+
+    Default: Disable      
+ 
+**Same Site**: This field doesn't allow the browser to send this cookie along with cross-site requests. The main goal is to mitigate the risk of cross-origin data leakage. Even, it protects against cross-site request forgery attacks.  
 
 **STRICT** - This value ensures the cookie is not being sent to the target site in all cross-site browsing contexts.  
 **LAX** - This value provides both security and usability to the sites that need to manage the user's logged-in session once the user login from an external link.

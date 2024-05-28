@@ -66,7 +66,7 @@ For more information about Security/Server-Side TLS, please refer to this site: 
 ##### **SSL Session Caching**
 This option allows users to specify the number of SSL session cache for HTTPS requests on the listener.
 
-    Accepted values: Decimal
+    Accepted values: Integer
     
     Max: 1000
 
@@ -77,7 +77,7 @@ This option allows users to specify the number of SSL session cache for HTTPS re
 ##### **SSL Session Timeout**
 This option allows users to specify the SSL session timeout in minutes for every HTTPS request on the listener.
 
-    Accepted values: Decimal
+    Accepted values: Integer
     
     Max: 3600
 

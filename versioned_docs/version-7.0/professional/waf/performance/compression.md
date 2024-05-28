@@ -29,7 +29,7 @@ Haltdos provides you the ability to compress or decompress the responses which o
 
 To enable compression, enable the toggle button. It compresses the responses to an extent.
 
-    Accepted values: Enabled/Disabled	
+    Accepted values: Enabled / Disabled	
 
     Default: Disabled
 
@@ -37,7 +37,7 @@ To enable compression, enable the toggle button. It compresses the responses to 
 
 Some clients do not support responses with the GZIP encoding method. At the same time, it might be desirable to store compressed data, or compress responses on the fly and store them in the cache. To successfully serve both clients that do and do not accept compressed data, WAF can decompress data on the fly when sending it to the latter type of client.
 
-    Accepted values: Enabled/Disabled	
+    Accepted values: Enabled / Disabled	
 
     Default: Disabled
 
@@ -71,7 +71,7 @@ Specify one or more regular expressions (Regex) that will be evaluated on HTTP r
 
 Specify the minimum HTTP version from which compression will be applied. The response above the specified version is compressed.
 
-    Accepted values: Drop-Down	
+    Accepted values: Default value set	
 
     Default: HTTP 1.1
 
@@ -87,7 +87,7 @@ This field allows performing compression on the specific URI using one or more r
 
 This field allows performing compression on the specific type of HTTP requests. 
 
-    Accepted values: expired/no-cache/no-store/private/no_last_modified/no_etag/any/auth	
+    Accepted values: expired / no-cache / no-store / private / no_last_modified / no_etag / any / auth	
 
     Default: expired / no-cache / no-store / private / no_last_modified / no_etag / any / auth
 

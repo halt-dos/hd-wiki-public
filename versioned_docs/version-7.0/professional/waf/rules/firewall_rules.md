@@ -43,9 +43,9 @@ Users are allowed to specify a rule name to identify the rule which is to be cre
 ##### **Rule Message**
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
 
-    Accepted values: String
+    Accepted values: Description for the rule in String format
 
-    Default: Description for the rule in String format  
+    Default: Blank  
 
 ##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
@@ -57,7 +57,7 @@ It is a numeric field that specifies the priority of the rule in which the rule 
 ##### **URI**
 Users are allowed to specify the URI. Specify the URI on which the firewall rule will be applied.
 
-    Accepted values: URI
+    Accepted values: Regex
 
     Default: None  
 

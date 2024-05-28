@@ -75,7 +75,7 @@ This field specifies the maximum request size allowed for the caching to store d
 
     Min: 10
     
-    Default: Blank
+    Default: 500
 
     Metric: mb
 
@@ -101,7 +101,7 @@ This field allows to specify the use of stale cache for errors when the back-end
 
     Accepted values: Type of errors to be cached	
 
-    Default: HTTP 500 Errors /  
+    Default: error / invalid_header / updating / timeout / http_500 / http_502 / http_503 / http_504 
 
 ##### **Response Codes**
 
@@ -150,6 +150,6 @@ Specify the duration of the cached item after which it will be marked in the cli
 
     Min: 0
 
-    Default: 3
+    Default: 7
 
 

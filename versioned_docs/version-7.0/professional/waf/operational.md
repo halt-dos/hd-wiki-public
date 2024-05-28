@@ -304,9 +304,9 @@ This option specify aliases means familiar name for the listener.
 
 This option specify assigned virtual IPs for accepting traffic. (They are typically used in network configurations to abstract away the underlying physical infrastructure and provide a consistent interface for clients to access services.)
 
-    Accepted values: Integer	
+    Accepted values: IP	
 
-    Default: NULL 
+    Default: Blank 
 
 ##### **Add Port**
 This option helps you to add HTTP/S ports for Advance Settings. Here you can be unique port either HTTP or HTTPS enabled configuration without changing backend server port.
