@@ -12,7 +12,7 @@ Haltdos WAF uses machine learning for detecting and diminishing application laye
 
 ## Anomaly based Learning
 
-Haltdos provides user a robust solution with the help of machine-learning because the main task of a web application firewall is to protect downstream web applications against technical attacks. It can also be used for log analysis, or to support administrators in creating or optimizing complex WAF configurations.
+Haltdos provides user a robust solution with the help of machine-learning because the main task of a web application firewall is to protect upstream web applications against technical attacks. It can also be used for log analysis, or to support administrators in creating or optimizing complex WAF configurations.
 
 AL is limited because it depends on what it learns from usage patterns that it has encountered. Web application firewalls that leverage machine learning ML, however, take a different approach. With ML, the WAF can minimize false positives by using a statistical model to determine the probability that an anomaly is actually evidence of a cyberattack or if it’s just an error or a change in how users interact with the application.
 
