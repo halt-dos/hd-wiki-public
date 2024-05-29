@@ -79,7 +79,7 @@ Specify the minimum HTTP version from which compression will be applied. The res
 
 This field allows performing compression on the specific URI using one or more regex. If the field is empty then no filter perform.
 
-    Accepted values: UGI Regex	
+    Accepted values: Regex	
 
     Default: Blank
 
