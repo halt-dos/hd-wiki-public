@@ -103,6 +103,8 @@ This option sets the duration (in seconds) for which the server keeps an idle co
 
     Default: 0  
 
+    Metric: Minutes
+
 - **Keep-alive timeout** determines how long the server should wait for the next request from the client before closing the connection. If the server does not receive a new request within this period, it closes the connection to free up resources.
 
 ##### **Upstream Keep-Alive Timeout**
@@ -115,6 +117,8 @@ This option sets the duration (in seconds) for which the server keeps an idle co
     Min: 0
 
     Default: 0  
+
+    Metric: Seconds
 
 ##### **Max Requests per Connection**
 This option specify maximum allowed requests per keep-alive connection.
