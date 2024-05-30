@@ -63,11 +63,9 @@ This field specifies the maximum allowed Bot request burst from a single client 
 
     Default: 30  
 
-
 :::note Note
 Bot Request Burst must be greater than or equal to Bot Request Rate
 :::
-
   
 ##### **Bot Track Duration**
 Specify the Bot request rate track duration in seconds.
