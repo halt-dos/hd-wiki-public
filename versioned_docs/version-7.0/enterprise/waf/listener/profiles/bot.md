@@ -16,19 +16,6 @@ Bot Protection helps you quickly determine, manage, and mitigate automated reque
 
 Configure the following parameters to set up the desired settings:
 
-  | Parameter | Description| Accepted Values | Default |
-  |---------- | ------------ | -----------  | --------- |
-  | Allowed Crawlers | Specify the list of good crawlers by specifying their user agents. Such requests will be allowed. | User Agent | Blank |
-  | Bad Crawlers | Specify the list of bad crawlers by specifying their user agents. Such requests will be dropped. | User Agent | Blank |
-  | Suspicious Crawlers | Specify a list of suspicious crawlers by specifying their user agents. Such requests will be rate-limited. | User Agent | Blank |
-  | Maximum Bot Request Rate | Specify the maximum allowed Bot request rate from a single client IP.| Integer | NO ACTION | 30|
-  | Maximum Bot Request Burst | Specify the maximum allowed Bot request burst from a single client IP.| Integer | NO ACTION | 50|
-  | Bot Track Duration | Specify the Bot request rate track duration in seconds. | Integer | NO ACTION | 30 |
-  | Tor Traffic | Specifies the action to perform on TOR Network traffic.| NO ACTION / DROP / SEND CHALLENGE |
-  | Bad Reputation Traffic | Specifies the action to perform on traffic from suspicious IPs reported by Haltdos Threat Stream TM.| NO ACTION / DROP / SEND CHALLENGE | NO ACTION |
-  | Anonymous Proxy Traffic | Specifies the action when request contains no token, if token validation is enabled.| NO ACTION / RECORD / RATE LIMIT / DROP | NO ACTION |
-  | Advance Bot Protection | Specifies the advance bot protection method.| NO ACTION / RECORD / RATE LIMIT / DROP | NONE |
-
 ##### **Allowed Crawlers**
 This field specifies the list of good crawlers by specifying their user agents. You can add single or multiple user agents. All the user agent mentioned in Allowed Crawlers permits the crawlers to access the protected URL. 
 
@@ -65,15 +52,16 @@ This field specifies a list of suspicious crawlers by specifying their user agen
 ##### **Maximum Bot Request Rate**
 This field specifies the maximum allowed Bot request rate from a single client IP. In case the request rate of the user is higher than the defined rate, the request gets dropped.
 
-    Accepted values: Numbers
+    Accepted values: Integer
 
-    Default: 30
+    Default: 20
 
 ##### **Maximum Bot Request Burst**
 This field specifies the maximum allowed Bot request burst from a single client IP. In case the requested burst of the user is higher than the defined rate, the request gets dropped.
 
-    Accepted values: Numbers  
-    Default: 50  
+    Accepted values: Integer
+
+    Default: 30  
 
 
 :::note Note
@@ -84,9 +72,19 @@ Bot Request Burst must be greater than or equal to Bot Request Rate
 ##### **Bot Track Duration**
 Specify the Bot request rate track duration in seconds.
 
+    Accepted values: Integer
+      
+    Default: 30  
+
+    Metrics: Seconds
+
 ##### **Tor Traffic**
 
 This field allows you to take action in case there is Tor traffic in the network. Tor traffic are the request coming from tor browser or dark web. It includes two actions:
+
+    Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
+      
+    Default: NO ACTION  
 
 - **NO ACTION** 
 Don't perform any action  
@@ -101,6 +99,10 @@ Send a challenge like a captcha
 
 This field allows you to take action on traffic when Haltdos Threat Stream TM reports suspicious IPs. It includes two actions:
 
+    Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
+      
+    Default: NO ACTION  
+
 - **NO ACTION**
 Don't perform any action  
 
@@ -110,8 +112,19 @@ Drop the request
 - **SEND CHALLENGE**
 Send a challenge like a captcha  
 
+##### **Anonymous Proxy Traffic**
+Defines the response to traffic originating from anonymous proxy IP addresses
+
+    Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
+      
+    Default: NO ACTION  
+
 ##### **Advance Bot Protection**
 This field allows you to enable Haltdos Advance Bot Protection for an incoming request for the current security profile. It includes the following actions:
+
+    Accepted values: NONE / FINGERPRINT / TOKEN VALIDATION / ANY
+      
+    Default: NO ACTION  
 
 - **NONE** :
 Don't perform any action  
