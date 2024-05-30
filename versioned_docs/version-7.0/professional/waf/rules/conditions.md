@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 # Rule Condition
@@ -13,6 +13,10 @@ This enables users to define conditions that are directly tied to the rules. The
 ![header rules](/img/ce-waf/docs/headerrulescondition.png)
 
 For adding a condition, the required fields are:
+
+#### Check Response
+
+This field determines that the condition will be checked on request/response parameters.
 
 #### Condition Phase
 
