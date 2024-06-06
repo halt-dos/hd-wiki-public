@@ -1,10 +1,4 @@
----
-
-sidebar_position: 6
-
----
-
-# Global Whitelist
+# Whitelist
 
 ---
 
@@ -27,36 +21,52 @@ These are the whitelist rule which helps in whitelisting mitigations globally fo
 3. Configure the Fields
 4. Click **Save Changes**
 
-![Global Whitelist Condition ](/img/waf/v7/docs/global_whitelist_condition.png)
-
 ## Description
 
 **Rule Name**  
 Users can specify the rule name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Rule Message**  
 Users can specify a user-friendly message
+
+    Accepted values: String
+
+    Default: Blank 
 
 **Rule Priority**  
 Users can specify the priority of the rule. Rule with less priority will be followed first.
 
+    Accepted values: Integer
+
+    Default: Blank 
+
 **URI**  
 Users can specify the URI ( Uniform Resource Identifier )for the rule as per the requirement.
+
+    Accepted values: Regex
+
+    Default: Blank 
 
 **Method**  
 Users can specify the HTTP method which should be followed for the rule.
 
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: ALL 
+
 **Custom Rule ID**  
 Users can specify the custom rule ID which was triggered or for which rule the user is setting up the whitelist rule.
 
-**Find Location**  
-Users can define the source location where this condition needs to be applied.
+    Accepted values: String
 
-**Find Parameter**  
-The user can define the parameter based on the location of the condition.
+    Default: Blank 
 
-**Match Condition**  
-The user can define the match condition for the parameter and match value.
+##### **Add Condition**
 
-**Match Value**  
-The user can define what value needs to be matched with the match condition.
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
+
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)

@@ -18,47 +18,86 @@ We have introduced Header rules by which application owners can manipulate reque
 4. Configure your settings. 
 5. Click **Save Changes**.
 
-| SETTINGS        | ACCEPTED VALUE | DEFAULT            |
-|-----------------|----------------|--------------------|
-| Rule Name       | String         | Blank              |
-| Rule Message    | String         | Blank              |
-| Rule Enabled    | Boolean        | True               |
-| Rule Priority   | Integer        | 0                  |
-| Rule Action     | Drop-down      | Remove Request Header |
-| Attribute Name  | String         | Blank              |
-| Search Pattern  | String         | Blank              |
-| Attribute Value | String         | Blank              |
-
-### Rule Condition
-
-![headerrules2](/img/adc/v7/docs/headerrule1.png)
-
-| SETTINGS        | ACCEPTED VALUE | TYPE            |
-|-----------------|----------------|-----------------|
-| Find Location   | Drop-Down      | Source IP       |
-| Find Parameter  | String         | Blank           |
-| Match Condition | Drop-Down      | Match IP Prefix |
-| Match Value     | String         | Blank           |
-| Negation        | Drop-Down      | False           |
 
 ### Description:
 
-##### **Find Location**
+##### **Rule Name**
 
-User can specify the location at which the header rule condition is being applied.
+Specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
-##### **Find Parameter**
+    Accepted values: String
 
-The user can set the parameter value for the header rule condition.
+    Default: Blank  
 
-##### **Match Condition**
+##### **Message**
 
-The user can set the match condition for above set parameter value and location.
+Specify a rule message containing a detailed description to identify the rule which is to be created.
 
-##### **Match Value**
+    Accepted values: String
 
-The user can set the value that is matched with the condition set for particular rule condition. 
+    Default: Blank  
 
-##### **Negation**
+##### **Rule Enabled**
 
-The user can also negate the rule condition.
+Specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: Enabled / Disabled
+
+    Default: Enabled  
+
+##### **Rule Priority**
+
+User can define the rule's priority among various other custom error rules.
+
+    Accepted values: Integer
+
+    Default: Blank  
+
+##### **Rule Action**
+
+The rule action determines what action (add/remove/overwrite) the rule will perform. The accepted values are:
+
+    Accepted values: ADD HEADER / ADD COOKIE / OVERWRITE HEADER / OVERWRITE COOKIE / REMOVE HEADER / REMOVE COOKIE
+
+    Default: REMOVE COOKIE 
+
+1) **ADD:** This condition will allow adding a value at the specified location.
+
+2) **REMOVE:** This condition will allow removing a value at the specified location.
+
+3) **OVERWRITE:** This condition will allow overwriting a value at the specified location.
+
+If the action is **ADD** then another field is required I.e., **Value** that will be added for the specified **Parameter**.
+
+If the action is **REMOVE**, then the specified parameter is removed.
+
+If the action is **OVERWRITE**, then two other fields are required first is **Search Pattern** (string/regex that should match the existing value) and **Replace** (the string that should be overwritten). We can capture string from the PCRE capturing group using position with a prefix of '$'. 
+
+:::note Note
+ In order to escape the dollar($) character in the replace, add the dollar symbol twice.
+:::
+
+##### **Attribute Name**
+
+Specify the attribute name which need to add/delete/overwrite with rule.
+
+    Accepted values: String
+
+    Default: Blank  
+
+##### **Search Pattern**
+
+Specify the attribute name which need to add/delete/overwrite with rule.
+
+    Accepted values: String
+
+    Default: Blank  
+
+##### **Attribute Value**
+
+Specify the attribute value which will be mentioned in the attribute.
+
+    Accepted values: String
+
+    Default: Blank  
+

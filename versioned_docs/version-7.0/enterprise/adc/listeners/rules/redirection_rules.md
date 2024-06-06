@@ -18,38 +18,56 @@ Redirection Rules is a feature of Haltdos SLB that allows application owners to 
 4. Configure your settings. 
 5. Click **Save Changes**.
 
-| SETTINGS       | ACCEPTED VALUE | DEFAULT                 |
-|----------------|----------------|-------------------------|
-| Rule Name      | String         | Blank                   |
-| Rule Message   | String         | Blank                   |
-| Rule Enabled   | Boolean        | True                    |
-| Rule Priority  | Integer        | 1                       |
-| Match Criteria | String         | Blank                   |
-| Forward URL    | String         | Blank                   |
-| Response Code  | Drop-Down      | 302 -Temporary Redirect  |
-
 ### Description:
 
 ##### **Rule Name**
 
 User can specify the rule name for redirection rule
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Rule Message**
 
 User can specify message that specifies the purpose for this particular rule. 
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Rule Priority**
 
 The user can specify the priority for this particular rule.
 
+    Accepted values: Integer
+
+    Default: 1
+
 ##### **Match Criteria**
 
 The user can specify the URL that needs to be redirected.
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Forward URL**
 
 The user can specify the URL where the match URL needs to be redirected.
 
+    Accepted values: URL
+
+    Default: None   
+
 ##### **Response Code**
 
 The user can specify the response code as temporary or permanent redirect.
+
+    Accepted values: 301, 302
+
+    Default: 302 - Temporary Redirect  
+
+**301** - Permanent Redirect
+
+**302** - Temporary Redirect

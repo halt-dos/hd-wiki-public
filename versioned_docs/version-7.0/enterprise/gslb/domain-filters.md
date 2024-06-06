@@ -21,13 +21,6 @@ For example, if a computer queries the IP address of a known dangerous site that
 5. Go to Domain Filter Files > Select the file from Drop Down (created at Domain Filter )
 6. Click On **Save Changes** > Domain Filter File will be selected.
 
-![domain filters](/img/gslb/v7/docs/domain.png)
-
-|   Settings  | Accepted Value   | Default    |
-| ----------- | ----------- | -------- |
-| Name | String | Blank
-| Script Area | String | Blank
-
 ![domain filters](/img/gslb/v7/docs/domain_filter.png)
 
 ### Description
@@ -36,6 +29,14 @@ For example, if a computer queries the IP address of a known dangerous site that
 
 Users can specify the name for the Domain Filter files.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Domain Names**
 
 Users can mention the domains of which record need to be blocked.
+
+    Accepted values: String
+
+    Default: Blank 

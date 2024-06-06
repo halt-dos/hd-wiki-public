@@ -28,39 +28,57 @@ The behavior of the script may vary for the following configurations:
 2. Click on Add Rule and set relevant parameters.  
 3. Click on **Save Changes**.  
 
-| Parameters       | Accepted value |  Default      |
-|------------------|----------------|---------------|
-| Rule Name        | String         | Blank         |
-| Rule Message     | String         | Blank         |
-| Rule Priority    | Integer        | 0             |
-| URI              | String         | Blank         |
-| Method           | Drop-down      | ALL           |
-| Evaluation Phase | Drop-down      | Request Phase |
-| Rule Action      | Drop-down      | Record        |
-| Script           | Lua Language   | Blank         |
    
 ### Description 
 
 ##### **Rule Name**
 Users are allowed to specify the rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Rule Message**
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: Description for the rule in String format
+
+    Default: Blank  
 
 ##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
 
+    Accepted values: Integer
+
+    Default: 0  
+
 ##### **URI**
 Users are allowed to specify the URI on which the tamper rule will be applied.
+
+    Accepted values: Regex
+
+    Default: Blank  
 
 ##### **Method**
 Users are allowed to select the HTTP method for the rule to extract when matched with the request.
 
+    Accepted values:  ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: ALL  
+
 ##### **Evaluation Phase**
 Users are allowed to select the evaluation phase for the rule i.e. Request or Response.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Rule Action**
 The following actions are available to the User:  
+
+    Accepted values: NO ACTION / DROP & RECORD REQUEST / RECORD REQUEST / BYPASS REQUEST / REDIRECT / SEND RESPONSE WITH STATUS CODE / SEND CUSTOM RESPONSE / CHANGE RESPONSE CODE / SEND CAPTCHA CHALLENGE / TARPIT SRC. IP / TEMPORARY BLACKLIST SRC IP / SKIP LEARNING / TERMINATE CONNECTION / BLOCK USER SESSION
+
+    Default: Blank  
 
 1. **NO ACTION** - If the request satisfies the rule, then no action will be performed on the current request.
 2. **DROP & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated but the request will not be allowed through the WAF.

@@ -13,38 +13,61 @@ Error Rules is a feature of Haltdos WAF that allows application owners to show c
 2. Click on Add Rule and set relevant parameters described in the table below.
 3. Click on Save changes.
 
-| Parameters         | Accepted value                                                                                                                                                                                                                                                                                                  |  Default |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| Rule Name          | String                                                                                                                                                                                                                                                                                                          | Blank    |
-| Rule Message       | String                                                                                                                                                                                                                                                                                                          | Blank    |
-| Rule Priority      | Integer                                                                                                                                                                                                                                                                                                         | 0        |
-| URI                | String                                                                                                                                                                                                                                                                                                          | Blank    |
-| Method             | Drop-down                                                                                                                                                                                                                                                                                                       | ALL      |
-| HTTP Response Code | 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 428, 429, 431, 440, 444, 449, 450, 451, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 520, 521, 522, 523, 524, 525, 526, 527, 530 | None     |
-| Rule Action        | Drop-Down                                                                                                                                                                                                                                                                                                       | Blank    |
-| Custom Error Page  | Drop-Down                                                                                                                                                                                                                                                                                                       | Blank    |
 ### Description
 
 ##### **Rule Name**
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Rule Message**
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
 
+    Accepted values: Description for the rule in String format
+
+    Default: Blank
+    
 ##### **Rule Priority**
 Users are allowed to specify the priority for the rule for execution when matched with the request.
 
+    Accepted values: Integer
+
+    Default: 0
+    
 ##### **URI**
 Users are allowed to specify the URI.
+
+    Accepted values: Regex
+
+    Default: Blank
 
 ##### **Method**
 Users are allowed to specify the method for the rule.
 
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: ALL
+
+For more information regarding HTTP method, please refer to this link: [**HTTP Method**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+
 ##### **HTTP Response Code**
-Users are allowed to specify the HTTP response code based on the custom error rule name.
+
+    Accepted values: 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 428, 429, 431, 440, 444, 449, 450, 451, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 520, 521, 522, 523, 524, 525, 526, 527, 530
+
+    Default: NONE 
 
 ##### **Rule Action**
 Users are allowed to specify the rule action. Users can select either to take no action or send custom response.
 
+    Accepted values: NO ACTION / SEND CUSTOM RESPONSE
+
+    Default: NO ACTION 
+
 ##### **Custom Error Page**
 Users are allowed to select the custom error page from the drop-down list.
+
+    Accepted values: Custom Error Page
+
+    Default: Blank

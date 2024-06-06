@@ -13,65 +13,35 @@ Error Rules is a feature of Haltdos WAF that allows application owners to show c
 2. Click on **Add Rule** and set relevant parameters described in the table below.
 3. Click on **Save Changes**.
 
-| Parameters | Accepted Values | Default |
-| ----------- | ----------- |------------|
-| Rule Name|String|Empty
-Rule Message|String|Empty
-Rule Priority|Integer|0
-URI|URI Regex|Empty
-Method|URL / Headers / Header Name / Header Value / Specific Header Value Data / Cookies / Cookie Name /  Cookie Value / Specific Cookie Value Data / Body / Body Argument Name / Body Argument Value / Specific Body Value Data / Arguments / Argument Name / Argument Value / Specific Argument Value Data / Variable|ALL
-HTTP Response Code|400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 428, 429, 431, 440, 444, 449, 450, 451, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 520, 521, 522, 523, 524, 525, 526, 527, 530|None
-Rule Action|No Action / Send Response|No Action
-
 
 ### Description
-
-##### **HTTP Response Codes**
-
-HTTP error codes for which the custom error page needs to be shown. These are the response codes that the back-end sends in returns.
-
-##### **Error Handling**
-
-If this field is enabled, then the custom error page will be displayed. If it is disabled, then the default server error page will be displayed.
-
-##### **Custom Error Page**
-
-Select the desired custom error page which will be displayed when the specified error occurs. Or click the **Add** button which redirects to the custom pages screen to create a custom page and add HTML content and then select it from the drop-down list.
-
-:::note Note
-We can globally disable error handling from WAF in the operational settings under advanced settings that we will learn later in Operational Settings.
-:::
 
 ##### **Rule Name**
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Rule Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: String
+
+    Default: Blank 
 
 ##### **Rule Priority**
 
 Specify the priority for the rule for execution when matched with the request.
 
-##### **URI**
+    Accepted values: Integer
 
-Specify the URI on which the tamper rule will be applied.
+    Default: 0 
 
-Example /login
+##### **Add Condition**
 
-##### **Method**
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-Select the HTTP method for the rule to extract when matched with the request.
-
-##### **HTTP Response Codes**
-
-User can mention the HTTP response code based on the custom error rule name.
-
-##### **Rule Action**
-
-Specifies the action to be executed when this is gets triggered
-
-##### **Custom Error Page**
-
-User can add custom error page that will be visible to end-users.
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)

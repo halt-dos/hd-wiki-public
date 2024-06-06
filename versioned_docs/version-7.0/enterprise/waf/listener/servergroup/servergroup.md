@@ -26,35 +26,59 @@ Monitoring, when you get the state of the server or server group with one comman
 2. Click **Add Server Group** and Configure details.
 3. Click **Save Changes**
 
-| Parameters | Accepted Values | Default |
-| ----------- | ----------- | --------- |
-| Group Name| String | Blank
-| Monitor | Select from existing monitors | None
-| SSL | Drop-Down | Disabled
-| Max Connection | Integer| Blank
-| Connection Timeout|Integer| Blank
-| Send Timeout| Integer| Blank
-|Read Timeout |Integer| Blank
-
 ### Description
 
 ##### **Group Name** 
 Specify a user-friendly name to identify the server group. The group name takes alphanumeric input.  
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Monitor**
 This option allows user to attach any existing monitor to the server group.
+
+    Accepted values: Select from existing monitors
+
+    Default: None 
 
 ##### **SSL**
 This option allows user to enable or disable SSL for the server group.
 
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
 ##### **Max Connection**
 This option allows user to specify the number of maximum connections allowed to the specific server.
+
+    Accepted values: Integer
+
+    Default: Blank 
 
 ##### **Connection Timeout**
 This option allows user to specify the connection timeout for the server.
 
+    Accepted values: Integer
+
+    Default: 100
+
+    Metrics: Seconds
+
 ##### **Send Timeout**
 This option allows user to specify to send timeout for the server. 
- 
+    
+    Accepted values: Integer
+
+    Default: 100 
+
+    Metrics: Seconds 
+
 ##### **Read Timeout**
 This option allows user to specify the read timeout for the server.
+
+    Accepted values: Integer
+
+    Default: 100 
+
+    Metrics: Seconds

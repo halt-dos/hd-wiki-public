@@ -15,46 +15,71 @@ Discovery displays all the parameters learned from the request i.e. headers, coo
 2. Configure your settings
 3. Click **Save Changes**
 
-| Parameter| Description | Accepted Values | Default
-| ----------- | ----------- | ----------- |----- |
-| Add URI|Enter the URI|String|Blank
-Regex |Enter the specific URI regex|Regex|Blank
-Description|Enter the URI description|String|Blank
-Method|Select the method |Drop-down|POST
-Fixed URL|Enable it for fixed URL|Boolean|False
-Parameter Name|Enter parameter name|String|Blank
-Parameter Type|Select from the drop-down|Drop-down|Blank
-
 ###  Description
+
 ##### **HTTP Method**
 
 Users are allowed to specify the HTTP method.
+
+    Accepted values: GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: 10 
 
 ##### **Add URI**
 
 Users can enter the URI.
 
+    Accepted values: URI
+
+    Default: 10 
+
 ##### **Regex**
 
 Users can enter the specific URI regex.
+
+    Accepted values: Regex
+
+    Default: 10 
 
 ##### **Description**
 
 Users can enter the URI description.
 
-##### **Method**
+    Accepted values: String
 
-Users can select the method.
+    Default: Blank 
 
 ##### **Fixed URL**
 
 Users can enable it for fixed URL.
 
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
 ##### **Parameter Name**
 
 Users can enter parameter name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Parameter Type**
 
 Users can select the parameter type from drop down menu.
+
+    Accepted values: INTEGER / STRING / DECIMAL_POINTS / URL / URL_OR_IP_ADDRESS / PATH / IP_ADDRESS / NOT_HTML / FILE / XML / JSON / EMAIL / PHONE_NUMBER / CREDIT_CARD / AADHAR_NUMBER / SOCIAL_SECURITY_NUMBER
+
+    Default: None
+
+##### **Parameter Description**
+
+Users can enter Parameter Description
+
+    Accepted values: String
+
+    Default: Blank 
+
+
 
