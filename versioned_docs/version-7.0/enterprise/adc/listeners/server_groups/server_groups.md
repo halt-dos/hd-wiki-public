@@ -28,11 +28,6 @@ Server Groups provide user two functionality at a page to add Server Group and V
 3. Configure your settings. 
 4. Click **Save Changes**.
 
-| SETTINGS    | ACCEPTED VALUE | DEFAULT  |
-|-------------|----------------|----------|
-| Group Name  | String         | Blank    |
-| Monitor     | Drop-Down      | None     |
-| SSL         | Drop-Down      | Disabled |
 
 ### Description:
 

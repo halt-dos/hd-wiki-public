@@ -20,19 +20,6 @@ Configuration of upstream servers in a server group can be modified on-the-fly b
 
 3.Set the configurations and **Save Changes**
 
-| PARAMETERS | ACCEPTED VALUES | Default
-| ----------- | ----------- | --------- |
-| Server|IP|Blank
-Port|Integer|80
-Weight|Integer|1
-Remote|TRUE/FALSE|FALSE
-Monitor|Existing monitor|NONE
-Backup|TRUE/FALSE|FALSE
-Mode|TRUE/FALSE|FALSE
-Max Connection|Integer|0
-Connection Timeout |Integer|0
-Send Timeout|Integer|0
-Read Timeout|Integer|0
 
 ### Description:
 
