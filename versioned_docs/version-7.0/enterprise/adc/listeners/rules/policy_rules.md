@@ -33,56 +33,51 @@ Policy rule is the feature of Haltdos SLB that allows application owners to set 
 
 User can define the rule name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Rule Message**
 
 User can define the rule message.
+
+    Accepted values: String
+
+    Default: Blank 
 
 ##### **Rule Enabled**
 
 Users can enable and disable the rule.
 
+    Accepted values: Enable / Disable
+
+    Default: Enable 
+
 ##### **Rule Priority**
 
 User can define the rule priority among various other policy rules.
+
+    Accepted values: Integer
+
+    Default: 0 
 
 ##### **Evaluation Phase**
 
 Users are allowed to specify the phase for the rule i.e. Request/Response while evaluating the request.
 
+    Accepted values: Request Phase / Response Phase
+
+    Default: Request Phase 
+
 #### Rule Action
 
 User can define what action needs to be taken in case this rule is being satisfied.
 
-#### **Rule Condition**
+    Accepted values: Integer
 
-![Policy rule2](/img/adc/v7/docs/policyrule1.png)
+    Default: 0 
 
-| SETTINGS        | ACCEPTED VALUE | DEFAULT   |
-|-----------------|----------------|-----------|
-| Find Location   | Drop-Down      | Source IP |
-| Find Parameter  | String         | Blank     |
-| Match Condition | Drop-Down      | Match IP Prefix  |
-| Match Value     | String         | Blank     |
-| Negation        | Drop-Down      | False      |
+#### **Add Condition**
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-### **Description**:
-
-##### **Find Location**
-
-User can define the source location where this condition needs to be applied.
-
-##### Find Parameter
-
-The user can define the parameter based on the location of the condition.
-
-##### Match Condition
-
-The user can define the match condition for the parameter and match value.
-
-##### Match Value
-
-The user can define what value needs to be matched with the match condition.
-
-##### Negation
-
-The user can define either to negate the condition for this rule or not.
+To configure the parameter of the conditions please refer to the following link: **Conditions**
