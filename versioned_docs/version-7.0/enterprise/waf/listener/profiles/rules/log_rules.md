@@ -52,6 +52,8 @@ Users are allowed to specify the HTTP method on which the rule will be applied i
 
     Default: ALL  
 
+#### **Attribute**
+
 ##### **Find Location**
 Users can define the source location where this condition needs to be applied.
 

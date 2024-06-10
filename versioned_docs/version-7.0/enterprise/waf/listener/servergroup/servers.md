@@ -42,7 +42,15 @@ This option allows user to set the port for the back-end application server for 
     Min: 0
 
     Default: 80
-    
+
+##### **DNS Record Type** 
+
+It is used to map domain names to various types of data such as IP addresses and services.
+
+    Accepted values: ANY / A Record / AAAA Record
+
+    Default: ANY
+
 ##### **Weight** 
 
 This option allows user to specify the weight of the server. Higher the weight more requests will be served by that server. 
@@ -86,6 +94,14 @@ This option allows user to make the server active/inactive. When marked Down the
     Accepted values: Ready / Down
 
     Default: Ready
+
+##### **Slow Start** 
+
+This option allows user to specify the Slow Start for the server.
+
+    Accepted values: Integer
+
+    Default: 0
 
 ##### **Max Connection** 
 

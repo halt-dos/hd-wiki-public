@@ -16,18 +16,6 @@ Any parameter from the Request/Response can be stored in a variable.
 2. Create rules with different conditions
 3. Click on **Save Changes**
 
-| Parameters | Accepted Values | Default
-| ----------- | ----------- |---------- |
-| Rule Name|String|None
-Rule Message|String|None
-Rule Priority|Integer|None
-Evaluation Phase|Drop-down|Request
-Variable|Drop-down|Blank
-Mutation Action|Drop-down|SET
-Value|String|None
-
-![variable rules](/img/waf/v7/docs/variablerule1.png)
-
 ### Description
 ##### **Rule Name** 
 

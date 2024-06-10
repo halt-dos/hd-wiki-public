@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Behavior Rule
 ### Overview
-The Behavior rule is a feature of Haltdos WAF that that allows application owners to identify the malicious user intent with the help of the behavioral engine.
+The Behavior rule allows application owners to identify the malicious user intent with the help of the behavioral engine.
    
 ![Behavior Rule](/img/waf/v7/docs/behavior_rule.png)
    

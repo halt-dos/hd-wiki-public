@@ -27,7 +27,7 @@ Our WAF provides the facility of in-built antivirus. Also, the user can set up t
 ##### **Antivirus Mode**
 This field specifies the mode for antivirus scan against all uploaded files (if any). There are three modes for Antivirus: Disabled, Internal, External.
 
-    Accepted values: DISABLED /INTERNAL/ EXTERNAL
+    Accepted values: DISABLED / INTERNAL / EXTERNAL
 
     Default: DISABLED  
 

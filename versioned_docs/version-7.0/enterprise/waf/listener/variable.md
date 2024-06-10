@@ -15,6 +15,14 @@ sidebar_position: 8
 
 ### Description
 
+##### **Variable Scope**
+
+Users can specify the scope of the variable. Users can select any of the following: **GLOBAL**, **TRANSACTION**, **SESSION**, **CUSTOM**.
+
+    Accepted values: GLOBAL / TRANSACTION / SESSION / CUSTOM
+
+    Default: GLOBAL 
+
 ##### **Variable Name**
 
 Users can specify the user-friendly variable name.
@@ -30,14 +38,6 @@ Users can specify the variable type either it is string or Integer.
     Accepted values: String / Integer
 
     Default: String 
-
-##### **Variable Scope**
-
-Users can specify the scope of the variable. Users can select any of the following: **GLOBAL**, **TRANSACTION**, **SESSION**, **CUSTOM**.
-
-    Accepted values: GLOBAL / TRANSACTION / SESSION / CUSTOM
-
-    Default: GLOBAL 
 
 ##### **Default Value**
 

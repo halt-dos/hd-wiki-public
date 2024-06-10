@@ -13,21 +13,6 @@ Profile Setting specifies all the operational settings for user different applic
 1. Go to **WAF** > **Listener** > **Profiles** > **Settings**.
 2. Configure your settings.
 3. Click on Save Changes.
-
-| Parameters                   | Accepted Values | Default |
-|------------------------------|-----------------|---------|
-| Operational Mode             | Drop-Down       | Bypass  |
-| Paranoia Level               | Drop-Down       | Low     |
-| Enable Signature Validation  | Boolean         | False   |
-| Enable LibInjection          | Boolean         | False   |
-| Application Type             | Drop-Down       | Other   |
-| Application Framework            | Drop-Down       | Other   |
-| Application Language           | Drop-Down       | Other   |
-| Application Server            | Drop-Down       | Other   |
-| Application Database             | Drop-Down       | Other   |
-| Application OS            | Drop-Down       | Other   |
-| User Groups                  | Drop-down       | Blank   |
-| Temporary Blacklist Duration | Integer         |    0     |
    
 ## Description
 
@@ -84,21 +69,6 @@ Specify the type of application (i.e. website or web service). A website is a co
     Accepted values: WEBSITE / WEB SERVICE / WEB SOCKET
 
     Default: WEBSITE  
-
-##### **Human Verification Challenge**  
-On selecting 'Website' in the Application Type, the user must select what kind of human verification challenge they want for the website.
-
-    Accepted values: None / Javascript challenge with loading / javascript Challenge with Message / Cryptographic Challenege / Captcha Challenge 
-
-    Default: None  
-
-##### **Failed Challenge Threshold**
-On selecting 'Website' in the Application Type, the user must mention the number of times before suspending client IP.
-
-    Accepted values: Integer
-
-    Default: 3  
-
 
 ##### **Application Framework**
 Specify the framework used for developing the application (if any).

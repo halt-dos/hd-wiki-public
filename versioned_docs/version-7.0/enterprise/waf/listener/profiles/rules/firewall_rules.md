@@ -4,7 +4,8 @@ sidebar_position: 3
 # Firewall Rule
 
 ### Overview
- A Firewall Rule is used to set up regulations on a particular domain. When a request is made to that domain, the WAF checks for the violation of a rule and carries out the appropriate action that is configured by the User.
+ A Firewall Rule is used to set up regulations on a particular domain. When a request is made to that domain, the WAF checks for the violation of a rule and carries out the appropriate action that is configured by the User.  
+ 
 ![Firewall Rule](/img/waf/v7/docs/firewallrule.png)
 
 The following actions are available to the User :
@@ -22,7 +23,6 @@ The following actions are available to the User :
 12. **SKIP LEARNING** - If the request satisfies the rule, then no learning will be performed on the current request.
 13. **SEND EMPTY RESPONSE** - If the request satisfies the rule, the end-user will get empty response / blank page in return.
 
-![Firewall Condition](/img/waf/v7/docs/firewallrule1.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listener** >  **Profiles** > **Rules** > **Firewall Rules**
@@ -74,6 +74,8 @@ Users are allowed to specify the action to be taken for the request matched i.e.
     Accepted values:  Record Request / DROP & RECORD REQUEST / BYPASS REQUEST / TEMPORARY BLACKLIST SRC IP / REDIRECT / SEND CAPCHA CHALLENEGE / SEND RESONSE WITH STATUUS CODE / SEND CUSTOM RESPONSES / CHANGE RESPONSE CODE / NO ACTION / SEND EMPTY RESPONSES
 
     Default: Record Request  
+
+#### **Match Criteria**
 
 ##### **Match Condition**
 This drop-down allows to set the match condition i.e. Pattern Match or Pattern Not Match for the request.

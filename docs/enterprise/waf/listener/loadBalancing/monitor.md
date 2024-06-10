@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 3
 ---
 
-# Monitors
+# Health Monitors
 Continually test your upstream servers, avoid the servers that have failed, and gracefully add the recovered servers into the server group.
 
 ---

@@ -4,7 +4,7 @@ sidebar_position: 6
 # Response Rule
 ### Overview
 
-Response Filtering is a feature of Haltdos WAF that allows application owners to filter responses from back-end application servers for HTTP requests on matching specified URL patterns.
+Response Filtering allows application owners to filter responses from back-end application servers for HTTP requests on matching specified URL patterns.
    
 ![Response Rule](/img/waf/v7/docs/responserule.png)
    

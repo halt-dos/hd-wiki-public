@@ -103,14 +103,6 @@ Specify the attribute value which will be mentioned in the attribute.
 
     Default: Blank 
 
-##### **Parameter**
-
-This field specifies the name of the header/cookie/ arguments on which action will be performed.
-
-    Accepted values: String
-
-    Default: Blank 
-
 ##### **Add Condition**
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.

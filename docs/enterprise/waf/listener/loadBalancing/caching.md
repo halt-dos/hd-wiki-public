@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Caching
 ##### It store data locally in order to speed up the performance
 ---

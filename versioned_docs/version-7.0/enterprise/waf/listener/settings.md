@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Settings
+# Operational
 Configure Operational settings of Listeners.
 
 ---

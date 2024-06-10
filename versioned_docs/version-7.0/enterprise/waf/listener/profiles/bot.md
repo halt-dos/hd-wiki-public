@@ -122,7 +122,7 @@ This field allows you to enable Haltdos Advance Bot Protection for an incoming r
 
     Accepted values: NONE / FINGERPRINT / TOKEN VALIDATION / ANY
       
-    Default: NO ACTION  
+    Default: NONE  
 
 - **NONE** :
 Don't perform any action  

@@ -40,6 +40,14 @@ Users are allowed to set the priority of the rule. If two rules have the same pr
 
     Default: 0 
 
+##### **Server Group** 
+
+Select the server group.
+
+    Accepted values: List of Server group
+
+    Default: Blank 
+
 ##### **Add Condition**
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.

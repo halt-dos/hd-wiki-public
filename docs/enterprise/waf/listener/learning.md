@@ -7,7 +7,7 @@ Enable Machine Learning in WAF
 
 ---
 
-### Overview 
+### Overview
 
 Haltdos’s security is adaptive through automated learning and can make policy recommendations by learning about application behavior, which can make it easier for security teams to manage policies. Administrators retain full control over the activation and deactivation of each ruleset, with the opportunity to screen for false-positive before committing to production.
 

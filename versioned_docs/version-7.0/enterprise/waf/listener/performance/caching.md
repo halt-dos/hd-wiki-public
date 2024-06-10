@@ -6,30 +6,14 @@
 When caching is enabled, WAF saves responses in a directory and uses them to respond to clients without having to proxy requests for the same content every time.
 
 ![Caching](/img/waf/v7/docs/performance_caching.png)
+  
+![caching](/img/waf/v7/docs/prformance_caching1.png)  
 
 ## How to Use :
 
 1. Go to **WAF** > **Listener** > **Performance** > **Caching**
 2. Click on **Add the Caching Setting**
 3. Click on **Save Changes**
-
- | Parameters | Accepted Values | Default |
- | ----------- | ----------- | --------- |
- | Enable Caching | Boolean | Disabled
- | Re-validate Cache | Boolean | Enabled
- | Enable Background Update | Boolean | Disabled
- | Enable Cache Locking| Boolean | Disabled
- | Cache Methods | HTTP Methods | GET, HEAD
- | Maximum Request Cache Size | Integer | Blank
- | URI Filter | Regex | Blank
- | Mime Type Filter | String| Blank
- | Use Stale Cache | Type of errors to be cached | HTTP 500 Errors
- | Response Codes | Integer| Blank
- | Minimum Use Before Caching | Integer| 3
- | Cache Validity | Integer| 5
- | Browser Cache Expiry | Integer | 0
-
-![caching](/img/waf/v7/docs/prformance_caching1.png)  
 
 ### Description 
 
@@ -107,9 +91,9 @@ This field allows performing caching on the specific Mime type.
 
 This field allows to specify the use of stale cache for errors when the back-end server is unavailable.
 
-Accepted values: Type of errors to be cached    
+    Accepted values: Type of errors to be cached    
 
-Default: error / invalid_header / updating / timeout / http_500 / http_502 / http_503 / http_504 
+    Default: error / invalid_header / updating / timeout / http_500 / http_502 / http_503 / http_504 
 
 ##### **Response Codes**
 

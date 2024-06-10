@@ -29,7 +29,7 @@ Users can specify the duration after which the token should be rotated. By defau
 
     Accepted values: Integer
 
-    Default: 60 
+    Default: 86400
 
 ##### **Token Error Margin Duration**
 

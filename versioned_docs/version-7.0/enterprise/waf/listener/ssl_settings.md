@@ -64,6 +64,20 @@ This option allows users to specify the number of SSL session cache for HTTPS re
 
     Default: 10  
 
+##### **Enable SSL Stapling**
+Specify enabling SSL stapling of OCSP responses
+
+    Accepted values: Enable / Disable
+
+    Default: Enable
+
+##### **Verify OCSP Responses**
+Specify enabling verification of OCSP responses from Server
+
+    Accepted values: Enable / Disable
+
+    Default: Enable
+
 ##### **SSL Session Timeout**
 This option allows users to specify the SSL session timeout in minutes for every HTTPS request on the listener.
 
@@ -82,12 +96,26 @@ This option specifies if the solution should enable client certificate authentic
 
     Accepted values: Enabled / Disabled / Optional
 
-    Default: Blank
+    Default: Disabled
 
 ##### **Client Certificate**
 This option specifies an SSL certificate for Client Authentication.
 
     Accepted values: Select Client Certificate
+
+    Default: Blank
+
+##### **Certificate Revocation List**
+Specify client certificate revocation list
+
+    Accepted values: Select certificate revocation list
+
+    Default: NONE
+
+##### **Client Certificate Raw Header**
+Specify header name for forwarding raw SSL client certificate to upstream
+
+    Accepted values: String
 
     Default: Blank
 

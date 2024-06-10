@@ -54,7 +54,7 @@ This option allows user to specify the number of maximum connections allowed to 
 
     Accepted values: Integer
 
-    Default: Blank 
+    Default: 0
 
 ##### **Connection Timeout**
 This option allows user to specify the connection timeout for the server.

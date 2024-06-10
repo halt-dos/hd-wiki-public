@@ -20,19 +20,6 @@ Monitoring provides a comprehensive overview of the status and performance of th
 4. Now go to WAF > Listener > Server Group 
 5. Add the Monitor to the server group / or server as required  
 
-
-| Parameter | Accepted Values  | Default Values |
-| ----------- | ----------- | ----------- |
-| Monitor Name| String | Blank |
-| Enabled Health Check | Enabled/Disabled | Disabled |  
-| Health Check Type | TCP/HTTP/SSL Hello/HTTPS/etc | TCP |
-| Port | Port Number | 80 |
-| Check URI | URI | GET |
-| Match Status | Response Code | 200|
-| Match Content | Content to be matched in header/body | Blank |
-| Fail Threshold | Integer | 1|
-| Pass Threshold | Integer | 1|
-
 ### Description
 
 ##### **Monitor Name**
@@ -95,7 +82,7 @@ Sets the number of passes that must occur during the heath check interval period
 
 ##### **Health Check Type**
 
-    Accepted values: TCP / HTTP / SSL HELLO / HTTPS
+    Accepted values: TCP / HTTP / SSL HELLO / HTTPS / ICMP / SNMP / DNS / Script
 
     Default: TCP  
 
@@ -116,5 +103,16 @@ Health check sends SNMP query, if unable to receive response, then we make that 
  - **Custom Script**: 
 Health check runs custom script (shell script, perl script or Lua script). The script is executed with parameters of server IP and server Port. If the script responds with 1, heath check is passed. If the script responds with 0, we make that server as unhealthy  
 
+##### **Health Script**
+On selecting Script the user have to select custom health check script
+
+    Accepted values: Select health check report
+
+    Default: Blank 
+
 ##### **Port**
-Specify a new port with the port parameter
+Specify a user-friendly name to monitor.  
+
+    Accepted values: Integer
+
+    Default: Blank 

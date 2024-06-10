@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# SSL Settings
+# SSL Management
 It provides functionality to support SSL offloading based on configurations.
 
 ---

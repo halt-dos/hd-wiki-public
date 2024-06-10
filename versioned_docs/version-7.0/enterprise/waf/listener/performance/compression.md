@@ -26,6 +26,14 @@ To enable compression, enable the toggle button. It compresses the responses to 
 
     Default: Disabled
 
+##### **Enable Decompression**
+
+Enable decompression for unsupported clients.  
+
+    Accepted values: Enabled / Disabled 
+
+    Default: Disabled
+
 ##### **Compression Level**
 
 The level of compression to be achieved. The greater the number more the compression. The range is 1 - 9.
