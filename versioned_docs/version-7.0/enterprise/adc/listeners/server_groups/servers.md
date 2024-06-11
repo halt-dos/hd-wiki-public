@@ -5,7 +5,8 @@ sidebar_position: 1
 # Servers
 
 ![servers](/img/adc/v7/docs/server.png)
-
+  
+![servers2](/img/adc/v7/docs/server1.png)
 ### How to Use:
 
 1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Server Groups**.
@@ -17,8 +18,6 @@ sidebar_position: 1
 4. Configure your settings. 
 
 5. Click **Save Changes**.
-
-![servers2](/img/adc/v7/docs/server1.png)
 
 ### Description:
 
@@ -82,7 +81,7 @@ This option allows users to configure the server ready or down setting.
 
 This option allows user to select HTTP version while forwarding request to the backend server.
 
-    Accepted values: String
+    Accepted values: ANY / HTTP 1.1 / HTTP 2.0
 
     Default: Blank 
 

@@ -8,14 +8,14 @@ sidebar_position: 5
 ### Overview
 Monitoring provides a comprehensive overview of the status and performance of the Server Group  and/or individual real servers inside the server group. If a monitor is attached to a server group, then it will get applied to all the servers inside that group automatically. If a monitor is attached to a particular server then it will override the configuration of the server-group monitor. Health Checks computes an overall health state for each upstream server in the listener. Backend(upstream) that responds successfully for the configured number of times is considered healthy. Backend(upstream) that fails to respond successfully for a separate number of times is unhealthy.
 
+![monitor1](/img/adc/v7/docs/monitor.png)
+
 ### How to Use:
 
 1. Go to **Stack** > [**SLB**](/enterprise/adc)  > [**Listeners**](./listeners.md) > **Monitors**.
 2. Select the **Add Monitor**.
 3. Configure your settings. 
 4. Click **Save Changes**.
-
-![monitor1](/img/adc/v7/docs/monitor.png)
 
 ### Description
 

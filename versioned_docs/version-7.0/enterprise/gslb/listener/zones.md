@@ -18,11 +18,6 @@ Zones provide you an opportunity to create and manage domains. End users can als
 3. Configure your settings.
 4. Click **Save**.
 
-| Settings | Accepted Values | Default 
-| ----------- | ----------- | -------- | 
-| Zone Name  | String  | Blank 
-| DNSSEC  | Boolean  |    0
-
 ---
 
 ### Records
@@ -32,6 +27,20 @@ Zones provide you an opportunity to create and manage domains. End users can als
 A DNS Record is a database entry that maps a URL to a specified IP address. These records are then stored in the DNS Servers, which can be accessed by different users globally using the URL address. When you search the URL, the browser forwards the URL to the DNS server, and it redirects you to the specific Web server. This web server then serves the site or directs the user to an email server that takes care of the incoming mail.
 
 ![records](/img/gslb/v7/docs/zones.png)
+
+**Zone Name**  
+Specify to respond with refuse on queries with no RD flag.  
+
+    Accepted values: String
+
+    Default: Blank
+
+**DNSSEC**  
+Specify to respond with refuse on queries with no RD flag.  
+
+    Accepted values: Enable / Disable
+
+    Default: Disable
 
 #### Types of DNS Records :
 

@@ -18,15 +18,6 @@ Policy rule is the feature of Haltdos SLB that allows application owners to set 
 4. Configure your settings. 
 5. Click **Save Changes**.
 
-| SETTINGS      | ACCEPTED VALUE | DEFAULT      |
-|---------------|----------------|--------------|
-| Rule Name     | String         | Blank        |
-| Rule Message  | String         | Blank        |
-| Rule Enabled  | Boolean        | True         |
-| Rule Priority | Integer        | 0            |
-| Evaluation Phase | Drop-down        | Request Phase            |
-| Rule Action   | Drop Down      | Drop Request |
-
 ### Description
 
 ##### **Rule Name**
@@ -77,7 +68,8 @@ User can define what action needs to be taken in case this rule is being satisfi
 
     Default: 0 
 
-#### **Add Condition**
+##### **Add Condition**
+
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: **Conditions**
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/adc/listeners/rules/conditions)

@@ -13,40 +13,15 @@ Users are allowed to configure many operational settings for the Listeners.
 
 ![Listener settings1](/img/adc/v7/docs/listenersetting.png)
 
+![Listener settings2](/img/adc/v7/docs/listenersetting1.png)
+
+![Listener settings3](/img/adc/v7/docs/listenersetting2.png)
+
 ### How to Use:
 
 1. Go to [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Operational Settings**
 2. Configure your settings
 3. Click **Save Changes**.
-
-![Listener settings2](/img/adc/v7/docs/listenersetting1.png)
-
-| PARAMETERS                   | ACCEPTED VALUES | DEFAULT  |
-|------------------------------|-----------------|----------|
-| Enable IPv6                  | Boolean         | Enabled  |
-| Enable Http 2.0              | Boolean         | Disabled |
-| Enable WebSocket             | Boolean         | Disabled |
-| Enable HTTP Keepalive        | Boolean         | Disabled |
-| Enable Device Detection      | Boolean         | Disabled |
-| Operational Mode             | Drop-down       | Reverse Proxy |
-| Proxy Protocol               | Drop-down       | None     |
-| Enable Logging               | Boolean         | Enabled  |
-| Client Connection Timeout    | Integer         | 30       |
-| Client Resume Timeout        | Integer         | 1        |
-| Max Concurrent Connections   | Integer         | 0        |
-| Client Keep-Alive Timeout    | Integer         | 2        |
-| HTTP Request Timeout         | Integer         | 10       |
-| User Session Duration        | Integer         | 60       |
-| Session Cookie               | String          | Blank    |
-| Max Concurrent User Sessions | Integer         | 0        |
-| MAX Session Exceeded Action  | Drop-down       | Redirect |
-| Max Session Forward URL      | String          | Blank    |
-| Max Session Exceeded Waiting Page | Drop-down  | Blank
-| Remote IP Header             | String          | Blank    |
-| Server Aliases               | String          | Blank    |
-| Virtual IPs                  | String          | Blank    |
-
-![Listener settings3](/img/adc/v7/docs/listenersetting2.png)
 
 ### Description:
 
@@ -93,8 +68,6 @@ This option allows users to detect devices and its OS on the client-side in the 
 ##### **Operational Mode**
 
 Users are allowed to specify Operational mode for the application. There are two modes can be selected:
-1. Reverse Proxy 
-2. Transparent
 
     Accepted values:  Reverse Proxy / IP Transparency
 
@@ -104,9 +77,9 @@ Users are allowed to specify Operational mode for the application. There are two
 
 Users are allowed to specify Proxy protocol for the application.
 
-    Accepted values: String
+    Accepted values: None / Proxy Protocol V1 / Proxy Protocol V2
 
-    Default: Blank 
+    Default: NONE 
 
 ##### **Enable Logging**
 
@@ -184,25 +157,9 @@ This option is only applicable in the case of service type HTTP. This option all
 
 Users can specify the action to take when max session count exceeds.
 
-    Accepted values: String
+    Accepted values: Drop / Send Custom Response / Redirect
 
-    Default: Blank 
-
-##### **Max Session Forward URL**
-
-Users can specify the redirected URL when max session count exceeds. This option will only visible when user has selected redirect option under 'Max Session Exceeded Action' option.
-
-    Accepted values: String
-
-    Default: Blank 
-
-##### **Max Session Exceeded Waiting Page**
-
-Users are allowed to specify the waiting room page to show when max session count exceeds. This option will only visible when user has selected send custom response option under 'Max Session Exceeded Waiting Page' option.
-
-    Accepted values: String
-
-    Default: Blank 
+    Default: Drop 
 
 ##### **Remote IP Header**
 
@@ -227,3 +184,21 @@ This option is only applicable in the case of service type HTTP. This option all
     Accepted values: String
 
     Default: Blank 
+
+#### **Add Port**
+
+##### **Port**
+
+Add Port here.
+
+    Accepted values: Integer
+
+    Default: Blank 
+
+##### **SSL Enabled**
+
+Select whether to enable or disable the SSL.
+
+    Accepted values: True / False
+
+    Default: False 

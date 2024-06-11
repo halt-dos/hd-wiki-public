@@ -6,6 +6,8 @@ sidebar_position: 3
 
 ---
 
+![snmp](/img/adc/v7/docs/snmp.png)
+
 ### How to Use:
 
 1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > [** Server Groups**](./server_groups.md).
@@ -13,8 +15,6 @@ sidebar_position: 3
 3. Select the **Add Server option**.
 3. Configure your settings. 
 4. Click **Save Changes**.
-
-![snmp](/img/adc/v7/docs/snmp.png)
 
 ### Description:
 
@@ -38,9 +38,9 @@ This option allows users to specify the SNMP port.
 
 This option allows users to specify the SNMP version for monitoring.
 
-    Accepted values: String
+    Accepted values: SNMP v1 / SNMP v2 / SNMP v2c / SNMP v3
 
-    Default: Blank 
+    Default: SNMP v1 
 
 ##### **SNMP Community**
 
@@ -62,9 +62,9 @@ This option allows users to specify the SNMP security level.
 
 This option allows users to specify SNMP checks.
 
-    Accepted values: CPU Measurement
+    Accepted values: CPU Measurement / RAM Measurement / CPM & RAM Measurement
 
-    Default: Blank 
+    Default: CPU Measurement 
 
 ##### **SNMP Timeout**
 

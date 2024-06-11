@@ -17,16 +17,6 @@ Error Rules is a feature of Haltdos SLB that allows application owners to show c
 4. Configure your settings. 
 5. Click **Save Changes**
 
-| SETTINGS            | ACCEPTED VALUE | DEFAULT              |
-|---------------------|----------------|----------------------|
-| Rule Name           | String         | Blank                |
-| Rule Message        | String         | Blank                |
-| Rule Enabled        | Boolean        | True                 |
-| Rule Priority       | Integer        | 0                    |
-| HTTP Response Codes | Drop-down      | Blank                |
-| Rule Action         | Drop-down      | Send Custom Response |
-| Custom Error Page   | File upload    | None                 |
-
 ### Description
 
 ##### **Rule Name**
@@ -49,9 +39,9 @@ User can enter a rule message to add a description on the rule name.
 
 Users can enable or disable the rule.
 
-    Accepted values: True / False
+    Accepted values: Enabled / Disabled
 
-    Default: 0 
+    Default: Enabled 
 
 ##### **Rule Priority**
 
@@ -60,6 +50,8 @@ User can define the rule's priority among various other custom error rules.
     Accepted values: Integer
 
     Default: 0 
+
+#### **Rule Condition**
 
 ##### **HTTP Response Codes**
 

@@ -7,7 +7,8 @@ sidebar_position: 2
 
 ---
 ![SSL Settings](/img/adc/v7/docs/sslsetting.png)
-
+  
+![SSL Settings2](/img/adc/v7/docs/sslsetting1.png)  
 ### How to Use:
 
 1. Go to [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **SSL Settings**
@@ -16,31 +17,9 @@ sidebar_position: 2
 
 3. Click **Save Changes**. 
 
-![SSL Settings2](/img/adc/v7/docs/sslsetting1.png)
+
 
 **Configure the following parameters to set up the desired settings:**
-
-| PARAMETERS                            | ACCEPTED VALUES | DEFAULT      |
-|---------------------------------------|-----------------|--------------|
-| Enable SSL Offloading                 | Boolean         | Disabled     |
-| SSL Certificate                       | File Upload     | Blank        |
-| SSL Cipher Suites                     | Drop Down       | INTERMEDIATE |
-| SSL Session Caching                   | Integer         | 10           |
-| SSL Session Timeout                   | Integer         | 5            |
-| Client Certificate Verification       | Drop Down       | Disbaled     |
-| Client Certificate                    | File Upload     | Blank        |
-| Certificate Revocation List           | Drop-down       | Blank        |
-| Client Certificate Raw Header         | String          | Blank        |
-| Client Certificate Fingerprint Header | String          | Blank        |
-| Client Certificate Issuer Header      | String          | Blank        |
-| Client Certificate Subject Header     | String          | Blank        |
-| Client Certificate Serial Header      | String          | Blank        |
-| Client Certificate Verify Header      | String          | Blank        |
-| Client Certificate Start Date Header  | String          | Blank        |
-| Client Certificate End Date Header    | String          | Blank        |
-| Invalid Client Certificate Action     | Drop Down       | No Action    |
-| Custom Page                           | Drop Down       | Blank        |
-
 
 ### Description
 
@@ -106,7 +85,7 @@ This option allows users to specify an SSL certificate for Client Authentication
 
 This option allows users to specify an SSL certificate for Client Authentication. It provides the identity of the connecting users. User can redirect at **Client Certificate** and add certificate.
 
-    Accepted values: String
+    Accepted values: Select and add Client Certificate.
 
     Default: Blank 
 
@@ -114,7 +93,7 @@ This option allows users to specify an SSL certificate for Client Authentication
 
 Users can specify client certificate revocation list.
 
-    Accepted values: String
+    Accepted values: Select and add Revocation List
 
     Default: Blank 
 

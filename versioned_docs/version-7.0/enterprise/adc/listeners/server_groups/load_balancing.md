@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Load balancing across multiple application instances is a commonly used technique for optimizing resource utilization, maximizing throughput, reducing latency, and ensuring fault‑tolerant configurations.
 
-### Load Balancing Algorithms
+#### Load Balancing Algorithms
 This field specifies the load balancing algorithm according to the configured website.
 
 1. **ROUND ROBIN**: 
@@ -34,6 +34,12 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 9. **SNMP Metrics**: This algorithm is a dynamic load balancing algorithm. It forwards client requests to the server, which have least CPU / RAM usage. NOTE: For this algorithm to work, the server group should have SNMP monitor attached.
 
+![Load balancing](/img/adc/v7/docs/loadbalancing.png)
+
+![Load balancing](/img/adc/v7/docs/loadbalancing1.png)
+
+![Load balancing2](/img/adc/v7/docs/loadbalancing2.png)
+
 ### How to Use:
 
 1. Go to Stack > **SLB** > [**Listeners**](../listeners.md) >[** Server Groups**](./server_groups.md) > **Select Server Name** > **Load Balancing**  
@@ -42,22 +48,15 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 3. Click **Save Changes**.  
 
-
-![Load balancing](/img/adc/v7/docs/loadbalancing.png)
-
-![Load balancing](/img/adc/v7/docs/loadbalancing1.png)
-
-![Load balancing2](/img/adc/v7/docs/loadbalancing2.png)
-
 ### Description:  
 
 ##### Connection Reuse Policy
 
 This option allows users to specify an HTTP connection reuse policy.
 
-    Accepted values: String
+    Accepted values: Always / Never / Safe / Aggressive
 
-    Default: Blank 
+    Default: Always 
 
 ##### Enable HTTP KeepAlive
 
@@ -143,7 +142,7 @@ This option allows users to specify the max number of connection retries.
 
 This option allows users to specify list of client IP to use when connecting to upstream. Leave blank for auto.
 
-    Accepted values: String
+    Accepted values: IP
 
     Default: Blank 
 

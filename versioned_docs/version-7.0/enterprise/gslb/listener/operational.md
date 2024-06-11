@@ -11,7 +11,7 @@ To set up the Operational Settings for the particular Listener.
 ## Overview
 
 Operational Setting configure different settings of Listener like the network protocol to be used. User can also configure the listener to work as Recursive DNS, Authoritative DNS or Both. Operational Setting specifies the IP address of the Listener. Basically, Operational enables the user to make custom changes on its DNS.
-
+  
 ![operational](/img/gslb/v7/docs/operational.png)
 
 ### How to Use:
@@ -26,7 +26,7 @@ Configure the following parameters to set up the desired settings:
 **Protocols**  
 Specify the resolution on specific Protocols for e.g. UDP, TCP or TLS.  
 
-    Accepted values: Specifuy protocols
+    Accepted values: Specify protocols
 
     Default: UDP / TCP
 

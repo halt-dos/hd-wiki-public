@@ -52,7 +52,13 @@ This option allow user to select filter type it can be PATTERN, SUFFIX, DOMAIN o
 
     Default: ALL 
 
-**Condition Action** 
+**Condition Action**  
+
+User can select the condition action. 
+
+    Accepted values: DROP Request / DENY / ByPass Request / Answer / Refuse / Forward / Force TCP
+
+    Default: DROP Request 
 
 This Option allows user to select what action user want to apply on the query. Following are the Option available for it 
 
@@ -70,19 +76,11 @@ This Option allows user to select what action user want to apply on the query. F
 
  7. Force TCP :- Force requestor to use TCP 
     
-**Value**
-
-User have to mention IP address when condition action is Answer or Forward. 
-
-    Accepted values: String
-
-    Default: Blank 
 
 **Parameter**
 
 User can enter condition parameter
 
-
-    Accepted values: IP Prefix
+    Accepted values: IP prefix
 
     Default: Blank 

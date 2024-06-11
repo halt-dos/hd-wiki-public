@@ -18,7 +18,6 @@ We have introduced Header rules by which application owners can manipulate reque
 4. Configure your settings. 
 5. Click **Save Changes**.
 
-
 ### Description:
 
 ##### **Rule Name**
@@ -101,3 +100,8 @@ Specify the attribute value which will be mentioned in the attribute.
 
     Default: Blank  
 
+##### **Add Condition**
+
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
+
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/adc/listeners/rules/conditions)

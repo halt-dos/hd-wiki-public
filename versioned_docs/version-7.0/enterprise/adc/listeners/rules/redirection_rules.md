@@ -36,6 +36,14 @@ User can specify message that specifies the purpose for this particular rule.
 
     Default: Blank  
 
+##### **Rule Enabled**
+
+Specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: Enabled / Disabled
+
+    Default: Enabled  
+
 ##### **Rule Priority**
 
 The user can specify the priority for this particular rule.

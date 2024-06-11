@@ -18,14 +18,6 @@ Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. 
 
 **Configure the following parameters to set up the desired settings:**
 
-| Parameters              | Accepted value       |  Type          |
-|-------------------------|----------------------|----------------|
-| Blacklisted Countries   | Drop Down            | Blank          |
-| Whitelisted IP Prefixes | IP address with CIDR | Blank          |
-| Blacklisted IP Prefixes | IP address with CIDR | Blank          |
-| Bad Reputation Traffic  | Drop Down            | No Action      |
-| BlackListed ASN         |   String             | Blank          |
-
 ### Description:
 
 ##### **Blacklisted Countries**
@@ -59,9 +51,9 @@ This section specifies the list of IPs that will be permanently disallowed from 
 
 Users can specifies the action to be performed on traffic from suspicious IPs.
 
-    Accepted values: String
+    Accepted values: NO ACTION / DROP
 
-    Default: Blank 
+    Default: NO ACTION 
 
 ##### BlackListed ASN 
 
