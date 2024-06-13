@@ -20,82 +20,93 @@ Rate Limiting is a feature of Haltdos SLB that allows application owners to enfo
 
 ![Rate limit rule](/img/adc/v7/docs/ratelimit1.png)
 
-| SETTINGS       | ACCEPTED VALUE | DEFAULT      |
-|----------------|----------------|--------------|
-| Rule Name      | String         | Blank        |
-| Rule Message   | String         | Blank        |
-| Rule Enabled   | Boolean        | True         |
-| Rule Priority  | Integer        | 0            |
-| Rule Action    | Drop Down      | Drop Request |
-| Max Rate       | Integer        | 10           |
-| Track Limit    | Integer        | 20           |
-| Track Duration | Integer        | 1            |
-
 ### Description:
 
 ##### **Rule Name**
 
 The user can define the rule name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Rule Message**
 
 The user can define the rule message.
+
+    Accepted values: String
+
+    Default: Blank
 
 ##### **Rule Enabled**
 
 Users can enable or disable the rule.
 
+    Accepted values: Enabled / Disabled
+
+    Default: Enabled 
+
 ##### **Rule Priority**
 
 The user can define the rule priority for this particular rule among various other rules in Rate Limit Rules
+
+    Accepted values: Integer
+
+    Default: 0 
 
 ##### **Rule Action**
 
 The user can define what action needs to be taken when this rule condition is matched.
 
+    Accepted values: Drop & Record Request / Record Request / Bypass Request / Temprorary Blacklist Src IP / Send Captcha CHallenege
+
+    Default: Record Request  
+
 ##### **Max Rate**
 
 The user can define the request rate for the page
+
+    Accepted values: Integer
+
+    Max: 1000000
+
+    Min: 0
+
+    Default: 10  
+
+    Metric: Per Second 
 
 ##### **Track Limit**
 
 The user can define the track limit in order to track if the rate is exceeding the limit or not.
 
+    Accepted values: Integer
+
+    Max: 1000000
+
+    Min: 0
+
+    Default: 20  
+
+    Metric: Count
+
 ##### **Track Duration**
 
 Specify the time duration for which the rule will limit the request.
 
-### **Rule Condition**
+    Accepted values: Integer
 
-![Rate Limit rule](/img/adc/v7/docs/ratelimit2.png)
+    Max: 3600
 
-| SETTINGS        | ACCEPTED VALUE | DEFAULT   |
-|-----------------|----------------|-----------|
-| Find Location   | Drop-Down      | Source IP |
-| Find Parameter  | String         | Blank     |
-| Match Condition | Drop-Down      | Match IP Prefix  |
-| Match Value     | String         | Blank     |
-| Negation        | Drop-Down      | False     |
+    Min: 0
 
+    Default: 1  
 
-### Description
+    Metric: Second 
 
-##### **Find Location**
+##### **Add Condition**
 
-User can define the source location where this condition needs to be applied.
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-##### **Find Parameter**
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/adc/listeners/rules/conditions)
 
-The user can define the parameter based on the location of the condition.
-
-##### **Match Condition**
-
-The user can define the match condition for the parameter and match value.
-
-##### **Match Value**
-
-The user can define what value needs to be matched with the match condition.
-
-##### **Negation**
-
-The user can define either to negate the condition for this rule or not.

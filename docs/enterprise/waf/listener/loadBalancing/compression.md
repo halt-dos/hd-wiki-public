@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Compression
 Configure compression or decompression of responses
 

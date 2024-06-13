@@ -28,49 +28,26 @@ The behavior of the script may vary for the following configurations:
 2. Click on Add Rule and set relevant parameters.  
 3. Click on **Save Changes**.  
 
-| Parameters       | Accepted value |  Default      |
-|------------------|----------------|---------------|
-| Rule Name        | String         | Blank         |
-| Rule Message     | String         | Blank         |
-| Rule Priority    | Integer        | 0             |
-| URI              | String         | Blank         |
-| Method           | Drop-down      | ALL           |
-| Evaluation Phase | Drop-down      | Request Phase |
-| Rule Action      | Drop-down      | Record        |
-| Script           | Lua Language   | Blank         |
    
 ### Description 
 
 ##### **Rule Name**
 Users are allowed to specify the rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Rule Message**
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: Description for the rule in String format
+
+    Default: Blank  
 
 ##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
 
-##### **URI**
-Users are allowed to specify the URI on which the tamper rule will be applied.
+    Accepted values: Integer
 
-##### **Method**
-Users are allowed to select the HTTP method for the rule to extract when matched with the request.
-
-##### **Evaluation Phase**
-Users are allowed to select the evaluation phase for the rule i.e. Request or Response.
-
-##### **Rule Action**
-The following actions are available to the User:  
-
-1. **NO ACTION** - If the request satisfies the rule, then no action will be performed on the current request.
-2. **DROP & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated but the request will not be allowed through the WAF.
-3. **RECORD REQUEST** - An event is generated whenever the Request satisfies the Rule, but whenever the request passes through other rules its events are logged by Haltdos.
-4. **BYPASS REQUEST** - If the Request tests positive for the rule, no other rule is tested and the Request will be allowed through the WAF.
-5. **REDIRECT** - If the request satisfies the rule, then the user is redirected to another page.
-6. **SEND RESPONSE WITH STATUS CODE** - If the request satisfies the rule, a custom HTML response will be returned with a status code.
-7. **SEND CUSTOM RESPONSE** - If the request satisfies the rule, a custom HTML response will be returned.
-8. **CHANGE RESPONSE CODE** - If the request satisfies the rule, the user can change the response code, and the changed response code will be sent back.
-9. **SEND CAPTCHA CHALLENGE** - If the request satisfies the rule, then the user receives a challenge like a captcha.
-10. **TARPIT SRC. IP** - If the request satisfies the rule, the end-user IP will be tarpit.
-11. **TEMPORARY BLACKLIST SRC IP**: If the rule matched temporarily blacklist the user IP. This will only work if you already have set a temporary blacklist duration else it will not be considered.
-12. **SKIP LEARNING** -If the request satisfies the rule, then no learning will be performed on the current request.  
+    Default: 0  

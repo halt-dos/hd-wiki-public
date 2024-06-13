@@ -19,3 +19,11 @@ Make GSLB listen on specific ports to accept connections and distribute across o
 
 
 ![listener](/img/gslb/v7/docs/listner1.png)
+
+#### **Listener**
+
+It shows the name of the added listener, click on the edit icon to edit listener's name.
+
+    Accepted values: String
+
+    Default: Blank 

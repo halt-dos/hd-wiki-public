@@ -11,17 +11,22 @@ However, there are instances where you might want to write your own rules to aug
 
 Custom rules support using compounding logic to make more advanced rules that address your security needs. For example, "Condition 1 and Condition 2 or Condition 3" means that if Condition 1 and Condition 2 are met, or if Condition 3 is met, WAF should take the action that's specified in the custom rule. Different matching conditions within the same rule are always compounded by using 'and'. For example, a rule that uses 'and' might specify to block traffic from a certain IP address, and only if a certain browser is being used.
 
+### How to Use:
+1. Log onto the Haltdos Enterprise WAF portal.
+2. Follow the links: **WAF** > **Listener** > **Profiles** > **Rules**.
+3. Click on **Save changes**.
+
 Unlike other WAFs, Haltdos WAF has multiple types of Rules designed to target specific use cases.
 
-1. **Error Rules**
-2. **Form Rules**
-3. **Firewall Rules**
-4. **Rate Limit Rules**
-5. **Whitelist Rules**
-6. **Response Rules**
-7. **Behavior Rules**
-8. **Tamper Rules**
-9. **Correlation Rules**
-10. **Deception Rules**
-11. **Script Rules**
-12. **Log Rules**
+1. [**Error Rules**](/enterprise/waf/listener/profiles/rules/error_rules)
+2. [**Form Rules**](/enterprise/waf/listener/profiles/rules/form_rules)
+3. [**Firewall Rules**](/enterprise/waf/listener/profiles/rules/firewall_rules)
+4. [**Rate Limit Rules**](/enterprise/waf/listener/profiles/rules/ratelimit_rules)
+5. [**Whitelist Rules**](/enterprise/waf/listener/profiles/rules/whitelist_rules)
+6. [**Response Rules**](/enterprise/waf/listener/profiles/rules/response_rules)
+7. [**Behavior Rules**](/enterprise/waf/listener/profiles/rules/behavior_rules)
+8. [**Tamper Rules**](/enterprise/waf/listener/profiles/rules/tamper_rules)
+9. [**Correlation Rules**](/enterprise/waf/listener/profiles/rules/correlation_rules)
+10. [**Deception Rules**](/enterprise/waf/listener/profiles/rules/deception_rules)
+11. [**Script Rules**](/enterprise/waf/listener/profiles/rules/script_rules)
+12. [**Log Rules**](/enterprise/waf/listener/profiles/rules/log_rules)

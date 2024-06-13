@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 #  Fingerprint 
 User can specify fingerprint settings on this page for Listener
 

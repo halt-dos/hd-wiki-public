@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Server Groups
 
 User can select the Load Balancing mechanism and specify Origin Server IPs on this screen

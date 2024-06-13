@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Challenge
 Configure Javascript challenge settings
 
