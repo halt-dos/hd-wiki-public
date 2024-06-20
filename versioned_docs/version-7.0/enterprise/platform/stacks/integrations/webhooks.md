@@ -19,15 +19,74 @@ Haltdos platform can easily integrate with one or more API endpoints to send ale
 3. Configure your settings
 4. Click **Save Changes**
 
-| PARAMETERS       | DESCRIPTION                                    | ACCEPTED VALUES | DEFAULT |
-|------------------|------------------------------------------------|-----------------|---------|
-| Enable           | Enable                                         | Boolean         | False   |
-| Name             | Specify the Name                               | String          | Blank   |
-| HTTP Method      | Specify HTTP method from the provided options  | Dropdown        | POST    |
-| URL              | Specify complete url to send the notifications | URL             | Blank   |
-| Payload Location | Specify the Payload Location                   | Drop-down       | PARAM   |
-| Payload Name     | Specify the payload name                       | String          | Blank   |
-| Attribute Type   | Select the type of attribute                   | Dropdown        | HEADER  |
-| Attribute Name   | Enter a name for the attribute                 | String          | Blank   |
-| Attribute Value  | Enter a value for the attribute                | String          | Blank   |
+### Description:
 
+**Enable**
+Select whether to Enable it or Disable it. 
+
+    Accepted values: Enable / Disable
+
+    Default: Enable 
+
+**Name**
+Specify the Name 
+
+    Accepted values: String
+
+    Default: Blank 
+
+**HTTP Method**
+
+Specify HTTP method from the provided options
+
+    Accepted values: POST / PUT / DELETE / UPDATE
+
+    Default: POST 
+
+**URL**
+
+This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+
+    Accepted values: URL
+
+    Default: Blank 
+
+**Payload Location**
+
+This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
+**Payload Name**
+
+This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+
+    Accepted values: String
+
+    Default: Blank 
+
+**Attribute Type**
+
+This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+
+    Accepted values: ARG
+
+    Default: ARG 
+
+**Attribute Name**
+
+This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+
+    Accepted values: String
+
+    Default: Blank 
+
+**Attribute Value**
+
+This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+
+    Accepted values: String
+
+    Default: Blank 

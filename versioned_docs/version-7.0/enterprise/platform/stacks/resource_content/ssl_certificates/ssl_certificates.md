@@ -59,16 +59,9 @@ Let's Encrypt certificate are valid for 3 months only. In order to renew, we hav
 Certificate verification can fail if verification is not completed within stipulated time.  For any issues, please contact support. 
 :::
 
-#### Upload  Certificate
+**Upload  Certificate**
 
 To upload custom certificates, follow the steps below:
-
-| SETTINGS         | ACCEPTED VALUE | DEFAULT |
-|------------------|----------------|---------|
-| Scope            | Drop-down      | Blank   |
-| Certificate Name | String         | Blank   |
-| Public Key       | String         | Blank   |
-| Private Key      | String         | Blank   |
 
 #### Description:
 
@@ -76,43 +69,44 @@ To upload custom certificates, follow the steps below:
 
 Users can defind the scope of the certificate.
 
+    Accepted values: Select App / Resources
+
+    Default: Blank
+
 **Certificate Name**
 
 User can specify the userfriendly name for the certificate.
+
+    Accepted values: String
+
+    Default: Blank 
 
 **Public Key**
 
 User can specify the public key of certificate.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Private Key**
 
 User can specify the private key of certificate.
+
+    Accepted values: String
+
+    Default: Blank 
 
 **Export Certificate**
 
 User can download the SSL certificate.
 
-#### Supported Format
-Further SSL supproted format are mentioned below:
+    Accepted values: Select and Export SSL certificate
 
-**PFX Certificate**
+    Default: Blank 
 
-A PFX (Personal Information Exchange) certificate is a digital certificate designed to authenticate and secure network communications, particularly for web servers, email systems, and other online services.  
-To upload PFX Certificate the user need to add the following:
-- Certificate PFX File
-- Certificate Password
-
-**PEM Certificate**
-
-A PEM (Privacy-Enhanced Mail) certificate is a digital certificate frequently used to secure network communications, especially for web servers and email systems.  
-To upload PEM Certificate the user need to add the following:
-- Public Certificate File
-- Intermediate Certificate File
-- CA Bundle File
-- Private Key File
-
-
-After submission,  the certificate will be issued and added in the Certificates section.  
-:::note Note
-Public and Private key in PEM format can also be used with **Copy-Paste** option.
+:::info
+It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key
 :::
+
+After submission,  the certificate will be issued and added in the Certificates section.

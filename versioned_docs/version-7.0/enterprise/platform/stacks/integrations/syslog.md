@@ -24,28 +24,37 @@ It is recommended to configure Syslog (if available) for centralized monitoring 
 2. Configure your settings
 3. Click **Save Changes**
 
-| PARAMETERS            | ACCEPTED VALUES | DEFAULT |
-|-----------------------|-----------------|---------|
-| Syslog Export Enabled | Boolean         | False   |
-| Protocol              | Dropdown        | UDP     |
-| Host Name             | String          | Blank   |
-| Syslog Server Port    | String          | Blank   |
-
 ### Description:
 
 **Syslog Export Enabled**
 
 This option allows users to enable or disable exporting Syslog to an external server.
 
+    Accepted values: Enable / Disable
+
+    Default: Blank 
+
 **Protocol**
 
 This option allows the user to select the protocol type on which the Syslog server is running. Users can select either TCP or UDP.
+
+    Accepted values: UDP
+
+    Default: UDP 
 
 **Host Name**
 
 This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Syslog Server Port**
 
 This option allows the users to mention the port number to communicate with Syslog server.
+
+    Accepted values: Integer
+
+    Default: Blank 
 
