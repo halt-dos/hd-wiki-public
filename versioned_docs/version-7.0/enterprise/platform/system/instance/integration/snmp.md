@@ -26,65 +26,95 @@ SNMP uses a blend of pull and push communications between network devices and th
 2. Configure your settings.
 3. Click on **Save changes**.
 
-| SETTINGS              | ACCEPTED VALUES | DEFAULT              |
-|-----------------------|-----------------|----------------------|
-| SNMP  Name      | String          | Blank                |
-| System Description          | String       | Blank               |
-| System Location         | String       | Blank               |
-| System Contact          | String       | Blank               |
-| Layer4 Protocol         | Drop Down       | Blank               |
-| Agent Port             | Integer         | 161                  |
-| Agent Address            | Integer         | Blank                |
-| Enable Traps      | Boolean         | False                |
-| Trap Username / Community             | Drop Down       | Link Detection       |
-| Manager Address       | Integer         | Blank                |
-| Manager Port          | Integer         | 162                  |
-
 #### Description
 
 **SNMP Name** 
 
 User can specify the SNMP client name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **System Description** 
 
 User can describe about the SNMP Machine
+
+    Accepted values: String
+
+    Default: Blank 
 
 **System Location**
 
 User can enter the location of the Machine.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **System Contact**
 
 User can specify contact information for the machine
+
+    Accepted values: String
+
+    Default: Blank 
 
 **Layer4 Protocol**
 
 Users can select underlying protocol for SNMP Communication
 
+    Accepted values: UDP
+
+    Default: UDP 
+
 **Agent Port**
 
 User can select SNMP agent port number for SNMP communication
+
+    Accepted values: Integer
+
+    Default: Blank 
 
 **Agent Address**
 
 User select SNMP agent IP addresses for SNMP communication
 
+    Accepted values: IP
+
+    Default: Blank 
+
 **Enable Traps**
 
 Users can enable or disable SNMP traps
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
 
 **Trap Username / Community**
 
 User can select the username / community to use when sending traps
 
+    Accepted values: None
+
+    Default: None 
+
 **Manager Address**
 
 Users can enter SNMP monitor IP address.
 
+    Accepted values: IP
+
+    Default: None 
+
 **Manager Port**
 
 Users can enter SNMP monitor port address.
+
+    Accepted values: Integer
+
+    Default: 162 
 
 
 

@@ -18,24 +18,28 @@ A certificate revocation list, more commonly called a CRL, is exactly what it so
 
 ![revocation_list](/img/platform/v7/docs/revocation_list_newui.png)
 
-
-| SETTINGS    | ACCEPTED VALUES | DEFAULT |
-|-------------|-----------------|---------|
-| List Name        | String          | Blank   |
-| Scope       | Drop-down       | Blank   |
-| Content | String          | Blank   |
-
-
 **Description:**
 
 **Name**
 
 Users can specify the name of the custom script.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Scope**
 
 It specifies the particular scope on which the script works. By default, its value is set to none.
 
+    Accepted values: Select Scope
+
+    Default: Blank 
+
 **Content**
 
 It specifies the script area where the script is to be written.
+
+    Accepted values: String
+
+    Default: Blank 

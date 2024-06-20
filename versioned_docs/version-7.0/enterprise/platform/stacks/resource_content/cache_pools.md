@@ -22,34 +22,45 @@ Cache Pool is only part of Haltdos SLB.
 
 ![cache](/img/platform/v7/docs/cachepool_newui.png)
 
-| SETTINGS        | ACCEPTED VALUES | DEFAULT |
-|-----------------|-----------------|---------|
-| Pool name       | String          | Blank   |
-| Scope           | Drop-down       | Blank   |
-| Pool Size       | Integer         | 10      |
-| Max-object Size | Integer         | 1000    |
-| Max Cache Size  | Integer         | 60      |
-
-
 #### Description 
 
 **Pool Name**
 
 Users can define the pool name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Scope**
 
 Users can specify the scope for the cache pool.
+
+    Accepted values: Select Scope
+
+    Default: Blank 
 
 **Pool Size**
 
 User can define the pool size.
 
+    Accepted values: Integer
+
+    Default: 10 
+
 **Max Object Size**
 
 User can define the max pool size.
 
+    Accepted values: Integer
+
+    Default: 1 
+
 **Max Cache Size**
 
 User can define the max cache size as per the need.
+
+    Accepted values: Integer
+
+    Default: 60 
 
