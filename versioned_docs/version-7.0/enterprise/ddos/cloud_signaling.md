@@ -16,48 +16,68 @@ A faster, automated approach to comprehensive DDoS Mitigation Enterprises need c
 2. Add **Provider** and configure the details as per the requirement.
 3. Click on **Save Changes**
 
-
-| Settings                | Accepted Values  | Default |
-|-------------------------|------------------|---------|
-| Enabled                 | Boolean          | False   |
-| Provider Name           | String           | Empty   |
-| Signalling URL          | String           | Empty   |
-| Authentication User     | String           | Empty   |
-| Authentication Password | String           | Empty   |
-| Signalling Trigger      | Integer          | 0       |
-| Managed Object IDs      | Integer          | Empty   |
-| IP Range                | Integer          | Empty   |
-
 ### Description
 
 ##### **Enabled**
 
 Enable to allow the signaling to operate.
 
+    Accepted values: Enabled / Disabled
+
+    Default: Disabled 
+
 ##### **Provider Name**
 
 Specify the name of the upstream provider.
+
+    Accepted values: String
+
+    Default: Blank 
 
 ##### **Signaling URL**
 
 Specify API endpoint of upstream provider for sending cloud signal
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Authentication User**
 
 Specify password user credentials for interactive with upstream cloud signaling API
+
+    Accepted values: String
+
+    Default: Blank 
 
 ##### **Authentication password**
 
 Specify password credentials for interactive with upstream cloud signaling API
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Signaling Trigger**
 
 Specify the bandwidth threshold (in Mbps) beyond with a cloud signal that will be sent to the upstream provider
+
+    Accepted values: Integer
+
+    Default: 0 
 
 ##### **Managed Object ID**
 
 Specify unique customer ID provided by the upstream providers for further authentication
 
+    Accepted values: Integer
+
+    Default: 0 
+
 ##### **IP Range**
 
 Users can specify the IP range
+
+    Accepted values: IP
+
+    Default: Blank 
