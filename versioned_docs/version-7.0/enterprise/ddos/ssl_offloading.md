@@ -20,12 +20,12 @@ In addition to DDoS mitigation, the Offload mechanism can be used for features l
 
 ![offload_stream](\img\ddos\v7\docs\ssloffloading1.png)
 
-| Settings      | Accepted Values | Default |
-|---------------|-----------------|---------|
-| Virtual IP     | String          | Blank   |
-
 ### Description
 
 ##### **Virtual IP**
 
 Users need to add the virtual IP address on which traffic will be received. This IP will be checked for all inbound traffic whether the request has this VIP in their destination IP location or not.
+
+    Accepted values: String
+
+    Default: Blank 

@@ -22,11 +22,6 @@ An Indicator of Compromise (IoC) is a piece of information or data that suggests
 
 4. If required export option can be used to export the details in Excel format.
 
-| Parameter   | Accepted Value | Default Values |
-|-------------|----------------|----------------|
-| Resource    | Drop-down      | Network        |
-| Date Range  | Drop-down      | today          |
-
 ### Description
 
 ##### **Resource**
@@ -38,8 +33,10 @@ This option allows users to select the required resource/network profile. After 
 This option allows users to set date filter for the data. Users can select from today, yesterday, this week & this month. Customizable date and time filter is used when **Custom Range** is selected. After selecting the date range, user need to click kn Apply.
 
 ##### **Drop IPs**
+
 This sections showcase the users all the drop IPs along with their hit count.
 
 ##### **Drop Countries**
+
 This sections showcase the users all the drop countries along with their hit count.
 

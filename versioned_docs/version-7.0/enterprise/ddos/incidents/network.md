@@ -26,6 +26,7 @@ Users can customize the date range for the incident details & check incident det
 | DST IP     |
 | DST PORT   |
 | PROTOCOL   |
+| DPI Error Code   |
 | FLAG       |
 | DIRECTION  |
 | COUNTRY    |
