@@ -26,22 +26,6 @@ In static SNAT all internal IP addresses are always mapped to the same public IP
 
 5. Click Save.
 
-| Settings             | Accepted Values                | Default              |
-|----------------------|--------------------------------|----------------------|
-| Rule Name            | Specify Rule Name              | Blank (Mandatory)    |
-| Rule Message         | User Friendly Message for Rule | Blank (Mandatory)    |
-| Rule Priority        | Integer                        | 0                    |
-| Enabled              | Boolen                         | True                 |
-| Incoming Interface   | Incoming Interface Name        | Blank (Mandatory)    |
-| Outgoing Interface   | Outgoing Interface Name        | Blank (Mandatory)    |
-| Source Ip            | Source IP address with CIDR    | Blank                |
-| Destination IP       | Destination IP add. with CIDR  | Blank                |
-| Protocol             | Select the Protocol            | Blank                |
-| ARP Reply            | Boolean                        | False                |
-| Preserve Source Port | Boolean                        | False                |
-| Translation          | Drop Down                      | Overload (Mandatory) |
-| Translate IP Range   | Intger                         | Integer (Mandatory)  |
-| Port Mapping         | Boolean                        | False                |
 
 ![snat_rule_condition](/img/llb/v7/docs/llb12.png)
 
@@ -51,21 +35,41 @@ In static SNAT all internal IP addresses are always mapped to the same public IP
 
 This option allows the user to select desired rule name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Rule Message**
 
 This option allows users to use specifies the custom message for the rule.
+
+    Accepted values: String
+
+    Default: Blank 
 
 ##### **Rule Priority**
 
 This option allows the user to set rule priority. The rule with lower Priority Value will be prioritized.
 
+    Accepted values: Integer
+
+    Default: Blank 
+
 ##### **Enabled**
 
 It specifies rule is enabled or disabled. By default, this option is enabled.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Incoming Interface**
 
 This option allows the user to set Incoming Interface. Every data packet entered from Incoming Interface will be inspected and mapped to translation IPs.
+
+    Accepted values: Interface
+
+    Default: Blank 
 
 ##### **Outgoing Interface**
 
@@ -75,25 +79,49 @@ This option allows the user to select the Outgoing Interface from the list of in
 
 This option allows the user to set the source IP range with a CIDR value. The data packets are inspected and data packets that match with a mentioned source IP address will be translated according to the Translate IP Range.
 
+    Accepted values: IP
+
+    Default: Blank 
+
 ##### **Destination IP**
 
 This option allows the user to set the destination IP range with a CIDR value. The data packets are inspected and data packets that match with a mentioned destination IP address will be translated according to the Translate IP Range.
+
+    Accepted values: IP
+
+    Default: Blank 
 
 ##### **Protocol**
 
 This option allows the user to set the protocol for the rule. The data packets are inspected and data packets that match with the mentioned protocol will be translated according to the Translate IP Range.
 
+    Accepted values: ANY / TCP / UDP / CUSTOM
+
+    Default: ANY 
+
 ##### **ARP Reply**
 
 This option allows the user to get an ARP reply from the next hop.
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
 
 ##### **Preserve Source Port**
 
 Preserve Source Port keeps the same source port for services that expect traffic to come from a specific source port. This option allows the user to select the preserved source port. It maps the source port for outgoing traffic through which it came from.
 
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
 ##### **Translation**
 
 It allows users to select the type of translation. By default, Overload is selected.
+
+    Accepted values: Overload / Outgoing Interface IP / Fixed Port Range
+
+    Default: Overload 
 
 In Haltdos LLB, we have three types of NAT translation which are mentioned below;
 
@@ -107,10 +135,26 @@ The Users need to define an external IP range that contains one or more IP addre
 
  - **Fixed Port Range:** If this is selected as a translation method, all internal traffic will not be affected. Users can manually define the Source IP range and translation IP range. it will automatically bind the source IP with the translation IP.
 
+##### **Internal IP Range**
+
+User can specify the Internal IP Range 
+
+    Accepted values: IP
+
+    Default: Blank 
+
 ##### **Translate IP Range**
 
 Users can specify the translation IP or IP address range. If the user selects overload as translation type, another option will be shown there for translation IP or IP address range. Translation IP can be written as 192.168.1.1/24 or 192.168.1.5-192.168.1.25.
 
+    Accepted values: IP
+
+    Default: Blank 
+
 ##### **Port Mapping**
 
 It allows users to enable port mapping
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
