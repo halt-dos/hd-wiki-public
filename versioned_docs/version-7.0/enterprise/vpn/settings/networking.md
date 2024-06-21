@@ -20,68 +20,109 @@ Users are allowed to set network related configurations.
 2. Configure the settings as per the requirement.  
 3. Click on **Save Changes**.  
 
-
-| SETTINGS                   | ACCEPTED VALUE | DEFAULT |
-|----------------------------|----------------|---------|
-| Keepalive Timeout          | Decimal        | 32400   |
-| Dead Peer Detection        | Decimal        | 90      |
-| Dead Mobile Peer Detection | Decimal        | 1800    |
-| Authentication Timeout     | Decimal        | 240     |
-| Idle Timeout               | Decimal        | 1200    |
-| Mobile Idle Timeout        | Decimal        | 2400    |
-| Session Timeout            | Decimal        | 86400   |
-| Cookie Timeout             | Decimal        | 300     |
-| Deny Roaming               | Boolean        | Disable |
-| Tunnel All DNS Queries     | Boolean        | Enable  |
-| DNS Server                 | IP address     | Blank   |
-| IPv4 Lease                 | IP address     | Blank   |
-| IPv6 Lease                 | IPv6 address   | Blank   |
-| Max Send Buffer            | Decimal        | 10      |
-| Enable System Route        | Boolean        | Enable  |
-
 ### Description:
 
 **Keepalive Timeout**  
 Users can specify keepalive timeout. set 0 is disable.  
 
+    Accepted values: Integer
+
+    Default: 32400 
+
 **Dead Peer Detection**  
 Users can specify timeout threshold for the stale clients.  
+
+    Accepted values: Integer
+
+    Default: 90 
 
 **Dead Mobile Peer Detection**  
 Users can specify timeout threshold for the stale mobile clients.  
 
+    Accepted values: Integer
+
+    Default: 1800 
+
 **Authentication Timeout**  
 Users can specify timeout for the authentication.  
+
+    Accepted values: Integer
+
+    Default: 240 
 
 **Idle Timeout**  
 Users can specify idle timeout for the clients. set 0 to disable.  
 
+    Accepted values: Integer
+
+    Default: 1200 
+
 **Mobile Idle Timeout**  
 Users can specify session timeout for the mobile clients.  
+
+    Accepted values: Integer
+
+    Default: 2400
 
 **Session Timeout**  
 Users can specify session timeout for the clients.  
 
+    Accepted values: Integer
+
+    Default: 86400 
+
 **Cookie Timeout**  
 Users can specify the cookies expiry.  
+
+    Accepted values: Integer
+
+    Default: 300 
 
 **Deny Roaming**  
 Users can disable clients form connection from different IP address.  
 
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
 **Tunnel All DNS Queries**  
 Users can enable tunneling all DNS queries over VPN.  
+
+    Accepted values: Enable / Disable
+
+    Default: Enable 
 
 **DNS Server**  
 Users can specify the list of DNS servers.  
 
+    Accepted values: IP
+
+    Default: Blank 
+
 **IPv4 Lease**  
 Users can specify list of IPv4 for leasing to connecting clients.  
+
+    Accepted values: IP
+
+    Default: Blank 
 
 **IPv6 Lease**  
 Users can specify list of IPv6 for leasing to connecting clients.  
 
+    Accepted values: IP
+
+    Default: Blank 
+
 **Max Send Buffer**  
 Users can specify maximum allowed packets in out buffer.  
 
+    Accepted values: Integer
+
+    Default: 10 
+
 **Enable System Route**  
-Users can enable advertising VPN server system routes.  
+Users can enable advertising VPN server system routes.
+
+    Accepted values: Enable / Disable
+
+    Default: Enable 
