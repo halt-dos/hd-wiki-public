@@ -26,66 +26,95 @@ The typical usage of this is to redirect incoming packets with a destination of 
 
 5. Click Save
 
-
-| Setting            | Accepted Value                 | Default           |
-|--------------------|--------------------------------|-------------------|
-| Rule Name          | Specify Rule Name              | Blank (Mandatory) |
-| Rule Message       | User Friendly Message for Rule | Blank (Mandatory) |
-| Rule Priority      | Integer                        | 0                 |
-| Enabled            | Boolean                        | True              |
-| Type               | Drop Down                      | IPv4              |
-| Incoming Interface | Drop Down                      | None (Mandatory)  |
-| Outgoing Interface | Drop Down                      | None (Mandatory)  |
-| External IP Range  | IP Address with CIDR           | None (Mandatory)  |
-| Mapped IP Range    | IP Address with CIDR           | None (Mandatory)  |
-| Service Protocol   | Drop Down                      | TCP               |
-| Port Forwarding    | Boolean                        | False             |
-
 ### **Description:**
 
 ##### **Rule Name**
 
 This option allows the user to select desired rule name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Rule Message**
 
 It Specifies the custom message for the rule.
+
+    Accepted values: String
+
+    Default: Blank 
 
 ##### **Rule Priority**
 
 This option allows the user to set rule priority.
 
+    Accepted values: Integer
+
+    Default: 0 
+
 ##### **Enabled**
 
 It Specify rule is enabled or disabled. By default, this option is enabled.
+
+    Accepted values: Enable / Disable
+
+    Default: Enable 
 
 ##### **Type**
 
 This specifies the type of IP protocol used for rules. By default, IPv4 is selected. Users can select any from IPv4, IPv6, DNS46, and DNS64.
 
+    Accepted values: IPv4 / 
+
+    Default: IPv4 
+
 ##### **Incoming Interface**
 
 This option allows the user to specify the Incoming interface from the drop-down list. This rule will apply to the data packets which are moving inside from the interface mentioned.
+
+    Accepted values: Interface
+
+    Default: Blank 
 
 ##### **Outgoing Interface**
 
 This option allows the user to specify the outgoing interface from the drop-down list. This rule will check and validate the data which is moving outside from the interface mentioned.
 
+    Accepted values: Interface
+
+    Default: Blank 
+
 ##### **External IP Range**
 
 It specifies the external IP address range. This option allows the user to set the range of IP address that belonged to an external network.
+
+    Accepted values: IP
+
+    Default: Blank 
 
 ##### **Mapped IP Range**
 
 It specifies the mapped IP address range. This option allows the user to set the range of IP address that needs to be mapped from the internal network.
 
+    Accepted values: IP
+
+    Default: Blank 
+
 ##### **Service Protocol**
 
 This option allows users to select the protocol on which rule will apply.
+
+    Accepted values: TCP
+
+    Default: Blank 
 
 ##### **Port Forwarding**
 
 Port forwarding or port mapping is an application of network address translation (NAT) that redirects a communication request from one address and port number combination to another. This option allows users to enable or disable the port forwarding option.
 
 If this option is enabled by the user, the user will get the option to mention mapped port numbers.
+
+    Accepted values: Enable / Disable
+
+    Default: Blank 
 
