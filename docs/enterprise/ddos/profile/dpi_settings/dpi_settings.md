@@ -27,42 +27,43 @@ Deep packet inspection examines the headers of packets passing through the DDoS 
 
 ### Description
 
-##### **IPV4 Protocol**
+##### [**IPV4 Protocol**](/docs/enterprise/ddos/profile/dpi_settings/ipv4-protocol.md)
 
 Deep packet inspection of IPV4 header for bidirectional traffic
 
-##### **IPV6 Protocol**
+##### [**IPV6 Protocol**](/docs/enterprise/ddos/profile/dpi_settings/ipv6-protocol)
 
 Deep packet inspection of IPV6 header for bidirectional traffic
 
-##### **IGMP Protocol**
+##### [**IGMP Protocol**](/docs/enterprise/ddos/profile/dpi_settings/igmp-protocol)
 
 Deep packet inspection of IGMP header for bidirectional traffic
 
-##### **TCP Protocol**
+##### [**TCP Protocol**](/docs/enterprise/ddos/profile/dpi_settings/tcp-protocol)
 
 Deep packet inspection of TCP header for bidirectional traffic
 
-##### **UDP Protocol**
+##### [**UDP Protocol**](/docs/enterprise/ddos/profile/dpi_settings/udp-protocol)
 
 Deep packet inspection of UDP header for bidirectional traffic
 
-##### **SNMP Protocol**
+##### [**SNMP Protocol**](/docs/enterprise/ddos/profile/dpi_settings/snmp-protocol)
 
 Deep packet inspection of SNMP header for bidirectional traffic
 
-##### **SIP Protocol**
+##### [**SIP Protocol**](/docs/enterprise/ddos/profile/dpi_settings/sip-protocol)
 
 Deep packet inspection of SIP header for bidirectional traffic
 
-##### **NTP Protocol**
+##### [**NTP Protocol**](/docs/enterprise/ddos/profile/dpi_settings/ntp-protocol)
 
 Deep packet inspection of NTP header for bidirectional traffic
 
-##### **DNS Protocol**
+##### [**DNS Protocol**](/docs/enterprise/ddos/profile/dpi_settings/dns)
 
 Deep packet inspection of DNS header for bidirectional traffic
 
-##### **HTTP Protocol**
+##### [**HTTP Protocol**](/docs/enterprise/ddos/profile/dpi_settings/http)
 
 Deep packet inspection of HTTP header for bidirectional traffic
+

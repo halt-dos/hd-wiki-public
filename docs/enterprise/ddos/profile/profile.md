@@ -16,13 +16,6 @@ DDos Profile helps to differentiate the network by dividing the network into dif
 2. Configure Profile Settings.
 3. Click on **Save Changes**
 
-| Settings       | Accepted Values  | Default    |
-|----------------|------------------|------------|
-| Profile Name   | String           | Blank      |
-| Mode           | Drop Down        | Bypass     |
-| Parent         | Drop Down        | Blank      |
-| Stateless Mode | Boolean          | FALSE      |
-| Destination IP | Integer          | Blank      |
 
 ### Description
 
@@ -30,9 +23,17 @@ DDos Profile helps to differentiate the network by dividing the network into dif
 
 This field can be used to specify the new profile name. This name should be unique.
 
+    Accepted values: String
+
+    Default: Blank
+
 ##### **Mode**
 
 This option allows users to specify the mode for the profile i.e. Mitigation, Bypass, Record etc.
+
+    Accepted values: Bypass / Record / Record with SSLi / Mitigation
+
+    Default: Bypass
 
 There are four operational modes to select from
 
@@ -52,6 +53,10 @@ In this mode, all DDoS mitigation will be turned on including both Static and Dy
 
 This option allows users to change the profile mode from stateful to stateless mode. By default, all the newly configure profiles are configured in stateful mode. DDoS profile with **stateful mode**, will track all connection states of the traffic that is being transferred over the Haltdos Anti DDoS device.If we enable the stateless mode, DDoS device will not track any connection.
 
+    Accepted values: Enable / Disable
+
+    Default: Disable
+
 :::note Note
 To enable connection state tracking, we also need to enable [TCP Settings](/docs/enterprise/ddos/profile/connections/tcp_settings.md).
 :::
@@ -60,6 +65,14 @@ To enable connection state tracking, we also need to enable [TCP Settings](/docs
 
 This option allows users to select the parent profile for the profile created.
 
+    Accepted values: Select Parent
+
+    Default: Blank
+
 ##### **Destination IP**
+
+    Accepted values: IP
+
+    Default: Blank
 
 This option allows users to configure the destination IP. On the basis of destination IP traffic will be filtered and mitigation will be performed. Two profiles can not have same destination IP. This destination IP will only be checked for the Inbound traffic i.e. traffic coming from WAN and going towards LAN side.
