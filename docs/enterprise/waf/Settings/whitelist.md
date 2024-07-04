@@ -4,7 +4,7 @@ sidebar_position: 6
 
 ---
 
-# Global Whitelist
+# Whitelist
 
 ---
 
@@ -13,7 +13,7 @@ sidebar_position: 6
 Global settings help to configure the settings whose scope is global. Here we have Global Whitelist Rules which would whitelist the mitigations globally irrespective of zone or listener.
 
 
-![Global Whitelist Rules](/img/waf/v7/docs/global_whitelist.png)
+![Global Whitelist Rules](/img/waf/v8/docs/whitelist.png)
 
 
 ### Global Whitelist Rules
@@ -27,36 +27,47 @@ These are the whitelist rule which helps in whitelisting mitigations globally fo
 3. Configure the Fields
 4. Click **Save Changes**
 
-![Global Whitelist Condition ](/img/waf/v7/docs/global_whitelist_condition.png)
-
 ## Description
 
 **Rule Name**  
 Users can specify the rule name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Rule Message**  
 Users can specify a user-friendly message
+
+    Accepted values: String
+
+    Default: Blank 
 
 **Rule Priority**  
 Users can specify the priority of the rule. Rule with less priority will be followed first.
 
+    Accepted values: Integer
+
+    Default: Blank 
+
 **URI**  
 Users can specify the URI ( Uniform Resource Identifier )for the rule as per the requirement.
+
+    Accepted values: Regex
+
+    Default: Blank 
 
 **Method**  
 Users can specify the HTTP method which should be followed for the rule.
 
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: ALL 
+
 **Custom Rule ID**  
 Users can specify the custom rule ID which was triggered or for which rule the user is setting up the whitelist rule.
 
-**Find Location**  
-Users can define the source location where this condition needs to be applied.
+    Accepted values: String
 
-**Find Parameter**  
-The user can define the parameter based on the location of the condition.
+    Default: Blank 
 
-**Match Condition**  
-The user can define the match condition for the parameter and match value.
-
-**Match Value**  
-The user can define what value needs to be matched with the match condition.
