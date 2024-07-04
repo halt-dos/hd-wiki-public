@@ -1,12 +1,13 @@
 ---
-sidebar_position : 12
+sidebar_position : 13
 ---
-# Log Rules
+# Defacement Rules
    
 ### Overview
    
-These rules prevent Haltdos WAF from logging sensitive information like passwords, etc., and adhere to your compliance policy. 
-![Log Rules](/img/waf/v7/docs/log_rules.png)
+These rules prevent Haltdos WAF from logging sensitive information like passwords, etc., and adhere to your compliance policy.  
+
+![Log Rules](/img/waf/v8/docs/defacementRule.png)
    
 ### How to Use:
 1. Follow the links: **WAF** > **Listeners** > **Profiles** > **Rules** > **Log Rules**

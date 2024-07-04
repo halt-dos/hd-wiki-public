@@ -8,31 +8,37 @@ sidebar_position: 2
 **Geo-filtering** is the practice of restricting access to Internet content, based upon the user's geographical location. With the help of Internet geolocation techniques, check user's IP address against a blacklist or whitelist, accounts, and measuring the end-to-end delay of a network connection to estimate the physical location of the user and restrict them.
 Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. It also allows permanently to access website through Whitelisted IP Prefixes.  
 
-![Geo-filtering](/img/waf/v7/docs/profile_geofiltering.png)  
+![Geo-filtering](/img/waf/v8/docs/geoFiltering.png)  
 
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Profiles** > **Geo Filtering**.
 2. Configure your settings.
 3. Click on Save Changes.  
 
-   
-| Parameters            | Accepted Values | Default |
-|-----------------------|-----------------|---------|
-| Blacklist Countries   | Drop-Down       | Blank   |
-| Whitelist IP Prefixes | Drop-Down       | Blank   |
-| Blacklist IP Prefixes | Drop-Down       | Blank   |
-   
-
 ### Description  
 
 ##### **Blacklist Countries**
 This section specify the list of countries that will be permanently disallowed from accessing the website. Countries can be selected by typing the name of the country and any request coming from the specified countries will be dropped.  
 
+    Accepted values: list of country as per ISO 3166-1 alpha-2 standard 2 letter country-code.
+
+    Default: Blank
+
 ##### **Whitelist IP Prefixes**
 This section specify the list of IPs that will be permanently allowed for accessing the website. IP whitelisting is when you grant network access only to specific IP addresses.  
 
+    Accepted values: IP prefix
+
+    Default: Blank
+
+**IP Prefix** refers to a portion of an IP address that indicates the network or subnet to which the IP address belongs. (For example, 192.168.0.0/24 or 2001:0db8:85a3::/64.)
+
 ##### **Blacklist IP Prefixes**
-This section specify the list of IPs that will be permanently disallowed from accessing the website. IP blacklisting is a method used to filter out illegitimate or malicious IP addresses from accessing your networks. Blacklists are lists containing ranges of or individual IP addresses that you want to block.  
+This section specify the list of IPs that will be permanently disallowed from accessing the website. IP blacklisting is a method used to filter out illegitimate or malicious IP addresses from accessing your networks. Blacklists are lists containing ranges of or individual IP addresses that you want to block.
+
+    Accepted values: IP prefix
+
+    Default: Blank
 
 #### Use Cases
 

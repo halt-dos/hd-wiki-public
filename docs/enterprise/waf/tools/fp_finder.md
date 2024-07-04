@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # False Positive Finder
@@ -9,7 +9,7 @@ sidebar_position: 2
 
 It Identifies, stores all the rules matched by WAF, and generates False-Positive details for a specific listener so that you can identify the actual false positive generated.
    
-![FP Finder](/img/waf/v7/docs/false_positive.png)
+![FP Finder](/img/waf/v8/docs/fpFinder.png)
 
 
 ### How to Use:
@@ -21,15 +21,12 @@ It Identifies, stores all the rules matched by WAF, and generates False-Positive
 ### Description
 
 **Matched Rules**
-
 It displays the rules for which False Positive is generated.
 
 **Impacted URLs**
-
 It displays all matched URLs for the query.
 
 **Blocked Payload**
-
 It displays the payload matched for the query like Event Id, Variable, Content, Attack Type, Action.
 We can further download all events matched based on the filter from the event page.
 

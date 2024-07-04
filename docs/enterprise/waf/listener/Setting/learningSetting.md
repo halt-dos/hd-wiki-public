@@ -3,151 +3,68 @@ sidebar_position: 3
 ---
 
 # Learning Setting
-Configure Operational settings of Listeners.
+Enable Machine Learning in WAF
 
 ---
 
 ## Overview
 
-Users are allowed to configure many operational settings for the [Listeners](../listener/listener.md). Users can configure most common settings like timeout settings, operation modes, header/body timeouts, error handling, and request logging. Users can also add server aliases and VIPs to the configured listener with the help of operational settings
+Haltdos’s security is adaptive through automated learning and can make policy recommendations by learning about application behavior, which can make it easier for security teams to manage policies. Administrators retain full control over the activation and deactivation of each ruleset, with the opportunity to screen for false-positive before committing to production.
 
-![Listener Operational Settings](/img/waf/v7/docs/operationalsettings1.png)  
+This module also defends against 0-day attacks by assigning suspicion score to every request based on anomaly based machine learning techniques. The learning requires creation of baseline during normal operations to understand user and application behavior for every URL. Once the baseline has been set, the WAF solution starts to look for anomalous patterns and block malicious 0-day attacks. As an adaptive solution, the learning continues at the set sampling rate to improve the baseline for dynamic web applications.
+
+
+![Listener Operational Settings](/img/waf/v8/docs/learning.png)  
   
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Settings**.  
 2. Configure the settings.
 3. Click on Save changes.  
 
-![Listener Operational Settings](/img/waf/v7/docs/operationalsettings2.png)
-
-![Listener Operational Settings](/img/waf/v7/docs/operationalsettings3.png)
-
-
-| PARAMETERS                  | ACCEPTED VALUES | DEFAULT       |
-|-----------------------------|-----------------|---------------|
-| Enable IPv6|Enables IPv6 Accepted values: Boolean|True
-| Enable HTTP 2.0 |Enables HTTP 2.0 Accepted values: Boolean|False
-  Enable Host Check|Enable Host Check Accepted values:Boolean|True
-  Web socket Enabled | web socket support for servers in this group:Boolean| False
-  Enable Logging | Specify whether to log requests for dynamic pages: Boolean | True 
-Enable Static Extension Logging |Specify whether to log requests for static extension. Accepted values: Boolean|False
-Enable Error Handling|Specify whether to enable error handling by firewall. Accepted values: Boolean|True
-Connection Pool Size| Integer| 0
-Client Keep-Alive Timeout |Specify timeout of keep-alive connections with clients. Set 0 to disable Accepted values: Integer|0
-Upstream Keep Alive Timeout | Specify timeout of keep alive connections with upstream. Set 0 to disable. Accepted Values:Integer|0
-Max Requests Per Connection | Specify max allowed requests per keep-alive connection : Integer |1000
-Operational Mode | Specify operational mode for the listener like Reverse Proxy, Direct Server Return or IP Transparency: Drop-down| Reverse Proxy
-Limit Maximum Connections | Integer | 0
-|Client Body Timeout |Specify a timeout for receiving the request body. Accepted values: Integer|300
-Client Header Timeout | Specify timeout for receiving request header. Accepted values: Integer|300
-Client Send Timeout| Specify timeout for send response|300
-Header Timeouts |Specify the header timeout in seconds. Accepted values: Integer|300
-Static Extensions|Specify the list of allowed static extensions that don't require security validation. |png, gif, ico, etc.
-Maximum HTTP Body size |Specify the maximum allowed HTTP body size from single client IP. Accepted values: Integer |10485760
-Maximum HTTP Header size |Specify the maximum allowed HTTP header size from a single client IP. Accepted values: Integer|4096
-Proxy HTTP Version| Specify HTTP version used while connecting upstream server: Drop-down| ANY
-Proxy Buffers|Specify the number of buffers used for reading a response from the server for a single connection. Accepted values: Integer|8
-Proxy Buffer Size|Specify the size of the buffer used for reading the first part of the server response. Accepted values: Integer|8
-Log Format | User Define to extract log as per need. Accepted values : String | NULL
-Client IP Location |Specify the location of the client IP. Accepted values: DropDown|SRC IP
-Host Header|Specify the host header. Accepted values: String|Blank
-Server Aliases| Listener Identity either domain name or IP address | NULL 
-Virtual IPs|Specify assigned virtual IPs for accepting traffic. Accepted Values Integer|NULL
-Add Port|Helps you to add HTTP/S ports for Advance Settings.Accepted values: Integer|Blank
-
 ### Description
-##### **Enable IPv6**
-This option allows user to enable traffic over IPv6 and applicable in the case of all service types. Internet Protocol version 6 is the most recent version of the Internet Protocol that allows communication to take place over the network.
 
-##### **Enable HTTP 2.0**
-Specify if the WAF should allow HTTP 2.0 requests. By default, it supports other versions like HTTP 1.1
-This option allows user to specify whether the solution supports HTTP 2.0 request. HTTP/2 aims to be a faster, more efficient protocol than HTTP. By default, it supports other versions like HTTP 1.1  
+##### **Learning Mode**
+This option specifies the learning mode to enable/disable Machine Learning. When enabled it will start learning the requests and store all the required information and accordingly take action on the request detected malicious.
 
-##### **Enable Host Check**
-Enforce host (SNI) validation for incoming request.
+    Accepted values: LEARNING DISABLED / LEARNING ONLY / LEARN & MITIGATE
 
-##### **Web-socket Enabled**
-This option allows user to enable web-socket support for servers or server group. It is a communication, an upgraded, quick, and seamless protocol to use when one needs to establish constant client-server communication over a single TCP connection.
+    Default: LEARNING DISABLED 
 
-##### **Enable Logging**
-This option allows user to enable access logs in the case of service type HTTP & TCP.
+##### **Sampling Rate**
+This option allows users to specify the rate of sampling of requests for learning. This allows anomaly based machine learning to generate baseline at the specified sampling rate.  
 
-##### **Enable Static Extension Logging**
-This option allows user to specify whether to do log requests for static extension.
+    Accepted values: Integer
 
-##### **Enable Error Handling**
-This option allows user to specify whether to enable error handling by firewall.
+    Default: 10
 
-##### **Connection Pool Size**
-This option allows user to specify the connection pool size with upstream.
+##### **Trigger Threshold**
+Users can specify the minimum number of HTTP requests required per URL to enable learning mitigations. When the threshold is breached then it triggers is turned on for the learn URLs.
 
-##### **Client Keep-Alive Timeout**
-This option specify the timeout of keep-alive connections of clients. Set 0 to disable.
+    Accepted values: Integer
 
-##### **Upstream Keep-Alive Timeout**
-This option specify timeout of keep-alive connections of upstream. Set 0 to disable.
+    Default: 100000 
 
-##### **Max Requests per Connection**
-This option specify maximum allowed requests per keep-alive connection.
+##### **Error Rate**
+Users can specify the maximum allowed error rate from the source IP beyond which the IP is temporarily blacklisted.
 
-##### **Operational Mode**
-Specify operational mode for the listener
+    Accepted values: Integer
 
-##### **Limit MAX Collection**
-Specify max allowed concurrent connections. Set 0 to disable
+    Default: 0 
 
-##### **Client Body Timeout**
-This option specify the timeout for receiving the request body.
+    Metrics: Minutes
 
-##### **Client Header Timeout**
-Specify timeout for receiving request header
+##### **Drop Rate**
+Users can specify the maximum allowed drop rate from the source IP beyond which the IP is temporarily blacklisted.
 
-##### **Client Send Timeout**
-Specify timeout for send response
+    Accepted values: Integer
 
-##### **Static Extensions**
-This option specify the list of allowed static extensions that don't require security validation.
+    Default: 0 
 
-##### **Maximum HTTP Body Size**
-This field specifies the maximum allowed HTTP body size (in bytes) from a single client IP. If the size exceeds, then the request gets dropped. By default, it is 10485760 bytes.
+    Metrics: Minutes
 
-:::note Note
-In the case of HTTP/0.9, no headers get transmitted.
-:::
+##### **IP Prefixes**
+Users can specify the list of IPs.
 
-##### **Maximum HTTP Header Size**
-This field specifies the maximum allowed HTTP Header size (in bytes) from a single client IP. If size exceeds, then the request gets dropped. By default, it is 4096 bytes.
-It comprises types, capabilities, and versions of the browser that makes the request. These elements help in returning compatible data.
+    Accepted values: IP Prefixes 
 
-##### **Proxy HTTP Version **
-Specify http version used while connecting upstream server.
-
-##### **Proxy Buffers**
-This option specify the number of buffers used for reading a response from the server for a single connection.
-
-##### **Proxy Buffer Size**
-This option specify the size of the buffer used for reading the first part of the server response. Proper value can cause improper utilization of proxy buffer optimally for each request.
-
-##### **Log Format**
-This option specify the request log format.
-
-##### **Client IP Location**
-This option specify the location of the client IP.
-
-##### **Host Header**
-This option specify the host header allowed by the backend, if it's different from the listener subdomain. This allows the incoming request to alter the host header in each request and transmit it to the backend server.
-
-##### **Server Aliases**
-This option specify aliases means familiar name for the listener.
-
-##### **Virtual IPs**
-This option specify assigned virtual IPs for accepting traffic.
-
-##### **Add Port**
-This option helps you to add HTTP/S ports for Advance Settings. Here you can be unique port either HTTP or HTTPS enabled configuration without changing backend server port.
-
-![setting](/img/waf/v7/docs/addportinsettings.png)
-
-:::note Note
-Proxy Buffer and Proxy Buffer are sensitive configurations that can affect applications that should be configured with prior knowledge.
-:::
+    Default: Blank
