@@ -16,7 +16,7 @@ Global settings help to configure the settings whose scope is global. Here we ha
 ![Global Whitelist Rules](/img/waf/v8/docs/blacklist.png)
 
 
-### Global Blacklist Rules
+### Global Blacklistlist Rules
 
 These are the whitelist rule which helps in whitelisting mitigations globally for all the zones and listener in the stack.
 
