@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 # Virtual Patching 
@@ -10,7 +10,7 @@ Integration with SAST / DAST scanners
 ### Overview
 Virtual Patching is a feature of Haltdos WAF to display all the scan results and showcase the graph and statistics of the application scanned.
 
-![virtualpatching](/img/waf/v7/docs/virtualpatching.png)
+![virtualpatching](/img/waf/v8/docs/vPatching.png)
 
 ### How to Use:
 
@@ -18,6 +18,19 @@ Virtual Patching is a feature of Haltdos WAF to display all the scan results and
 2. Configure your settings
 3. Click **Save Changes**.
 
-| Parameter | Description |Accepted Values | Default
-| ----------- | ----------- |-------------| -------|
-| Upload Result | Click on the button to upload the result | Button | NA
+### Description
+
+**Resources**  
+Select resource for which logs (locally stored) will be downloaded
+
+    Accepted values: Select Resources
+
+    Default: WAF
+    
+**Date Range**  
+Select date range for which logs should be downloaded
+
+    Accepted values: Select Date Range
+
+    Default: Blank
+ 

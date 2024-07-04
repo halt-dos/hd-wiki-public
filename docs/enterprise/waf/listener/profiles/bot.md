@@ -7,27 +7,14 @@ Detect and Block malicious bots in real-time
 ##  Overview
 Bot Protection helps you quickly determine, manage, and mitigate automated requests. You can configure Legitimate/Malicious Crawlers, Tor, Bot Request Rate, and Bad Traffics. HaltDos Threat Stream TM provides a list of malicious IPs, known as bad bots and crawlers. Enterprise can specify the action to take against this malicious traffic.
 
-![Bot](/img/waf/v7/docs/profile_bot_protection.png)
+![Bot](/img/waf/v8/docs/botProtection.png)
 
 ## How To Use
 1. Go to **WAF** > **Listener** > **Profiles** > **Bot Protection**
 2. Configure your setting
 3. Click on **Save Changes** 
 
-Configure the following parameters to set up the desired settings:
-
-  | Parameter | Description| Accepted Values | Default |
-  |---------- | ------------ | -----------  | --------- |
-  | Allowed Crawlers | Specify the list of good crawlers by specifying their user agents. Such requests will be allowed. | User Agent | Blank |
-  | Bad Crawlers | Specify the list of bad crawlers by specifying their user agents. Such requests will be dropped. | User Agent | Blank |
-  | Suspicious Crawlers | Specify a list of suspicious crawlers by specifying their user agents. Such requests will be rate-limited. | User Agent | Blank |
-  | Maximum Bot Request Rate | Specify the maximum allowed Bot request rate from a single client IP.| Integer | NO ACTION | 30|
-  | Maximum Bot Request Burst | Specify the maximum allowed Bot request burst from a single client IP.| Integer | NO ACTION | 50|
-  | Bot Track Duration | Specify the Bot request rate track duration in seconds. | Integer | NO ACTION | 30 |
-  | Tor Traffic | Specifies the action to perform on TOR Network traffic.| NO ACTION / DROP / SEND CHALLENGE |
-  | Bad Reputation Traffic | Specifies the action to perform on traffic from suspicious IPs reported by Haltdos Threat Stream TM.| NO ACTION / DROP / SEND CHALLENGE | NO ACTION |
-  | Anonymous Proxy Traffic | Specifies the action when request contains no token, if token validation is enabled.| NO ACTION / RECORD / RATE LIMIT / DROP | NO ACTION |
-  | Advance Bot Protection | Specifies the advance bot protection method.| NO ACTION / RECORD / RATE LIMIT / DROP | NONE |
+### Description  
 
 ##### **Allowed Crawlers**
 This field specifies the list of good crawlers by specifying their user agents. You can add single or multiple user agents. All the user agent mentioned in Allowed Crawlers permits the crawlers to access the protected URL. 
