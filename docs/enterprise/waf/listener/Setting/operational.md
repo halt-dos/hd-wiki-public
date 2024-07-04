@@ -6,12 +6,6 @@ sidebar_custom_props:
     groups:
       - slashid
       - member
-sidebar_custom_props:
-  slashid:
-    auth: true
-    groups:
-      - slashid
-      - member
 ---
 
 # Operational
@@ -31,20 +25,13 @@ Users are allowed to configure many operational settings for the [Listeners](/v8
 
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Settings** > **Operational**.  
-1. Go to **WAF** > **Listener** > **Settings** > **Operational**.  
 2. Configure the settings.
-3. Click on Save changes. 
 3. Click on Save changes. 
 
 ### Description
 
-
 ##### **Enable IPv6**
 This option allows user to enable traffic over IPv6 and applicable in the case of all service types. Internet Protocol version 6 is the most recent version of the Internet Protocol that allows communication to take place over the network.
-
-    Accepted values: Enable / Disable
-
-    Default: Enable 
 
     Accepted values: Enable / Disable
 
@@ -74,10 +61,6 @@ This option allows user to enable web-socket support for servers or server group
 
 ##### **Enable Logging**
 This option allows user to enable access logs in the case of service type HTTP & TCP.
-
-    Accepted values: Enable / Disable
-
-    Default: Enable 
 
     Accepted values: Enable / Disable
 
@@ -308,7 +291,14 @@ This option specify aliases means familiar name for the listener.
     Accepted values: String
 
     Default: Blank  
-     
+
+##### **Virtual IPs**
+This option specify assigned virtual IPs for accepting traffic.  
+
+    Accepted values: IP
+
+    Default: Blank 
+        
 ##### **Add Port**
 This option helps you to add HTTP/S ports for Advance Settings. Here you can be unique port either HTTP or HTTPS enabled configuration without changing backend server port.
 
