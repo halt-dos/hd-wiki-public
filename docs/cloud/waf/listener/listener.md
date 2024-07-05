@@ -1,51 +1,52 @@
----
-sidebar_position: 1
----
-
-# Listener
-
-Make WAF listen on specific ports to accept connections and distribute across one or multiple origin servers.
+# Listener 
+Make WAF listen on specific ports to accept connections and distribute across one or multiple origin servers
 
 ---
 
-## Overview
+## Overview 
+Listeners are used for configuring websites and servers appropriately that it can help to reduce response time, increase throughput, optimize resource use and overload of any single resource. 
 
-Listeners are used for configuring the websites and servers to increase throughput, optimize resource use, reduce response time, and avoid overload of any single resource.
+Listeners are commonly used to integrate a website into the WAF system. The WAF solution will only listen to domains/VIPs that have been added to it.
 
+When we add a website to WAF, we must include our backend server and its port number.
 
-### How to Use:
+![Listener](/img/waf/v7/docs/listeners.png)
 
-1. Go to **Stack  > WAF > Zones > Listeners**
+![Listener](/img/waf/v7/docs/addinglisteners.png)
 
-2. Click **Add Listener** button.
-
+## How to Use :
+1. Go to **Apps** > **WAF** > **Listeners**
+2. Click **Add Listener button.**
 3. Configure your settings.
+4. Click **Save Changes**
 
-4. Click **Save**.
+## Description 
+##### **Domain / Virtual IP**
+This option allows user to specify fully qualified domain name of the website. Whenever adding the root domain, ensure it is empty.
 
-| SETTINGS              | ACCEPTED VALUES                                    | DEFAULT |
-|-----------------------|----------------------------------------------------|---------|
-| Sub Domain            | Website Name                                       | Blank   |
-| Reference             | Clone existing Listener setting for new sub-domain | Empty   |
-| Service Type          | Dropdown                                           | Http    |
-| Origin Servers & port | Server IP’s with listening port(Ex. 8.8.8.8:80)    | Blank   |
+    Accepted values: Website Name
 
-#### Description:
+    Default: Blank  
 
-**Sub Domain**
+##### **Reference**
+This option allows user to create new listener with different subdomain by modifying an existing listener. It clones the same configuration in the new listener.
 
-This field specifies the fully qualified name of the website for protection. Ensure to keep it empty while adding the root domain. Listener with a specific domain name can be respectively configured for protection.
+    Accepted values: Listeners
 
-**Reference**
+    Default: None  
 
-This field allows the user to adapt the configurations of an existing listener to the newly created listener with a different sub-domain. It clones the same configuration in the new listener.
+##### **Service Type**
+This option allows user to specify service type based on the protocol of backend application. The listener/subdomain can be created service type with any of the three protocols i.e. HTTP, TCP, UDP.
 
-**Service Type**
+    Accepted values: HTTP / STREAM / MAIL
 
-This field specifies the type of service for the subdomain i.e. HTTP, TCP, UDP. Based on the protocol of the backend application, the listener/subdomain can be created with any of the three protocols.
+    Default: HTTP 
 
-**Origin Servers**
+##### **Origin Servers**
+This option allows user to specify IP and listening port of the backend server wherein load balancing occurs. There can be combination of multiple IP and listening port.
 
-This field specifies the IP and listening port of the backend server on which load balancing will occur. There can be multiple IP and listening port combinations. 
+    Accepted values: Server IPs with listening port(Ex. 8.8.8.8:80)
 
-Following configurations can be managed by clicking on the newly added listener name.
+    Default: Blank  
+
+For example, we want to add a backend server 10.0.0.45 with its listening port 443, we can use syntax '10.0.0.45:443'.

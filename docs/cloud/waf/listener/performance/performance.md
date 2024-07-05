@@ -1,28 +1,9 @@
----
-sidebar_position: 1
----
 # Performance
 
----
+Web server optimization allows for improved performance and speed required for end-user satisfaction. Haltdos WAF uses multiple metrics to improve the performance of the backend server. Here are the articles in this section:
 
-Here are the articles in this section:
 
-**Caching**
+1. [**Caching**](caching.md)
 
-How to enable and configure caching of responses received?
+2. [**Compression**](compression.md)
 
-**Compression**
-
-Configure compression or decompression of responses
-
-**RUM Metric**
-
-It helps in analyzing website performance (till page metrics) on the client-side.
-
-### How to Use:
-
-1. Go to **WAF > Zones > Listener > Performance**
-
-2. Configure your settings. 
-
-3. Click **Save**. 
