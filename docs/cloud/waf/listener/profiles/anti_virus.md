@@ -8,7 +8,7 @@ Get your files scanned before you upload them using antivirus
 ## Overview
 Our WAF provides the facility of in-built antivirus. Also, the user can set up their own antivirus and use it with hdPlatform. If someone tries to upload a malicious file, then AV scan will stop it from getting uploaded and will generate an event as AV Scan drops.
 
-![Antivirus](/img/waf/v7/docs/profile_antivirus.png)
+![Antivirus](/img/waf/v8/docs/antivirus.png)
 
 ### Antivirus Mode 
 **Disabled**: Files will not get scanned if the mode is disabled.
@@ -22,7 +22,7 @@ Our WAF provides the facility of in-built antivirus. Also, the user can set up t
 2. Configure your setting 
 3. Click on **Save Changes**
 
-### Description  
+### Description
 
 ##### **Antivirus Mode**
 This field specifies the mode for antivirus scan against all uploaded files (if any). There are three modes for Antivirus: Disabled, Internal, External.
@@ -51,13 +51,13 @@ For External Antivirus mode, We need to specify the name of the ICAP service to 
     Accepted values: icap://< ip_address >/< name >/
 
     Default: Blank
-  
+
 ##### **ICAP Method**
 For External Antivirus mode, We need to specify the ICAP request method for antivirus scanning. In REQMOD mode, the ICAP request MUST contain an encapsulated HTTP request.
 
     Accepted values: Specify the request method for antivirus scanning.
 
-    Default: REQMOD  
+    Default: REQMOD 
 
 ##### **ICAP Request Timeout**
 For External Antivirus mode, We need to specify the timeout in milliseconds for request timeout. If an ICAP request has not been completed before the timeout, the connection to the client gets closed.
@@ -80,4 +80,4 @@ For External Antivirus mode, We need to specify the ICAP header value regex to s
 
     Accepted values: String (HEADER NAME)
 
-    Default: Blank  
+    Default: Blank

@@ -1,6 +1,6 @@
 {
   "label": "Server Groups",
-  "position": 0,
+  "position": 4,
   "link": {
     "type": "doc",
     "id": "servergroup"

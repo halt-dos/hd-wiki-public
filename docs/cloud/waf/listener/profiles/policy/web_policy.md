@@ -11,14 +11,17 @@ Configure Web Security Policy for HTML based websites - , Dynamic, Wordpress, et
 
 A web policy or policies are constraints or mandates in relation to technical constraints, legal, editorial, and compliance. Configure policies that HTTP(s) requests must conform to when requesting data from the backend web application.
    
-![Web Policy](/img/waf/v7/docs/profile_webpolicy.png)
+![Web Policy](/img/waf/v8/docs/webPolicy1.png)
 
-![webpolicy](/img/waf/v7/docs/profile_webpolicy1.png)
+![webpolicy](/img/waf/v8/docs/webPolicy2.png)
+
 
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Profiles** > **Policy** > **Web Policy**.
 2. Configure your settings.
 3. Click **Save Changes**.
+
+### Description 
 
 ##### **Maximum Allowed Header Fields**
 HTTP header fields provide necessary data about the request or response. It also provides the details about the object sent in the message body.
@@ -30,7 +33,7 @@ This field specifies the maximum number of allowed HTTP header fields in the HTT
 
     Min: 1
 
-    Default: 30  
+    Default: 30 
 
 ##### **Maximum Header Field Name Length**
 This field specifies the maximum allowed length of the HTTP header field name. If the header field name length exceeds the specified length then the request gets dropped.
@@ -41,7 +44,7 @@ This field specifies the maximum allowed length of the HTTP header field name. I
 
     Min: 4
 
-    Default: 50   
+    Default: 50 
 
 ##### **Maximum Header Field Value Length**
 This field specifies the maximum allowed length of the HTTP header field value. If the header field value length exceeds the specified length then the request gets dropped.
@@ -51,8 +54,8 @@ This field specifies the maximum allowed length of the HTTP header field value. 
     Max: 8192
 
     Min: 4
-    
-    Default: 2048  
+
+    Default: 2048 
 
 ##### **Allowed HTTP Methods**
 HTTP Methods are a set of common request methods for HTTP. These request methods indicate the specific action that you need to take care of a specific resource. Each of the request methods implements a different semantic. A group of these methods represents some common features. E.g. a request method can be safe, cache-able, or idempotent.  
@@ -130,7 +133,7 @@ An HTTP cookie, also known as a browser cookie or web cookie is a small data pie
 
     Default: 86400
 
-    Metrics: Seconds  
+    Metrics: Seconds 
 
 Three primary purposes of cookies:
 
@@ -138,39 +141,42 @@ Three primary purposes of cookies:
  - **Personalization**: Themes, user preferences, and other settings.
  - **Tracking**: User behavior recording and analyzing.  
 
+
+![webpolicy](/img/waf/v8/docs/webPolicy3.png)
+
 Cookies are primarily for session management. Attackers try to steal its data for session hijacking. Parameters to consider while securing cookie:  
- **Cookie Name**: This field specifies the cookie name for which you need to apply the policies.  
+ - **Cookie Name**: This field specifies the cookie name for which you need to apply the policies.
 
-    Accepted values: String / Integer
+        Accepted values: String / Integer
 
-    Default: "Enter Cookie Name" 
-  
- **Enable Immutable (Cookie Signing)**: This field allows you to ensure that the specified cookie remains unchanged by the client. Any request with a modified cookie value gets rejected.  
+        Default: "Enter Cookie Name" 
 
-    Accepted values: Enable / Disable
+ - **Enable Immutable (Cookie Signing)**: This field allows you to ensure that the specified cookie remains unchanged by the client. Any request with a modified cookie value gets rejected.
 
-    Default: Disable 
-    
- **Enable HTTP Only Flag**: This field prevents the client-side script from accessing and manipulating the cookie.  
- 
-    Accepted values: Enable / Disable
+        Accepted values: Enable / Disable
 
-    Default: Disable 
+        Default: Disable
 
- **Enable Secure Flag**: This field allows you to ensure that the cookie is only sent over a secured HTTPS channel.  
- 
-    Accepted values: Enable / Disable
+ - **Enable HTTP Only Flag**: This field prevents the client-side script from accessing and manipulating the cookie.  
 
-    Default: Disable 
-  
- **Same Site**: This field doesn't allow the browser to send this cookie along with cross-site requests. The main goal is to mitigate the risk of cross-origin data leakage. Even, it protects against cross-site request forgery attacks.  
- 
-    Accepted values: NONE / STRICT / LAX
+        Accepted values: Enable / Disable
 
-    Default: NONE 
-  
-- **STRICT** - This value ensures the cookie is not being sent to the target site in all cross-site browsing contexts.  
-- **LAX** - This value provides both security and usability to the sites that need to manage the user's logged-in session once the user login from an external link.
+        Default: Disable
+
+ - **Enable Secure Flag**: This field allows you to ensure that the cookie is only sent over a secured HTTPS channel.
+
+        Accepted values: Enable / Disable
+
+        Default: Disable 
+
+ - **Same Site**: This field doesn't allow the browser to send this cookie along with cross-site requests. The main goal is to mitigate the risk of cross-origin data leakage. Even, it protects against cross-site request forgery attacks.  
+
+        Accepted values: NONE / STRICT / LAX
+
+        Default: NONE 
+
+**STRICT** - This value ensures the cookie is not being sent to the target site in all cross-site browsing contexts.  
+**LAX** - This value provides both security and usability to the sites that need to manage the user's logged-in session once the user login from an external link.
 
 :::note Note
 This value specifies no action would be taken, and cookies will be allowed to pass to an external site.

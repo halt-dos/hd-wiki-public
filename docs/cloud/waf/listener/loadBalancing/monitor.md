@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 3
 ---
 
-# Monitors
+# Health Monitors
 Continually test your upstream servers, avoid the servers that have failed, and gracefully add the recovered servers into the server group.
 
 ---
@@ -10,7 +10,7 @@ Continually test your upstream servers, avoid the servers that have failed, and 
 ### Overview
 Monitoring provides a comprehensive overview of the status and performance of the Server Group and/or individual real servers inside the server group. If a monitor is attached to a server group, then it will get applied to all the servers inside that group automatically. If a monitor is attached to a particular server then it will override the configuration of the server-group monitor. Health Checks computes an overall health state for each upstream server in the listener. Backend(upstream) that responds successfully for the configured number of times is considered healthy. Backend(upstream) that fails to respond successfully for a separate number of times is unhealthy.
 
-![Monitors](/img/waf/v7/docs/addmonitor.png)
+![Monitors](/img/waf/v8/docs/monitors.png)
 
 ### How to Use:
 
@@ -25,9 +25,9 @@ Monitoring provides a comprehensive overview of the status and performance of th
 ##### **Monitor Name**
 Specify a user-friendly name to monitor.  
 
-    Accepted values: String
+    Accepted values: Integer
 
-    Default: Blank 
+    Default: 1  
 
 ##### **Enable Health Check**
 Enable to periodically check the health of upstream servers by sending special health‑check requests to each server and verifying the correct response.  
@@ -36,15 +36,8 @@ Enable to periodically check the health of upstream servers by sending special h
 
     Default: Disabled 
 
-##### **Update Server Status**
-Enable to specify wheather to update the server status.    
-
-    Accepted values: Enabled / Disbaled
-
-    Default: Disabled 
-
 ##### **Health Check Interval**
-Set the seconds, say 10, then every 10 seconds WAF sends a request for “/” to each server/server group. If any communication error or timeout occurs (the server responds with a status code other than the expected code) the health check fails. The server is marked as unhealthy, and WAF does not send client requests to it (if attached to server group) until it once again passes a health check.  
+Set the seconds, say 10, then every 10 seconds WAF sends a request for “/” to each server/server group. If any communication error or timeout occurs (the server responds with a status code other than the expected code) the health check fails. The server is marked as unhealthy, and WAF does not send client requests to it (if attached to server group) until it once again passes a health check.
 
     Accepted values: Integer
 
@@ -78,7 +71,7 @@ Sets the number of passes that must occur during the heath check interval period
 
     Min: 0
 
-    Default: 1  
+    Default: 1
 
 ##### **Health Check Type**
 
@@ -103,16 +96,30 @@ Health check sends SNMP query, if unable to receive response, then we make that 
  - **Custom Script**: 
 Health check runs custom script (shell script, perl script or Lua script). The script is executed with parameters of server IP and server Port. If the script responds with 1, heath check is passed. If the script responds with 0, we make that server as unhealthy  
 
-##### **Health Script**
-On selecting Script the user have to select custom health check script
-
-    Accepted values: Select health check report
-
-    Default: Blank 
-
 ##### **Port**
-Specify a user-friendly name to monitor.  
+Specify a new port with the port parameter
 
     Accepted values: Integer
 
-    Default: Blank 
+    Default: Blank
+
+##### **Health Script**
+Select your custom health check script
+
+    Accepted values: Add Script
+
+    Default: Blank
+
+##### **SNMP Version**
+Specify SNMP version for monitoring
+
+    Accepted values: SNMP v1 / SNMP v2 / SNMP v2c / SNMP v3
+
+    Default: Blank
+
+##### **SNMP Community**
+Specify SNMP Community
+
+    Accepted values: String
+
+    Default: Public

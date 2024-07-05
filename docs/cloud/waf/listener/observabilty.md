@@ -2,14 +2,14 @@
 sidebar_position: 13
 ---
 
-# Discovery 
+# Observabilty 
 
 ### Overview 
 Discovery displays all the parameters learned from the request i.e. headers, cookies, arguments. The learning can be deployed using Deploy Learning. Users can also upload a swagger file.
 
-![Discovery](/img/waf/v7/docs/discovery1.png)
+![Discovery](/img/waf/v8/docs/observabilty1.png)
 
-![Discovery](/img/waf/v7/docs/discovery2.png)
+![Discovery](/img/waf/v8/docs/observabilty2.png)
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Discovery**
 2. Configure your settings
@@ -75,11 +75,8 @@ Users can select the parameter type from drop down menu.
 
 ##### **Parameter Description**
 
-Users can enter Parameter Description
+Users have to mention the parameter description.
 
     Accepted values: String
 
-    Default: Blank 
-
-
-
+    Default: Blank

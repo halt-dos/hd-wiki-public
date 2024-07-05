@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Load Balancing  
 
 Load Balancing mechanism used for WAF
@@ -8,7 +11,7 @@ Load Balancing mechanism used for WAF
 
 Load balancing across multiple application instances is a commonly used technique for optimizing resource utilization, maximizing throughput, reducing latency, and ensuring fault-tolerant configurations.
 
-![Load Balancing](/img/waf/v7/docs/loadbalancing.png)
+![Load Balancing](/img/waf/v8/docs/loadBalancing1.png)
 
 
 
@@ -36,13 +39,12 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 9. **SNMP Metrics**: This algorithm is a dynamic load balancing algorithm. It forwards client requests to the server, which have least CPU / RAM usage. NOTE: For this algorithm to work, the server group should have SNMP monitor attached.    
 
-![Load Balancing](/img/waf/v7/docs/loadbalancing1.png)
+![Load Balancing](/img/waf/v8/docs/loadBalancing2.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Server Groups** > **Load Balancing**
 
 2. Set the configurations and **Save Changes**.
-
 
 ### Description
 
@@ -86,25 +88,26 @@ Specify enabling sticky session based on specified cookie
 
     Default: 1
 
-#### **Location**
+#### Location
 
-##### **Priority**  
+##### **Priority**
 Set the priority
 
     Accepted values: Integer
 
     Default: Blank 
 
-##### **Location**  
-Set the location  
+##### **Location**
+Set the priority
 
     Accepted values: SRC_IP / DST_IP / SRC_PORT / DST_PORT / URL / ARG_VAL / HEADER_VAL / COOKIE_VAL
 
     Default: SRC_IP 
 
-##### **Value**  
+##### **Value**
 Set the location
 
     Accepted values: String
 
-    Default: Blank
+    Default: Blank 
+  

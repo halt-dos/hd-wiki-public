@@ -13,13 +13,12 @@ Intercept HTTP responses of the original application and inject fake parameters 
 1. For GET requests, the parameters will be added to existing ```<a href>``` link values.
 2. For POST requests, the parameters will be added as hidden input type parameters of existing forms.
    
-![Deception Rule](/img/waf/v7/docs/deception_rule.png)
+![Deception Rule](/img/waf/v8/docs/deceptionRules.png)
    
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Profiles** > **Rules** > **Deception Rules**.
 2. Click on Add Rule and set relevant parameters described in the table below.
 3. Click on save changes
-
    
 ### Description
    
@@ -64,7 +63,7 @@ The following actions are available to the User-
     Accepted values: Drop & Record Request / Record Request / Temprorary  Blacklist Src IP / Tarpit Src IP / Redirect / Terminate Connection / Block User Session
 
     Default: Drop & Record Request  
-   
+
 1. **DROP & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated, but the request will not be allowed through the WAF.
 2. **RECORD REQUEST** - An event is generated whenever the Request satisfies the Rule, but whenever the request passes through other rules its events are logged by Haltdos.
 3. **TEMPORARY BLACKLIST SOURCE IP** - If the request satisfies the rule, then the user is temporarily blacklisted.
@@ -89,5 +88,4 @@ Users can specify the fields for which the rule will be applicable.
 
     Accepted values: String
 
-    Default: Blank  
-
+    Default: Blank

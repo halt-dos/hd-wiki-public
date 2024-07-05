@@ -5,8 +5,8 @@ sidebar_position: 3
 
 ### Overview
  A Firewall Rule is used to set up regulations on a particular domain. When a request is made to that domain, the WAF checks for the violation of a rule and carries out the appropriate action that is configured by the User.  
- 
-![Firewall Rule](/img/waf/v7/docs/firewallrule.png)
+
+![Firewall Condition](/img/waf/v8/docs/fireWallRule.png)
 
 The following actions are available to the User :
 1. **DROP  & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated but the request will not be allowed through the WAF.
@@ -23,13 +23,11 @@ The following actions are available to the User :
 12. **SKIP LEARNING** - If the request satisfies the rule, then no learning will be performed on the current request.
 13. **SEND EMPTY RESPONSE** - If the request satisfies the rule, the end-user will get empty response / blank page in return.
 
-
 ### How to Use:
 1. Go to **WAF** > **Listener** >  **Profiles** > **Rules** > **Firewall Rules**
 2. Click on the Add Rule Button and a pop-up box will open.
 3. Configure the fields that are present.
 4. Click on Save Changes and the rule will be reflected.
-
 
 ### Description
 
@@ -73,9 +71,7 @@ Users are allowed to specify the action to be taken for the request matched i.e.
 
     Accepted values:  Record Request / DROP & RECORD REQUEST / BYPASS REQUEST / TEMPORARY BLACKLIST SRC IP / REDIRECT / SEND CAPCHA CHALLENEGE / SEND RESONSE WITH STATUUS CODE / SEND CUSTOM RESPONSES / CHANGE RESPONSE CODE / NO ACTION / SEND EMPTY RESPONSES
 
-    Default: Record Request  
-
-#### **Match Criteria**
+    Default: Record Request 
 
 ##### **Match Condition**
 This drop-down allows to set the match condition i.e. Pattern Match or Pattern Not Match for the request.
@@ -96,6 +92,11 @@ Users are allowed to specify the keyword to match when the rule is invoked. The 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
 To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)
+
+
+
+
+
 
 
 

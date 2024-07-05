@@ -13,8 +13,7 @@ Correlation rules support using compounding logic to make more advanced rules th
 1. Follow the links: **WAF** > **Listener** > **Profiles** > **Rules** > **Correlation Rules**.
 2. Click on Add Rule and set relevant parameters described in the table below.
 3. Click on save changes.
-   
-   
+
 ### Description
 
 ##### **Rule Name**
@@ -43,7 +42,7 @@ Users are allowed to specify the URI on which the tamper rule will be applied.
 
     Accepted values: Regex
 
-    Default: Blank  
+    Default: Blank 
 
 ##### **Method**
 Users are allowed to select the HTTP method for the rule to extract when matched with the request.
@@ -57,8 +56,8 @@ The following actions are available to the User-
 
     Accepted values: Record Request / DROP & RECORD REQUEST / BYPASS REQUEST / TEMPORARY BLACKLIST SRC IP / REDIRECT / SEND CAPCHA CHALLENEGE / SEND RESONSE WITH STATUUS CODE / SEND CUSTOM RESPONSES / CHANGE RESPONSE CODE / NO ACTION / SEND EMPTY RESPONSES
 
-    Default: Record Request   
-   
+    Default: Record Request    
+
 1. **DROP & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated but the request will not be allowed through the WAF.
 2. **RECORD REQUEST** - An event is generated whenever the Request satisfies the Rule, but whenever the request passes through other rules its events are logged by Haltdos.
 3. **BYPASS REQUEST** - If the Request tests positive for the rule, no other rule is tested and the Request will be allowed through the WAF.
@@ -73,7 +72,7 @@ The following actions are available to the User-
 12. **SKIP LEARNING** -If the request satisfies the rule, then no learning will be performed on the current request.
 13. **SEND EMPTY RESPONSE** - If the request satisfies the rule, the end-user will get empty response / blank page in return.
 
-#### **Dependent Rule**
+#### **Add Rule Condition**
 By clicking on Add Rule Condition button, the end-user can add specify the location to be whitelisted. At least, one location is mandatory for this rule. 
 
 ##### **Rule ID**
@@ -88,4 +87,4 @@ Users can specify whether the rule should be matched or not matched.
 
     Accepted values: MATCH / NO MATCH
 
-    Default: MATCH  
+    Default: MATCH

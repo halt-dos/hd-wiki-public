@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Servers
 
 Configure the application servers
@@ -8,9 +11,9 @@ Configure the application servers
 
 Configuration of upstream servers in a server group can be modified on-the-fly by using Servers.
 
-![Servers](/img/waf/v7/docs/server.png)
+![Servers](/img/waf/v8/docs/servers1.png)
 
-![Servers](/img/waf/v7/docs/server1.png)
+![Servers](/img/waf/v8/docs/servers2.png)
 
 ## How to Use :
 
@@ -19,7 +22,6 @@ Configuration of upstream servers in a server group can be modified on-the-fly b
 2.Click **Add Server** and configure it with basic and advanced configuration.
 
 3.Set the configurations and **Save Changes**
-
 
 ### Description:
 
@@ -70,7 +72,7 @@ This option allows user to specify if the server can be accessed remotely or not
     Accepted values: True / False
 
     Default: False
-   
+
 ##### **Monitor** 
 
 This option allows user to select from the monitors created. Monitors help in monitoring the health of the server.
@@ -78,7 +80,7 @@ This option allows user to select from the monitors created. Monitors help in mo
     Accepted values: Select Existing monitor
 
     Default: None
-    
+
 ##### **Backup** 
 
 This option allows user to specify if backup is allowed for the server. In case of primary failure, the backup will be up and running.
@@ -152,3 +154,4 @@ This option allows user to specify the read timeout for the server.
     Default: 0 
 
     Metrics: Seconds
+

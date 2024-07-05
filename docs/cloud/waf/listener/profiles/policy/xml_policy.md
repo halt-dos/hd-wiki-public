@@ -11,7 +11,7 @@ sidebar_position: 3
 
 XML Policy is a feature of Haltdos WAF. It allows application owners to block unwanted requests that feature malware XML documents or documents bigger than the allowed size. The owner can set their Minimum & Maximum size limit for the XML document.
 
-![Xmlpolicy](/img/waf/v7/docs/profile_xmlpolicy.png)
+![Xmlpolicy](/img/waf/v8/docs/xmlPolicy.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Profiles** > **Policy** > **XML Policy**.
@@ -41,7 +41,7 @@ XML Policy is a feature of Haltdos WAF. It allows application owners to block un
 
 ##### **Supported Header**  
  Users are allowed to specify supported header i.e. content-type, to identify request as XML.
-        
+
     Accepted values: String 
 
     Default: application/xml / text/xml
@@ -55,7 +55,7 @@ This field specifies the maximum child nodes of the XML document. In the above e
 
     Min: 0
 
-    Default: 100  
+    Default: 100 
 
 ##### **Maximum Depth**  
 This field specifies the maximum depth of an XML document. In the above example, maximum depth is 2, Tag ``<book>`` is at depth 1 & children are at depth 2. An XML document can have a minimum depth of 1 and a maximum depth up to 1000000.
@@ -88,7 +88,7 @@ This field specifies the maximum node name size of an XML document. In the above
 
     Min: 0
 
-    Default: 1000 
+    Default: 100
 
 ##### **Maximum Node Value**  
 This field specifies the maximum node value of the XML document. In the above example, the maximum node value is 12, Tag ``<title>`` has a value of Harry Potter of length 12. An XML document can have a minimum of 1 node value and a maximum of 1000000 node values.
@@ -99,7 +99,7 @@ This field specifies the maximum node value of the XML document. In the above ex
 
     Min: 0
 
-    Default: 1000  
+    Default: 1000
 
 ##### **Maximum Attribute Name**  
 This field specifies the maximum attribute name size of an XML document. In the above example, the maximum attribute name is 8, Tag ``<book>`` has an attribute category of length 8. An XML document can have a minimum of 1 attribute name and a maximum of 10000 attribute names.
@@ -110,7 +110,7 @@ This field specifies the maximum attribute name size of an XML document. In the 
 
     Min: 0
 
-    Default: 1000  
+    Default: 1000 
 
 ##### **Maximum Attribute Value**  
 This field specifies the maximum attribute value size of the XML document. In the above example, the maximum attribute value is 8, Tag ``<book>`` has an attribute category of length 8. An XML document can have a minimum of 1 attribute value and a maximum of 1000000 attribute value.

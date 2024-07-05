@@ -4,12 +4,8 @@ sidebar_position: 4
 # Rate Limit Rules
 ### Overview
 Rate Limiting is a feature of Haltdos WAF that allows application owners to enforce rate limiting on some of the pages which affect their website performance.
-  
-![Rate limit](/img/waf/v7/docs/rate_limit.png)
+![Rate limit](/img/waf/v8/docs/rateLimitRule.png)
 
-![Rate limit](/img/waf/v7/docs/rate_limit1.png)
-
-![Rate limit](/img/waf/v7/docs/rate_limit2.png)
 
 **Warning** Manual configuration of rate limit rules is risky for administrators without the relevant training and experience. Badly conceived or misconfigured rate limit rules can result in loss of performance, incorrect behavior.
 
@@ -18,7 +14,6 @@ Rate Limiting is a feature of Haltdos WAF that allows application owners to enfo
 1. Follow the links: **WAF** > **Listener** > **Profiles** > **Rules** > **Rate Limit Rule**
 2. Click on Add Rule and set relevant parameters described in the table below.
 3. Click on Save Changes.
-
 
 ### Description
 
@@ -50,7 +45,7 @@ Users are allowed to specify the action to be taken for the request matched i.e.
 
     Default: Record Request
 
-##### **Rate**
+##### **Limit Rate**
 Users are allowed to specify the request rate for the page. The limit rate specified will validate the number of requests coming per second which is not exceeding the limit rate.
 
     Accepted values: Integer
@@ -63,9 +58,9 @@ Users are allowed to specify the request rate for the page. The limit rate speci
 
     Metric: Per Second
 
-##### **Burst**
-Specify the request burst rate for the page. The burst rate specified will validate the total number of requests received.
-    
+##### **Limit Burst**
+Specify the request burst rate for the page. The burst rate specified will validate the total number of requests received. 
+
     Accepted values: Integer
 
     Max: 1000000
@@ -76,7 +71,7 @@ Specify the request burst rate for the page. The burst rate specified will valid
 
     Metric: Count
 
-##### **Track Duration**
+##### **Limit Duration**
 Users are allowed to specify the time duration for which the rule will limit the request.
 
     Accepted values: Integer
@@ -96,7 +91,7 @@ Users are allowed to specify the object on which we apply the limit such as Clie
 
     Default: Request
 
-:::note Note
+:::note NOTE
 Always limit burst must be greater than or equal to limit rate.
 :::
 
@@ -105,6 +100,8 @@ Always limit burst must be greater than or equal to limit rate.
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
 To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)
+
+
 
 
 

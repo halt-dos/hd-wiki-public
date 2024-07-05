@@ -9,14 +9,15 @@ sidebar_position: 8
    
 The Tamper rule is a feature of Haltdos WAF that provides encryption for the user input fields to protect from browser based malware stealing user's credentials, It also validates hidden input fields.
    
-![Tamper Rule](/img/waf/v7/docs/temper_rule.png)
+![Tamper Rule](/img/waf/v8/docs/tamperRule1.png)
    
+![Tamper Rule](/img/waf/v8/docs/tamperRule2.png)
+    
 ### How to Use:
 1. Follow the links: **WAF** > **Listener** >  **Profiles** > **Rules** > **Tamper Rules**
 2. Click on Add Rule and set relevant parameters described in the table below.
 3. Click on save changes.
 
-![Tamper Rule](/img/waf/v7/docs/temper_rule1.png)
 ### Description 
 
 ##### **Rule Name**
@@ -34,7 +35,7 @@ Users are allowed to specify a rule message containing a detailed description to
     Default: Blank  
 
 ##### **Rule Priority**
-It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
+It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0.
 
     Accepted values: Integer
 
@@ -45,7 +46,7 @@ Users are allowed to specify the tamper action to be taken for the request match
 
     Accepted values: Encrypt / Obfuscate / Hash / Protect against Defacement
 
-    Default: Blank  
+    Default: Blank 
 
 ##### **Rule Action**
 Users are allowed to specify the action to be taken for the request matched i.e. Drop & Record Request, Record Request, Bypass Request, Temporary Blacklist Src IP, Redirect, Send Challenge, Send Response, Tarpit Src IP, No Action, Skip Learning, Send Empty Response.
@@ -54,17 +55,11 @@ Users are allowed to specify the action to be taken for the request matched i.e.
 
     Default: Blank  
 
-##### **Custom Error Page**
-On selecting Drop and Record Request, Custom Error Page section will appeared where user have to select the Custom error page.
-
-    Accepted values: Select Custom Error Page
-
-    Default: Blank  
-
 ### Attribute Extraction
 
 ##### **URI**
-Users are allowed to specify the URI on which the tamper rule will be applied.  (**example** - /login)
+Users are allowed to specify the URI on which the tamper rule will be applied.
+ - **example** - /login
 
     Accepted values: Regex
 
@@ -76,7 +71,7 @@ Users are allowed to select the HTTP method for the rule to extract when matched
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: ALL  
-    
+
 ##### **Evaluation Phase**
 Users are allowed to select the evaluation phase for the rule i.e. Request or Response.
 
@@ -113,7 +108,7 @@ Users are allowed to select the HTTP method for the rule to validate when matche
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: ALL  
-   
+
 ##### **Evaluation Phase**
 
 Users are allowed to select the evaluation phase for the rule i.e. Request or Response.
@@ -135,8 +130,7 @@ Users are allowed to specify the parameter which will be used for the rule for e
 
     Accepted values: String
 
-    Default: Blank  
-
+    Default: Blank
 
 
 

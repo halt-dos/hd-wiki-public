@@ -7,14 +7,14 @@ Detect and Block malicious bots in real-time
 ##  Overview
 Bot Protection helps you quickly determine, manage, and mitigate automated requests. You can configure Legitimate/Malicious Crawlers, Tor, Bot Request Rate, and Bad Traffics. HaltDos Threat Stream TM provides a list of malicious IPs, known as bad bots and crawlers. Enterprise can specify the action to take against this malicious traffic.
 
-![Bot](/img/waf/v7/docs/profile_bot_protection.png)
+![Bot](/img/waf/v8/docs/botProtection.png)
 
 ## How To Use
 1. Go to **WAF** > **Listener** > **Profiles** > **Bot Protection**
 2. Configure your setting
 3. Click on **Save Changes** 
 
-Configure the following parameters to set up the desired settings:
+### Description  
 
 ##### **Allowed Crawlers**
 This field specifies the list of good crawlers by specifying their user agents. You can add single or multiple user agents. All the user agent mentioned in Allowed Crawlers permits the crawlers to access the protected URL. 
@@ -52,37 +52,28 @@ This field specifies a list of suspicious crawlers by specifying their user agen
 ##### **Maximum Bot Request Rate**
 This field specifies the maximum allowed Bot request rate from a single client IP. In case the request rate of the user is higher than the defined rate, the request gets dropped.
 
-    Accepted values: Integer
+    Accepted values: Numbers
 
-    Default: 20
+    Default: 30
 
 ##### **Maximum Bot Request Burst**
 This field specifies the maximum allowed Bot request burst from a single client IP. In case the requested burst of the user is higher than the defined rate, the request gets dropped.
 
-    Accepted values: Integer
+    Accepted values: Numbers  
+    Default: 50  
 
-    Default: 30  
 
 :::note Note
 Bot Request Burst must be greater than or equal to Bot Request Rate
 :::
+
   
 ##### **Bot Track Duration**
 Specify the Bot request rate track duration in seconds.
 
-    Accepted values: Integer
-      
-    Default: 30  
-
-    Metrics: Seconds
-
 ##### **Tor Traffic**
 
 This field allows you to take action in case there is Tor traffic in the network. Tor traffic are the request coming from tor browser or dark web. It includes two actions:
-
-    Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
-      
-    Default: NO ACTION  
 
 - **NO ACTION** 
 Don't perform any action  
@@ -97,10 +88,6 @@ Send a challenge like a captcha
 
 This field allows you to take action on traffic when Haltdos Threat Stream TM reports suspicious IPs. It includes two actions:
 
-    Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
-      
-    Default: NO ACTION  
-
 - **NO ACTION**
 Don't perform any action  
 
@@ -110,19 +97,8 @@ Drop the request
 - **SEND CHALLENGE**
 Send a challenge like a captcha  
 
-##### **Anonymous Proxy Traffic**
-Defines the response to traffic originating from anonymous proxy IP addresses
-
-    Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
-      
-    Default: NO ACTION  
-
 ##### **Advance Bot Protection**
 This field allows you to enable Haltdos Advance Bot Protection for an incoming request for the current security profile. It includes the following actions:
-
-    Accepted values: NONE / FINGERPRINT / TOKEN VALIDATION / ANY
-      
-    Default: NONE  
 
 - **NONE** :
 Don't perform any action  

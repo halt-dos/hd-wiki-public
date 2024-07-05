@@ -8,7 +8,7 @@ Developer Script strategies will be implemented as a developer script rule. This
    
 For the given URI, the developer script will be executed and if the condition matches the rule the appropriate action will be taken as per the rule. User can define their own logic which may not be present in the WAF rules and thus could mitigate the specific attack.
 
-![Script Rule](/img/waf/v7/docs/script_rule.png)
+![Script Rule](/img/waf/v8/docs/scriptRules.png)
    
 The developer script defines two phases:
 1. **Request Phase**: This developer script is executed before sending the request to web-servers.
@@ -27,7 +27,6 @@ The behavior of the script may vary for the following configurations:
 1. Go to **WAF** > **Listeners** > **Profiles** > **Rules** > **Developer Script Rules**  
 2. Click on Add Rule and set relevant parameters.  
 3. Click on **Save Changes**.  
-
    
 ### Description 
 
@@ -36,7 +35,7 @@ Users are allowed to specify the rule name to identify the rule which is to be c
 
     Accepted values: String
 
-    Default: Blank  
+    Default: Blank
 
 ##### **Rule Message**
 Users are allowed to specify a rule message containing a detailed description to identify the rule which is to be created.
@@ -50,4 +49,10 @@ It is a numeric field that specifies the priority of the rule in which the rule 
 
     Accepted values: Integer
 
-    Default: 0  
+    Default: 0
+
+##### **Add Condition**
+
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
+
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)

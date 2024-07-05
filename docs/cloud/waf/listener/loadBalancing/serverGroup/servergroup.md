@@ -1,3 +1,6 @@
+---
+sidebar_position: 0
+---
 # Server Groups
 
 User can select the Load Balancing mechanism and specify Origin Server IPs on this screen
@@ -18,7 +21,9 @@ This is useful for:
 
 Monitoring, when you get the state of the server or server group with one command.
 
-![Server Group](/img/waf/v7/docs/servergroup.png)
+![Server Group](/img/waf/v8/docs/serverGroup1.png)  
+
+![Server Group](/img/waf/v8/docs/serverGroup2.png)
 
 ### How to Use:
 
@@ -33,41 +38,41 @@ Specify a user-friendly name to identify the server group. The group name takes 
 
     Accepted values: String
 
-    Default: Blank  
+    Default: Blank 
 
 ##### **Monitor**
 This option allows user to attach any existing monitor to the server group.
 
-    Accepted values: Select from existing monitors
+    Accepted values: Select Existing Health Monitor
 
-    Default: None 
+    Default: Blank 
 
 ##### **SSL**
 This option allows user to enable or disable SSL for the server group.
 
-    Accepted values: Enable / Disable
+    Accepted values: Enabled / Disabled
 
-    Default: Disable 
+    Default: Disabled 
 
 ##### **Max Connection**
 This option allows user to specify the number of maximum connections allowed to the specific server.
 
     Accepted values: Integer
 
-    Default: 0
+    Default: 0 
 
 ##### **Connection Timeout**
 This option allows user to specify the connection timeout for the server.
 
     Accepted values: Integer
 
-    Default: 100
+    Default: 100 
 
     Metrics: Seconds
 
 ##### **Send Timeout**
-This option allows user to specify to send timeout for the server. 
-    
+This option allows user to specify to send timeout for the server.
+
     Accepted values: Integer
 
     Default: 100 

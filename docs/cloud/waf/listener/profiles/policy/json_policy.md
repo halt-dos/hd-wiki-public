@@ -11,7 +11,7 @@ sidebar_position: 2
 
 JSON Policy is a feature of Haltdos WAF. It allows application owners to block unwanted requests that include malware JSON or data size bigger than the allowed size. The owner can set their limit up to which he wants to accept the data or how many keys in JSON object he wants to allow. Minimum and Maximum limits are:
 
-![JSON Policy](/img/waf/v7/docs/profile_jsonpolicy.png)
+![JSON Policy](/img/waf/v8/docs/jsonPolicy.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Security Profiles** > **Policy** > **JSON Policy**.
@@ -38,8 +38,7 @@ JSON Policy is a feature of Haltdos WAF. It allows application owners to block u
   ]   
 }
 ```
-  
-  
+
 ## Description
 
 ##### **Policy Mode**
@@ -54,7 +53,7 @@ Users are allowed to specify supported header i.e. content-type, to identify req
 
     Accepted values: String
 
-    Default: application/json  
+    Default: application/json 
 
 ##### **Maximum Children**
 This field specifies the maximum number of keys that a JSON object can have.
@@ -67,7 +66,7 @@ A JSON object can have a minimum of 1 key and a maximum of 10000 keys.
 
     Min: 0 
 
-    Default: 100  
+    Default: 100 
 
 ##### **Maximum Key Name Length**
 This field specifies the maximum key name length that a JSON object can have. In the above example, the maximum key name length is 9, i.e. (the key employee's length is 9). A JSON object can have 1 as minimum key name length and 1000 as maximum key name length.
@@ -78,7 +77,7 @@ This field specifies the maximum key name length that a JSON object can have. In
 
     Min: 0
 
-    Default: 1000  
+    Default: 1000
 
 ##### **Maximum Property Value length**
 This field specifies the maximum property value size in a JSON object. A JSON object can have a minimum property value size of 1 and a maximum property value size of 10000.
@@ -89,7 +88,7 @@ This field specifies the maximum property value size in a JSON object. A JSON ob
 
     Min: 0
 
-    Default: 1000  
+    Default: 1000
 
 ##### **Maximum Depth**
 This field specifies the maximum depth that a JSON object can have.

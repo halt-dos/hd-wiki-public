@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Caching
 ##### It store data locally in order to speed up the performance
 ---
@@ -5,9 +8,9 @@
 ## Overview
 When caching is enabled, WAF saves responses in a directory and uses them to respond to clients without having to proxy requests for the same content every time.
 
-![Caching](/img/waf/v7/docs/performance_caching.png)
-  
-![caching](/img/waf/v7/docs/prformance_caching1.png)  
+![Caching](/img/waf/v8/docs/caching1.png)
+
+![caching](/img/waf/v8/docs/caching2.png)  
 
 ## How to Use :
 
@@ -31,7 +34,7 @@ This toggle button allows the re-validation of expired cache items. It helps in 
 
     Accepted values: Enabled / Disabled
 
-    Default: Enabled
+    Default: Disabled
 
 ##### **Enable Background Update**
 

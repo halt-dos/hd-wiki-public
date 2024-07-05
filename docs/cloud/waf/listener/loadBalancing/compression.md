@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Compression
 Configure compression or decompression of responses
 
@@ -6,15 +9,13 @@ Configure compression or decompression of responses
 ### Overview 
 Haltdos provides you the ability to compress or decompress the responses which often significantly reduce the size of transmitted data and increase performance. The compression level is defined based on which responses are compressed to an extent. It also allows configuring other settings for compression.
 
-![Caching](/img/waf/v7/docs/performance_compression.png)
+![Caching](/img/waf/v8/docs/comprssion.png)  
 
+![Compression](/img/waf/v7/docs/performance.png)
 # How to Use :
 1. Go to **WAF** > **Listeners** > **Performance** > **Compression**
 2. Click on **Add Compression Configuration ** 
-3. Click **Save Changes**
-
-     
-![Compression](/img/waf/v7/docs/performance.png)
+3. Click **Save Changes** 
 
 ### Description 
 
@@ -28,7 +29,7 @@ To enable compression, enable the toggle button. It compresses the responses to 
 
 ##### **Enable Decompression**
 
-Enable decompression for unsupported clients.  
+Enable decompression for unsupported clients
 
     Accepted values: Enabled / Disabled 
 
@@ -78,7 +79,7 @@ This field allows performing compression on the specific URI using one or more r
 
 ##### **Proxy Response Filter**
 
-This field allows performing compression on the specific type of HTTP requests. 
+This field allows performing compression on the specific type of HTTP requests.
 
     Accepted values: expired / no-cache / no-store / private / no_last_modified / no_etag / any / auth  
 
