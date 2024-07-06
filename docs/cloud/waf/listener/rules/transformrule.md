@@ -22,55 +22,55 @@ Transform Rule allow user to do HTML encoding beacause it ensures that text will
 
 3.Click on **Save Changes**
 
-## Rule Information
-
-| Parameter | Accepted Values | Default
-| ----------- | ----------- |--------- |
-| Rule Name|String|Blank
- Rule Message|String|Blank
-Rule Priority|Integer|0
-URI |String|Blank
-Method|Drop Down|All
-Transformation|Drop|Set
-Location|Drop Down|Argument Value
-Parameter Name|String|Blank
-Replace With|String|Blank
-
-
-## Rule Condition
-
-| Parameter | Accepted Values | Default
-| ----------- | ----------- |--------- |
-| Location|Drop Down |Body Argument Name
- Parameter|String|Blank
-Match Condition|Drop Down|None
-Match Value |String|Blank
-
 ## Description 
 
 1.**Rule Name :**
 
 Specify a user-friendly name to identify the rule. The rule name takes alpha-numeric input.
 
+    Accepted values: String
+
+    Default: Blank
+
 2.**Rule Message :**
 
 The user can add a short description of the rule. The description would explain the purpose of the rule.
+
+    Accepted values: Description for the rule in String format
+
+    Default: Blank
 
 3.**Rule Priority:** 
 
 Set the priority of the rule. If two rules have the same priority, then selection will be random.
 
+    Accepted values: Integer
+
+    Default: 0
+
 4.**URI:**
 
 Specify the URI or regex for which rule will be applied. 
+
+    Accepted values: URI
+
+    Default: Blank
 
 5.**Method:**
 
 Select the HTTP method for the rule to validate when matched with the request.
 
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: Blank
+
 6.**Transformation:**
 
 Under this user can select which tranform he wants eg. HTTP to MQTT, XML to JSON or JSON to XML. Under this user can also set, replace or remove any parameter of there application.
+
+    Accepted values: Set or Replace / Remove Argument / XML to JSON / JSON to XML / HTML Encode
+
+    Default: XML to JSON
      
  6.1**XML to JSON**- An element mentioned in XML can be tranform to JSON user just have to provide the location like whether it will be argument name, argument value,body ,body argument name , body argument value and Parameter Name.
 
@@ -84,22 +84,28 @@ Under this user can select which tranform he wants eg. HTTP to MQTT, XML to JSON
 
 Location provides the path on which transformation rule is going to work.
 
+    Accepted values: Argument Value / Body Argument Value / Body
+
+    Default: Argument Value
+
 8.**Parameter Name:**
 
 User have to specify the parameter name of which transform rule will work.
+
+    Accepted values: String
+
+    Default: Blank
 
 9.**Replace:**
 
 Replace option comes only in use when the transformation is SET, REPLACE, HTTP to MQTT or HTML Encode
 
-10.**MQTT Client ID:**
+    Accepted values: String
 
-This option comes into play when Transformation is **HTTP to MQTT**. Here user have to specify the client ID. In this User will be able to connect the backend.
+    Default: Blank
 
-11.**MQTT Username:**
+##### **Add Condition**
 
-Here User have to specify MQTT username.
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-12.**MQTT Password:**
-
-Here User have to specify MQTT passwordss
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)

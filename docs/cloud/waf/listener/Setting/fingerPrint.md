@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
-#  Fingerprint 
+#  Client Fingerprint 
 User can specify fingerprint settings on this page for Listener
 
 ---
@@ -53,6 +53,7 @@ Users can specify the name of the token to be validated. By default, it is X-Bot
 ##### **Allow Rooted Devices**
 
 Users can specify enable it to allow rooted devices.
+
     Accepted values: Enable / Disable
 
     Default: Disable

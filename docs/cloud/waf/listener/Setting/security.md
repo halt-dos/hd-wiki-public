@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
-# Web Security
+# Security
 User can specify Web Security settings on this page for Listener
 
 ---

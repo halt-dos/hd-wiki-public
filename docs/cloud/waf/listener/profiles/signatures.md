@@ -15,17 +15,6 @@ Signatures contain rules that are evaluated for each request that passes through
 2. You can change the status of the signature to AUTO, PROD, STAGED, DISABLED.
 3. Configurations will be deployed successfully.
 
-| Parameters | Accepted Values | Default
-| ----------- | ----------- |--------- |
-| Rule Id|Integer|None
-Type|Type of rule|None
-Name|Name of the signature|None
-Status|Choose the status of the signature from the drop-down|Auto
-Timestamp|Date and Timestamp of the rule when last updated.|Blank
-Requests|Specifies the count of hits |Blank
-Match|Specifies the count when the rule is matched.|Blank
-Action|Delete the rule |None
-
 ### Description
 ##### **Rule ID**
 

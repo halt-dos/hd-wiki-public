@@ -33,42 +33,60 @@ Value|String|None
 
 Users are allowed to specify a user-friendly name to identify the rule. The rule name takes alphanumeric input.
 
+    Accepted values: String
+
+    Default: Blank
+
 ##### **Rule Message** 
 
 The user can add a short description of the rule. The description would explain the purpose of the rule.
+
+    Accepted values: Description for the rule in String format
+
+    Default: Blank
 
 ##### **Rule Priority**
 
 Set the priority of the rule. If two rules have the same priority, then selection will be random.
 
+    Accepted values: Integer
+
+    Default: 0
+
 ##### **Evaluation Phase**
 
 Users can set the evaluation phase either for request coming from end users or for response sending back to end users.
+
+    Accepted values: Request Phase / Response Phase
+
+    Default: Request Phase 
 
 ##### **Variable**
 
 User can select the variable which should be earlier created under variables.
 
+    Accepted values: String
+
+    Default: Blank
+
 ##### **Mutation action**
 
 Users can specify the mutation action.
+
+    Accepted values: SET / DELETE / INCREMENT / DECREMENT
+
+    Default: SET
 
 ##### **Value**
 
 Users can specify the value for the rule.
 
-##### **Condition Phase**
+    Accepted values: String
 
-User can define the condition phase
+    Default: Blank
 
-##### **Find Location**
+##### **Add Condition**
 
-User can define the source location where this condition needs to be applied
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-##### **Match condition**
-
-User can select the condition which was previously mentioned in the drop-down.
-
-##### **Match Value**
-
-User can mention the value which should be matched.
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)

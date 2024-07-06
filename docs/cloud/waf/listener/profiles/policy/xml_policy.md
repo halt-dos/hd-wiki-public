@@ -88,7 +88,7 @@ This field specifies the maximum node name size of an XML document. In the above
 
     Min: 0
 
-    Default: 100
+    Default: 1000
 
 ##### **Maximum Node Value**  
 This field specifies the maximum node value of the XML document. In the above example, the maximum node value is 12, Tag ``<title>`` has a value of Harry Potter of length 12. An XML document can have a minimum of 1 node value and a maximum of 1000000 node values.

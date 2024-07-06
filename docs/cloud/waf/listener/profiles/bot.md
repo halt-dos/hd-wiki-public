@@ -54,13 +54,14 @@ This field specifies the maximum allowed Bot request rate from a single client I
 
     Accepted values: Numbers
 
-    Default: 30
+    Default: 20
 
 ##### **Maximum Bot Request Burst**
 This field specifies the maximum allowed Bot request burst from a single client IP. In case the requested burst of the user is higher than the defined rate, the request gets dropped.
 
-    Accepted values: Numbers  
-    Default: 50  
+    Accepted values: Numbers
+
+    Default: 30  
 
 
 :::note Note
@@ -71,9 +72,17 @@ Bot Request Burst must be greater than or equal to Bot Request Rate
 ##### **Bot Track Duration**
 Specify the Bot request rate track duration in seconds.
 
+    Accepted values: Numbers
+
+    Default: 30  
+
 ##### **Tor Traffic**
 
 This field allows you to take action in case there is Tor traffic in the network. Tor traffic are the request coming from tor browser or dark web. It includes two actions:
+
+    Accepted values: NO ACTION / DROP / SEND CHALLENGE
+
+    Default: NO ACTION  
 
 - **NO ACTION** 
 Don't perform any action  
@@ -88,6 +97,10 @@ Send a challenge like a captcha
 
 This field allows you to take action on traffic when Haltdos Threat Stream TM reports suspicious IPs. It includes two actions:
 
+    Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
+
+    Default: NO ACTION  
+
 - **NO ACTION**
 Don't perform any action  
 
@@ -100,6 +113,10 @@ Send a challenge like a captcha
 ##### **Advance Bot Protection**
 This field allows you to enable Haltdos Advance Bot Protection for an incoming request for the current security profile. It includes the following actions:
 
+    Accepted values: NONE / TOKEN VALIDATION / FINGERPRINT / ANY
+
+    Default: NO ACTION  
+
 - **NONE** :
 Don't perform any action  
 
@@ -111,6 +128,34 @@ Perform token-based validation. API requests will be authenticated using tokens 
 
 - **ANY**: 
 On the basis of application configuration, the required challenge will be thrown on the requests.
+
+##### **Fingerprint Suspicion Threshold**
+This field allows you to enable Haltdos Advance Bot Protection for an incoming request for the current security profile. It includes the following actions:
+
+    Accepted values: NONE / TOKEN VALIDATION / FINGERPRINT / ANY
+
+    Default: NO ACTION  
+
+##### **Fingerprint Bot Traffic Action**
+This field allows you to enable Haltdos Advance Bot Protection for an incoming request for the current security profile. It includes the following actions:
+
+    Accepted values: NO ACTION / RECORD / RATE LIMIT / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
+
+    Default: NO ACTION  
+
+##### **Invalid Token Traffic Action**
+This field allows you to enable Haltdos Advance Bot Protection for an incoming request for the current security profile. It includes the following actions:
+
+    Accepted values: NO ACTION / RECORD / RATE LIMIT / DROP
+
+    Default: NO ACTION  
+
+##### **Anonymous Traffic Action**
+This field allows you to enable Haltdos Advance Bot Protection for an incoming request for the current security profile. It includes the following actions:
+
+    Accepted values: NO ACTION / RECORD / RATE LIMIT / DROP
+
+    Default: NO ACTION  
 
 
 :::note Note

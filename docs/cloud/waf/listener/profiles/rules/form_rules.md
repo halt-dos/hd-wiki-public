@@ -4,7 +4,7 @@ sidebar_position: 2
 # Form Rule 
 ### Overview
 Form Validation offers a positive security model of Application Firewall and allows enforcing specific values or a range of values for various form fields of a web application form.
-![Form Page Screen](/img/waf/v8/docs/formRule.png)
+![Form Page Screen](/img/waf/v8/docs/formRule1.png)
  
 ![Form Page Screen](/img/waf/v8/docs/formRule2.png)
 
@@ -30,7 +30,7 @@ Users are allowed to specify a rule message to understand the purpose of the rul
     Default: None  
 
 ##### **Rule Priority**
-It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
+It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule default value Is 0. 
 
     Accepted values: Integer
 

@@ -44,7 +44,7 @@ It is a numeric field that specifies the priority of the rule in which the rule 
 ##### **Tamper Action**
 Users are allowed to specify the tamper action to be taken for the request matched.
 
-    Accepted values: Encrypt / Obfuscate / Hash / Protect against Defacement
+    Accepted values: Encrypt / Obfuscate / Hash / Parameter Protection
 
     Default: Blank 
 
@@ -71,13 +71,6 @@ Users are allowed to select the HTTP method for the rule to extract when matched
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: ALL  
-
-##### **Evaluation Phase**
-Users are allowed to select the evaluation phase for the rule i.e. Request or Response.
-
-    Accepted values: Response Phase
-
-    Default: 0  
 
 ##### **Extract From **
 Users are allowed to select the location from where you want to extract the attribute i.e. Field, Cookie, Header, Body, HTML.
@@ -108,14 +101,6 @@ Users are allowed to select the HTTP method for the rule to validate when matche
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: ALL  
-
-##### **Evaluation Phase**
-
-Users are allowed to select the evaluation phase for the rule i.e. Request or Response.
-
-    Accepted values: Response Phase
-
-    Default: 0  
 
 ##### **Extract From**
 Users are allowed to select the location from where you want to validate the attribute i.e. Header, Cookie, Body, Argument Name or Value.

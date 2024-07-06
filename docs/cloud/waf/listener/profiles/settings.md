@@ -55,13 +55,6 @@ Users can specify to enable the signature validation for the present profile.
 
     Default: Disable
 
-##### **Enable LibInjection**
-Users can configure settings related to Specify whether to enable internal libinjection based validations.  
-
-    Accepted values: Enable / Disable
-
-    Default: Disable 
-
 ##### **Application Type**
 Specify the type of application (i.e. website or web service). A website is a collection of linked web pages (plus their associated resources) that share a unique domain name. A web service is a collection of open protocols and standards used for exchanging data between applications or systems.  
 
@@ -107,7 +100,7 @@ Specify the Operating system on which application is running.
 ##### **User Groups**
 Create a user group for operating the API gateway. Detailed information can be found using this link User Group.  
 
-    Accepted values:  list of authentication schemes
+    Accepted values: list of authentication schemes
 
     Default: Blank
 

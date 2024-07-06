@@ -51,34 +51,16 @@ Users are allowed to specify the HTTP method on which the rule will be applied i
 
     Default: ALL  
 
-#### Attribute
+##### **Evaluation Phase**
+Users are allowed to specify the URI. Specify the URI on which the firewall rule will be applied.
 
-##### **Find Location**
-Users can define the source location where this condition needs to be applied.
+    Accepted values: Request Phase / Response Phase
 
-    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+    Default: Request phase  
 
-    Default: ALL  
+##### **Rule Action**
+Users are allowed to specify the action to be taken for the request matched i.e. No Action, Drop, Record, Bypass, Redirect, Temporary Blacklist, Send Challenge, Skip Learning.
 
-##### **Find Parameter**
-The user can define the parameter based on the location of the condition.
+    Accepted values: No Action / Send Empty Response / Send Empty Response
 
-    Accepted values: String
-
-    Default: Blank 
-
-##### **Match Condition**
-The user can define the match condition for the parameter and match value.
-
-    Accepted values: None / Pattern Exist / Pattern Doesn't Exist / Equals / Not Equals 
-
-    Default: Blank  
-
-##### **Match Value**
-The user can define what value needs to be matched with the match condition.
-
-    Accepted values: String
-
-    Default: Blank
-
-
+    Default: No Action  

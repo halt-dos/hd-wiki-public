@@ -78,6 +78,6 @@ For External Antivirus mode, We need to specify the ICAP header key to search va
 ##### **ICAP Header Value**
 For External Antivirus mode, We need to specify the ICAP header value regex to scan and drop if the key exists.
 
-    Accepted values: String (HEADER NAME)
+    Accepted values: String
 
     Default: Blank
