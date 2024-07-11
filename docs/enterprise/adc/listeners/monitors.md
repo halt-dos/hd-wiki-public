@@ -103,7 +103,7 @@ This option allows users to specify the health check type HTTP monitoring. This 
 
     Accepted values: Any / Get / Post / Put / Delete / Patch / Head / Options 
 
-    Default: Any
+    Default: Blank
 
 ##### **Check URI**
 
