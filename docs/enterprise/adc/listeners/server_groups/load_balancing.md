@@ -44,22 +44,7 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 ![Load balancing](/img/adc/v8/docs/load_balancing_2.png)
 
-| SETTINGS                  | ACCEPTED VALUE | DEFAULT     |
-|---------------------------|----------------|-------------|
-| Connection Reuse Policy   | Drop-Down      | Always      |
-| Enable HTTP Keep-Alive    | Boolean        | Disable     |
-| Tunnel Timeout            | Integer        | 120         |
-| Server Connection Timeout | Integer        | 4           |
-| Idle Connection Timeout   | Integer        | 30          |
-| Resume Connection Timeout | Integer        | 1           |
-| Queue Timeout             | Integer        | 5           |
-| Connection Pool Size      | Integer        | 32          |
-| Server Retries            | Integer        | 1           |
-| Client IP Pool            |String          | Blank       |
-| Algorithm                 | Drop-Down      | Round Robin |
-| Sticky Session Cookie     | String         | Blank       |
 
-![Load balancing2](/img/adc/v8/docs/load_balancing_3.png)
 
 ### Description:  
 
@@ -67,73 +52,135 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 This option allows users to specify an HTTP connection reuse policy.
 
+    Accepted values: Always / Never / Safe / Aggressive
+
+    Default: Always 
+
 ##### **Enable HTTP KeepAlive**
 
 This option allows users to specify enabling server connection keep-alive.
+
+    Accepted values: Enable / Disable
+
+    Default: Enable 
 
 ##### **HTTP KeepAlive Timeout**
 
 This option allows users to specify a keep-alive server connection timeout.
 
+    Accepted values: Integer
+
+    Default: 2 
+
 ##### **Tunnel Timeout**
 
 This option allows users to set the maximum inactivity time on the client and server-side for Websocket tunnels
+
+    Accepted values: Integer
+
+    Default: 120 
 
 ##### **Request Timeout**  
 
 This option allows users to set the maximum inactivity time on the client and server-side for web-socket tunnels.
 
+    Accepted values: Integer
+
+    Default: 10 
+
 ##### **Server Connect Timeout**
 
 This option allows users to specify a max time to wait for establishing server connection.
+
+    Accepted values: Integer
+
+    Default: 4 
 
 ##### **Idle Connection Timeout**
 
 This option allows users to specify idle server connection timeout.
 
+    Accepted values: Integer
+
+    Default: 30 
+
 ##### **Resume Connection Timeout**
 
 This option allows users to specify the time within which a lost server connection can resume.
+
+    Accepted values: Integer
+
+    Default: 1 
 
 ##### **Queue Timeout**
 
 This option allows users to specify the maximum time to wait in the queue for a connection slot to be free.
 
+    Accepted values: Integer
+
+    Default: 5 
+
 ##### **Connection Pool Size**
 
 This option allows users to specify the maximum number of idling connections for a server. Set -1 for unlimited.
+
+    Accepted values: Integer
+
+    Default: 32 
 
 ##### **Server Retries**
 
 This option allows users to specify the max number of connection retries.
 
+    Accepted values: Integer
+
+    Default: 1 
+
 ##### **Client IP Pool**
 
 This option allows users to specify list of client IP to use when connecting to upstream. Leave blank for auto.
+
+    Accepted values: IP
+
+    Default: Blank 
 
 ##### **Algorithm**
 
 This option allows users to specify the Server Group Algorithm.
 
+    Accepted values: Round Robin / Least Connection / Least Listener Connection / Least Response Time / Minium Jitter / IP Hash / Persistent Hash / Least Requests / SNMP Metrics 
+
+    Default: Round Robin  
+
 ##### **Sticky Session Cookie**
 
 Users are allowed to specify enabling sticky session based on specified cookie.
 
+    Accepted values: String
+
+    Default: 5 
+
 ##### **Adding Location**
 
-![Load balancing3](/img/adc/v7/docs/loadbalancing3.png)
-
-| SETTINGS | ACCEPTED VALUE | DEFAULT |
-|----------|----------------|---------|
-| Priority | String         | Blank   |
-| Location | Drop-Down      | SRC IP  |
-| Value    | String         | Blank   |
+![Load balancing2](/img/adc/v8/docs/load_balancing_3.png)
 
  - **Priority**
-The user can set the priority.  
+The user can set the priority.
+
+    Accepted values: Integer
+
+    Default: Blank 
 
  - **Location**  
 The user can set the location for which load balancing is done.  
 
+    Accepted values: SRC_IP / DST_IP / SRC_PORT / DST_PORT / URL / ARG_VAL / HEADER_VAL / COOKIE_VAL
+
+    Default: SRC_IP 
+
  - **Value**  
 The users are allowed to specify the location value. This option will only visible when location is selected to value fields.  
+
+    Accepted values: String
+
+    Default: 5
