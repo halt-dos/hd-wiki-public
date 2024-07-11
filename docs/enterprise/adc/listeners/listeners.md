@@ -19,6 +19,8 @@ Listeners are used for collecting set of websites and servers appropriately that
 3. Configure your settings.
 4. Click **Save**.
 
+![Listener2](/img/adc/v8/docs/listeners_2.png)
+
 #### Description:
 
 ##### **Domain/ Virtual IP**
@@ -43,13 +45,18 @@ This field specifies the type of service for the subdomain i.e. **HTTP, TCP, UDP
 
     Accepted values: HTTP / TCP / UDP
 
-    Default: HTTP 
+    Default: Blank 
 
 ##### **Origin Servers**
 
 This field specifies the IP and listening port of the backend server on which load balancing will occur. There can be multiple IP and listening port combinations.
 
 Following configurations can be managed by clicking on the newly added listener name. Post adding required details, we can click on **Save** button to save changes.
+
+    Accepted values: IP
+
+    Default: Blank 
+
 
     Accepted values: IP
 
