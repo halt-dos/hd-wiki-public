@@ -18,68 +18,49 @@ If a user has defined server group and wants to use different groups depending u
 4. Configure your settings. 
 5. Click **Save Changes**.
 
-**Configure the following parameters to set up the desired settings:**
-
-| SETTINGS       | ACCEPTED VALUE | DEFAULT |
-|----------------|----------------|---------|
-| Rule Name      | String         | Blank   |
-| Rule Message   | String         | Blank   |
-| Rule Enabled   | Boolean        | True    |
-| Rule Priority  | Integer        | 1       |
-| Server Group   | Drop-Down      | Blank   |
-
 ### Description
 
 ##### **Rule Name **
 
 User can specify the rule name.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Rule Message**
 
 User can specify the rule message.
+
+    Accepted values: String
+
+    Default: Blank 
 
 ##### **Rule Enabled**
 
 Users can enable or disable the rule.
 
+    Accepted values: Enabled / Disabled
+
+    Default: 0 
+
 ##### **Rule Priority**
 
 User can specify the rule priority among other created rules in LB rules.
+
+    Accepted values: Integer
+
+    Default: 0 
 
 ##### **Server Group**
 
 User can specify which server group to associate with this particular rule.
 
-##### **Rule Condition**
+    Accepted values: List of Server Group
 
-![Upstream rule](/img/adc/v8/docs/upstream_rule_2.png)
+    Default: Blank 
 
-| SETTINGS        | ACCEPTED VALUE | DEFAULT         |
-|-----------------|----------------|-----------------|
-| Find Location   | Drop-Down      | Source IP       |
-| Find Parameter  | String         | Blank           |
-| Match Condition | Drop-Down      | Match IP Prefix |
-| Match Value     | String         | Blank           |
-| Negation        | Drop-Down      | False           |
+#### Add Condition
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-#### Description
-
-##### **Find Location**
-
-User can define the source location where this condition needs to be applied.
-
-##### **Find Parameter**
-
-The user can define the parameter based on the location of the condition.
-
-##### **Match Condition**
-
-The user can define the match condition for the parameter and match value.
-
-##### **Match Value**
-
-The user can define what value needs to be matched with the match condition.
-
-##### **Negation**
-
-The user can define either to negate the condition for this rule or not.
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/enterprise/adc/listeners/rules/conditions)
