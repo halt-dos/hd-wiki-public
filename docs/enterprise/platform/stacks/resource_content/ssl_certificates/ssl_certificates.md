@@ -59,36 +59,49 @@ Certificate verification can fail if verification is not completed within stipul
 
 To upload custom certificates, follow the steps below:
 
-| SETTINGS         | ACCEPTED VALUE | DEFAULT |
-|------------------|----------------|---------|
-| Scope            | Drop-down      | Blank   |
-| Certificate Name | String         | Blank   |
-| Public Key       | String         | Blank   |
-| Private Key      | String         | Blank   |
-
 #### Description:
 
 **Scope**
 
 Users can defind the scope of the certificate.
 
+    Accepted values: Select App / Resources
+
+    Default: Blank
+
 **Certificate Name**
 
 User can specify the userfriendly name for the certificate.
+
+    Accepted values: String
+
+    Default: Blank 
 
 **Public Key**
 
 User can specify the public key of certificate.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Private Key**
 
 User can specify the private key of certificate.
+
+    Accepted values: String
+
+    Default: Blank 
 
 **Export Certificate**
 
 User can download the SSL certificate.
 
-:::note Note
+    Accepted values: Select and Export SSL certificate
+
+    Default: Blank 
+
+:::info
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key
 :::
 

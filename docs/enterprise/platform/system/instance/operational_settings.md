@@ -32,15 +32,6 @@ Haltdos platform supports multiple modes of operations of various Apps depending
 2. Configure your settings
 3. Click **Save Changes**
 
-| PARAMETERS      | DESCRIPTION                                     | ACCEPTED VALUES | DEFAULT         |
-|------------------|--------------------------------------|---------------------------------|----------|
-| Management IP | Management IP address         | Integer  | Blank
-| SSL Engine     | Engine to be used for SSL Offloading  | Drop Down | Software Engine 
-| Operational Mode    | Mode of operation     | Drop Don | Inline Mode    |
-| CPU Affinity     | CPU affinity for opimization | Integer |Blank | 
-| Huge Pages     | Configure Huge Pages for optimization | Integer |Blank | 
-
-
 **High Watermark Threshold**
 
 | PARAMETERS     | ACCEPTED VALUES  | DEFAULT  |
@@ -48,3 +39,45 @@ Haltdos platform supports multiple modes of operations of various Apps depending
 | Resource       | CPU / RAM / DISK | CPU      |
 | Low Watermark  | Integer          | No Value |
 | High Watermark | Integer          | No Value |
+
+### Description:
+
+##### **Management IP**
+
+Management IP address
+
+    Accepted values: IP
+
+    Default: 2 
+
+##### **SSL Engine**
+
+Engine to be used for SSL Offloading
+
+    Accepted values: Software Engine / Hardware Engine
+
+    Default: Software Engine 
+
+##### **Operational Mode**
+
+Mode of operation
+
+    Accepted values: Inline Mode / Offline Mode
+
+    Default: Inline Mode 
+
+##### **CPU Affinity**
+
+CPU affinity for opimization
+
+    Accepted values: Integer
+
+    Default: 2 
+
+##### **Huge Pages**
+
+Configure Huge Pages for optimization
+
+    Accepted values: Integer
+
+    Default: 2 

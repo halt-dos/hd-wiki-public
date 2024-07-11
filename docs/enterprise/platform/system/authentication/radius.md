@@ -24,36 +24,47 @@ If your organization is using AAA authentication , it is recommended to integrat
 4. Configure the settings and click on save changes.
 
 
-| Parameter              | Accepted Value  | Default Values |
-|------------------------|-----------------|----------------|
-| Enabled                | Boolean         | Disabled       |
-| Endpoint               | IP address      | Blank          |
-| Port                   | Port Number     | Blank          |
-| Secret key             | Password phrase | Blank          |
-| Authorization Protocol | Drop-down       | PAP            |
-| Timeout                | Decimal         | 30             |
-
 ### Description
 
 ##### **Enabled**
 
 This option enables users to enable or disable the RADIUS authentication.
 
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
 ##### **Endpoint**
 
 This option allows users to set the endpoint or the RADIUS server IP address on which Haltdos Device will send authentication requests.
+
+    Accepted values: String
+
+    Default: Blank 
 
 ##### **Port**
 
 This option allows users to set the port number for the port number that is being used at RADIUS server mentioned above. By default, RADIUS server set to listen on port 1812.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Secret Key**
 
 This option allows users to set the secret key which will be used while communicating the RADIUS server.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Authorization Protocol**
 
 This option allows users to configure the authentication protocol for the RADIUS server. This option contains mainly two protocols;
+
+    Accepted values: CHAP / PAP
+
+    Default: CHAP 
 
 1. **CHAP -** CHAP is a more secure authentication protocol compared to PAP. It uses a three-way handshake process to authenticate the client with a challenge-response mechanism. 
 
@@ -62,3 +73,7 @@ This option allows users to configure the authentication protocol for the RADIUS
 ##### **Timeout**
 
 This option allows users to configure the request timeout for the request. If any authentication response from RADIUS server will be delayed from the mentioned timeout, it will be discarded.
+
+    Accepted values: String
+
+    Default: Blank 
