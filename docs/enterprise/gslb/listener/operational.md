@@ -33,7 +33,7 @@ Specify the resolution on specific Protocols for e.g. UDP, TCP or TLS.
 **DNS Service Type**  
 Specify the DNS Service type 
 
-    Accepted values: Authoritative / Recursive / Auth & Recursive
+    Accepted values: Authorative / Recursive / Auth & Recursive
 
     Default: Auth & Recursive 
 
