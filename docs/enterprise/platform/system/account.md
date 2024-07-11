@@ -19,30 +19,42 @@ Account option in the system menu provides an opportunity to the users that they
 3. Go to **System > Account**.
 4. Configure the settings and click on save changes.
 
-| Parameter                 | Accepted Value | Default Values    |
-|---------------------------|----------------|-------------------|
-| Username                  | String         | haltdos           |
-| Email                     | email          | admin@haltdos.com |
-| Name                      | String         | Administrator     |
-| Default Stack             | Drop-down      | Default Stack     |
-| Two Factor Authentication | Boolean        | Disabled          |
-
 ### Description
 
 ##### **Username**
 Users can check what is the current username.
 
+    Accepted values: String
+
+    Default: haltdos 
+
 ##### **Email**
 Users are allowed to check and re-configure the email for the account. All the alerting will be performed to user using the mentioned email.
+
+    Accepted values: String
+
+    Default: admin@haltdos.com 
 
 ##### **Name**
 This option allows users to configure the name for the account.
 
+    Accepted values: String
+
+    Default: Administrator 
+
 ##### **Current Stack**
 This option allows users to check and change the current stack. This option is only applicable when there are two or more stacks installed in the system.
 
+    Accepted values: Select Stack
+
+    Default: Default 
+
 ##### **Two Factor Authentication**
 This option allows users to configure or enable the two factor authentication for the user. 
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
 
 If user enable two factor authentication for their account they will be given two option mentioned below;
 

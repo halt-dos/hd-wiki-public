@@ -25,11 +25,32 @@ If your organization is using Active Directory (AD), it is recommended to integr
 5. Configure  **Active Directory Settings**
 6. Click **Save Changes**
 
-| PARAMETERS                | DESCRIPTION                               | ACCEPTED VALUES | DEFAULT |
-|---------------------------|-------------------------------------------|-----------------|---------|
-| Active Directory Authentication Enabled | Enable login through Active Directory     | Boolean         | False   |
-| Endpoint                  | Specify the endpoint of Active Directory. | String          | Blank   |
-| Domain                    | Specify the domain of Active Directory.   | String          | Blank   |
-| RootdN                    | Specify the RootdN of Active Directory    | String          | Blank   |
+### Description
 
- 
+##### **Active Directory Authentication Enabled**
+Enable login through Active Directory	
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
+##### **Endpoint**
+Specify the endpoint of Active Directory.	
+
+    Accepted values: String
+
+    Default: Blank 
+
+##### **Domain**
+Specify the domain of Active Directory.
+
+    Accepted values: String
+
+    Default: Blank 
+
+##### **RootdN**
+Specify the RootdN of Active Directory
+
+    Accepted values: String
+
+    Default: Blank 
