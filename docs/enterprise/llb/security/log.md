@@ -22,62 +22,93 @@ This rule helps users to capture packet. Once we configure the log rule, all tho
 
 3. Configure the rule conditions and click on save changes.
 
-| Parameter              | Accepted Value                 | Default Values     |
-|------------------------|--------------------------------|--------------------|
-| Rule Enabled           | Boolean                        | True               |
-| Rule Name              | Specify Rule Name              | Blank (Mandatory)  |
-| Rule Message           | User Friendly Message For Rule | Blank (Mandatory)  |
-| Rule Priority          | Integer                        | 0                  |
-| Incoming Group         | Drop-Down                      | Blank              |
-| Outgoing Group         | Drop-Down                      | Blank              |
-| Source IP range        | IP address                     | Blank              |
-| Destination IP range   | IP address                     | Blank              |
-| Service Protocol       | Drop-Down                      | ANY                |
-| Source Port Range      | Integer                        | Blank              |
-| Destination Range      | Integer                        | Blank              |
-
 ### **Description:**
 
 ##### **Rule Enabled**
 
 It specifies rule is enabled or disabled. By default, this option is enabled.
 
+    Accepted values: Enabled / Disabled 
+
+    Default: Enabled
+
 ##### **Rule Name**
 
 This option allows users to select desired rule name.
+
+    Accepted values: String 
+
+    Default: Blank
 
 ##### **Rule Message**
 
 This option allows users to use specifies the custom message for the rule.
 
+    Accepted values: String
+
+    Default: Blank
+
 ##### **Rule Priority**
 
 This option allows the user to set rule priority. The rule with lower Priority Value will be prioritized.
+
+    Accepted values: 
+
+    Default: Blank
 
 ##### **Incoming Group**
 
 It specifies the incoming group for the log rule. All the traffic that is coming in from the Incoming group will be captured if no other conditions are configured.
 
+    Accepted values: Interface
+
+    Default: Blank
+    
 ##### **Outgoing Group**
 
 It specifies the outgoing group for the log rule. All the traffic that is going out from the outgoing group will be captured if no other conditions are configured.
+
+    Accepted values: Interface
+
+    Default: Blank 
 
 ##### **Source IP Range**
 
 It specifies the source IP range for the log rules. All the traffic that has configured source IP will be captured and shown in session table.
 
+    Accepted values: IP
+
+    Default: Blank 
+
 ##### **Destination IP Range**
 
 It specifies the destination IP range for the log rules. All the traffic that has configured destination IP will be captured and shown in session table.
+
+    Accepted values: IP
+
+    Default: Blank 
 
 ##### **Service Protocol**
 
 It specifies the service protocol that need to be logged.
 
+    Accepted values: String
+
+    Default: Blank 
+    
 ##### **Source Port Range**
 
 It specifies source port range for the logs capture.
 
+    Accepted values: Port
+
+    Default: Blank 
+    
 ##### ** Destination Port Range**
 
 It specifies destination port range for the logs capture.
+
+    Accepted values: Port
+
+    Default: Blank 
+ 
