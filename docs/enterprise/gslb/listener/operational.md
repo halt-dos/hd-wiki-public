@@ -24,19 +24,52 @@ Configure the following parameters to set up the desired settings:
 #### Description
 
 **Protocols**  
-Specify the resolution on specific Protocols for e.g. UDP, TCP or TLS.  
+Specify the resolution on specific Protocols for e.g. UDP, TCP or TLS.
+
+    Accepted values: Specify protocols
+
+    Default: UDP / TCP
 
 **DNS Service Type**  
-Specify the DNS Service type  
+Specify the DNS Service type 
+
+    Accepted values: Authorative / Recursive / Auth & Recursive
+
+    Default: Auth & Recursive 
 
 **Upstream Resolvers**  
 Specify the upstream resolver for Recursive DNS. This option only works when DNS service type is set to Rescursive  
 
+    Accepted values: String
+
+    Default: 8.8.8.8 
+
 **Addresses**  
-Specify the list of addresses that should be used in Recursive DNS.  
+Specify the list of addresses that should be used in Recursive DNS.
+
+    Accepted values: String
+
+    Default: 10.0.0.243
 
 **Refuse Query with no RD flag**  
 Specify to respond with refuse on queries with no RD flag.  
 
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
 **Domain Filter Files**  
 [Domain Filter Files](../domain-filters.md) is a mechanism to introduce a customized policy in Domain Name System servers, so that recursive resolvers return possibly modified results. By modifying a result, access to the corresponding host can be blocked. User can select which Domain Filter Files should be used.  
+
+    Accepted values: Select Domain Filter Files
+
+    Default: Blank
+
+**Addresses**  
+Mention Cache Size
+
+    Accepted values: Integer
+
+    Default: 100
+ 
+
