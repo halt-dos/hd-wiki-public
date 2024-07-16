@@ -25,7 +25,7 @@ If your organization is using Active Directory (AD), it is recommended to integr
 5. Configure  **Active Directory Settings**
 6. Click **Save Changes**
 
- ### Description
+### Description
 
 ##### **Active Directory Authentication Enabled**
 Enable login through Active Directory
