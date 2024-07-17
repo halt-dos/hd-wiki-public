@@ -85,22 +85,20 @@ This option allows users to configure the request timeout for the request. If an
 
 ### Tacacs Script
 
-Tacacs Script is used for authority purpose, this is a process of determining what actions a user is allowed to perform on a network device after they have been authenticated. This is typically done by sending an authorization request to a TACACS+ server which then decides if the user has the necessary permissions to execute a specific command or access a particular service.  
+Tacacs Script is used for authority purpose, this is a process of determining what actions a user is allowed to perform on a Haltdos Solution Device after they have been authenticated by AAA Server. This is typically done by sending an authorization request to a TACACS+ server which then decides if the user has the necessary permissions for login in Haltdos GUI Console.  
   
-There are various fields in the tacacs script that are mentioned below:  
+There are various arguments and there values in the tacacs script that are mentioned below:  
 
-#### Authority
+#### 1. authority
 
 User authority to define user type.  
-- **ADMIN** - Gives Administrator Permissions. 
-- **USER** - Normal User 
+- **ADMIN** - Gives Administrator Permissions if the user
+login with Admin Creditionals
+- **USER** - Normal User can enter user creditionals to get acceess, after that the user have to select access role from 3 catogries: **VISIBLE** / **OBSERVER** / **MEMBER**.
 
+This is a mandatory field. 
 
-    Accepted Values: ADMIN / USER
-
-    Example : USER 
-
-#### Stacks
+#### 2. stacks
 
 Define license IDs where user access allowed.  
 
@@ -108,7 +106,9 @@ Define license IDs where user access allowed.
 
     Example : <LICENSE_1>[LICENSE_2] 
 
-#### EmailID
+This is a manadatory field.
+
+#### 3. emailId
 
 User Email for altering.
 
@@ -116,7 +116,9 @@ User Email for altering.
 
     Example : test@haltdos.com 
 
-#### Access
+This field is optional.
+
+#### 4. access
 
 User Access role.
 
@@ -126,17 +128,45 @@ User Access role.
 
 1. **VISIBLE**- Users with this role can only view certain information but cannot execute any commands or make any changes.  
 
-2. **OBSERVER**- It have read-only access to the system. Users can view system configurations and status but cannot make any changes.  
+2. **OBSERVER**- Has the privilege to only view the stack, app, listener and delete self membership from the stack/app/listener wherever membership is given.  
 
-3. **MEMBER**- It have privileges than visible and observer. Users can perform certain operational tasks but may not have full administrative rights.
+3. **MEMBER**- Has the privilege to perform operations (add, edit and delete) on the stack, app, listener, and delete self membership from the stack/app/listener wherever membership is given.
 
-#### Disable_Report
+This is a mandatory field.
+
+#### 5. disable_report
 
 Used to disable report for user.  
 
-**True** - Disable mail report  
-**False** - Enable mail report
+**true** - Disable mail report  
+**false** - Enable mail report
 
-    Accepted Values: True / False
+    Accepted Values: true / false
 
     Example : False 
+
+This field is optional.
+
+##### 1. Below is a sample script to login with **MEMBER** access with enable report.
+
+    authority: USER
+    stacks: SAD56SDBC
+    emailId: test@haltdos.com
+    access: MEMBER
+    disable_report: false
+
+##### 2. Below is a sample script to login with **OBSERVER** access with enable report.
+
+    authority: USER
+    stacks: ADDFG56SBC
+    access: OBSERVER
+
+##### 3. Below is a sample script to login with **ADMIN** access with enable report.
+
+    authority: ADMIN
+    stacks: WAFYAW24B
+    emailId: test@haltdos.com
+    access: MEMBER
+    disable_report: false
+
+
