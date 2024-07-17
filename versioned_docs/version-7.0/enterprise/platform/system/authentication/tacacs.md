@@ -91,36 +91,27 @@ There are various arguments and there values in the tacacs script that are menti
 
 #### 1. authority
 
-User authority to define user type.  
-- **ADMIN** - Gives Administrator Permissions if the user
-login with Admin Creditionals
-- **USER** - Normal User can enter user creditionals to get acceess, after that the user have to select access role from 3 catogries: **VISIBLE** / **OBSERVER** / **MEMBER**.
-
-This is a mandatory field. 
+This argument determines the user type and is necessary for successful authorization on the portal. Users can log in with two modes: USER or ADMIN. The value of this argument is correlated with the "access" argument values. Providing this argument is mandatory for successful authorization.
 
 #### 2. stacks
 
-Define license IDs where user access allowed.  
+This mandatory argument is used to authorize license or stack details. It represents the **license ID** of the Haltdos solution and is crucial for validating that the authorization request originates from a validly licensed device.
 
     Accepted Values: SYNTAX - Comma seprated value
 
     Example : <LICENSE_1>[LICENSE_2] 
 
-This is a manadatory field.
-
 #### 3. emailId
 
-User Email for altering.
+This argument is optional and only required for user-groups with the reporting feature enabled. It works in conjunction with the "disable_report" argument to manage reporting capabilities.
 
     Accepted Values: User Email
 
     Example : test@haltdos.com 
 
-This field is optional.
-
 #### 4. access
 
-User Access role.
+This mandatory argument specifies the user-access role required for successful authorization. Users can log in with only one user-access role at a time.
 
     Accepted Values: VISIBLE / OBSERVER / MEMBER
 
@@ -131,8 +122,6 @@ User Access role.
 2. **OBSERVER**- Has the privilege to only view the stack, app, listener and delete self membership from the stack/app/listener wherever membership is given.  
 
 3. **MEMBER**- Has the privilege to perform operations (add, edit and delete) on the stack, app, listener, and delete self membership from the stack/app/listener wherever membership is given.
-
-This is a mandatory field.
 
 #### 5. disable_report
 
