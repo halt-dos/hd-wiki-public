@@ -10,13 +10,13 @@ sidebar_position: 4
 
 A certificate revocation list, more commonly called a CRL, is exactly what it sounds like: a list of digital certificates that have been revoked.
 
+![revocation_list](/img/platform/v8/docs/revocation_list.png)
+
 ### How to Use:
 
 1. Go to **Stack > Resources > Revocation List**
 2. Configure your settings. 
 3. Click **Save Changes**. 
-
-![revocation_list](/img/platform/v8/docs/revocation_list.png)
 
 ### **Description:**
 

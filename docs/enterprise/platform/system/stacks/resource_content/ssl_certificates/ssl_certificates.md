@@ -87,29 +87,6 @@ Users can defind the scope of the certificate.
 
     Default: Blank
 
-**Public Key**
-
-User can specify the public key of certificate.
-
-    Accepted values: String
-
-    Default: Blank 
-
-**Private Key**
-
-User can specify the private key of certificate.
-
-    Accepted values: String
-
-    Default: Blank 
-
-**Export Certificate**
-
-User can download the SSL certificate.
-
-    Accepted values: Select and Export SSL certificate
-
-    Default: Blank 
 
 :::info
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key

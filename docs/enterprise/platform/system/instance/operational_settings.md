@@ -24,7 +24,7 @@ Haltdos platform supports multiple modes of operations of various Apps depending
     - Netflow / IPFIX / SFlow
     - Parsing access logs
 
-![Operational setting](/img/platform/v7/docs/operational_img.png)
+![Operational setting](/img/platform/v8/docs/operational.png)
 
 ### How to Use:
 
@@ -44,11 +44,19 @@ Haltdos platform supports multiple modes of operations of various Apps depending
 
 ##### **Management IP**
 
-Management IP address
+Configure instance management IP address
 
     Accepted values: IP
 
     Default: 2 
+
+##### **Management Port**
+
+Configure instance management port
+
+    Accepted values: Integer
+
+    Default: 9000 
 
 ##### **SSL Engine**
 
@@ -81,3 +89,36 @@ Configure Huge Pages for optimization
     Accepted values: Integer
 
     Default: 2 
+
+##### **Public Certificate File**
+
+Upload public file
+
+    Accepted values: Choose File
+
+    Default: None 
+
+##### **Intermediate Certificate File**
+
+Upload intermediate file
+
+    Accepted values: Choose File
+
+    Default: None 
+
+##### **CA Bundle File**
+
+Upload CA bundle
+
+    Accepted values: Choose File
+
+    Default: None 
+
+##### **Private Key File**
+
+Upload private file
+
+
+    Accepted values: Choose File
+
+    Default: None 

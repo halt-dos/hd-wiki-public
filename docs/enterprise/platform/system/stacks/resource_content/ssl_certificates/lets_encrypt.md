@@ -76,6 +76,15 @@ Certificate verification can fail if verification is not completed within stipul
 
     Default: Blank 
 
+**Export Certificate**
+
+User can download the SSL certificate.
+
+    Accepted values: Select and Export SSL certificate
+
+    Default: Blank 
+
+
 :::note Note
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key 
 :::
