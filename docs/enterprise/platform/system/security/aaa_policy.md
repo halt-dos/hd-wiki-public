@@ -22,11 +22,11 @@ Haltdos supports built-in integration AAA solutions such as RADIUS or TACACS+. T
 Depending upon the organization's policy, if AAA is enabled, the same should also be configured for Haltdos appliances
 :::
 
-![aaa_policy](/img/platform/v7/docs/aaa_policy_newui.png)
+![aaa_policy](/img/platform/v8/docs/AAAPolicy.png)
 
 ### How to Use:
 
-1. Go to **Stack > Settings > AAA**.
+1. Go to **System > Security > AAA**.
 
 2. Configure your settings
 

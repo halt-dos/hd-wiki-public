@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 3
 ---
 
 # Log Retention
@@ -13,7 +13,7 @@ This feature allows users to set the log retention period. The log retention per
 Depending upon the organization's policy, we can change or less the dya for logs.
 :::
 
-![aaa_policy](/img/platform/v7/docs/logr.png)
+![aaa_policy](/img/platform/v8/docs/log_retention.png)
 
 ### How to Use:
 
@@ -31,7 +31,7 @@ This option allows users to specify the retention period of the event log.
 
     Accepted values: Integer
 
-    Default: 2 
+    Default: 90 
 
 ##### **Incident Log**
 
@@ -39,7 +39,7 @@ This option allows users to specify the retention period of the incident log.
 
     Accepted values: Integer
 
-    Default: 2 
+    Default: 90 
 
 ##### **Session Log**
 
@@ -47,7 +47,7 @@ This option allows users to specify the retention period of the session log.
 
     Accepted values: Integer
 
-    Default: 5 
+    Default: 7
 
 ##### **Minute Statistics**
 
@@ -55,7 +55,7 @@ This option allows users to specify the retention period of the MINUTE statistic
 
     Accepted values: Integer
 
-    Default: 2 
+    Default: 2
 
 ##### **Hourly Statistics**
 
@@ -63,7 +63,7 @@ This option allows users to specify the retention period of the HOUR statistics.
 
     Accepted values: Integer
 
-    Default: 3 
+    Default: 7
 
 ##### **Day Statistics**
 
@@ -71,4 +71,4 @@ This option allows users to specify the retention period of the DAY statistics.
 
     Accepted values: Integer
 
-    Default: 5 
+    Default: 90

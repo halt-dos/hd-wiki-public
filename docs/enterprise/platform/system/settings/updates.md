@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 6
 ---
 
 # Updates
@@ -18,7 +18,7 @@ From time to time, Haltdos pushes updates consisting of performance, security, f
 3. Select  **Updates** 
 
 
-![Updates](/img/platform/v7/docs/updates.png)
+![Updates](/img/platform/v8/docs/updates.png)
 
 
 

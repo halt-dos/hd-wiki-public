@@ -14,7 +14,7 @@ Haltdos Platform supports integration with Active directory authentication mecha
 If your organization is using Active Directory (AD), it is recommended to integrate Haltdos solutions for user management with AD.
 :::
 
-![activedirectory](/img/platform/v7/docs/ad.png)
+![activedirectory](/img/platform/v8/docs/ldap.png)
 
 **How to Use:**
 

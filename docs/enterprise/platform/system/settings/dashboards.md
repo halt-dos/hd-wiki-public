@@ -14,7 +14,9 @@ Haltdos platform allows users to create custom dashboards. Each dashboard can in
 By default, Haltdos solutions come with pre-build dashboards. This module allows users to extend that functionality as per requirements.
 :::
 
-![dashboards](/img/platform/v7/docs/dashboard_newui.png)
+![dashboards](/img/platform/v8/docs/dashboard.png)
+  
+![dashboards](/img/platform/v8/docs/dashboard2.png)
 
 ### How to Use:
 
@@ -22,21 +24,37 @@ By default, Haltdos solutions come with pre-build dashboards. This module allows
 2. Configure your settings
 3. Click **Save Changes**
 
-| PARAMETERS           | DESCRIPTION                                             | ACCEPTED VALUES | DEFAULT |
-|----------------------|---------------------------------------------------------|-----------------|---------|
-| Add Custom Dashboard | Click on the button to add a custom dashboard           | Button          | NA      |
-| Dashboard Name       | Enter a name for the dashboard                          | String          | Blank   |
-| App                  | Select the app for the dashboard                        | Dropdown        | ADC     |
-| Save Changes/Cancel  | Click on the button to save/cancel the custom dashboard | Button          | NA      |
-| Type                 | Displays the type of dashboard                          | NA              | Default |
-| Actions              | Let's delete the custom dashboard created.              | NA              | Icon    |
-| Add Graph            | Click on the custom dashboard name to add graph         | Button          | NA      |
-| Graph Name           | Enter a name for the graph                              | String          | Blank   |
-| Graph Type           | Select the type of graph                                | Dropdown        | Area    |
-| Size                 | Select the size for the graph                           | Dropdown        | Small   |
-| Unit                 | Select the unit for the graph                           | Dropdown        | bps     |
-| Add Graph Metrics    | Click on the button to add metrics for the graph        | Button          | NA      |
-| Metrics Category     | Select the metric category                              | Dropdown        | Blank   |
-| Metric Name          | Enter a name for the metric                             | String          | Blank   |
-| Add                  | Click on the add button to add the metric               | Button          | NA      |
+### Description
+
+**Dashboards Name**
+
+Enter dashboard name
+
+    Accepted values: String
+
+    Default: Blank
+
+**Enable Stack App**
+
+Select to Enable / Disable the stack app.
+
+    Accepted values: Enable / Disable
+
+    Default: Disable
+
+**Stack**
+
+Dropdown of list of Stack to Select
+
+    Accepted values: Select Stack
+
+    Default: Blank
+
+**Apps**
+
+List of apps
+
+    Accepted values: Select Apps
+
+    Default: Blank
 

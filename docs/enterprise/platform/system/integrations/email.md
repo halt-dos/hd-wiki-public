@@ -14,16 +14,15 @@ Haltdos Platform supports integration with Email Services via SMTP to send alert
 It is recommended to integrate Haltdos solutions with SMTP for receiving timely alerts and notifications.
 :::
 
-![E-Mail](/img/platform/v7/docs/emaill.png)
+![E-Mail](/img/platform/v8/docs/email.png)
+
+![E-Mail](/img/platform/v8/docs/email2.png)
 
 ### How to Use:
-1. Go to **System** (Present at the Top Right Side)
+1. Go to **System > Integeration**
 2. Select **E-Mail**
 3. Configure E-Mail Settings
 4. Click **Save Changes**
-
-![E-Mail](/img/platform/v7/docs/emailll.png)
-
 
 ### Description
 

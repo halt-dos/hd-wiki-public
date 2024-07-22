@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Backup Policy
+# Backup Setting
 
 Integration with FTP server and S3 for backing up
 
@@ -17,9 +17,9 @@ By default, Haltdos retains logs locally on the device for a duration of 90 days
 It is recommended to configure periodic backup to avoid data loss and ensure log availability for compliance and forensic examination
 :::
 
-![Backup Policy1](/img/platform/v7/docs/backup1.png)
+![Backup Policy1](/img/platform/v8/docs/backup_setting1.png)
 
-![Backup Policy2](/img/platform/v7/docs/backup2.png)
+![Backup Policy2](/img/platform/v8/docs/backup_setting2.png)
 
 #### How to Use:  
 
@@ -27,7 +27,7 @@ It is recommended to configure periodic backup to avoid data loss and ensure log
 2. Configure your settings
 3. Click **Save Changes**
 
-## Description
+### Description
 
 **Log Retention Period**
 

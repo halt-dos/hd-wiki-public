@@ -10,15 +10,12 @@ Password policy for securing user access on Haltdos solutions
 
 Haltdos platform allows administrators to configure password policy as per organization's compliances. To avoid weak passwords, administrators can configure fine grained user password policy to ensure secure access to Haltdos appliances. Password policy also supports password rotation, no repeat passwords, etc. to assist administrators enforce compliance.
 
-![password](/img/platform/v7/docs/password_policy.png)
+![password](/img/platform/v8/docs/passPolicy.png)
 
 **How to Use:**
 
-1. Go to  **Administrator** (Present at the Top Right Side)
-2. Click **System**
-3. Click **User Setting**
-4. Select **Password Policy**
-5. Configure  Password Setting
+1. Go to **System > Security > Password Policy**.
+2. Configure your settings
 6. Click **Save Changes**
 
 
@@ -73,10 +70,26 @@ Specify if the password must compulsory contain special characters
 
     Default: Enable 
 
-##### **Contain LowerCase**
+##### **Contain NUmbers**
 Specify if the password must compulsory contain numbers	
 
     Accepted values: Enable / Disable
 
     Default: Enable 
+
+##### **Failed Login Attempts**
+Specify the maximum failed login attempts before the account being locked.
+
+    Accepted values: Integers
+
+    Default: 3
+
+##### **Account Lock Duration**
+Specify the period for which the account will locked after the login failure attempts have triggered.
+
+    Accepted values: Integers
+
+    Default: 15
+ 
+
 

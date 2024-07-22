@@ -14,11 +14,11 @@ Haltdos platform supports periodic and on-demand synchronization of configuratio
 API Token with READ AND WRITE access is required to sync configurations.
 :::
 
-![config sync](/img/platform/v7/docs/config_sync_newui.png)
+![config sync](/img/platform/v8/docs/configSync.png)
 
 ### How to Use:
 
-1. Go to **Stack > Integration > Config Sync**
+1. Go to **System > Integration > Config Sync**
 2. Configure your settings
 3. Click **Save Changes**
 

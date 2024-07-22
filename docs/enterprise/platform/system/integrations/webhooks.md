@@ -10,7 +10,7 @@ Integration with external 3rd party solutions for notification and alerts via AP
 
 Haltdos platform can easily integrate with one or more API endpoints to send alerts and notifications for timely action (as necessary). API integration can be done for various reasons such as integration with SMS Gateway, internal ticketing system, etc.
 
-![webhooks](/img/platform/v7/docs/webhooks_new_ui.png)
+![webhooks](/img/platform/v8/docs/webhooks.png)
 
 ### How to Use:
 
@@ -45,7 +45,7 @@ Specify HTTP method from the provided options
 
 **URL**
 
-This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+Mention the URL here
 
     Accepted values: URL
 
@@ -53,15 +53,15 @@ This option helps the user to mention the IP address or the hostname of the exte
 
 **Payload Location**
 
-This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+This option helps the user to mention the payload location.
 
-    Accepted values: Enable / Disable
+    Accepted values: ARG / PARAM / BODY
 
-    Default: Disable 
+    Default: ARG 
 
 **Payload Name**
 
-This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+This option helps the user to mention the payload name.
 
     Accepted values: String
 
@@ -69,15 +69,15 @@ This option helps the user to mention the IP address or the hostname of the exte
 
 **Attribute Type**
 
-This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+This option helps the user to mention the Attribute Type.
 
-    Accepted values: ARG
+    Accepted values: ARG / PARAM / HEADER / COOKIE
 
     Default: ARG 
 
 **Attribute Name**
 
-This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+This option helps the user to mention the Attribute name
 
     Accepted values: String
 
@@ -85,7 +85,7 @@ This option helps the user to mention the IP address or the hostname of the exte
 
 **Attribute Value**
 
-This option helps the user to mention the IP address or the hostname of the external backup server on which the Syslog service is exporting the log details.
+This option helps the user to mention the Attribute Value.
 
     Accepted values: String
 

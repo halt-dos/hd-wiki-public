@@ -17,7 +17,7 @@ The goal of TACACS+ is to provide a methodology for managing multiple network ac
 If your organization is using AAA authentication, it is recommended to integrate Haltdos solutions for user management with AD.
 :::
 
-![activedirectory](/img/platform/v7/docs/tacacs.png)
+![activedirectory](/img/platform/v8/docs/tacacs.png)
 
 ### How to Use:
 

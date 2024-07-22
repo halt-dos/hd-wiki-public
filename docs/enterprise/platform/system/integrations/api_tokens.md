@@ -13,8 +13,9 @@ Haltdos platform is an API first solution supporting API access via JSON (RESTFu
 :::info
 All API requests are **Authorization: Bearer `<TOKEN>`** header. Depending upon requirement, specify **Content-Type: application/xml** for XML and **Content-Type**: **application/json** for JSON output. If not Content-Type header is found, API will resort to JSON output. 
 :::
-![apitokens](/img/platform/v7/docs/api_token_newui.png)
+![apitokens](/img/platform/v8/docs/apiToken.png)
 
+![apitokens](/img/platform/v8/docs/apiToken2.png)
 ### How to Use:
 
 1. Go to **Stack** > **Integration** > **API Tokens**
@@ -22,11 +23,36 @@ All API requests are **Authorization: Bearer `<TOKEN>`** header. Depending upon 
 3. Configure your settings
 4. Click **Save Changes**
 
-| PARAMETERS       | DESCRIPTION                                | ACCEPTED VALUES | DEFAULT        |
-|------------------|--------------------------------------------|-----------------|----------------|
-| Token Name       | Enter a name for the token                 | String          | Blank          |
-| Token Access           | Select the scope of access for the token   | Dropdown        | Read And Write / Read Only |
-| Scope            | Displays the scope of access for the token | NA              | NA             |
-| Token            | Displays the token generated               | NA              | NA             |
-| Action           | Let's copy and delete the token            | NA              | Icon           |
+### Description
 
+##### **Token Name**  
+
+This feature allows users to enter token name
+
+    Accepted values: String
+
+    Default: Blank 
+
+##### **System Access**  
+
+This feature allows users to enable/disable the system access
+
+    Accepted values: String
+
+    Default: Blank 
+
+##### **Stack**  
+
+This feature allows users to select stack 
+
+    Accepted values: Select from list of stack
+
+    Default: Blank 
+
+##### **Token Access**  
+
+This feature allows users to select Token Access
+
+    Accepted values: ADMIN / READ / READ AND WRITE
+
+    Default: ADMIN 

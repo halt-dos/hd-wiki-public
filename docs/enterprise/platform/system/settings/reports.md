@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Reports
@@ -14,9 +14,16 @@ Haltdos solutions provides comprehensive reporting via dashboards on GUI or sent
 
 To enable reporting use Scheduler (under Stack Settings) to specify report type, duration and scope. The reports can be generated for various durations - Day, Week, Month or Custom time range as desired.
 
-![reports](/img/platform/reports.png)
+![reports](/img/platform/v8/docs/reports.png)
 
 ---
+
+### How to Use:
+
+1. Go to **Stack > Settings > Reports**
+2. Configure your settings
+3. Click **Save Changes**
+
 
 ### Types of Reports
 
@@ -24,13 +31,11 @@ To enable reporting use Scheduler (under Stack Settings) to specify report type,
 
 The following reports are provided by the platform (built-in reports). Custom reports can also be generated. Please refer to Dashboards (under Stack Settings).
 
-- WAF Overview
-- PCI Summary
-- WAF Device Fingerprinting
-- WAF HTTP Summary
-- WAF Attack Overview
-- Attack Device Fingerprinting
-- Attack Categorization
-- Attack HTTP Summary
-- Real User Monitoring
-- Load Balancing Summary
+- Performance Summary
+- Attack Summary
+- HTTP Summary
+- Governance
+- Traffic Summary
+- Bot Summary
+- Geo Summary
+- Instance Status

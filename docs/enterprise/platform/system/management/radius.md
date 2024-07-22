@@ -14,7 +14,7 @@ Haltdos Platform supports integration with AAA authentication mechanism with RAD
 If your organization is using AAA authentication , it is recommended to integrate Haltdos solutions for user management with AD.
 :::
 
-![activedirectory](/img/platform/v7/docs/radius.png)
+![activedirectory](/img/platform/v8/docs/radius.png)
 
 **How to Use:**
 

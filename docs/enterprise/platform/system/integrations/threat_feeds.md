@@ -16,19 +16,109 @@ Custom threat intel can be pulled into Haltdos appliances from three sources: pu
 Only IPv4/IPv6 addresses / prefix having poor reputation is currently supported.
 :::
 
-![threat_feeds](/img/platform/v7/docs/threat_feeds1.png)
+![threat_feeds](/img/platform/v8/docs/tIntel1.png)
 
-![threat_feeds](/img/platform/v7/docs/threat_feeds2.png)
+![threat_feeds](/img/platform/v8/docs/threatIntel2.png)
 
 ### How to Use:
 
 1. Go to **Threat Intel**
 2. Configure your settings
-3. Click Save
+3. Click Save.
+  
+### Description:
 
-| PARAMETERS          | DESCRIPTION                                                          | ACCEPTED VALUES | DEFAULT |
-|---------------------|----------------------------------------------------------------------|-----------------|---------|
-| Enable Telemetry    | Enable sending telemetry & attack information (anonymous) to Haltdos | Boolean         | False   |
-| Threat Source       | Specify how to read threat source                                    | Dropdown        | Blank   |
-| Upload Threat Intel | Click on the button to upload threat intel                           | Button          | NA      |
+**Enable**
+Select whether to Enable it or Disable it. 
+
+    Accepted values: Enable / Disable
+
+    Default: Enable 
+
+**Intel Source Name**
+Enter the intel source name
+
+    Accepted values: String
+
+    Default: Blank 
+
+**Stack**
+
+Stack is selected here
+
+    Accepted values: Select Stack
+
+    Default: Blank 
+
+**Feed Type**
+
+Select feed type
+
+    Accepted values: IP / Domain
+
+    Default: Enable 
+
+**Task Occurrence**
+
+Select number of times for the tasck occurence
+
+    Accepted values: ONCE / MINUTE / HOUR / DAILY / WEEKLY / MONTHLY
+
+    Default: ONCE 
+
+**Next Run**
+
+Select next run
+
+    Accepted values: Select next run
+
+    Default: Blank 
+
+**Timezone**
+
+Select Timezone from dropdown
+
+    Accepted values: Select Timezone
+
+    Default: Asia / Calcutta 
+
+**Fetch Resources**
+
+Select the fetch resources
+
+    Accepted values: API / FTP
+
+    Default: API 
+
+**URL**
+
+Select the type of URL and enter url
+
+    Accepted values: GET / POST / PUT
+
+    Default: GET
+
+**Attributes Type**
+
+Select type of attribute
+
+    Accepted values: HEADER_VAL / ARGS_VAL / PARAM_VAL
+
+    Default: HEADER_VAL
+
+**Name**
+
+Select the attribute name
+
+    Accepted values: String
+
+    Default: Blank
+
+**Value**
+
+Enter the value 
+
+    Accepted values: String
+
+    Default: Blank
 

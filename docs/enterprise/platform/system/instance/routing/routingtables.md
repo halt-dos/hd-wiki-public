@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # Routing Tables
@@ -14,4 +14,4 @@ Shows the list of Routing Tables wth the table name.
 2. Configure your settings
 3. Click **Save CHanges**
 
-![Routing Tables](/img/platform/v7/docs/routingtable.png)
+![Routing Tables](/img/platform/v8/docs/routingTables.png)

@@ -11,12 +11,12 @@ Audit trails (or audit logs) act as record-keepers that document evidence of cer
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Audit Trail**
+1. Go to **System > Security > Audit Trail**
 2. Configure your settings
 3. Click **Save Changes**
 
 
-![audit_trail](/img/platform/v7/docs/audit_trail-newuo.png)
+![audit_trail](/img/platform/v8/docs/atrail.png)
 
 :::note Note
 User can export it as well by clicking the export button user can download from **Events** function.

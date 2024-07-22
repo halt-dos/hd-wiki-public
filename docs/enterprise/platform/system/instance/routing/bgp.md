@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # BGP
@@ -11,7 +11,7 @@ Border Gateway Protocol (BGP) is a standardized exterior gateway protocol design
 
 Haltdos solution supports dynamic routing over BGP protocol. This section details how to configure Haltdos to support BGP.
 
-![bgp](/img/platform/v7/docs/bgp.png)
+![bgp](/img/platform/v8/docs/bgp.png)
 
 ## How to Use:
 
@@ -19,11 +19,28 @@ Haltdos solution supports dynamic routing over BGP protocol. This section detail
 2. Configure your settings
 3. Click **Save Changes**
 
-| PARAMETERS    | DESCRIPTION        | ACCEPTED VALUES    | DEFAULT  |
-|---------------|--------------------|--------------------|----------|
-| Enable        | Enable BGP Routing | ENABLED / DISABLED | DISABLED |
-| Listening IP  | Listening IP       | IP String          | Empty    |
-| Configuration | Configure the BGP  | String             | Blank    |
+### Description
 
+##### Enable
 
+Enable BGP Routing
 
+    Accepted values: Enabled / Disabled
+
+    Default: Disabled 
+
+##### Listening IP	
+
+Configure listening IP
+
+    Accepted values: IP
+
+    Default: Blank 
+
+##### Configuration
+
+Configure the BGP
+
+    Accepted values: String
+
+    Default: Blank 
