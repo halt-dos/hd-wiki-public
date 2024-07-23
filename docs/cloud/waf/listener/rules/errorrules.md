@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Error Rules
 These rules mask application exceptions and errors with custom pages.
 

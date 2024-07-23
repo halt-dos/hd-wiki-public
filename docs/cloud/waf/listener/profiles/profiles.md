@@ -1,3 +1,9 @@
+---
+sidebar_position: 0
+---
+
+# Profiles
+
 Profiles create different security profiles for different sub-sections of your website.
 
 ---

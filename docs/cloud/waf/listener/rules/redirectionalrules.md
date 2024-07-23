@@ -1,4 +1,8 @@
-# Redirectional Rules
+---
+sidebar_position: 3
+---
+
+# Redirection Rules
 
 These rules allow you to configure redirection for your application pages
 

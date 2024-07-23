@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Header Rules
 Helps to modify headers, cookies, and arguments in the request sent to the back-end server as well as modifying response sent to the client.
 
