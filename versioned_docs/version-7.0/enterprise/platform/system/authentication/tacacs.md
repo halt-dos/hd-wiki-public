@@ -81,13 +81,25 @@ This option allows users to configure the authentication protocol for the TACACS
 
     Default: 5000 
 
+    Unit: millisecond
+
 This option allows users to configure the request timeout for the request. If any authentication response from TACACS+ server will be delayed from the mentioned timeout, it will be discarded.
 
-### Tacacs Script
+### TACACS Script/Attributes
 
-Tacacs Script is used for authority purpose, this is a process of determining what actions a user is allowed to perform on a Haltdos Solution Device after they have been authenticated by AAA Server. This is typically done by sending an authorization request to a TACACS+ server which then decides if the user has the necessary permissions for login in Haltdos GUI Console.  
-  
-There are various arguments and there values in the tacacs script that are mentioned below:  
+The TACACS+ script is used for authorization purposes and should be configured on an AAA server. This process determines what actions or roles a user is allowed to perform on a Haltdos solution device after they have been authenticated by the AAA server. Typically, this is done by sending an authorization request to a TACACS+ server, which then decides if the user has the necessary permissions to log in to the Haltdos GUI console.
+
+There are various arguments that need to be configured on the authorization server (AAA server);  
+
+
+| Attributes      | Mandatory |
+| ----------- | ----------- |
+| authority      | Yes       |
+| stacks | yes    |
+| emailId   | No        |
+| access   | Yes     |
+| disable_report | No    |
+
 
 #### 1. authority
 
@@ -97,9 +109,9 @@ This argument determines the user type and is necessary for successful authoriza
 
 This mandatory argument is used to authorize license or stack details. It represents the **license ID** of the Haltdos solution and is crucial for validating that the authorization request originates from a validly licensed device.
 
-    Accepted Values: SYNTAX - Comma seprated value
+    Accepted Values: SYNTAX - Comma separated value
 
-    Example : <LICENSE_1>[LICENSE_2] 
+    Example : <LICENSE_1>,<LICENSE_2>
 
 #### 3. emailId
 
@@ -158,4 +170,6 @@ This field is optional.
     access: MEMBER
     disable_report: false
 
-The above mentioned scripts/attributes need to be configured on authorization server, so when any user tries to login into Haltdos Management Console, the request will be authenticated and authorized by the AAA server. The configured script will be then used by AAA server for authorization.
+The above-mentioned scripts/attributes need to be configured on the authorization server. This ensures that when any user tries to log in to the Haltdos Management Console, the request will be authenticated, authorized, and accounted for by the AAA server.
+
+In this process, an authentication request will be generated from the Haltdos solution to the AAA server, which will then authenticate the request and respond back to the Haltdos solution device. After authentication, the Haltdos device will generate an authorization request to the AAA server. In response, the AAA server should return the necessary attributes to complete the authorization. Based on the values received from the AAA server, the Haltdos device will approve login access.
