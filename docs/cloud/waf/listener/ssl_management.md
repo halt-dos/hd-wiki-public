@@ -69,7 +69,6 @@ This field allows us to Select or Upload an SSL Certificate for SSL Offloading i
 
      Default: Blank
 
-
 ##### **SSL Session Caching**
 This option allows users to specify the number of SSL session cache for HTTPS requests on the listener.
 

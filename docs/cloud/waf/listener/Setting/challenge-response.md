@@ -51,11 +51,27 @@ Specify the captcha unanswered threshold i.e maximum attempts given to client fo
 
      Default: 3 
 
+##### **Failed Challenge Threshold**
+
+Specify the failed challenge threshold before suspending client IP.
+
+     Accepted values: Integer
+
+     Default: 3 
+
+##### **Failed Challenge Action**
+
+Specify the default action upon breaching fingerprint challenge threshold.
+
+     Accepted values: Drop & Record Threshld / Record Request / Terminate Connection / Temprorary Blacklist Src IP / Tarpit Src Ip / Block User Session / No Action / Send Response from Cache
+
+     Default: Drop & Record Threshld 
+
 ##### **Crypto Challenge difficulty**
 
 Specify the Crypto challenge difficulty i.e the level of crypto challange that will be sent to the client.The range is 1 - 9.
 
-     Accepted values: Integer
+     Accepted values: 1 - 10
 
      Default: 1
 

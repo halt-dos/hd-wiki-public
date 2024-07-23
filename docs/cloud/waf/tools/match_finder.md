@@ -6,7 +6,7 @@ sidebar_position: 2
 ### Overview
 It Identifies, stores all the rules matched by WAF, and generates match finder details for a specific or all listener so that you can identify all matched, rules for the listener by listing the events.
 
-![matchfinder](/img/waf/v8/docs/mFinder.png)
+![matchfinder](/img/waf/v8/docs/mFinder2.png)
 
 ### How to Use:
 1. Go to **WAF** > **Tool** > **Match Finder**
