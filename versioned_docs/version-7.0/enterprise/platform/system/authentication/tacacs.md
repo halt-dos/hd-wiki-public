@@ -88,10 +88,12 @@ This option allows users to configure the request timeout for the request. If an
 
 The TACACS+ script is used for authorization purposes and should be configured on an AAA server. This process determines what actions or roles a user is allowed to perform on a Haltdos solution device after they have been authenticated by the AAA server. Typically, this is done by sending an authorization request to a TACACS+ server, which then decides if the user has the necessary permissions to log in to the Haltdos GUI console.
 
+In this process, an authentication request will be generated from the Haltdos solution to the AAA server, which will then authenticate the request and respond back to the Haltdos solution device. After authentication, the Haltdos device will generate an authorization request to the AAA server. In response, the AAA server should return the necessary attributes to complete the authorization. Based on the values received from the AAA server, the Haltdos device will approve login access.
+
 There are various arguments that need to be configured on the authorization server (AAA server), as mentioned below.
 
 
-| Authorization Attributes      | Mandatory |
+| Authorization Attribute      | Mandatory |
 | ----------- | ----------- |
 | authority      | Yes       |
 | stacks | yes    |
@@ -100,6 +102,8 @@ There are various arguments that need to be configured on the authorization serv
 | disable_report | No    |
 
 ### Description
+
+The scripts/attributes mentioned below need to be configured on the authorization server. This ensures that when any user tries to log in to the Haltdos Management Console, the request will be authenticated, authorized, and accounted for by the AAA server based upon the above script/attribute.
 
 #### 1. authority
 
@@ -170,6 +174,5 @@ This field is optional.
     access: MEMBER
     disable_report: false
 
-The above-mentioned scripts/attributes need to be configured on the authorization server. This ensures that when any user tries to log in to the Haltdos Management Console, the request will be authenticated, authorized, and accounted for by the AAA server based upon the above script/attribute.
 
-In this process, an authentication request will be generated from the Haltdos solution to the AAA server, which will then authenticate the request and respond back to the Haltdos solution device. After authentication, the Haltdos device will generate an authorization request to the AAA server. In response, the AAA server should return the necessary attributes to complete the authorization. Based on the values received from the AAA server, the Haltdos device will approve login access.
+
