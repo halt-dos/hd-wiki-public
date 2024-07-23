@@ -158,4 +158,4 @@ This field is optional.
     access: MEMBER
     disable_report: false
 
-
+The above mentioned scripts/attributes need to be configured on authorization server, so when any user tries to login into Haltdos Management Console, the request will be authenticated and authorized by the AAA server. The configured script will be then used by AAA server for authorization.
