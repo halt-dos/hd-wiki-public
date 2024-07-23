@@ -4,17 +4,17 @@ sidebar_position: 2
 
 # TACACS server
 
-Integration with organizaion's Tacacs+ server for user management.
+Integration with organizaion's TACACS+ server for user management.
 
 ---
 
-Haltdos Platform supports integration with AAA authentication mechanism with Tacacs+ Server.
+Haltdos Platform supports integration with AAA authentication mechanism with TACACS+ Server.
 
-The goal of TACACS+ is to provide a methodology for managing multiple network access points from a single management service. AAA stands for authentication, authorization, and accounting. Users are allowed to check and configure the remote authentication for the users of Haltdos web UI console. After enabling the tacacs+ server under Remote Authentication menu, users are allowed to login on the Haltdos Management Console using their credential configured on tacacs+ server.
+The goal of TACACS+ is to provide a methodology for managing multiple network access points from a single management service. AAA stands for authentication, authorization, and accounting. Users are allowed to check and configure the remote authentication for the users of Haltdos web UI console. After enabling the TACACS+ server under Remote Authentication menu, users are allowed to login on the Haltdos Management Console using their credential configured on TACACS+ server.
 
 
 :::info Info
-If your organization is using AAA authentication, it is recommended to integrate Haltdos solutions for user management with AD.
+If your organization is using AAA authentication, it is recommended to integrate Haltdos solutions for user management with Active Directory.
 :::
 
 ![activedirectory](/img/platform/v7/docs/tacacs.png)
@@ -30,8 +30,7 @@ If your organization is using AAA authentication, it is recommended to integrate
 
 ##### **Enabled**
 
-This option enables users to enable or disable the tacacs+ authentication.
-Endpoint.
+This option enables users to enable or disable the TACACS+ authentication.
 
     Accepted values: Enable / Disable
 
@@ -39,7 +38,7 @@ Endpoint.
 
 ##### **Endpoint**
 
-This option allows users to set the endpoint or the tacacs+ server IP address on which Haltdos Device will send authentication requests.
+This option allows users to set the endpoint or the TACACS+ server IP address on which Haltdos Console will send authentication requests.
 
     Accepted values: IP
 
@@ -47,15 +46,15 @@ This option allows users to set the endpoint or the tacacs+ server IP address on
 
 ##### **Port**
 
-This option allows users to set the port number for the port number that is being used at tacacs+ server mentioned above. By default, tacacs+ server set to listen on port 49.
+This option allows users to set the port number that is being used at TACACS+ server mentioned above. By default, TACACS+ server is set to listen on port 49.
 
     Accepted values: Integer
 
-    Default: Blank 
+    Default: 49 
 
 ##### **Secret Key**
 
-This option allows users to set the secret key which will be used while communicating the TACACS+ server.
+This option allows user to set the secret key which will be used while communicating with the TACACS+ server.
 
     Accepted values: Password phrase
 
@@ -63,7 +62,7 @@ This option allows users to set the secret key which will be used while communic
 
 ##### **Authorization Protocol**
 
-This option allows users to configure the authentication protocol for the TACACS+ server. This option contains mainly two protocols;
+This option allows users to configure the authentication protocol for the TACACS+ server. This option contains mainly three protocols:
 
     Accepted values: ASCII / PAP / CHAP
 
@@ -89,10 +88,10 @@ This option allows users to configure the request timeout for the request. If an
 
 The TACACS+ script is used for authorization purposes and should be configured on an AAA server. This process determines what actions or roles a user is allowed to perform on a Haltdos solution device after they have been authenticated by the AAA server. Typically, this is done by sending an authorization request to a TACACS+ server, which then decides if the user has the necessary permissions to log in to the Haltdos GUI console.
 
-There are various arguments that need to be configured on the authorization server (AAA server);  
+There are various arguments that need to be configured on the authorization server (AAA server), as mentioned below.
 
 
-| Attributes      | Mandatory |
+| Authorization Attributes      | Mandatory |
 | ----------- | ----------- |
 | authority      | Yes       |
 | stacks | yes    |
@@ -100,16 +99,17 @@ There are various arguments that need to be configured on the authorization serv
 | access   | Yes     |
 | disable_report | No    |
 
+### Description
 
 #### 1. authority
 
-This argument determines the user type and is necessary for successful authorization on the portal. Users can log in with two modes: USER or ADMIN. The value of this argument is correlated with the "access" argument values. Providing this argument is mandatory for successful authorization.
+This argument determines the user type which is necessary for successful authorization on the portal. Users can log in with two modes: USER or ADMIN. The value of this argument is correlated with the "access" argument values. Providing this argument is mandatory for successful authorization.
 
 #### 2. stacks
 
 This mandatory argument is used to authorize license or stack details. It represents the **license ID** of the Haltdos solution and is crucial for validating that the authorization request originates from a validly licensed device.
 
-    Accepted Values: SYNTAX - Comma separated value
+    Accepted Values: String - Comma separated value
 
     Example : <LICENSE_1>,<LICENSE_2>
 
@@ -170,6 +170,6 @@ This field is optional.
     access: MEMBER
     disable_report: false
 
-The above-mentioned scripts/attributes need to be configured on the authorization server. This ensures that when any user tries to log in to the Haltdos Management Console, the request will be authenticated, authorized, and accounted for by the AAA server.
+The above-mentioned scripts/attributes need to be configured on the authorization server. This ensures that when any user tries to log in to the Haltdos Management Console, the request will be authenticated, authorized, and accounted for by the AAA server based upon the above script/attribute.
 
 In this process, an authentication request will be generated from the Haltdos solution to the AAA server, which will then authenticate the request and respond back to the Haltdos solution device. After authentication, the Haltdos device will generate an authorization request to the AAA server. In response, the AAA server should return the necessary attributes to complete the authorization. Based on the values received from the AAA server, the Haltdos device will approve login access.
