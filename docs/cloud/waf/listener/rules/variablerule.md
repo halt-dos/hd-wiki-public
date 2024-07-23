@@ -13,24 +13,13 @@ If a user wants to extract or set a custom variable, then it can be done using V
 Any parameter from the Request/Response can be stored in a variable.
 :::
 
-![variable rule](/img/waf/v7/docs/variablerule.png)
+![variable rule](/img/waf/v8/docs/list_variable.png)
+
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Rules** > **Variable Rules**
 2. Create rules with different conditions
 3. Click on **Save Changes**
-
-| Parameters | Accepted Values | Default
-| ----------- | ----------- |---------- |
-| Rule Name|String|None
-Rule Message|String|None
-Rule Priority|Integer|None
-Evaluation Phase|Drop-down|Request
-Variable|Drop-down|Blank
-Mutation Action|Drop-down|SET
-Value|String|None
-
-![variable rules](/img/waf/v7/docs/variablerule1.png)
 
 ### Description
 ##### **Rule Name** 
@@ -93,4 +82,4 @@ Users can specify the value for the rule.
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/cloud/waf/listener/rules/ruleCond)

@@ -3,7 +3,8 @@ sidebar_position: 4
 ---
 # Rate Limit Rules
 ### Overview
-Rate Limiting is a feature of Haltdos WAF that allows application owners to enforce rate limiting on some of the pages which affect their website performance.
+Rate Limiting is a feature of Haltdos WAF that allows application owners to enforce rate limiting on some of the pages which affect their website performance.  
+  
 ![Rate limit](/img/waf/v8/docs/rateLimitRule.png)
 
 
@@ -99,7 +100,7 @@ Always limit burst must be greater than or equal to limit rate.
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/cloud/waf/listener/profiles/rules/ruleCond)
 
 
 

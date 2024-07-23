@@ -10,7 +10,7 @@ Helps to modify headers, cookies, and arguments in the request sent to the back-
 ### Overview 
 We have introduced Header rules by which application owners can manipulate request headers, cookies, and arguments in request as well as response headers. Users can create/update header rules at run time with on-the-fly updates. It has the functionality to add/remove/update any cookie/header/arguments in the request to the web-server(back-end) as well as respond to the client.
 
-![header rules](/img/waf/v7/docs/header_rule.png)
+![header rules](/img/waf/v8/docs/list_header.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Rules** > **Header Rules**.
@@ -111,4 +111,4 @@ Specify the attribute value which will be mentioned in the attribute.
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/cloud/waf/listener/rules/ruleCond)

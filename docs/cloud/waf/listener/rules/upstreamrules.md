@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Upstream Rules 
 You can switch between your server groups by creating upstream rules.
 
@@ -7,7 +11,7 @@ You can switch between your server groups by creating upstream rules.
 
 If a user has defined server groups and wants to use different groups depending upon different conditions then he can make use of Upstream Rules. For example, if a user wants its /API calls to be served by server-group "API" and console by "DEFAULT" then he can create a rule with a search pattern and search location as URL/Header/Cookie/Body/Arguments
 
-![upstream rules](/img/waf/v7/docs/upstream.png)
+![upstream rules](/img/waf/v8/docs/list_upstream.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Rules** > **Upstream Rules**
@@ -52,4 +56,4 @@ Which server group should serve the request of this type. The server group confi
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/cloud/waf/listener/rules/ruleCond)

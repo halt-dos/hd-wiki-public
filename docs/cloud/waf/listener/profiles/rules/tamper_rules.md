@@ -59,11 +59,12 @@ Users are allowed to specify the action to be taken for the request matched i.e.
 
 ##### **URI**
 Users are allowed to specify the URI on which the tamper rule will be applied.
- - **example** - /login
 
     Accepted values: Regex
 
     Default: Blank  
+
+- **example** - /login
 
 ##### **Method**
 Users are allowed to select the HTTP method for the rule to extract when matched with the request.

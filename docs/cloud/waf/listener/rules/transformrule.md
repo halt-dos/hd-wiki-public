@@ -12,7 +12,7 @@ Transform Rule allow user to do HTML encoding beacause it ensures that text will
 
 ## Overview 
 
-![transformrule](/img/waf/v7/docs/transformrule.png)
+![transformrule](/img/waf/v8/docs/list_transform.png)
 
 ### How to Use:
 
@@ -108,4 +108,4 @@ Replace option comes only in use when the transformation is SET, REPLACE, HTTP t
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/cloud/waf/listener/rules/ruleCond)
