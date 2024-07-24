@@ -40,7 +40,7 @@ This option allows user to specify service type based on the protocol of backend
 
     Accepted values: HTTP / STREAM / MAIL
 
-    Default: Blank 
+    Default: HTTP 
 
 ##### **Origin Servers**
 This option allows user to specify IP and listening port of the backend server wherein load balancing occurs. There can be combination of multiple IP and listening port.
