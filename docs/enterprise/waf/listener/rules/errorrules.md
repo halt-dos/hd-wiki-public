@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Error Rules
 These rules mask application exceptions and errors with custom pages.
 
@@ -12,17 +16,6 @@ Error Rules is a feature of Haltdos WAF that allows application owners to show c
 1. Go to **WAF** > **Listeners** > **Rules** > **Error Rules**.
 2. Click on **Add Rule** and set relevant parameters described in the table below.
 3. Click on **Save Changes**.
-
-| Parameters | Accepted Values | Default |
-| ----------- | ----------- |------------|
-| Rule Name|String|Empty
-Rule Message|String|Empty
-Rule Priority|Integer|0
-URI|URI Regex|Empty
-Method|URL / Headers / Header Name / Header Value / Specific Header Value Data / Cookies / Cookie Name /  Cookie Value / Specific Cookie Value Data / Body / Body Argument Name / Body Argument Value / Specific Body Value Data / Arguments / Argument Name / Argument Value / Specific Argument Value Data / Variable|ALL
-HTTP Response Code|400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 428, 429, 431, 440, 444, 449, 450, 451, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 520, 521, 522, 523, 524, 525, 526, 527, 530|None
-Rule Action|No Action / Send Response|No Action
-
 
 ### Description
 
@@ -80,9 +73,9 @@ Example /login
 
 Select the HTTP method for the rule to extract when matched with the request.
 
-    Accepted values: ALL / GET / POST / PUT
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
-    Default: Blank  
+    Default: ALL  
 
 ##### **HTTP Response Codes**
 
@@ -96,6 +89,6 @@ User can mention the HTTP response code based on the custom error rule name.
 
 Specifies the action to be executed when this is gets triggered
 
-    Accepted values: String
+    Accepted values: No Action / Send Custom Response
 
-    Default: Blank  
+    Default: No Action  

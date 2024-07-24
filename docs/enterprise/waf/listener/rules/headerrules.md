@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Header Rules
 Helps to modify headers, cookies, and arguments in the request sent to the back-end server as well as modifying response sent to the client.
 
@@ -6,7 +10,7 @@ Helps to modify headers, cookies, and arguments in the request sent to the back-
 ### Overview 
 We have introduced Header rules by which application owners can manipulate request headers, cookies, and arguments in request as well as response headers. Users can create/update header rules at run time with on-the-fly updates. It has the functionality to add/remove/update any cookie/header/arguments in the request to the web-server(back-end) as well as respond to the client.
 
-![header rules](/img/waf/v7/docs/header_rule.png)
+![header rules](/img/waf/v8/docs/waf_header.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Rules** > **Header Rules**.
@@ -19,25 +23,56 @@ We have introduced Header rules by which application owners can manipulate reque
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
+    Accepted values: String
+
+    Default: Blank  
+
 ##### **Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Rule Priority**
 
 User can define the rule's priority among various other custom error rules.
 
+    Accepted values: Integer
+
+    Default: 0  
+
 ##### **URI**
 
 Specify the URI or regex for which rule will be applied. 
+
+    Accepted values: URI
+
+    Default: Blank
 
 ##### **Method**
 
 Select the HTTP method for the rule to validate when matched with the request.
 
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+
+    Default: ALL  
+
+##### **Evaluation Phase**
+User can select the evaluation phase
+
+    Accepted values: Request Phase / Response Phase
+
+    Default: Request Phase
+
 ##### **Rule Action**
 
 The rule action determines what action (add/remove/overwrite) the rule will perform. The accepted values are:
+
+    Accepted values: Add Header / Add Cookie / Overwrite Header / Overwrite Cookie / Remove Header / Remove Cookie
+
+    Default: Add Header
 
 1) **ADD:** This condition will allow adding a value at the specified location.
 
@@ -55,53 +90,25 @@ If the action is **OVERWRITE**, then two other fields are required first is **Se
  In order to escape the dollar($) character in the replace, add the dollar symbol twice.
 :::
 
-#### **Evaluation Phase**
-
-Select the evaluation phase for the rule i.e. Request or Response.
-
 ##### **Attribute Name**
 
 Specify the attribute name which need to add/delete/overwrite with rule.
+
+    Accepted values: String
+
+    Default: Blank  
 
 ##### **Attribute Value**
 
 Specify the attribute value which will be mentioned in the attribute.
 
-##### **Parameter**
+    Accepted values: String
 
-This field specifies the name of the header/cookie/ arguments on which action will be performed.
+    Default: Blank  
 
 #### **Add Condition**
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-![Header rules](/img/waf/v7/docs/header_rule1.png)
-
-For adding a condition, the required fields are:
-
-##### **Check Response**
-
-This field determines that the condition will be checked on request/response parameters.
-
-##### **Find Location**
-
-This field determines whether the condition should be checked on headers/cookies/arguments. The accepted values are:
-
-**HEADER_VAL** : Rule will be applicable on the header value in the request or response.
-
-**COOKIE_VAL** : Rule will be applicable to the cookie value in the request or response.
-
-**AGRS_VAL** : Rule will be applicable to the argument value in the request or response. 
-
-##### **Parameter**
-
-This field specifies the name of the header/cookie/ arguments on which condition will be validated. Search Pattern: This field specifies the pattern that will be matched against the header/cookie/ argument value to satisfy the condition.
-
-##### **Match Condition**
-
-The user can define the match condition for the parameter and match value.
-
-##### **Match Value**
-
-The user can define what value needs to be matched with the match condition.
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/enterprise/waf/listener/rules/ruleCond)
 
