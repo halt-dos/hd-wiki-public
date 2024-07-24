@@ -16,8 +16,6 @@ sidebar_position: 1
 4. Configure your settings. 
 5. Click **Save Changes**.
 
-![servers2](/img/adc/v8/docs/servers_2.png)
-
 ### Description:
 
 ##### **Server ID**
