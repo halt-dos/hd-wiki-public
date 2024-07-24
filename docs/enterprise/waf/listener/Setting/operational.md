@@ -15,7 +15,7 @@ Configure Operational settings of Listeners.
 
 ## Overview
 
-Users are allowed to configure many operational settings for the [Listeners](../listener/listener.md). Users can configure most common settings like timeout settings, operation modes, header/body timeouts, error handling, and request logging. Users can also add server aliases and VIPs to the configured listener with the help of operational settings
+Users are allowed to configure many operational settings for the [Listeners](/v8/enterprise/waf/listener/). Users can configure most common settings like timeout settings, operation modes, header/body timeouts, error handling, and request logging. Users can also add server aliases and VIPs to the configured listener with the help of operational settings
 
 ![Listener Operational Settings](/img/waf/v8/docs/operationalSetting1.png)   
 
@@ -291,14 +291,7 @@ This option specify aliases means familiar name for the listener.
     Accepted values: String
 
     Default: Blank  
-
-##### **Virtual IPs**
-This option specify assigned virtual IPs for accepting traffic.  
-
-    Accepted values: IP
-
-    Default: Blank 
-        
+     
 ##### **Add Port**
 This option helps you to add HTTP/S ports for Advance Settings. Here you can be unique port either HTTP or HTTPS enabled configuration without changing backend server port.
 
