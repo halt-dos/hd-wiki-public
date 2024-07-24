@@ -305,14 +305,7 @@ This option specify aliases means familiar name for the listener.
     Accepted values: String
 
     Default: Blank  
-
-##### **Virtual IPs**
-This option specify assigned virtual IPs for accepting traffic.  
-
-    Accepted values: IP
-
-    Default: Blank 
-        
+     
 ##### **Add Port**
 This option helps you to add HTTP/S ports for Advance Settings. Here you can be unique port either HTTP or HTTPS enabled configuration without changing backend server port.
 

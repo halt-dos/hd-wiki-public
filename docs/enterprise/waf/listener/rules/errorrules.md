@@ -67,15 +67,19 @@ Specify the URI on which the tamper rule will be applied.
 
     Default: Blank  
 
+    Accepted values: URI
+
+    Default: Blank  
+
 Example /login
 
 ##### **Method**
 
 Select the HTTP method for the rule to extract when matched with the request.
 
-    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+    Accepted values: ALL / GET / POST / PUT
 
-    Default: ALL  
+    Default: Blank  
 
 ##### **HTTP Response Codes**
 
@@ -89,6 +93,6 @@ User can mention the HTTP response code based on the custom error rule name.
 
 Specifies the action to be executed when this is gets triggered
 
-    Accepted values: No Action / Send Custom Response
+    Accepted values: String
 
-    Default: No Action  
+    Default: Blank  
