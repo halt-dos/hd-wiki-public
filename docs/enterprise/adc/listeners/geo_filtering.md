@@ -22,7 +22,7 @@ Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. 
 
 This section specifies the list of countries that will be permanently disallowed from accessing the website.
 
-    Accepted values:  list of country as per ISO 3166-1 alpha-2 standard 2 letter country-code.
+    Accepted values: list of country as per ISO 3166-1 alpha-2 standard 2 letter country-code.
 
     Default: Blank 
 
@@ -35,6 +35,7 @@ This section specifies the list of IPs that will be permanently allowed for acce
     Accepted values: IP prefixes
 
     Default: Blank   
+    
 ##### **Blacklisted IP Prefixes**
 
 This section specifies the list of IPs that will be permanently disallowed from accessing the website.
