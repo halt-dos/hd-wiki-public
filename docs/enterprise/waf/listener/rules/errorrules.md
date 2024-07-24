@@ -73,9 +73,9 @@ Example /login
 
 Select the HTTP method for the rule to extract when matched with the request.
 
-    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
+    Accepted values: ALL / GET / POST / PUT
 
-    Default: ALL  
+    Default: Blank  
 
 ##### **HTTP Response Codes**
 
