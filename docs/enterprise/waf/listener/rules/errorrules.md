@@ -77,9 +77,9 @@ Example /login
 
 Select the HTTP method for the rule to extract when matched with the request.
 
-    Accepted values: ALL / GET / POST / PUT
+    Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
-    Default: Blank  
+    Default: ALL  
 
 ##### **HTTP Response Codes**
 
@@ -93,6 +93,6 @@ User can mention the HTTP response code based on the custom error rule name.
 
 Specifies the action to be executed when this is gets triggered
 
-    Accepted values: String
+    Accepted values: No Action / Send Custom Response
 
-    Default: Blank  
+    Default: No Action  
