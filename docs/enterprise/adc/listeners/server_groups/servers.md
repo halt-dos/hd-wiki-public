@@ -6,6 +6,8 @@ sidebar_position: 1
 
 ![servers](/img/adc/v8/docs/servers_1.png)
 
+![servers2](/img/adc/v8/docs/servers_2.png)
+
 ### How to Use:
 
 1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Server groups**.
@@ -13,8 +15,6 @@ sidebar_position: 1
 3. Select the **Add Server** option.
 4. Configure your settings. 
 5. Click **Save Changes**.
-
-![servers2](/img/adc/v8/docs/servers_2.png)
 
 ### Description:
 
