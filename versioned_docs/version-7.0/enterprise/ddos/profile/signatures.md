@@ -6,7 +6,7 @@ sidebar_position: 6
 
 ---
 
-These are in-built rules for DDoS. These are the inbuilt DDoS signatures which help in stopping different types of DDoS Attacks. User can enable/ disable it as per the requirement.
+These in-built DDoS signatures, combined with the Intrusion Prevention System (IPS), help stop different types of DDoS attacks. Users can enable or disable them as needed.
 
 ![signatures](/img/ddos/v7/docs/signatures.png)
 
