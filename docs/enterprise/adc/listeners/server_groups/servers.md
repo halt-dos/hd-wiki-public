@@ -10,7 +10,7 @@ sidebar_position: 1
 
 ### How to Use:
 
-1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Server groups**.
+1. Go to **Stack** > **SLB** > **Listeners** > **Server groups**.
 2. Select the **Group name**.
 3. Select the **Add Server** option.
 4. Configure your settings. 
