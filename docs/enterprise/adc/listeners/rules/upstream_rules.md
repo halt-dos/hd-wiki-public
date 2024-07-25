@@ -42,7 +42,7 @@ Users can enable or disable the rule.
 
     Accepted values: Enabled / Disabled
 
-    Default: 0 
+    Default: Enabled
 
 ##### **Rule Priority**
 

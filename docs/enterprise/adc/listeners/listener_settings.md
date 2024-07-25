@@ -13,12 +13,6 @@ Users are allowed to configure many operational settings for the Listeners.
 
 ![Listener settings1](/img/adc/v8/docs/listener_settings_1.png)
 
-### How to Use:
-
-1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Operational Settings**
-2. Configure your settings
-3. Click **Save Changes**.
-
 ![Listener settings2](/img/adc/v8/docs/listeners_settings_2.png)
 
 ![Listener settings3](/img/adc/v8/docs/listeners_settings_3.png)
@@ -26,6 +20,12 @@ Users are allowed to configure many operational settings for the Listeners.
 **Configure the following parameters to set up the desired settings:**
 
 ![Listener settings3](/img/adc/v8/docs/listeners_settings_4.png)
+
+### How to Use:
+
+1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Operational Settings**
+2. Configure your settings
+3. Click **Save Changes**.
 
 ### Description:
 
