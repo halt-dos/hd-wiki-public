@@ -9,14 +9,15 @@ Listeners are used for collecting set of websites and servers appropriately that
 
 ![Listener1](/img/adc/v8/docs/listeners_1.png)
 
+![Listener2](/img/adc/v8/docs/listeners_2.png)
+
+
 ### How to Use:
 
 1. Go to **Stack** > [**SLB**](/enterprise/adc) > **Listeners** 
 2. Click **Add Listener** button.
 3. Configure your settings.
 4. Click **Save**.
-
-![Listener2](/img/adc/v8/docs/listeners_2.png)
 
 #### Description:
 
@@ -42,7 +43,7 @@ This field specifies the type of service for the subdomain i.e. **HTTP, TCP, UDP
 
     Accepted values: HTTP / TCP / UDP
 
-    Default: Blank 
+    Default: HTTP 
 
 ##### **Origin Servers**
 
