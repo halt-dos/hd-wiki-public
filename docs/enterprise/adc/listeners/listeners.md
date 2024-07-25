@@ -19,8 +19,6 @@ Listeners are used for collecting set of websites and servers appropriately that
 3. Configure your settings.
 4. Click **Save**.
 
-![Listener2](/img/adc/v8/docs/listeners_2.png)
-
 #### Description:
 
 ##### **Domain/ Virtual IP**
@@ -45,7 +43,7 @@ This field specifies the type of service for the subdomain i.e. **HTTP, TCP, UDP
 
     Accepted values: HTTP / TCP / UDP
 
-    Default: Blank 
+    Default: HTTP 
 
 ##### **Origin Servers**
 
