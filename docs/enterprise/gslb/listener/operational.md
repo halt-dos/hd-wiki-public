@@ -33,7 +33,7 @@ Specify the resolution on specific Protocols for e.g. UDP, TCP or TLS.
 **DNS Service Type**  
 Specify the DNS Service type 
 
-    Accepted values: Authorative / Recursive / Auth & Recursive
+    Accepted values: Authoritative / Recursive / Auth & Recursive
 
     Default: Auth & Recursive 
 
@@ -42,14 +42,14 @@ Specify the upstream resolver for Recursive DNS. This option only works when DNS
 
     Accepted values: String
 
-    Default: 8.8.8.8 
+    Default: Blank 
 
 **Addresses**  
 Specify the list of addresses that should be used in Recursive DNS.
 
     Accepted values: String
 
-    Default: 10.0.0.243
+    Default: Blank
 
 **Refuse Query with no RD flag**  
 Specify to respond with refuse on queries with no RD flag.  
