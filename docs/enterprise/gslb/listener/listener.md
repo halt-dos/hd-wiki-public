@@ -19,9 +19,6 @@ Make GSLB listen on specific ports to accept connections and distribute across o
 6. Click on **Save Changes**
 7. Listener IP will be saved.
 
-
-![listener](/img/gslb/v8/listener_2.png)
-
 #### **Listener**
 
 It shows the name of the added listener, click on the edit icon to edit listener's name.
