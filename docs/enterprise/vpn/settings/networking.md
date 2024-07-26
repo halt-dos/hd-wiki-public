@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Networking
@@ -10,9 +10,9 @@ sidebar_position: 1
 
 Users are allowed to set network related configurations.
 
-![vpngroup](/img/vpn/v6/docs/networking.png)  
+![vpngroup](/img/vpn/v8/docs/vpn_network1.png)  
   
-![vpngroup](/img/vpn/v6/docs/networking2.png)  
+![vpngroup](/img/vpn/v8/docs/vpn_network2.png)  
 
 
 ### How to Use:
@@ -20,68 +20,170 @@ Users are allowed to set network related configurations.
 2. Configure the settings as per the requirement.  
 3. Click on **Save Changes**.  
 
-
-| SETTINGS                   | ACCEPTED VALUE | DEFAULT |
-|----------------------------|----------------|---------|
-| Keepalive Timeout          | Decimal        | 32400   |
-| Dead Peer Detection        | Decimal        | 90      |
-| Dead Mobile Peer Detection | Decimal        | 1800    |
-| Authentication Timeout     | Decimal        | 240     |
-| Idle Timeout               | Decimal        | 1200    |
-| Mobile Idle Timeout        | Decimal        | 2400    |
-| Session Timeout            | Decimal        | 86400   |
-| Cookie Timeout             | Decimal        | 300     |
-| Deny Roaming               | Boolean        | Disable |
-| Tunnel All DNS Queries     | Boolean        | Enable  |
-| DNS Server                 | IP address     | Blank   |
-| IPv4 Lease                 | IP address     | Blank   |
-| IPv6 Lease                 | IPv6 address   | Blank   |
-| Max Send Buffer            | Decimal        | 10      |
-| Enable System Route        | Boolean        | Enable  |
-
 ### Description:
 
-**Keepalive Timeout**  
-Users can specify keepalive timeout. set 0 is disable.  
+**TCP Listening IP Address**  
 
-**Dead Peer Detection**  
-Users can specify timeout threshold for the stale clients.  
+Specify listening Virtual IP for TCP based connections
+
+    Accepted Value: Ip
+
+    Default: Blank
+
+**TCP Port**  
+
+Specify listening TCP port for VPN connections
+
+    Accepted Value: String
+
+    Default: 445
+
+**Enable Proxy Protocol**  
+
+Enable proxy protocol for TCP
+ 
+    Accepted Value: Enable / Disable
+
+    Default: Enable
+
+**UDP Listening IP Address**  
+
+Specify listening Virtual IP for UDP based connections
+
+    Accepted Value: Integer
+
+    Default: Blank
+
+**UDP Port**  
+
+Specify listening UDP port for VPN connections. Set 0 to disable
+
+    Accepted Value: Integer
+
+    Default: 445
+
+**Keepalive Timeout**  
+
+Specify keepalive timeout. Set 0 to disable
+
+    Accepted Value: Integer
+
+    Default: 3240
+
+**Dead Peer Detection**
+
+Specify timeout threshold for stale clients
+
+    Accepted Value: Integer
+
+    Default: 90
 
 **Dead Mobile Peer Detection**  
-Users can specify timeout threshold for the stale mobile clients.  
+
+Specify timeout threshold for stale mobile clients
+
+    Accepted Value: Integer
+
+    Default: 1800
+
+**TCP Upgrade Timeout**  
+
+Upgrade DTLS connection to TLS if no UDP traffic received for specific time.
+
+    Accepted Value: Integer
+
+    Default: 25
 
 **Authentication Timeout**  
-Users can specify timeout for the authentication.  
+
+Specify timeout for authentication
+
+    Accepted Value: Integer
+
+    Default: 240
 
 **Idle Timeout**  
-Users can specify idle timeout for the clients. set 0 to disable.  
 
-**Mobile Idle Timeout**  
-Users can specify session timeout for the mobile clients.  
+Specify idle timeout for clients. Set 0 to disable
+
+    Accepted Value: Integer
+
+    Default: 1200
 
 **Session Timeout**  
-Users can specify session timeout for the clients.  
+Specify session timeout for clients
+
+    Accepted Value: Integer
+
+    Default: 86400
+
+**Mobile Idle Timeout**  
+Specify session timeout for mobile clients
+
+    Accepted Value: Integer
+
+    Default: 2400
+
+**Minimum Re-auth Time**  
+
+Specify minimum re-auth time
+
+    Accepted Value: Integer
+
+    Default: 300
 
 **Cookie Timeout**  
-Users can specify the cookies expiry.  
 
-**Deny Roaming**  
-Users can disable clients form connection from different IP address.  
+Specify cookie expiry
 
-**Tunnel All DNS Queries**  
-Users can enable tunneling all DNS queries over VPN.  
+    Accepted Value: Integer
 
-**DNS Server**  
-Users can specify the list of DNS servers.  
+    Default: 300
+
+**Tunnel All DNS queries**  
+
+Enable tunneling all DNS queries over VPN
+
+    Accepted Value: Enable / Disable
+
+    Default: Enable
+
+**DNS Servers**  
+
+Specify list of DNS servers
+
+    Accepted Value: Integer
+
+    Default: Blank
+
+**NBN Servers**  
+
+Specify list of NBN Servers
+
+    Accepted Value: Integer
+
+    Default: Blank
 
 **IPv4 Lease**  
-Users can specify list of IPv4 for leasing to connecting clients.  
+
+Specify list of IPv4 for leasing to connecting clients
+
+    Accepted Value: Integer
+
+    Default: Blank
 
 **IPv6 Lease**  
-Users can specify list of IPv6 for leasing to connecting clients.  
 
-**Max Send Buffer**  
-Users can specify maximum allowed packets in out buffer.  
+Specify list of IPv6 for leasing to connecting clients
 
-**Enable System Route**  
-Users can enable advertising VPN server system routes.  
+    Accepted Value: Integer
+
+    Default: Blank
+
+**Enable System Routes**  
+
+Enable advertising VPN server system routes
+ 
+    Accepted Value: Enable / Disable
+
+    Default: Enable
