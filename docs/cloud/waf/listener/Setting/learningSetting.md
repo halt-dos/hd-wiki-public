@@ -38,7 +38,7 @@ This option allows users to specify the rate of sampling of requests for learnin
     Default: 10
 
 ##### **Trigger Threshold**
-Users can specify the minimum number of HTTP requests required per URL to enable learning mitigations. When the threshold is breached then it triggers is turned on for the learn URLs.
+Users can specify the minimum number of HTTP requests required per URL to enable learning mitigation. When the threshold is breached then it triggers is turned on for the learn URLs.
 
     Accepted values: Integer
 

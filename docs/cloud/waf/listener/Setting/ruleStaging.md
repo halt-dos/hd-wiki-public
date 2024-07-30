@@ -24,9 +24,9 @@ Users can configure below rule staging settings for Listener.
 ##### **Staging Policy**
 Users can specify the staging policy and auto-deployment of new signatures.
 
-    Accepted values: Manual / Minimal Request / Minimal Duration / Minimal Request & Duration / Minimal Request or Duration / Learning Window
+    Accepted values: Manual / Minimum Request / Minimum Duration / Minimum Request & Duration / Minimum Request or Duration / Learning Window
 
-    Default: Manual 
+    Default: Minimum Request 
 
 ##### **Minimum Staging Requests**
 
