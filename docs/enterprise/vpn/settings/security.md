@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Security
@@ -10,7 +10,9 @@ sidebar_position: 2
 
 User can set security related configuration under the security tab.
 
-![security](/img/vpn/v6/docs/security.png)  
+![security](/img/vpn/v8/docs/vpn_security1.png) 
+
+![security](/img/vpn/v8/docs/vpn_security2.png)  
 
 
 ### How to Use:
@@ -18,45 +20,113 @@ User can set security related configuration under the security tab.
 2. Configure the settings as per requirement.  
 3. Click on **Save Changes**  
 
-
-| SETTINGS                             | ACCEPTED VALUES | DEFAULT         |
-|--------------------------------------|-----------------|-----------------|
-| TLS Settings                         | Drop Down       | Default/ Normal |
-| Connection Limit                     | Decimal         | 100             |
-| Max Client Tx Rate                   | Decimal         | 40              |
-| Max Clinet Rx Rate                   | Decimal         | 40              |
-| Minimum Re-Auth Time                 | Decimal         | 300             |
-| Use SSL for Rekeying                 | Boolean         | Enable          |
-| Temporary Blacklist Duration         | Decimal         |  1200           |
-| Temporaray Blacklist Threshold Score | Decimal         | 80              |
-| Incorrect Login Threshold            | Decimal         | 10              |
-
-
 ### Description:
 
-**TLS Settings**  
-Users can specify allowed TLS settings for negotiation with clients.  
-
 **Connection Limit**  
-Users can specify maximum allowed connections.  
 
-**Max Client Rx Rate**  
-Users can specify maximum allowed incoming bandwidth per client(kbps).  
+Specify max allowed connections per milli-second
 
-**Max Client Tx Rate**  
-Users can specify maximum allowed outgoing bandwidth per client(kbps).  
+    Accepted Value: Integer
+
+    Default: 100
+
+**Max Client RX Rate**  
+
+Specify maximum allowed incoming bandwidth per client (Kbps)
+
+    Accepted Value: Integer
+
+    Default: 4000
+
+**Max Client TX Rate**  
+
+Specify maximum allowed outgoing bandwidth per client (Kbps)
+
+    Accepted Value: Integer
+
+    Default: 40000
 
 **Minimum Re-Auth Time**  
-Users can specify time after which session key will be re-negotiated.  
+
+Specify list of IPv4 for leasing to connecting clients
+
+    Accepted Value: Integer
+
+    Default: 300
 
 **Use SSL for Rekeying**  
-Users can use SSL for re-establishing session keys.  
+
+Use SSL for re-establishing session keys
+
+    Accepted Value: Enable / Disable
+
+    Default: Enable
+
+**Re-validate Connection cipher key**  
+
+Specify interval to refresh cipher keys. Set 0 to disable
+
+    Accepted Value: Integer
+
+    Default: 172800
+
+**Predictable IPs**  
+
+Specify to use predictable IP for VPN network
+
+    Accepted Value: Enable / Disable
+
+    Default: Enable
+
+**Rekey Method**  
+
+Users can specify maximum allowed connections.  
+
+    Accepted Value: SSL / NEW TUNNEL
+
+    Default: SSL
+
+**Max Send Buffer**
+
+Specify max allowed packets in out buffer. Increase for throughput
+
+    Accepted Value: Integer
+
+    Default: 10
+
+**Persist Cookie**  
+Specify to use persist session cookie
+
+    Accepted Value: Enable / Disable
+
+    Default: Enable
+
+**Deny Roaming**
+
+Disables clients from connection from different IP address
+
+    Accepted Value: Enable / Disable
+
+    Default: Disable
 
 **Temporary Blacklist Duration**  
-Users can specify the duration for which misbehaving clients will be temporary blocked.  
+Specify duration for which misbehaving clients will be temporarily blocked
+
+    Accepted Value: Integer
+
+    Default: 1200
 
 **Temporary Blacklist Threshold Score**  
-Users can specify threshold score before blocking clients temporarily.  
+Specify threshold score before blocking clients temporarily
 
-**Incorrect Login Threshold**  
-Users can specify the score for failed login attempts.This will be used to compute the temporary blacklist score.  
+    Accepted Value: Integer
+
+    Default: 80
+
+**Incorrect Password Score**  
+
+Specify the score for failed login attempt. This will be used to compute temporary blacklist score
+
+    Accepted Value: Integer
+
+    Default: 10

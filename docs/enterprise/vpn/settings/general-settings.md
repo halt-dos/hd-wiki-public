@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 # General Settings
@@ -10,31 +10,12 @@ sidebar_position: 0
 
 General settings are used to set configure settings like authentications, TCP and UDP IP address as well as port etc.
 
-![settings](/img/vpn/v6/docs/general1.png)  
-
-![settings](/img/vpn/v6/docs/general2.png)  
+![settings](/img/vpn/v8/docs/vpn_general.png)   
 
 ### How to Use: 
 1. First go to **Stack** > **VPN** > **Settings** > **General**.
 2. Configure the settings as per your requirements.
 3. Click on **Save Changes**.
-
-
-| SETTINGS                  | ACCEPTED VALUES | DEFAULT |
-|---------------------------|-----------------|---------|
-| Supported Authentication  | Drop Down       | Blank   |
-| Hostname                  | String          | Blank   |
-| Certificate Authority     | Dropdown        | Blank   |
-| TCP Listening IP Address  | IP Address      | Blank   |
-| TCP Port                  | Decimal         | 443     |
-| UDP Listening IP Address  | IP Address      | Blank   |
-| UDP Port                  | Decimal         | 443     |
-| Max Concurrent Clients    | Decimal         | 500     |
-| Max Session Per User      | Decimal         | 5       |
-| Enable MTU                | Boolean         | Disable |
-| Enable Compression        | Boolean         | Enable  |
-| Minium Compression Length | Decimal         | 256     |
-
 
 #### Description:
 
@@ -45,35 +26,97 @@ Users can specify the supported authentication scheme. Users  can  select any on
 - **Active Directory/LDAP** - The Lightweight Directory Access Protocol is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol network.  
 - **PAM** - If your system supports Pluggable Authentication Modules (PAM), then Haltdos VPN will take advantage of it to password authenticate its users.  
 
-**Hostname**  
-Users are allowed to specify the hostname (eg. vpn.exmaple.com).  
+**SSL Certificate**  
+Specify SSL certificate for Encryption / Decryption. Reboot Required
 
-**Certificate Authority**  
-Users are allowed to specify the certificate authority associated with VPN.  
+    Accepted Value: Add SSL Certificate
 
-**TCP Listening IP Address**  
-Users are allowed to specify the listening virtual IP for TCP based connections.  
+    Default: Blank
 
-**TCP Port**  
-Users are allowed to specify listening TCP port for VPN connections.  
+**TLS Settings**  
+Specify allowed TLS settings for negotiation with clients
 
-**UDP Listening IP Address**  
-Users are allowed to specify the listening virtual IP for UDP based connections.  
+    Accepted Value: Default/Normal / Support Legacy Client / High Performance /  Secure 256 bit key ciphers / Custom
 
-**UDP Port**  
-Users are allowed to specify listening UDP port for VPN connections.  
+    Default: Default/Normal
 
-**Max Concurrent Clients**  
-Users are allowed to set maximum concurrent clients.  
+**Enforce DTLS Support**  
+
+Specify to use DTLS for VPN connection.
+
+    Accepted Value: Enable / Disable
+
+    Default: Enable
+
+**Enforce TLS Cipher** 
+
+Specify to enforce TLS cipher for DTLS
+
+    Accepted Value: Enable / Disable
+
+    Default: Enable
+
+**Domain**  
+Specify Vpn Domain (eg. vpn.example.com)
+
+    Accepted Value: Enter Domain (string)
+
+    Default: Blank
+
+**Dynamic Hostname**
+
+Enable if hostname has dynamic DNS
+
+    Accepted Value: Enable / Disable
+
+    Default: Enable
+
+**Max Concurrent Clients**
+
+Specify allowed max concurrent clients
+
+    Accepted Value: Integer
+
+    Default: 500
 
 **Max Session Per User**  
-Users can specify the maximum sessions per user.  
+
+Specify max concurrent sessions per user
+
+    Accepted Value: Integer
+
+    Default: 5
 
 **Enable MTU**  
-Users can enable the MTU discovery.  
+
+Enable MTU discovery
+
+    Accepted Value: Enable / Disable
+
+    Default: Enable
+
+**MTU Payload Size**  
+
+Specify maximum transmission unit size
+
+    Accepted Value: Integer
+
+    Default: 1420
 
 **Enable Compression**  
-User can enable data compression.  
+
+Specify enabling data compression
+
+    Accepted Value: Enable / Disable
+
+    Default: Enable
 
 **Minimum Compression Length**  
-Users can specify minimum size of packet for compression.  
+
+Specify minimum size of packet for compression
+
+    Accepted Value: Integer
+
+    Default: 256
+
+
