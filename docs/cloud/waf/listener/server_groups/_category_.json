@@ -1,8 +1,8 @@
 {
-  "label": "Rules",
+  "label": "Server Groups",
   "position": 4,
   "link": {
     "type": "doc",
-    "id": "rules"
+    "id": "servergroup"
   }
 }
