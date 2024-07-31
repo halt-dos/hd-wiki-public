@@ -11,7 +11,9 @@ sidebar_position: 5
 
 Haltdos Plaform provides multi-level RBAC access control over Stack. This allows owners to assign users with respective permissions on Haltdos Plaform.
 
-![members](/img/platform/v7/docs/member_newui.png)
+![members](/img/platform/v8/docs/member1.png)
+  
+![members](/img/platform/v8/docs/member2.png)
 
 ### How to Use:
 
@@ -20,25 +22,83 @@ Haltdos Plaform provides multi-level RBAC access control over Stack. This allows
 3. Configure your settings.
 4. Click **Save Changes**.
 
-#### Member Information  
+### Description
 
-| PARAMETERS       | DESCRIPTION                                              | ACCEPTED VALUES    | DEFAULT  |
-|------------------|----------------------------------------------------------|--------------------|----------|
-| Name             | Enter member name           | String  | Empty  |
-| Login Mode | User can specify whether he wants System/ RADIUS / LDAP/ TACACS | DropDown| System |
-| Username       |  User have to specify the username   | String   | Empty    |
-| Email- Id  | Users mail id                          | String            | Blank    |
-| Enable Login      | User have to click the enable login button to access the application                      | Boolean           | Disable    |
-| Stack Level Permission       | User can provide stack level permission              | Boolean           | Disable     |
+#### Name  
 
-#### Member Permission:
+Enter member name	
 
-| PARAMETERS       | DESCRIPTION                                              | ACCEPTED VALUES    | DEFAULT  |
-|------------------|----------------------------------------------------------|--------------------|----------|
-| Resource             | List of Configured Resoruces | DropDown | All  |
-| Access | User can select different access permission | DropDown | Owner |
-| Enable Notification       | User whether wants to receive the notification regarding different events of application   | Boolean     | Disable   |
+    Accepted values: String
 
+    Default: Blank 
+
+#### Login Mode	
+
+User can specify whether he wants System/ RADIUS / LDAP/ TACACS
+
+    Accepted values: SYSTEM / LDAP / RADIUS / TACACS
+
+    Default: Blank 
+
+#### Username
+
+User have to specify the username	
+
+    Accepted values: String
+
+    Default: Blank 
+
+#### Email
+
+Users mail id	
+
+    Accepted values: String
+
+    Default: Blank 
+
+#### Enable Login
+
+User have to click the enable login button to access the application
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
+#### Stack Level Permission
+
+User can provide stack level permission  
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
+### Custom Permisssion
+
+#### Resourse
+
+List of Configured Resoruces
+
+    Accepted values: Select Resourse
+
+    Default: ALL 
+
+#### Access
+
+User can select different access permission	
+
+    Accepted values: Admin / Read & Write / Read Only
+
+    Default: Admin 
+
+#### Enable Notification
+
+User whether wants to receive the notification regarding different events of application
+
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+
+  
 #### Different User Permissions:
 
 Haltdos supports three types of user permissions as follows:

@@ -15,7 +15,6 @@ Resources is the option where user can set the resources information which can b
 4. [**Revocation List**](revocation_list.md)
 5. [**Web pages**](web_pages.md)
 6. [**Encryption Keys**](encryption_key.md)
-7. [**Cache Pools**](cache_pools.md)
-8. [**Web pages**](web_pages.md)
-9. [**Scripts**](custom_scripts.md)
+7. [**Web pages**](web_pages.md)
+8. [**Scripts**](custom_scripts.md)
 

@@ -12,7 +12,7 @@ Encryption Key Generation
 
 An encryption key is a random string of bits created explicitly for scrambling and unscrambling data. Encryption keys are designed with algorithms intended to ensure that every key is unpredictable and unique. Encryption keys that can be used as per requirement. The longer the key is built in this manner, the harder it is to crack the encryption code. An encryption key is used to encrypt, decrypt, or carry out both functions, based on the sort of encryption software used.
 
-![encryption key](/img/platform/v7/docs/encryption_key-newui.png)
+![encryption key](/img/platform/v8/docs/encryption_key.png)
 
 ### How to Use:
 
@@ -28,9 +28,17 @@ An encryption key is a random string of bits created explicitly for scrambling a
 
 Users need to specify the name of the encryption key.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Scope**
 
 Users need to mention the scope for the link.
+
+    Accepted values: Select Scope
+
+    Default: Blank 
 
 :::note Note
 After generating the keys, the user can download them into .pem format
