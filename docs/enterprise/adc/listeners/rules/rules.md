@@ -7,13 +7,9 @@ Haltdos SLB has various types of rules for users to configure SLB as per their n
 ### How to Use:
 
 1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > Rules.
-
 2. Select the appropriate rule.
-
 3. Click **Add Rule** button.
-
 4. Configure your settings. 
-
 5. Click **Save Changes**. 
 
 ### Types of Rules

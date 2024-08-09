@@ -18,6 +18,12 @@ This section allows you to configure Ethernet settings on available NIC cards on
 2. Configure your settings
 3. Click **Save CHanges**
 
+<<<<<<< HEAD
+![Ethernet](/img/platform/v7/docs/ethernet.png)
+
+
+=======
+>>>>>>> main
 ### Description
 
 ##### System Name
@@ -36,7 +42,11 @@ Users can specify if the interface is managed on OS level or not.
 
     Default: Disable 
 
+<<<<<<< HEAD
+**System Name**
+=======
 ##### System Name
+>>>>>>> main
 
 It will show the system name of the interface.
 
@@ -44,6 +54,9 @@ It will show the system name of the interface.
 
     Default: ens160 
 
+<<<<<<< HEAD
+**Bus Address**
+=======
 ##### Group Name
 
 It will show the Group Name.
@@ -54,6 +67,7 @@ It will show the Group Name.
 
 
 ##### Bus Address
+>>>>>>> main
 
 This option shows the bus address of the system.
 
@@ -61,6 +75,25 @@ This option shows the bus address of the system.
 
     Default: ens160 
 
+<<<<<<< HEAD
+**MAC Address**
+
+This option shows the MAC address of the system.
+
+    Accepted values: Integer
+
+    Default: 2 
+
+**Current IP Addresses**
+
+This option shows the Current IP Addresses of the system.
+
+    Accepted values: Integer
+
+    Default: 2 
+
+**Name**
+=======
 ##### MAC Address
 
 This option shows the MAC address of the system.
@@ -78,6 +111,7 @@ This option shows the Current IP Addresses of the system.
     Default: 2 
 
 ##### Name
+>>>>>>> main
 
 This option allows users to change the desired name to the Interface. 
 
@@ -85,7 +119,11 @@ This option allows users to change the desired name to the Interface.
 
     Default: ens160 
 
+<<<<<<< HEAD
+**Description**
+=======
 ##### Description
+>>>>>>> main
 
 This option helps users to write a short description for the Interface. Users can write any information like its segment, scope, subnet information, and other notes as well.
 
@@ -93,11 +131,22 @@ This option helps users to write a short description for the Interface. Users ca
 
     Default: Blank
 
+<<<<<<< HEAD
+**Role**
+=======
 ##### Role
+>>>>>>> main
 
 This feature helps users to select the exact working mechanism of the interface, either it'll be working in the LAN segment or it'll be part of the Wide Area Network. Users can also select the third option undefined.
 
     Accepted values: LAN / WAN / UNIDENTIFIED
+<<<<<<< HEAD
+
+    Default: LAN 
+
+**Enable DHCP4**
+=======
+>>>>>>> main
 
     Default: LAN 
 
@@ -115,6 +164,10 @@ It is an application layer protocol that is used to provide:
 2. Router Address, 
 3. DNS Address,
 4. Gateway IP.
+
+    Accepted values: Enable / Disable
+
+    Default: Disable
 
 **Primary IP Address**
 

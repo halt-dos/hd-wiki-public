@@ -21,17 +21,20 @@ For example, if a computer queries the IP address of a known dangerous site that
 
 ![domain filters](/img/gslb/v8/domain_filter.png)
 
-|   Settings  | Accepted Value   | Default    |
-| ----------- | ----------- | -------- |
-| Name | String | Blank
-| Script Area | String | Blank
-
 ### Description
 
 **Name**
 
 Users can specify the name for the Domain Filter files.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Domain Names**
 
 Users can mention the domains of which record need to be blocked.
+
+    Accepted values: String
+
+    Default: Blank

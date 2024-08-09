@@ -61,7 +61,7 @@ This options allows users to set the next run time for the script.
 ##### **Timezone**
 This option allows users to set the timezone for the action script.
 
-    Accepted values: Select TimeZone
+    Accepted values: Select Time Zone
 
     Default: Blank 
 

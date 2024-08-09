@@ -21,11 +21,6 @@ User can create individual interface and set the priority
 
 3. Configure the rule conditions and click on save changes.
 
-| Settings             | Accepted Values     |
-|----------------------|---------------------|
-| Name                 | Drop Down           |
-| Operational Mode     | Drop Down           |
-
 ![port_filter](/img/llb/v8/llb_port_filter_2.png)
 
 ### **Description:**
@@ -34,6 +29,14 @@ User can create individual interface and set the priority
 
 User can select the port name.
 
+    Accepted values: Select POrt Name
+
+    Default: Blank
+
 ##### **Operational Mode**
 
 User can select the operational mode.
+
+    Accepted values: Select OPerational MOde
+
+    Default: Blank
