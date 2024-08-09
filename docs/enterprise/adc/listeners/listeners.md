@@ -12,6 +12,9 @@ Listeners are used for collecting set of websites and servers appropriately that
 ![Listener2](/img/adc/v8/docs/listeners_2.png)
 
 
+![Listener2](/img/adc/v8/docs/listeners_2.png)
+
+
 ### How to Use:
 
 1. Go to **Stack** > [**SLB**](/enterprise/adc) > **Listeners** 
@@ -40,6 +43,10 @@ This field allows the user to adapt the configurations of an existing listener t
 ##### **Service Type**
 
 This field specifies the type of service for the subdomain i.e. **HTTP, TCP, UDP**. Based on the protocol of the backend application, the listener/subdomain can be created with any of the three protocols.
+
+    Accepted values: HTTP / TCP / UDP
+
+    Default: HTTP 
 
     Accepted values: HTTP / TCP / UDP
 

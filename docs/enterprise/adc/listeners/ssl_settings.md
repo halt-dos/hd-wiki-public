@@ -10,6 +10,8 @@ sidebar_position: 2
 
 ![SSL Settings2](/img/adc/v8/docs/ssl_setting_2.png)
 
+![SSL Settings2](/img/adc/v8/docs/ssl_setting_2.png)
+
 ### How to Use:
 
 1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **SSL Settings**
