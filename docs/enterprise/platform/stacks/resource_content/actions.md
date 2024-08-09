@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 # Actions
@@ -12,8 +12,7 @@ Action Scripts
 
 An action script is used to perform the specific task or action on the given or set time. These scripts can be used to perform multiple tasks at Haltdos console.
 
-![Action Script](/img/platform/v7/docs/actions.png)
-![Action Script](/img/platform/v7/docs/actions2.png)
+![Action Script](/img/platform/v8/docs/actions.png)
 
 ### How to Use:
 
@@ -21,7 +20,6 @@ An action script is used to perform the specific task or action on the given or 
 2. Select the **Add Actions**.
 3. Configure your settings. 
 4. Click on **Save changes.**
-
 
 ### Description
 

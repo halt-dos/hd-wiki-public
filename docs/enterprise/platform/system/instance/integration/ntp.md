@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Network Time Protocol (NTP) is a protocol that provides a very reliable way of transmitting and receiving an accurate time source over TCP/IP-based networks.
 
-![ntp](/img/platform/v7/docs/ntp.png)
+![ntp](/img/platform/v8/docs/ntp.png)
 
 ### How to Use:
 
@@ -16,7 +16,11 @@ Network Time Protocol (NTP) is a protocol that provides a very reliable way of t
 2. Configure your settings.
 3. Click on **Save Changes**.
 
+<<<<<<< HEAD
 ## Description:
+=======
+### Description:
+>>>>>>> main
 
 **NTP Server**
 

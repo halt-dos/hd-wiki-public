@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # RIP v1/2
@@ -14,7 +14,7 @@ RIPv2 suffers from scalability issues due to a relatively low maximum hop count 
 
 For compatibility, Haltdos solution supports RIP v1 and RIP v2. This section details how to configure Haltdos to support RIP v1/2.
 
-![rip](/img/platform/v7/docs/ripp.png)
+![rip](/img/platform/v8/docs/rip.png)
 
 ### How to Use:
 
@@ -22,9 +22,28 @@ For compatibility, Haltdos solution supports RIP v1 and RIP v2. This section det
 2. Configure your settings
 3. Click **Save Changes**
 
-| PARAMETERS    | DESCRIPTION               | ACCEPTED VALUES    | DEFAULT  |
-|---------------|---------------------------|--------------------|----------|
-| Enable        | Enable RIP Routing        | ENABLED / DISABLED | DISABLED |
-| Listening IP  | Listening IP              | String             | Empty    |
-| Configuration | Specify the configuration | String             | Blank    |
+### Description
 
+##### Enable
+
+Enable OSPF Routing
+
+    Accepted values: Enabled / Disabled
+
+    Default: Disabled 
+
+##### Listening IP	
+
+Configure listening IP
+
+    Accepted values: IP
+
+    Default: Blank 
+
+##### Configuration
+
+specify the configuration
+
+    Accepted values: String
+
+    Default: Blank 

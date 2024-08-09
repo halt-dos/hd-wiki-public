@@ -10,18 +10,23 @@ Listing of ethernet cards (NIC) on the hardware / VM
 
 This section allows you to configure Ethernet settings on available NIC cards on the physical or virtual instance. You can configure IP addresses, gateway, routes and routing policies per interface. 
 
+![Ethernet](/img/platform/v8/docs/ethernet.png)
+
 ### How to Use:
 
 1. Go to **Stack > Instances  > Network > Ethernet**
 2. Configure your settings
 3. Click **Save CHanges**
 
+<<<<<<< HEAD
 ![Ethernet](/img/platform/v7/docs/ethernet.png)
 
 
+=======
+>>>>>>> main
 ### Description
 
-**System Name**
+##### System Name
 
 The System names are Network interface names that are dynamically provided by OS. By default, they are assigned on a first-come, first-served numerical basis. 
 
@@ -29,7 +34,7 @@ The System names are Network interface names that are dynamically provided by OS
 - eth0 – My first Ethernet network interface on Linux.
 - vboxnet0, vmnet1, vmnet8 – Virtual machine interface working in bridge mode or NAT mode on Linux.
 
-**Managed**
+##### Managed
 
 Users can specify if the interface is managed on OS level or not.
 
@@ -37,7 +42,11 @@ Users can specify if the interface is managed on OS level or not.
 
     Default: Disable 
 
+<<<<<<< HEAD
 **System Name**
+=======
+##### System Name
+>>>>>>> main
 
 It will show the system name of the interface.
 
@@ -45,7 +54,20 @@ It will show the system name of the interface.
 
     Default: ens160 
 
+<<<<<<< HEAD
 **Bus Address**
+=======
+##### Group Name
+
+It will show the Group Name.
+
+    Accepted values: String
+
+    Default: ens160 
+
+
+##### Bus Address
+>>>>>>> main
 
 This option shows the bus address of the system.
 
@@ -53,6 +75,7 @@ This option shows the bus address of the system.
 
     Default: ens160 
 
+<<<<<<< HEAD
 **MAC Address**
 
 This option shows the MAC address of the system.
@@ -70,6 +93,25 @@ This option shows the Current IP Addresses of the system.
     Default: 2 
 
 **Name**
+=======
+##### MAC Address
+
+This option shows the MAC address of the system.
+
+    Accepted values: String
+
+    Default: 2 
+
+##### Current IP Addresses
+
+This option shows the Current IP Addresses of the system.
+
+    Accepted values: IP
+
+    Default: 2 
+
+##### Name
+>>>>>>> main
 
 This option allows users to change the desired name to the Interface. 
 
@@ -77,7 +119,11 @@ This option allows users to change the desired name to the Interface.
 
     Default: ens160 
 
+<<<<<<< HEAD
 **Description**
+=======
+##### Description
+>>>>>>> main
 
 This option helps users to write a short description for the Interface. Users can write any information like its segment, scope, subnet information, and other notes as well.
 
@@ -85,17 +131,34 @@ This option helps users to write a short description for the Interface. Users ca
 
     Default: Blank
 
+<<<<<<< HEAD
 **Role**
+=======
+##### Role
+>>>>>>> main
 
 This feature helps users to select the exact working mechanism of the interface, either it'll be working in the LAN segment or it'll be part of the Wide Area Network. Users can also select the third option undefined.
 
     Accepted values: LAN / WAN / UNIDENTIFIED
+<<<<<<< HEAD
 
     Default: LAN 
 
 **Enable DHCP4**
+=======
+>>>>>>> main
 
-**Dynamic Host Configuration Protocol (DHCP)** is an application layer protocol that is used to provide:
+    Default: LAN 
+
+#### Enable DHCP4
+
+##### Dynamic Host Configuration Protocol (DHCP)  
+
+It is an application layer protocol that is used to provide:
+
+    Accepted values: Enable / Disable
+
+    Default: Disable
 
 1. Subnet Mask,
 2. Router Address, 

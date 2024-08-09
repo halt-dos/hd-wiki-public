@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 # IP Feeds
@@ -8,9 +8,7 @@ sidebar_position: 9
 
 Haltdos allows users to set the IP feed to customize connectivity. Users can add IP feed as per need and further add the IP feed in apps to blacklist or whitelist the traffic from the mentioned IP addresses.
 
-![Scripts](/img/platform/v7/docs/ipfeed.png)
-
-![Scripts](/img/platform/v7/docs/ipfeed2.png)
+![Scripts](/img/platform/v8/docs/ipfeed.png)
 
 ### How to Use:
 
@@ -18,12 +16,6 @@ Haltdos allows users to set the IP feed to customize connectivity. Users can add
 2. Select the **Add IP Feed.**
 3. Configure your settings. 
 4. Click **Save Changes.**
-
-| SETTINGS    | ACCEPTED VALUES | DEFAULT |
-|-------------|-----------------|---------|
-| Name        | String          | Blank   |
-| Scope       | Drop-down       | Blank   |
-| Content | String          | Blank   |
 
 ### Description:
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # OSFP
@@ -12,7 +12,7 @@ OSFP is the dynamic routing protocol used in large to very large IP networks. Th
 
 Haltdos solution supports dynamic routing over OSFP protocol. This section details how to configure Haltdos to support OSFP.
 
-![osfp](/img/platform/v7/docs/ospf.png)
+![osfp](/img/platform/v8/docs/ospf.png)
 
 ### How to Use:
 
@@ -20,8 +20,28 @@ Haltdos solution supports dynamic routing over OSFP protocol. This section detai
 2. Configure your settings
 3. Click **Save Changes**
 
-| PARAMETERS    | DESCRIPTION                | ACCEPTED VALUES    | DEFAULT  |
-|---------------|----------------------------|--------------------|----------|
-| Enable        | Enable OSPF Routing        | ENABLED / DISABLED | DISABLED |
-| Listening IP  | Listening IP               | String             | Empty    |
-| Configuration | specify the configuration  | String             | Blank    |
+### Description
+
+##### Enable
+
+Enable OSPF Routing
+
+    Accepted values: Enabled / Disabled
+
+    Default: Disabled 
+
+##### Listening IP	
+
+Configure listening IP
+
+    Accepted values: IP
+
+    Default: Blank 
+
+##### Configuration
+
+specify the configuration
+
+    Accepted values: String
+
+    Default: Blank 

@@ -18,7 +18,7 @@ Haltdos platform supports SSL certificate management that allows customers to up
 2. Configure your settings.
 3. Click Save.
 
-![ssl_certificates](/img/platform/v7/docs/ssl_certi_newui.png)
+![ssl_certificates](/img/platform/v8/docs/ssl-cert.png)
 
 Users can either upload a certificate or generate a new certificate with Let's Encrypt for their FQDN. For successfully generating Let's Encrypt certificate, you will have validate ownership of those domains. The solution supports 2-types of validations:
 
@@ -61,6 +61,7 @@ To upload custom certificates, follow the steps below:
 
 #### Description:
 
+<<<<<<< HEAD
 **Scope**
 
 Users can defind the scope of the certificate.
@@ -69,33 +70,55 @@ Users can defind the scope of the certificate.
 
     Default: Blank
 
+=======
+>>>>>>> main
 **Certificate Name**
 
 User can specify the userfriendly name for the certificate.
 
     Accepted values: String
+<<<<<<< HEAD
 
     Default: Blank 
 
 **Public Key**
+=======
+>>>>>>> main
 
-User can specify the public key of certificate.
+    Default: Blank 
 
+<<<<<<< HEAD
     Accepted values: String
 
     Default: Blank 
 
 **Private Key**
+=======
+**Certificate Domain**
+>>>>>>> main
 
-User can specify the private key of certificate.
+User can specify the userfriendly name for the certificate.
 
+<<<<<<< HEAD
     Accepted values: String
 
     Default: Blank 
 
 **Export Certificate**
+=======
+    Accepted values: Select Domain
 
-User can download the SSL certificate.
+    Default: Blank 
+
+**Scope**
+
+Users can defind the scope of the certificate.
+
+    Accepted values: Select App / Resources
+
+    Default: Blank
+>>>>>>> main
+
 
     Accepted values: Select and Export SSL certificate
 

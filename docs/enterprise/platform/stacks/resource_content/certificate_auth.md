@@ -8,7 +8,7 @@ sidebar_position: 3
 
 A certificate authority (CA) is a trusted entity that issues Secure Sockets Layer (SSL) certificates. These digital certificates are data files used to cryptographically link an entity with a public key. Web browsers use them to authenticate content sent from web servers, ensuring trust in content delivered online.
 
-![certificate_auth](/img/platform/v7/docs/certificate_auth.png)
+![certificate_auth](/img/platform/v8/docs/certificate_auth.png)
 
 ### How to Use:
 

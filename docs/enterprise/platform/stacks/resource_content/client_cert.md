@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Haltdos allows users to set the client certificate to customize connectivity. Users can add certificates as per need.
 
-![client certificates](/img/platform/v7/docs/client_certi_newui.png)
+![client certificates](/img/platform/v8/docs/client_certi.png)
 
 ### How to Use:
 

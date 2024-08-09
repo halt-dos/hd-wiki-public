@@ -14,15 +14,6 @@ Haltdos solutions provides a rich set of built-in dashboards detailing real-time
 
 To view real-time analytics through dashboards. 
 
-
-### **How to Use:**
-
-1. Go to **Stack**
-2. Click **Analytics**
-3. User can Select from **Dashboard** to obtain different Analytics.
-4. From **Resources**, User can select desired resource of listed listener.
-5. From **Date Range** User can select customize date to obtain Analytics.
-
 **Auto Refresh**
 
 Users can enable auto-refresh in order to refresh the real-time analytics for requests. The statistics will be displayed in graphs and tables in real-time. It auto-refreshes every 10 seconds
@@ -31,7 +22,16 @@ Users can enable auto-refresh in order to refresh the real-time analytics for re
 
 Real-time analytics can be customized using the filter. The following filter options are available:
 
-![analytics](/img/platform/v7/docs/analytics_newui.png)
+![analytics](/img/platform/v8/docs/analytics_newui.png)
+
+
+### **How to Use:**
+1. Go to **Stack**
+2. Click **Analytics**
+3. User can Select from **Dashboard** to obtain different Analytics.
+4. From **Resources**, User can select desired resource of listed listener.
+5. From **Date Range** User can select customize date to obtain Analytics.
+
 
 | PARAMETERS     | DESCRIPTION                                                                                              | ACCEPTED VALUES                                                         | DEFAULT     |
 |----------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|-------------|

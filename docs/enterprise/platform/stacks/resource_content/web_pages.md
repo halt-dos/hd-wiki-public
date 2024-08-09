@@ -8,7 +8,7 @@ sidebar_position: 7
 
 Haltdos allows users to set the custom pages to customize connectivity. Users can add custom pages as per need.
 
-![webpages](/img/platform/v7/docs/webpages_newui.png)
+![webpages](/img/platform/v8/docs/webpages.png)
 
 ### How to Use:
 

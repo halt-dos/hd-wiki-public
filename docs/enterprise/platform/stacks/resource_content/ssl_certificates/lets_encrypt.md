@@ -16,15 +16,13 @@ Certificates used for providing security for online communications.
 An SSL certificate is a few lines of code on your web server that provides security for online communications. When a web browser contacts your secured website, the SSL certificate enables an encrypted connection. It's kind of like sealing a letter in an envelope before sending it through the mail.  
 Haltdos platform supports SSL certificate management that allows customers to upload their existing SSL certificates or create new certificates using Let's Encrypt. The platform periodically checks the validity of the certificate and notifies users when the renewal is 2 weeks away from due date. If the certificate was created by Let's Encrypt, Haltdos platform automatically renews the certificate without requiring human intervention.  
 
-![lets encrypt](/img/platform/v6/docs/lets_encrypt1.png)
+![lets encrypt](/img/platform/v8/docs/lets_encrypt1.png)
 
 ### How to Use:  
 
 1. Go to **Stack** > **Settings** > **SSL Certificates**
 2. Configure your settings. 
 3. Click **Save**. 
-
-![lets encrypt](/img/platform/v6/docs/lets_encrypt.png)
 
 Users can either upload a certificate or generate a new certificate with Let's Encrypt for their FQDN. For successfully generating Let's Encrypt certificate, you will have validate ownership of those domains. The solution supports 2-types of validations:
 
@@ -59,18 +57,33 @@ Let's Encrypt certificate are valid for 3 months only. In order to renew, we hav
 Certificate verification can fail if verification is not completed within stipulated time. For any issues, please contact support.
 :::
 
-| SETTINGS        | ACCEPTED VALUES | DEFAULT |
-|-----------------|-----------------|---------|
-| Certificate Name| String          | True    |
-| Public Key      | String          | Blank   |
-| Private Key     | String          | Blank   |
-
 #### Description
-**Certificate Name**: Specify a user-friendly name for the certificate. The name field takes alphanumeric input.  
+**Certificate Name**: Specify a user-friendly name for the certificate. The name field takes alphanumeric input.
 
-**Public Key**: Enter the public key of the certificate. The public key is a digitally signed document that serves to validate the sender's authorization and name.  
+    Accepted values: String
+
+    Default: Blank
+
+**Public Key**: Enter the public key of the certificate. The public key is a digitally signed document that serves to validate the sender's authorization and name.
+
+    Accepted values: String
+
+    Default: Blank
 
 **Private Key**: Enter the private key details. The private key is a separate file that's used in the encryption/decryption of data sent between your server and the connecting clients.  
+
+    Accepted values: String
+
+    Default: Blank 
+
+**Export Certificate**
+
+User can download the SSL certificate.
+
+    Accepted values: Select and Export SSL certificate
+
+    Default: Blank 
+
 
 :::note Note
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key 

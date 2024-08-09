@@ -16,6 +16,8 @@ This status page shows the details of all instances, their health, the status of
 
 A sample instance status is shown below:
 
-![status_page](/img/platform/v7/docs/status_newui_01.png)
+![status_page](/img/platform/v8/docs/status1.png)
 
-![status_page](/img/platform/v7/docs/status_newui.png)
+![status_page](/img/platform/v8/docs/status2.png)
+
+![status_page](/img/platform/v8/docs/status3.png)

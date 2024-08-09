@@ -4,7 +4,6 @@ sidebar_position: 6
 
 # Network Incidents
 
----
 
 On the incident page, users can check what packets are dropped by Haltdos mitigation solution.
 
