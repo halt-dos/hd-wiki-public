@@ -30,4 +30,4 @@ Haltdos WAF is used machine learning to enumerate all HTTP request, parameter, h
 
 The magnificent advantage of Haltdos WAF is that solution does not depend on only one algorithm to evaluate genial anomaly or 0-day attack. Every request is evaluated against different ML models which check for different categories of attacks such as SQL Injection, Cross-site Scripting, etc. The suspicion score is the measure of deviation from baseline. Greater the deviation, higher the score and likely that the incoming request is a malicious request.  
 
-To configure Learning for your application, go to [**Learning**](listener/learning.md) module.
+To configure Learning for your application, go to [**Learning**](/v8/enterprise/waf/listener/learning) module.

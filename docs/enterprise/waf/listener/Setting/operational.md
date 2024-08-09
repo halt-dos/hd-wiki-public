@@ -16,8 +16,6 @@ Users are allowed to configure many operational settings for the [Listeners](/v8
 
 ![Listener Operational Settings](/img/waf/v8/docs/operationalSetting3.png)
 
-=======
-
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Settings** > **Operational**.  
 2. Configure the settings.

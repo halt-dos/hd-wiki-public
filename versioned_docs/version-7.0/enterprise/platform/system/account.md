@@ -58,7 +58,7 @@ This option allows users to configure or enable the two factor authentication fo
 
 If user enable two factor authentication for their account they will be given two option mentioned below;
 
-1. Using OTP - This method requires email configuration. Users can refer [Email](/docs/enterprise/platform/system/email.md) documentation to configure the email. When user add two-factor authentication using OTP method, user will receive an OTP on logging into the server.
+1. Using OTP - This method requires email configuration. Users can refer [**Email**](/enterprise/platform/system/email) documentation to configure the email. When user add two-factor authentication using OTP method, user will receive an OTP on logging into the server.
 
 ![OTP](/img/platform/v7/docs/accountotp.png)
 

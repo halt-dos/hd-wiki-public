@@ -1,11 +1,5 @@
 ---
 sidebar_position: 1
-sidebar_custom_props:
-  slashid:
-    auth: true
-    groups:
-      - slashid
-      - member
 ---
 
 # Operational
@@ -15,7 +9,7 @@ Configure Operational settings of Listeners.
 
 ## Overview
 
-Users are allowed to configure many operational settings for the [Listeners](../listener/listener.md). Users can configure most common settings like timeout settings, operation modes, header/body timeouts, error handling, and request logging. Users can also add server aliases and VIPs to the configured listener with the help of operational settings
+Users are allowed to configure many operational settings for the [Listeners](/v8/cloud/waf/listener/). Users can configure most common settings like timeout settings, operation modes, header/body timeouts, error handling, and request logging. Users can also add server aliases and VIPs to the configured listener with the help of operational settings
 
 ![Listener Operational Settings](/img/waf/v8/docs/operationalSetting1.png)   
 

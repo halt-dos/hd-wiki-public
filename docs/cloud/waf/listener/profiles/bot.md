@@ -159,5 +159,5 @@ This field allows you to enable Haltdos Advance Bot Protection for an incoming r
 
 
 :::note Note
-User can configure Advance Bot Settings in the Advanced settings for the listener by using the link: [Advance Settings](../advance-settings/advance-settings.md)  
+User can configure Advance Bot Settings in the Advanced settings for the listener.
 :::
