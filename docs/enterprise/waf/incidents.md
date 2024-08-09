@@ -26,8 +26,8 @@ Further to detailing the incident through Events, users can perform various acti
 
 ## How to Use:
 
-1. Click on **Apps** 
-2. Select **WAF**
+1. Click on **Apps**. 
+2. Select **WAF**.
 3. By Selecting different **Category** on Incident User can view different Incident like Drop, Record, Error or Health.
 4. From **Resources**, User can select desired resource of listed listener.
 5. From **Date Range** User can select customize date to view Incidents.

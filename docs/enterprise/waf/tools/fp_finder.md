@@ -13,10 +13,10 @@ It Identifies, stores all the rules matched by WAF, and generates False-Positive
 
 
 ### How to Use:
-1. Go to **Apps** 
-2. Select **WAF**  > Click **Tools** > **False Positive Finder**
-3. Configure the settings 
-4. Click on **Export**
+1. Go to **Apps**. 
+2. Select **WAF**  > Click **Tools** > **False Positive Finder**.
+3. Configure the settings. 
+4. Click on **Export**.
 
 ### Description
 
