@@ -114,5 +114,5 @@ On the basis of application configuration, the required challenge will be thrown
 
 
 :::note Note
-User can configure Advance Bot Settings in the Advanced settings for the listener.
+User can configure Advance Bot Settings in the Advanced settings for the [**listener**](/v8/cloud/waf/listener/).
 :::
