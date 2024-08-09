@@ -6,12 +6,15 @@ sidebar_custom_props:
     groups:
       - slashid
       - member
+<<<<<<< HEAD
 sidebar_custom_props:
   slashid:
     auth: true
     groups:
       - slashid
       - member
+=======
+>>>>>>> 2298461a8e4645af310150ac2e6458d8cdd54073
 ---
 
 # Operational
@@ -28,6 +31,7 @@ Users are allowed to configure many operational settings for the [Listeners](/v8
 ![Listener Operational Settings](/img/waf/v8/docs/operationalSetting2.png)
 
 ![Listener Operational Settings](/img/waf/v8/docs/operationalSetting3.png)
+<<<<<<< HEAD
 
 ![Listener Operational Settings](/img/waf/v8/docs/operationalSetting1.png)   
 
@@ -41,6 +45,13 @@ Users are allowed to configure many operational settings for the [Listeners](/v8
 2. Configure the settings.
 3. Click on Save changes. 
 3. Click on Save changes. 
+=======
+
+### How to Use:
+1. Go to **WAF** > **Listener** > **Settings** > **Operational**.  
+2. Configure the settings.
+3. Click on Save changes. 
+>>>>>>> 2298461a8e4645af310150ac2e6458d8cdd54073
 
 ### Description
 
