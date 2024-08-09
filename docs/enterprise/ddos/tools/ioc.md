@@ -4,7 +4,6 @@ sidebar_position: 1
 
 # IOC
 
----
 
 ## Overview
 
@@ -22,10 +21,6 @@ An Indicator of Compromise (IoC) is a piece of information or data that suggests
 
 4. If required export option can be used to export the details in Excel format.
 
-| Parameter   | Accepted Value | Default Values |
-|-------------|----------------|----------------|
-| Resource    | Drop-down      | Network        |
-| Date Range  | Drop-down      | today          |
 
 ### Description
 
