@@ -1,11 +1,5 @@
 ---
 sidebar_position: 1
-sidebar_custom_props:
-  slashid:
-    auth: true
-    groups:
-      - slashid
-      - member
 ---
 
 # Operational
