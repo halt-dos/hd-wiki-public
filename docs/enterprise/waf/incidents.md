@@ -22,12 +22,12 @@ Depending upon the type of event, clicking on any Event shows details of the inc
 
 Further to detailing the incident through Events, users can perform various actions. For example, virtual patching functionality is implemented through actions in Event Details. Virtual Patching is the ability to create custom WAF rules from the result of a security scan.
 
-![Events](/img/platform/v7/docs/incidents.png)
+![Events](/img/waf/v8/docs/incident.png)
 
 ## How to Use:
 
-1. Click on **Apps** 
-2. Select **WAF**
+1. Click on **Apps**. 
+2. Select **WAF**.
 3. By Selecting different **Category** on Incident User can view different Incident like Drop, Record, Error or Health.
 4. From **Resources**, User can select desired resource of listed listener.
 5. From **Date Range** User can select customize date to view Incidents.

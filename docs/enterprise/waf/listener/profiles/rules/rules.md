@@ -25,3 +25,4 @@ Unlike other WAFs, Haltdos WAF has multiple types of Rules designed to target sp
 10. **Deception Rules**
 11. **Script Rules**
 12. **Log Rules**
+13. **Defacement Rules**

@@ -1,22 +1,21 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# Virtual Patching 
-Integration with SAST / DAST scanners
+# Access Log Exporter
 
 ---
 
 ### Overview
 Virtual Patching is a feature of Haltdos WAF to display all the scan results and showcase the graph and statistics of the application scanned.
 
-![virtualpatching](/img/waf/v8/docs/vPatching.png)
+![Access Log](/img/waf/v8/docs/access.png)
 
 ### How to Use:
-
-1. Go to **WAF** > **Virtual Patching**
-2. Configure your settings
-3. Click **Save Changes**.
+1. Go to **Apps** 
+2. Select **WAF**  > Click **Tools** > **Access Log Exporter**
+3. Configure the settings 
+4. Click on **Export**
 
 ### Description
 
