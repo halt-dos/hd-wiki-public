@@ -14,6 +14,7 @@ const config = {
   
   organizationName: 'haltdos',
   projectName: 'haltdos-wiki',
+  trailingSlash: false,
 
   webpack: {
     jsLoader: (isServer) => ({
