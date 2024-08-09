@@ -8,39 +8,17 @@ sidebar_position: 2
 ---
 ![SSL Settings](/img/adc/v8/docs/ssl_setting_1.png)
 
+![SSL Settings2](/img/adc/v8/docs/ssl_setting_2.png)
+
 ### How to Use:
 
 1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **SSL Settings**
-
 2. Configure your settings.
-
 3. Click **Save Changes**. 
 
 ![SSL Settings2](/img/adc/v8/docs/ssl_setting_2.png)
 
 **Configure the following parameters to set up the desired settings:**
-
-| PARAMETERS                            | ACCEPTED VALUES | DEFAULT      |
-|---------------------------------------|-----------------|--------------|
-| Enable SSL Offloading                 | Boolean         | Disabled     |
-| SSL Certificate                       | File Upload     | Blank        |
-| SSL Cipher Suites                     | Drop Down       | INTERMEDIATE |
-| SSL Session Caching                   | Integer         | 10           |
-| SSL Session Timeout                   | Integer         | 5            |
-| Client Certificate Verification       | Drop Down       | Disbaled     |
-| Client Certificate                    | File Upload     | Blank        |
-| Certificate Revocation List           | Drop-down       | Blank        |
-| Client Certificate Raw Header         | String          | Blank        |
-| Client Certificate Fingerprint Header | String          | Blank        |
-| Client Certificate Issuer Header      | String          | Blank        |
-| Client Certificate Subject Header     | String          | Blank        |
-| Client Certificate Serial Header      | String          | Blank        |
-| Client Certificate Verify Header      | String          | Blank        |
-| Client Certificate Start Date Header  | String          | Blank        |
-| Client Certificate End Date Header    | String          | Blank        |
-| Invalid Client Certificate Action     | Drop Down       | No Action    |
-| Custom Page                           | Drop Down       | Blank        |
-
 
 ### Description:
 
@@ -59,12 +37,10 @@ This option allows users to specify the security/compatibility of SSL with moder
 ##### **SSL Protocols**
 
 This option allows users to specify the SSL protocol for the secure communication. User can select any SSL protocol from the list mentioned below:
-1. SSLv2
-2. SSLv3
-3. TLSv1
-4. TLSv1.1
-5. TLSv1.2
-6. TLSv1.3
+
+    Accepted values: SSLv2 / SSLv3 / TLSv1 / TLSv1.1 / TLSv1.2 / TLSv1.3
+
+    Default: SSLv2 
 
 ##### **SSL Session Caching**
 

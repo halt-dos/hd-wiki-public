@@ -18,13 +18,6 @@ Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. 
 
 **Configure the following parameters to set up the desired settings:**
 
-| Parameters              | Accepted value       |  Default          |
-|-------------------------|----------------------|----------------|
-| Blacklisted Countries   | Drop Down            | Blank          |
-| Whitelisted IP Prefixes | IP address with CIDR | Blank          |
-| Blacklisted IP Prefixes | IP address with CIDR | Blank          |
-| Bad Reputation Traffic  | Drop-Down            | No Action      |
-| Blacklisted ASN         |   String             | Blank          |
 
 ### Description:
 
@@ -32,18 +25,40 @@ Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. 
 
 This section specifies the list of countries that will be permanently disallowed from accessing the website.
 
+    Accepted values: list of country as per ISO 3166-1 alpha-2 standard 2 letter country-code.
+
+    Default: Blank 
+
+For more information about ISO 3166-1 alpha-2, please refer to this site: [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+
 ##### **Whitelisted IP Prefixes**
 
 This section specifies the list of IPs that will be permanently allowed for accessing the website.
 
+    Accepted values: IP prefixes
+
+    Default: Blank   
+    
 ##### **Blacklisted IP Prefixes**
 
 This section specifies the list of IPs that will be permanently disallowed from accessing the website.
+
+    Accepted values: IP prefixes
+
+    Default: Blank 
 
 ##### **Bad Reputation Traffic**
 
 Users can specify the action to be performed on traffic from suspicious IPs.
 
+    Accepted values: NO ACTION
+
+    Default: NO ACTION
+
 ##### Blacklisted ASN 
 
 User need to specific Specify the list of Autonomous System Numbers that will be permanently disallowed from accessing the website.
+
+    Accepted values: String
+
+    Default: Blank

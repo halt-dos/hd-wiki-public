@@ -6,6 +6,8 @@ sidebar_position: 1
 
 ![servers](/img/adc/v8/docs/servers_1.png)
 
+![servers2](/img/adc/v8/docs/servers_2.png)
+
 ### How to Use:
 
 1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Server groups**.
@@ -17,20 +19,6 @@ sidebar_position: 1
 4. Configure your settings. 
 
 5. Click **Save Changes**.
-
-| SETTING        | ACCEPTED VALUE | DEFAULT |
-|----------------|----------------|---------|
-| Server ID      | --             | --      |
-| Server         | String         | Blank   |
-| Port           | Integer        | 80      |
-| Weight         | Integer        | 1       |
-| Back up        | Drop-Down      | False   |
-| Mode           | Drop-Down      | Ready   |
-| Forwarded HTTP Version           | Drop-Down      | any   |
-| Slow Start           | Integer      | 0   |
-| Max Connection | Integer        | Integer |
-
-![servers2](/img/adc/v8/docs/servers_2.png)
 
 ### Description:
 
