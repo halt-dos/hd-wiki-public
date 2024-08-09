@@ -28,3 +28,7 @@ The user can create the policy which can be further used in different configurat
 ##### **Name**
 
 User can define the policy name.
+
+    Accepted values: String
+
+    Default: Blank
