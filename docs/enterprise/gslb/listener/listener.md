@@ -8,6 +8,8 @@ Make GSLB listen on specific ports to accept connections and distribute across o
 
 ![listener](/img/gslb/v8/listener_1.png)
 
+![listener](/img/gslb/v8/listener_2.png)
+
 ### How to Use:
 1. Go to  **Stack** > **GSLB** > **Listener**
 2. Click **Add Listener** button.
@@ -17,5 +19,10 @@ Make GSLB listen on specific ports to accept connections and distribute across o
 6. Click on **Save Changes**
 7. Listener IP will be saved.
 
+#### **Listener**
 
-![listener](/img/gslb/v8/listener_2.png)
+It shows the name of the added listener, click on the edit icon to edit listener's name.
+
+    Accepted values: String
+
+    Default: Blank

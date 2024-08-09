@@ -21,12 +21,12 @@ Account option in the system menu provides an opportunity to the users that they
 
 ### Description
 
-##### **Name**
-This option allows users to configure the name for the account.
+##### **Username**
+Users can check what is the current username.
 
     Accepted values: String
 
-    Default: Administrator 
+    Default: haltdos 
 
 ##### **Email**
 Users are allowed to check and re-configure the email for the account. All the alerting will be performed to user using the mentioned email.
@@ -35,8 +35,15 @@ Users are allowed to check and re-configure the email for the account. All the a
 
     Default: admin@haltdos.com 
 
-##### **Default Stack**
-This option allows users to check and change the Default stack. This option is only applicable when there are two or more stacks installed in the system.
+##### **Name**
+This option allows users to configure the name for the account.
+
+    Accepted values: String
+
+    Default: Administrator 
+
+##### **Current Stack**
+This option allows users to check and change the current stack. This option is only applicable when there are two or more stacks installed in the system.
 
     Accepted values: Select Stack
 

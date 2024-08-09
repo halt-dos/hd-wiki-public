@@ -22,76 +22,107 @@ Traffic shaping (also known as packet shaping) is a bandwidth management techniq
 
 4. Click **Save Changes**.
 
-
-| Settings           | Text                           | Text             |
-|--------------------|--------------------------------|------------------|
-| Enabled            | Boolean                        | True             |
-| Rule Name          | Specify Rule Name              | None (Mandatory) |
-| Rule Message       | User Friendly message for Rule | None (Mandatory) |
-| Rule Priority      | Integer                        | 0                |
-| Incoming Group     | Drop Down                      | None (Mandatory) |
-| Outgoing Group     | Drop Down                      | None (Mandatory) |
-| Source IP          | IP address with CIDR           | None             |
-| Destination IP     | IP address with CIDR           | None             |
-| Source Ports       | Integer                        | None             |
-| Destination Ports  | Integer                        | None             |
-| Protocol           | Select the protocol            | Any              |
-| Traffic Rate       | Integer                        | 1                |
-| Traffic Burst      | Integer                        | 5                |
-
 ### Description
 
 ##### **Enabled**
 
 It Specify rule is enabled or disabled. By default, this option is enabled.
 
+    Accepted values: Enabled / Disabled 
+
+    Default: Enabled
+
 ##### **Rule Name**
 
 This option allows the user to select desired rule name.
+
+    Accepted values: String 
+
+    Default: Blank
 
 ##### **Rule Message**
 
 This option allows users to use specifies the custom message for the rule.
 
+    Accepted values: String 
+
+    Default: Blank
+
 ##### **Rule Priority**
 
 This option allows the user to set rule priority. The rule with lower Priority Value will be prioritize.
+
+    Accepted values: Integer 
+
+    Default: 0
 
 ##### **Incoming Group**
 
 This option allows the user to select the incoming group from the list of interfaces. If any data packet matches the policy mentioned above will be routed to the incoming group. Users can select the Group from the drop-down menu.
 
-##### **Outgoing Group**
+##### **Outgoing Interface**
 
-This option allows the user to select the outgoing group from the list of interfaces. If any data packet matches the policy mentioned above will be routed to the Outgoing group. Users can select the group from the drop-down menu.
+This option allows the user to select the outgoing interface from the list of interfaces. If any data packet matches the policy mentioned above will be routed to the Outgoing Interface. Users can select the Interface from the drop-down menu.
+
+    Accepted values: Interface
+
+    Default: Blank 
 
 ##### **Source IP**
 
 This option allows the user to set the source IP range with a CIDR value. The data packets are inspected and data packets that match with a mentioned source IP address will only be routed to an outgoing interface which is selected under the Outgoing Interface
 
+    Accepted values: IP
+
+    Default: Blank 
+
 ##### **Destination IP**
 
 This option allows the user to set the destination IP range with a CIDR value. The data packets are inspected  and  packets that match with a mentioned destination IP address will only be routed to an outgoing interface which is selected under the Outgoing Interface
+
+    Accepted values: IP
+
+    Default: Blank
 
 ##### **Source Ports**
 
 This option allows the user to set Source Port Range for the rule. The data packets are inspected and data packets that match with mentioned Source Port Range will only be routed to an outgoing interface which is selected under the Outgoing Interface. 
 
+    Accepted values: Integer
+
+    Default: Blank 
+
 ##### **Destination Port**
 
 This option allows the user to set Destination Port Range for the rule. The data packets are inspected and data packets that match with mentioned Destination Port Range will only be routed to an outgoing interface which is selected under the Outgoing Interface. 
+
+    Accepted values: Integer
+
+    Default: Blank 
 
 ##### **Protocol**
 
 This option allows the user to set custom protocols for rules. The data packets are inspected and data packets that match with mentioned Protocol will only be routed to an outgoing interface which is selected under the Outgoing Interface. By default ANY protocol is set i. e. all protocols are selected for the rule.
 
+    Accepted values: ANY / TCP / UDP / SCTP / CUSTOM
+
+    Default: ANY 
+
 ##### **Traffic Rule**
 
 It specifies the request rate for the page. The limit rate specified will validate the number of requests coming per second which is not exceeding the limit rate.
 
+    Accepted values: Integer
+
+    Default: Blank 
+
 ##### **Traffic Burst**
 
-It specifies the traffic burst rate for the page. The burst rate specified will validate the total number of requests received. 
+It specifies the traffic burst rate for the page. The burst rate specified will validate the total number of requests received.
+
+    Accepted values: Integer
+
+    Default: 5 
 
 :::note Note
 Always traffic burst must be greater than or equal to traffic rate.

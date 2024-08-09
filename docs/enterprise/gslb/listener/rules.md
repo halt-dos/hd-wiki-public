@@ -16,46 +16,47 @@ Haltdos GSLB supports various types of rules for users to configure GSLB as per 
 3. Configure your settings.
 4. Click **Save**.
 
-### Rule Condition :-
-
-| Setting | Accepted Value | Default
-| ----------- | ----------- | ------ |
-| Rule Name  | String | Blank (mandatory)
-| Rule Message | String | Blank (mandatory) 
-|Rule Priority | Integer |0
-|Filter Type |Drop Down |ALL
-
-![rules](/img/gslb/v8/policy_rule_1.png)
-
-### Condition :-
-
- Setting | Accepted Value | Default
-| ----------- | ----------- | ------ |
-| Condition Action  | Drop Down | Drop Request (mandatory)
-| Parameter | Integer | Blank 
-|Record Type| Drop Down |
-|Values |Integers|Blank
-| TTL | Integer | 
-
 ### Description:
 
 **Rule Name**
 
 This option allows the user to set a name for the rule.
 
+    Accepted values: String
+
+    Default: Blank 
+
 **Rule Message** 
 
 This option allows users to use specifies the custom message for the rule.
+
+    Accepted values: String
+
+    Default: Blank 
 
 **Rule Priority**
 
 This option allows the user to set rule priority. The rule with lower Priority Value will be prioritize
 
+    Accepted values: Integer
+
+    Default: 0 
+
 **Filter Type**
 
 This option allow user to select filter type it can be PATTERN, SUFFIX, DOMAIN or ALL according to rule user want to set.
 
+    Accepted values: ALL / PATTERN / SUFFIX / DOMAIN
+
+    Default: ALL 
+
 **Condition Action** 
+
+User can select the condition action.
+
+    Accepted values: DROP Request / DENY / ByPass Request / Answer / Refuse / Forward / Force TCP
+
+    Default: DROP Request 
 
 This Option allows user to select what action user want to apply on the query. Following are the Option available for it 
 
@@ -73,10 +74,3 @@ This Option allows user to select what action user want to apply on the query. F
 
  7. Force TCP :- Force requestor to use TCP 
     
-**Value**
-
-User have to mention IP address when condition action is Answer or Forward. 
-
-**TTL (Time to Live)**
-
-User can specify the time  duration of the Condition Action on the server in minutes, hour, day.

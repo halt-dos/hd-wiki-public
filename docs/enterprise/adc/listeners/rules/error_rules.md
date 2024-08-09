@@ -19,42 +19,66 @@ Error Rules is a feature of Haltdos SLB that allows application owners to show c
 
 **Configure the following parameters to set up the desired settings:**
 
-| SETTINGS            | ACCEPTED VALUE | DEFAULT              |
-|---------------------|----------------|----------------------|
-| Rule Name           | String         | Blank                |
-| Rule Message        | String         | Blank                |
-| Rule Enabled        | Boolean        | True                 |
-| Rule Priority       | Integer        | 0                    |
-| HTTP Response Codes | Drop-down      | Blank                |
-| Rule Action         | Drop-down      | Send Custom Response |
-| Custom Error Page   | File upload    | None                 |
-
 ### Description
 
 ##### **Rule Name**
 
 User can mention the rule name. This will help the user to identify the rule and its usage.
 
+    Accepted values: String
+
+    Default: Blank 
+
 ##### **Rule Message**
 
 User can enter a rule message to add a description on the rule name.
+
+    Accepted values: String
+
+    Default: Blank 
 
 ##### **Rule Enabled**
 
 Users can enable or disable the rule.
 
+    Accepted values: Enabled / Disabled
+
+    Default: Enabled 
+
 ##### **Rule Priority**
 
 User can define the rule's priority among various other custom error rules.
+
+    Accepted values: Integer
+
+    Default: 0 
 
 ##### **HTTP Response Codes**
 
 User can mention the HTTP response code based on the custom error rule name.
 
+    Accepted values: 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 428, 429, 431, 440, 444, 449, 450, 451, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 520, 521, 522, 523, 524, 525, 526, 527, 530
+
+    Default: NONE  
+
 ##### **Rule Action**
 
 Specifies the action to be executed when this is gets triggered
 
+    Accepted values: NO ACTION / SEND CUSTOM RESPONSE
+
+    Default: NO ACTION 
+
 ##### **Custom Error Page**
 
 User can add custom error page that will be visible to end-users.
+
+    Accepted values: Custom Error Page
+
+    Default: Blank
+
+
+#### Add Condition
+The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
+
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/enterprise/adc/listeners/rules/conditions)
