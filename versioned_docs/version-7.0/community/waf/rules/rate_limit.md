@@ -96,4 +96,4 @@ Users are allowed to specify the object on which we apply the limit such as Clie
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/community/docs/waf/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/community/waf/rules/conditions)
