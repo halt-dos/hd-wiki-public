@@ -26,7 +26,7 @@ In Haltdos SLB, users can set multiple types of rules based on their requirement
 
 3. [**Redirection Rules**](redirection_rules)
 
-4. [**Load Balancing Rules**](upstream_rules)
+4. [**Load Balancing Rules**](upstream_rule)
 
 5. [**Policy Rules**](policy_rules)
 
