@@ -19,15 +19,18 @@ A Pull Zone is used to pull static files from a predefined zone, which is cached
 3. Configure your settings
 4. Click on Save
 
-| SETTINGS   | ACCEPTED VALUES | DEFAULT |
-|------------|-----------------|---------|
-| Name       | String          | Blank   |
-| Origin URL | HTTP URL        | Blank   |
-
 **Name**
 
 Specify the name for your pullzone as unique identifier.
 
+    Accepted Value: String
+
+    Default: Blank
+
 **Origin URL**
 
 Specify the HTTP URL of your back-end server on which you need to do caching.
+
+    Accepted Value: HTTP URL
+
+    Default: Blank
