@@ -8,8 +8,10 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/logo/icon_light.ico',
-  url: 'https://halt-dos.github.io',
+  url: 'https://docs.haltdos.com',
+  trailingSlash: undefined,
   baseUrl: '/',
+  
   organizationName: 'haltdos',
   projectName: 'haltdos-wiki',
 
