@@ -23,20 +23,11 @@ It is recommended to configure periodic backup to avoid data loss and ensure log
 
 #### How to Use:  
 
-<<<<<<< HEAD:docs/enterprise/platform/system/instance/backuppolicy.md
-#### How to Use:  
-
-=======
->>>>>>> main:docs/enterprise/platform/system/instance/settings/backuppolicy.md
 1. Go to **Stack** > **Instances** > **Backup Policy**
 2. Configure your settings
 3. Click **Save Changes**
 
-<<<<<<< HEAD:docs/enterprise/platform/system/instance/backuppolicy.md
-## Description
-=======
 ### Description
->>>>>>> main:docs/enterprise/platform/system/instance/settings/backuppolicy.md
 
 **Log Retention Period**
 
