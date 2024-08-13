@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Records
 
-Configure DNS Records for your domain
+### Configure DNS Records for your domain
 
 ---
 

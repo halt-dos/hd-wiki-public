@@ -16,8 +16,24 @@ Zone provides you an opportunity to create and manage domains. End users can als
 3. Click on **Add Zone**.
 4. Configure your Zone settings.
 5. Click on **Save**.
+   
 
-| Parameter      | Accepted Value | Default |
-|----------------|----------------|---------|
-| Domain Name    | String         | Blank   |
-| Enable Geo Dns | Boolean        | True    |
+**Domain Name**
+
+Domain name is a string that points to an IP Address.
+
+
+    Accepted Value: String
+
+    Default: Blank
+
+
+**Enable Geo DNS**
+
+Geo DNS distributes network traffic based on the location of user's IP Address.
+
+
+    Accepted Value: True/False
+
+    Default: True
+    

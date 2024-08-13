@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # NameServers
 
-Steps to update NS records for your domain
+### Steps to update NS records for your domain
 
 ---
 
