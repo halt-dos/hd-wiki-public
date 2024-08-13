@@ -108,7 +108,7 @@ This mandatory argument is used to authorize license or stack details. It repres
 
     Accepted Values: SYNTAX - Comma seprated value
 
-    Example : <LICENSE_1>[LICENSE_2] 
+    Example : LICENSE_1, LICENSE_2 
 
 ##### 3. **emailId**
 This argument is optional and only required for user-groups with the reporting feature enabled. It works in conjunction with the "disable_report" argument to manage reporting capabilities.

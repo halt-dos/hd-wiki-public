@@ -67,14 +67,7 @@ Specify the URI on which the tamper rule will be applied.
 
     Default: Blank  
 
-<<<<<<< HEAD
-    Accepted values: URI
-
-    Default: Blank  
-
-=======
->>>>>>> 2298461a8e4645af310150ac2e6458d8cdd54073
-Example /login
+    Example /login
 
 ##### **Method**
 

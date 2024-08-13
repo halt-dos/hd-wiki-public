@@ -11,7 +11,6 @@ const config = {
   url: 'https://docs.haltdos.com',
   trailingSlash: undefined,
   baseUrl: '/',
-  
   organizationName: 'haltdos',
   projectName: 'haltdos-wiki',
 
@@ -56,6 +55,7 @@ const config = {
               badge: true
             }
           },
+          path: 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
@@ -96,6 +96,28 @@ const config = {
           },
         ],
       }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: '/community',
+        sidebarPath: require.resolve('./sidebars-community.js'),
+        docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
+        breadcrumbs: true
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'professional',
+        path: 'professional',
+        routeBasePath: '/professional',
+        sidebarPath: require.resolve('./sidebars-professional.js'),
+        docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
+        breadcrumbs: true
+      },
     ]
   ],
   themeConfig:
@@ -129,8 +151,8 @@ const config = {
           srcDark: 'img/logo/light_doc_logo.png'
         },
         items: [
-          {to: 'community', label: 'Community', position: 'left'},
-          {to: 'professional', label: 'Professional', position: 'left'},
+          {to: 'community/community', label: 'Community', position: 'left'},
+          {to: 'professional/professional', label: 'Professional', position: 'left'},
           {to: 'enterprise', label: 'Enterprise', position: 'left'},
           {to: 'cloud', label: 'Cloud', position: 'left'},
           {href: 'https://haltdos.com',label: 'Haltdos', target: '_blank', rel: null, position: 'right', className:'haltdos'},
