@@ -21,23 +21,23 @@ The process is quite intuitive.
 3. Configure your Rule.
 4. Click on Save.
 
-| PARAMETERS         | ACCEPTED VALUES          | DEFAULT                 |
-|--------------------|--------------------------|-------------------------|
-| Rule Name          | String                   | None                    |
-| Rule Action        | Choose from the dropdown | Block Request           |
-| Match When         | Choose from the dropdown | Any Condition Fulfilled |
-| Condition Location | Choose from the dropdown | None                    |
-| Location Value     | String                   | None                    |
-| Match Criteria     | Choose from the dropdown | None                    |
-| Condition Value    | String                   | None                    |
+### Description
 
 **Rule Name**
 
 This field allows you to specify a user-friendly name to the rule. Make sure it is alpha-numeric.
 
+    Accepted Value: String
+
+    Default: Blank
+
 **Rule Action**
 
 This field allows you to specify the action that you need to take for the Created Rule. Available actions:
+
+    Accepted Value: Block Request / Force SSL
+
+    Default: Block Request
 
 - **Block Request**: Allows you to block the request as per the condition.
 - **Force SSL**: Allows you to configure hostnames and automatically redirect HTTP to HTTPS requests.
@@ -58,6 +58,10 @@ It protects you against content plagiarism and ensures that a secure connection 
 
 **Match When**: Allows you to add a condition. Available options:
 
+    Accepted Value: Any condition fulfilled / All conditions fulfilled / No conditions fulfilled
+
+    Default: Any condition fulfilled
+
 1. **Any condition fulfilled**: When any one of the mentioned conditions match.
 2. **All conditions fulfilled**: When all of the mentioned conditions match.
 3. **No conditions fulfilled**: When none of the condition match.
@@ -67,6 +71,10 @@ It protects you against content plagiarism and ensures that a secure connection 
 This action allows you to add multiple conditions based on the following parameters:
 
 **Condition Location**
+
+    Accepted Value: Request URL / Request Header / Response Header / Country Code (2 Letters) / Remote IP / File Extension
+
+    Default: Request URL
 
 - Request URL
 - Request Header
@@ -79,9 +87,17 @@ This action allows you to add multiple conditions based on the following paramet
 
 It allows you to define the value of the location.
 
+    Accepted Value: String
+
+    Default: Blank
+
 **Match Criteria**
 
 These parameters have predefined values i.e. 
+
+    Accepted Value: Matches Any / Matches All / Matches None
+
+    Default: Matches Any
 
 1. Matches Any: When any one of the mentioned condition value match.
 2. Matches All : When all of the mentioned condition value match.
@@ -90,6 +106,10 @@ These parameters have predefined values i.e.
 **Condition Value**
 
 It allows you to set the value for the located condition.
+
+    Accepted Value: String
+
+    Default: Blank
 
 **Add** 
 
