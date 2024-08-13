@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Support & Ticketing
 
-How can you reach us?
+### How can you reach us?
 
 ---
 
-Haltdos Support is here to help you configure and manage security for your business **24x7**. We are available via email, phone, ticket, and chat. In case of any issue, feel free to reach out to us.
+Haltdos Support is here to help you configure and manage security for your business **24x7**. We are available via email, phone, ticket. In case of any issue, feel free to reach out to us.
 
 Haltdos Cloud has a built-in ticketing system. Please follow the steps below to raise a ticket to Haltdos Support Team.
 

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Threat Intelligence
 
-Haltdos Threat Stream - comprehensive global threat intelligence from Haltdos
+### Haltdos Threat Stream - A comprehensive global threat intelligence from Haltdos
 
 ---
 
