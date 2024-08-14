@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # API Tokens 
 
-Generating API tokens for enabling API functionality
+### Generating API tokens for enabling API functionality
 
 ---
 
@@ -18,7 +18,7 @@ All API requests are **Authorization: Bearer `<TOKEN>`** header. Depending upon 
 ![apitokens](/img/platform/v8/docs/apiToken2.png)
 ### How to Use:
 
-1. Go to **Stack** > **Integration** > **API Tokens**
+1. Go to **System** > **Integration** > **API Tokens**
 2. Click on the button  Generate API token.
 3. Configure your settings
 4. Click **Save Changes**
@@ -37,9 +37,9 @@ This feature allows users to enter token name
 
 This feature allows users to enable/disable the system access
 
-    Accepted values: String
+    Accepted values: Enable/Disable
 
-    Default: Blank 
+    Default: Disable 
 
 ##### **Stack**  
 

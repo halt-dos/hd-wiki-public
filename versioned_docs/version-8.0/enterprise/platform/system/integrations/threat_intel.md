@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-# Threat Feeds
+# Threat Intel
 
-Integration with 3rd party Threat Intelligence feeds
+### Integration with 3rd party Threat Intelligence feeds
 
 ---
 
@@ -22,21 +22,23 @@ Only IPv4/IPv6 addresses / prefix having poor reputation is currently supported.
 
 ### How to Use:
 
-1. Go to **Threat Intel**
+1. Go to **System > Integration > Threat Intel**
 2. Configure your settings
 3. Click Save.
   
 ### Description:
 
 **Enable**
-Select whether to Enable it or Disable it. 
+
+ Select whether to Enable it or Disable it. 
 
     Accepted values: Enable / Disable
 
-    Default: Enable 
+    Default: Disable 
 
 **Intel Source Name**
-Enter the intel source name
+
+ Enter the intel source name
 
     Accepted values: String
 
@@ -50,13 +52,6 @@ Stack is selected here
 
     Default: Blank 
 
-**Feed Type**
-
-Select feed type
-
-    Accepted values: IP / Domain
-
-    Default: Enable 
 
 **Task Occurrence**
 
@@ -104,7 +99,7 @@ Select type of attribute
 
     Accepted values: HEADER_VAL / ARGS_VAL / PARAM_VAL
 
-    Default: HEADER_VAL
+    Default: Blank
 
 **Name**
 

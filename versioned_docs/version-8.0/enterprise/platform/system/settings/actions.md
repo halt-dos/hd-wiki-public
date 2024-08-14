@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Updates
+# Actions
 
 Versioning, Patch management and installation of updates and upgrades
 

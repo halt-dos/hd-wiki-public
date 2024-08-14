@@ -1,10 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Reports
-
-Overview of reports
 
 ---
 
@@ -16,11 +14,13 @@ To enable reporting use Scheduler (under Stack Settings) to specify report type,
 
 ![reports](/img/platform/v8/docs/reports.png)
 
+![reports](/img/platform/v8/docs/reports2.png)
+
 ---
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Reports**
+1. Go to **System > Settings > Reports**
 2. Configure your settings
 3. Click **Save Changes**
 
@@ -29,7 +29,7 @@ To enable reporting use Scheduler (under Stack Settings) to specify report type,
 
 **WAF / ADC**
 
-The following reports are provided by the platform (built-in reports). Custom reports can also be generated. Please refer to Dashboards (under Stack Settings).
+The following reports are provided by the platform (built-in reports). Custom reports can also be generated. Please refer to Dashboards (under system Settings).
 
 - Performance Summary
 - Attack Summary
