@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # Task Management
 
-Scheduling repeated tasks in Haltdos Platform
+### Scheduling repeated tasks in Haltdos Platform
 
 ---
 
@@ -14,7 +14,7 @@ Haltdos supports automating repeated tasks such as reports, auto-profiling, peri
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Task Management**
+1. Go to **System > Settings > Task Management**
 2. Configure your settings
 3. Click **Save Changes**
 
@@ -60,6 +60,15 @@ Select the timezone for the task scheduled.
 
     Default: Asia/Calcutta 
 
+**Task Type**
+
+Specify the type of task
+
+    Accepted values: Select Task Type
+
+    Default: Genrate Report
+
+
 **Resource** 
 
 Specify the listener or  profile
@@ -67,14 +76,7 @@ Specify the listener or  profile
     Accepted values: Select App/Resource
 
     Default: Blank 
-
-**Task Type**
-
-Specify the type of task
-
-    Accepted values: Select Task Type
-
-    Default: Genrate Report 
+ 
 
 **Dashboard**
 
@@ -92,10 +94,18 @@ Specify the occurrence of the report
 
     Default: Blank 
 
-**Notify Users**  
+**Enable Reporting**  
 
 Users can use this feature to get task on mail.
 
-    Accepted values: String
+    Accepted values: Enable/Disable
 
-    Default: Blank 
+    Default: Disable
+
+**Recipents**
+
+  Choose recipient/recipients for the task
+
+    Accepted values: Choose from Dropdown list
+
+    Default: Blank

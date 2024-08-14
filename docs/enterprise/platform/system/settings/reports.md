@@ -1,10 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Reports
-
-Overview of reports
 
 ---
 
@@ -16,26 +14,53 @@ To enable reporting use Scheduler (under Stack Settings) to specify report type,
 
 ![reports](/img/platform/v8/docs/reports.png)
 
+![reports](/img/platform/v8/docs/reports2.png)
+
 ---
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Reports**
+1. Go to **System > Settings > Reports**
 2. Configure your settings
 3. Click **Save Changes**
 
 
-### Types of Reports
+**Report Name**
 
-**WAF / ADC**
+Enter report name
 
-The following reports are provided by the platform (built-in reports). Custom reports can also be generated. Please refer to Dashboards (under Stack Settings).
+    Accepted values: String
 
-- Performance Summary
-- Attack Summary
-- HTTP Summary
-- Governance
-- Traffic Summary
-- Bot Summary
-- Geo Summary
-- Instance Status
+    Default: Blank
+
+**Priority**
+
+Enter priority number
+
+    Accepted values: Integer
+
+    Default: 999
+
+**Enable Stack App**
+
+Select to Enable / Disable the stack app.
+
+    Accepted values: Enable / Disable
+
+    Default: Disable
+
+**Stack**
+
+Dropdown of list of Stack to Select
+
+    Accepted values: Select Stack
+
+    Default: Blank
+
+**Apps**
+
+List of apps
+
+    Accepted values: Select Apps
+
+    Default: Blank

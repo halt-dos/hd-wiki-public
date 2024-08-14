@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Forensics
@@ -14,7 +14,7 @@ Haltdos Forensic feature provides customer to generate the customized graphs as 
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Forensics**
+1. Go to **System > Settings > Forensics**
 2. Configure your settings
 3. Click **Save Changes**
 

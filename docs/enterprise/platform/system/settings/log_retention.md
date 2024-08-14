@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Log Retention
 
-Configure the log retention period for the Haltdos appliances
+### Configure the log retention period for the Haltdos appliances
 
 ---
 This feature allows users to set the log retention period. The log retention period is the time for which the logs the logs will be stored locally on the Haltdos Device.
@@ -17,7 +17,7 @@ Depending upon the organization's policy, we can change or less the dya for logs
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Log Retention**.
+1. Go to **System > Settings > Log Retention**.
 
 2. Configure your settings.
 
