@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Threat Feeds
+# Threat Intel
 
 Integration with 3rd party Threat Intelligence feeds
 

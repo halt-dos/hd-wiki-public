@@ -39,16 +39,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          lastVersion: '7.0',
+          lastVersion: 'current',
           versions:{
             'current': {
-              label: 'v8',
-              banner: 'unreleased',
-              path: 'v8',
-              badge: true
+              label: 'v8'
             },
             '7.0': {
-              label: 'v7'
+              label: 'v7',
+              banner: 'none',
+              path: 'v7',
+              badge: true
             },
             '6.0': {
               label: 'v6',
