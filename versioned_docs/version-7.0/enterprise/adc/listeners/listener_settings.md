@@ -19,7 +19,7 @@ Users are allowed to configure many operational settings for the Listeners.
 
 ### How to Use:
 
-1. Go to [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Operational Settings**
+1. Go to [**SLB**](/v7/enterprise/adc) > [**Listeners**](./listeners.md) > **Operational Settings**
 2. Configure your settings
 3. Click **Save Changes**.
 

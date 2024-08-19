@@ -8,7 +8,7 @@ Configure Operational settings of Listeners.
 
 ## Overview
 
-Users are allowed to configure many operational settings for the [Listeners](/v8/enterprise/waf/listener/). Users can configure most common settings like timeout settings, operation modes, header/body timeouts, error handling, and request logging. Users can also add server aliases and VIPs to the configured listener with the help of operational settings
+Users are allowed to configure many operational settings for the [Listeners](/enterprise/waf/listener/). Users can configure most common settings like timeout settings, operation modes, header/body timeouts, error handling, and request logging. Users can also add server aliases and VIPs to the configured listener with the help of operational settings
 
 ![Listener Operational Settings](/img/waf/v8/docs/operationalSetting1.png)   
 

@@ -10,7 +10,7 @@ Rate Limiting is a feature of Haltdos SLB that allows application owners to enfo
 
 #### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
+1. Go to Stack > [**SLB**](/v7/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 2. Select the **Rate Limit Rules**.
 3. Click **Add Rule** button.
 4. Configure your settings. 
@@ -108,5 +108,5 @@ Specify the time duration for which the rule will limit the request.
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/adc/listeners/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v7/enterprise/adc/listeners/rules/conditions)
 

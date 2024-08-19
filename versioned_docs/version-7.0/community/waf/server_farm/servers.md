@@ -63,7 +63,7 @@ This option alows user to select from the monitors created. Monitors help in mon
 
     Default: NONE  
 
-To add monitor user can refer to this link: [**Server Monitors**](/community/waf/server_farm/monitors)
+To add monitor user can refer to this link: [**Server Monitors**](/v7/community/waf/server_farm/monitors)
 
 #### **Backup** 
 

@@ -91,7 +91,7 @@ Users are allowed to specify the keyword to match when the rule is invoked. The 
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/cloud/waf/listener/profiles/rules/ruleCond)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/cloud/waf/listener/profiles/rules/ruleCond)
 
 
 

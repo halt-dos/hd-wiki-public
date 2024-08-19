@@ -12,7 +12,7 @@ We have introduced Header rules by which application owners can manipulate reque
 
 #### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
+1. Go to Stack > [**SLB**](/v7/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 2. Select the **Header Rule**.
 3. Click **Add Rule** button.
 4. Configure your settings. 
@@ -104,4 +104,4 @@ Specify the attribute value which will be mentioned in the attribute.
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/adc/listeners/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v7/enterprise/adc/listeners/rules/conditions)

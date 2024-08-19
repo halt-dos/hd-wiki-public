@@ -12,7 +12,7 @@ Policy rule is the feature of Haltdos SLB that allows application owners to set 
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
+1. Go to Stack > [**SLB**](/v7/enterprise/adc) > [**Listeners**](../listeners.md) > **Rules**.
 2. Select the **Policy Rule**.
 3. Click **Add Rule** button.
 4. Configure your settings. 
@@ -72,4 +72,4 @@ User can define what action needs to be taken in case this rule is being satisfi
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/adc/listeners/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v7/enterprise/adc/listeners/rules/conditions)
