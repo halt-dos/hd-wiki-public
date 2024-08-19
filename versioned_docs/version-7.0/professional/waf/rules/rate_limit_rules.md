@@ -101,7 +101,7 @@ Always limit burst must be greater than or equal to limit rate.
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/professional/waf/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v7/professional/waf/rules/conditions)
 
 
 

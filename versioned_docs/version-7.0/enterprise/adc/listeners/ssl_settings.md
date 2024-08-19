@@ -11,7 +11,7 @@ sidebar_position: 2
 ![SSL Settings2](/img/adc/v7/docs/sslsetting1.png)  
 ### How to Use:
 
-1. Go to [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **SSL Settings**
+1. Go to [**SLB**](/v7/enterprise/adc) > [**Listeners**](./listeners.md) > **SSL Settings**
 
 2. Configure your settings.
 

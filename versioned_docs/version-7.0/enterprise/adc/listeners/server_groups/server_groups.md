@@ -23,7 +23,7 @@ Server Groups provide user two functionality at a page to add Server Group and V
 ### How to Use:
 
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Server groups**.
+1. Go to Stack > [**SLB**](/v7/enterprise/adc) > [**Listeners**](../listeners.md) > **Server groups**.
 2. Click **Add Server Group** button.
 3. Configure your settings. 
 4. Click **Save Changes**.

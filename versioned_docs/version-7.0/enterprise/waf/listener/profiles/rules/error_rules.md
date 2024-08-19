@@ -40,4 +40,4 @@ Users are allowed to specify the priority for the rule for execution when matche
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/enterprise/waf/listener/profiles/rules/conditions)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v7/enterprise/waf/listener/profiles/rules/conditions)

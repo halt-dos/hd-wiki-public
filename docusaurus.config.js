@@ -9,12 +9,9 @@ const config = {
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/logo/icon_light.ico',
   url: 'https://docs.haltdos.com',
-  trailingSlash: undefined,
   baseUrl: '/',
-  
   organizationName: 'haltdos',
   projectName: 'haltdos-wiki',
-  trailingSlash: false, 
 
   webpack: {
     jsLoader: (isServer) => ({
@@ -39,15 +36,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          lastVersion: '8.0',
+          lastVersion: 'current',
           versions:{
             'current': {
-              label: 'v8.0b1',
-              path: 'v8b1',
-              banner: 'unreleased',
-              badge: true
-            },
-            '8.0': {
               label: 'v8'
             },
             '7.0': {

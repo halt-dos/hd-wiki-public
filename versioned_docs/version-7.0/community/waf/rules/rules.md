@@ -3,14 +3,14 @@
 
 ### Overview
 The rules are configurations that define how incoming requests and outgoing responses should be handled. These rules allow administrators to implement security measures, performance optimizations, and custom behaviors based on specific criteria. The configurable rules include:    
-- [**Redirection Rules**](/community/waf/rules/redirection_rules)  
-- [**Header Rules**](/community/waf/rules/header_rules) 
-- [**Rate Limit Rules**](/community/waf/rules/rate_limit)
-- [**Firewall Rules**](/community/waf/rules/firewall_rules)
-- [**Whitelist Rules**](/community/waf/rules/whitelist_rules)
-- [**Correlation Rules**](/community/waf/rules/correlation_rules)
-- [**Variable Rules**](/community/waf/rules/variable_rules)
-- [**Behaviour Rule**](/community/waf/rules/behavior_rules)
+- [**Redirection Rules**](/v7/community/waf/rules/redirection_rules)  
+- [**Header Rules**](/v7/community/waf/rules/header_rules) 
+- [**Rate Limit Rules**](/v7/community/waf/rules/rate_limit)
+- [**Firewall Rules**](/v7/community/waf/rules/firewall_rules)
+- [**Whitelist Rules**](/v7/community/waf/rules/whitelist_rules)
+- [**Correlation Rules**](/v7/community/waf/rules/correlation_rules)
+- [**Variable Rules**](/v7/community/waf/rules/variable_rules)
+- [**Behaviour Rule**](/v7/community/waf/rules/behavior_rules)
 
 ### How to Use:
 1. Log onto the Haltdos Community WAF portal.
