@@ -10,11 +10,11 @@ Scheduling repeated tasks in Haltdos Platform
 
 Haltdos supports automating repeated tasks such as reports, auto-profiling, periodic learning, scanning, etc. Stack users can configure these schedules as per their choice of periodicity to get automated emails / API alerts from the solution.
 
-![scheduler](/img/platform/v8/docs/task_management.png)
+![scheduler](/img/platform/v8/docs/sysTaskMang.png)
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Task Management**
+1. Go to **System > Settings > Task Management**
 2. Configure your settings
 3. Click **Save Changes**
 
@@ -60,6 +60,14 @@ Select the timezone for the task scheduled.
 
     Default: Asia/Calcutta 
 
+**Task Type**
+
+Specify the type of task
+
+    Accepted values: Generate Instance Report / Generate App Report / Generate Incident Report / Generate IOC Report / Generate False Positive Report / Generate Task Governance Report
+
+    Default: Generate Instance Report 
+
 **Resource** 
 
 Specify the listener or  profile
@@ -67,14 +75,6 @@ Specify the listener or  profile
     Accepted values: Select App/Resource
 
     Default: Blank 
-
-**Task Type**
-
-Specify the type of task
-
-    Accepted values: Select Task Type
-
-    Default: Genrate Report 
 
 **Dashboard**
 
@@ -92,9 +92,17 @@ Specify the occurrence of the report
 
     Default: Blank 
 
-**Notify Users**  
+**Enable Reporting**  
 
-Users can use this feature to get task on mail.
+User can Enable / Disable the reporting
+
+    Accepted values: Enable / Disable
+
+    Default: Enable 
+
+**Recipients**  
+
+Specify the Recipients
 
     Accepted values: String
 

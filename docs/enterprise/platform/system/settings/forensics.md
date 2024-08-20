@@ -8,13 +8,13 @@ sidebar_position: 5
 
 Haltdos Forensic feature provides customer to generate the customized graphs as per there demand by just running a query they can have a combine analytics of there application.
 
-![forensics](/img/platform/v8/docs/forensic1.png)
+![forensics](/img/platform/v8/docs/sysForensics.png)
 
-![forensics](/img/platform/v8/docs/forensics2.png)
+![forensics](/img/platform/v8/docs/sysForensics2.png)
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Forensics**
+1. Go to **System > Settings > Forensics**
 2. Configure your settings
 3. Click **Save Changes**
 

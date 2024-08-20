@@ -1,0 +1,77 @@
+---
+sidebar_position: 6
+---
+
+# Actions
+
+ -----------
+
+Actions are utilized to automate custom configurations for specified license events.
+
+![forensics](/img/platform/v8/docs/sysActions.png)
+
+### How to Use:
+
+1. Go to **System > Settings > Actions**
+2. Configure your settings
+3. Click **Save Changes**
+
+
+### Description
+
+##### **Enabled**
+
+User can Enable or Disable the Stack
+
+    Accepted values: Enable / Disable
+
+    Default: Disable
+
+##### **Action Name**
+
+Select Action Name
+
+    Accepted values: String
+
+    Default: Blank
+
+##### **Resource**
+
+Select the Resource
+
+    Accepted values: Select from the dropdown
+
+    Default: Blank
+
+##### **Scope**
+
+Select the Scope 
+
+    Accepted values: Select from the dropdown
+
+    Default: Blank
+
+##### **Run Frequency**
+
+Enter the Run Frequency
+
+    Accepted values: String
+
+    Default: Blank
+
+##### **Next Run**
+
+Select the Next Run
+
+    Accepted values: Select from the dropdown
+
+    Default: Blank
+
+##### **Timezone**
+
+Select the Timezone
+
+    Accepted values: Select the Timezone
+
+    Default: Asia / Calcutta
+

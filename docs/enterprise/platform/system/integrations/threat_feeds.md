@@ -16,49 +16,43 @@ Custom threat intel can be pulled into Haltdos appliances from three sources: pu
 Only IPv4/IPv6 addresses / prefix having poor reputation is currently supported.
 :::
 
-![threat_feeds](/img/platform/v8/docs/tIntel1.png)
+![threat_feeds](/img/platform/v8/docs/sysThreat.png)
 
-![threat_feeds](/img/platform/v8/docs/threatIntel2.png)
+![threat_feeds](/img/platform/v8/docs/sysThreat2.png)
 
 ### How to Use:
 
-1. Go to **Threat Intel**
+1. Go to **System** > **Integration** > **Threat Intel**.
 2. Configure your settings
-3. Click Save.
+3. Click **Save**.
   
 ### Description:
 
-**Enable**
+**Enable**  
+  
 Select whether to Enable it or Disable it. 
 
     Accepted values: Enable / Disable
 
     Default: Enable 
 
-**Intel Source Name**
+**Intel Source Name**  
+  
 Enter the intel source name
 
     Accepted values: String
 
     Default: Blank 
 
-**Stack**
+**Stack**  
 
-Stack is selected here
+Specify the Stack 
 
     Accepted values: Select Stack
 
     Default: Blank 
 
-**Feed Type**
-
-Select feed type
-
-    Accepted values: IP / Domain
-
-    Default: Enable 
-
-**Task Occurrence**
+**Task Occurrence**  
 
 Select number of times for the tasck occurence
 

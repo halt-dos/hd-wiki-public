@@ -10,28 +10,38 @@ Integration with external 3rd party solutions for notification and alerts via AP
 
 Haltdos platform can easily integrate with one or more API endpoints to send alerts and notifications for timely action (as necessary). API integration can be done for various reasons such as integration with SMS Gateway, internal ticketing system, etc.
 
-![webhooks](/img/platform/v8/docs/webhooks.png)
+![webhooks](/img/platform/v8/docs/sysWebHooks.png)
 
 ### How to Use:
 
-1. Go to **Stack** > **Integration** > **Webhooks**.
-2. Click on the button  **Add Webhoks**    |
+1. Go to **System** > **Integration** > **Webhooks**.
+2. Click on the button  **Add Webhooks** 
 3. Configure your settings
 4. Click **Save Changes**
 
 ### Description:
 
 **Enable**
-Select whether to Enable it or Disable it. 
+
+ Select whether to Enable it or Disable it. 
 
     Accepted values: Enable / Disable
 
     Default: Enable 
 
 **Name**
-Specify the Name 
+
+ Specify the Name 
 
     Accepted values: String
+
+    Default: Blank 
+
+**Stack**
+
+ Specify the Stack 
+
+    Accepted values: Select from Dropdown
 
     Default: Blank 
 
