@@ -18,17 +18,11 @@ A certificate revocation list, more commonly called a CRL, is exactly what it so
 2. Configure your settings. 
 3. Click **Save Changes**. 
 
-![revocation_list](/img/platform/v7/docs/revocation_list_newui.png)
-
 **Description:**
 
 ##### **Name**
 
 Users can specify the name of the custom script.
-
-    Accepted values: String
-
-    Default: Blank 
 
     Accepted values: String
 
@@ -45,11 +39,6 @@ It specifies the particular scope on which the script works. By default, its val
 ##### **Content**
 
 It specifies the script area where the script is to be written.
-
-    Accepted values: String
-
-    Default: Blank 
-
 
     Accepted values: String
 

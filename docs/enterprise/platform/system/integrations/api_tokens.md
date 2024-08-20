@@ -36,11 +36,7 @@ This feature allows users to enter token name
 
 This feature allows users to enable/disable the system access
 
-<<<<<<< HEAD
     Accepted values: Enable / Disable
-=======
-    Accepted values: Enable/Disable
->>>>>>> db1ff1fef26ddb866d971e0894ec3617062fdf2f
 
     Default: Disable 
 

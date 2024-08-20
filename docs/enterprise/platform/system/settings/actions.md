@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 sidebar_position: 6
 ---
@@ -76,14 +75,3 @@ Select the Timezone
 
     Default: Asia / Calcutta
 
-=======
----  
-sidebar_position: 6 
----  
-
-# Actions
-
---- 
-
-![actions](/img/platform/v8/docs/Actions.png)
->>>>>>> db1ff1fef26ddb866d971e0894ec3617062fdf2f
