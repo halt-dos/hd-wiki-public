@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Task Management
 
-Scheduling repeated tasks in Haltdos Platform
+### Scheduling repeated tasks in Haltdos Platform
 
 ---
 
@@ -64,9 +64,16 @@ Select the timezone for the task scheduled.
 
 Specify the type of task
 
+<<<<<<< HEAD:docs/enterprise/platform/system/settings/taskMgmt.md
     Accepted values: Generate Instance Report / Generate App Report / Generate Incident Report / Generate IOC Report / Generate False Positive Report / Generate Task Governance Report
 
     Default: Generate Instance Report 
+=======
+    Accepted values: Select Task Type
+
+    Default: Genrate Report
+
+>>>>>>> db1ff1fef26ddb866d971e0894ec3617062fdf2f:docs/enterprise/platform/system/settings/scheduler.md
 
 **Resource** 
 
@@ -75,6 +82,10 @@ Specify the listener or  profile
     Accepted values: Select App/Resource
 
     Default: Blank 
+<<<<<<< HEAD:docs/enterprise/platform/system/settings/taskMgmt.md
+=======
+ 
+>>>>>>> db1ff1fef26ddb866d971e0894ec3617062fdf2f:docs/enterprise/platform/system/settings/scheduler.md
 
 **Dashboard**
 
@@ -104,6 +115,14 @@ User can Enable / Disable the reporting
 
 Specify the Recipients
 
-    Accepted values: String
+    Accepted values: Enable/Disable
 
-    Default: Blank 
+    Default: Disable
+
+**Recipents**
+
+  Choose recipient/recipients for the task
+
+    Accepted values: Choose from Dropdown list
+
+    Default: Blank

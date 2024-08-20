@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # E-Mail
 
-Integration with E-Mail Service
+### Integration with E-Mail Service
 
 ---
 
@@ -19,7 +19,11 @@ It is recommended to integrate Haltdos solutions with SMTP for receiving timely 
 ![E-Mail](/img/platform/v8/docs/sysEmail2.png)
 
 ### How to Use:
+<<<<<<< HEAD
 1. Go to **System > Integrations > Email**
+=======
+1. Go to **System > Integration**
+>>>>>>> db1ff1fef26ddb866d971e0894ec3617062fdf2f
 2. Select **E-Mail**
 3. Configure E-Mail Settings
 4. Click **Save Changes**
@@ -31,7 +35,7 @@ This feature allows users to enable notification via emails. By default, this op
 
     Accepted values: Enable / Disable
 
-    Default: Enable 
+    Default: Disable 
 
 ##### **Email Server**  
 This feature allows users to mention the email server details. Users can add the  hostname or IP address of the mail server  
@@ -97,16 +101,17 @@ This option allows users to set specific types of encryption protocols to use wh
     Default: TLS 
 
 ##### **DSN Response**
-DNS is a query/response protocol. The client queries information in a single UDP request. This request is followed by a single UDP reply from the DNS server. DNS uses UDP port 53 to connect to the server.  
 
-    Accepted values: None
+  DSN is an automated email message informing the sender of another message about a delivery problem.  
+
+    Accepted values: Full Message/Headers Only/None
 
     Default: None 
 
 ##### **DSN Notify**
 User can Specify when to send delivery status notification (DSN)
 
-    Accepted values: None
+    Accepted values: Success/Failure/Delay/None
 
     Default: None 
 

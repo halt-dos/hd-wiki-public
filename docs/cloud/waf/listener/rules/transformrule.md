@@ -108,4 +108,4 @@ Replace option comes only in use when the transformation is SET, REPLACE, HTTP t
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
-To configure the parameter of the conditions please refer to the following link: [**Conditions**](/v8/cloud/waf/listener/rules/ruleCond)
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/cloud/waf/listener/rules/ruleCond)

@@ -16,7 +16,11 @@ Network Time Protocol (NTP) is a protocol that provides a very reliable way of t
 2. Configure your settings.
 3. Click on **Save Changes**.
 
+<<<<<<< HEAD:docs/enterprise/platform/system/Infrastructure/instance/integration/ntp.md
 ## Description:
+=======
+### Description:
+>>>>>>> db1ff1fef26ddb866d971e0894ec3617062fdf2f:docs/enterprise/platform/system/instance/integration/ntp.md
 
 **NTP Server**
 

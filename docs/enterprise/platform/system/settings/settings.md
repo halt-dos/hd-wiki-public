@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Settings
 
-Overview of Stack settings
+### Overview of System settings
 
 ---
 

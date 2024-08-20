@@ -12,7 +12,7 @@ Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. 
 
 ### How to Use:
 
-1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](./listeners.md) > **Geo Filtering** 
+1. Go to **Stack** > [**SLB**](/v7/enterprise/adc) > [**Listeners**](./listeners.md) > **Geo Filtering** 
 2. Configure your settings.
 3. Click **Save Changes**.
 

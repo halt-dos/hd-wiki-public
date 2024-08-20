@@ -9,12 +9,9 @@ const config = {
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/logo/icon_light.ico',
   url: 'https://docs.haltdos.com',
-  trailingSlash: undefined,
   baseUrl: '/',
-  
   organizationName: 'haltdos',
   projectName: 'haltdos-wiki',
-  trailingSlash: false, 
 
   webpack: {
     jsLoader: (isServer) => ({
@@ -52,7 +49,6 @@ const config = {
             },
             '6.0': {
               label: 'v6',
-              banner: 'none',
               path: 'v6',
               badge: true
             }
@@ -73,11 +69,12 @@ const config = {
     [
       '@docusaurus/plugin-pwa',
       {
-        debug: false,
+        debug: true,
         offlineModeActivationStrategies: [
           'appInstalled',
           'standalone',
           'queryString',
+          'always'
         ],
         pwaHead: [
           {
@@ -97,6 +94,28 @@ const config = {
           },
         ],
       }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: '/community',
+        sidebarPath: require.resolve('./sidebars-community.js'),
+        docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
+        breadcrumbs: true
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'professional',
+        path: 'professional',
+        routeBasePath: '/professional',
+        sidebarPath: require.resolve('./sidebars-professional.js'),
+        docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
+        breadcrumbs: true
+      },
     ]
   ],
   themeConfig:
@@ -130,8 +149,8 @@ const config = {
           srcDark: 'img/logo/light_doc_logo.png'
         },
         items: [
-          {to: 'community', label: 'Community', position: 'left'},
-          {to: 'professional', label: 'Professional', position: 'left'},
+          {to: 'community/introduction', label: 'Community', position: 'left'},
+          {to: 'professional/introduction', label: 'Professional', position: 'left'},
           {to: 'enterprise', label: 'Enterprise', position: 'left'},
           {to: 'cloud', label: 'Cloud', position: 'left'},
           {href: 'https://haltdos.com',label: 'Haltdos', target: '_blank', rel: null, position: 'right', className:'haltdos'},

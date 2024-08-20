@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Webhooks
 
-Integration with external 3rd party solutions for notification and alerts via APIs
+### Integration with external 3rd party solutions for notification and alerts via APIs
 
 ---
 
@@ -27,7 +27,7 @@ Haltdos platform can easily integrate with one or more API endpoints to send ale
 
     Accepted values: Enable / Disable
 
-    Default: Enable 
+    Default: Disable 
 
 **Name**
 
@@ -67,7 +67,7 @@ This option helps the user to mention the payload location.
 
     Accepted values: ARG / PARAM / BODY
 
-    Default: ARG 
+    Default: PARAM 
 
 **Payload Name**
 

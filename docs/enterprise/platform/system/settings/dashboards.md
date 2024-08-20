@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Dashboards
 
-Cutomize and create new dashboards in Haltdos Platform
+### Cutomize and create new dashboards in Haltdos Platform
 
 ---
 
