@@ -1,6 +1,12 @@
 {
   "short_name": "Haltdos Docs",
   "name": "Haltdos Documentation",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://docs.haltdos.com/manifest.json"
+    }
+  ],
   "icons": [
     {
       "src": "/img/logo/icon_light.png",
@@ -8,7 +14,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "./introduction.html",
+  "start_url": "./index.html",
   "background_color": "#0d1b38",
   "display": "standalone",
   "scope": "./",
