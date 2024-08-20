@@ -4,16 +4,15 @@ sidebar_position: 0
 
 # Settings
 
-Overview of Stack settings
+### Overview of System settings
 
 ---
 
 Stack settings provide users with additional tools to configure advanced options in Haltdos Platform. Users can integrate with 3rd party solutions such as Backup, Syslog servers, AAA, etc., customise dashboards and reports, generate API token for API driven solution management.
 
-1. [**Reports**](/enterprise/platform/system/settings/reports)
-2. [**Dashboards**](/enterprise/platform/system/settings/dashboards)
-3. [**Log Retention**](/enterprise/platform/system/settings/log_retention)
-4. [**Forensics**](/enterprise/platform/system/settings/forensics)
-4. [**Task Management**](/enterprise/platform/system/settings/scheduler)
-5. [**Updates**](/enterprise/platform/system/settings/updates)
-
+1. [**Task Management**](./scheduler.md)
+2. [**Reports**](./reports.md)
+3. [**Dashboards**](./dashboards.md)
+4. [**Log Retention**](./log_retention.md)
+5. [**Forensics**](./forensics.md)
+6. [**Actions**](./actions.md)

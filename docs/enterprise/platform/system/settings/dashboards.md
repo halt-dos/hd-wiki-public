@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Dashboards
 
-Cutomize and create new dashboards in Haltdos Platform
+### Cutomize and create new dashboards in Haltdos Platform
 
 ---
 
@@ -20,7 +20,7 @@ By default, Haltdos solutions come with pre-build dashboards. This module allows
 
 ### How to Use:
 
-1. Go to **Stack > Settings > Dashboard**
+1. Go to **System > Settings > Dashboard**
 2. Configure your settings
 3. Click **Save Changes**
 

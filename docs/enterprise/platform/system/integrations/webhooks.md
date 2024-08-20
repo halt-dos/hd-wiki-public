@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Webhooks
 
-Integration with external 3rd party solutions for notification and alerts via APIs
+### Integration with external 3rd party solutions for notification and alerts via APIs
 
 ---
 
@@ -14,24 +14,34 @@ Haltdos platform can easily integrate with one or more API endpoints to send ale
 
 ### How to Use:
 
-1. Go to **Stack** > **Integration** > **Webhooks**.
-2. Click on the button  **Add Webhoks**    |
+1. Go to **System** > **Integration** > **Webhooks**.
+2. Click on the button  **Add Webhooks** 
 3. Configure your settings
 4. Click **Save Changes**
 
 ### Description:
 
 **Enable**
-Select whether to Enable it or Disable it. 
+
+  Select whether to Enable it or Disable it. 
 
     Accepted values: Enable / Disable
 
-    Default: Enable 
+    Default: Disable 
 
 **Name**
-Specify the Name 
+
+  Specify the Name 
 
     Accepted values: String
+
+    Default: Blank 
+
+**Stack**
+
+  Specify the Stack
+
+    Accepted values: Dropdown list of stacks available
 
     Default: Blank 
 
@@ -57,7 +67,7 @@ This option helps the user to mention the payload location.
 
     Accepted values: ARG / PARAM / BODY
 
-    Default: ARG 
+    Default: PARAM 
 
 **Payload Name**
 
