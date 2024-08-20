@@ -20,28 +20,30 @@ const CustomDocItem = props => {
   }, []);
 
   return (
-    <div
-      className={
-        props.location.pathname === `/v8/introduction` || props.location.pathname === `/v8/enterprise` || props.location.pathname === `/v8/community` || props.location.pathname === `/v8/professional` ||
-        props.location.pathname === `/v6/introduction` || props.location.pathname === `/v6/enterprise` || props.location.pathname === `/v6/community` ||
-        props.location.pathname === `/introduction` || props.location.pathname === `/enterprise` || props.location.pathname === `/community` || props.location.pathname === `/professional` ||
-        props.location.pathname === `/haltdos-wiki/introduction` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community` || props.location.pathname === `/haltdos-wiki/professional` ||
-        props.location.pathname === `/haltdos-wiki/v6/introduction` || props.location.pathname === `/haltdos-wiki/v6/enterprise` || props.location.pathname === `/haltdos-wiki/v6/community`
-          ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
-          : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
-      }
-    >
-      <ActualDocItem {...props} />
-      <div
-        className={
-          props.location.pathname === `/v6/introduction` || props.location.pathname === `/v6/enterprise` || props.location.pathname === `/v6/community` ||
-          props.location.pathname === `/introduction` || props.location.pathname === `/enterprise` || props.location.pathname === `/community` || props.location.pathname === `/professional` ||
-          props.location.pathname === `/haltdos-wiki/introduction` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community` || props.location.pathname === `/haltdos-wiki/professional` ||
-          props.location.pathname === `/haltdos-wiki/v6/introduction` || props.location.pathname === `/haltdos-wiki/v6/enterprise` || props.location.pathname === `/haltdos-wiki/v6/community`
-            ? `custom_doc_item_footer-x-wide`
-            : styles['custom_doc_item_footer']
-        }
-      >
+        <div
+          className={
+              props.location.pathname === `/v7/introduction` || props.location.pathname === `/v7/enterprise` ||
+              props.location.pathname === `/v6/introduction` || props.location.pathname === `/v6/enterprise` ||
+              props.location.pathname === `/introduction` || props.location.pathname === `/enterprise` || props.location.pathname === `/community/introduction` || props.location.pathname === `/professional/introduction` ||
+              props.location.pathname === `/haltdos-wiki/introduction` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community` || props.location.pathname === `/haltdos-wiki/professional` ||
+              props.location.pathname === `/haltdos-wiki/v6/introduction` || props.location.pathname === `/haltdos-wiki/v6/enterprise`
+              ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
+              : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
+          }
+        >
+        <ActualDocItem {...props} />
+        <div
+          className={
+            props.location.pathname === `/v7/introduction` || props.location.pathname === `/v7/enterprise` ||
+              props.location.pathname === `/v6/introduction` || props.location.pathname === `/v6/enterprise` ||
+              props.location.pathname === `/introduction` || props.location.pathname === `/enterprise` || props.location.pathname === `/community/introduction` || props.location.pathname === `/professional/introduction` ||
+              props.location.pathname === `/haltdos-wiki/introduction` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community` || props.location.pathname === `/haltdos-wiki/professional` ||
+              props.location.pathname === `/haltdos-wiki/v6/introduction` || props.location.pathname === `/haltdos-wiki/v6/enterprise` ||
+              props.location.pathname === `/haltdos-wiki/v7/introduction` || props.location.pathname === `/haltdos-wiki/v7/enterprise`
+              ? `custom_doc_item_footer-x-wide`
+              : styles['custom_doc_item_footer']
+          }
+        >
         {/*<PageHelpful />*/}
         <CustomFooter />
       </div>

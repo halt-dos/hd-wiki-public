@@ -9,7 +9,7 @@ sidebar_position: 1
 ![servers2](/img/adc/v7/docs/server1.png)
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) > **Server Groups**.
+1. Go to Stack > [**SLB**](/v7/enterprise/adc) > [**Listeners**](../listeners.md) > **Server Groups**.
 
 2. Select the **Group name**.
 

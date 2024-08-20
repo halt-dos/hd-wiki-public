@@ -53,7 +53,7 @@ Users first move to the Stack > Instances > Network > Routing Table and create a
 ![Diagram](/img/llb/v6/scenarios/scenario1-7.png)
 
 **Step 5 : Add the interface to the LLB settings page.**
-After adding the interface into the interface group, we need to add an interface into LLB settings. The need to go to Stack > LLB >Settings and click on Add Interface option and fill in details and save changes. Users can also refer to this guide: [LLB Settings](/enterprise/llb/llb_settings).
+After adding the interface into the interface group, we need to add an interface into LLB settings. The need to go to Stack > LLB >Settings and click on Add Interface option and fill in details and save changes. Users can also refer to this guide: [LLB Settings](/v7/enterprise/llb/llb_settings).
 
 ![Diagram](/img/llb/v6/scenarios/scenario1-8.png)
 
@@ -66,4 +66,4 @@ The user needs to configure the SNAT so that natting could be performed. The use
 
 ![Diagram](/img/llb/v6/scenarios/scenario1-11.png)
 
-In this way, the user can set up the basic [**Haltdos LLB**](/enterprise/llb) configuration with two ISP connections.
+In this way, the user can set up the basic [**Haltdos LLB**](/v7/enterprise/llb) configuration with two ISP connections.

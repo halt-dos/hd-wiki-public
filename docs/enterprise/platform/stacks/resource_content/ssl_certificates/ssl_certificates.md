@@ -61,51 +61,18 @@ To upload custom certificates, follow the steps below:
 
 #### Description:
 
-<<<<<<< HEAD
-**Scope**
-
-Users can defind the scope of the certificate.
-
-    Accepted values: Select App / Resources
-
-    Default: Blank
-
-=======
->>>>>>> main
 **Certificate Name**
 
 User can specify the userfriendly name for the certificate.
 
     Accepted values: String
-<<<<<<< HEAD
 
     Default: Blank 
 
-**Public Key**
-=======
->>>>>>> main
-
-    Default: Blank 
-
-<<<<<<< HEAD
-    Accepted values: String
-
-    Default: Blank 
-
-**Private Key**
-=======
 **Certificate Domain**
->>>>>>> main
 
 User can specify the userfriendly name for the certificate.
 
-<<<<<<< HEAD
-    Accepted values: String
-
-    Default: Blank 
-
-**Export Certificate**
-=======
     Accepted values: Select Domain
 
     Default: Blank 
@@ -117,12 +84,6 @@ Users can defind the scope of the certificate.
     Accepted values: Select App / Resources
 
     Default: Blank
->>>>>>> main
-
-
-    Accepted values: Select and Export SSL certificate
-
-    Default: Blank 
 
 :::info
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key

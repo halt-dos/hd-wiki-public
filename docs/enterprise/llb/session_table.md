@@ -13,7 +13,7 @@ Session tables provides us information about the traffic that is being moved ove
 
 This tables contain column with timestamp, source IP, source port, destination IP, destination port, type of NAT (SNAT or DNAT) for each and every request.
 
-Session table feature is by default configured in disable mode. To enable, we need to go to **Rules** > [**Log Rules**](/v8/cloud/waf/listener/profiles/rules/log_rules). We need to create a new log rule in order to capture packet information. Users can refer [**Log Rules**](/v8/cloud/waf/listener/profiles/rules/log_rules) to configure log rule.
+Session table feature is by default configured in disable mode. To enable, we need to go to **Rules** > [**Log Rules**](/cloud/waf/listener/profiles/rules/log_rules). We need to create a new log rule in order to capture packet information. Users can refer [**Log Rules**](/cloud/waf/listener/profiles/rules/log_rules) to configure log rule.
 
 ![llbsettings](/img/llb/v8/llb_session_table.png)
 
