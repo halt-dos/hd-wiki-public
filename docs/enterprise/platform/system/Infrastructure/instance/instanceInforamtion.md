@@ -1,0 +1,27 @@
+---
+sidebar_position: 5
+---
+
+# Instance Information
+
+---
+It shows the information of the instance.  
+  
+It contains various fields that are as follows:  
+1. Details.
+2. Logical Mapping.
+3. Specs.
+4. Metrics.
+5. Version.
+6.INternal Metadata.
+
+![Monitor](/img/platform/v8/docs/sysIinformation.png)  
+
+#### How to Use:
+
+1. Go to **Stack > Infrastructure  > Instance > Select Instance > Instance Information**
+2. Configure your settings
+3. Click **Save CHanges**
+
+
+

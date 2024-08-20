@@ -12,7 +12,7 @@ Haltdos solutions provides comprehensive reporting via dashboards on GUI or sent
 
 To enable reporting use Scheduler (under Stack Settings) to specify report type, duration and scope. The reports can be generated for various durations - Day, Week, Month or Custom time range as desired.
 
-![reports](/img/platform/v8/docs/reports.png)
+![reports](/img/platform/v8/docs/sysReports.png)
 
 ![reports](/img/platform/v8/docs/reports2.png)
 

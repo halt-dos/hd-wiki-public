@@ -43,8 +43,8 @@ const config = {
             },
             '7.0': {
               label: 'v7',
-              path: 'v7',
               banner: 'none',
+              path: 'v7',
               badge: true
             },
             '6.0': {

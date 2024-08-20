@@ -14,9 +14,9 @@ Haltdos platform allows users to create custom dashboards. Each dashboard can in
 By default, Haltdos solutions come with pre-build dashboards. This module allows users to extend that functionality as per requirements.
 :::
 
-![dashboards](/img/platform/v8/docs/dashboard.png)
+![dashboards](/img/platform/v8/docs/sysDashboard.png)
   
-![dashboards](/img/platform/v8/docs/dashboard2.png)
+![dashboards](/img/platform/v8/docs/sysDahboard2.png)
 
 ### How to Use:
 

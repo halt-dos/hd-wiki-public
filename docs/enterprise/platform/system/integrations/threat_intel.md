@@ -54,7 +54,7 @@ Stack is selected here
 
 **Task Occurrence**
 
-Select number of times for the tasck occurence
+Select number of times for the task occurence
 
     Accepted values: ONCE / MINUTE / HOUR / DAILY / WEEKLY / MONTHLY
 
