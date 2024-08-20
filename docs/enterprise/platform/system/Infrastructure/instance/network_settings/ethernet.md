@@ -16,12 +16,9 @@ This section allows you to configure Ethernet settings on available NIC cards on
 2. Configure your settings
 3. Click **Save CHanges**
 
-<<<<<<< HEAD:docs/enterprise/platform/system/Infrastructure/instance/network_settings/ethernet.md
 ![Ethernet](/img/platform/v8/docs/sysEthernet.png)
 
 
-=======
->>>>>>> db1ff1fef26ddb866d971e0894ec3617062fdf2f:docs/enterprise/platform/system/instance/network_settings/ethernet.md
 ### Description
 
 ##### System Name
