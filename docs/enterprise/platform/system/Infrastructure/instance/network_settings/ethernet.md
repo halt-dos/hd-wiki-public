@@ -117,10 +117,6 @@ It is an application layer protocol that is used to provide:
 3. DNS Address,
 4. Gateway IP.
 
-    Accepted values: Enable / Disable
-
-    Default: Disable
-
 **Primary IP Address**
 
 This option allows users to add the primary IP address to the interface.

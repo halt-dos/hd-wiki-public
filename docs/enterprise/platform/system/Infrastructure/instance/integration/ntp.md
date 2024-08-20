@@ -52,7 +52,7 @@ User can specify the NTP hash used for authentication.
 
 **NTP Password**
 
-Users can spcify the password
+Users can specify the password
 
     Accepted values: String
 

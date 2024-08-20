@@ -14,7 +14,7 @@ Haltdos supports having multiple administrators for managing Haltdos appliances.
 
 **How to Use:**
 
-1. Go to **Management** under **Administrator**
+1. Go to **Management** then **Administrator**.
 2. Configure your settings
 3. Click **Save Changes**
 

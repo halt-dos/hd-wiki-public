@@ -63,7 +63,7 @@ This option allows users to specify the hostname or IP address of the backup ser
 
 **SFTP Enabled**
 
-This option helps to choose if the user wants data transfer is over SFTP (Port 22), otherwise data will transfer using FTP (Port 21). Users can enable or disable the settings as per their chioce. By default, it is set to disable.
+This option helps to choose if the user wants data transfer is over SFTP (Port 22), otherwise data will transfer using FTP (Port 21). Users can enable or disable the settings as per their choice. By default, it is set to disable.
 
     Accepted values: Enabled / Disabled
 
