@@ -10,8 +10,8 @@ Scheduling repeated tasks in Haltdos Platform
 
 Haltdos supports automating repeated tasks such as reports, auto-profiling, periodic learning, scanning, etc. Stack users can configure these schedules as per their choice of periodicity to get automated emails / API alerts from the solution.
 
-![scheduler](/img/platform/v8/docs/task_management.png)
-
+<!--![scheduler](/img/platform/v8/docs/task_management.png)
+-->
 ### How to Use:
 
 1. Go to **Stack > Settings > Task Management**
