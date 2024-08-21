@@ -1,8 +1,4 @@
 {
     "label": "WAF CE Knowledge Base",
-    "position": 3,
-    "link": {
-      "type": "doc",
-      "id": "kb"
-    }
+    "position": 3
 }
