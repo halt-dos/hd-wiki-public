@@ -44,6 +44,10 @@ const sidebars = {
                 {
                     type: 'category',
                     label: 'Knowledge Base',
+                    link: {
+                        type: "doc",
+                        id: "kb"
+                    },
                     collapsed: true,
                     items: [
                         {
