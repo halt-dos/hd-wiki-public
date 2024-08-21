@@ -1,3 +1,7 @@
+---
+sidebar_position: 0
+---
+
 # WAF CE Knowledge Base
 
 This section describes the knowledge base of how to use Haltdos WAF Community Edition for multiple use cases.
