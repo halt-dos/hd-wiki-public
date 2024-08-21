@@ -1,9 +1,5 @@
 {
     "label": "Knowledge Base",
-    "position": 6,
-    "link": {
-      "type": "doc",
-      "id": "kb"
-    }
+    "position": 6
   }
   
