@@ -76,3 +76,8 @@ Some of the WAF use cases are mentioned below:
 66. [How to check the backend server down incident on Haltdos console?](./kb-1066.md)
 67. [How to configure IP transparency through Haltdos Solution?](./kb-1067.md)
 68. [Why do we need to configure web application to accept traffic from WAF only?](./kb-1068.md)
+69. [How to capture packet and trace them through tcp dump utility?](./kb-1069.md)
+70. [How to decrypt SSL/TLS traffic using Wireshark and private keys?](./kb-1070.md)
+71. [How to decrypt SSL/TLS using Wireshark and SSLKEYLOGFILE environment variable on Firefox or Google Chrome using Wireshark?](./kb-1071.md)
+72. [Provide security baseline approaches for an application integrated with Haltdos WAF](./kb-1072.md)
+73. [How to troubleshoot issues for applications integrated with Haltdos WAF?](./kb-1073.md)
