@@ -79,5 +79,5 @@ Some of the WAF use cases are mentioned below:
 69. [How to capture packet and trace them through tcp dump utility?](./kb-1069.md)
 70. [How to decrypt SSL/TLS traffic using Wireshark and private keys?](./kb-1070.md)
 71. [How to decrypt SSL/TLS using Wireshark and SSLKEYLOGFILE environment variable on Firefox or Google Chrome using Wireshark?](./kb-1071.md)
-72. [Provide security baseline approaches for an application integrated with Haltdos WAF](./kb-1072.md)
-73. [How to troubleshoot issues for applications integrated with Haltdos WAF?](./kb-1073.md)
+72. [What are the baseline security approaches for an application onboarded on Haltdos WAF](./kb-1072.md)
+73. [Primary troubleshooting steps for issues found in applications onboarded on Haltdos WAF](./kb-1073.md)
