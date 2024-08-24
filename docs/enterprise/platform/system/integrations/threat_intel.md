@@ -16,9 +16,9 @@ Custom threat intel can be pulled into Haltdos appliances from three sources: pu
 Only IPv4/IPv6 addresses / prefix having poor reputation is currently supported.
 :::
 
-![threat_feeds](/img/platform/v8/docs/tIntel1.png)
+![threat_feeds](/img/platform/v8/docs/tintel.png)
 
-![threat_feeds](/img/platform/v8/docs/threatIntel2.png)
+![threat_feeds](/img/platform/v8/docs/tintel2.png)
 
 ### How to Use:
 

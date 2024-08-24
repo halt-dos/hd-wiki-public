@@ -10,7 +10,7 @@ sidebar_position: 3
 
 Haltdos platform can easily integrate with one or more API endpoints to send alerts and notifications for timely action (as necessary). API integration can be done for various reasons such as integration with SMS Gateway, internal ticketing system, etc.
 
-![webhooks](/img/platform/v8/docs/sysWebHooks.png)
+![webhooks](/img/platform/v8/docs/webhook.png)
 
 ### How to Use:
 

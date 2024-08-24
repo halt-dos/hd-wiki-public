@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 # Task Management
@@ -10,7 +10,7 @@ sidebar_position: 1
 
 Haltdos supports automating repeated tasks such as reports, auto-profiling, periodic learning, scanning, etc. Stack users can configure these schedules as per their choice of periodicity to get automated emails / API alerts from the solution.
 
-![scheduler](/img/platform/v8/docs/sysTaskMang.png)
+![scheduler](/img/platform/v8/docs/tamanag.png)
 
 ### How to Use:
 
@@ -107,11 +107,3 @@ Specify the Recipients
     Accepted values: Enable/Disable
 
     Default: Disable
-
-**Recipents**
-
-  Choose recipient/recipients for the task
-
-    Accepted values: Choose from Dropdown list
-
-    Default: Blank
