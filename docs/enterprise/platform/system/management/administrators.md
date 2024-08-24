@@ -10,7 +10,7 @@ Managing Administrators on Haltdos Platform
 
 Haltdos supports having multiple administrators for managing Haltdos appliances. This section describes how to add / delete and update administrators on Haltdos GUI.
 
-![users](/img/platform/v8/docs/sysAdmin.png)
+![users](/img/platform/v8/docs/mang_admin.png)
 
 **How to Use:**
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Log Retention
@@ -13,7 +13,7 @@ This feature allows users to set the log retention period. The log retention per
 Depending upon the organization's policy, we can change or less the dya for logs.
 :::
 
-![aaa_policy](/img/platform/v8/docs/sysLogRetention.png)
+![aaa_policy](/img/platform/v8/docs/syslogreten.png)
 
 ### How to Use:
 
