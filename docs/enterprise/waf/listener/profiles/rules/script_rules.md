@@ -8,7 +8,7 @@ Developer Script strategies will be implemented as a developer script rule. This
    
 For the given URI, the developer script will be executed and if the condition matches the rule the appropriate action will be taken as per the rule. User can define their own logic which may not be present in the WAF rules and thus could mitigate the specific attack.
 
-![Script Rule](/img/waf/v8/docs/scriptRules.png)
+![Script Rule](/img/waf/v8/docs/WAFproScriptRule.png)
    
 The developer script defines two phases:
 1. **Request Phase**: This developer script is executed before sending the request to web-servers.

@@ -4,7 +4,7 @@ sidebar_position: 2
 # Form Rule 
 ### Overview
 Form Validation offers a positive security model of Application Firewall and allows enforcing specific values or a range of values for various form fields of a web application form.
-![Form Page Screen](/img/waf/v8/docs/formRule.png)
+![Form Page Screen](/img/waf/v8/docs/WAFproformrule.png)
  
 ![Form Page Screen](/img/waf/v8/docs/formRule2.png)
 

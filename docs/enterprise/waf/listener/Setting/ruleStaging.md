@@ -12,7 +12,7 @@ Rule Stagging allow WAF to stage for the record purposes of the signatures.
 Users can configure below rule staging settings for Listener.
 
 
-![Listener Rule Stagging](/img/waf/v8/docs/ruleStagging.png)  
+![Listener Rule Stagging](/img/waf/v8/docs/WAFruleStagginf.png)  
   
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Settings** > **Rule Staging**.  

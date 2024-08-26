@@ -14,7 +14,7 @@ Haltdos’s security is adaptive through automated learning and can make policy 
 This module also defends against 0-day attacks by assigning suspicion score to every request based on anomaly based machine learning techniques. The learning requires creation of baseline during normal operations to understand user and application behavior for every URL. Once the baseline has been set, the WAF solution starts to look for anomalous patterns and block malicious 0-day attacks. As an adaptive solution, the learning continues at the set sampling rate to improve the baseline for dynamic web applications.
 
 
-![Listener Operational Settings](/img/waf/v8/docs/learning.png)  
+![Listener Operational Settings](/img/waf/v8/docs/WAFlearningSetting.png)  
   
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Settings**.  

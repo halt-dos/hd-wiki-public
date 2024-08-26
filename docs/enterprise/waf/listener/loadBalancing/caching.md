@@ -8,7 +8,7 @@ sidebar_position: 4
 ## Overview
 When caching is enabled, WAF saves responses in a directory and uses them to respond to clients without having to proxy requests for the same content every time.
 
-![Caching](/img/waf/v8/docs/caching1.png)
+![Caching](/img/waf/v8/docs/WAFcaching.png)
 
 ![caching](/img/waf/v8/docs/caching2.png)  
 

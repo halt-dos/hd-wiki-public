@@ -11,7 +11,7 @@ Configure the application servers
 
 Configuration of upstream servers in a server group can be modified on-the-fly by using Servers.
 
-![Servers](/img/waf/v8/docs/servers1.png)
+![Servers](/img/waf/v8/docs/WAFserver.png)
 
 ![Servers](/img/waf/v8/docs/servers2.png)
 

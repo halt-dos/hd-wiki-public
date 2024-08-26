@@ -7,7 +7,7 @@ sidebar_position: 9
    
 Correlation rules support using compounding logic to make more advanced rules that address your security needs. For example, "(Condition 1 and Condition 2)" means that if Condition 1 and Condition 2 are met, WAF should take the action that's specified in the correlation rule. Different matching conditions within the same rule are always compounded by using 'and'. For example, a rule that uses and might specify to block traffic from a certain IP address, and only if a certain browser is being used. 
    
-![Correlation Rule](/img/waf/v7/docs/correlation_rule.png)
+![Correlation Rule](/img/waf/v8/docs/WAFproCorrelation.png)
    
 ### How to Use:
 1. Follow the links: **WAF** > **Listener** > **Profiles** > **Rules** > **Correlation Rules**.

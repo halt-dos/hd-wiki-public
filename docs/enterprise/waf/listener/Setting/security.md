@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 # Web Security
 User can specify Web Security settings on this page for Listener
@@ -9,7 +9,7 @@ User can specify Web Security settings on this page for Listener
 ### Overview
 Bot Protection helps you quickly determine, manage, and mitigate automated requests. You can configure Advance bot settings in order to ensure advanced bot protection.
 
-![websec](/img/waf/v8/docs/security.png)
+![websec](/img/waf/v8/docs/WAFsecuritysetting.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Advanced Settings** > **Security**
