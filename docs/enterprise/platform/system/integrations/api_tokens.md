@@ -13,7 +13,7 @@ Haltdos platform is an API first solution supporting API access via JSON (RESTFu
 :::info
 All API requests are **Authorization: Bearer `<TOKEN>`** header. Depending upon requirement, specify **Content-Type: application/xml** for XML and **Content-Type**: **application/json** for JSON output. If not Content-Type header is found, API will resort to JSON output. 
 :::
-![apitokens](/img/platform/v8/docs/apitoken.png)
+![APIToken](/img/waf/v8/docs/Platformapitoken.png)
 
 ### How to Use:
 
