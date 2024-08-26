@@ -7,7 +7,7 @@ sidebar_position: 1
 #### Overview 
 Profile Setting specifies all the operational settings for user different application type (i.e. WEBSITE/WEB SERVICE/WEB SOCKET). It provides user protection and invokes signature rules to every configured specific settings for mentioned application type. Haltdos WAF supports all HTML versions (including HTML5).
 
-![Profile_settings](/img/waf/v8/docs/spSettings.png)
+![Profile_settings](/img/waf/v8/docs/WAFProfilesetting.png)
    
 ### How to Use:
 1. Go to **WAF** > **Listener** > **Profiles** > **Settings**.

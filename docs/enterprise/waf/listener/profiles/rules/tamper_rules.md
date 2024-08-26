@@ -9,7 +9,7 @@ sidebar_position: 8
    
 The Tamper rule is a feature of Haltdos WAF that provides encryption for the user input fields to protect from browser based malware stealing user's credentials, It also validates hidden input fields.
    
-![Tamper Rule](/img/waf/v8/docs/tamperRule1.png)
+![Tamper Rule](/img/waf/v8/docs/WAFproTamperRule.png)
    
 ![Tamper Rule](/img/waf/v8/docs/tamperRule2.png)
     

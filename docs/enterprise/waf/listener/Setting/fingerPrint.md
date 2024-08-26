@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 #  Fingerprint 
 User can specify fingerprint settings on this page for Listener
@@ -9,7 +9,7 @@ User can specify fingerprint settings on this page for Listener
 ### Overview
 Fingerprint Protection helps you quickly determine, manage, and mitigate automated requests. 
 
-![fingerprint](/img/waf/v8/docs/fingerprint.png)
+![fingerprint](/img/waf/v8/docs/WAFfingerpriting.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Advanced Settings** > **Fingerprint**

@@ -6,7 +6,7 @@ sidebar_position: 3
 ### Overview
  A Firewall Rule is used to set up regulations on a particular domain. When a request is made to that domain, the WAF checks for the violation of a rule and carries out the appropriate action that is configured by the User.  
 
-![Firewall Condition](/img/waf/v8/docs/fireWallRule.png)
+![Firewall Condition](/img/waf/v8/docs/WAFproFirewallrule.png)
 
 The following actions are available to the User :
 1. **DROP  & RECORD REQUEST** - If the Request to the subscribed domain matches the Firewall Rule, an event is generated but the request will not be allowed through the WAF.

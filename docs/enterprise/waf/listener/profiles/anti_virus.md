@@ -8,7 +8,7 @@ Get your files scanned before you upload them using antivirus
 ## Overview
 Our WAF provides the facility of in-built antivirus. Also, the user can set up their own antivirus and use it with hdPlatform. If someone tries to upload a malicious file, then AV scan will stop it from getting uploaded and will generate an event as AV Scan drops.
 
-![Antivirus](/img/waf/v8/docs/antivirus.png)
+![Antivirus](/img/waf/v8/docs/WAFprofileantivirus.png)
 
 ### Antivirus Mode 
 **Disabled**: Files will not get scanned if the mode is disabled.

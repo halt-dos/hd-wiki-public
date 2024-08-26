@@ -11,7 +11,7 @@ Configure Web Security Policy for HTML based websites - , Dynamic, Wordpress, et
 
 A web policy or policies are constraints or mandates in relation to technical constraints, legal, editorial, and compliance. Configure policies that HTTP(s) requests must conform to when requesting data from the backend web application.
    
-![Web Policy](/img/waf/v8/docs/webPolicy1.png)
+![Web Policy](/img/waf/v8/docs/WAFwebpolicy.png)
 
 ![webpolicy](/img/waf/v8/docs/webPolicy2.png)
 
