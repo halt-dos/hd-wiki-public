@@ -22,7 +22,7 @@ Depending upon the type of event, clicking on any Event shows details of the inc
 
 Further to detailing the incident through Events, users can perform various actions. For example, virtual patching functionality is implemented through actions in Event Details. Virtual Patching is the ability to create custom WAF rules from the result of a security scan.
 
-![Events](/img/waf/v8/docs/incident.png)
+![Events](/img/waf/v8/docs/WAFincident1.png)
 
 ## How to Use:
 
