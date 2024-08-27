@@ -41,5 +41,5 @@ Users can enable auto-refresh in order to refresh the real-time alerts for reque
 
 :::note Note
 Events are not verified via email or API. To recieve alerts, you have to create Alarms. All alarm
- triggers are notified to selected authorized users on the platform
+ triggers are notified to selected authorized users on the platform.
 :::
