@@ -4,8 +4,6 @@ sidebar_position: 4
 
 # Cloud Signaling
 
-
-
 A faster, automated approach to comprehensive DDoS Mitigation Enterprises need comprehensive, integrated protection from the data center edge to the service provider cloud. For example, when data center operators discover they are under a service-disrupting DDoS attack, they should be able to quickly mitigate the attack in the cloud by triggering a signal to upstream infrastructure of their provider’s network. 
 
 ![signaling_settings](\img\ddos\v7\docs\cloudsignaling.png)
