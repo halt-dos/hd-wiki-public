@@ -8,7 +8,7 @@ sidebar_position: 2
 
 This option allows to configure global settings for DHCP Network.
 
-![dhcp](/img/dhcp/dhcp1.png)  
+![dhcp](/img/platform/v8/docs/dhcp_setting.png)
   
 ### How to Use:  
 

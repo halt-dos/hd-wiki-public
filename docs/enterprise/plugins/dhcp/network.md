@@ -6,7 +6,7 @@ sidebar_position: 1
 
 This section details how to configure the Haltdos solution as a DHCP server for assigning IP addresses.
 
-![dhcp](/img/dhcp/dhcp2.png)
+![dhcp](/img/platform/v8/docs/dhcp_network.png)
 
 ### How to Use:
 
