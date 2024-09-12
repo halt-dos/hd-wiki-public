@@ -81,3 +81,4 @@ Some of the WAF use cases are mentioned below:
 71. [How to decrypt SSL/TLS using Wireshark and SSLKEYLOGFILE environment variable on Firefox or Google Chrome using Wireshark?](./kb-1071.md)
 72. [What are the baseline security approaches for an application onboarded on Haltdos WAF](./kb-1072.md)
 73. [Primary troubleshooting steps for issues found in applications onboarded on Haltdos WAF](./kb-1073.md)
+74. [Adding Admin/Member and configuring password](/kb/waf/kb-1074)
