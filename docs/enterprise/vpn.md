@@ -11,6 +11,6 @@ It enables devices with an internet connection to establish a secure remote acce
 
 **Haltdos Remote Access Gateway** allows user to configure VPN using following options: 
 
-1. [**Settings**](vpn/settings)
-2. [**VPN Users**](vpn/vpn-users.md)
-3. [**VPN Group**](vpn/vpn-group.md)
+1. [**Settings**](/enterprise/vpn/settings/)
+2. [**Users**](vpn/vpn-users.md)
+3. [**Group**](vpn/vpn-group.md)
