@@ -18,7 +18,15 @@ SNMP relies on the concept of an MIB to organize how information about device me
 
 SNMP uses a blend of pull and push communications between network devices and the network management system. Haltdos devices that communicate through SNMP respond to it by delivering protocol data units, commonly known as SNMP GET requests. All of these communications are recorded, and network monitoring software uses them to obtain SNMP data. Network admins can track the data value they specify using these queries.
 
+#### SNMP Support
+
+SNMP 
+
 ![snmp](/img/platform/v8/docs/sysSnmp.png)
+
+Select **Users** to configure versions.
+
+![snmp_user](/img/platform/v8/docs/snmp_users.png)
 
 ### How to Use:
 
@@ -116,6 +124,15 @@ Users can enter SNMP monitor port address.
 
     Default: 162 
 
+#### SNMP Users
+
+In the SNMP user section the version can be assigned with the respective users these versions are as follows 
+
+##### **Versions**:  
+
+- **SNMPv1**: The original version, basic security.  
+- **SNMPv2c**: Improved performance and additional features, still with basic security.  
+- **SNMPv3**: Introduces strong security features, including authentication and encryption.
 
 
 

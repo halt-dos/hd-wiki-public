@@ -12,3 +12,15 @@ Three types of Policies:
 1. [**Web Policy**](web_policy.md)
 2. [**JSON Policy**](json_policy.md)
 3. [**XML Policy**](xml_policy.md)
+
+#### Request Normalization  
+
+Every request that is evaluated is first normalized. During the normalization process, decoding is performed to ensure that the text is assessed in its decoded form. This includes various decoding methods such as:
+
+- URL Decoding
+- HTML Decoding
+- UTF-8 Decoding
+- XML Null Byte Removal  
+
+By normalizing requests, the WAF can effectively evaluate the content and detect potential vulnerabilities more accurately.
+

@@ -8,6 +8,28 @@ These are in-built rules of WAF.
 ### Overview 
 Signatures contain rules that are evaluated for each request that passes through WAF. The rules offer protection from many different types of attacks for Web Service/API including OWASP top 10 as well as it can help users to specify the behavior for their application. The WAF has multiple types of Rules designed to target specific use cases.
 
+#### Signature Capabilities  
+
+These capabilities enable the WAF to effectively safeguard applications against a wide range of threats, ensuring a robust security posture tailored to the specific technologies in use.
+
+##### **Framework-Specific Targets:**
+
+- .NET
+- Java
+- PHP
+- Struts2
+
+##### **Vulnerability Protection:**
+
+- SQL Injection
+- Cross-Site Scripting (XSS)
+- Local File Inclusion (LFI)
+- Remote File Inclusion (RFI)
+- Insecure Object References
+- Command Injection Vulnerabilities
+- Remote Code Execution (RCE) Commands
+
+
 ![Signatures](/img/waf/v8/docs/WAFproSign.png)
 
 ## How to Use :
@@ -49,3 +71,7 @@ It specifies the action need to perform on the current rule. In order to delete 
 We can reset learning by clicking the **Reset Learning** button at the top right of the page.
 
 We can also update the rule status at once by selecting multiple rules. After clicking on the **Update Status** button, select desired status to update.
+
+:::note
+The signatures are updated daily, and if they aren't, a rollback will be performed accordingly.
+:::
