@@ -1,6 +1,5 @@
+# Profiles
 Profiles create different security profiles for different sub-sections of your website.
-
----
 
 ### Overview
 Profiles is the default profile that contains most commonly used web application settings served through a virtual service. For customizing a profile, it is highly recommended to create a new profile instead of editing the default profile. Haltdos Profile perform the learning and blocking globally and per page basis.

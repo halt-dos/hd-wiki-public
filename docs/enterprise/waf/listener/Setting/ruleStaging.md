@@ -7,9 +7,13 @@ Rule Stagging allow WAF to stage for the record purposes of the signatures.
 
 ---
 
-## Overview
+### Overview
 
 Users can configure below rule staging settings for Listener.
+
+#### **Automatic Updates and Staging Process**
+
+All updates are automatically pushed to the system. These rules are initially placed in staging mode before being deployed to production. This process ensures that if any disruptions occur in the production environment, the system can easily roll back to the previous staging mode, minimizing potential impacts.  
 
 
 ![Listener Rule Stagging](/img/waf/v8/docs/WAFruleStagginf.png)  
