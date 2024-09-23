@@ -16,5 +16,5 @@ Resources is the option where user can set the resources information which can b
 5. [**Web pages**](web_pages.md)
 6. [**Encryption Keys**](encryption_key.md)
 7. [**Web pages**](web_pages.md)
-8. [**Scripts**](custom_scripts.md)
+8. [**Scripts**](ip_feeds.md)
 
