@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 
-# Variable
+# Variable Rules
 Variables are dynamic values that can affect the behaviour of current request of the application.
 
 ---
