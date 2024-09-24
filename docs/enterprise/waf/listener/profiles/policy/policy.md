@@ -10,10 +10,12 @@ Haltdos WAF associates security policies with both HTTP and HTTPS services. It i
 
 #### Request Normalization  
 
-Every request that is evaluated is first normalized. During the normalization process, decoding is performed to ensure that the text is assessed in its decoded form. This includes:
-- Decoding methods (URL, HTML, UTF-8, XML, etc.).  
-- Deserialization (XML, JSON, MQTT, etc.).  
+Every request that is evaluated is first normalized. During the normalization process, decoding is performed to ensure that the text is assessed in its decoded form. This includes:  
+
+- Decoding methods (URL, ULR, Base64, HTML, Recursive, Hexadecimal conversion, JSON, UTF-8, Slash inversion, XML, etc.).  
+- Deserialization (XML, JSON, MQTT, PHP etc.).  
 - Validation (headers, HTTP, null byte, etc.).  
+- Perform protocol verification on incomplete packets, retransmitted packets and forged malformed packets.
 
 By normalizing requests, the WAF can effectively evaluate the content and detect potential vulnerabilities more accurately.
 
