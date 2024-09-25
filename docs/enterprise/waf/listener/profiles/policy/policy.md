@@ -8,6 +8,17 @@ sidebar_position: 5
 
 Haltdos WAF associates security policies with both HTTP and HTTPS services. It includes preset configured security settings that apply to all associated services. The policies are shareable. You only have to create them once, and you can later assign them to more than one service. The rules of the security policy specify inspection criteria for both input or output data and help in determining vulnerable or malicious data. It includes both negative and positive elements. (Major section is a negative element). For most sites, it implements good web application security. Using security rules for different subdomains, you can custom-design security policy.
 
+#### Request Normalization  
+
+Every request that is evaluated is first normalized. During the normalization process, decoding is performed to ensure that the text is assessed in its decoded form. This includes:  
+
+- Decoding methods (URL, ULR, Base64, HTML, Recursive, Hexadecimal conversion, JSON, UTF-8, Slash inversion, XML, etc.).  
+- Deserialization (XML, JSON, MQTT, PHP etc.).  
+- Validation (headers, HTTP, null byte, etc.).  
+- Perform protocol verification on incomplete packets, retransmitted packets and forged malformed packets.
+
+By normalizing requests, the WAF can effectively evaluate the content and detect potential vulnerabilities more accurately.
+
 Three types of Policies:
 1. [**Web Policy**](web_policy.md)
 2. [**JSON Policy**](json_policy.md)

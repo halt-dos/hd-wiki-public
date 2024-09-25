@@ -21,16 +21,6 @@ Redirection Rules is a feature of Haltdos DDOS that allows application owners to
 
 3. Click on **Save Changes**.
 
-| Parameters| Accepted Values | Default
-| ----------- | ----------- |-----------|
-| Rule Name|String|None
-| Rule Message|Description for the rule in String format|None
-| Rule Priority|Integer|1
-| Match Criteria|Absolute URL path|None
-| Forward URL|Absolute URL path|None
-| Response Code|301, 302|302 - Temporary Redirect
-
-
 ### Description
 
 ##### **Rule Name**

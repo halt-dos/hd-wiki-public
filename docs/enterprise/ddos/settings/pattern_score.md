@@ -8,9 +8,9 @@ sidebar_position: 6
 
 ## Overview
 
-In today’s networks, cyber-attacks cause damage or theft and disrupt services with enormous economic and financial impacts. Software implementations cannot meet performance goals; a combination of software and hardware can be more effective for high-performance pattern matching. Packet content scanning at high speed has become extremely important due to its applications in network security, network monitoring, and traffic management in general. 
+Haltdos utilizes advanced packet scoring technology to detect and mitigate threats. Initially, the solution is deployed in learning mode, where it observes traffic patterns and behavior. After about two weeks, it shifts to mitigation mode, leveraging the learned attributes to minimize false positives while adapting to evolving traffic behavior. This continuous learning allows the system to adjust to changes in network traffic, ensuring long-term security.
 
-Haltdos supports pattern scoring on the behalf of the behavior of the packet.
+By scoring each packet based on deep packet inspection and contextual analysis—such as traffic rate, behavior, and request timing—the system assigns lower scores to genuine traffic and higher scores to potential attack traffic. This adaptive traffic shaping prioritizes legitimate traffic while preventing anomalies and attacks, offering near-zero false positives and protection against zero-day threats.
 
 ![pattern_score](/img/ddos/v8/ddos_pattern_score_1.png)
 

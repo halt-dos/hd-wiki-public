@@ -8,6 +8,14 @@ Haltdos WAF supports various types of rules for users to configure WAF as per th
 
 3.[**Redirectional rules**](redirectionalrules.md)
 
-4.[**Upstream rules**](upstreamrules.md)
+4.[**Variable rules**](variable.md)
 
-5.[**Variable rules**](variablerule.md)
+5.[**Transform rules**](transformrule.md)
+
+6.[**Forwarder rules**](forwarderrule.md)
+
+7.[**Upstream rules**](upstreamrules.md)
+
+
+
+

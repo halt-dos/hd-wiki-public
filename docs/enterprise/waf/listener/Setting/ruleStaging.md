@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 
 # Rule Staging
-Rule Stagging allow WAF to stage for the record purposes of the signatures.
+Rule Staging allow WAF to stage for the record purposes of the signatures.
 
 ---
 
