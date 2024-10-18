@@ -116,6 +116,17 @@ const config = {
         docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
         breadcrumbs: true
       },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'mssp',
+        path: 'mssp',
+        routeBasePath: '/mssp',
+        sidebarPath: require.resolve('./sidebars-mssp.js'),
+        docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
+        breadcrumbs: true
+      },
     ]
   ],
   themeConfig:
@@ -153,6 +164,7 @@ const config = {
           {to: 'professional/introduction', label: 'Professional', position: 'left'},
           {to: 'enterprise', label: 'Enterprise', position: 'left'},
           {to: 'cloud', label: 'Cloud', position: 'left'},
+          {to: 'mssp/introduction', label: 'MSSP', position: 'left'},
           {href: 'https://haltdos.com',label: 'Haltdos', target: '_blank', rel: null, position: 'right', className:'haltdos'},
           {
             type: 'search',
