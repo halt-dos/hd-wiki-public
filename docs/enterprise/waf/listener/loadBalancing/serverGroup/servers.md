@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Servers
 
-Configure the application servers
+Configuring Application Servers to which WAF will forward the Traffic.
 
 ---
 
@@ -96,6 +96,12 @@ This option allows user to make the server active/inactive. When marked Down the
     Accepted values: Ready / Down
 
     Default: Ready
+
+1. **Ready** - If the user has set the Ready value in this option then server will take part actively in handling the client requests.  
+
+2. **Down** - If the user has set the Down value in this option then server will not take part actively in handling the client requests.  
+
+3. **Gracefully Down** - Gracefully Down option will ensure no active connection will be break during the server down activity, server will be handling the old connection until con-current connection count reach to 0. Once con-current connection will be 0 then server will be marked as down at SLB level. Hence, with the help this option, user can gracefully down any server.  
 
 ##### **Slow Start** 
 
