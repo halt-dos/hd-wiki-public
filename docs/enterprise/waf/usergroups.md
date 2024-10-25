@@ -53,7 +53,7 @@ NTLM (NT LAN Manager) is an authentication protocol used to verify users' identi
 7. **RADIUS**:  
 RADIUS (Remote Authentication Dial-In User Service) authentication is a protocol used to centrally manage and authenticate users' access to networks by verifying credentials against a central server.
 
-8. **SSO**:
+8. **SSO**:  
 Single Sign-On (SSO) is an authentication process that allows users to access multiple applications or services with one set of login credentials, enhancing convenience and security by reducing the need to log in multiple times across platforms.
 
 #### User Group Settings
