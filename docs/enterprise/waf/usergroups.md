@@ -7,7 +7,7 @@ User group access management
 
 ---
 
-## Overview
+### Overview
 
 Haltdos Cloud provides multi-level RBAC access control over Stack. This allows owners to assign users with respective permissions on Haltdos Cloud.
 
@@ -20,18 +20,21 @@ Haltdos Cloud provides multi-level RBAC access control over Stack. This allows o
 3. Configure your settings
 4. Click on **Save Changes**
 
-| Parameter           | Accepted Values | Default Values |
-|---------------------|-----------------|----------------|
-| Group Name          | String          | Blank          |
-| Authentication Type | Drop Down       | Basic Auth     |
-
 ### Description
 
-#### **Group Name**  
+##### **Group Name**  
 Users can specify the user-friendly group name as per the need.
 
-#### **Authentication Type**
+    Accepted Value : String
+
+    Default Value : Blank
+
+##### **Authentication Type**
 Users can set the type of authentication used for the user group. Users can select from the below-mentioned authentication methods:
+
+    Accepted Value : Basic Auth, Key Auth, JWT, HMAC, LDAP, NTLM
+
+    Default Value : Basic Auth
 
 1. **Basic Auth**:
 Basic Authentication is a method for users to provide a username and password when making a request for access. The method is used by the request’s recipient to verify users’ identity and rights to access a resource.
@@ -51,67 +54,85 @@ Lightweight Directory Access Protocol (LDAP) is an internet protocol that works 
 6. **NTLM**:
 NTLM (NT LAN Manager) is an authentication protocol used to verify users' identity over a network. It operates through a challenge-response mechanism and is mostly used by legacy systems or non-domain-joined devices.
 
-#### User Group Settings
+##### **User Group Settings**
 
 Users can customize the user group settings and modify credentials for the users added to the user group.
 
-### How To configure User Group Settings:
+##### **How To configure User Group Settings:**
 
 1. Go to **Apps** > **WAF**> **User Groups** > Click on the group name
 2. Configure the Settings based on Authentication Type
 3. Click on **Save Changes**
 
-| Parameter        | Accepted Values | Default Values |
-|------------------|-----------------|----------------|
-| Hide Credentials | Boolean         | 0              |
-
-#### Description  
-
 1. **Hide Credentials**:
 Users can specify either to enable it to strip the credential from the request (i.e. the Authorization header) before proxying it. Click on Group Name that has been added by user then Hide Credentials Boolean will be visible.
 
-### How To add Users:
+    Accepted Value : Boolean
+
+    Default Value : False
+
+##### How To add Users:
 
 1. Go to **Apps** > **WAF**> **User Groups** > Click on the User Group name in which you want to add user
 2. Click on **Add User**
 2. Configure the Settings based on Authentication Type
 3. Click on **Save Changes**
 
-| Parameter        | Accepted Values | Default Values |
-|------------------|-----------------|----------------|
-| User enabled     | Boolean         | 1              |
-| Name             | String          | Blank          |
-| User Name        | String          | Blank          |
-| Password         | String          | Blank          |
-| Secret           | String          | Blank          |
-| Algorithm        | Drop Down       | HS256          |
-| Key              | String          | Blank          |
+##### Description
 
-#### Description
-
-1. **User enabled**:
+**User enabled**:  
+  
 Users can enable or disable users as per the requirement.
 
-2. **Name**:
+    Accepted Value : Boolean
+
+    Default Value : True
+
+**Name**:  
+  
 Users can specify the name of the users for identification purposes.
 
-3. **User Name**:
+    Accepted Value : String
+
+    Default Value : Blank
+
+**User Name**:  
+  
 Users can specify the username for the user.
 
-4. **Password**:
+    Accepted Value : String
+
+    Default Value : Blank
+
+**Password**:  
+  
 Users can specify the password for a user of either **LDAP** or **BASIC AUTH** Authentication Type
 
-5. **Secret**:
+    Accepted Value : String
+
+    Default Value : Blank
+
+**Secret**:  
+  
 Users can specify the secret when Authentication Type is **HMAC**. The configured secret is used for hashing messages between client and HMAC server.
 
-6. **Algorithm**:
+    Accepted Value : String
+
+    Default Value : Blank
+
+**Algorithm**:  
+  
 Users can specify the algorithm to be used from the following ones, if the Authentication Type is **JWT**, to specify the algorithm being used for signing the JWT Tokens.
 
-- **HS256**
-- **HS512**
-- **RS256**
-- **RS512**
+    Accepted Value : HS256 , HS512 , RS256 , RS512.
 
-7. **Key**:
+    Default Value : HS256
+
+**Key**:  
+  
 Users can specify the key when Authentication Type is **JWT** to decode the payload that contains the user claims.
+
+    Accepted Value : String
+
+    Default Value : Blank
 

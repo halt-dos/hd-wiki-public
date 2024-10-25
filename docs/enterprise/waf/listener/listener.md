@@ -3,7 +3,7 @@ Make WAF listen on specific ports to accept connections and distribute across on
 
 ---
 
-## Overview 
+### Overview 
 Listeners are used for configuring websites and servers appropriately that it can help to reduce response time, increase throughput, optimize resource use and overload of any single resource. 
 
 Listeners are commonly used to integrate a website into the WAF system. The WAF solution will only listen to domains/VIPs that have been added to it.
@@ -14,13 +14,14 @@ When we add a website to WAF, we must include our backend server and its port nu
 
 ![Listener](/img/waf/v7/docs/addinglisteners.png)
 
-## How to Use :
+### How to Use :
 1. Go to **Apps** > **WAF** > **Listeners**
 2. Click **Add Listener button.**
 3. Configure your settings.
 4. Click **Save Changes**
 
-## Description 
+### Description  
+ 
 ##### **Domain / Virtual IP**
 This option allows user to specify fully qualified domain name of the website. Whenever adding the root domain, ensure it is empty.
 
