@@ -40,10 +40,16 @@ const comparisonData =[
      "Enterprise": "Yes"
     },
     {
+     "Features": "Support",
+     "Community": "EMAIL (No ETA)",
+     "Professional": "8x5 support Email (within 7 days)",
+     "Enterprise": "24x7 support Email, Phone Toll Free"
+    },
+    {
      "Features": "Dashboards & Analytics",
-     "Community": "Limited",
-     "Professional": "Limited",
-     "Enterprise": "Advanced"
+     "Community": "Single Dashboard Limited (1 day)",
+     "Professional": "Single Dashboard Limited (1 day)",
+     "Enterprise": "Advanced Multiple Dashboard w/ customization"
     },
     {
      "Features": "Reporting",
@@ -128,6 +134,13 @@ const comparisonData =[
      "Community": "Yes",
      "Professional": "Yes",
      "Enterprise": "Yes"
+    },
+
+    {
+      "Features": "Global IP Whitelist and Blacklist",
+      "Community": "No",
+      "Professional": "No",
+      "Enterprise": "Yes"
     },
     {
      "Features": "Geo Fencing",
@@ -322,12 +335,6 @@ const comparisonData =[
      "Features": "Custom Webpages",
      "Community": "No",
      "Professional": "Yes",
-     "Enterprise": "Yes"
-    },
-    {
-     "Features": "Support for client NAT & Routing",
-     "Community": "No",
-     "Professional": "Yes ",
      "Enterprise": "Yes"
     },
     {
