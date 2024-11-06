@@ -24,33 +24,45 @@ If a user has defined server groups and wants to use different groups depending 
 
 Users are allowed to specify a user-friendly name to identify the rule. The rule name takes alphanumeric input.
 
+```
     Accepted values: String
 
     Default: Blank  
+```
+
 
 ##### **Message**
 
 The user can add a short description of the rule. The description would explain the purpose of the rule.
 
+```
     Accepted values: String
 
     Default: Blank  
+```
+
 
 ##### **Rule Priority** 
 
 Users are allowed to set the priority of the rule. If two rules have the same priority, then selection will be random.
 
+```
     Accepted values: Integer
 
     Default: 0  
+```
+
 
 ##### **Server Group**
 
 Which server group should serve the request of this type. The server group configured will be serving requests specifically.
 
+```
     Accepted values: Select Server Group
 
     Default: Blank  
+```
+
 
 #### **Add Condition**
 

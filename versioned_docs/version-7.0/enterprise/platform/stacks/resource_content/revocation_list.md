@@ -24,22 +24,31 @@ A certificate revocation list, more commonly called a CRL, is exactly what it so
 
 Users can specify the name of the custom script.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Scope**
 
 It specifies the particular scope on which the script works. By default, its value is set to none.
 
+```
     Accepted values: Select Scope
 
     Default: Blank 
+```
+
 
 **Content**
 
 It specifies the script area where the script is to be written.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+

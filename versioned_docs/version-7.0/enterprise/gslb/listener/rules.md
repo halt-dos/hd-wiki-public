@@ -24,41 +24,56 @@ Haltdos GSLB supports various types of rules for users to configure GSLB as per 
 
 This option allows the user to set a name for the rule.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Rule Message** 
 
 This option allows users to use specifies the custom message for the rule.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Rule Priority**
 
 This option allows the user to set rule priority. The rule with lower Priority Value will be prioritize
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 **Filter Type**
 
 This option allow user to select filter type it can be PATTERN, SUFFIX, DOMAIN or ALL according to rule user want to set.
 
+```
     Accepted values: ALL / PATTERN / SUFFIX / DOMAIN
 
     Default: ALL 
+```
+
 
 **Condition Action**  
 
 User can select the condition action. 
 
+```
     Accepted values: DROP Request / DENY / ByPass Request / Answer / Refuse / Forward / Force TCP
 
     Default: DROP Request 
+```
+
 
 This Option allows user to select what action user want to apply on the query. Following are the Option available for it 
 
@@ -81,6 +96,9 @@ This Option allows user to select what action user want to apply on the query. F
 
 User can enter condition parameter
 
+```
     Accepted values: IP prefix
 
     Default: Blank 
+```
+

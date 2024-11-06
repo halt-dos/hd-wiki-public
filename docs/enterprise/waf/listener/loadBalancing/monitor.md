@@ -25,20 +25,27 @@ Monitoring provides a comprehensive overview of the status and performance of th
 ##### **Monitor Name**
 Specify a user-friendly name to monitor.  
 
+```
     Accepted values: Integer
 
     Default: 1  
+```
+
 
 ##### **Enable Health Check**
 Enable to periodically check the health of upstream servers by sending special health‑check requests to each server and verifying the correct response.  
 
+```
     Accepted values: Enabled / Disbaled
 
     Default: Disabled 
+```
+
 
 ##### **Health Check Interval**
 Set the seconds, say 10, then every 10 seconds WAF sends a request for “/” to each server/server group. If any communication error or timeout occurs (the server responds with a status code other than the expected code) the health check fails. The server is marked as unhealthy, and WAF does not send client requests to it (if attached to server group) until it once again passes a health check.
 
+```
     Accepted values: Integer
 
     Max: 17280
@@ -46,12 +53,15 @@ Set the seconds, say 10, then every 10 seconds WAF sends a request for “/” t
     Min: 0
 
     Default: 10  
+```
+
 
     Metrics: Seconds
 
 ##### **Fail Threshold**
 Sets the number of failed attempts that must occur during the heath check interval period for the server to be marked unavailable (default is 1 attempt).  
 
+```
     Accepted values: Integer
 
     Max: 17280
@@ -59,12 +69,15 @@ Sets the number of failed attempts that must occur during the heath check interv
     Min: 0
 
     Default: 10  
+```
+
 
     Metrics: Seconds
 
 ##### **Pass Threshold**
 Sets the number of passes that must occur during the heath check interval period for the server to be marked available (default is 1 attempt). If set as 2, then the server must pass two consecutive checks to be marked as healthy again instead of the default one.  
 
+```
     Accepted values: Integer
 
     Max: 10000
@@ -72,12 +85,17 @@ Sets the number of passes that must occur during the heath check interval period
     Min: 0
 
     Default: 1
+```
+
 
 ##### **Health Check Type**
 
+```
     Accepted values: TCP / HTTP / SSL HELLO / HTTPS / ICMP / SNMP / DNS / Script
 
     Default: TCP  
+```
+
 
  - **TCP**: 
 Health check attempts to open a TCP connection to the server on the specified port (which are specified in the configuration file).
@@ -99,27 +117,39 @@ Health check runs custom script (shell script, perl script or Lua script). The s
 ##### **Port**
 Specify a new port with the port parameter
 
+```
     Accepted values: Integer
 
     Default: Blank
+```
+
 
 ##### **Health Script**
 Select your custom health check script
 
+```
     Accepted values: Add Script
 
     Default: Blank
+```
+
 
 ##### **SNMP Version**
 Specify SNMP version for monitoring
 
+```
     Accepted values: SNMP v1 / SNMP v2 / SNMP v2c / SNMP v3
 
     Default: Blank
+```
+
 
 ##### **SNMP Community**
 Specify SNMP Community
 
+```
     Accepted values: String
 
     Default: Public
+```
+

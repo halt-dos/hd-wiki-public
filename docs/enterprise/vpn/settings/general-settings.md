@@ -32,6 +32,8 @@ Specify SSL certificate for Encryption / Decryption. Reboot Required
     Accepted Value: Add SSL Certificate
 
     Default: Blank
+```
+
 
 **TLS Settings**  
 Specify allowed TLS settings for negotiation with clients
@@ -39,6 +41,8 @@ Specify allowed TLS settings for negotiation with clients
     Accepted Value: Default/Normal / Support Legacy Client / High Performance /  Secure 256 bit key ciphers / Custom
 
     Default: Default/Normal
+```
+
 
 **Enforce DTLS Support**  
 
@@ -47,6 +51,8 @@ Specify to use DTLS for VPN connection.
     Accepted Value: Enable / Disable
 
     Default: Enable
+```
+
 
 **Enforce TLS Cipher** 
 
@@ -55,6 +61,8 @@ Specify to enforce TLS cipher for DTLS
     Accepted Value: Enable / Disable
 
     Default: Enable
+```
+
 
 **Domain**  
 Specify Vpn Domain (eg. vpn.example.com)
@@ -62,6 +70,8 @@ Specify Vpn Domain (eg. vpn.example.com)
     Accepted Value: Enter Domain (string)
 
     Default: Blank
+```
+
 
 **Dynamic Hostname**
 
@@ -70,6 +80,8 @@ Enable if hostname has dynamic DNS
     Accepted Value: Enable / Disable
 
     Default: Enable
+```
+
 
 **Max Concurrent Clients**
 
@@ -78,6 +90,8 @@ Specify allowed max concurrent clients
     Accepted Value: Integer
 
     Default: 500
+```
+
 
 **Max Session Per User**  
 
@@ -86,6 +100,8 @@ Specify max concurrent sessions per user
     Accepted Value: Integer
 
     Default: 5
+```
+
 
 **Enable MTU**  
 
@@ -94,6 +110,8 @@ Enable MTU discovery
     Accepted Value: Enable / Disable
 
     Default: Enable
+```
+
 
 **MTU Payload Size**  
 
@@ -102,6 +120,8 @@ Specify maximum transmission unit size
     Accepted Value: Integer
 
     Default: 1420
+```
+
 
 **Enable Compression**  
 
@@ -110,6 +130,8 @@ Specify enabling data compression
     Accepted Value: Enable / Disable
 
     Default: Enable
+```
+
 
 **Minimum Compression Length**  
 
@@ -118,5 +140,7 @@ Specify minimum size of packet for compression
     Accepted Value: Integer
 
     Default: 256
+```
+
 
 

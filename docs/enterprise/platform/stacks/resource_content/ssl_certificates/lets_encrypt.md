@@ -60,29 +60,41 @@ Certificate verification can fail if verification is not completed within stipul
 #### Description
 **Certificate Name**: Specify a user-friendly name for the certificate. The name field takes alphanumeric input.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 **Public Key**: Enter the public key of the certificate. The public key is a digitally signed document that serves to validate the sender's authorization and name.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 **Private Key**: Enter the private key details. The private key is a separate file that's used in the encryption/decryption of data sent between your server and the connecting clients.  
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Export Certificate**
 
 User can download the SSL certificate.
 
+```
     Accepted values: Select and Export SSL certificate
 
     Default: Blank 
+```
+
 
 
 :::note Note

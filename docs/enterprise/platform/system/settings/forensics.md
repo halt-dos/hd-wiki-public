@@ -23,39 +23,54 @@ Haltdos Forensic feature provides customer to generate the customized graphs as 
 
 Select the stack from here
 
+```
     Accepted values: List of stack
 
     Default: NONE
+```
+
 
 ##### **Type**
 
 Select Type of the query
 
+```
     Accepted values: First Level / Nested
 
     Default: First Level
+```
+
 
 ##### **Query**
 
 Select the query
 
+```
     Accepted values: MATCH / RANGE
 
     Default: MATCH
+```
+
 
 ##### **Field Name**
 
 Enter Field Name
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Value**
 
 Enter the value
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 

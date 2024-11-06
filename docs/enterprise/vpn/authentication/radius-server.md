@@ -26,6 +26,8 @@ Enable login through Radius Server
     Accepted Value: Enable / Disable
 
     Default: Enable
+```
+
 
 **Endpoint**
 
@@ -34,6 +36,8 @@ Specify the endpoint of Radius Server
     Accepted Value: String
 
     Default: Blank
+```
+
 
 **Port**  
 
@@ -42,6 +46,8 @@ Specify the port of Radius Server
     Accepted Value: Integer
 
     Default: Blank
+```
+
 
 **Secret Key** 
 
@@ -50,6 +56,8 @@ Specify the secret key of Radius Server
     Accepted Value: String
 
     Default: Blank
+```
+
 
 **Authorization Protocol** 
 
@@ -58,6 +66,8 @@ Select underlying protocol for Authenticating User
     Accepted Value: CHAP / PAP
 
     Default: CHAP
+```
+
 
 **Timeout** 
 
@@ -66,5 +76,7 @@ Specify the timeout of Radius Server
     Accepted Value: Integer
 
     Default: Blank
+```
+
 
 

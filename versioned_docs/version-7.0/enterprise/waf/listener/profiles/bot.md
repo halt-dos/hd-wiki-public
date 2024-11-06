@@ -19,9 +19,12 @@ Configure the following parameters to set up the desired settings:
 ##### **Allowed Crawlers**
 This field specifies the list of good crawlers by specifying their user agents. You can add single or multiple user agents. All the user agent mentioned in Allowed Crawlers permits the crawlers to access the protected URL. 
 
+```
     Accepted values: String
 
     Default: Empty  
+```
+
 
     E.g. Google Crawler  
 
@@ -30,9 +33,12 @@ This field specifies the list of good crawlers by specifying their user agents. 
 ##### **Bad Crawlers**
 This field specifies the list of bad crawlers by specifying their user agents. You can add single or multiple user agents. All the user agent mentioned in Bad Crawlers does not permit the crawlers to access the protected URL.
 
+```
     Accepted values: String  
     
     Default: Empty  
+```
+
 
     E.g. Google Crawler  
 
@@ -41,9 +47,12 @@ This field specifies the list of bad crawlers by specifying their user agents. Y
 ##### **Suspicious Crawlers**
 This field specifies a list of suspicious crawlers by specifying their user agents. These requests will be rate-limited based on the Bot rate limit i.e. Max Request Rate and Max Request Burst.
 
+```
     Accepted values: String  
     
     Default: Empty  
+```
+
 
     E.g. Suspicious Crawler  
 
@@ -52,16 +61,22 @@ This field specifies a list of suspicious crawlers by specifying their user agen
 ##### **Maximum Bot Request Rate**
 This field specifies the maximum allowed Bot request rate from a single client IP. In case the request rate of the user is higher than the defined rate, the request gets dropped.
 
+```
     Accepted values: Integer
 
     Default: 20
+```
+
 
 ##### **Maximum Bot Request Burst**
 This field specifies the maximum allowed Bot request burst from a single client IP. In case the requested burst of the user is higher than the defined rate, the request gets dropped.
 
+```
     Accepted values: Integer
 
     Default: 30  
+```
+
 
 :::note Note
 Bot Request Burst must be greater than or equal to Bot Request Rate
@@ -70,9 +85,12 @@ Bot Request Burst must be greater than or equal to Bot Request Rate
 ##### **Bot Track Duration**
 Specify the Bot request rate track duration in seconds.
 
+```
     Accepted values: Integer
       
     Default: 30  
+```
+
 
     Metrics: Seconds
 
@@ -80,9 +98,12 @@ Specify the Bot request rate track duration in seconds.
 
 This field allows you to take action in case there is Tor traffic in the network. Tor traffic are the request coming from tor browser or dark web. It includes two actions:
 
+```
     Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
       
     Default: NO ACTION  
+```
+
 
 - **NO ACTION** 
 Don't perform any action  
@@ -97,9 +118,12 @@ Send a challenge like a captcha
 
 This field allows you to take action on traffic when Haltdos Threat Stream TM reports suspicious IPs. It includes two actions:
 
+```
     Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
       
     Default: NO ACTION  
+```
+
 
 - **NO ACTION**
 Don't perform any action  
@@ -113,16 +137,22 @@ Send a challenge like a captcha
 ##### **Anonymous Proxy Traffic**
 Defines the response to traffic originating from anonymous proxy IP addresses
 
+```
     Accepted values: NO ACTION / SEND CAPTCHA / SEND CRYPTO CHALLENGE / DROP
       
     Default: NO ACTION  
+```
+
 
 ##### **Advance Bot Protection**
 This field allows you to enable Haltdos Advance Bot Protection for an incoming request for the current security profile. It includes the following actions:
 
+```
     Accepted values: NONE / FINGERPRINT / TOKEN VALIDATION / ANY
       
     Default: NONE  
+```
+
 
 - **NONE** :
 Don't perform any action  

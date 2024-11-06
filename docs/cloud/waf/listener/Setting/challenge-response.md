@@ -23,56 +23,77 @@ Challenge.
 
 Specify the captcha failed threshold count i.e maximum attempts given to client for completing the captcha challenge
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 3 
+    Default: 3 
+```
+
 
 ##### **Captcha Unanswered Threshold**
 
 Specify the captcha unanswered threshold i.e maximum attempts given to client for refresing the captcha challenge
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 3 
+    Default: 3 
+```
+
 
 ##### **Crypto Failed Threshold**
 
 Specify the captcha failed threshold count i.e maximum attempts given to client for completing the crypto challenge
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 3 
+    Default: 3 
+```
+
 
 ##### **Crypto Unanswered Threshold**
 
 Specify the captcha unanswered threshold i.e maximum attempts given to client for refresing the crypto challenge
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 3 
+    Default: 3 
+```
+
 
 ##### **Failed Challenge Threshold**
 
 Specify the failed challenge threshold before suspending client IP.
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 3 
+    Default: 3 
+```
+
 
 ##### **Failed Challenge Action**
 
 Specify the default action upon breaching fingerprint challenge threshold.
 
-     Accepted values: Drop & Record Threshld / Record Request / Terminate Connection / Temprorary Blacklist Src IP / Tarpit Src Ip / Block User Session / No Action / Send Response from Cache
+```
+    Accepted values: Drop & Record Threshld / Record Request / Terminate Connection / Temprorary Blacklist Src IP / Tarpit Src Ip / Block User Session / No Action / Send Response from Cache
 
-     Default: Drop & Record Threshld 
+    Default: Drop & Record Threshld 
+```
+
 
 ##### **Crypto Challenge difficulty**
 
 Specify the Crypto challenge difficulty i.e the level of crypto challange that will be sent to the client.The range is 1 - 9.
 
-     Accepted values: 1 - 10
+```
+    Accepted values: 1 - 10
 
-     Default: 1
+    Default: 1
+```
+
 
 

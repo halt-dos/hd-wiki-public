@@ -32,87 +32,120 @@ Only IPv4/IPv6 addresses / prefix having poor reputation is currently supported.
 
   Select whether to Enable it or Disable it. 
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable 
+```
+
 
 **Intel Source Name**
 
   Enter the intel source name
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Stack**
 
 Stack is selected here
 
+```
     Accepted values: Select Stack
 
     Default: Blank 
+```
+
 
 **Task Occurrence**
 
 Select number of times for the task occurence
 
+```
     Accepted values: ONCE / MINUTE / HOUR / DAILY / WEEKLY / MONTHLY
 
     Default: ONCE 
+```
+
 
 **Next Run**
 
 Select next run
 
+```
     Accepted values: Select next run
 
     Default: Blank 
+```
+
 
 **Timezone**
 
 Select Timezone from dropdown
 
+```
     Accepted values: Select Timezone
 
     Default: Asia / Calcutta 
+```
+
 
 **Fetch Resources**
 
 Select the fetch resources
 
+```
     Accepted values: API / FTP
 
     Default: API 
+```
+
 
 **URL**
 
 Select the type of URL and enter url
 
+```
     Accepted values: GET / POST / PUT
 
     Default: GET
+```
+
 
 **Attributes Type**
 
 Select type of attribute
 
+```
     Accepted values: HEADER_VAL / ARGS_VAL / PARAM_VAL
 
     Default: Blank
+```
+
 
 **Name**
 
 Select the attribute name
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 **Value**
 
 Enter the value 
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 

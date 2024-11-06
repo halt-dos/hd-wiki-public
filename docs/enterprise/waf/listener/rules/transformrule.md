@@ -26,49 +26,67 @@ Transform Rule allow user to do HTML encoding because it ensures that text will 
 
 Specify a user-friendly name to identify the rule. The rule name takes alpha-numeric input.
 
+```
     Accepted values: String
 
     Default: Blank  
+```
+
 
 2.**Rule Message :**
 
 The user can add a short description of the rule. The description would explain the purpose of the rule.
 
+```
     Accepted values: String
 
     Default: Blank  
+```
+
 
 3.**Rule Priority:** 
 
 Set the priority of the rule. If two rules have the same priority, then selection will be random.
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 4.**URI:**
 
 Specify the URI or regex for which rule will be applied. 
 
+```
     Accepted values: URI
 
     Default: Blank  
+```
+
 
 5.**Method:**
 
 Select the HTTP method for the rule to validate when matched with the request.
 
+```
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: ALL  
+```
+
 
 6.**Transformation:**
 
 Under this user can select which transform he wants eg. HTTP to MQTT, XML to JSON or JSON to XML. Under this user can also set, replace or remove any parameter of there application.
      
+```
     Accepted values: XML to JSON / JSON to XML / HTTP to MQTT / HTML Encode / Set or Replace / Remove Argument
 
     Default: Set or Replace  
+```
+
 
  6.1**XML to JSON**- An element mentioned in XML can be transform to JSON user just have to provide the location like whether it will be argument name, argument value,body ,body argument name , body argument value and Parameter Name.
 
@@ -82,25 +100,34 @@ Under this user can select which transform he wants eg. HTTP to MQTT, XML to JSO
 
 Location provides the path on which transformation rule is going to work.
 
+```
     Accepted values: Argument Value / URL / Body Argument Value / Body
 
     Default: Argument Value  
+```
+
 
 8.**Search Parameter**
 
 User have to specify the parameter name of which transform rule will work.
 
+```
     Accepted values: String
 
     Default: Blank  
+```
+
 
 9.**Replace With**
 
 Replace option comes only in use when the transformation is SET, REPLACE, HTTP to MQTT or HTML Encode
 
+```
     Accepted values: String
 
     Default: Blank  
+```
+
 
 #### **Add Condition**
 

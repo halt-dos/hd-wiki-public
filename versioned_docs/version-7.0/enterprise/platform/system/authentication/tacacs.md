@@ -32,41 +32,66 @@ If your organization is using AAA authentication, it is recommended to integrate
 
 This option enables users to enable or disable the TACACS+ authentication.
 
+```
+```
     Accepted values: Enable / Disable
 
     Default: Disable 
+```
+
+```
 
 ##### **Endpoint**
 
 This option allows users to set the endpoint or the TACACS+ server IP address on which Haltdos Console will send authentication requests.
 
+```
+```
     Accepted values: IP
 
     Default: Blank 
+```
+
+```
 
 ##### **Port**
 
 This option allows users to set the port number that is being used at TACACS+ server mentioned above. By default, TACACS+ server is set to listen on port 49.
 
+```
+```
     Accepted values: Integer
 
     Default: 49 
+```
+
+```
 
 ##### **Secret Key**
 
 This option allows user to set the secret key which will be used while communicating with the TACACS+ server.
 
+```
+```
     Accepted values: Password phrase
 
     Default: Blank 
+```
+
+```
 
 ##### **Authorization Protocol**
 
 This option allows users to configure the authentication protocol for the TACACS+ server. This option contains mainly three protocols:
 
+```
+```
     Accepted values: ASCII / PAP / CHAP
 
     Default: PAP 
+```
+
+```
 
 1. **ASCII**- ASCII is a simple authentication protocol where the client sends its username and password in plain text to the server for authentication.
 
@@ -76,11 +101,15 @@ This option allows users to configure the authentication protocol for the TACACS
 
 ##### **Timeout**
 
+```
+```
     Accepted values: Integer
 
     Default: 5000 
-
+```
+    
     Unit: millisecond
+```
 
 This option allows users to configure the request timeout for the request. If any authentication response from TACACS+ server will be delayed from the mentioned timeout, it will be discarded.
 
@@ -113,25 +142,30 @@ This argument determines the user type which is necessary for successful authori
 
 This mandatory argument is used to authorize license or stack details. It represents the **license ID** of the Haltdos solution and is crucial for validating that the authorization request originates from a validly licensed device.
 
+```
     Accepted Values: String - Comma separated value
 
     Example : `<LICENSE_1>,<LICENSE_2>`
+```
 
 #### 3. emailId
 
 This argument is optional and only required for user-groups with the reporting feature enabled. It works in conjunction with the "disable_report" argument to manage reporting capabilities.
 
+```
     Accepted Values: User Email
 
     Example : test@haltdos.com 
+```
 
 #### 4. access
 
 This mandatory argument specifies the user-access role required for successful authorization. Users can log in with only one user-access role at a time.
-
+```
     Accepted Values: VISIBLE / OBSERVER / MEMBER
 
     Example : OBSERVER 
+```
 
 1. **VISIBLE**- Users with this role can only view certain information but cannot execute any commands or make any changes.  
 
@@ -146,33 +180,37 @@ Used to disable report for user.
 **true** - Disable mail report  
 **false** - Enable mail report
 
+```
     Accepted Values: true / false
 
     Example : False 
+```
 
 This field is optional.
 
 ##### 1. Below is a sample script to login with **MEMBER** access with enable report.
-
+```
     authority: USER
     stacks: SAD56SDBC
     emailId: test@haltdos.com
     access: MEMBER
     disable_report: false
+```
 
 ##### 2. Below is a sample script to login with **OBSERVER** access with enable report.
-
+```
     authority: USER
     stacks: ADDFG56SBC
     access: OBSERVER
+```
 
 ##### 3. Below is a sample script to login with **ADMIN** access with enable report.
-
+```
     authority: ADMIN
     stacks: WAFYAW24B
     emailId: test@haltdos.com
     access: MEMBER
     disable_report: false
-
+```
 
 

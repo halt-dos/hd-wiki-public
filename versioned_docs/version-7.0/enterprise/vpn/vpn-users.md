@@ -24,27 +24,39 @@ VPN group feature is used to add a VPN group. A user can be a part of one VPN gr
 #### User ID
 This option allows users to add unique user ID.  
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 #### User Name
 This option allows users to add user name for the new user.  
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 #### Password
 This option allows user to set password for the new user.  
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 #### User Group
 This option allows user to select the user group for the user.  
 
+```
     Accepted values: Select group from user
 
     Default: 90 
+```
+
