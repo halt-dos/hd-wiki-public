@@ -31,7 +31,7 @@ This argument determines the user type which is necessary for successful authori
 #### 2. stacks
 This mandatory argument is used to authorize license or stack details. It represents the **license ID** of the Haltdos solution and is crucial for validating that the authorization request originates from a validly licensed device.
     Accepted Values: String - Comma separated value
-    Example : <LICENSE_1>,<LICENSE_2>
+    Example : `<LICENSE_1>,<LICENSE_2>`
 #### 3. emailId
 This argument is optional and only required for user-groups with the reporting feature enabled. It works in conjunction with the "disable_report" argument to manage reporting capabilities.
     Accepted Values: User Email

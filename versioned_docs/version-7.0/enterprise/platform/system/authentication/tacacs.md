@@ -115,7 +115,7 @@ This mandatory argument is used to authorize license or stack details. It repres
 
     Accepted Values: String - Comma separated value
 
-    Example : <LICENSE_1>,<LICENSE_2>
+    Example : `<LICENSE_1>,<LICENSE_2>`
 
 #### 3. emailId
 
