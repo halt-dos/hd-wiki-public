@@ -13,7 +13,7 @@ It shows the health status of the Instances, user can select whether to enable t
 
 1. Go to **System >Instance > (Select Instance) > Setting > Operational Setting**
 2. Configure your settings
-3. Click **Save CHanges**
+3. Click **Save Changes**
 
 ### Description
 

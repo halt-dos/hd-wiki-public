@@ -14,7 +14,7 @@ This section allows you to configure Ethernet settings on available NIC cards on
 
 1. Go to **Stack > Instances  > Network > Ethernet**
 2. Configure your settings
-3. Click **Save CHanges**
+3. Click **Save Changes**
 
 ![Ethernet](/img/platform/v7/docs/ethernet.png)
 

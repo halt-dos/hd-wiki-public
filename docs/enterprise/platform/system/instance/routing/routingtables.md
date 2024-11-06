@@ -14,4 +14,4 @@ Shows the list of Routing Tables wth the table name.
 
 1. Go to **Stack > Infrastructure  > Routing > Routing Table**
 2. Configure your settings
-3. Click **Save CHanges**
+3. Click **Save Changes**
