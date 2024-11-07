@@ -65,25 +65,34 @@ To upload custom certificates, follow the steps below:
 
 User can specify the userfriendly name for the certificate.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Certificate Domain**
 
 User can specify the userfriendly name for the certificate.
 
+```
     Accepted values: Select Domain
 
     Default: Blank 
+```
+
 
 **Scope**
 
 Users can defind the scope of the certificate.
 
+```
     Accepted values: Select App / Resources
 
     Default: Blank
+```
+
 
 :::info
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key

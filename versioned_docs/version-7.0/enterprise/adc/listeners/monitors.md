@@ -23,14 +23,18 @@ Monitoring provides a comprehensive overview of the status and performance of th
 
 This option allows users to specify a user-friendly name to monitor.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Health Check Interval**
 
 This option allows users to specify the health check interval in seconds.
 
+```
     Accepted values: Integer
 
     Max: 17280
@@ -38,6 +42,8 @@ This option allows users to specify the health check interval in seconds.
     Min: 0
 
     Default: 10  
+```
+
 
     Metrics: Seconds 
 
@@ -45,6 +51,7 @@ This option allows users to specify the health check interval in seconds.
 
 This option allows users to specify the fail threshold.
 
+```
     Accepted values: Integer
 
     Max: 10000
@@ -52,11 +59,14 @@ This option allows users to specify the fail threshold.
     Min: 0
 
     Default: 1 
+```
+
 
 ##### **Pass Threshold**
 
 This option allows users to specify the pass threshold.
 
+```
     Accepted values: Integer
 
     Max: 10000
@@ -64,14 +74,19 @@ This option allows users to specify the pass threshold.
     Min: 0
 
     Default: 1 
+```
+
 
 ##### **Monitor Timeout**
 
 This option allows users to specify the timeout interval in seconds.
 
+```
     Accepted values: Integer
 
     Default: 1
+```
+
 
     Metrics: Seconds 
 
@@ -79,54 +94,75 @@ This option allows users to specify the timeout interval in seconds.
 
 This option allows users to specify the health check type for the load balancer.
 
+```
     Accepted values: TCP / HTTP / SSL HELLO / HTTPS
 
     Default: TCP  
+```
+
 
 ##### **Check Port**
 
 This option allows users to specify port on which the health check will be carried out. 
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 ##### **HTTP Method**
 This option allows users to specify the health check type HTTP monitoring. This option will only be visible when HTTP is selected in Health Check Type.
 
+```
     Accepted values: Any / Get / Post / Put / Delete / Patch / Head / Options 
 
     Default: Blank 
+```
+
 
 ##### **Check URI**
 
 This option allows users to specify the check URI. This option will only be visible when HTTP is selected in Health Check Type.
 
+```
     Accepted values: Regex
 
     Default: Blank 
+```
+
 
 ##### **Match Status**
 
 This option allows users to specify the response HTTP status to verify. This option will only be visible when HTTP is selected in Health Check Type.
 
+```
     Accepted values: Integer
 
     Default: 200
+```
+
 
 ##### **Match Content**
 
 This option allows users to specify the content to match in the response. This option will only be visible when HTTP, HTTPS, & POP is selected in Health Check Type.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Health Script**
 
 This option allows users to select your custom health check script. This option will only be visible when HTTP is selected in Health Check Type.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 

@@ -24,41 +24,56 @@ We have introduced Header rules by which application owners can manipulate reque
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
+```
     Accepted values: String
 
     Default: Blank  
+```
+
 
 ##### **Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
 
+```
     Accepted values: String
 
     Default: Blank  
+```
+
 
 ##### **Rule Enabled**
 
 Users can enable or disable the rule.
 
+```
     Accepted values: Enabled / Disabled
 
     Default: Enabled    
+```
+
 
 ##### **Rule Priority**
 
 User can define the rule's priority among various other custom error rules.
 
+```
     Accepted values: Integer
 
     Default: Blank  
+```
+
 
 ##### **Rule Action**
 
 The rule action determines what action (add/remove/overwrite) the rule will perform. The accepted values are:
 
+```
     Accepted values: ADD HEADER / ADD COOKIE / OVERWRITE HEADER / OVERWRITE COOKIE / REMOVE HEADER / REMOVE COOKIE
 
     Default: REMOVE COOKIE 
+```
+
 
 1) **ADD**: This condition will allow adding a value at the specified location.
 

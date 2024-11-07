@@ -32,90 +32,123 @@ In static SNAT all internal IP addresses are always mapped to the same public IP
 
 It specifies rule is enabled or disabled. By default, this option is enabled.
 
+```
     Accepted values: Enabled / Disabled
 
     Default: Enabled
+```
+
 
 ##### **Rule Name**
 
 This option allows the user to select desired rule name.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Rule Message**
 
 This option allows users to use specifies the custom message for the rule.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Rule Priority**
 
 This option allows the user to set rule priority. The rule with lower Priority Value will be prioritized.
 
+```
     Accepted values: Integer
 
     Default: 0
+```
+
 
 ##### **Incoming Group**
 
 This option allows the user to set Incoming Group. Every data packet entered from Incoming Group will be inspected and mapped to translation IPs.
 
+```
     Accepted values: Select Incoming Group
 
     Default: Blank 
+```
+
 
 ##### **Outgoing Group**
 
 This option allows the user to select the Outgoing Group from the list of group. data packets that are mapped will move outside from Outgoing group.
 
+```
     Accepted values: Select Outgoing Group
 
     Default: Blank 
+```
+
 
 ##### **Source IP**
 
 This option allows the user to set the source IP range with a CIDR value. The data packets are inspected and data packets that match with a mentioned source IP address will be translated according to the Translate IP Range.
 
+```
     Accepted values: IP
 
     Default: Blank 
+```
+
 
 ##### **Destination IP**
 
 This option allows the user to set the destination IP range with a CIDR value. The data packets are inspected and data packets that match with a mentioned destination IP address will be translated according to the Translate IP Range.
 
+```
     Accepted values: IP
 
     Default: Blank 
+```
+
 
 ##### **Protocol**
 
 This option allows the user to set the protocol for the rule. The data packets are inspected and data packets that match with the mentioned protocol will be translated according to the Translate IP Range.
 
+```
     Accepted values: ANY / TCP / UDP / SCTP / CUSTOM
 
     Default: Blank 
+```
+
 
 ##### **Preserve Source Port**
 
 Preserve Source Port keeps the same source port for services that expect traffic to come from a specific source port. This option allows the user to select the preserved source port. It maps the source port for outgoing traffic through which it came from.
 
+```
     Accepted values: Enabled / Disabled
 
     Default: Disabled 
+```
+
 
 ##### **Translation**
 
 It allows users to select the type of translation. By default, Overload is selected.
 
 
+```
     Accepted values: Enabled / Disabled
 
     Default: OUTGOING INTRFACE IP 
+```
+
 
 :::note 
 Users can specify the translation IP or IP address range. If the user selects overload as translation type, another option will be shown there for translation IP or IP address range. Translation IP can be written as 192.168.1.1/24 or 192.168.1.5-192.168.1.25.

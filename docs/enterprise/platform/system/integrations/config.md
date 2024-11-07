@@ -22,54 +22,75 @@ This page is used to configure the Sync
 
 Enable configuration sync with peer management
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable 
+```
+
 
 ##### **Accept Remote Connections**
 
 Enable lo/accept sync with peer management
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable 
+```
+
 
 ##### **Peer Host**
 
 Specify the host name or IP address of peer management
 
+```
     Accepted values: IP
 
     Default: Blank 
+```
+
 
 ##### **Peer Host Port**
 
 Specify the peer management port
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 ##### **Auth Key**  
 
 Specify Auth Key for authentication
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Timeout**
 
 Specify the timeout for API Call in Seconds
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 ##### **Scope**
 
 Specify the scope for sync configuration
 
+```
     Accepted values: Select App/resources
 
     Default: Blank 
+```
+

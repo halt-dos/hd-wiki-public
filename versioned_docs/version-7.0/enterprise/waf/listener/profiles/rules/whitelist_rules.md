@@ -22,44 +22,62 @@ Here’s another use case: To reduce insider threat, a cyberattack caused behind
 ##### **Rule Name**
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
+```
     Accepted values: String
 
     Default: Blank  
+```
+
 
 ##### **Rule Message**
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
 
+```
     Accepted values: Description for the rule in String format
 
     Default: Blank  
+```
+
 
 ##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0.
     
+```
     Accepted values: Integer
 
     Default: 0  
+```
+
 
 ##### **URI**
 Users are allowed to specify the URI. Specify the URI on which the firewall rule will be applied.
 
+```
     Accepted values: Regex
 
     Default: Blank  
+```
+
 
 ##### **Method**
 Users are allowed to specify the HTTP method on which the rule will be applied i.e. All, GET, POST, PUT, DELETE, HEAD, OPTIONS.
 
+```
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: All  
+```
+
 
 ##### **Custom Rule IDs**
 Users are allowed to specify the rule/mitigation ID that needs to be whitelisted, so that action against that request will be allowed.
 
+```
     Accepted values: Select custom rule ID
 
     Default: Blank 
+```
+
 
 ##### **Add Condition**
 

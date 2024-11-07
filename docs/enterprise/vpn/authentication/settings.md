@@ -26,6 +26,8 @@ Specify if you want to enable MFA
     Accepted Value: Enable / Disable
 
     Default: Enable
+```
+
 
 **MFA Mode**
 
@@ -34,6 +36,8 @@ Specify the MFA Mode
     Accepted Value: TOTP / OTP
 
     Default: TOTP
+```
+
 
 **Enable Biometric Verification**  
 
@@ -42,6 +46,8 @@ Specify if you want to enable Biometric Verification in mobile client
     Accepted Value: Enable / Disable
 
     Default: Disable
+```
+
 
 **Auth Schemes** 
 
@@ -50,6 +56,8 @@ Specify the Auth Schemes
     Accepted Value: String
 
     Default: Blank
+```
+
 
 
 

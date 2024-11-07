@@ -35,25 +35,34 @@ Server Groups provide user two functionality at a page to add Server Group and V
 
 This option allows users to specify the user-friendly name to identify the Group Name. 
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Monitor**
 
 This option allows users to set the monitor type which continuously test upstream server, avoid the failed server and gracefully add recovered servers into the server group.
 
+```
     Accepted values: Select from existing monitors
 
     Default: NONE 
+```
+
 
 ##### **SSL**
 
 This option allows users to enable/disable **SSL**. It helps to add more operational settings for send information safely and efficiently with the support of SSL Settings. 
 
+```
     Accepted values: Enabled / Disabled
 
     Default: Disabled 
+```
+
 
 ##### **View Dashboard**
 

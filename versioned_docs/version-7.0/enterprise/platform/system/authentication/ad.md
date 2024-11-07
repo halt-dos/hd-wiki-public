@@ -30,27 +30,39 @@ If your organization is using Active Directory (AD), it is recommended to integr
 ##### **Active Directory Authentication Enabled**
 Enable login through Active Directory
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable 
+```
+
 
 ##### **Endpoint**
 Specify the endpoint of Active Directory.	
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Domain**
 Specify the domain of Active Directory.	
 
+```
     Accepted values: String
 
     Default: haltdos 
+```
+
 
 ##### **RootdN**
 Specify the RootdN of Active Directory
 
+```
     Accepted values: String
 
     Default: haltdos 
+```
+

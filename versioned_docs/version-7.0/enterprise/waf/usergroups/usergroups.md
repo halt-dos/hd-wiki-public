@@ -21,16 +21,22 @@ Haltdos Cloud provides multi-level RBAC access control over Stack. This allows o
 ##### **Group Name**  
 Users can specify the user-friendly group name as per the need.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Authentication Type**
 Users can set the type of authentication used for the user group. Users can select from the below-mentioned authentication methods:
 
+```
     Accepted values: Basic Auth / Key Auth / JWT / HMAC / LDAP
 
     Default: Basic Auth
+```
+
 
 1. **Basic Auth**:
 Basic Authentication is a method for users to provide a username and password when making a request for access. The method is used by the request’s recipient to verify users’ identity and rights to access a resource.

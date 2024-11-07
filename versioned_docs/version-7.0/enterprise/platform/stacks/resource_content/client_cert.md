@@ -23,22 +23,31 @@ Haltdos allows users to set the client certificate to customize connectivity. Us
 
 Users can specify the name of the custom script.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Scope**
 
 It specifies the particular scope on which the script works. By default, its value is set to none.
 
+```
     Accepted values: Select Scope
 
     Default: ALL 
+```
+
 
 **Script Area**
 
 It specifies the script area where the script is to be written.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+

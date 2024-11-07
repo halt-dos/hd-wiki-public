@@ -22,24 +22,36 @@ Deep packet inspection of IPV6 header for bidirectional traffic.
 
 ##### **Enable Setting**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Protocol Version**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Total Packet Length**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Source IP and Destination IP**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
