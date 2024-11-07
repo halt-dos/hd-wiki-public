@@ -63,26 +63,6 @@ const config = {
           customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
-    ],
-    [
-      "redocusaurus",
-      {
-        "specs": [
-          {
-            "id": "apiDocs",
-            "route": "/api",
-            "spec": "haltdos-api.yaml"
-          }
-        ],
-        "theme": {
-          "primaryColor": "#4786FF",
-          "options": {
-            "disableSearch": true,
-            "requiredPropsFirst": true,
-            "noAutoAuth": true
-          }
-        }
-      }
     ]
   ],
   plugins: [
