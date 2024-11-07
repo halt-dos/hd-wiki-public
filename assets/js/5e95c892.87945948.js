@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhaltdos_wiki=self.webpackChunkhaltdos_wiki||[]).push([[9647],{27725:(e,t,a)=>{a.r(t),a.d(t,{default:()=>i});var s=a(96540),r=a(18215),l=a(92341),u=a(23891),c=a(22831),n=a(38094);function i(e){return s.createElement(l.e3,{className:(0,r.A)(u.G.wrapper.docsPages)},s.createElement(n.A,null,(0,c.v)(e.route.routes)))}}}]);
