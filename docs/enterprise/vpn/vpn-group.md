@@ -26,6 +26,8 @@ This option allows user to set the user friendly name for the group.
     Accepted Value: String
 
     Default: Blank
+```
+
 
 #### **Priority**
 
@@ -34,6 +36,8 @@ Enter the priority
     Accepted Value: INteger
 
     Default: 0
+```
+
 
 #### **TIMEZONE**
 
@@ -42,6 +46,8 @@ This option allows user to select User Group
     Accepted Value: Select Timezone
 
     Default: Asia/Calcutta
+```
+
 
 #### **LOGIN ACCESS TIME RANGE**
 
@@ -50,6 +56,8 @@ Select the Time range for the access of login
     Accepted Value: Integer
 
     Default: Blank
+```
+
 
 #### **MAXIMUM CONCURRENT SESSIONS**
 
@@ -58,6 +66,8 @@ Enter the  highest number of simultaneous active sessions
     Accepted Value: Integer
 
     Default: Blank
+```
+
 
 #### **BLACKLISTED COUNTRIES**
 
@@ -66,6 +76,8 @@ Enter the  Blacklisted Countries
     Accepted Value: Select countries
 
     Default: Blank
+```
+
 
 
 

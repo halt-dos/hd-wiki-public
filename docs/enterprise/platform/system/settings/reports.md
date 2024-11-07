@@ -29,38 +29,53 @@ To enable reporting use Scheduler (under Stack Settings) to specify report type,
 
 Enter report name
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 **Priority**
 
 Enter priority number
 
+```
     Accepted values: Integer
 
     Default: 999
+```
+
 
 **Enable Stack App**
 
 Select to Enable / Disable the stack app.
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 **Stack**
 
 Dropdown of list of Stack to Select
 
+```
     Accepted values: Select Stack
 
     Default: Blank
+```
+
 
 **Apps**
 
 List of apps
 
+```
     Accepted values: Select Apps
 
     Default: Blank
+```
+

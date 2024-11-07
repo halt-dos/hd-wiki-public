@@ -26,44 +26,62 @@ These are the whitelist rule which helps in whitelisting mitigations globally fo
 **Rule Name**  
 Users can specify the rule name.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Rule Message**  
 Users can specify a user-friendly message
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Rule Priority**  
 Users can specify the priority of the rule. Rule with less priority will be followed first.
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 **URI**  
 Users can specify the URI ( Uniform Resource Identifier )for the rule as per the requirement.
 
+```
     Accepted values: Regex
 
     Default: Blank 
+```
+
 
 **Method**  
 Users can specify the HTTP method which should be followed for the rule.
 
+```
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: ALL 
+```
+
 
 **Custom Rule ID**  
 Users can specify the custom rule ID which was triggered or for which rule the user is setting up the whitelist rule.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Add Condition**
 

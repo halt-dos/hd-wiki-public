@@ -21,33 +21,45 @@ Redirection Rules is a feature of Haltdos WAF that allows application owners to 
 
 Specify a user-friendly name to identify the rule. The rule name takes alphanumeric input.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Message**
 
 The user can add a short description of the rule. The description would explain the purpose of the rule.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Priority**
 
 User can set the priority of the rule.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Match URL**
 
 Specify the URL for which this rule will be applied. Any requests made on this URL trigger this rule and the request shall be redirected or forwarded according to the rule.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 The match URL should follow the format: [http(s)://www.(*).haltdos.io/(*)]
 
@@ -56,18 +68,24 @@ The match URL should follow the format: [http(s)://www.(*).haltdos.io/(*)]
 The user can specify the URL on which the request has to be redirected. All the requests that trigger this rule will be forwarded to this URL.
 The forward URL should follow the format: [http(s)://(*).haltdos-1.io/(*)] 
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 
 ##### **Response Code**
 
 In this option, the end-user can decide that the redirection should be permanent or temporary by selecting the option from the drop-down list.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **301 - Permanent Redirect**
 

@@ -20,9 +20,12 @@ Bot Protection helps you quickly determine, manage, and mitigate automated reque
 
 Users can specify the expiry time of the CSRF cookie in seconds. Set 0 to disable CSRF. This value is dependent on the profile CSRF setting that should be enabled to perform mitigation.
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
     Metrics: Seconds
 
@@ -30,9 +33,12 @@ Users can specify the expiry time of the CSRF cookie in seconds. Set 0 to disabl
 
 Users can specify the grace time period in seconds for which CSRF token will be allowed.
 
+```
     Accepted values: Integer
 
     Default: 60 
+```
+
 
     Metrics: Seconds
 
@@ -40,9 +46,12 @@ Users can specify the grace time period in seconds for which CSRF token will be 
 
 Users can specify the tarpit delay.
 
+```
     Accepted values: Integer
 
     Default: 5 
+```
+
 
     Metrics: Seconds
 
@@ -50,9 +59,12 @@ Users can specify the tarpit delay.
 
 Users can specify the tarpit duration.
 
+```
     Accepted values: Integer
 
     Default: 300 
+```
+
 
     Metrics: Seconds
 

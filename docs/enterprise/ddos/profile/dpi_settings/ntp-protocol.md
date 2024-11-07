@@ -22,18 +22,27 @@ Deep packet inspection of NTP header for bidirectional traffic
 
 ##### **Enable Setting**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Packet Size**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Version**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+

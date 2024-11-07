@@ -26,6 +26,8 @@ Enable login through Active Directory
     Accepted Value: Enable / Disable
 
     Default: Enable
+```
+
 
 **Endpoint**
 
@@ -34,6 +36,8 @@ Specify the endpoint of Active Directory
     Accepted Value: String
 
     Default: Blank
+```
+
 
 **Domain**  
 
@@ -42,6 +46,8 @@ Specify the port of Active Directory
     Accepted Value: Domain
 
     Default: Blank
+```
+
 
 **RootdN** 
 
@@ -50,3 +56,5 @@ Specify the RootdN of Active Directory
     Accepted Value: String
 
     Default: Blank
+```
+

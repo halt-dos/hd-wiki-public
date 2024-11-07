@@ -31,16 +31,22 @@ A DNS Record is a database entry that maps a URL to a specified IP address. Thes
 **Zone Name**  
 Specify to respond with refuse on queries with no RD flag.  
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 **DNSSEC**  
 Specify to respond with refuse on queries with no RD flag.  
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 #### Types of DNS Records :
 

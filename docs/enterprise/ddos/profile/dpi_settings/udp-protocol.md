@@ -22,36 +22,54 @@ Deep packet inspection of UDP header for bidirectional traffic
 
 ##### **Enable Setting**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Minimum Datagram Length**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Maximum IPv4 Datagram Length**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Maximum IPv6 Datagram Length**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Bad Packet Length**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Checksum**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
