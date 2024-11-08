@@ -11,9 +11,9 @@ It shows the health status of the Instances, user can select whether to enable t
 
 #### How to Use:
 
-1. 1. Go to **Stack > Infrastructure > Instance > (Select Instance) > Setting > Monitor Setting**
+1. Go to **Stack > Infrastructure > Instance > (Select Instance) > Setting > Monitor Setting**
 2. Configure your settings
-3. Click **Save Changes**
+3. Click **Save Changes**.
 
 ### Description
 

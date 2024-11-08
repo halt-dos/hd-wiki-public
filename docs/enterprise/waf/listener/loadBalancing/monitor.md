@@ -14,11 +14,11 @@ Monitoring provides a comprehensive overview of the status and performance of th
 
 ### How to Use:
 
-1. Go to WAF > Listeners > Monitors
-2. Click on Add Monitor
-3. Click on the monitor name to configure the Health Check and click on Save changes
-4. Now go to WAF > Listener > Server Group 
-5. Add the Monitor to the server group / or server as required  
+1. Go to **WAF > Listeners > Monitors**.
+2. Click on **Add Monitor**.
+3. Click on the monitor name to configure the Health Check and click on **Save changes**.
+4. Now go to **WAF > Listener > Server Group**. 
+5. Add the Monitor to the **server group** / or **server** as required.  
 
 ### Description
 

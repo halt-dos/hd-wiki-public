@@ -107,5 +107,5 @@ The user can define what value needs to be matched with the match condition.
     Default: Blank
 ```
 
-
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/cloud/waf/listener/profiles/rules/ruleCond)
 

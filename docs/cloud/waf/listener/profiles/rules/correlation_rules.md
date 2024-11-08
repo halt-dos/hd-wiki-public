@@ -110,4 +110,4 @@ Users can specify whether the rule should be matched or not matched.
 
     Default: MATCH
 ```
-
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/cloud/waf/listener/profiles/rules/ruleCond)
