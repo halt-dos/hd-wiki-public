@@ -29,46 +29,64 @@ Depending upon the organization's policy, we can change or less the dya for logs
 
 This option allows users to specify the retention period of the event log.
 
+```
     Accepted values: Integer
 
     Default: 90 
+```
+
 
 ##### **Incident Log**
 
 This option allows users to specify the retention period of the incident log.
 
+```
     Accepted values: Integer
 
     Default: 90 
+```
+
 
 ##### **Session Log**
 
 This option allows users to specify the retention period of the session log.
 
+```
     Accepted values: Integer
 
     Default: 7
+```
+
 
 ##### **Minute Statistics**
 
 This option allows users to specify the retention period of the MINUTE statistics.
 
+```
     Accepted values: Integer
 
     Default: 2
+```
+
 
 ##### **Hourly Statistics**
 
 This option allows users to specify the retention period of the HOUR statistics.
 
+```
     Accepted values: Integer
 
     Default: 7
+```
+
 
 ##### **Day Statistics**
 
 This option allows users to specify the retention period of the DAY statistics.
 
+```
     Accepted values: Integer
 
     Default: 90
+```
+

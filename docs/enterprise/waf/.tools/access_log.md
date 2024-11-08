@@ -22,14 +22,19 @@ Virtual Patching is a feature of Haltdos WAF to display all the scan results and
 **Resources**  
 Select resource for which logs (locally stored) will be downloaded
 
+```
     Accepted values: Select Resources
 
     Default: WAF
+```
     
 **Date Range**  
 Select date range for which logs should be downloaded
 
+```
     Accepted values: Select Date Range
 
     Default: Blank
+```
+
  

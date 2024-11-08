@@ -20,25 +20,34 @@ Error Rules is a feature of Haltdos WAF that allows application owners to show c
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Priority**
 
 Specify the priority for the rule for execution when matched with the request.
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 ##### **Add Condition**
 

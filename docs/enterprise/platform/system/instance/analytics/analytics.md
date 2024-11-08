@@ -17,5 +17,5 @@ It shows the complete analytics/Status of the Selected Instance
 
 1. 1. Go to **System > Instance > (Select Instance) > Analytics > Instance**
 2. Configure your settings
-3. Click **Save CHanges**
+3. Click **Save Changes**
 

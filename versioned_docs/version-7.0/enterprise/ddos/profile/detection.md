@@ -104,17 +104,23 @@ User can set custom threshold values according to their network requirement. Det
 
 This field contains the name of Alarm which user choose to edit
 
+```
     Accepted values: Integer
 
     Default: 1 
+```
+
 
 ##### Alarm Type
 
 In this field user can choose what type of alarm they want to set. In Haltdos there are two type of Alarm types
 
+```
     Accepted values: Threshold / Anomaly
 
     Default: 1 
+```
+
 
 1. Threshold
 2. Anomaly

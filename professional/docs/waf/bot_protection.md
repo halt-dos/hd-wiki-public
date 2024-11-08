@@ -36,9 +36,12 @@ Configure the following parameters to set up the desired settings:
 ##### **Allowed Crawlers**
 This field specifies the list of good crawlers by specifying their user agents. You can add single or multiple user agents. All the user agent mentioned in Allowed Crawlers permits the crawlers to access the protected URL. 
 
+```
     Accepted values: String
 
     Default: Empty  
+```
+
 
     E.g. Google Crawler  
 
@@ -47,9 +50,12 @@ This field specifies the list of good crawlers by specifying their user agents. 
 ##### **Bad Crawlers**
 This field specifies the list of bad crawlers by specifying their user agents. You can add single or multiple user agents. All the user agent mentioned in Bad Crawlers does not permit the crawlers to access the protected URL.
 
+```
     Accepted values: String  
     
     Default: Empty  
+```
+
 
     E.g. Google Crawler  
 

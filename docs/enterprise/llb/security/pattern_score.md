@@ -33,278 +33,385 @@ The low level indicates that packet scoring will be start from lower level.
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **OUT OF RANGE MSS**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **MSS IN NON-SYN PACKET**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **WINDOW SCALE IN NON-SYN PACKET**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TOP SOURCE PORT TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **SOURCE PORT ZERO**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **SOURCE PORT OUT OF RANGE**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TCP SEQUENCE NUMBER TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TCP SEQUENCE NUMBER ZERO**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TCP URGENT POINTER WITHOUT FLAG**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TCP ACK NUMBER WITHOUT FLAG**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TCP FLAGS TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **SUSPICIOUS TCP FLAG COMBINATIONS**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TCP RESERVED FLAGS**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TCP SUSPICIOUS WINDOW SIZE**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 #### **SOURCE PREFIX TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 #### **SUSPICIOUS CHECKSUM**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TCP URGENT POINTER TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **ICMP DESTINATION TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
 
+
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **SOURCE PREFIX TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **SUSPICIOUS CHECKSUM**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **TCP URGENT POINTER TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **ICMP DESTINATION TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
     
 ##### **UDP DESTINATION TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **DNS DESTINATION TOP TALKER**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **DNS ANY QUERY**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 #### **DNS BAD ANSWER COUNT**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 #### **DNS BAD EDNS0 NAME**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **DNS BAD FLAGS**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **DNS BAD LENGTH**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
 
+
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **DNS BAD NAMESERVER COUNT**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **DNS BAD RETURN CODE**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **DNS EDNS0 WITH DO**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+
 
 ##### **DNS RARE QUERY TYPE**
 
 Specify suspicion score as LOW, MEDIUM or HIGH
 
+```
     Accepted values: LOW / MEDIUM / HIGH
 
     Default: LOW
+```
+

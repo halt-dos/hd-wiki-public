@@ -24,6 +24,8 @@ Name of the connection
     Accepted Value: String
 
     Default: Blank
+```
+
 
 #### **Protocol Type**
 
@@ -32,6 +34,8 @@ Select TYpe of Protocol
     Accepted Value: SSH / VNC / RDP / TELNET / KUBERNETES
 
     Default: SSH
+```
+
 
 #### **Host Name**
 
@@ -40,6 +44,8 @@ Enter the host name
     Accepted Value: Password / Radius / (Active Directory / LDAP) / TACACS  
 
     Default: Blank
+```
+
 
 #### **PORT**
 
@@ -48,6 +54,8 @@ Enter Port
     Accepted Value: Integer
 
     Default: 22
+```
+
 
 #### **USERNAME**
 
@@ -56,6 +64,8 @@ This option allows user to enter username
     Accepted Value: String
 
     Default: Blank
+```
+
 
 #### **PASSWORD**
 
@@ -64,6 +74,8 @@ This option allows user to enter password
     Accepted Value: String
 
     Default: Blank
+```
+
 
 #### **ENABLE HOST KEY VERIFICATION**
 
@@ -72,6 +84,8 @@ This option allows user to Enable / Disable the host key verification
     Accepted Value: Enable / Disable
 
     Default: Disable
+```
+
 
 #### **AUTHENTICATION TYPE**
 
@@ -80,3 +94,5 @@ Select the authentication type
     Accepted Value: Password / Private Key / Encrypted Private Key
 
     Default: Password
+```
+

@@ -30,62 +30,86 @@ A GSLB site is the logical collection of GSLB virtual server, GSLB service, LB v
 
 Specify to enable the Site.
 
+```
     Accepted values: Enabled / Disabled 
 
     Default: Enabled 
+```
+
 
 **Site Name**
 
 Specify the name for your site.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Site ID**
 
 It is auto generated function.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Site IP**
 
 User can Specify the IP address of the Site 
 
+```
     Accepted values: IP
 
     Default: Blank 
+```
+
 
 **Port**
 
 It specifies the port number to connect 
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 **Username**
 
 User can set a username to access the site 
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Password**
 
 User can set a password to protect the site from any unknown login
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Inactivity Threshold**
 
 In this User can specify when no events or flows are generated in the specified time.
 
+```
     Accepted values: Integer
 
     Default: 60 
+```
+

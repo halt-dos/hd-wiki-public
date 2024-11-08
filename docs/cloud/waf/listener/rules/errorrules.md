@@ -23,25 +23,34 @@ Error Rules is a feature of Haltdos WAF that allows application owners to show c
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Rule Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
 
+```
     Accepted values:  Description for the rule in String format
 
     Default: 0
+```
+
 
 ##### **Rule Priority**
 
 Specify the priority for the rule for execution when matched with the request.
 
+```
     Accepted values: Integer
 
     Default: 0
+```
+
 
 ##### **URI**
 
@@ -49,31 +58,43 @@ Specify the URI on which the tamper rule will be applied.
 
 Example /login
 
+```
     Accepted values: URI
 
     Default: Blank
+```
+
 
 ##### **Method**
 
 Select the HTTP method for the rule to extract when matched with the request.
 
+```
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: ALL
+```
+
 
 ##### **HTTP Response Codes**
 
 User can mention the HTTP response code based on the custom error rule name.
 
+```
     Accepted values: HTTP Response Code
 
     Default: Select Response Code
+```
+
 
 ##### **Rule Action**
 
 Specifies the action to be executed when this is gets triggered
 
+```
     Accepted values: No Action / Send Custom Response Code
 
     Default: Blank
+```
+
 

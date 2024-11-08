@@ -27,56 +27,80 @@ Haltdos platform allows administrators to configure password policy as per organ
 ##### **Enabled**
 Enable organization specific password policy
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable 
+```
+
 
 ##### **Default Password**
 Specify the default password for system loginmode for new user.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Minimum Length**
 Specify the minimum length of password.
 
+```
     Accepted values: Integer
 
     Default: 6 
+```
+
 
 ##### **Password Expiry**
 Specify the expiry duration of password after which a new password must be set to access HaltDos
 
+```
     Accepted values: Integer
 
     Default: 90 
+```
+
 
 ##### **Contain Uppercase**
 Specify if the password must compulsory contain upper case characters
 
+```
     Accepted values: Enable / Disable
 
     Default: Enable 
+```
+
 
 ##### **Contain LowerCase**
 Specify if the password must compulsory contain lower case characters
 
+```
     Accepted values: Enable / Disable
 
     Default: Enable 
+```
+
 
 ##### **Contain Special Characters**
 Specify if the password must compulsory contain special characters
 
+```
     Accepted values: Enable / Disable
 
     Default: Enable 
+```
+
 
 ##### **Contain LowerCase**
 Specify if the password must compulsory contain numbers	
 
+```
     Accepted values: Enable / Disable
 
     Default: Enable 
+```
+
 

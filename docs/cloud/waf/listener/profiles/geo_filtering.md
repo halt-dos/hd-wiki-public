@@ -20,25 +20,34 @@ Our solution restricts user's based upon Blacklisted IP Prefixes and Countries. 
 ##### **Blacklist Countries**
 This section specify the list of countries that will be permanently disallowed from accessing the website. Countries can be selected by typing the name of the country and any request coming from the specified countries will be dropped.  
 
+```
     Accepted values: list of country as per ISO 3166-1 alpha-2 standard 2 letter country-code.
 
     Default: Blank
+```
+
 
 ##### **Whitelist IP Prefixes**
 This section specify the list of IPs that will be permanently allowed for accessing the website. IP whitelisting is when you grant network access only to specific IP addresses.  
 
+```
     Accepted values: IP prefix
 
     Default: Blank
+```
+
 
 **IP Prefix** refers to a portion of an IP address that indicates the network or subnet to which the IP address belongs. (For example, 192.168.0.0/24 or 2001:0db8:85a3::/64.)
 
 ##### **Blacklist IP Prefixes**
 This section specify the list of IPs that will be permanently disallowed from accessing the website. IP blacklisting is a method used to filter out illegitimate or malicious IP addresses from accessing your networks. Blacklists are lists containing ranges of or individual IP addresses that you want to block.
 
+```
     Accepted values: IP prefix
 
     Default: Blank
+```
+
 
 #### Use Cases
 

@@ -26,46 +26,62 @@ Rate Limiting is a feature of Haltdos SLB that allows application owners to enfo
 
 The user can define the rule name.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Message**
 
 The user can define the rule message.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Rule Enabled**
 
 Users can enable or disable the rule.
 
+```
     Accepted values: Enabled / Disabled
 
     Default: Enabled 
+```
+
 
 ##### **Rule Priority**
 
 The user can define the rule priority for this particular rule among various other rules in Rate Limit Rules
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 ##### **Rule Action**
 
 The user can define what action needs to be taken when this rule condition is matched.
 
+```
     Accepted values: Drop & Record Request / Record Request / Bypass Request / Temprorary Blacklist Src IP / Send Captcha CHallenege
 
     Default: Record Request  
+```
+
 
 ##### **Max Rate**
 
 The user can define the request rate for the page
 
+```
     Accepted values: Integer
 
     Max: 1000000
@@ -73,6 +89,8 @@ The user can define the request rate for the page
     Min: 0
 
     Default: 10  
+```
+
 
     Metric: Per Second 
 
@@ -80,6 +98,7 @@ The user can define the request rate for the page
 
 The user can define the track limit in order to track if the rate is exceeding the limit or not.
 
+```
     Accepted values: Integer
 
     Max: 1000000
@@ -87,6 +106,8 @@ The user can define the track limit in order to track if the rate is exceeding t
     Min: 0
 
     Default: 20  
+```
+
 
     Metric: Count
 
@@ -94,6 +115,7 @@ The user can define the track limit in order to track if the rate is exceeding t
 
 Specify the time duration for which the rule will limit the request.
 
+```
     Accepted values: Integer
 
     Max: 3600
@@ -101,6 +123,8 @@ Specify the time duration for which the rule will limit the request.
     Min: 0
 
     Default: 1  
+```
+
 
     Metric: Second 
 

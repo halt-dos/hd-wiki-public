@@ -24,13 +24,19 @@ This option allows users to add multiple VPN Users. User can be a part of a spec
 **Group ID**  
 This option is used to set the unique group ID to unique group.  
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Group Name**  
 This option allows user to set the user friendly name for the group. 
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
