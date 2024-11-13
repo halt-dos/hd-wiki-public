@@ -63,6 +63,26 @@ const config = {
           customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
+    ],
+    [
+      "redocusaurus",
+      {
+        "specs": [
+          {
+            "id": "apiDocs",
+            "route": "/api",
+            "spec": "haltdos-api.yaml"
+          }
+        ],
+        "theme": {
+          "primaryColor": "#4786FF",
+          "options": {
+            "disableSearch": true,
+            "requiredPropsFirst": true,
+            "noAutoAuth": true
+          }
+        }
+      }
     ]
   ],
   plugins: [
@@ -154,6 +174,7 @@ const config = {
           {to: 'professional/introduction', label: 'Professional', position: 'left'},
           {to: 'enterprise', label: 'Enterprise', position: 'left'},
           {to: 'cloud', label: 'Cloud', position: 'left'},
+          {href: '/api', label: 'Haltdos API', position: 'left'},
           {href: 'https://haltdos.com',label: 'Haltdos', target: '_blank', rel: null, position: 'right', className:'haltdos'},
           {
             type: 'search',
