@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhaltdos_wiki=self.webpackChunkhaltdos_wiki||[]).push([[59787],{15909:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-redoc","id":"apiDocs"}')}}]);
