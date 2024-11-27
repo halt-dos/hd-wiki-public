@@ -2,16 +2,6 @@ openapi: 3.0.1
 info:
   title: Haltdos API
   description: Haltdos Platform API
-  license:
-    name: Apache 2.0
-    url: http://springdoc.org
-  version: v1.0.0
-externalDocs:
-  description: SpringShop Wiki Documentation
-  url: https://springshop.wiki.github.org/docs
-servers:
-  - url: http://localhost:8080
-    description: Generated server url
 paths:
   /v1/stack/{stackId}/content:
     put:
@@ -205,7 +195,7 @@ paths:
   /v1/stack/{stackId}/waf:
     get:
       tags:
-        - Apps
+        - Web Application Firewall
       description: >-
         Retrieves the WAF module configuration for the specified stack, zone,
         and path.
@@ -240,7 +230,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Apps
+        - Web Application Firewall
       description: ' Updates the WAF module configuration with the provided action and configuration for the specified zone and path.'
       operationId: updateModule
       parameters:
@@ -291,7 +281,7 @@ paths:
                 $ref: '#/components/schemas/SimpleResponse'
     delete:
       tags:
-        - Apps
+        - Web Application Firewall
       description: Deletes the WAF module for the specified zone and path.
       operationId: deleteModule
       parameters:
@@ -325,7 +315,7 @@ paths:
   /v1/stack/{stackId}/waf/upload/scan:
     post:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: ' Uploads a vulnerability scan file for a specific WAF stack using a specified scan tool.'
       operationId: uploadVersion
       parameters:
@@ -369,7 +359,7 @@ paths:
   /v1/stack/{stackId}/waf/tools/mf/download:
     post:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: Downloads MF events for a given time range and reference ID.
       operationId: downloadWafToolMatchEvents
       parameters:
@@ -412,7 +402,7 @@ paths:
   /v1/stack/{stackId}/waf/tools/fp/download:
     post:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: Downloads FP incident events based on the specified filter.
       operationId: downloadWafToolEvents
       parameters:
@@ -440,7 +430,7 @@ paths:
   /v1/stack/{stackId}/waf/rules/learning:
     get:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: >-
         Retrieves the learning status of WAF signatures for a given stack and
         filter.
@@ -469,7 +459,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseSignaturesStatus'
     post:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: >-
         Updates the status of WAF rules for a specific zone and profile, with an
         optional action for all rules or a specific rule.
@@ -535,7 +525,7 @@ paths:
   /v1/stack/{stackId}/waf/listener/{referenceId}/discovery:
     get:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: >-
         Retrieves the learning status and discovery scores for a specific WAF
         listener.
@@ -572,7 +562,7 @@ paths:
                 $ref: '#/components/schemas/ListResponseLearningStatus'
     post:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: >-
         Updates the learning configuration for a WAF listener, including profile
         and action parameters.
@@ -620,7 +610,7 @@ paths:
   /v1/stack/{stackId}/waf/listener/{referenceId}/discovery/upload:
     post:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: >-
         Uploads a file for discovery learning to a WAF listener with an optional
         profile ID.
@@ -687,87 +677,10 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseTask'
-  /v1/stack/{stackId}/swg:
-    get:
-      tags:
-        - Apps
-      description: >-
-        Retrieves the SWG (Secure Web Gateway) module configuration for the
-        specified stack and reference ID.
-      operationId: getModule_1
-      parameters:
-        - name: stackId
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Reference Id
-          in: query
-          description: Show the Reference Id
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DataResponseObject'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/DataResponseObject'
-    post:
-      tags:
-        - Apps
-      description: >-
-        Updates the SWG module configuration for the specified stack, reference
-        ID, action, and configuration.
-      operationId: updateModule_1
-      parameters:
-        - name: stackId
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Reference Id
-          in: query
-          description: Shows the id of the reference
-          required: true
-          schema:
-            type: string
-        - name: Action Configuration
-          in: query
-          description: Shows the Configuration of the Action
-          required: true
-          schema:
-            type: string
-            enum:
-              - ADD
-              - EDIT
-              - RESET
-              - DELETE
-              - RELOAD
-        - name: Configuration
-          in: query
-          description: Shows the configuration
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SimpleResponse'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/SimpleResponse'
   /v1/stack/{stackId}/slb:
     get:
       tags:
-        - Apps
+        - Serial Load Balancer
       description: >-
         Retrieves SLB (Server Load Balancer) module configuration for the
         specified stack and reference ID.
@@ -796,7 +709,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Apps
+        - Serial Load Balancer
       description: >-
         Updates the SLB module configuration for the specified stack, reference
         ID, and action.
@@ -844,7 +757,7 @@ paths:
   /v1/stack/{stackId}/slb/bot/key-generate:
     post:
       tags:
-        - Apps
+        - Serial Load Balancer
       description: >-
         Generates an encryption key for a listener in the specified stack and
         listener ID.
@@ -1017,7 +930,7 @@ paths:
   /v1/stack/{stackId}/scan:
     get:
       tags:
-        - Apps
+        - Scanner
       description: Retrieves scanner profiles for the specified stack and reference ID.
       operationId: getScannerProfiles
       parameters:
@@ -1044,7 +957,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Apps
+        - Scanner
       description: >-
         Sets or updates a scanner profile for the specified stack based on the
         action and configuration.
@@ -1092,7 +1005,7 @@ paths:
   /v1/stack/{stackId}/scan/task:
     post:
       tags:
-        - Apps
+        - Scanner
       description: >-
         Creates a new scan task for the specified stack based on the provided
         task JSON.
@@ -1122,7 +1035,7 @@ paths:
   /v1/stack/{stackId}/scan/report:
     post:
       tags:
-        - Apps
+        - Scanner
       description: Generates a scan report based on the provided task ID and event ID.
       operationId: generateScanReport
       parameters:
@@ -1157,7 +1070,7 @@ paths:
   /v1/stack/{stackId}/rdns:
     get:
       tags:
-        - Apps
+        - DNS Firewall
       description: Retrieves RDNS module settings for a specified stack and reference ID.
       operationId: getRdnsModule
       parameters:
@@ -1184,7 +1097,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Apps
+        - DNS Firewall
       description: >-
         Updates RDNS module configuration for a specified stack and reference ID
         based on the provided action and configuration.
@@ -1232,7 +1145,7 @@ paths:
   /v1/stack/{stackId}/llb:
     get:
       tags:
-        - Apps
+        - Link Load Balancer
       description: Retrieves LLB module settings for a specified stack and reference ID.
       operationId: getSettings
       parameters:
@@ -1259,7 +1172,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Apps
+        - Link Load Balancer
       description: >-
         Updates LLB module configuration for a specified stack and reference ID
         based on the provided action and configuration.
@@ -1307,7 +1220,7 @@ paths:
   /v1/stack/{stackId}/llb/rules/status:
     post:
       tags:
-        - Apps
+        - Link Load Balancer
       description: >-
         Updates the status of an LLB rule for a specified port ID, action, and
         optional rule ID and configuration.
@@ -1490,22 +1403,26 @@ paths:
             default: ''
         - name: Incident Category
           in: query
+          description: Category of Incident
           required: false
           schema:
             type: string
         - name: Matching Criteria
           in: query
+          description: Cirteria of Matching
           required: false
           schema:
             type: string
         - name: Start Timestamp
           in: query
+          description: Time stamp of Starting
           required: true
           schema:
             type: integer
             format: int64
         - name: End Timestamp
           in: query
+          description: Time Stamp of Ending
           required: true
           schema:
             type: integer
@@ -1523,7 +1440,7 @@ paths:
   /v1/stack/{stackId}/dns:
     get:
       tags:
-        - Apps
+        - Authoritative DNS
       description: Retrieves DNS module settings for a specified stack and reference ID.
       operationId: getDnsModule
       parameters:
@@ -1549,7 +1466,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Apps
+        - Authoritative DNS
       description: >-
         Updates DNS module configuration for a specified stack and reference ID
         based on the provided action and configuration.
@@ -1594,7 +1511,7 @@ paths:
   /v1/stack/{stackId}/ddos:
     get:
       tags:
-        - Apps
+        - Anti-DDoS
       description: >-
         Retrieves the current DDoS settings for a specified stack and reference
         ID.
@@ -1623,7 +1540,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Apps
+        - Anti-DDoS
       description: >-
         Updates the DDoS module configuration for a specified stack and
         reference ID based on the provided action and configuration.
@@ -1671,7 +1588,7 @@ paths:
   /v1/stack/{stackId}/ddos/rules/status:
     post:
       tags:
-        - Apps
+        - Anti-DDoS
       description: >-
         Updates the status of a specified DDoS rule based on the provided
         profile ID and action.
@@ -1725,7 +1642,7 @@ paths:
   /v1/stack/{stackId}/ddos/detection:
     get:
       tags:
-        - Apps
+        - Anti-DDoS
       description: >-
         Retrieves the list of alarms for a specified DDoS profile within a
         stack.
@@ -1754,7 +1671,7 @@ paths:
                 $ref: '#/components/schemas/ListResponseAlarm'
     post:
       tags:
-        - Apps
+        - Anti-DDoS
       description: Updates the alarm settings for a specified DDoS profile within a stack.
       operationId: updateAlarms
       parameters:
@@ -1788,7 +1705,7 @@ paths:
   /v1/stack/{stackId}/cdn:
     get:
       tags:
-        - Apps
+        - Content Delivery Network
       description: Get CDN configuration
       operationId: getConfiguration
       parameters:
@@ -1815,7 +1732,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Apps
+        - Content Delivery Network
       description: Updates CDN configuration
       operationId: saveConfiguration
       parameters:
@@ -1858,85 +1775,10 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
-  /v1/stack/{stackId}/blk:
-    get:
-      tags:
-        - Apps
-      description: Retrieves the settings for a specified stack and reference ID.
-      operationId: getBlkSettings
-      parameters:
-        - name: stackId
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Reference Id
-          in: query
-          description: Shows the Id of the reference
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DataResponseObject'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/DataResponseObject'
-    post:
-      tags:
-        - Apps
-      description: >-
-        Updates the configuration for a specified stack and reference ID based
-        on the given action.
-      operationId: updateBlkModule
-      parameters:
-        - name: stackId
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Reference Id
-          in: query
-          description: Shows the Id of the Reference
-          required: true
-          schema:
-            type: string
-        - name: Action Configuration
-          in: query
-          description: Shows the Action Configuration
-          required: true
-          schema:
-            type: string
-            enum:
-              - ADD
-              - EDIT
-              - RESET
-              - DELETE
-              - RELOAD
-        - name: Configuration
-          in: query
-          description: Shows the Configuration
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SimpleResponse'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/SimpleResponse'
   /v1/stack/{stackId}/adc:
     get:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Retrieves a module based on the provided stack and reference IDs.
       operationId: getAdcModule
       parameters:
@@ -1963,7 +1805,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: >-
         Updates a module's configuration and action based on the specified
         parameters.
@@ -2011,7 +1853,7 @@ paths:
   /v1/stack/{stackId}/adc/upload/scan:
     post:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: ' Uploads a vulnerability assessment scan result file.'
       operationId: uploadVAScanResult
       parameters:
@@ -2055,7 +1897,7 @@ paths:
   /v1/stack/{stackId}/adc/tools/mf/download:
     post:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: ' Downloads match events within the specified time range and reference ID.'
       operationId: downloadMatchEvents
       parameters:
@@ -2098,7 +1940,7 @@ paths:
   /v1/stack/{stackId}/adc/tools/fp/download:
     post:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Downloads events based on the specified filter criteria.
       operationId: downloadEvents
       parameters:
@@ -2126,7 +1968,7 @@ paths:
   /v1/stack/{stackId}/adc/tools/access-logs/download:
     post:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Exports access logs for a specified time range and reference ID.
       operationId: exportLogs
       parameters:
@@ -2169,7 +2011,7 @@ paths:
   /v1/stack/{stackId}/adc/rules/learning:
     get:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Updates the status of a specific rule based on the given parameters.
       operationId: getRulesStatus
       parameters:
@@ -2196,7 +2038,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseSignaturesStatus'
     post:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: ' Updates the status of a specific rule based on the given parameters.'
       operationId: updateRuleStatus
       parameters:
@@ -2254,7 +2096,7 @@ paths:
   /v1/stack/{stackId}/adc/listener/{referenceId}/discovery:
     get:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: >-
         Retrieves the learning status for a listener based on pagination and
         matching criteria.
@@ -2302,7 +2144,7 @@ paths:
                 $ref: '#/components/schemas/ListResponseLearningStatus'
     post:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: >-
         Updates the learning configuration for a listener based on the provided
         parameters.
@@ -2350,7 +2192,7 @@ paths:
   /v1/stack/{stackId}/adc/listener/{referenceId}/discovery/upload:
     post:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Uploads a file related to a listener's configuration.
       operationId: uploadAdcApiFile
       parameters:
@@ -2389,7 +2231,7 @@ paths:
   /v1/stack/{stackId}/adc/listener/{referenceId}/discovery/export:
     post:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Exports URIs associated with a specified reference ID.
       operationId: exportUris
       parameters:
@@ -2490,7 +2332,7 @@ paths:
   /v1/stack/{stackId}/waf/tools/mf:
     get:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: >-
         Retrieves malicious false (MF) incidents within the specified time
         range.
@@ -2548,7 +2390,7 @@ paths:
   /v1/stack/{stackId}/waf/tools/fp:
     get:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: >-
         Retrieves false-positive (FP) incidents data based on the specified
         filter.
@@ -2578,7 +2420,7 @@ paths:
   /v1/stack/{stackId}/waf/tools/fp/uri:
     get:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: Retrieves WAF rules matched per URI based on the specified filter.
       operationId: getWafToolMatchedRulesPerUri
       parameters:
@@ -2606,7 +2448,7 @@ paths:
   /v1/stack/{stackId}/waf/tools/fp/match:
     get:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: Retrieves match data for specific URIs based on the provided filter.
       operationId: getWafToolUriMatchData
       parameters:
@@ -2634,7 +2476,7 @@ paths:
   /v1/stack/{stackId}/waf/rules:
     get:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: >-
         Retrieves WAF rules for a specified stack, filtered by the provided rule
         criteria.
@@ -2664,7 +2506,7 @@ paths:
   /v1/stack/{stackId}/waf/auto-profile:
     get:
       tags:
-        - WAF-API
+        - Web Application Firewall
       description: >-
         Retrieves auto-profile data for a WAF stack based on the provided zone,
         listener, and key.
@@ -2943,7 +2785,7 @@ paths:
   /v1/stack/{stackId}/scans:
     get:
       tags:
-        - Apps
+        - Scanner
       description: Retrieves the list of scan tasks for the specified stack.
       operationId: getScans
       parameters:
@@ -2965,7 +2807,7 @@ paths:
   /v1/stack/{stackId}/scan/task/{taskId}/status:
     get:
       tags:
-        - Apps
+        - Scanner
       description: >-
         Lists events associated with a specific scan task for the specified
         stack.
@@ -3017,7 +2859,7 @@ paths:
   /v1/stack/{stackId}/llb/rules:
     get:
       tags:
-        - Apps
+        - Link Load Balancer
       description: >-
         Retrieves LLB rules with pagination and optional filtering for a
         specified stack.
@@ -3061,7 +2903,7 @@ paths:
   /v1/stack/{stackId}/llb/rules/learning:
     get:
       tags:
-        - Apps
+        - Link Load Balancer
       description: >-
         Retrieves signature status with optional filtering for a specified
         stack.
@@ -3250,7 +3092,7 @@ paths:
   /v1/stack/{stackId}/dns/verify:
     get:
       tags:
-        - Apps
+        - Authoritative DNS
       description: ' Verifies the DNS domain for a specified stack.'
       operationId: verify
       parameters:
@@ -3277,7 +3119,7 @@ paths:
   /v1/stack/{stackId}/dns/statistics:
     get:
       tags:
-        - Apps
+        - Authoritative DNS
       description: >-
         Retrieves DNS statistics for a specified time range and optional domain
         or zone ID in a stack.
@@ -3327,7 +3169,7 @@ paths:
   /v1/stack/{stackId}/dns/import:
     get:
       tags:
-        - Apps
+        - Authoritative DNS
       description: Imports DNS records for a specified zone ID and domain in a stack.
       operationId: importRecords
       parameters:
@@ -3360,7 +3202,7 @@ paths:
   /v1/stack/{stackId}/ddos/rules:
     get:
       tags:
-        - Apps
+        - Anti-DDoS
       description: >-
         Retrieves a paginated list of DDoS rules for a specified stack, filtered
         by provided criteria.
@@ -3404,7 +3246,7 @@ paths:
   /v1/stack/{stackId}/ddos/rules/learning:
     get:
       tags:
-        - Apps
+        - Anti-DDoS
       description: >-
         Retrieves the status of learning signatures based on provided filtering
         criteria for a specified stack.
@@ -3802,7 +3644,7 @@ paths:
   /v1/stack/{stackId}/adc/tools/mf:
     get:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: >-
         Queries incidents matching specified time parameters and pagination
         settings.
@@ -3860,7 +3702,7 @@ paths:
   /v1/stack/{stackId}/adc/tools/fp:
     get:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Fetches matched rules based on the specified filter criteria.
       operationId: getMatchedRules
       parameters:
@@ -3888,7 +3730,7 @@ paths:
   /v1/stack/{stackId}/adc/tools/fp/uri:
     get:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Retrieves matched rules specific to a URI based on filter criteria.
       operationId: getMatchedRulesPerUri
       parameters:
@@ -3916,7 +3758,7 @@ paths:
   /v1/stack/{stackId}/adc/tools/fp/match:
     get:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Obtains matching data for a specified URI based on filters.
       operationId: getUriMatchData
       parameters:
@@ -3944,7 +3786,7 @@ paths:
   /v1/stack/{stackId}/adc/rules:
     get:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Fetches rules based on filters specified in the request.
       operationId: getRules
       parameters:
@@ -3972,7 +3814,7 @@ paths:
   /v1/stack/{stackId}/adc/auto-profile:
     get:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Retrieves auto profile data based on the provided listener ID and key.
       operationId: getAutoProfileData
       parameters:
@@ -4164,7 +4006,7 @@ paths:
   /v1/stack/{stackId}/scan/task/{taskId}:
     delete:
       tags:
-        - Apps
+        - Scanner
       description: Deletes a scan task by its task ID for the specified stack.
       operationId: deleteScanTask
       parameters:
@@ -4192,7 +4034,7 @@ paths:
   /v1/stack/{stackId}/scan/task/{taskId}/event/{eventId}:
     delete:
       tags:
-        - Apps
+        - Scanner
       description: >-
         Deletes a specific scan event associated with a scan task for the
         specified stack.
@@ -4216,7 +4058,7 @@ paths:
   /v1/stack/{stackId}/adc/scan/{scanId}:
     delete:
       tags:
-        - Apps
+        - Application Delivery Controller
       description: Deletes a specified vulnerability assessment scan result.
       operationId: deleteVAScanResult
       parameters:
@@ -5532,11 +5374,11 @@ components:
           type: object
           additionalProperties:
             type: object
+        dynamic:
+          type: boolean
         precision:
           type: integer
           format: int32
-        dynamic:
-          type: boolean
         size:
           type: integer
           format: int32
