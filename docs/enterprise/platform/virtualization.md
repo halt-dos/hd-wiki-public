@@ -33,5 +33,5 @@ Each virtual instance created requires a pre-built OS template that can be downl
 :::
 
 :::note Note
-List of supported Hypervisors include: **Hyper-V**, **Kernel-based Virutal Machine (KVM)**, **Red Hat Virtualization**, **Xen hypervisor**, **VMWare vSphere**
+List of supported Hypervisors include: **Hyper-V**, **Kernel-based Virutal Machine (KVM)**, **Red Hat Virtualization**, **Xen hypervisor**, **VMWare vSphere**, **IBM PowerVM**
 :::
