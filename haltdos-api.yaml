@@ -677,83 +677,6 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseTask'
-  /v1/stack/{stackId}/swg:
-    get:
-      tags:
-        - Secure Web Gateway
-      description: >-
-        Retrieves the SWG (Secure Web Gateway) module configuration for the
-        specified stack and reference ID.
-      operationId: getSwgModule
-      parameters:
-        - name: stackId
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Reference Id
-          in: query
-          description: Show the Reference Id
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/DataResponseObject'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/DataResponseObject'
-    post:
-      tags:
-        - Secure Web Gateway
-      description: >-
-        Updates the SWG module configuration for the specified stack, reference
-        ID, action, and configuration.
-      operationId: updateSwgModule
-      parameters:
-        - name: stackId
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Reference Id
-          in: query
-          description: Shows the id of the reference
-          required: true
-          schema:
-            type: string
-        - name: Action Configuration
-          in: query
-          description: Shows the Configuration of the Action
-          required: true
-          schema:
-            type: string
-            enum:
-              - ADD
-              - EDIT
-              - RESET
-              - DELETE
-              - RELOAD
-        - name: Configuration
-          in: query
-          description: Shows the configuration
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SimpleResponse'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/SimpleResponse'
   /v1/stack/{stackId}/slb:
     get:
       tags:
@@ -1147,7 +1070,7 @@ paths:
   /v1/stack/{stackId}/rdns:
     get:
       tags:
-        - DNS FW
+        - DNS Firewall
       description: Retrieves RDNS module settings for a specified stack and reference ID.
       operationId: getRdnsModule
       parameters:
@@ -1174,7 +1097,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - DNS FW
+        - DNS Firewall
       description: >-
         Updates RDNS module configuration for a specified stack and reference ID
         based on the provided action and configuration.
@@ -5451,11 +5374,11 @@ components:
           type: object
           additionalProperties:
             type: object
+        dynamic:
+          type: boolean
         precision:
           type: integer
           format: int32
-        dynamic:
-          type: boolean
         size:
           type: integer
           format: int32
