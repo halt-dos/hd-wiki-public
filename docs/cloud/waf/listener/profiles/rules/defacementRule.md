@@ -5,7 +5,10 @@ sidebar_position : 13
    
 ### Overview
    
-These rules prevent Haltdos WAF from logging sensitive information like passwords, etc., and adhere to your compliance policy.  
+
+Defacement rules in a Web Application Firewall (WAF) are designed to identify and block suspicious activities or payloads that could alter website content maliciously.   
+
+Haltdos WAF strengthens this protection by analyzing incoming requests for attack patterns, blocking unauthorized file uploads or injections, and monitoring content integrity using methods like checksum validation. It employs behavioral analysis and pre-configured rules to prevent common defacement tactics, such as exploiting admin panels or bypassing security controls. By proactively detecting and mitigating defacement attempts, Haltdos WAF ensures websites maintain their intended appearance and functionality while safeguarding content integrity.
 
 ![Log Rules](/img/waf/v8/docs/defacementRule.png)
    

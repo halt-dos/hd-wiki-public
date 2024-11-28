@@ -78,6 +78,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseResourceContent'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Management
@@ -165,6 +171,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseResourceContent'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     delete:
       tags:
         - Management
@@ -192,6 +204,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf:
     get:
       tags:
@@ -208,7 +226,7 @@ paths:
             type: string
         - name: Zone Id
           in: query
-          description: shows the Id of Zone
+          description: Shows the Id of Zone
           required: true
           schema:
             type: string
@@ -228,6 +246,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Web Application Firewall
@@ -279,6 +303,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     delete:
       tags:
         - Web Application Firewall
@@ -312,6 +342,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/upload/scan:
     post:
       tags:
@@ -356,6 +392,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/tools/mf/download:
     post:
       tags:
@@ -399,6 +441,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/tools/fp/download:
     post:
       tags:
@@ -427,6 +475,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/rules/learning:
     get:
       tags:
@@ -457,6 +511,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseSignaturesStatus'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Web Application Firewall
@@ -522,6 +582,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/listener/{referenceId}/discovery:
     get:
       tags:
@@ -560,6 +626,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseLearningStatus'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Web Application Firewall
@@ -607,6 +679,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/listener/{referenceId}/discovery/upload:
     post:
       tags:
@@ -649,6 +727,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/task:
     post:
       tags:
@@ -677,6 +761,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseTask'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/slb:
     get:
       tags:
@@ -707,6 +797,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Serial Load Balancer
@@ -754,6 +850,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/slb/bot/key-generate:
     post:
       tags:
@@ -785,6 +887,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/settings:
     get:
       tags:
@@ -813,6 +921,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Management
@@ -858,6 +972,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseStackApp'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/sessions/export:
     post:
       tags:
@@ -927,6 +1047,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/scan:
     get:
       tags:
@@ -955,6 +1081,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Scanner
@@ -1002,6 +1134,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/scan/task:
     post:
       tags:
@@ -1032,6 +1170,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/scan/report:
     post:
       tags:
@@ -1067,6 +1211,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/rdns:
     get:
       tags:
@@ -1095,6 +1245,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - DNS Firewall
@@ -1142,6 +1298,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/llb:
     get:
       tags:
@@ -1170,6 +1332,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Link Load Balancer
@@ -1217,6 +1385,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/llb/rules/status:
     post:
       tags:
@@ -1271,6 +1445,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseHashMapStringCoreRule'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/incidents:
     get:
       tags:
@@ -1362,6 +1542,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseIncident'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Management
@@ -1437,6 +1623,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/dns:
     get:
       tags:
@@ -1464,6 +1656,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Authoritative DNS
@@ -1508,6 +1706,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/ddos:
     get:
       tags:
@@ -1538,6 +1742,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Anti-DDoS
@@ -1585,6 +1795,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/ddos/rules/status:
     post:
       tags:
@@ -1639,6 +1855,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseHashMapStringCoreRule'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/ddos/detection:
     get:
       tags:
@@ -1669,6 +1891,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseAlarm'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Anti-DDoS
@@ -1702,6 +1930,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/cdn:
     get:
       tags:
@@ -1730,6 +1964,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Content Delivery Network
@@ -1775,6 +2015,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc:
     get:
       tags:
@@ -1803,6 +2049,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Application Delivery Controller
@@ -1850,6 +2102,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/upload/scan:
     post:
       tags:
@@ -1894,6 +2152,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/tools/mf/download:
     post:
       tags:
@@ -1937,6 +2201,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/tools/fp/download:
     post:
       tags:
@@ -1965,6 +2235,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/tools/access-logs/download:
     post:
       tags:
@@ -2008,6 +2284,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/rules/learning:
     get:
       tags:
@@ -2036,6 +2318,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseSignaturesStatus'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Application Delivery Controller
@@ -2093,6 +2381,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/listener/{referenceId}/discovery:
     get:
       tags:
@@ -2142,6 +2436,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseLearningStatus'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     post:
       tags:
         - Application Delivery Controller
@@ -2189,6 +2489,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/listener/{referenceId}/discovery/upload:
     post:
       tags:
@@ -2228,6 +2534,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/listener/{referenceId}/discovery/export:
     post:
       tags:
@@ -2255,6 +2567,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/alarm:
     post:
       tags:
@@ -2284,6 +2602,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stacks:
     get:
       tags:
@@ -2307,6 +2631,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponsePermissionDto'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}:
     get:
       tags:
@@ -2329,6 +2659,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponsePermissionDto'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/tools/mf:
     get:
       tags:
@@ -2387,6 +2723,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseIncident'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/tools/fp:
     get:
       tags:
@@ -2417,6 +2759,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/tools/fp/uri:
     get:
       tags:
@@ -2445,6 +2793,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/tools/fp/match:
     get:
       tags:
@@ -2473,6 +2827,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/rules:
     get:
       tags:
@@ -2503,6 +2863,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseCoreRule'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/waf/auto-profile:
     get:
       tags:
@@ -2545,6 +2911,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/tools/ioc:
     get:
       tags:
@@ -2606,6 +2978,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseMapStringLong'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/tasks:
     get:
       tags:
@@ -2637,6 +3015,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseTask'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/task/{taskId}:
     get:
       tags:
@@ -2666,6 +3050,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseTask'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     delete:
       tags:
         - Management
@@ -2693,6 +3083,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/sessions:
     get:
       tags:
@@ -2782,6 +3178,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseSession'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/scans:
     get:
       tags:
@@ -2804,6 +3206,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseTask'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/scan/task/{taskId}/status:
     get:
       tags:
@@ -2834,6 +3242,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseEvent'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/plan:
     get:
       tags:
@@ -2856,6 +3270,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseLicensePlan'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/llb/rules:
     get:
       tags:
@@ -2900,6 +3320,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseCoreRule'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/llb/rules/learning:
     get:
       tags:
@@ -2930,6 +3356,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseSignaturesStatus'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/incident/{incidentId}:
     get:
       tags:
@@ -2952,6 +3384,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseIncident'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/events:
     get:
       tags:
@@ -3047,6 +3485,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseEvent'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/event/{eventId}:
     get:
       tags:
@@ -3069,6 +3513,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseEvent'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/event/{eventId}/download:
     get:
       tags:
@@ -3089,6 +3539,12 @@ paths:
       responses:
         '200':
           description: OK
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/dns/verify:
     get:
       tags:
@@ -3116,6 +3572,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/dns/statistics:
     get:
       tags:
@@ -3166,6 +3628,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/dns/import:
     get:
       tags:
@@ -3199,6 +3667,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/ddos/rules:
     get:
       tags:
@@ -3243,6 +3717,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseCoreRule'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/ddos/rules/learning:
     get:
       tags:
@@ -3273,6 +3753,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseSignaturesStatus'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/dashboards:
     get:
       tags:
@@ -3332,6 +3818,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseDashboard'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/dashboard/graphs:
     get:
       tags:
@@ -3382,6 +3874,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseDashboardGraph'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/contents:
     get:
       tags:
@@ -3435,6 +3933,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseHashMapStringObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/content/{contentId}:
     get:
       tags:
@@ -3462,6 +3966,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseResourceContent'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/analytics:
     get:
       tags:
@@ -3549,6 +4059,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseDashboardGraph'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/analytics/metric:
     get:
       tags:
@@ -3641,6 +4157,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseDashboardGraph'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/tools/mf:
     get:
       tags:
@@ -3699,6 +4221,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseIncident'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/tools/fp:
     get:
       tags:
@@ -3727,6 +4255,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/tools/fp/uri:
     get:
       tags:
@@ -3755,6 +4289,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/tools/fp/match:
     get:
       tags:
@@ -3783,6 +4323,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/rules:
     get:
       tags:
@@ -3811,6 +4357,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseRuleDto'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/auto-profile:
     get:
       tags:
@@ -3845,6 +4397,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseObject'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/metrics:
     get:
       tags:
@@ -3888,6 +4446,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseMetric'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/alarms:
     get:
       tags:
@@ -3948,6 +4512,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseAlarm'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/alarm/{alarmId}:
     get:
       tags:
@@ -3976,6 +4546,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseAlarm'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
     delete:
       tags:
         - Management
@@ -4003,6 +4579,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/scan/task/{taskId}:
     delete:
       tags:
@@ -4031,6 +4613,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/scan/task/{taskId}/event/{eventId}:
     delete:
       tags:
@@ -4055,6 +4643,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
   /v1/stack/{stackId}/adc/scan/{scanId}:
     delete:
       tags:
@@ -4082,6 +4676,12 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+        '404':
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
 components:
   schemas:
     DataResponseResourceContent:
@@ -4104,6 +4704,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     ResourceContent:
       type: object
       properties:
@@ -4150,6 +4751,7 @@ components:
           format: int64
         lastModifiedBy:
           type: string
+      description: ''
     SimpleResponse:
       type: object
       properties:
@@ -4164,6 +4766,7 @@ components:
           type: array
           items:
             type: object
+      description: ''
     Task:
       type: object
       properties:
@@ -4220,6 +4823,7 @@ components:
           format: int64
         lastModifiedBy:
           type: string
+      description: ''
     DataResponseTask:
       type: object
       properties:
@@ -4240,6 +4844,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     DataResponseStackApp:
       type: object
       properties:
@@ -4260,6 +4865,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     StackApp:
       type: object
       properties:
@@ -4275,6 +4881,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     CoreRule:
       type: object
       properties:
@@ -4312,6 +4919,7 @@ components:
             - BLK
             - VPN
             - SWG
+      description: ''
     DataResponseHashMapStringCoreRule:
       type: object
       properties:
@@ -4334,6 +4942,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     AppFeature:
       type: object
       properties:
@@ -4346,6 +4955,7 @@ components:
         threshold:
           type: number
           format: double
+      description: ''
     AppPlan:
       type: object
       properties:
@@ -4360,6 +4970,7 @@ components:
           additionalProperties:
             type: number
             format: double
+      description: ''
     AppUsage:
       type: object
       properties:
@@ -4373,6 +4984,7 @@ components:
           additionalProperties:
             type: number
             format: double
+      description: ''
     LicensePlan:
       type: object
       properties:
@@ -4396,6 +5008,7 @@ components:
           additionalProperties:
             type: number
             format: double
+      description: ''
     ListResponseMetadata:
       type: object
       properties:
@@ -4415,6 +5028,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     ListResponsePermissionDto:
       type: object
       properties:
@@ -4441,6 +5055,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     PermissionDto:
       type: object
       properties:
@@ -4474,6 +5089,7 @@ components:
           format: int64
         lastModifiedBy:
           type: string
+      description: ''
     PlanUsage:
       type: object
       properties:
@@ -4486,6 +5102,7 @@ components:
           type: object
           additionalProperties:
             $ref: '#/components/schemas/AppUsage'
+      description: ''
     Stack:
       type: object
       properties:
@@ -4535,6 +5152,7 @@ components:
           format: int64
         lastModifiedBy:
           type: string
+      description: ''
     User:
       type: object
       properties:
@@ -4572,6 +5190,7 @@ components:
           format: int64
         lastModifiedBy:
           type: string
+      description: ''
     UserPermissionContext:
       type: object
       properties:
@@ -4579,6 +5198,7 @@ components:
           type: string
         stackId:
           type: string
+      description: ''
     DataResponsePermissionDto:
       type: object
       properties:
@@ -4599,6 +5219,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     DataResponseObject:
       type: object
       properties:
@@ -4619,6 +5240,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     Incident:
       type: object
       properties:
@@ -4668,6 +5290,7 @@ components:
           type: string
         log:
           type: string
+      description: ''
     ListResponseIncident:
       type: object
       properties:
@@ -4694,6 +5317,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     ListResponseObject:
       type: object
       properties:
@@ -4720,6 +5344,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     ListResponseCoreRule:
       type: object
       properties:
@@ -4746,6 +5371,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     DataResponseSignaturesStatus:
       type: object
       properties:
@@ -4766,6 +5392,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     Signature:
       type: object
       properties:
@@ -4792,6 +5419,7 @@ components:
         evaluations:
           type: integer
           format: int64
+      description: ''
     SignaturesStatus:
       type: object
       properties:
@@ -4805,6 +5433,7 @@ components:
             $ref: '#/components/schemas/Signature'
         id:
           type: string
+      description: ''
     LearningStatus:
       type: object
       properties:
@@ -4851,6 +5480,7 @@ components:
             $ref: '#/components/schemas/Score'
         fixed:
           type: boolean
+      description: ''
     ListResponseLearningStatus:
       type: object
       properties:
@@ -4877,6 +5507,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     Score:
       type: object
       properties:
@@ -4895,6 +5526,7 @@ components:
           type: string
         token:
           type: string
+      description: ''
     ListResponseMapStringLong:
       type: object
       properties:
@@ -4924,6 +5556,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     ListResponseTask:
       type: object
       properties:
@@ -4950,6 +5583,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     ListResponseSession:
       type: object
       properties:
@@ -4976,6 +5610,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     Session:
       type: object
       properties:
@@ -5006,6 +5641,7 @@ components:
           format: int64
         log:
           type: string
+      description: ''
     Event:
       type: object
       properties:
@@ -5042,6 +5678,7 @@ components:
           format: int64
         lastModifiedBy:
           type: string
+      description: ''
     ListResponseEvent:
       type: object
       properties:
@@ -5068,6 +5705,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     DataResponseLicensePlan:
       type: object
       properties:
@@ -5088,6 +5726,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     DataResponseIncident:
       type: object
       properties:
@@ -5108,6 +5747,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     DataResponseEvent:
       type: object
       properties:
@@ -5128,6 +5768,7 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
     Alarm:
       type: object
       properties:
@@ -5209,6 +5850,7 @@ components:
           format: int64
         lastModifiedBy:
           type: string
+      description: ''
     ListResponseAlarm:
       type: object
       properties:
@@ -5235,6 +5877,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     Metric:
       type: object
       properties:
@@ -5265,6 +5908,7 @@ components:
           type: string
         appCategory:
           type: string
+      description: ''
     Dashboard:
       type: object
       properties:
@@ -5307,6 +5951,7 @@ components:
           format: int64
         lastModifiedBy:
           type: string
+      description: ''
     ListResponseDashboard:
       type: object
       properties:
@@ -5333,6 +5978,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     DashboardGraph:
       type: object
       properties:
@@ -5376,13 +6022,13 @@ components:
             type: object
         dynamic:
           type: boolean
-        precision:
-          type: integer
-          format: int32
         size:
           type: integer
           format: int32
         entries:
+          type: integer
+          format: int32
+        precision:
           type: integer
           format: int32
         topTalker:
@@ -5390,6 +6036,7 @@ components:
         height:
           type: integer
           format: int32
+      description: ''
     GraphMetric:
       type: object
       properties:
@@ -5447,6 +6094,7 @@ components:
           type: string
         appCategory:
           type: string
+      description: ''
     GroupMetric:
       type: object
       properties:
@@ -5470,6 +6118,7 @@ components:
           format: int64
         thresholdColor:
           type: string
+      description: ''
     ListResponseDashboardGraph:
       type: object
       properties:
@@ -5496,6 +6145,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     ListResponseHashMapStringObject:
       type: object
       properties:
@@ -5524,6 +6174,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     ListResponseRuleDto:
       type: object
       properties:
@@ -5550,6 +6201,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     RuleDto:
       type: object
       properties:
@@ -5596,6 +6248,7 @@ components:
         requests:
           type: integer
           format: int64
+      description: ''
     ListResponseMetric:
       type: object
       properties:
@@ -5622,6 +6275,7 @@ components:
             type: object
             additionalProperties:
               type: object
+      description: ''
     DataResponseAlarm:
       type: object
       properties:
@@ -5642,3 +6296,4 @@ components:
           type: object
           additionalProperties:
             type: object
+      description: ''
