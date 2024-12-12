@@ -40,7 +40,7 @@ Haltdos supports various types of SSL certificates for a particular domain, whic
 ![ssl_certificates](/img/platform/v8/docs/ssl-cert-2.png)
 
 :::info Info
-Extensions supported by haltdos are **PFX/P12**, **PEM**, **CRT**, **CER**. 
+Supported SSL certificate Extensions by certificate manager are **PFX/P12**, **PEM**, **CRT**, **CER**. 
 :::
 
 ### **Generate Certificate using Let's Encrypt**
@@ -107,6 +107,25 @@ Users can defind the scope of the certificate.
     Default: Blank
 ```
 
+**Notification**
+
+Users can enable SSL expiry notification, if configured.
+
+```
+    Accepted values: Enable / Disable
+
+    Default: Disable
+```
+
+**Notification Duration**
+
+Users can specify time period for expiry notification.
+
+```
+    Accepted values: Integer
+
+    Default: 7
+```
 
 :::info
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key
