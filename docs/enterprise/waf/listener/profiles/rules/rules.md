@@ -13,16 +13,16 @@ Custom rules support using compounding logic to make more advanced rules that ad
 
 Unlike other WAFs, Haltdos WAF has multiple types of Rules designed to target specific use cases.
 
-1. **Error Rules**
-2. **Form Rules**
-3. **Firewall Rules**
-4. **Rate Limit Rules**
-5. **Whitelist Rules**
-6. **Response Rules**
-7. **Behavior Rules**
-8. **Tamper Rules**
-9. **Correlation Rules**
-10. **Deception Rules**
-11. **Script Rules**
-12. **Log Rules**
-13. **Defacement Rules**
+1. [**Error Rules**](error_rules.md)
+2. [**Form Rules**](form_rules.md)
+3. [**Firewall Rules**](firewall_rules.md)
+4. [**Rate Limit Rules**](ratelimit_rules.md)
+5. [**Whitelist Rules**](whitelist_rules.md)
+6. [**Response Rules**](response_rules.md)
+7. [**Behavior Rules**](behavior_rules.md)
+8. [**Tamper Rules**](tamper_rules.md)
+9. [**Correlation Rules**](correlation_rules.md)
+10. [**Deception Rules**](deception_rules.md)
+11. [**Script Rules**](script_rules.md)
+12. [**Log Rules**](log_rules.md)
+13. [**Defacement Rules**](defacementRule.md)
