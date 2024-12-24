@@ -156,7 +156,7 @@ Users are allowed to specify the parameter which will be used for the rule for e
     Default: Blank
 ```
 
-
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/cloud/waf/listener/profiles/rules/ruleCond)
 
 
 

@@ -87,3 +87,4 @@ Users are allowed to specify the action to be taken for the request matched i.e.
     Default: No Action  
 ```
 
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/cloud/waf/listener/profiles/rules/ruleCond).

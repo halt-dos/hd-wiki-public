@@ -11,7 +11,7 @@ It shows the configuration regarding TCP Setting
 
 #### How to Use:
 
-1. Go to **Stack > Infrastructure > Instance > (Select Instance) > Setting > Monitor Setting**
+1. Go to **Stack > Infrastructure > Instance > (Select Instance) > Setting > TCP Setting**
 2. Configure your settings
 3. Click **Save Changes**
 
