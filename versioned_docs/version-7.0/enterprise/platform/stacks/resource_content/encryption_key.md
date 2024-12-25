@@ -28,17 +28,23 @@ An encryption key is a random string of bits created explicitly for scrambling a
 
 Users need to specify the name of the encryption key.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Scope**
 
 Users need to mention the scope for the link.
 
+```
     Accepted values: Select Scope
 
     Default: Blank 
+```
+
 
 :::note Note
 After generating the keys, the user can download them into .pem format

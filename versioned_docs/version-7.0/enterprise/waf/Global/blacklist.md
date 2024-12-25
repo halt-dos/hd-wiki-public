@@ -26,8 +26,11 @@ These are the whitelist rule which helps in whitelisting mitigations globally fo
 ##### **Threat Intel Feed**  
 Select list of threat intel where specified IPs will be permanently disallowed
 
+```
     Accepted values: Add Threate Intel Feed
 
     Default: Blank 
+```
+
 
 

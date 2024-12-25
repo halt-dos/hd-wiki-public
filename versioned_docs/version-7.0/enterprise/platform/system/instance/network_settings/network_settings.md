@@ -12,7 +12,7 @@ Overview of Instance network settings.
 
 1. Go to **Stack > Instances  > Network**
 2. Configure your settings
-3. Click **Save CHanges**
+3. Click **Save Changes**
 
 
 Haltdos GUI allows users to finely control and configure network settings for all registered instances with the stack. Some of the capability includes configuring IP address, Gateway or creating VLAN and bonding multiple NICs.

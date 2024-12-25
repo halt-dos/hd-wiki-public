@@ -27,54 +27,75 @@ Link load balancing is a term that refers to the management of the traffic that 
 
 Tuple refers to a set of five different values that comprise a Transmission Control Protocol/Internet Protocol (TCP/IP) connection. When a tuple is active but is not getting any response we can set ty time for such type of connection tuple. Users can specify the expiry of the connection tuple in seconds.
 
+```
     Accepted values: Integer
 
     Default: 600 
+```
+
 
 ##### **Connectionless Tuple Expiry**
 
 When this Tuple is based on UDP protocol we can consider it a Connection-less tuple. This time specifies after how much time UDP or ICMP-based tuple should be closed. Users can specify the expiry of the connection-less tuple in seconds.
 
+```
     Accepted values: Integer
 
     Default: 60 
+```
+
 
 ##### **Graceful Period On Startup**
 
 A grace period on startup is the amount of time required to gracefully start an interface or link a session is being closed.
 
+```
     Accepted values: Integer
 
     Default: 30 
+```
+
 
 ##### **Learning Sampling Percentage**
 
 It will help users to collect Learning packet samples for analyzing the traffic behavior. Users can set a limit in percentage so that Haltdos LLB solution collects the sample from the network traffic to learn its behavior.
 
+```
     Accepted values: Integer
 
     Default: 100
+```
+
 
 ##### **Drop Sampling Percentage**
 
 It will help users to collect Drop packet samples for analyzing the traffic behavior. Users can set a limit in percentage so that Haltdos LLB solution collects the sample from the network traffic to analyze the dropped packet behavior.
 
+```
     Accepted values: Integer
 
     Default: 100 
+```
+
 
 ##### **SSL Renegotiation Threshold**
 
 In this field users can specify the maximum connection allowed to be established in a SSL negotiation. SSL renegotiation threshold value allow the number of connection can be made in one session.
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 ##### **Scanning Threshold**
 
 In this field, users can specify the threshold value in seconds of scanning threshold. The Haltdos LLB solution scan the traffic for defined interval of time for identifying active devices on a network.
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+

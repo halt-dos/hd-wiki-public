@@ -5,15 +5,15 @@ sidebar_position: 6
 # Cluster Settings
 
 ---
-It shows the health status of the Instances, user can select whether to enable the health check or not.
+The Cluster Setting is used to configure High Availability (HA) in the Active-Passive (AP) or Active-Active (AA) mode across multiple instances. This setup ensures that if the primary (active) instance fails, a secondary (passive) instance automatically takes over to minimize downtime and maintain service continuity.
 
-![Monitor](/img/platform/v8/docs/cluster_settings.png)  
+![HA Settings](/img/platform/v8/docs/cluster_settings.png)  
 
 #### How to Use:
 
 1. Go to **Stack > Instances  > Cluster Settings**
 2. Configure your settings
-3. Click **Save CHanges**
+3. Click **Save Changes**
 
 ### Description
 
@@ -21,113 +21,148 @@ It shows the health status of the Instances, user can select whether to enable t
 
 Enter the cluster name
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### Instance State
 
-Select the Instance State
+Indicates whether the instance is currently active (primary) or passive (standby) in the HA configuration.
 
+```
     Accepted values: Master / Backup
 
     Default: 5
+```
+##### Data Interface
 
-##### DATA INTERFACE
+The network interface designated for handling data traffic between active and passive instances in the HA setup.
 
-Select the data Interface
-
+```
     Accepted values: eth0
 
     Default: eth0
+```
 
 ##### HA INTERFACE
 
-Select HA INTERFACE
+The dedicated network interface used exclusively for communication and synchronization between instances in a high availability (HA) configuration.
 
+```
     Accepted values: eth0
 
     Default: eth0
+```
+
 
 ##### VIRTUAL ROUTER ID
 
-Select VIRTUAL ROUTER ID
+A unique identifier assigned to a virtual router in an HA setup, allowing network devices to recognize the active instance for traffic routing.
 
+```
     Accepted values: Integer
 
     Default: 0
+```
+
 
 ##### Priority
 
 Select the priority
 
+```
     Accepted values: Integer
 
     Default: 0
+```
 
-##### MONITORING FREQUENCY
 
-Select MONITORING FREQUENCY
+##### Monitoring Frequency
 
+Specifies how often the health and status of each instance are checked to detect failures or changes in the HA configuration.
+
+```
     Accepted values: Integer
 
     Default: 0
+```
 
-##### ENABLE VMAC
 
-Select ENABLE VMAC
+##### Enable VMAC
 
+Allows the use of a Virtual MAC address for seamless failover in HA.
+
+```
     Accepted values: Enable / Disable 
 
     Default: Disable
+```
 
-##### ENABLE VMAC BASE
+##### Enable VMAC Base
 
-Select ENABLE VMAC BASE
+Configures the base MAC address for the Virtual MAC (VMAC) used in the HA setup for consistent failover.
 
+```
     Accepted values: Enable / Disable 
 
     Default: Disable
+```
 
 ##### AUTH TYPE
 
-Select ENABLE VMAC BASE
+Specifies the authentication method used for securing communication between HA instances, such as passwords or keys.
 
+```
     Accepted values: PASS / AUTH
 
     Default: PASS
+```
 
-##### AUTH PASSWORD
+##### Auth Password
 
-Select ENABLE VMAC BASE
+The password used for authenticating communication between HA instances based on the selected authentication type.
 
+```
     Accepted values: PASS / AUTH
 
     Default: PASS
+```
+
 
 ##### VIRUTAL IPS
 
-Enter VIRUTAL IPS
+The IP addresses assigned to the virtual router in the HA setup, allowing clients to connect to the active instance regardless of failover.
 
+```
     Accepted values: IPs
 
     Default: Blank
+```
+
 
 ##### PEER IPS
 
-Select PEER IPS
+The IP addresses assigned to the passive (standby) instance in the HA setup, used for communication between the active and passive instances.
 
+```
     Accepted values: IPs
 
     Default: Blank
+```
 
-##### EXCLUDED VIRUTAL IPS
+##### Excluded Virtual IPS
 
-Select EXCLUDED VIRUTAL IPS
+The list of virtual IP addresses that are excluded from failover or management by the HA system.
 
+```
     Accepted values: IPs
 
     Default: Blank
+```
+
 
 
 

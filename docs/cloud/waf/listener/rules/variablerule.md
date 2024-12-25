@@ -26,57 +26,78 @@ Any parameter from the Request/Response can be stored in a variable.
 
 Users are allowed to specify a user-friendly name to identify the rule. The rule name takes alphanumeric input.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Rule Message** 
 
 The user can add a short description of the rule. The description would explain the purpose of the rule.
 
+```
     Accepted values: Description for the rule in String format
 
     Default: Blank
+```
+
 
 ##### **Rule Priority**
 
 Set the priority of the rule. If two rules have the same priority, then selection will be random.
 
+```
     Accepted values: Integer
 
     Default: 0
+```
+
 
 ##### **Evaluation Phase**
 
 Users can set the evaluation phase either for request coming from end users or for response sending back to end users.
 
+```
     Accepted values: Request Phase / Response Phase
 
     Default: Request Phase 
+```
+
 
 ##### **Variable**
 
 User can select the variable which should be earlier created under variables.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Mutation action**
 
 Users can specify the mutation action.
 
+```
     Accepted values: SET / DELETE / INCREMENT / DECREMENT
 
     Default: SET
+```
+
 
 ##### **Value**
 
 Users can specify the value for the rule.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Add Condition**
 

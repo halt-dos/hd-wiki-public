@@ -17,12 +17,12 @@ import styles from "@site/src/components/CustomFooter/styles.module.scss";
     <div className="front-matter">
       <p style={{fontSize: "17px"}}>
         <b>Haltdos</b> is a cyber security company specializing in <strong>Network and Application security solutions.</strong> Haltdos's technology is backed by multiple patents and leverages Artificial Inteligence & Machine Learning to provide comprehensive protection against cyber-attacks on critical infrastructure.
-        <br /> 
-        <br />
+        <p> 
         Haltdos provides a fully-managed unified Edge security & delivery platform providing security & delivery platform providing security services such as WAF, Anti-DDoS, Application Delivery Controller (ADC), Anycast Authroritative & Recursive DNS, Load Balancing & API Gateway on one single platform.
-        <br />
-        <br />
+        </p>
+        <p> 
         For more details visit our website: <a href="https://www.haltdos.com/" target="_blank"> Haltdos</a>.
+        </p>
       </p>
       <img src={require('@site/static/img/logo/logo_dark.png').default} className={styles["dark-theme-logo"]} />
       <img src={require('@site/static/img/logo/logo_light.png').default} className={styles["light-theme-logo"]} />
@@ -34,22 +34,16 @@ import styles from "@site/src/components/CustomFooter/styles.module.scss";
   <div className='card'>
     <h4>Community WAF</h4><br />
     <p>Free GUI based WAF solution to protect website and APIs. Get started with knowing about Haltdos Community WAF</p>
-    <VersionedLink to='community'>
-      Go to Community WAF <ArrowRight className='arrow' />
-    </VersionedLink>
+    <VersionedLink to='/community/introduction'>Go to Community WAF <ArrowRight className='arrow' /></VersionedLink>
   </div>
   <div className='card'>
     <h4>Enterprise Solutions</h4><br />
     <p> Learn more about Haltdos Enterprise Solutions, which provides hardware based server-level solutions to protect and manage your web applications</p>
-    <VersionedLink to='enterprise'>
-      Go to Haltdos Enterprise<ArrowRight className='arrow' />
-    </VersionedLink>
+    <VersionedLink to='enterprise'>Go to Haltdos Enterprise<ArrowRight className='arrow' /></VersionedLink>
   </div>
   <div className='card'>
     <h4>Haltdos Cloud</h4><br />
     <p>Learn how Haltdos Cloud Services can help provide security and delivery services for your web applications</p>
-    <VersionedLink to='cloud'>
-      Go to Haltdos Cloud <ArrowRight className='arrow' />
-    </VersionedLink>
+    <VersionedLink to='cloud'>Go to Haltdos Cloud <ArrowRight className='arrow' /></VersionedLink>
   </div>
 </div>

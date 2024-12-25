@@ -28,30 +28,42 @@ All API requests are **Authorization: Bearer `<TOKEN>`** header. Depending upon 
 
 This feature allows users to enter token name
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **System Access**  
 
 This feature allows users to enable/disable the system access
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable 
+```
+
 
 ##### **Stack**  
 
 This feature allows users to select stack 
 
+```
     Accepted values: Select from list of stack
 
     Default: Blank 
+```
+
 
 ##### **Token Access**  
 
 This feature allows users to select Token Access
 
+```
     Accepted values: ADMIN / READ / READ AND WRITE
 
     Default: ADMIN 
+```
+

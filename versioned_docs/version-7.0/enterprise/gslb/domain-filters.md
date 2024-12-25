@@ -29,14 +29,20 @@ For example, if a computer queries the IP address of a known dangerous site that
 
 Users can specify the name for the Domain Filter files.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Domain Names**
 
 Users can mention the domains of which record need to be blocked.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+

@@ -50,13 +50,17 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 This option used to specify the upstream retries. By default, the value is set to 1.
 
+```
     Accepted values: Integer
 
     Default: 1  
+```
+
 
 ##### **Fail-over Threshold**
 This option specify the fail-over threshold in percentage of (active/total) primary servers for switching to backup servers. By default, the value is set to 50%.
 
+```
     Accepted values: Integer
 
     Max: 100
@@ -64,47 +68,67 @@ This option specify the fail-over threshold in percentage of (active/total) prim
     Min: 1
 
     Default: 50  
+```
+
 
 ##### **Client IP Pool**
 Specify list of client IP to use when connecting to upstream. Leave blank for auto
 
+```
     Accepted values: list of client IP
 
     Default: Blank 
+```
+
 
 ##### **Algorithm**
 This option is used to specify the algorithm used by the server group. By default, the value is selected as Round Robin.
 
+```
     Accepted values: Round Robin / Least Connection / Least Listener Connection / Least Response Time / Minium Jitter / IP Hash / Persistent Hash / Least Requests / SNMP Metrics 
 
     Default: Round Robin
+```
+
 
 ##### **Sticky Session Cookie**
 Specify enabling sticky session based on specified cookie
 
+```
     Accepted values: Integer
 
     Default: 1
+```
+
 
 #### **Location**
 
 ##### **Priority**  
 Set the priority
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 ##### **Location**  
 Set the location  
 
+```
     Accepted values: SRC_IP / DST_IP / SRC_PORT / DST_PORT / URL / ARG_VAL / HEADER_VAL / COOKIE_VAL
 
     Default: SRC_IP 
+```
+
 
 ##### **Value**  
 Set the location
 
+```
     Accepted values: String
 
     Default: Blank
+```
+

@@ -35,32 +35,44 @@ It support protocols IPv4, IPv6, TCP, UDP, ICMP, IGMP, DNS, SIP, SNMP, NTP, SMTP
 
 User can specify the rate of Inbound network traffic which will be allowed for traffic shaping. Inbound rate value should not be exceed the Inbound burst value.
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 ##### **Inbound Burst**
 
 User can specify the burst of Inbound network traffic which will be allowed for traffic shaping. 
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 ##### **Outbound Rate**
 
 User can specify the rate of Outbound network traffic which will be allowed for traffic shaping. Outbound rate value should not be exceed the Outbound burst value.
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 ##### **Outbound Burst**
 
 User can specify the burst of Outbound network traffic which will be allowed for traffic shaping.
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 **Note**: Users are allowed to configure the traffic shaping for Global level as well as protocol based (ex. DNS, ICMP, HTTP, IPV4 etc).

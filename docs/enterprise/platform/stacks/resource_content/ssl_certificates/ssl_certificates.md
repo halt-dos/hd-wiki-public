@@ -29,6 +29,20 @@ Users can either upload a certificate or generate a new certificate with Let's E
 Let's Encrypt certificate are valid for 3 months only. In order to renew, we have to re-issue the certificate with the same steps as mentioned above. This is applicable only for DNS validations. For certificates issued via HTTP validation, Haltdos automatically renews the certificates.
 :::
 
+### **Types of supported SSL-Certificate**
+
+Haltdos supports various types of SSL certificates for a particular domain, which are as follows:
+
+- **Copy-Paste** - The user needs to enter the Public Key and Private Key, then click on **Save Changes**.
+- **Upload PFX** - The user can choose the PFX file to upload using the Choose File option, enter the Certificate Password, and then select **Save Changes**.
+- **Upload PEM** - User can upload the respective PEM, Intermediate Certificate file, CA Bundle File, Private Key File then select **Save Changes**
+
+![ssl_certificates](/img/platform/v8/docs/ssl-cert-2.png)
+
+:::info Info
+Supported SSL certificate Extensions by certificate manager are **PFX/P12**, **PEM**, **CRT**, **CER**. 
+:::
+
 ### **Generate Certificate using Let's Encrypt**
 
 In order to generate a certificate, it's a three-step based process i.e.
@@ -65,25 +79,53 @@ To upload custom certificates, follow the steps below:
 
 User can specify the userfriendly name for the certificate.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Certificate Domain**
 
 User can specify the userfriendly name for the certificate.
 
+```
     Accepted values: Select Domain
 
     Default: Blank 
+```
+
 
 **Scope**
 
 Users can defind the scope of the certificate.
 
+```
     Accepted values: Select App / Resources
 
     Default: Blank
+```
+
+**Notification**
+
+Users can enable SSL expiry notification, if configured.
+
+```
+    Accepted values: Enable / Disable
+
+    Default: Disable
+```
+
+**Notification Duration**
+
+Users can specify time period for expiry notification.
+
+```
+    Accepted values: Integer
+
+    Default: 7
+```
 
 :::info
 It is recommended to add certificate chaining when uploading custom SSL certificates. To add certificate chaining, append the public key and the chain when uploading Public Key

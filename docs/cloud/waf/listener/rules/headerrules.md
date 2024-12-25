@@ -23,57 +23,78 @@ We have introduced Header rules by which application owners can manipulate reque
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
 
+```
     Accepted values: Description for the rule in String format
 
     Default: Blank
+```
+
 
 ##### **Rule Priority**
 
 User can define the rule's priority among various other custom error rules.
 
+```
     Accepted values: Integer
 
     Default: 0
+```
+
 
 ##### **URI**
 
 Specify the URI or regex for which rule will be applied. 
 
+```
     Accepted values: URI
 
     Default: Blank
+```
+
 
 ##### **Method**
 
 Select the HTTP method for the rule to validate when matched with the request.
 
+```
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: Blank
+```
+
 
 ##### Evaluation Phase
 
 Select the evaluation phase for the rule i.e. Request or Response.
 
+```
     Accepted values: Request Phase / Response Phase
 
     Default: Request Phase
+```
+
 
 ##### **Rule Action**
 
 The rule action determines what action (add/remove/overwrite) the rule will perform. The accepted values are:
 
+```
     Accepted values: Remove Header / Add Header / Add Cookie / Overite Header / Overite Cookie / Remove Cookie 
 
     Default: Blank
+```
+
 
 1) **ADD:** This condition will allow adding a value at the specified location.
 
@@ -95,17 +116,23 @@ If the action is **OVERWRITE**, then two other fields are required first is **Se
 
 Specify the attribute name which need to add/delete/overwrite with rule.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Attribute Value**
 
 Specify the attribute value which will be mentioned in the attribute.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Add Condition**
 

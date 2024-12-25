@@ -24,41 +24,56 @@ If a user has defined server group and wants to use different groups depending u
 
 User can specify the rule name.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Message**
 
 User can specify the rule message.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Enabled**
 
 Users can enable or disable the rule.
 
+```
     Accepted values: Enabled / Disabled
 
     Default: Enabled
+```
+
 
 ##### **Rule Priority**
 
 User can specify the rule priority among other created rules in LB rules.
 
+```
     Accepted values: Integer
 
     Default: 0 
+```
+
 
 ##### **Server Group**
 
 User can specify which server group to associate with this particular rule.
 
+```
     Accepted values: List of Server Group
 
     Default: Blank 
+```
+
 
 #### Add Condition
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.

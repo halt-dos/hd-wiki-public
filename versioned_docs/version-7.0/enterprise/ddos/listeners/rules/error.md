@@ -28,46 +28,64 @@ This feature will only appear when client license has SSL offloading enabled.
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Priority**
 
 Specify the priority for the rule for execution when matched with the request.
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 ##### **HTTP Response Codes**
 
 User can mention the HTTP response code based on the custom error rule name.
 
+```
     Accepted values: 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425,426, 428, 429, 431, 440, 444, 449, 450, 451, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504.
 
     Default: 400, 404
+```
+
 
 ##### **Rule Action**
 
 Specifies the action to be executed when this is gets triggered
 
+```
     Accepted values: No Action / Send Response
 
     Default: No Action 
+```
+
 
 ##### **Custom Error Page**
 
 Select the desired custom error page which will be displayed when the specified error occurs. Or click the **Add** button which redirects to the custom pages screen to create a custom page and add HTML content and then select it from the drop-down list.
 
+```
     Accepted values: Add Custom Page
 
     Default: Blank 
+```
+

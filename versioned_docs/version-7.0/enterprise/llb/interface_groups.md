@@ -30,22 +30,31 @@ High availability (HA) is the ability of a system to operate continuously withou
 
 It allows the user to add a Group Name.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Physical Interfaces**
 
 This option allows the user to select the Physical Interfaces
 
+```
     Accepted values: Select the Physical Interfaces
 
     Default: Blank
+```
+
 
 ##### **Monitor Type**
 
 It allows the user to select the rule to monitor the terrific. This monitor rule can be added from **Monitors**.
 
+```
     Accepted values: Select Monitor type
 
     Default: Blank 
+```
+
