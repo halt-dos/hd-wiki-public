@@ -116,3 +116,4 @@ Users can specify the fields for which the rule will be applicable.
     Default: Blank
 ```
 
+To configure the parameter of the conditions please refer to the following link: [**Conditions**](/cloud/waf/listener/profiles/rules/ruleCond)

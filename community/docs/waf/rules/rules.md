@@ -4,7 +4,7 @@ Haltdos WAF supports various types of rules for users to configure WAF as per th
 
 1. [**Header Rules**](header_rules.md)
 
-2. [**Firewall Rules**](redirection_rules.md)
+2. [**Firewall Rules**](firewall_rules.md)
 
 3. [**Rate Limit Rules**](rate_limit.md)
 
