@@ -5,9 +5,9 @@ sidebar_position: 6
 # Cluster Settings
 
 ---
-The Cluster Setting is used to configure High Availability (HA) in an Active-Passive mode across multiple instances. This setup ensures that if the primary (active) instance fails, a secondary (passive) instance automatically takes over to minimize downtime and maintain service continuity.
+The Cluster Setting is used to configure High Availability (HA) in the Active-Passive (AP) or Active-Active (AA) mode across multiple instances. This setup ensures that if the primary (active) instance fails, a secondary (passive) instance automatically takes over to minimize downtime and maintain service continuity.
 
-![Monitor](/img/platform/v8/docs/cluster_settings.png)  
+![HA Settings](/img/platform/v8/docs/cluster_settings.png)  
 
 #### How to Use:
 

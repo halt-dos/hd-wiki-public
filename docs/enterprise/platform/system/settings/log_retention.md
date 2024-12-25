@@ -10,10 +10,10 @@ sidebar_position: 3
 This feature allows users to set the log retention period. The log retention period is the time for which the logs the logs will be stored locally on the Haltdos Device.
 
 :::info
-Depending upon the organization's policy, we can change or less the day for logs.
+Log retention should be configured as per organization policy
 :::
 
-![aaa_policy](/img/platform/v8/docs/syslogreten.png)
+![Log Retention](/img/platform/v8/docs/syslogreten.png)
 
 ### How to Use:
 
@@ -21,7 +21,7 @@ Depending upon the organization's policy, we can change or less the day for logs
 
 2. Configure your settings.
 
-3. Click **Save Changes**
+3. Click **Save Changes**.
 
 ### Description:
 
@@ -32,7 +32,7 @@ This option allows users to specify the retention period of the event log.
 ```
     Accepted values: Integer
 
-    Default: 90 
+    Default: 90
 ```
 
 

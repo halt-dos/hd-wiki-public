@@ -23,8 +23,8 @@ It is recommended to configure periodic backup to avoid data loss and ensure log
 
 #### How to Use:  
 
-1. Go to **Stack > Infrastructure > Instance > (Select Instance) > Setting > Backup Setting**
-2. Configure your settings
+1. Go to **Stack > Infrastructure > Instance > (Select Instance) > Setting > Backup Setting**.
+2. Configure your settings.
 3. Click **Save Changes**.
 
 ## Description
