@@ -91,7 +91,7 @@ This option allows user to specify if backup is allowed for the server. In case 
 
 ##### **Mode** 
 
-This option allows user to make the server active/inactive. When marked Down the server will not be able to serve requests.
+This option allows user to make the server **active/inactive**. When marked Down the server will not be able to serve requests.
 
     Accepted values: Ready / Down
 
@@ -101,7 +101,7 @@ This option allows user to make the server active/inactive. When marked Down the
 
 2. **Down** - If the user has set the Down value in this option then server will not take part actively in handling the client requests.  
 
-3. **Gracefully Down** - Gracefully Down option will ensure no active connection will be break during the server down activity, server will be handling the old connection until con-current connection count reach to 0. Once con-current connection will be 0 then server will be marked as down at SLB level. Hence, with the help this option, user can gracefully down any server.  
+3. **Gracefully Down** - Gracefully Down option will ensure no active connection will be break during the server down activity, server will be handling the old connection until con-current connection count reach to 0. Once con-current connection will be 0 then server will be marked as down at SLB level. Hence, with the help this option, user can gracefully down any server.
 
 ##### **Slow Start** 
 

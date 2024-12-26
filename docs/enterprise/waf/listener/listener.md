@@ -37,7 +37,7 @@ This option allows user to create new listener with different subdomain by modif
     Default: None 
 
 ##### **Service Type**
-This option allows user to specify service type based on the protocol of backend application. The listener/subdomain can be created service type with any of the three protocols i.e. HTTP, TCP, UDP.
+This option allows user to specify service type based on the protocol of backend application. The listener/subdomain can be created service type with any of the three protocols i.e. **HTTP**, **TCP**, **UDP**.
 
     Accepted values: HTTP / STREAM / MAIL
 
@@ -50,4 +50,4 @@ This option allows user to specify IP and listening port of the backend server w
 
     Default: Blank 
 
-For example, we want to add a backend server 10.0.0.45 with its listening port 443, we can use syntax '10.0.0.45:443'.
+**For example**, we want to add a backend server 10.0.0.45 with its listening port 443, we can use syntax '10.0.0.45:443'.

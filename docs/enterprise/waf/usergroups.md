@@ -65,7 +65,7 @@ Users can customize the user group settings and modify credentials for the users
 3. Click on **Save Changes**
 
 1. **Hide Credentials**:
-Users can specify either to enable it to strip the credential from the request (i.e. the Authorization header) before proxying it. Click on Group Name that has been added by user then Hide Credentials Boolean will be visible.
+Users can specify either to enable it to strip the credential from the request (i.e. the Authorization header) before processing it. Click on Group Name that has been added by user then Hide Credentials Boolean will be visible.
 
     Accepted Value : Boolean
 
@@ -73,7 +73,7 @@ Users can specify either to enable it to strip the credential from the request (
 
 ##### How To add Users:
 
-1. Go to **Apps** > **WAF**> **User Groups** > Click on the User Group name in which you want to add user
+1. Go to **Apps** > **WAF**> **User Groups** > Click on the **User Group** name in which you want to add user.
 2. Click on **Add User**
 2. Configure the Settings based on Authentication Type
 3. Click on **Save Changes**
