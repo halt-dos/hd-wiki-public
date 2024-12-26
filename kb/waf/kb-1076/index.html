@@ -9,7 +9,7 @@
 <link rel="icon" href="/img/logo/icon_light.png">
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="rgb(37, 194, 160)"><link rel="stylesheet" href="/assets/css/styles.18ab29ff.css">
-<script src="/assets/js/runtime~main.f575d99d.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.8f8060bd.js" defer="defer"></script>
 <script src="/assets/js/main.ca1a2a85.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -25,69 +25,47 @@
 <li>FQDN (Fully Qualified Domain Name) should be behind Haltdos WAF (for HTTP challenge) and accessible from public internet</li>
 <li>Haltdos Console login with minimum READ_WRITE access.</li>
 <li>OLD SSL certificate attached to listener/website.</li>
-<li>Connectivity based on challenge as follows<!-- -->
-<ul>
-<li>For HTTP challenge, no geo-filtering policy enforced on the FQDN public IP</li>
-</ul>
-</li>
+<li>Connectivity based on challenge as follows
+For HTTP challenge, no geo-filtering policy enforced on the FQDN public IP</li>
 </ul>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><ul>
-<li>For HTTP challenge, verify no Geo/IP blocking policy on the network and web application firewall to avoid failure of the verification request.</li>
-</ul><blockquote>
-<p>Let&#x27;s Encrypt issue SSL certificate with validity of 3 months from the date of issue.</p>
-</blockquote></div></div>
+<li>For HTTP challenge, verify no Geo/IP blocking policy on the network and web application firewall to avoid failure of the verification request.
+Let&#x27;s Encrypt issue SSL certificate with validity of 3 months from the date of issue.</li>
+</ul></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="solution"><strong>Solution</strong><a href="#solution" class="hash-link" aria-label="Direct link to solution" title="Direct link to solution">​</a></h3>
 <ol>
-<li>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="check-current-ssl-certificate">Check current SSL certificate<a href="#check-current-ssl-certificate" class="hash-link" aria-label="Direct link to Check current SSL certificate" title="Direct link to Check current SSL certificate">​</a></h3>
-<ul>
-<li>
-<p>SSL certificate issued for domain <em>example.hltdos.com</em>
-<img decoding="async" loading="lazy" alt="ssl-settings" src="/assets/images/app-verify-e3231ac244f0aaa1aaa9871ca5f7059d.png" width="1633" height="932" class="img_ev3q"></p>
-</li>
-<li>
-<p>Verify SSL certificate is expired for the website
-<img decoding="async" loading="lazy" alt="ssl-expiry-browser" src="/assets/images/verify-expiry-4793825b1f5285ae515c2e98341f53e5.png" width="1560" height="949" class="img_ev3q"></p>
-</li>
-</ul>
-</li>
+<li><strong>Check current SSL certificate</strong></li>
 </ol>
-<p> </p>
-<ol start="2">
-<li>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="renew-ssl-certificate">Renew SSL certificate<a href="#renew-ssl-certificate" class="hash-link" aria-label="Direct link to Renew SSL certificate" title="Direct link to Renew SSL certificate">​</a></h3>
 <ul>
-<li>
-<p>Go to <strong>Resources</strong> &gt; <strong>SSL certificate</strong></p>
-</li>
-<li>
-<p>Click on <strong>Refresh icon</strong> on the SSL certificate\</p>
+<li>SSL certificate issued for domain <strong>example.hltdos.com</strong>
+<img decoding="async" loading="lazy" alt="ssl-settings" src="/assets/images/app-verify-e3231ac244f0aaa1aaa9871ca5f7059d.png" width="1633" height="932" class="img_ev3q"></li>
+</ul>
+<ul>
+<li>Verify SSL certificate is expired for the website
+<img decoding="async" loading="lazy" alt="ssl-expiry-browser" src="/assets/images/verify-expiry-4793825b1f5285ae515c2e98341f53e5.png" width="1560" height="949" class="img_ev3q"></li>
+</ul>
+<ol start="2">
+<li><strong>Renew SSL certificate</strong></li>
+</ol>
+<ul>
+<li>Go to <strong>Resources</strong> &gt; <strong>SSL certificate</strong></li>
+<li>Click on <strong>Refresh icon</strong> on the SSL certificate</li>
+</ul>
 <p><img decoding="async" loading="lazy" alt="kb-1009" src="/assets/images/renew-icon-9bf18442da6dc7b30a6e7cb75a1b04c0.png" width="1615" height="1023" class="img_ev3q"></p>
-</li>
-<li>
-<p>Click on <strong>Renew</strong> button</p>
+<ul>
+<li>Click on <strong>Renew</strong> button</li>
+</ul>
 <p><img decoding="async" loading="lazy" alt="kb-1009" src="/assets/images/renew-modal-7f0d2adbd97cab273cc0c5cb6a704a8c.png" width="1515" height="984" class="img_ev3q"></p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>SSL renew process take some time to verify and issue certificate with Let&#x27;s Encrypt.</p></div></div>
-</li>
-<li>
-<p>SSL certificate updated on Haltdos console and deployed to WAF machine.</p>
-<p><img decoding="async" loading="lazy" alt="kb-1009" src="/assets/images/verify-renew-661b1447103d9d53e18fe2d7a253a4a7.png" width="1635" height="937" class="img_ev3q"></p>
-</li>
-</ul>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>SSL challenge can be failed to misconfiguration or failure due to verification issue.</p><p>On failure on the multiple SSL renew, it is recommended to issue new certificate.</p></div></div>
-</li>
-</ol>
-<p> </p>
-<ol start="4">
-<li>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="verify-ssl-cerificate">Verify SSL cerificate.<a href="#verify-ssl-cerificate" class="hash-link" aria-label="Direct link to Verify SSL cerificate." title="Direct link to Verify SSL cerificate.">​</a></h3>
 <ul>
-<li>
-<p>SSL certificate is updated on the website.</p>
-<p><img decoding="async" loading="lazy" alt="kb-1009" src="/assets/images/verify-application-959ed1bb917cf9f999ebf0eed98a510d.png" width="1334" height="1033" class="img_ev3q"></p>
-</li>
+<li>SSL certificate updated on Haltdos console and deployed to WAF machine.</li>
 </ul>
-</li>
-</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/kb/waf/kb-1075"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">KB: 1075</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/kb/adc/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Application Delivery Controller</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#renew-ssl-certificate-using-lets-encrypt-http-challenge" class="table-of-contents__link toc-highlight"><strong>Renew SSL Certificate using Let&#39;s Encrypt HTTP Challenge</strong></a></li><li><a href="#problem-statement" class="table-of-contents__link toc-highlight"><strong>Problem Statement</strong></a></li><li><a href="#pre-requistics" class="table-of-contents__link toc-highlight"><strong>Pre-requistics</strong></a></li><li><a href="#solution" class="table-of-contents__link toc-highlight"><strong>Solution</strong></a></li><li><a href="#check-current-ssl-certificate" class="table-of-contents__link toc-highlight">Check current SSL certificate</a></li><li><a href="#renew-ssl-certificate" class="table-of-contents__link toc-highlight">Renew SSL certificate</a></li><li><a href="#verify-ssl-cerificate" class="table-of-contents__link toc-highlight">Verify SSL cerificate.</a></li></ul></div></div></div><div class="custom_doc_item_footer_xzT7"><footer class="custom-footer-wrapper_e3DT"><div class="logo-wrapper_Rlsk"><img src="/img/logo/logo_dark.png" class="dark-theme-logo_PnSy"><img src="/img/logo/logo_light.png" class="light-theme-logo_LXf_"></div><div class="copyright_S0cy">© 2024 Haltdos, Inc. All rights reserved</div><div class="footerSocialIconsWrapper_h8nV"><div class="socialBrands_HY8t"><a href="https://twitter.com/halt_dos" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" viewBox="0 0 24 20"><path fill="#74818A" d="M24 2.294a9.8 9.8 0 0 1-2.822.792 4.93 4.93 0 0 0 2.157-2.73 9.9 9.9 0 0 1-3.12 1.204C19.307.574 18.034 0 16.588 0c-2.696 0-4.899 2.203-4.899 4.922 0 .39.046.768.126 1.124A14 14 0 0 1 1.675.906a4.87 4.87 0 0 0-.665 2.467c0 1.71.86 3.224 2.19 4.084-.814 0-1.57-.23-2.236-.574v.035a4.925 4.925 0 0 0 3.946 4.83 4.84 4.84 0 0 1-2.214.08c.62 1.939 2.42 3.384 4.589 3.419a9.78 9.78 0 0 1-6.115 2.11q-.585 0-1.17-.068a13.93 13.93 0 0 0 7.549 2.214c9.04 0 14.007-7.503 14.007-14.008 0-.218 0-.424-.011-.642A9.8 9.8 0 0 0 24 2.294"></path></svg></a></div><div class="socialBrands_HY8t"><a href="https://www.youtube.com/@Haltdoscybersecurity" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" fill="none" viewBox="0 0 28 20"><path fill="#74818A" d="m11.2 14 7.266-4.2L11.2 5.6zM27.384 3.038c.182.658.308 1.54.392 2.66.098 1.12.14 2.086.14 2.926L28 9.8c0 3.066-.224 5.32-.616 6.762-.35 1.26-1.162 2.072-2.422 2.422-.658.182-1.862.308-3.71.392a93 93 0 0 1-5.026.14L14 19.6c-5.866 0-9.52-.224-10.962-.616-1.26-.35-2.072-1.162-2.422-2.422-.182-.658-.308-1.54-.392-2.66a34 34 0 0 1-.14-2.926L0 9.8c0-3.066.224-5.32.616-6.762C.966 1.778 1.778.966 3.038.616 3.696.434 4.9.308 6.748.224a93 93 0 0 1 5.026-.14L14 0c5.866 0 9.52.224 10.962.616 1.26.35 2.072 1.162 2.422 2.422"></path></svg></a></div><div class="socialBrands_HY8t"><a href="https://www.linkedin.com/company/haltdos" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#74818A" d="M21.333 0A2.667 2.667 0 0 1 24 2.667v18.666A2.667 2.667 0 0 1 21.333 24H2.667A2.667 2.667 0 0 1 0 21.333V2.667A2.667 2.667 0 0 1 2.667 0zm-.666 20.667V13.6a4.347 4.347 0 0 0-4.347-4.347c-1.133 0-2.453.694-3.093 1.734v-1.48h-3.72v11.16h3.72v-6.574a1.86 1.86 0 0 1 1.853-1.866 1.866 1.866 0 0 1 1.867 1.866v6.574zM5.173 7.413a2.24 2.24 0 0 0 2.24-2.24c0-1.24-1-2.253-2.24-2.253A2.253 2.253 0 0 0 2.92 5.173c0 1.24 1.013 2.24 2.253 2.24m1.854 13.254V9.507H3.333v11.16z"></path></svg></a></div></div></footer></div></div></div></main></div></div></div></div>
+<p><img decoding="async" loading="lazy" alt="kb-1009" src="/assets/images/verify-renew-661b1447103d9d53e18fe2d7a253a4a7.png" width="1635" height="937" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>SSL challenge can be failed to misconfiguration or failure due to verification issue.</p><p>On failure on the multiple SSL renew, it is recommended to issue new certificate.</p></div></div>
+<ol start="4">
+<li><strong>Verify SSL cerificate</strong>.</li>
+</ol>
+<p>SSL certificate is updated on the website.</p>
+<p><img decoding="async" loading="lazy" alt="kb-1009" src="/assets/images/verify-application-959ed1bb917cf9f999ebf0eed98a510d.png" width="1334" height="1033" class="img_ev3q"></p></div><footer class="theme-doc-footer docusaurus-mt-lg"></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/kb/waf/kb-1075"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">KB: 1075</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/kb/adc/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Application Delivery Controller</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#renew-ssl-certificate-using-lets-encrypt-http-challenge" class="table-of-contents__link toc-highlight"><strong>Renew SSL Certificate using Let&#39;s Encrypt HTTP Challenge</strong></a></li><li><a href="#problem-statement" class="table-of-contents__link toc-highlight"><strong>Problem Statement</strong></a></li><li><a href="#pre-requistics" class="table-of-contents__link toc-highlight"><strong>Pre-requistics</strong></a></li><li><a href="#solution" class="table-of-contents__link toc-highlight"><strong>Solution</strong></a></li></ul></div></div></div><div class="custom_doc_item_footer_xzT7"><footer class="custom-footer-wrapper_e3DT"><div class="logo-wrapper_Rlsk"><img src="/img/logo/logo_dark.png" class="dark-theme-logo_PnSy"><img src="/img/logo/logo_light.png" class="light-theme-logo_LXf_"></div><div class="copyright_S0cy">© 2024 Haltdos, Inc. All rights reserved</div><div class="footerSocialIconsWrapper_h8nV"><div class="socialBrands_HY8t"><a href="https://twitter.com/halt_dos" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" viewBox="0 0 24 20"><path fill="#74818A" d="M24 2.294a9.8 9.8 0 0 1-2.822.792 4.93 4.93 0 0 0 2.157-2.73 9.9 9.9 0 0 1-3.12 1.204C19.307.574 18.034 0 16.588 0c-2.696 0-4.899 2.203-4.899 4.922 0 .39.046.768.126 1.124A14 14 0 0 1 1.675.906a4.87 4.87 0 0 0-.665 2.467c0 1.71.86 3.224 2.19 4.084-.814 0-1.57-.23-2.236-.574v.035a4.925 4.925 0 0 0 3.946 4.83 4.84 4.84 0 0 1-2.214.08c.62 1.939 2.42 3.384 4.589 3.419a9.78 9.78 0 0 1-6.115 2.11q-.585 0-1.17-.068a13.93 13.93 0 0 0 7.549 2.214c9.04 0 14.007-7.503 14.007-14.008 0-.218 0-.424-.011-.642A9.8 9.8 0 0 0 24 2.294"></path></svg></a></div><div class="socialBrands_HY8t"><a href="https://www.youtube.com/@Haltdoscybersecurity" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" fill="none" viewBox="0 0 28 20"><path fill="#74818A" d="m11.2 14 7.266-4.2L11.2 5.6zM27.384 3.038c.182.658.308 1.54.392 2.66.098 1.12.14 2.086.14 2.926L28 9.8c0 3.066-.224 5.32-.616 6.762-.35 1.26-1.162 2.072-2.422 2.422-.658.182-1.862.308-3.71.392a93 93 0 0 1-5.026.14L14 19.6c-5.866 0-9.52-.224-10.962-.616-1.26-.35-2.072-1.162-2.422-2.422-.182-.658-.308-1.54-.392-2.66a34 34 0 0 1-.14-2.926L0 9.8c0-3.066.224-5.32.616-6.762C.966 1.778 1.778.966 3.038.616 3.696.434 4.9.308 6.748.224a93 93 0 0 1 5.026-.14L14 0c5.866 0 9.52.224 10.962.616 1.26.35 2.072 1.162 2.422 2.422"></path></svg></a></div><div class="socialBrands_HY8t"><a href="https://www.linkedin.com/company/haltdos" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#74818A" d="M21.333 0A2.667 2.667 0 0 1 24 2.667v18.666A2.667 2.667 0 0 1 21.333 24H2.667A2.667 2.667 0 0 1 0 21.333V2.667A2.667 2.667 0 0 1 2.667 0zm-.666 20.667V13.6a4.347 4.347 0 0 0-4.347-4.347c-1.133 0-2.453.694-3.093 1.734v-1.48h-3.72v11.16h3.72v-6.574a1.86 1.86 0 0 1 1.853-1.866 1.866 1.866 0 0 1 1.867 1.866v6.574zM5.173 7.413a2.24 2.24 0 0 0 2.24-2.24c0-1.24-1-2.253-2.24-2.253A2.253 2.253 0 0 0 2.92 5.173c0 1.24 1.013 2.24 2.253 2.24m1.854 13.254V9.507H3.333v11.16z"></path></svg></a></div></div></footer></div></div></div></main></div></div></div></div>
 </body>
 </html>
