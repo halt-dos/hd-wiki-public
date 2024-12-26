@@ -1,4 +1,4 @@
-# Deployment Options
+# Deployment Mode
 ---
 
 Haltdos solutions supports multiple deployment options for seamless integration into existing network.

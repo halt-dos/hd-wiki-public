@@ -1,4 +1,4 @@
-# Solution Configuration
+# Configuration
 ----
 ### User Management
 
