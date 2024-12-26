@@ -174,6 +174,7 @@ const config = {
           {to: 'professional/introduction', label: 'Professional', position: 'left'},
           {to: 'enterprise', label: 'Enterprise', position: 'left'},
           {to: 'cloud', label: 'Cloud', position: 'left'},
+          {to: 'mssp', label: 'MSSP', position: 'left'},
           {href: '/api', label: 'Haltdos API', position: 'left'},
           {href: 'https://haltdos.com',label: 'Haltdos', target: '_blank', rel: null, position: 'right', className:'haltdos'},
           {
