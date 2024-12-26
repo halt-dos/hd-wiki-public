@@ -45,9 +45,9 @@ It shows the list of sub-licenses(Child License) of the parent license, a single
 
 ### To Create Sub-License 
 
-1. Go to License > Select your License(Parent license) > Go to Sub-License. 
+1. Go to **License** > Select your **License**(Parent license) > Go to **Sub-License**. 
 
-2. Click on Create Sub-License > Configure Sub-License. 
+2. Click on **Create Sub-License** > **Configure Sub-License**. 
 
 3. Click on Add. 
 

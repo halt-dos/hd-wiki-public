@@ -1,7 +1,9 @@
 ---
-sidebar_label: MSSP
+sidebar_position: 1
 ---
-## About Us
+# Introduction
+---
+### About Us
 
 Haltdos’s core competency is application security - as a consistent leader in innovation, we know how to help customers secure web applications from threats dominating the IT landscape today.  
 With a complete solution for both on-prem and cloud-based WAAP, Anti-Bot, DDoS, CDN, and load balancing, we make it simple for customers to keep applications available and secure. For customers who are migrating towards DevOps, our products support the ability to programmatically configure and manage policies through APIs, ensuring that security does not become a bottleneck and can keep up with the speed of app development.Our products support some of the most popular cloud platforms today such as AWS, Azure, and Google Cloud Platform (GCP). When it comes to packaging, we offer licensing for customers to mix and match products within a single contract, allowing customers to bundle on-prem and cloud security assets and eliminate the need to track multiple contracts.

@@ -1,6 +1,6 @@
 # Solution Configuration
 ----
-### USER MANAGEMENT
+### User Management
 
 Haltdos solution supports fine-grained user access for various stakeholders. In consultation with the customer’s IT and Security team, users with relevant and restricted permissions can be created in Haltdos. The solution supports users with following permissions:
 - SYSTEM – Full device access
