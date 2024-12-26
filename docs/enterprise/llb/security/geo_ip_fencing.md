@@ -22,17 +22,23 @@ Geo Ip Fencing is an ability to filter out request coming from different geograp
 
 This option allows users to configure the time period for which misbehaving IP addresses will be suspended.
 
+```
     Accepted values: Integer
 
     Default: 0
+```
+
 
 #### Bad Reputation Traffic
 
 This option allows users to specify the action from the drop-down menu on incoming traffic coming from suspicious IPs. There are 4 actions that can be performed for the traffic generated from bad reputation sources;
 
+```
     Accepted values: No Action / Record / Add Suspicion /  Drop
 
     Default: Blank
+```
+
 
 1. **No Action:** This option will be performed for the TOR traffic.
 2. **Record:** This option will record all request coming from TOR IPs
@@ -43,54 +49,75 @@ This option allows users to specify the action from the drop-down menu on incomi
 
 This option allows users to specify the action from the drop-down menu to be performed on incoming TOR Network traffic. There are 4 actions that can be performed for the traffic generated from the Tor gateways;
 
+```
     Accepted values: No Action / Record / Add Suspicion /  Drop
 
     Default: Blank
+```
+
 
 ##### **Inbound Blacklisted Countries**
 
 This option allows users to select the list of Inbound countries from the drop-down list that will be permanently disallowed. 
 
+```
     Accepted values: Select Countries
 
     Default: Blank
+```
+
 
 ##### **Outbound Blacklisted Countries**
 
 This option allows users to select the list of Outbound countries from the drop-down list that will be permanently disallowed.
 
+```
     Accepted values: Select Countries
 
     Default: Blank
+```
+
 
 ##### **Blacklisted IP Prefixes**
 
 This option allows users to specify multiple IP prefixes or IP address (With CIDR /32) that will be permanently disallowed.
 
+```
     Accepted values: IP Prefixes
 
     Default: Blank
+```
+
 
 ##### **Whitelisted IP Prefixes**
 
 This option allows users to specify multiple IP prefixes or IP address (With CIDR /32). Traffic to / from these IPs will permanently bypass all configured mitigation.
 
+```
     Accepted values: IP Prefixes
 
     Default: Blank
+```
+
 
 ##### **Blacklist Intel Feed**
 
 This option allows users to configure and add custom threat intel to blacklist traffic generated from the IP addresses or prefixed.
 
+```
     Accepted values: Select Intel feed
 
     Default: Blank
+```
+
 
 ##### **Whitelist Intel Feed**
 
 This option allows users to configure and add custom threat intel to whitelist traffic coming from those IP addresses or IP prefixes.
 
+```
     Accepted values: Select Intel feed
 
     Default: Blank
+```
+

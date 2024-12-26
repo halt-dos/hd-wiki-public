@@ -35,62 +35,86 @@ A faster, automated approach to comprehensive Link Load Balancing need comprehen
 
 Enable to allow the signaling to operate.
 
+```
     Accepted values: Enabled / Disabled
 
     Default: Blank
+```
+
 
 ##### **Provider Name**
 
 Specify the name of the upstream provider.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Signaling URL**
 
 Specify API endpoint of upstream provider for sending cloud signal
 
+```
     Accepted values: URL
 
     Default: Blank
+```
+
 
 ##### **Authentication User**
 
 Specify password user credentials for interactive with upstream cloud signaling API
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Authentication password**
 
 Specify password credentials for interactive with upstream cloud signaling API
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Signaling Trigger**
 
 Specify the bandwidth threshold (in Mbps) beyond with a cloud signal that will be sent to the upstream provider
 
+```
     Accepted values: Integer
 
     Default: Blank
+```
+
 
 ##### **Managed Object ID**
 
 Specify unique customer ID provided by the upstream providers for further authentication
 
+```
     Accepted values: Integer
 
     Default: Blank
+```
+
 
 ##### **IP Range**
 
 Users can specify the IP range
 
+```
     Accepted values: IP
 
     Default: Blank
+```
+

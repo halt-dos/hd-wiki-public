@@ -22,12 +22,18 @@ Deep packet inspection of SIP header for bidirectional traffic
 
 ##### **Enable Setting**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Packet Size**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+

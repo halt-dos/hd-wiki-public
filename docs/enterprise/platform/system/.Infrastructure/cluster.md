@@ -19,6 +19,8 @@ Enter the name of the cluster
     Accepted Value: String
 
     Default: Blank
+```
+
 
 #### **Type**
 
@@ -27,6 +29,8 @@ Select the type
     Accepted Value: Shared / Dedicated
 
     Default: Shared
+```
+
 
 #### **Provider**
 
@@ -35,3 +39,5 @@ Select the provider
     Accepted Value: Digital Ocean / Amazon Web Service / Google Cloud / Microsoft Azure / Other
 
     Default: Other
+```
+

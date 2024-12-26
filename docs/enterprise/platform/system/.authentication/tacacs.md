@@ -43,41 +43,56 @@ If your organization is using AAA authentication, it is recommended to integrate
 This option enables users to enable or disable the tacacs+ authentication.
 Endpoint.
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable 
+```
+
 
 ##### **Endpoint**
 
 This option allows users to set the endpoint or the tacacs+ server IP address on which Haltdos Device will send authentication requests.
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 ##### **Port**
 
 This option allows users to set the port number for the port number that is being used at tacacs+ server mentioned above. By default, tacacs+ server set to listen on port 49.
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 ##### **Secret Key**
 
 This option allows users to set the secret key which will be used while communicating the TACACS+ server.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Authorization Protocol**
 
 This option allows users to configure the authentication protocol for the TACACS+ server. This option contains mainly two protocols;
 
+```
     Accepted values: ASCII / PAP / CHAP
 
     Default: PAP 
+```
+
 
 1. **ASCII**- ASCII is a simple authentication protocol where the client sends its username and password in plain text to the server for authentication.
 
@@ -87,8 +102,11 @@ This option allows users to configure the authentication protocol for the TACACS
 
 ##### **Timeout**
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 This option allows users to configure the request timeout for the request. If any authentication response from TACACS+ server will be delayed from the mentioned timeout, it will be discarded.

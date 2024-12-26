@@ -24,33 +24,45 @@ We have introduced Header rules by which application owners can manipulate reque
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Message**
 
 Specify a rule message containing a detailed description to identify the rule which is to be created.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Rule Priority**
 
 User can define the rule's priority among various other custom error rules.
 
+```
     Accepted values: Integer
 
     Default: Blank 
+```
+
 
 ##### **Rule Action**
 
 The rule action determines what action (add/remove/overwrite) the rule will perform. The accepted values are:
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
  - **ADD:** This condition will allow adding a value at the specified location.
 
@@ -72,33 +84,45 @@ In order to escape the dollar($) character in the replace, add the dollar symbol
 
 Select the evaluation phase for the rule i.e. Request or Response.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Attribute Name**
 
 Specify the attribute name which need to add/delete/overwrite with rule.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Attribute Value**
 
 Specify the attribute value which will be mentioned in the attribute.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Add Condition**
 
 The user can specify some request/response-based conditions which can be used as mandatory conditions to be fulfilled to apply the rule.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 For adding a condition, the required fields are:
 

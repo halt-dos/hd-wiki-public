@@ -27,6 +27,8 @@ Enter the name
     Accepted Value: String 
 
     Default: Blank
+```
+
 
 #### **Username**
 
@@ -35,6 +37,8 @@ Enter the username
     Accepted Value: String 
 
     Default: Blank
+```
+
 
 #### **Email**
 
@@ -43,6 +47,8 @@ Enter the username
     Accepted Value: String 
 
     Default: Blank
+```
+
 
 #### **Password**
 
@@ -51,3 +57,5 @@ Enter the password
     Accepted Value: String 
 
     Default: Blank
+```
+

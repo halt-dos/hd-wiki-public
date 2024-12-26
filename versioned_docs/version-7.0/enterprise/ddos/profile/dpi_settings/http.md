@@ -22,42 +22,63 @@ Deep packet inspection of IPV4 header for bidirectional traffic
 
 ##### **Enable Setting**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Header**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Header Character**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Header Method**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Header Version**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Unterminated HTTP Header**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid URL**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+

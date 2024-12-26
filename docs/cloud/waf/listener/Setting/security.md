@@ -23,9 +23,12 @@ Bot Protection helps you quickly determine, manage, and mitigate automated reque
 
 Users can specify the expiry time of the CSRF cookie in seconds. Set 0 to disable CSRF. This value is dependent on the profile CSRF setting that should be enabled to perform mitigation.
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 0 
+    Default: 0 
+```
+
 
      Metrics: Seconds
 
@@ -33,9 +36,12 @@ Users can specify the expiry time of the CSRF cookie in seconds. Set 0 to disabl
 
 Users can specify the grace time period in seconds for which CSRF token will be allowed.
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 60 
+    Default: 60 
+```
+
 
      Metrics: Seconds
 
@@ -43,9 +49,12 @@ Users can specify the grace time period in seconds for which CSRF token will be 
 
 Users can specify the tarpit delay.
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 5 
+    Default: 5 
+```
+
 
      Metrics: Seconds
 
@@ -53,9 +62,12 @@ Users can specify the tarpit delay.
 
 Users can specify the tarpit duration.
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 300 
+    Default: 300 
+```
+
 
      Metrics: Seconds
 
@@ -67,22 +79,31 @@ Tarpit delay and tarpit duration are two different values. For example, user has
 
 Specify the maximum decode limit for encoded character
 
-     Accepted values: Integer
+```
+    Accepted values: Integer
 
-     Default: 4 
+    Default: 4 
+```
+
 
 ##### **Enable Client-Side Protection**
 
 Enable client-side protection for the application
 
-     Accepted values: Enable / Disable
+```
+    Accepted values: Enable / Disable
 
-     Default: Disable 
+    Default: Disable 
+```
+
 
 ##### **Client Encryption Key**
 
 Specify the encryption key which will be used for client-side validation
 
-     Accepted values: Add Encryption Key
+```
+    Accepted values: Add Encryption Key
 
-     Default: Blank 
+    Default: Blank 
+```
+

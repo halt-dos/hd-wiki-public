@@ -30,31 +30,43 @@ By default, Haltdos solutions come with pre-build dashboards. This module allows
 
 Enter dashboard name
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 **Enable Stack App**
 
 Select to Enable / Disable the stack app.
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 **Stack**
 
 Dropdown of list of Stack to Select
 
+```
     Accepted values: Select Stack
 
     Default: Blank
+```
+
 
 **Apps**
 
 List of apps
 
+```
     Accepted values: Select Apps
 
     Default: Blank
+```
+
 

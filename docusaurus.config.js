@@ -1,5 +1,6 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {themes} = require('prism-react-renderer');
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -63,6 +64,26 @@ const config = {
         },
       }),
     ],
+    [
+      "redocusaurus",
+      {
+        "specs": [
+          {
+            "id": "apiDocs",
+            "route": "/api",
+            "spec": "haltdos-api.yaml"
+          }
+        ],
+        "theme": {
+          "primaryColor": "#4786FF",
+          "options": {
+            "disableSearch": true,
+            "requiredPropsFirst": true,
+            "noAutoAuth": true
+          }
+        }
+      }
+    ]
   ],
   plugins: [
     'docusaurus-plugin-sass',
@@ -153,6 +174,7 @@ const config = {
           {to: 'professional/introduction', label: 'Professional', position: 'left'},
           {to: 'enterprise', label: 'Enterprise', position: 'left'},
           {to: 'cloud', label: 'Cloud', position: 'left'},
+          {href: '/api', label: 'Haltdos API', position: 'left'},
           {href: 'https://haltdos.com',label: 'Haltdos', target: '_blank', rel: null, position: 'right', className:'haltdos'},
           {
             type: 'search',
@@ -177,8 +199,8 @@ const config = {
         ],
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
       },
     }),
 };

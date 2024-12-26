@@ -76,3 +76,5 @@ Some of the WAF use cases are mentioned below:
 66. [How to check the backend server down incident on Haltdos console?](./kb-1066.md)
 67. [How to configure IP transparency through Haltdos Solution?](./kb-1067.md)
 68. [Why do we need to configure web application to accept traffic from WAF only?](./kb-1068.md)
+69. [Generate/Issue SSL certificate using Let's Encrypt](./kb-1069)
+70. [Renew SSL Certificate using Let's Encrypt HTTP Challenge](./kb-1070)

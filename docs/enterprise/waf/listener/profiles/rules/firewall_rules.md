@@ -34,58 +34,82 @@ The following actions are available to the User :
 ##### **Rule Name**
 Users are allowed to specify a rule name to identify the rule which is to be created. The rule name takes alpha-numeric input.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Rule Message**
 Users are allowed to specify a rule message to understand the purpose of the rule. It can contain a detailed description to identify the rule.
 
+```
     Accepted values: String
 
     Default: Blank
+```
+
 
 ##### **Rule Priority**
 It is a numeric field that specifies the priority of the rule in which the rule will be executed while evaluating the request. The lower value of priority means it will be executed first while executing the type of rule. The default value Is 0. 
 
+```
     Accepted values: Integer
 
     Default: 0
+```
+
 
 ##### **URI**
 Users are allowed to specify the URI. Specify the URI on which the firewall rule will be applied.
 
+```
     Accepted values: Regex
 
     Default: None
+```
+
 
 ##### **Method**
 Users are allowed to specify the HTTP method on which the rule will be applied i.e. All, GET, POST, PUT, DELETE, HEAD, OPTIONS.
 
+```
     Accepted values: ALL / GET / POST / PUT / DELETE / PATCH / HEAD / OPTIONS
 
     Default: All  
+```
+
 
 ##### **Rule Action**
 Users are allowed to specify the action to be taken for the request matched i.e. No Action, Drop, Record, Bypass, Redirect, Temporary Blacklist, Send Challenge, Skip Learning.
 
+```
     Accepted values:  Record Request / DROP & RECORD REQUEST / BYPASS REQUEST / TEMPORARY BLACKLIST SRC IP / REDIRECT / SEND CAPCHA CHALLENEGE / SEND RESONSE WITH STATUUS CODE / SEND CUSTOM RESPONSES / CHANGE RESPONSE CODE / NO ACTION / SEND EMPTY RESPONSES
 
     Default: Record Request 
+```
+
 
 ##### **Match Condition**
 This drop-down allows to set the match condition i.e. Pattern Match or Pattern Not Match for the request.
 
+```
     Accepted values: Pattern Match / Pattern not Match
 
     Default: Pattern Match
+```
+
 
 ##### **Match Pattern**
 Users are allowed to specify the keyword to match when the rule is invoked. The entered value can be a regex pattern.
 
+```
     Accepted values: String
 
     Default: None
+```
+
 
 ##### **Add Condition**
 

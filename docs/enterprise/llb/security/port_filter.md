@@ -29,14 +29,20 @@ User can create individual interface and set the priority
 
 User can select the port name.
 
+```
     Accepted values: Select POrt Name
 
     Default: Blank
+```
+
 
 ##### **Operational Mode**
 
 User can select the operational mode.
 
+```
     Accepted values: Select OPerational MOde
 
     Default: Blank
+```
+

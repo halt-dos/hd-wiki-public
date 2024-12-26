@@ -22,54 +22,81 @@ Deep packet inspection of IPV4 header for bidirectional traffic
 
 ##### **Enable Setting**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Protocol Version**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Minimium Internet Header Length(IHL)**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Maximum Internet Header Length(IHL)**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Header Length**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Total Packet Length**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Reserve Flag**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid More Fragments(MF) Flag**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+
 
 ##### **Invalid Source IP and Destination IP**
 
+```
     Accepted values: Enable / Disable
 
     Default: Disable
+```
+

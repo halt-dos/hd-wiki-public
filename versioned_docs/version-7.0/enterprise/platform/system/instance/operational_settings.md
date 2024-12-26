@@ -46,38 +46,53 @@ Haltdos platform supports multiple modes of operations of various Apps depending
 
 Management IP address
 
+```
     Accepted values: IP
 
     Default: 2 
+```
+
 
 ##### **SSL Engine**
 
 Engine to be used for SSL Offloading
 
+```
     Accepted values: Software Engine / Hardware Engine
 
     Default: Software Engine 
+```
+
 
 ##### **Operational Mode**
 
 Mode of operation
 
+```
     Accepted values: Inline Mode / Offline Mode
 
     Default: Inline Mode 
+```
+
 
 ##### **CPU Affinity**
 
 CPU affinity for opimization
 
+```
     Accepted values: Integer
 
     Default: 2 
+```
+
 
 ##### **Huge Pages**
 
 Configure Huge Pages for optimization
 
+```
     Accepted values: Integer
 
     Default: 2 
+```
+

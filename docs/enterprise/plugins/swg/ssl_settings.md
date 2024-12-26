@@ -13,41 +13,59 @@ SSL Settings provides comprehensive control over the handling of SSL/TLS encrypt
 ##### **Enable Upstream Certificate Verification:** 
 Ensures that the upstream server’s SSL/TLS certificates are verified for authenticity.
 
+```
     Accepted values: Enable / Disable
 
     Default: Disabled
+```
+
 
 ##### TLS Key Size: 
 Configures the key size for SSL/TLS certificates and Certificate Authorities (CAs), providing control over encryption strength.
 
+```
     Accepted values: Integer
 
     Default: 2048
+```
+
 
 ##### **Minimum TLS Version for Client Connections:**
 Allows configuration of setting minimum TLS version for client connections.
 
+```
     Accepted values: UNBOUNDED / SSL3 / TLS1 / TLS1_1 / TLS1_2 / TLS1_3
 
     Default: UNBOUNDED
+```
+
 
 ##### **Maximum TLS Version for Client Connections:**
 Allows configuration of setting maximum TLS version for client connections.
 
+```
     Accepted values: UNBOUNDED / SSL3 / TLS1 / TLS1_1 / TLS1_2 / TLS1_3
 
     Default: TLS1_2
+```
+
 
 ##### **Minimum TLS Version for Server Connections:**
 Allows configuration of setting minimum TLS version for server connections.
 
+```
     Accepted values: UNBOUNDED / SSL3 / TLS1 / TLS1_1 / TLS1_2 / TLS1_3
 
     Default: UNBOUNDED
+```
+
 
 ##### **Maximum TLS Version for Server Connections:**
 Allows configuration of setting maximum TLS version for server connections.
 
+```
     Accepted values: UNBOUNDED / SSL3 / TLS1 / TLS1_1 / TLS1_2 / TLS1_3
 
     Default: TLS1_2
+```
+

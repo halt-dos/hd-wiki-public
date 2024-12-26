@@ -38,17 +38,23 @@ Depending upon the organization's policy, if AAA is enabled, the same should als
 
 This option allows the user to enable or disable the AAA feature. By default, it is set to disable.
 
+```
     Accepted values: Enable / Disable
 
     Default: Blank 
+```
+
 
 **Service**
 
 This option allows the user to select the type of implementation it can be either **TACACS** or **RADIUS**.
 
+```
     Accepted values: TACACS+ / RADIUS
 
     Default: RADIUS 
+```
+
 
 1. - **Terminal Access Controller Access Control System** (TACACS+) is a Cisco proprietary protocol that is used for the communication of the Cisco client and Cisco ACS server. It uses TCP port number **49** which makes it reliable.
 
@@ -58,22 +64,31 @@ This option allows the user to select the type of implementation it can be eithe
 
 This option allows the users to specify the hostname or IP address of **AAA** server.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 **Allow SSH**
 
 This option will only apprears when **AAA** type is selected to **RADIUS**. When this option is enabled it allow **SSH** if **Radius Server** is down 
 
+```
     Accepted values: Enable / Disable
 
     Default: Enable 
+```
+
 
 **Secret**
 
 This option allows the user to mention the credential information to access AAA server.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+

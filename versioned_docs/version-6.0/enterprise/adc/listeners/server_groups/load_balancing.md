@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ### How to Use:
 
-1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) >[** Server Groups**](./server_groups.md/) > **Select Server Name** > **Load Balancing**
+1. Go to Stack > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) >[** Server Groups**](server_groups.md) > **Select Server Name** > **Load Balancing**
 
 2. Configure your settings. 
 

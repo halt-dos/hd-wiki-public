@@ -25,25 +25,34 @@ Listeners are used for collecting set of websites and servers appropriately that
 
 This field specifies the fully qualified name of the website for protection. Ensure to keep it empty while adding the root domain. Listener with a specific domain name can be respectively configured for protection.
 
+```
     Accepted values: String
 
     Default: Blank 
+```
+
 
 ##### **Reference**
 
 This field allows the user to adapt the configurations of an existing listener to the newly created listener with a different sub-domain. It clones the same configuration in the new listener.
 
+```
     Accepted values: Select existing listener.
 
     Default: None 
+```
+
 
 ##### **Service Type**
 
 This field specifies the type of service for the subdomain i.e. **HTTP, TCP, UDP**. Based on the protocol of the backend application, the listener/subdomain can be created with any of the three protocols.
 
+```
     Accepted values: HTTP / TCP / UDP
 
     Default: HTTP 
+```
+
 
 ##### **Origin Servers**
 
@@ -51,6 +60,9 @@ This field specifies the IP and listening port of the backend server on which lo
 
 Following configurations can be managed by clicking on the newly added listener name. Post adding required details, we can click on **Save** button to save changes.
 
+```
     Accepted values: IP
 
     Default: Blank 
+```
+
