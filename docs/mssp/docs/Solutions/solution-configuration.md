@@ -1,12 +1,16 @@
+---
+sidebar position: 1
+---
+
 # Configuration
 ----
 ### User Management
 
 Haltdos solution supports fine-grained user access for various stakeholders. In consultation with the customer’s IT and Security team, users with relevant and restricted permissions can be created in Haltdos. The solution supports users with following permissions:
-- SYSTEM – Full device access
-- ADMIN – Full stack (license) / listener (virtual context) access
-- READ-WRITE – Policy Read / Write access to stack (license) / listener (virtual context) access
-- READ-ONLY – Read only access to stack (license) / listener (virtual context) access.
+- **SYSTEM** – Full device access
+- **ADMIN** – Full stack (license) / listener (virtual context) access
+- **READ-WRITE** – Policy Read / Write access to stack (license) / listener (virtual context) access
+- **READ-ONLY** – Read only access to stack (license) / listener (virtual context) access.
 
 #### APPLICATION ONBOARDING
 
@@ -76,14 +80,10 @@ weekend.
 
 Haltdos ADC can be taken inline one application at a time. Depending upon the customer’s environment, this change can take place by changing DNS settings in data center or customer’s DNS provider to point application to relevant ADC IPs addresses. Alternatively, if the customer uses Link Load Balancer for DNAT, DNAT rule in LLB can point to relevant A IPs instead of application server IPs.  
 
-### POST INSTALLATION
+**Internal Users**  
+Haltdos WAAP can be taken inline one application at a time. If the application is internal or internal and external, the application should be first taken inline into production for internal customers. Depending upon the customer’s environment, this change can take place by changing DNS settings in data center DNS server for local users to point every application to relevant WAAP IP addresses.
 
-#### BLOCKING MODE
-
-The solutions are prone to false positives if not configured correctly. When handling end-user traffic, Haltdos ADC running in RECORD mode will start logging incidents that it expects to be policy violation or attack. Haltdos ADC comes with built-in forensic tools such as False Positive Finder and Rule Match Finder to quickly identify and fine-tune rule-sets. It is typically recommended to run ADC for at least 10,000 – 100,000 requests before starting fine-tuning. Post fine-tuning, ADC can be configured in MITIGATION mode. Machine Learning in Haltdos ADC automatically activates in blocking mode after 10,000 request per page. This value is configurable. It is recommended to put ADC in blocking mode one or a few applications at a time to avoid disruption.
-
-#### ANALYTICS & REPORTING
-
-Analytics and reporting are essential in evaluating the performance and findings by Haltdos solution. By default, Haltdos solution comes with pre-built dashboards and report templates. Depending upon the customer’s need, these can be customized as per the customer’s requirements and expectations.
+**External Users**  
+Haltdos WAAP can be taken inline one application at a time. Depending upon the customer’s environment, this change can take place by changing DNS settings in data center or customer’s DNS provider to point application to relevant WAAP IPs addresses. Alternatively, if the customer uses Link Load Balancer for DNAT, DNAT rule in LLB can point to relevant WAAP IPs instead of application server IPs.
 
 

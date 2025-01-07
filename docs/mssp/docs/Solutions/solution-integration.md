@@ -1,3 +1,7 @@
+---
+sidebar position: 2
+---
+
 # Integration
 ----
 
@@ -39,4 +43,4 @@ AAA stands for Authentication, Authorization and Accountability. It is responsib
 
 - **Radius**: A RADIUS Server is a background process that runs on a UNIX or Windows server. It lets youmaintain user profiles in a central database. Hence, if you have a RADIUS Server, you have control overwho can connect with your network.
 
-- **Tacacs**: TACACS (Terminal Access Controller Access Control System) is an older authenticationprotocol common to UNIX networks that allows a remote access server to forward a user's logonpassword to an authentication server to determine whether access can be allowed to a given system.
+- **Tacacs**: TACACS (Terminal Access Controller Access Control System) is an older authentication protocol common to UNIX networks that allows a remote access server to forward a user's logon password to an authentication server to determine whether access can be allowed to a given system.
