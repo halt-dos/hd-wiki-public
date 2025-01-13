@@ -35,7 +35,6 @@ This option allows user to specify the IP address for the server for serving the
     Default: Blank
 ```
 
-
 ##### **Port** 
 
 This option allows user to set the port for the back-end application server for communication.
@@ -50,7 +49,6 @@ This option allows user to set the port for the back-end application server for 
     Default: 80
 ```
 
-
 ##### **DNS Record Type** 
 
 It is used to map domain names to various types of data such as IP addresses and services.
@@ -60,7 +58,6 @@ It is used to map domain names to various types of data such as IP addresses and
 
     Default: ANY
 ```
-
 
 ##### **Weight** 
 
@@ -76,7 +73,6 @@ This option allows user to specify the weight of the server. Higher the weight m
     Default: 1 
 ```
 
-
 ##### **Remote** 
 
 This option allows user to specify if the server can be accessed remotely or not.
@@ -86,7 +82,6 @@ This option allows user to specify if the server can be accessed remotely or not
 
     Default: False
 ```
-
 
 ##### **Monitor** 
 
@@ -112,14 +107,13 @@ This option allows user to specify if backup is allowed for the server. In case 
 
 ##### **Mode** 
 
-This option allows user to make the server active/inactive. When marked Down the server will not be able to serve requests.
+This option allows user to make the server **active/inactive**. When marked Down the server will not be able to serve requests.
 
 ```
     Accepted values: Ready / Down / Gracefully Down
 
     Default: Ready
 ```
-
 
 1. **Ready** - If the user has set the Ready value in this option then server will take part actively in handling the client requests.  
 
@@ -137,7 +131,6 @@ This option allows user to specify the Slow Start for the server.
     Default: 0
 ```
 
-
 ##### **Max Connection** 
 
 This option allows user to specify the number of maximum connections allowed to the specific server.
@@ -147,7 +140,6 @@ This option allows user to specify the number of maximum connections allowed to 
 
     Default: 0
 ```
-
 
 ##### **Connection Timeout** 
 
@@ -161,10 +153,9 @@ This option allows user to specify the connection timeout for the server.
     Min: 0 
 
     Default: 0 
-```
-
 
     Metrics: Seconds 
+```
 
 ##### **Send Timeout** 
 
@@ -178,10 +169,9 @@ This option allows user to specify to send timeout for the server.
     Min: 0 
 
     Default: 0 
-```
-
 
     Metrics: Seconds 
+```
 
 ##### **Read Timeout**
 
@@ -195,8 +185,10 @@ This option allows user to specify the read timeout for the server.
     Min: 0
 
     Default: 0 
+
+    Metrics: Seconds
 ```
 
 
-    Metrics: Seconds
+
 
