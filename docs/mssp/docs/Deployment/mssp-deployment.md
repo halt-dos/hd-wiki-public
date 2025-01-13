@@ -18,13 +18,13 @@ In this mode of MSSP deployment, each sub-license created works as individual st
 
 In this mode of MSSP deployment, each sub-license created will have a dedicated centralized management to manage one or more ADC instances. The management module will not be installed on the ADC instance - making the VM running the ADC instance dedicated for high throughput traffic processing. Similar to the Standalone Mode, the end customer gets a dedicated management VM for managing their ADC solution. However, there is an additional VM overhead for centralized management for every sub-license. Unlike the Standalone Mode, the centralized management calculates statistics across all ADC instances - giving a holistic view of traffic metrics across all ADC instances.
 
-![Standalone Mode](/img/mssp/v8/docs/standalone-deployment2.png)
+![Centralized Management Mode](/img/mssp/v8/docs/centralized-management-mode.png)
 
 ### Cluster Mode
 
 this mode of MSSP deployment, there is one multi-tenant centralized management for all end-customers. Multiple sub-licenses can be loaded on the centralized management. The centralized management will manage all ADC instances associated with a sub-license. Moreover, it ensures the isolation of logs, statistics, and traffic across every sub-license. If desired, end customers can log onto the centralized management to view statistics, reports, and incidents, and perform policy changes on ADC instances associated with their license. The centralized management is designed to be scalable for mid-size MSSP deployments.
 
-![Standalone Mode](/img/mssp/v8/docs/standalone-deployment3.png)
+![Standalone Mode](/img/mssp/v8/docs/cluster-mode.png)
 
 ### Private Cloud Mode
 

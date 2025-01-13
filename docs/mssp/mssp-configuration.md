@@ -9,7 +9,7 @@ To configure the license, fill the fields accordingly:
 
 ### Information
 
-![mssp-configuration](/img/mssp/v8/docs/mssp-config1.png)
+![mssp-configuration](/img/mssp/v8/docs/license-configuration.png)
 
 ### Overview
 
