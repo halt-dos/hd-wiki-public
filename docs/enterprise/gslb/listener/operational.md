@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Operational
+# Settings
 
 To set up the Operational Settings for the particular Listener.
 
@@ -12,7 +12,9 @@ To set up the Operational Settings for the particular Listener.
 
 Operational Setting configure different settings of Listener like the network protocol to be used. User can also configure the listener to work as Recursive DNS, Authoritative DNS or Both. Operational Setting specifies the IP address of the Listener. Basically, Operational enables the user to make custom changes on its DNS.
 
-![operational](/img/gslb/v8/operational_settings.png)
+![operational-config](/img/gslb/v8/gslb-settings.png)
+
+![operational-config-port](/img/gslb/v8/gslb-settings-2.png)
 
 ### How to Use:
 1. Go to  **Apps** > **GSLB** > **Listener** > **Operational**
@@ -23,68 +25,108 @@ Configure the following parameters to set up the desired settings:
 
 #### Description
 
-**Protocols**  
-Specify the resolution on specific Protocols for e.g. UDP, TCP or TLS.
+**DNS Service Type**    
+
+Specify the DNS Service type
 
 ```
-    Accepted values: Specify protocols
+    Accepted values: Auth & Recursive / Authoritative / Recursive
 
-    Default: UDP / TCP
+    Default: Recursive
 ```
 
 
-**DNS Service Type**  
-Specify the DNS Service type 
+**Enable Logging**  
+
+Select whether Logging needs to be enabled 
 
 ```
-    Accepted values: Authoritative / Recursive / Auth & Recursive
+    Accepted values: Enable / Disable
 
-    Default: Auth & Recursive 
+    Default: Disable
+```
+
+
+**SSL Certificate**  
+
+Choose SSl certificate if SSL port is enabled  
+
+```
+    Accepted values: Select SSL
+
+    Default: None 
+```
+
+
+**Addresses**  
+
+Specify the list of addresses that will be used for listening for DNS traffic
+
+```
+    Accepted values: Enter Address
+
+    Default: Blank
 ```
 
 
 **Upstream Resolvers**  
-Specify the upstream resolver for Recursive DNS. This option only works when DNS service type is set to Rescursive  
+
+Specify the resolver for Recursive upstream DNS resolvers
 
 ```
-    Accepted values: String
+    Accepted values: Enter Address
 
     Default: Blank 
 ```
 
 
-**Addresses**  
-Specify the list of addresses that should be used in Recursive DNS.
-
-```
-    Accepted values: String
-
-    Default: Blank
-```
-
-
 **Refuse Query with no RD flag**  
-Specify to respond with refuse on queries with no RD flag.  
+
+Specify to respond with refuse on queries with no RD flag 
 
 ```
     Accepted values: Enable / Disable
 
-    Default: Disable 
+    Default: Disable
 ```
 
 
-**Domain Filter Files**  
-[Domain Filter Files](../domain-filters.md) is a mechanism to introduce a customized policy in Domain Name System servers, so that recursive resolvers return possibly modified results. By modifying a result, access to the corresponding host can be blocked. User can select which Domain Filter Files should be used.  
+**Blacklisted Domain Feed Files**  
+
+Select your blacklisted FQDN Filtering file
 
 ```
-    Accepted values: Select Domain Filter Files
+    Accepted values: Select Domain Feed
 
     Default: Blank
 ```
 
 
-**Addresses**  
-Mention Cache Size
+**Blacklisted Response Feed Files**  
+
+Select your resposne Filtering file
+
+```
+    Accepted values: Enter Address
+
+    Default: Blank 
+```
+
+
+**Whitelisted Domain Feed Files**  
+
+Select your whitelisted FQDN Filtering file
+
+```
+    Accepted values: Select domain filtering file from the drop-down
+
+    Default: Blank
+```
+
+
+**Cache Size**  
+
+Specify Cache Size in MB
 
 ```
     Accepted values: Integer
@@ -92,5 +134,75 @@ Mention Cache Size
     Default: 100
 ```
 
- 
+**Maximum Sub-Domain level**  
+
+Specify the maximum level of sub-domains allowed
+
+```
+    Accepted values: Integer
+
+    Default: 5 
+```
+
+
+**Maximum Domain length**  
+
+Specify the maximum length of the domain allowed
+
+```
+    Accepted values: Integer
+
+    Default: 100
+```
+
+
+**Maximum Response length**  
+
+Specify the maximum length of the DNS query Response Message
+
+
+```
+    Accepted values: Integer
+
+    Default: 100
+```
+
+
+### PORT
+
+User need to specify the port in the Port Modal
+
+
+
+**Port**  
+
+Mention the port
+
+```
+    Accepted values: Integer
+
+    Default: 53
+```
+
+
+**Protocol**  
+
+Select Protocol
+
+```
+    Accepted values: TCP / UPD / HTTPS / TLS
+
+    Default: UDP
+```
+
+
+**SSL Enabled**  
+
+Select the SSL whether it need to be enabled or not
+
+```
+    Accepted values: True / False
+
+    Default: False
+```
 
