@@ -12,9 +12,9 @@ To set up the Operational Settings for the particular Listener.
 
 Operational Setting configure different settings of Listener like the network protocol to be used. User can also configure the listener to work as Recursive DNS, Authoritative DNS or Both. Operational Setting specifies the IP address of the Listener. Basically, Operational enables the user to make custom changes on its DNS.
 
-![operational](/img/gslb/v8/gslb-settings.png)
+![operational-config](/img/gslb/v8/gslb-settings.png)
 
-![operational](/img/gslb/v8/gslb-settings-2.png)
+![operational-config-port](/img/gslb/v8/gslb-settings-2.png)
 
 ### How to Use:
 1. Go to  **Apps** > **GSLB** > **Listener** > **Operational**
@@ -32,7 +32,7 @@ Specify the DNS Service type
 ```
     Accepted values: Auth & Recursive / Authoritative / Recursive
 
-    Default: Auth & Recursive
+    Default: Recursive
 ```
 
 
@@ -87,16 +87,16 @@ Specify to respond with refuse on queries with no RD flag
 ```
     Accepted values: Enable / Disable
 
-    Default: Enable
+    Default: Disable
 ```
 
 
 **Blacklisted Domain Feed Files**  
 
-Select your Domain Filtering file
+Select your blacklisted FQDN Filtering file
 
 ```
-    Accepted values: Select Domain
+    Accepted values: Select Domain Feed
 
     Default: Blank
 ```
@@ -104,7 +104,7 @@ Select your Domain Filtering file
 
 **Blacklisted Response Feed Files**  
 
-Select your Domain Filtering file
+Select your resposne Filtering file
 
 ```
     Accepted values: Enter Address
@@ -115,7 +115,7 @@ Select your Domain Filtering file
 
 **Whitelisted Domain Feed Files**  
 
-Select your Domain Filtering file
+Select your whitelisted FQDN Filtering file
 
 ```
     Accepted values: Select domain filtering file from the drop-down
@@ -141,7 +141,7 @@ Specify the maximum level of sub-domains allowed
 ```
     Accepted values: Integer
 
-    Default: 10 
+    Default: 5 
 ```
 
 
@@ -164,7 +164,7 @@ Specify the maximum length of the DNS query Response Message
 ```
     Accepted values: Integer
 
-    Default: 1024
+    Default: 100
 ```
 
 
@@ -181,7 +181,7 @@ Mention the port
 ```
     Accepted values: Integer
 
-    Default: 100
+    Default: 53
 ```
 
 
@@ -192,7 +192,7 @@ Select Protocol
 ```
     Accepted values: TCP / UPD / HTTPS / TLS
 
-    Default: Blank
+    Default: UDP
 ```
 
 
