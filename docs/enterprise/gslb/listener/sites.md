@@ -17,13 +17,25 @@ A GSLB site is the logical collection of GSLB virtual server, GSLB service, LB v
 
 ### How to Use
 
-1. Follow the links: **Apps** > **GSLB** > **Sites** > **Add Site**.
+1. Follow the links: **Apps** > **GSLB** > **Listener** > **Site**.
 
-2. Click on **Add Rule** and set relevant parameters described in the table below.
+2. Click on **Add Site** and set relevant parameters described in the table below.
 
 3. Click on **Save Changes**.
 
 ### Description
+
+
+**Site ID**
+
+It is auto generated function.
+
+```
+    Accepted values: String
+
+    Default: Blank 
+```
+
 
 **Site Enabled**
 
@@ -47,9 +59,9 @@ Specify the name for your site.
 ```
 
 
-**Site ID**
+**Site Address**
 
-It is auto generated function.
+Specify the IP address of site used for monitoring
 
 ```
     Accepted values: String
@@ -58,57 +70,73 @@ It is auto generated function.
 ```
 
 
-**Site IP**
+**Monitor Type**
 
-User can Specify the IP address of the Site 
+Specify Monitor Type that should be used
+
 
 ```
-    Accepted values: IP
+    Accepted values: TCP / HTTP / HTTPS / SSL HELLO / ICMP / SCRIPT
+
+    Default: TCP 
+```
+
+
+**Health Check Interval**
+
+Specify the health check interval in seconds
+
+
+```
+    Accepted values: Integer
 
     Default: Blank 
+```
+
+
+**Fail Threshold**
+
+Specify the fail threshold
+
+
+```
+    Accepted values: Integer
+
+    Default: 1 
+```
+
+
+**Pass Threshold**
+
+Specify the pass threshold
+
+
+```
+    Accepted values: String
+
+    Default: 1 
 ```
 
 
 **Port**
 
-It specifies the port number to connect 
+Specify the port
+
 
 ```
     Accepted values: Integer
 
-    Default: Blank 
+    Default: 80
 ```
 
 
-**Username**
+**Timeout**
 
-User can set a username to access the site 
+Specify the timeout
 
-```
-    Accepted values: String
-
-    Default: Blank 
-```
-
-
-**Password**
-
-User can set a password to protect the site from any unknown login
-
-```
-    Accepted values: String
-
-    Default: Blank 
-```
-
-
-**Inactivity Threshold**
-
-In this User can specify when no events or flows are generated in the specified time.
 
 ```
     Accepted values: Integer
 
-    Default: 60
+    Default: 1
 ```
-
