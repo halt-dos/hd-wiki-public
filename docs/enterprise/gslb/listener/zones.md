@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # Zones
@@ -10,7 +10,7 @@ Creation of DNS zones and records in GSLB
 
 Zones provide you an opportunity to create and manage domains. End users can also choose a list of Apps they want to configure for that root domain. DNS Service type should be Authoritative.  
 
-![zones](/img/gslb/v7/docs/zones.png)
+![listener](/img/gslb/v8/zones.png)
 
 ### How to Use:
 1. Go to  **Apps** > **GSLB** > **Listener** > **Zones**
@@ -18,20 +18,11 @@ Zones provide you an opportunity to create and manage domains. End users can als
 3. Configure your settings.
 4. Click **Save**.
 
-| Settings | Accepted Values | Default 
-| ----------- | ----------- | -------- | 
-| Zone Name  | String  | Blank 
-| DNSSEC  | Boolean  |    0
-
----
-
 ### Records
 
 ### Overview
 
 A DNS Record is a database entry that maps a URL to a specified IP address. These records are then stored in the DNS Servers, which can be accessed by different users globally using the URL address. When you search the URL, the browser forwards the URL to the DNS server, and it redirects you to the specific Web server. This web server then serves the site or directs the user to an email server that takes care of the incoming mail.
-
-![records](/img/gslb/v7/docs/zones.png)
 
 #### Types of DNS Records :
 
@@ -49,26 +40,25 @@ SRV|Service Record|Points one domain to another domain name using a specific des
 NS|Name server|Points to the authoritative server for the domain|[Fully Qualified Domain Name]
 SOA|Start of Authority|Stores important information about a domain such as email address of the administrator, when the domain was last updated, and how long the server should wait between refreshes etch.|[MNAME] [RNAME] [Serial] [Refresh] [Retry] [Expire] [TTL]
 
-#### Creating A Record
-
-The process is quite intuitive. Steps included: 
-1. Go to **Apps** > **GSLB** > **Zones** > **Records.**
-2. Click On **Add Record**. 
-3. Configure your settings. 
-4. Click **Create Record**.
-
 #### Configurable Fields
 
-**Record Name**: Specify the name for your DNS record. It helps in easy identification of the record. It can be empty also. 
+**Rule Name**
 
-**Record Type:** Specify the type of record. You can select record type from the drop-down list.
+This field specifies the unique identifier for a zone, which represents a specific network or domain within your DNS configuration.
 
-**Time to Live (TTL):** Specify the duration of the DNS record on the server in minutes, hour, day.
+```
+    Accepted values: String
 
-**LB Algorithm:** Specify the algorithm.
+    Default: Blank 
+```
 
-**Monitors:** Users can specify the monitors for the zone.
 
-**Record Value**: Specify the value for the record type. Refer to the table for the format of the desired record type.
+**DNSSEC** 
 
-**Back-up Record Value:** Specify the value for the record type you want to maintain back-up. As in Substitute.
+Specify whether DNSSEC (Domain Name System Security Extensions) is enabled to ensure the integrity and authenticity of DNS responses.
+
+```
+    Accepted values: Enabled / Disabled
+
+    Default: Disabled 
+```

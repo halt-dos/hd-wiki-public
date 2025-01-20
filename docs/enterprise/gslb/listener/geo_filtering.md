@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 # Geo Filtering
@@ -43,18 +43,28 @@ IP whitelisting is when you grant network access only to specific IP addresses. 
 ```
 
 
-#### Blacklisted IP Prefixes
+#### Blacklisted IP Feeds
 
-IP blacklisting is a method used to filter out illegitimate or malicious IP addresses from accessing your networks. Blacklists are lists containing ranges of or individual IP addresses that you want to block. This field restricts the requests coming from specified IP Prefixes permanently.
+Specify the list of IP Feeds that will be permanently disallowed from accessing the website.
+
+```
+    Accepted values: IP feed
+
+    Default: Blank
+```
+
+For more information about ISO 3166-1 alpha-2, please refer to this site: [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+
+
+#### BlackListed Countries
+
+Specify the list of countries that will be permanently disallowed from accessing the website
 
 ```
     Accepted values: list of country as per ISO 3166-1 alpha-2 standard 2 letter country-code.
 
     Default: Blank
 ```
-
-
-For more information about ISO 3166-1 alpha-2, please refer to this site: [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
 
 
 #### Use Cases

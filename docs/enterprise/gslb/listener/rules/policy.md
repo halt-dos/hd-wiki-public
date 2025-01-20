@@ -1,12 +1,14 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # Policy Rules
 
 ---
 
-Haltdos GSLB supports various types of rules for users to configure GSLB as per their network requirements. Users can set GSLB Policy Rules to manage traffic and a custom type DNS Resolver.
+## Overview
+
+Policy Rules provide a robust mechanism for fine-tuning DNS behavior, ensuring enhanced network performance and security
 
 ![rules](/img/gslb/v8/policy_rule.png)
 
@@ -61,6 +63,7 @@ This option allow user to select filter type it can be PATTERN, SUFFIX, DOMAIN o
     Default: ALL 
 ```
 
+### Condition
 
 **Condition Action** 
 

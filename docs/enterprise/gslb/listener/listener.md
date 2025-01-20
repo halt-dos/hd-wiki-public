@@ -28,4 +28,3 @@ It shows the name of the added listener, click on the edit icon to edit listener
 
     Default: Blank
 ```
-
