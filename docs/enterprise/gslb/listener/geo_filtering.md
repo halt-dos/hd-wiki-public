@@ -58,7 +58,7 @@ For more information about ISO 3166-1 alpha-2, please refer to this site: [ISO 3
 
 #### BlackListed Countries
 
-Specify the list of countries that will be permanently disallowed from accessing the website
+Specify the list of countries that will be permanently disallowed from accessing the website.
 
 ```
     Accepted values: list of country as per ISO 3166-1 alpha-2 standard 2 letter country-code.

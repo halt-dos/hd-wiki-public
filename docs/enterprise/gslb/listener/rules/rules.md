@@ -12,7 +12,7 @@ Haltdos GSLB supports various types of rules for users to configure GSLB accordi
 
 ### How to Use:
 1. Go to  **Apps** > **GSLB** > **Listener** > **Rules**
-2. Select **Rule**
+2. Select **Rule**.
 3. Configure your rule.
 4. Click **Save**.
 

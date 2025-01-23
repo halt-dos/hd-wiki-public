@@ -15,7 +15,7 @@ The DNS Firewall settings allow you to configure various protections to block ma
 ### How to Use:
 1. Go to  **Stack** > **GSLB** > **Listener** > **DNS Firewall**
 2. Configure the Firewall Settings configuration.
-4. Click on **Save Changes**
+4. Click on **Save Changes**.
 5. Firewall configuration will be saved.
 
 #### **Enable Blacklist feed**

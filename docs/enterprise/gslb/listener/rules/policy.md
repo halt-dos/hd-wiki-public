@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## Overview
 
-Policy Rules provide a robust mechanism for fine-tuning DNS behavior, ensuring enhanced network performance and security
+Policy Rules provide a robust mechanism for fine-tuning DNS behavior, ensuring enhanced network performance and security.
 
 ![rules](/img/gslb/v8/policy_rule.png)
 
@@ -44,7 +44,7 @@ This option allows users to use specifies the custom message for the rule.
 
 **Rule Priority**
 
-This option allows the user to set rule priority. The rule with lower Priority Value will be prioritize
+This option allows the user to set rule priority. The rule with lower Priority Value will be prioritize.
 
 ```
     Accepted values: Integer

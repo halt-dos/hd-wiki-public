@@ -8,6 +8,7 @@ sidebar_position: 6
 
 ## Overview
 
+Records are used to manage and distribute traffic across multiple geographically distributed servers or data centers. These records are typically DNS-based and define how client requests are resolved to specific server IPs or locations, ensuring optimal performance, reliability, and load distribution.
 
 ![listener](/img/gslb/v8/sites.png)
 
