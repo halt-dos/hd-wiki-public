@@ -6,9 +6,9 @@
 
 Make GSLB listen on specific ports to accept connections and distribute across one or multiple origin servers.
 
-![listener](/img/gslb/v8/listener_1.png)
+![listener](/img/gslb/v8/listener.png)
 
-![listener](/img/gslb/v8/listener_2.png)
+![listener](/img/gslb/v8/listener_modal.png)
 
 ### How to Use:
 1. Go to  **Stack** > **GSLB** > **Listener**
