@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 # Settings
@@ -14,7 +14,7 @@ Operational Setting configure different settings of Listener like the network pr
 
 ![operational-config](/img/gslb/v8/gslb-settings.png)
 
-![operational-config-port](/img/gslb/v8/gslb-settings-2.png)
+![operational-config-modal](/img/gslb/v8/gslb-settings-2.png)
 
 ### How to Use:
 1. Go to  **Apps** > **GSLB** > **Listener** > **Operational**
@@ -168,11 +168,11 @@ Specify the maximum length of the DNS query Response Message
 ```
 
 
-### PORT
+### Port
 
 User need to specify the port in the Port Modal
 
-
+![port-modal](/img/gslb/v8/settings-port.png)
 
 **Port**  
 
