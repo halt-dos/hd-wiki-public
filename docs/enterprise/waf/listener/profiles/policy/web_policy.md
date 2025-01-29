@@ -108,7 +108,7 @@ Users are allowed to specify the list of extensions for which Human Authenticati
 
 
 ##### **Restricted Extention**
-Restricted extensions are files that don't reside on a web server. This field specifies the list of extensions that should be blocked or restricted.
+Restricted extensions field specifies the list of extensions that should be blocked or restricted by users accessing the web application behind WAF.
 
 ```
     Accepted values: Any extension user want to restrict.
@@ -118,7 +118,7 @@ Restricted extensions are files that don't reside on a web server. This field sp
 
 
 ##### **Restricted File Upload**
-Restricted file uploads restrict or block the request with a file that is malicious or corrupted based on the file extensions specified, such requests are dropped.
+Restricted File Upload specifies the list of file extensions that should be blocked from being uploaded to the web application. By default, WAF blocks all major types of file extensions from being uploaded.
 
 ```
     Accepted values: Any file type user want to restrict.

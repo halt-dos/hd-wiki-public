@@ -27,6 +27,7 @@ These capabilities enable the WAF to effectively safeguard applications against 
 ##### **Vulnerability Protection:**
 
 - SQL Injection
+- Server-Side Inclusion (SSI)
 - Cross-Site Scripting (XSS)
 - Local File Inclusion (LFI)
 - Remote File Inclusion (RFI)
@@ -77,5 +78,6 @@ We can reset learning by clicking the **Reset Learning** button at the top right
 We can also update the rule status at once by selecting multiple rules. After clicking on the **Update Status** button, select desired status to update.
 
 :::note
-The signatures are updated daily, and if they aren't, a rollback will be performed accordingly.
+The signatures are updated daily, and if the update fails, rollback of signatures will be performed automatically, without any manual intervention or any interruption in the traffic.
+But if signatures need to be rolled back, you can do it manually via the [**Software Updates**](../../../platform/system/settings/software_updates.md).
 :::
