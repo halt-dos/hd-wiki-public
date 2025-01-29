@@ -19,7 +19,7 @@ Using the Updates page, users can update their license, approve software updates
 
 1. **Intel**: Intel Update is a consolidated list of Malicious IP addresses, Bad Bots, Tor IP addresses, Attack Signatures etc. Intel Update is fetched on a daily basis, as the threat intel is updated on daily basis and is automatically installed.
 
-2. **Binary** (Software): Binary Update consists of the version upgrades or minor patches of the Haltdos Security Solutions. Depending upon the License, Binary updates is pulled by Haltdos Platform when available. To install these updates, Approval is necessary, so an **Approve Update** button shows up. Approval is necessary, since these updates belong to the security solution installed in the device managed by Haltdos Platform.
+2. **Binary**: Binary Update consists of the version upgrades or minor patches of the Haltdos Security Solutions. Depending upon the License, Binary updates is pulled by Haltdos Platform when available. To install these updates, Approval is necessary, so an **Approve Update** button shows up. Approval is necessary, since these updates belong to the security solution installed in the device managed by Haltdos Platform.
 
 ### How to use
 
