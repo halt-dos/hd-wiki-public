@@ -12,6 +12,11 @@ Signatures contain rules that are evaluated for each request that passes through
 
 These capabilities enable the WAF to effectively safeguard applications against a wide range of threats, ensuring a robust security posture tailored to the specific technologies in use.
 
+##### **OS-Specific Targets:**
+
+- UNIX / Linux
+- Windows
+
 ##### **Framework-Specific Targets:**
 
 - .NET
@@ -28,7 +33,6 @@ These capabilities enable the WAF to effectively safeguard applications against 
 - Insecure Object References
 - Command Injection Vulnerabilities
 - Remote Code Execution (RCE) Commands
-
 
 ![Signatures](/img/waf/v8/docs/WAFproSign.png)
 
