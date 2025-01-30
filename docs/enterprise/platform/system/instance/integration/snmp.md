@@ -20,8 +20,6 @@ SNMP uses a blend of pull and push communications between network devices and th
 
 #### SNMP Support
 
-SNMP 
-
 ![snmp](/img/platform/v8/docs/sysSnmp.png)
 
 Select **Users** to configure versions.
