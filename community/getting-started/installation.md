@@ -60,7 +60,12 @@ sudo service offloader status
 ![haltdos](/img/ce-waf/docs/status/offloader.png)
 
 :::note Note 
-**Haltdos Community WAF Service** at start will be at loaded state. It will be in active and running state, once the whole registration of the instance is done.
+- **Haltdos Community WAF Service** at start will be at loaded state. It will be in active and running state, once the whole registration of the instance is done.
+
+- While installing on RHEL, users may need to disable the firewall. Use the following command: 
+```
+systemctl stop firewalld
+```
 :::
 
 You can access **Haltdos Community GUI** from **https://SERVER_IP_ADDRESS:9000**
