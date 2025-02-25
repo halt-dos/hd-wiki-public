@@ -62,16 +62,23 @@ sudo service offloader status
 :::note Note 
 - **Haltdos Community WAF Service** at start will be at loaded state. It will be in active and running state, once the whole registration of the instance is done.
 
-- While installing on RHEL, users may need to disable the firewall. Use the following command: 
+- Haltdos Community WAF listens on ports 80 and 443 and the Community GUI opens at port 9000 by default. Instead of disabling the firewall, users should allow these specific ports to enable proper functionality. Use the following command:
 ```
-systemctl stop firewalld
+sudo firewall-cmd --permanent --add-port=80/tcp
+  
+sudo firewall-cmd --permanent --add-port=443/tcp
+  
+sudo firewall-cmd --permanent --add-port=9000/tcp
+```
+- After allowing the specified ports, reload the firewall using the following command:
+```
+sudo firewall-cmd --reload
 ```
 :::
 
 You can access **Haltdos Community GUI** from **https://SERVER_IP_ADDRESS:9000**
 
 ![haltdos](/img/ce-waf/docs/setup/setup.png)  
-
 
 ### Step 3: License Registration
 
