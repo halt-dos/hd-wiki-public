@@ -73,7 +73,6 @@ sudo firewall-cmd --permanent --add-port=9000/tcp
 - After allowing the specified ports, reload the firewall using the following command:
 ```
 sudo firewall-cmd --reload
-```
 :::
 
 You can access **Haltdos Community GUI** from **https://SERVER_IP_ADDRESS:9000**
