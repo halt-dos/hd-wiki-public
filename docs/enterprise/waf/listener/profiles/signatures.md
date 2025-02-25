@@ -12,6 +12,11 @@ Signatures contain rules that are evaluated for each request that passes through
 
 These capabilities enable the WAF to effectively safeguard applications against a wide range of threats, ensuring a robust security posture tailored to the specific technologies in use.
 
+##### **OS-Specific Targets:**
+
+- UNIX / Linux
+- Windows
+
 ##### **Framework-Specific Targets:**
 
 - .NET
@@ -22,13 +27,13 @@ These capabilities enable the WAF to effectively safeguard applications against 
 ##### **Vulnerability Protection:**
 
 - SQL Injection
+- Server-Side Inclusion (SSI)
 - Cross-Site Scripting (XSS)
 - Local File Inclusion (LFI)
 - Remote File Inclusion (RFI)
 - Insecure Object References
 - Command Injection Vulnerabilities
 - Remote Code Execution (RCE) Commands
-
 
 ![Signatures](/img/waf/v8/docs/WAFproSign.png)
 
@@ -73,5 +78,6 @@ We can reset learning by clicking the **Reset Learning** button at the top right
 We can also update the rule status at once by selecting multiple rules. After clicking on the **Update Status** button, select desired status to update.
 
 :::note
-The signatures are updated daily, and if they aren't, a rollback will be performed accordingly.
+The signatures are updated daily, and if the update fails, rollback of signatures will be performed automatically, without any manual intervention or any interruption in the traffic.
+But if signatures need to be rolled back, you can do it manually via the [**Software Updates**](../../../platform/system/settings/software_updates.md).
 :::
