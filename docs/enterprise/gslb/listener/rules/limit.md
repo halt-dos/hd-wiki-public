@@ -45,7 +45,7 @@ This option allows users to use specifies the custom message for the rule.
 
 **Rule Priority**
 
-This option allows the user to set rule priority. The rule with lower Priority Value will be prioritize.
+This option allows the user to set rule priority. The rule with lower priority value will be prioritize.
 
 ```
     Accepted values: Integer
