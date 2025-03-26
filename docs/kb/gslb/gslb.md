@@ -4,7 +4,7 @@ This section describes the knowledge base of how to use Haltdos Global Server Lo
 
 1. [How to configure Listener and its DNS Service Type through Haltdos GSLB Solution?](./kb-4001)
 
-2. [How to configure a Authoritative DNS Zone Record?](./kb-4002)
+2. [How to configure a Authoritative DNS Zone?](./kb-4002)
 
 3. [How to configure Blacklist and Whitelist IP addresses through Haltdos GSLB Solution?](./kb-4003)
 
