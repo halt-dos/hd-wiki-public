@@ -3,7 +3,7 @@ sidebar_position: 8
 ---
 
 # Capture Rules
-The Capture Rule in Haltdos WAF handles SSL key logging during HTTPS communication
+The Capture Rule in Haltdos WAF handles SSL key logging during HTTPS communication.
   
 
 ---
@@ -24,12 +24,12 @@ SSL key log files can be extracted using generated keys, which are derived based
 
 - The WAF can record the session keys (also known as pre-master secrets) used during the SSL/TLS handshake for HTTPS traffic.
 
-- The WAF should only log SSL keys selectively, based on specific rules or conditions—not for every connection.
+- The WAF should only log SSL keys selectively, based on specific rules or conditions.
 
-- If the WAF is configured to log all SSL keys for all connections, it’s a huge security risk. 
+- If the WAF is set to log SSL keys for every connection, it can be very risky because it allows all encrypted data to be decrypted, and if those logs are ever leaked or misused, sensitive information could be exposed 
 
 :::note Note
-User can refer to the [Kb-1070](/kb/waf/kb-1070) for complete configuration,
+User can refer to the [KB-1070](/kb/waf/kb-1070) for complete configuration,
 :::
 
 ##### **Rule Name**
