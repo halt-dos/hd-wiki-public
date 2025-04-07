@@ -14,7 +14,7 @@ Haltdos WAF supports various types of rules for users to configure WAF as per th
 
 6.[**Forwarder rules**](forwarderrule.md)
 
-7.[**Capture rule**](capturerule.md) 
+7.[**Capture rules**](capturerule.md) 
 
 8.[**Upstream rules**](upstreamrules.md)
 
