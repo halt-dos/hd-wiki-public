@@ -85,4 +85,4 @@ Some of the WAF use cases are mentioned below:
 75. [Generate/Issue SSL certificate using Let's Encrypt](./kb-1075)
 76. [Renew SSL Certificate using Let's Encrypt HTTP Challenge](./kb-1076)
 77. [How to perform SSL/TLS DECRYPTION](./kb-1077)
-78. [How to configure the Capture rule](./kb-1078)
+78. [How to configure Capture rule](./kb-1078)
