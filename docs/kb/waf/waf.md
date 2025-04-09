@@ -84,3 +84,5 @@ Some of the WAF use cases are mentioned below:
 74. [Adding Admin/Member and configuring password](./kb-1074)
 75. [Generate/Issue SSL certificate using Let's Encrypt](./kb-1075)
 76. [Renew SSL Certificate using Let's Encrypt HTTP Challenge](./kb-1076)
+77. [How to perform SSL/TLS DECRYPTION](./kb-1077)
+78. [How to configure the capture rule to analyze the HTTPS traffic ?](./kb-1078)
