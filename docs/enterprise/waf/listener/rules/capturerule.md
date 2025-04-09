@@ -13,7 +13,7 @@ The WAF can record the session keys (also known as pre-master secrets) used duri
 
 SSL key log files can be extracted using generated keys, which are derived based on multiple parameters such as IP address, geo-location, and other configurable conditions. The log generation process is tailored to the specific criteria defined by the user. These keys, exchanged between the client and server during the SSL/TLS handshake, are used to encrypt and decrypt data in a secure session. Logging them enables decryption of HTTPS traffic later for purposes such as analysis, debugging, or security inspection.
 
-![error rules](/img/waf/v8/docs/captureruleconf.png)
+![capture rules](/img/waf/v8/docs/captureruleconf.png)
 
 ### How to Use:
 1. Go to **WAF** > **Listeners** > **Rules** > **Capture Rules**.
