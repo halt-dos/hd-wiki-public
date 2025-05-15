@@ -1,1 +1,0 @@
-(self.webpackChunkhaltdos_wiki=self.webpackChunkhaltdos_wiki||[]).push([[42969],{67992:()=>{},28825:()=>{},7411:()=>{},93290:()=>{},92441:()=>{}}]);
