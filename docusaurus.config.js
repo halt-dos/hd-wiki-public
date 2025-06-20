@@ -128,6 +128,13 @@ const config = {
       },
     ],
     [
+    '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-5LR1VFLJXS',
+        anonymizeIP: true,
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'professional',
