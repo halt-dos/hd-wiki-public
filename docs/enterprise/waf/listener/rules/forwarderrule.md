@@ -15,11 +15,11 @@ A Forwarder Rule in the WAF defines a set of conditions under which a request is
 2. Click on **Add Rule** and set relevant parameters described in the table below.
 3. Click on **Save Changes**.
 
-### Description
+### Description 
  
 Forwarder Rules in the WAF define the logic for directing incoming HTTP requests based on specified conditions such as IP address, URI, method, or headers. Their primary function is to forward these requests to designated backend servers. Additionally, these rules can enable the same request to be duplicated and sent to multiple backend systems simultaneously — for example, forwarding the original request to the application server while also routing a copy to a logging or monitoring service. This ensures both request delivery and enhanced visibility or processing by other systems, forming the foundation of how traffic is intelligently routed and shared across services in a controlled manner.
 
-##### **Rule Name**
+##### **Rule Name**  
 
 Specify a rule name to identify the rule which is to be created. The rule name takes alphanumeric input.
 
