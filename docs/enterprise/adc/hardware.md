@@ -64,7 +64,7 @@ Haltdos hardware specs page introduce customers about various range of models al
 
 
 ## Model - HD-CAN-4600
-| MITIGATION PERFORMANCE                                    |
+| MITIGATION PERFORMANCE          |                           |
 |--------------------------------|--------------------------|
 | L4 Throughput                  | upto 24 Gbps              |
 | L7 Throughput                  | upto 25 Gbps              |
