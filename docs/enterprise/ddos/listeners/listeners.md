@@ -6,8 +6,7 @@ Make DDOS listen on specific ports to accept connections and mitigate the attack
 ## Overview 
 Listeners are used for configuring websites and servers appropriately that it can help to reduce response time, increase throughput, optimize resource use and overload of any single resource.
 
-
-![listner](/img/ddos/v7/docs/listner.png)
+---
 
 ### How to Use
 
