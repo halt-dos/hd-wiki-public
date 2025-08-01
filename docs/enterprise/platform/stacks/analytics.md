@@ -34,6 +34,9 @@ Real-time analytics can be customized using the filter. The following filter opt
 
 ![analytics](/img/platform/v8/docs/analytics_attackingIP.png)
 
+:::note Note
+Users can access multiple default dashboards to monitor overall status. Additionally, custom analytic dashboards can be created within the Dashboard section based on specific requirements.
+:::
 ---
 
 ### **How to Use:**
