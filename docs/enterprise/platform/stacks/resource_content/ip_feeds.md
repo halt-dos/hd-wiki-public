@@ -8,7 +8,7 @@ sidebar_position: 10
 
 Haltdos allows users to set the IP feed to customize connectivity. Users can add IP feed as per need and further add the IP feed in apps to blacklist or whitelist the traffic from the mentioned IP addresses.
 
-![Scripts](/img/platform/v8/docs/ipfeed.png)
+![Scripts](/img/platform/v8/docs/ipfeed_upload.png)
 
 ### How to Use:
 
@@ -40,6 +40,15 @@ It specifies the particular scope on which the script works. By default, its val
     Default: Blank 
 ```
 
+##### **Bulk Upload**
+
+Users can upload a CSV file containing IP prefixes to perform a bulk upload. Ensure that the CSV contains only valid IP prefixes.
+
+```
+    Accepted values: Upload File in CSV format
+
+    Default: None
+```
 
 ##### **Content**
 

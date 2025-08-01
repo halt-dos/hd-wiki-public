@@ -14,7 +14,9 @@ Configure Operational settings of Listeners.
 Users are allowed to configure many operational settings for the Listners.
   
 ![listner-setting](/img/ddos/v7/docs/listner_setting.png)
-  
+
+![listner](/img/ddos/v7/docs/listner_connection.png)
+
 ### How to Use:
 1. Go to **Apps > DDoS > Listener > Operational Settings**.  
 2. Configure the settings.
@@ -144,22 +146,38 @@ This option allows users to specify time after which connections marked in tarpi
     Default: 0
 ```
 
+##### **Max Concurrent User Sessions**
+Specifies the maximum number of simultaneous user sessions allowed; set to 0 to disable session access or limit enforcement.
+
+```
+    Accepted values: Integer
+
+    Default: 0
+```
+
+##### **Max Session Exceeded Action**
+Specifies the action to perform when the maximum allowed session count is exceeded, such as blocking login or terminating the oldest session.
+
+```
+    Accepted values: Integer
+
+    Default: 0
+```
+
+##### **Remote IP Header**
+Specifies the HTTP header to use for extracting the client's remote IP address.
+
+```
+    Accepted values: Integer
+
+    Default: 0
+```
 
 ##### **Server Aliases**
 This option allows users to specify if any alias for the configured listener.
 
 ```
     Accepted values: String
-
-    Default: Blank
-```
-
-
-##### **Virtual IPs**
-This option allows users to add or assign VIPs to the listener.
-
-```
-    Accepted values: IP
 
     Default: Blank
 ```
