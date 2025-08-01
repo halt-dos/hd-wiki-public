@@ -32,7 +32,7 @@ It safeguards against amplification and reflection attacks by blocking spoofed I
 
 - #### **Transparent and Easy Deployment**
 
-Haltdos Anti-DDOS provides protection by being an inline solution that seamlessly integrates into your existing infrastructure with a simple DNS change. Haltdos Solution can be deployed in layer 2 transparent mode for inline traffic. This deploeyment will not perform any changes in ARP/MAC address for uplink or downlink devices. post inspection, it will allow the frame in the exact same format to next device without changing MAC/IP details.
+Haltdos Anti-DDOS provides protection by being an inline solution that seamlessly integrates into your existing infrastructure with a simple DNS change. Haltdos Solution can be deployed in layer 2 transparent mode for inline traffic. This deployment will not perform any changes in ARP/MAC address for uplink or downlink devices. Post inspection, it will forward the frame in the exact same format to next device without changing MAC/IP address details.
  
 - #### **Cost Effective**
 
