@@ -55,9 +55,11 @@ This option allows users to specify multiple IP prefixes or IP address (With CID
     Default: Blank
 ```
 
-
 ##### **Blacklist Intel Feed**
-This option allows users to configure and add custom threat intel to blacklist traffic generated from the IP addresses or prefixed. Users can use [IP feeds](/docs/enterprise/platform/stacks/resource_content/ip_feeds.md) option to add the IP feed later that can be added under this field using drop-down.
+
+This option allows users to configure and add custom threat intelligence to blacklist traffic generated from specific IP addresses or prefixes. Users can utilize the  [IP feeds](/docs/enterprise/platform/stacks/resource_content/ip_feeds.md) option to add IP feeds later, which can then be selected from the dropdown menu.
+
+This feature also supports domain or FQDN-based blacklisting. By using domain blacklisting, users can safeguard the network from malware propagation attacks, block malicious redirections, and filter out harmful referrers or sources.
 
 ```
     Accepted values: Select list of threat intel
@@ -68,7 +70,7 @@ This option allows users to configure and add custom threat intel to blacklist t
 
 
 ##### **Whitelist Intel Feed**
-This option allows users to configure and add custom threat intel to whitelist traffic coming from those IP addresses or IP prefixes. Users can use [IP feeds](/docs/enterprise/platform/stacks/resource_content/ip_feeds.md) option to add the IP feed later that can be added under this field using drop-down.
+This option allows users to configure and add custom threat intel to whitelist traffic coming from those IP addresses or IP prefixes. Users can use [IP feeds](/docs/enterprise/platform/stacks/resource_content/ip_feeds.md) option to add the IP feed later that can be added under this field using drop-down. This option also support domain/FQDN based whitelisting.
 
 ```
     Accepted values: Select list of threat intel

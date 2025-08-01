@@ -11,6 +11,8 @@ On the incident page, users can check what packets are dropped by Haltdos mitiga
 
 ### How to Use
 
+---
+
 1. Go to **Apps > DDoS > Incident**
 
 Users can customize the date range for the incident details & check incident details about specific network profiles. Users can see the following incident details.  
@@ -34,50 +36,52 @@ Users can customize the date range for the incident details & check incident det
 
 ### Description
 
-##### **Timestamp**
-This column specify the timestamp for the event.
+---
 
-##### **Category**
+#### **Timestamp**
+Advanced traffic analytics in a DDoS solution offers deep visibility into attack patterns, from overall traffic trends to extract behaviour of specific malicious requests. This can be view & observed for a range of timestamps as well as we can select very common parameters such as today, this week, This month etc.
+
+#### **Category**
 This option specify the category for the event.
 
-##### **Rule**
+#### **Rule**
 This option specify the rule and rule ID for the triggered event.
 
-##### **Src IP**
+#### **Src IP**
 This option specify the source IP for the event.
 
-##### **Src Port**
+#### **Src Port**
 This option specify the source port for the event.
 
-##### **Dest IP**
+#### **Dest IP**
 This option specify the destination IP for the event.
 
-##### **Dest Port**
+#### **Dest Port**
 This option specify the destination port for the event.
 
-##### **Protocol**
+#### **Protocol**
 This option specify the protocol used in communication for the event.
 
-##### **DPI Error Code**
+#### **DPI Error Code**
 This option specify the DPI error code if any request has been dropped due to DPI inspection.
 
-##### **Flag**
+#### **Flag**
 This option specify the TCP flag used for the communication.
 
-##### **Direction**
+#### **Direction**
 This option specify the direction of the communication which has been dropped. The communication can be Inbound or outbound. Inbound communication indicates that traffic has been generated from the WAN and moving towards LAN segment. The Outbound communication indicates that traffic has been generated from the LAN and moving towards WAN segment.
 
-##### **Country**
+#### **Country**
 This option specify the country of the malicious IP.
 
-##### **Bit Saved**
+#### **Bit Saved**
 This option specify the overall bit count that has been blocked.
 
-##### **Counter**
+#### **Counter**
 This option specify the overall count of the event that has been dropped.
 
-##### **Score**
+#### **Score**
 This option specify the packet score for the triggered event.
 
-##### **Action**
+#### **Action**
 This option specify the action for the triggered event. The Action can be dropped or log.
