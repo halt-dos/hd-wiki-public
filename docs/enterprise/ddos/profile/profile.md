@@ -55,7 +55,7 @@ In this mode, all the mitigation & rule sets will monitor the traffic. This rule
 - **Mitigation**  
 In this mode, all DDoS mitigation will be turned on including both Static and Dynamic mitigation. When any request dropped by the any mitigation, it will be logged as an event and can be checked under **Incidents**
 
-##### **Stateless Mode**
+##### **Stateful/Stateless Mode**
 
 This option allows users to change the profile mode from stateful to stateless mode. By default, all the newly configure profiles are configured in stateful mode. DDoS profile with **stateful mode**, will track all connection states of the traffic that is being transferred over the Haltdos Anti DDoS device.If we enable the stateless mode, DDoS device will not track any connection.
 
