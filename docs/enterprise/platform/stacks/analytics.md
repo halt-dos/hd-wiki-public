@@ -22,16 +22,19 @@ Users can enable auto-refresh in order to refresh the real-time analytics for re
 
 Real-time analytics can be customized using the filter. The following filter options are available:
 
-![analytics](/img/platform/v8/docs/analytics_newui.png)
-- Above diagram show the histogram data of bandwidth summary
+- Below diagram show the histogram data of bandwidth summary
 
+![analytics](/img/platform/v8/docs/analytics_newui.png)
+
+- Below screenshot contain the data of Top Source IP and Top Countries. 
 
 ![analytics](/img/platform/v8/docs/analytics_srcIP.png)
-- Above screenshot contain the data of Top Source IP and Top Countries. 
+
+- Below screenshot contain the data of Top Attacking Countries and Top Attacking Source IP. 
 
 ![analytics](/img/platform/v8/docs/analytics_attackingIP.png)
-- Above screenshot contain the data of Top Attacking Countries and Top Attacking Source IP. 
 
+---
 
 ### **How to Use:**
 1. Go to **Stack**

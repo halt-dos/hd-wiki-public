@@ -43,7 +43,7 @@ It specifies the particular scope on which the script works. By default, its val
 
 ##### **Content**
 
-This section is used to specify the list of IP addresses. Each IP address must be in CIDR notation, and every new IP address should be added on a separate line to ensure proper formatting and readability.
+This section is used to specify the list of IP addresses.  
 
 ```
     Accepted values: String
@@ -51,5 +51,8 @@ This section is used to specify the list of IP addresses. Each IP address must b
     Default: Blank 
 ```
 
+:::note Note
+Each IP address must be in CIDR notation, with each entry placed on a separate line to meet the required input format.
+:::
 
 
