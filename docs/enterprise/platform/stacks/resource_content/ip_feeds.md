@@ -43,7 +43,7 @@ It specifies the particular scope on which the script works. By default, its val
 
 ##### **Content**
 
-It specifies the area where the IP address list is to be written.
+This section is used to specify the list of IP addresses.  
 
 ```
     Accepted values: String
@@ -51,5 +51,8 @@ It specifies the area where the IP address list is to be written.
     Default: Blank 
 ```
 
+:::note Note
+Each IP address must be in CIDR notation, with each entry placed on a separate line to meet the required input format.
+:::
 
 
