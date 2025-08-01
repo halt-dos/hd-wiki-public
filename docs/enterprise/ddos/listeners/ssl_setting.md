@@ -9,7 +9,7 @@ It provides functionality to support SSL offloading based on configurations.
 
 ## Overview
 
-As many applications are running over HTTPS, for the WAF / ADC solution to inspect user payload, it is necessary to decrypt SSL/TLS traffic. The following settings allow users to configure SSL offloading based and optional re-encryption in Haltdos solution. The performance of SSL offloading will vary based on chosen model.
+As many applications are running over HTTPS, for the WAF / ADC solution to inspect user payload, it is necessary to decrypt SSL/TLS traffic.This SSL based communcation supports SSL key size 1K & 2K from the day one. This SSL offloading will not require any hardware changes in device. The following settings allow users to configure SSL offloading based and optional re-encryption in Haltdos solution. The performance of SSL offloading will vary based on chosen model.
 
 
 ![ssl_setting](/img/ddos/v7/docs/ssl.png)

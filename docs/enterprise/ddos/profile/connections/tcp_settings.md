@@ -26,7 +26,9 @@ In DDoS connection, you can configure Connection based protocols which will regu
 
 
 
-### **Description:**
+### **Description:** 
+
+Inbound/Outbound Out of Order Threshold before User can specify the maximum number of Out of order TCP packets can be allowed for Inbound/Outbound traffic. After User can specify the maximum number of Out of order TCP packets can be allowed for Inbound traffic. This will only allow configured out of sequence TCP packets for Inbound/Outbound direction.
 
 ##### **TCP**
 

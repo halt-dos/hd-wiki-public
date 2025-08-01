@@ -4,7 +4,7 @@ Configure profile level configurations
 
 ---
 
-DDos Profile helps to differentiate the network by dividing the network into different segments based on IP address. This division helps you configure each segment as per your requirement and monitor the stats on particular network segment. By default, Root profile is created.
+DDos Profile helps to differentiate the network by dividing the network into different segments based on IP address. This division helps you configure each segment as per your requirement and monitor the stats on particular network segment. By default, Root profile is created. The policy change in network profiles will not effect the currently deployed security policies. We can create new policy in runtime without effecting traffic for other profiles.
 
 ![network_profile](/img/ddos/v8/ddos_network_profile_1.png)
 

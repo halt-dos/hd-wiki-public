@@ -1,16 +1,23 @@
 # Layer 7 Incidents
 
 ### Overview
+
+---
+
 All the application related events will be visible under application incidents.
 
 ![Application Incidents](/img/ddos/v8/ddos_layer7incidents.png)
 
 ### How to Use
 
+---
+
 1. Go to **Apps > DDoS > Incident**.
 2. Select Application from the drop-down.
 
 ### Description
+
+---
 
 ##### **Resource**
 

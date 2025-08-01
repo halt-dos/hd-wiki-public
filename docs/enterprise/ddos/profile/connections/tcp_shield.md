@@ -6,7 +6,7 @@ sidebar_position: 2
 
 
 
-TCP shield is defending mechanism protecting against TCP Flood attacks such as TCP SYN Flood, etc. 
+TCP shield is defending mechanism protecting against TCP Flood attacks such as TCP Authenticatiion, TCP SYN Flood etc while allowing genuine traffic. This mitigation allows our DDoS solution to verify the legitimacy of connection requests before establishing a session, preventing spoofed or malicious handshakes.
 
 ![tcp shield](/img/ddos/v8/securityprofile_tcp_shield.png)
 
