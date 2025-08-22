@@ -78,3 +78,6 @@ This option allows users to configure and add custom threat intel to whitelist t
     Default: Blank
 ```
 
+:::note Note
+The solution supports adding IP addresses / prefixes as well as feeds. It is recommended to use IP Feeds for better management of blacklisted and whitelisted feeds - especially when integrating with multiple 3rd party threat intel feeds. There is currently no restriction on number of IP addresses / prefixes that can be added to a feed. The solution has been tested with over 4 million IoCs for inline blocking.  
+:::
