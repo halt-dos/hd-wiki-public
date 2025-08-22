@@ -57,8 +57,13 @@ In this mode, all DDoS mitigation will be turned on including both Static and Dy
 
 ##### **Stateful/Stateless Mode**
 
-This option allows users to change the profile mode from stateful to stateless mode. By default, all the newly configure profiles are configured in stateful mode. DDoS profile with **stateful mode**, will track all connection states of the traffic that is being transferred over the Haltdos Anti DDoS device.If we enable the stateless mode, DDoS device will not track any connection.  
-Using this mode, the user can also handle both symmetric and asymmetric traffic flows.
+This option allows users to change the profile mode from stateful to stateless mode. By default, all the newly configure profiles are configured in stateful mode.
+
+- **Stateful Mode**  
+In this mode, the solution will track and intercept all sessions / connection states of the traffic. As it maintains state, the number of sessions tracked are limited by license / model and should be used only when the traffic flow is symmetric (incoming and outgoing traffic is flowing through the device).
+
+- **Stateless Mode**  
+In this mode, the solution will be able to track sessions / connections without having the need to maintain state. Hence, in this mode, there is no restriction on the number of ongoing (concurrent) sessions / connections. This mode makes it possible to support both symmetric and asymmetric traffic flows.
 
 ```
     Accepted values: Enable / Disable

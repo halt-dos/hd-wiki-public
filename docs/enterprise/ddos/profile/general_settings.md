@@ -82,7 +82,7 @@ In this field users can specify the maximum connection allowed to be established
 
 ##### **Anti-Scanning Threshold**
 
-In this field, users can specify the threshold value(in pps) of Anti-scanning to limit packet scanning attempts. The Haltdos Anti-DDoS solution can limit the unusual scanning of the packet if anyone is doing so. Users can limit the scanning attempt by setting this threshold.
+In this field, users can specify the threshold value(in pps) of Anti-scanning to limit port scanning attempts by attackers. Users can limit the scanning attempt by setting this threshold.
 
 ```
     Accepted values: Integer
