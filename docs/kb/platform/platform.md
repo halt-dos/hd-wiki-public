@@ -21,3 +21,5 @@ Haltdos platform level option is very useful in order to configure the platform 
 9. [How to configure IP through Network interface?](./kb-3009)
 
 10. [How to configure Syslog server to forward all the logs to syslog server?](./kb-3010.md)
+
+11. [How to Restrict Admin Access by Binding MAC Address](./kb-3011)
