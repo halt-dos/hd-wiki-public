@@ -112,6 +112,22 @@ Drop the request
 - **SEND CHALLENGE**
 Send a challenge like a captcha  
 
+##### **Anonymous Proxy Traffic**
+
+This field allows you to take action on traffic originating from anonymous proxy servers. Such proxies are often used to hide the real client identity and may indicate suspicious or malicious activity. It is backed by the Haltdos Threat Intel system. It includes the following actions:
+
+- **NO ACTION**
+Don't perform any action.
+
+- **SEND CAPTCHA**
+Send a CAPTCHA challenge to verify that the client is a real user.
+
+- **SEND CRYPTO CHALLENGE**
+Send a cryptographic challenge to validate the authenticity of the client.
+
+- **DROP**
+Drop the request completely.
+
 ##### **Advance Bot Protection**
 This field allows you to enable Haltdos Advance Bot Protection for an incoming request for the current security profile. It includes the following actions:
 
