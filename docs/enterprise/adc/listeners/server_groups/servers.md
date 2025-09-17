@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ![servers](/img/adc/v8/docs/servers_1.png)
 
-![servers2](/img/adc/v8/docs/servers_2.png)
+![servers2](/img/adc/v8/docs/severs_2.png)
 
 ### How to Use:
 
@@ -47,6 +47,18 @@ This option allows users to set the port number that is being used for the serve
     Default: 80 
 ```
 
+##### **DNS Record Type**
+
+DNS record type decides whether a server is reached via an IPv4 address (A record), an IPv6 address (AAAA record).
+
+- **A Record**: Prefers IPv4; falls back to IPv6 if unavailable.  
+- **AAAA Record**: Prefers IPv6; falls back to IPv4 if unavailable.  
+
+```
+    Accepted values: A Record / AAAA Record
+
+    Default: A Record
+```
 
 ##### **Weight**
 
