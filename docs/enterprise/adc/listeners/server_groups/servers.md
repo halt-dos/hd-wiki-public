@@ -57,7 +57,7 @@ DNS record type decides whether a server is reached via an IPv4 address (A recor
 ```
     Accepted values: A Record / AAAA Record
 
-    Default: ANY
+    Default: A Record
 ```
 
 ##### **Weight**
