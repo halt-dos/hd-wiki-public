@@ -2,24 +2,28 @@
 sidebar_position: 6
 ---
 
-# Cluster Settings
+# VRRP Settings
 
 ---
 The Cluster Setting is used to configure High Availability (HA) in the Active-Passive (AP) or Active-Active (AA) mode across multiple instances. This setup ensures that if the primary (active) instance fails, a secondary (passive) instance automatically takes over to minimize downtime and maintain service continuity.
 
 ![HA Settings](/img/platform/v8/docs/cluster_settings.png)  
 
+---
+
 #### How to Use:
 
-1. Go to **Stack > Instances  > Cluster Settings**
+1. Go to **System > Instance > (Select Instance) > Setting > > VRRP Settings**
 2. Configure your settings
 3. Click **Save Changes**
+
+---
 
 ### Description
 
 ##### Name
 
-Enter the cluster name
+Enter the Interface name
 
 ```
     Accepted values: String
@@ -27,6 +31,15 @@ Enter the cluster name
     Default: Blank
 ```
 
+##### Preserve State
+
+Select the Preserve state
+
+```
+    Accepted values: Enable / Disable
+
+    Default: Disable
+```
 
 ##### Instance State
 

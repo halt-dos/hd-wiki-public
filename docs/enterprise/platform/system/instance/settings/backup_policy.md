@@ -21,13 +21,17 @@ It is recommended to configure periodic backup to avoid data loss and ensure log
 
 ![Backup Policy2](/img/platform/v8/docs/backup_setting2.png)  
 
+---
+
 #### How to Use:  
 
-1. Go to **Stack > Infrastructure > Instance > (Select Instance) > Setting > Backup Setting**.
+1. Go to **System > Instance > (Select Instance) > Setting > Backup Setting**.
 2. Configure your settings.
 3. Click **Save Changes**.
 
-## Description
+---
+
+### Description
 
 **Log Retention Period**
 
