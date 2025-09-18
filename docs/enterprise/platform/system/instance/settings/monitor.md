@@ -9,11 +9,15 @@ It shows the health status of the Instances, user can select whether to enable t
 
 ![Monitor](/img/platform/v8/docs/monitor_settings.png)  
 
+---
+
 #### How to Use:
 
-1. Go to **Stack > Infrastructure > Instance > (Select Instance) > Setting > Monitor Setting**.
+1. Go to **System > Instance > (Select Instance) > Setting > Monitor Setting**.
 2. Configure your settings.
 3. Click **Save Changes**.
+
+---
 
 ### Description
 
