@@ -9,6 +9,7 @@ Routing is a combination of Fixed Routing and Policy routing which helps the use
 
 Routing provides flexible, granular traffic-handling capabilities for forwarding packets. In this way, PBR enables users to achieve optimal bandwidth utilization for business-critical applications.
 
+Additionally, the routing policy supports FQDN or domain-based entries and continuously resolves them to their corresponding IP addresses for matching. This effectively uses DNS as a ‘remote server’ to dynamically populate address sets in the source and destination fields.
 
 ![routing_rule](/img/llb/v8/llb_routing_rules.png)
 
