@@ -6,6 +6,8 @@ Link monitoring in Haltdos LLB
 
 Haltdos allows users to configure custom monitoring that can monitor the interface groups. These monitors check the health of the link to assist in efficient load balancing across multiple WAN links.
 
+The device also supports an inbuilt email-based reporting mechanism to alert administrator instantly during link failover events for proactive management.
+
 If any of the links are monitored and marked as down, the traffic will not redirect to the same link unless the link comes up and complete the pass threshold.
 
 ![adding_monitor](/img/llb/v8/llb_monitors.png)
