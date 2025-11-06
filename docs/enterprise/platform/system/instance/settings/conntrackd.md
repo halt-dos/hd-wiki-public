@@ -5,6 +5,10 @@ sidebar_position: 7
 # Connection Sync Settings
 Configure connection synchronization between WAF nodes using `conntrackd`. This ensures active connections remain uninterrupted during failover or redundancy scenarios.
 
+:::note Note
+The option is available when the user selects LLB as their application.
+:::
+
 ---
 
 ### Overview
