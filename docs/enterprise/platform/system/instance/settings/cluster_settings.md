@@ -7,6 +7,8 @@ sidebar_position: 6
 ---
 The Cluster Setting is used to configure High Availability (HA) in the Active-Passive (AP) or Active-Active (AA) mode across multiple instances. This setup ensures that if the primary (active) instance fails, a secondary (passive) instance automatically takes over to minimize downtime and maintain service continuity.
 
+The VRRP-based clustering mechanism supports both IPv4 and IPv6 virtual IPs (VIPs), ensuring seamless switchover and high availability across instances.
+
 ![HA Settings](/img/platform/v8/docs/cluster_settings.png)  
 
 ---
