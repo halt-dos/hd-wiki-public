@@ -13,6 +13,7 @@ The VRRP-based clustering mechanism supports both IPv4 and IPv6 virtual IPs (VIP
 
 ---
 
+
 #### How to Use:
 
 1. Go to **System > Instance > (Select Instance) > Setting > > VRRP Settings**
