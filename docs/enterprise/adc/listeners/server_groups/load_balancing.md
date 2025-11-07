@@ -31,6 +31,10 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 
 8. **SNMP Metrics**: This algorithm is a dynamic load balancing algorithm. It forwards client requests to the server, which have the least CPU / RAM usage. NOTE: For this algorithm to work, the server group should have SNMP monitor attached.
 
+9. **SIP session ID**: SIP Session ID–based load balancing enables sticky session persistence for SIP traffic, ensuring uninterrupted traffic and maintaining signaling consistency across all transactions.
+
+10. **Proximity**: This algorithm is a dynamic load balancing algorithm that forwards client requests to the server located closest to the client’s geographical or network location. It determines proximity based on factors such as network latency, round-trip time (RTT), or geo-location mapping to minimize response time and optimize user experience.
+
 ### How to Use:
 
 1. Go to **Stack** > [**SLB**](/enterprise/adc) > [**Listeners**](../listeners.md) >[** Server Groups**](./server_groups.md) > **Select Server Name** > **Load Balancing**  
