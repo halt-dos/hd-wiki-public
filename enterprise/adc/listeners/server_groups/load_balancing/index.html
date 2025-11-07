@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LR1VFLJXS"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-5LR1VFLJXS",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.02d7880f.css">
-<script src="/assets/js/runtime~main.ed7c5d0f.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a868767a.js" defer="defer"></script>
 <script src="/assets/js/main.48ab4ed3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -50,6 +50,12 @@ This algorithm is a dynamic load balancing algorithm. It forwards client request
 </li>
 <li>
 <p><strong>SNMP Metrics</strong>: This algorithm is a dynamic load balancing algorithm. It forwards client requests to the server, which have the least CPU / RAM usage. NOTE: For this algorithm to work, the server group should have SNMP monitor attached.</p>
+</li>
+<li>
+<p><strong>SIP session ID</strong>: SIP Session ID–based load balancing enables sticky session persistence for SIP traffic, ensuring uninterrupted traffic and maintaining signaling consistency across all transactions.</p>
+</li>
+<li>
+<p><strong>Proximity</strong>: This algorithm is a dynamic load balancing algorithm that forwards client requests to the server located closest to the client’s geographical or network location. It determines proximity based on factors such as network latency, round-trip time (RTT), or geo-location mapping to minimize response time and optimize user experience.</p>
 </li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-use">How to Use:<a href="#how-to-use" class="hash-link" aria-label="Direct link to How to Use:" title="Direct link to How to Use:">​</a></h3>
