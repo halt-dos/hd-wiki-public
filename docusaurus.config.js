@@ -23,6 +23,12 @@ const config = {
             syntax: 'typescript',
             tsx: true,
           },
+          transform: {
+            react: {
+              runtime: 'automatic',
+              importSource: 'react',
+            },
+          },
           target: 'es2017',
         },
         module: {
@@ -31,28 +37,28 @@ const config = {
       },
     }),
   },
+
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           lastVersion: 'current',
-          versions:{
-            'current': {
-              label: 'v8'
+          versions: {
+            current: {
+              label: 'v8',
             },
             '7.0': {
               label: 'v7',
               banner: 'none',
               path: 'v7',
-              badge: true
+              badge: true,
             },
             '6.0': {
               label: 'v6',
               path: 'v6',
-              badge: true
-            }
+              badge: true,
+            },
           },
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
@@ -65,26 +71,27 @@ const config = {
       }),
     ],
     [
-      "redocusaurus",
+      'redocusaurus',
       {
-        "specs": [
+        specs: [
           {
-            "id": "apiDocs",
-            "route": "/api",
-            "spec": "haltdos-api.yaml"
-          }
+            id: 'apiDocs',
+            route: '/api',
+            spec: 'haltdos-api.yaml',
+          },
         ],
-        "theme": {
-          "primaryColor": "#4786FF",
-          "options": {
-            "disableSearch": true,
-            "requiredPropsFirst": true,
-            "noAutoAuth": true
-          }
-        }
-      }
-    ]
+        theme: {
+          primaryColor: '#4786FF',
+          options: {
+            disableSearch: true,
+            requiredPropsFirst: true,
+            noAutoAuth: true,
+          },
+        },
+      },
+    ],
   ],
+
   plugins: [
     'docusaurus-plugin-sass',
     [
@@ -95,26 +102,14 @@ const config = {
           'appInstalled',
           'standalone',
           'queryString',
-          'always'
+          'always',
         ],
         pwaHead: [
-          {
-            tagName: 'link',
-            rel: 'icon',
-            href: '/img/logo/icon_light.png',
-          },
-          {
-            tagName: 'link',
-            rel: 'manifest',
-            href: '/manifest.json',
-          },
-          {
-            tagName: 'meta',
-            name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
-          },
+          { tagName: 'link', rel: 'icon', href: '/img/logo/icon_light.png' },
+          { tagName: 'link', rel: 'manifest', href: '/manifest.json' },
+          { tagName: 'meta', name: 'theme-color', content: 'rgb(37, 194, 160)' },
         ],
-      }
+      },
     ],
     [
       '@docusaurus/plugin-content-docs',
@@ -124,11 +119,11 @@ const config = {
         routeBasePath: '/community',
         sidebarPath: require.resolve('./sidebars-community.js'),
         docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
-        breadcrumbs: true
+        breadcrumbs: true,
       },
     ],
     [
-    '@docusaurus/plugin-google-gtag',
+      '@docusaurus/plugin-google-gtag',
       {
         trackingID: 'G-5LR1VFLJXS',
         anonymizeIP: true,
@@ -142,75 +137,73 @@ const config = {
         routeBasePath: '/professional',
         sidebarPath: require.resolve('./sidebars-professional.js'),
         docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
-        breadcrumbs: true
+        breadcrumbs: true,
       },
-    ]
+    ],
   ],
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    (
-      {
-      algolia: {
-        appId: '1ZIELJEF8N',
-        apiKey: 'a7af1e25b6dd3029f65b497136ac7a9d',
-        indexName: 'haltdos',
-        contextualSearch: true,
-        searchPagePath: 'search',
-        insights: true
+
+  themeConfig: {
+    algolia: {
+      appId: '1ZIELJEF8N',
+      apiKey: 'a7af1e25b6dd3029f65b497136ac7a9d',
+      indexName: 'haltdos',
+      contextualSearch: true,
+      searchPagePath: 'search',
+      insights: true,
+    },
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
       },
-      colorMode: {
-        defaultMode: 'light',
-        disableSwitch: false,
-        respectPrefersColorScheme: false,
+    },
+    navbar: {
+      title: '',
+      logo: {
+        alt: 'Haltdos',
+        src: 'img/logo/dark_doc_logo.png',
+        srcDark: 'img/logo/light_doc_logo.png',
       },
-      docs:{
-        sidebar:{
-          hideable: true,
-          autoCollapseCategories: true
-        }
-      },
-      navbar: {
-        title: '',
-        logo: {
-          alt: 'Haltdos',
-          src: 'img/logo/dark_doc_logo.png',
-          srcDark: 'img/logo/light_doc_logo.png'
+      items: [
+        { to: 'community/introduction', label: 'Community', position: 'left' },
+        { to: 'professional/introduction', label: 'Professional', position: 'left' },
+        { to: 'enterprise', label: 'Enterprise', position: 'left' },
+        { to: 'cloud', label: 'Cloud', position: 'left' },
+        { to: 'mssp', label: 'MSSP', position: 'left' },
+        { href: '/api', label: 'Haltdos API', position: 'left' },
+        {
+          href: 'https://haltdos.com',
+          label: 'Haltdos',
+          target: '_blank',
+          rel: null,
+          position: 'right',
+          className: 'haltdos',
         },
-        items: [
-          {to: 'community/introduction', label: 'Community', position: 'left'},
-          {to: 'professional/introduction', label: 'Professional', position: 'left'},
-          {to: 'enterprise', label: 'Enterprise', position: 'left'},
-          {to: 'cloud', label: 'Cloud', position: 'left'},
-          {to: 'mssp', label: 'MSSP', position: 'left'},
-          {href: '/api', label: 'Haltdos API', position: 'left'},
-          {href: 'https://haltdos.com',label: 'Haltdos', target: '_blank', rel: null, position: 'right', className:'haltdos'},
-          {
-            type: 'search',
-            position: 'right',
-          },
-          {
-            type: 'docsVersionDropdown',
-            position: 'right',
-            dropdownActiveClassDisabled: true,
-          },
-          {
-            type: 'dropdown',
-            label: 'More',
-            position: 'left',
-            className: 'custom',
-            items: [
-              {to: 'kb', label: 'Knowledge Base'},
-              {to: 'glossary', label: 'Glossary'},
-              {href: 'https://www.haltdos.com/blogs',label: 'Blogs', target: '_blank', rel: null}
-            ],
-          },
-        ],
-      },
-      prism: {
-        theme: lightTheme,
-        darkTheme: darkTheme,
-      },
-    }),
+        { type: 'search', position: 'right' },
+        { type: 'docsVersionDropdown', position: 'right', dropdownActiveClassDisabled: true },
+        {
+          type: 'dropdown',
+          label: 'More',
+          position: 'left',
+          className: 'custom',
+          items: [
+            { to: 'kb', label: 'Knowledge Base' },
+            { to: 'glossary', label: 'Glossary' },
+            { href: 'https://www.haltdos.com/blogs', label: 'Blogs', target: '_blank', rel: null },
+          ],
+        },
+      ],
+    },
+    prism: {
+      theme: lightTheme,
+      darkTheme: darkTheme,
+    },
+  },
 };
 
 module.exports = config;
