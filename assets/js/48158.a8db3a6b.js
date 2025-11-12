@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhaltdos_wiki=self.webpackChunkhaltdos_wiki||[]).push([[48158],{48158:(a,s,e)=>{e.r(s),e.d(s,{DocSearchModal:()=>h.a1});var h=e(55600)}}]);

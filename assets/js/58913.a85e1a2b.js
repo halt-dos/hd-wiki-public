@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhaltdos_wiki=self.webpackChunkhaltdos_wiki||[]).push([[58913],{58913:(s,k,e)=>{e.r(k)}}]);
