@@ -6,16 +6,6 @@ sidebar_position: 1
 
 ---
 
-## Summary
-
-This document provides an overview of Haltdos Intelligent DNS, a globally distributed DNS-based traffic steering and optimization system designed to enhance performance, reliability, and availability for web applications. It explains how Haltdos Intelligent DNS evaluates client requests in real time and routes them to the most optimal Haltdos solution instance deployed across multiple cloud service providers (CSPs). 
-
-The purpose of this document is to help organizations understand the internal working, routing logic, and decision-making process behind Haltdos Intelligent DNS, especially in globally distributed application environments requiring intelligent traffic management. 
-
-This document is applicable for applications protected by Haltdos Cloud Solution and utilizing Haltdos Intelligent DNS for proximity-based routing, latency optimization, and high-availability failover across Haltdos’ multi-cloud infrastructure. 
-
----
-
 ## Introduction
 
 Modern web applications serve users across diverse geographic regions who expect fast, secure, and reliable service. When an application is deployed or protected across multiple cloud regions, it becomes essential to route traffic efficiently to the nearest and healthiest node. Traditional DNS mechanisms offer only static resolution and cannot make dynamic, performance-based decisions. 
@@ -24,7 +14,7 @@ Haltdos Intelligent DNS addresses these challenges through an adaptive DNS routi
 
 By combining continuous health checks, geo-based decision policies, and Haltdos threat intelligence, the system ensures that users always reach the closest and most stable deployment node. This enables seamless service continuity, faster content delivery, and reduced susceptibility to regional outages or network congestion. 
 
-Furthermore, Haltdos Intelligent DNS delivers Anycast-like behavior over IPv4 by intelligently distributing user traffic to the most appropriate node without relying on native ISP-level Anycast. This ensures high performance, improved resilience, and seamless failover for globally deployed applications. 
+Furthermore, Haltdos Intelligent DNS delivers Anycast-like behavior over IPv4/v6 by intelligently distributing user traffic to the most appropriate node without relying on native ISP-level Anycast. This ensures high performance, improved resilience, and seamless failover for globally deployed applications. 
 
 ---
 
@@ -40,7 +30,7 @@ Furthermore, Haltdos Intelligent DNS delivers Anycast-like behavior over IPv4 by
 
 Haltdos provides a CNAME record to the customer (e.g., `app.example.com -> haltdos-global.haltdos.net`).
 
-This CNAME resolves to one or more IPv4 addresses, each belonging to Haltdos WAF clusters deployed across regions of various CSPs.
+This CNAME resolves to one or more IPv4/v6 addresses, each belonging to Haltdos WAF clusters deployed across regions of various CSPs.
 
 The Intelligent DNS engine picks the optimal IP based on:
 

@@ -2,13 +2,13 @@
 sidebar_position: 2
 ---
 
-# IPv4 Anycast
+# Anycast Capability
 
 ---
 
-## How IPv4 Anycast Capability Was Achieved 
+## How IPv4/v6 Anycast Capability Was Achieved 
 
-Haltdos implemented IPv4 Anycast-like behavior without using native ISP-level Anycast by combining: 
+Haltdos implemented IPv4/v6 Anycast-like behavior without using native ISP-level Anycast by combining: 
 
 ### (A) Intelligent DNS Load Distribution 
 
@@ -22,7 +22,7 @@ Haltdos implemented IPv4 Anycast-like behavior without using native ISP-level An
 
 - All distributed WAF nodes act as a unified cluster. 
 
-- Even though different IPv4 addresses are used, the platform behaves like global Anycast through: 
+- Even though different IPv4/v6 addresses are used, the platform behaves like global Anycast through: 
 
     1. Centralized control plane 
 
