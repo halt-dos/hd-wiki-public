@@ -9,7 +9,7 @@ It provides functionality to support SSL offloading based on configurations.
 
 ### Overview
 
-As many applications are running over HTTPS, for the WAF / ADC solution to inspect user payload, it is necessary to decrypt SSL/TLS traffic. The following settings allow users to configure SSL offloading based and optional re-encryption in Haltdos solution. The performance of SSL offloading will vary based on chosen model.
+As many applications are running over SSL/TLS, for the WAF / ADC solution to inspect user payload, it is necessary to decrypt SSL/TLS traffic. The following settings allow users to configure SSL offloading based and optional re-encryption in Haltdos solution. The performance of SSL offloading will vary based on chosen model.
 
 ![SSL Settings](/img/waf/v8/docs/WAFssl.png)  
 
@@ -26,7 +26,7 @@ As many applications are running over HTTPS, for the WAF / ADC solution to inspe
 This specifies WAF should re-encrypt traffic before sending it to the back-end web application. 
 
 :::note Note
-**We can listen to non-HTTPS traffic and send it as HTTPS traffic to the back end server.**
+**SSL offloading is supported to secure traffic by encrypting HTTP as SSL/TLS, as well as other protocols such as SMTP, IMAP, and POP3.**
 :::
 
 ### Description
@@ -45,7 +45,7 @@ In order to secure or make SSL compatible with specific web browsers. Users can 
 It is a set of algorithms or a set of instructions/steps that helps to establish a secure connection between two entities — usually the client (a user's browser) and the web-server they're connecting to (your website). Users can select respective ciphers from the drop-down.
 
 ##### **Upstream SSL Protocols**
-This option specifies if the WAF should enable HTTPS traffic for the configured website.
+This option specifies if the WAF should enable SSL session for the configured website.
 
 ```
     Accepted values: SSLv2 / SSLv3 / TLSv1 / TLSv1.1 / TLSv1.2 / TLSv1.3 
@@ -65,7 +65,7 @@ Specify the custom SSL ciphers. For empty, default cipher based on upstream SSL 
 
 
 ##### **Enable SSL Offloading**
-This option specifies if the WAF should enable HTTPS traffic for the configured website.
+This option specifies if the WAF should enable SSL session for the configured website.
 
 ```
     Accepted values: Enable / Disable
@@ -86,7 +86,7 @@ This field allows us to Select or Upload an SSL Certificate for SSL Offloading i
 
 
 ##### **SSL Session Caching**
-This option allows users to specify the number of SSL session cache for HTTPS requests on the listener.
+This option allows users to specify the number of SSL session cache for SSL/TLS requests on the listener.
 
 ```
     Accepted values: Integer
@@ -120,7 +120,7 @@ Specify enabling verification of OCSP responses from Server
 
 
 ##### **SSL Session Timeout**
-This option allows users to specify the SSL session timeout in minutes for every HTTPS request on the listener.
+This option allows users to specify the SSL session timeout in minutes for every SSL/TLS request on the listener.
 
 ```
     Accepted values: Integer
