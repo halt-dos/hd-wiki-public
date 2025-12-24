@@ -26,7 +26,7 @@ As many applications are running over SSL/TLS, for the WAF / ADC solution to ins
 This specifies WAF should re-encrypt traffic before sending it to the back-end web application. 
 
 :::note Note
-**SSL offloading is supported to secure traffic by encrypting plain text as SSL/TLS, as well as other protocols such as SMTP, IMAP, and POP3.**
+**SSL offloading is supported to secure traffic by encrypting plain text over SSL/TLS, as well as other protocols such as SMTP, IMAP, and POP3.**
 :::
 
 ### Description
@@ -86,7 +86,7 @@ This field allows us to Select or Upload an SSL Certificate for SSL Offloading i
 
 
 ##### **SSL Session Caching**
-This option allows users to specify the number of SSL session cache for SSL/TLS transaction on the listener.
+This option allows users to specify the number of SSL session cache for SSL/TLS transactions on the listener.
 
 ```
     Accepted values: Integer
@@ -120,7 +120,7 @@ Specify enabling verification of OCSP responses from Server
 
 
 ##### **SSL Session Timeout**
-This option allows users to specify the SSL session timeout in minutes for every SSL/TLS request on the listener.
+For https, this option allows users to specify the SSL session timeout in minutes for every SSL/TLS transaction on the listener.
 
 ```
     Accepted values: Integer
