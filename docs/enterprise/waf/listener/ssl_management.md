@@ -26,7 +26,7 @@ As many applications are running over SSL/TLS, for the WAF / ADC solution to ins
 This specifies WAF should re-encrypt traffic before sending it to the back-end web application. 
 
 :::note Note
-**SSL offloading is supported to secure traffic by encrypting HTTP as SSL/TLS, as well as other protocols such as SMTP, IMAP, and POP3.**
+**SSL offloading is supported to secure traffic by encrypting plain text as SSL/TLS, as well as other protocols such as SMTP, IMAP, and POP3.**
 :::
 
 ### Description
@@ -65,7 +65,7 @@ Specify the custom SSL ciphers. For empty, default cipher based on upstream SSL 
 
 
 ##### **Enable SSL Offloading**
-This option specifies if the WAF should enable SSL session for the configured website.
+This option specifies if the WAF should enable SSL offloader for the configured application.
 
 ```
     Accepted values: Enable / Disable
