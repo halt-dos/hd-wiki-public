@@ -86,7 +86,7 @@ This field allows us to Select or Upload an SSL Certificate for SSL Offloading i
 
 
 ##### **SSL Session Caching**
-This option allows users to specify the number of SSL session cache for SSL/TLS requests on the listener.
+This option allows users to specify the number of SSL session cache for SSL/TLS transaction on the listener.
 
 ```
     Accepted values: Integer
