@@ -56,6 +56,9 @@ RADIUS (Remote Authentication Dial-In User Service) authentication is a protocol
 8. **SSO**:  
 Single Sign-On (SSO) is an authentication process that allows users to access multiple applications or services with one set of login credentials, enhancing convenience and security by reducing the need to log in multiple times across platforms.
 
+9. **OAuth 2.0**:  
+OAuth 2.0 is a token-based authorization framework that enables secure, delegated access to protected resources using scoped, time-bound access tokens instead of sharing user credentials.
+
 #### User Group Settings
 
 Users can customize the user group settings and modify credentials for the users added to the user group.
