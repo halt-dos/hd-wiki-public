@@ -38,3 +38,6 @@ The Enforcement Plane can encompass multiple instances to support High Availabil
 
 - **Data Plane**  
 All traffic flowing through your protected infrastructure is the Data Plane. All products and services by Haltdos are built as Apps in hdPlatform. These apps include Anti-DDoS, Web Application Firewall, Server Load Balancer, Global Server Load Balancer, Link Load Balancer, etc.  
+
+- **Hardening OS**  
+The Hardening OS forms the secure foundation of the Haltdos Platform and is a purpose-built, security-hardened operating system designed specifically to run Haltdos security applications. It minimizes the attack surface by disabling unnecessary services, enforcing strict access controls, and applying system-level security hardening to ensure integrity, availability, and resilience of the platform. The Hardening OS is tightly integrated with the underlying hardware in appliance deployments and is optimized to support all platform planes without relying on hypervisors or virtualization components for core operation.
