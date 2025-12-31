@@ -33,17 +33,17 @@ This option allows users to specify a user-friendly name to monitor.
 ##### **Health Check Interval**
 
 This option allows users to specify the health check interval in seconds.
-Accepted values: Integer
+```
+    Accepted values: Integer
 
     Max: 17280
 
     Min: 0
 
     Default: 10  
-```
-
 
     Metrics: Seconds
+```
 
 ##### **Fail Threshold**
 
@@ -106,6 +106,7 @@ This option allows users to specify the health check type for the load balancer.
 5. **SSL_HELLO** - This option allows users to check SSL based handshake on mentioned port number.
 6. **SMTP** - This option allows users to check SMTP on mentioned port number.
 7. **POP** - This option allows users to check POP connectivity mentioned port number.
+8. **Custom Script** - Health check runs custom script (shell script, perl script or Lua script). The script is executed with parameters of server IP and server Port. If the script responds with 1, heath check is passed. If the script responds with 0, we make that server as unhealthy
 
 ##### **Check Port**
 
