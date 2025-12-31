@@ -134,3 +134,6 @@ It is recommended to add certificate chaining when uploading custom SSL certific
 :::info Info
 Haltdos Console does support upload of **DV**, **OV** and **EV** type of SSL certificates. It also supports upload of **Single** and **Multi-Domain** Certificates.
 :::
+:::info Info
+Haltdos Platform supports RSA key sizes of **2048-bit** and **4096-bit** for all supported SSL certificate formats.
+:::
