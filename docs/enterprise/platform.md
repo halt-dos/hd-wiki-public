@@ -51,3 +51,14 @@ The Enforcement Plane can encompass multiple instances to support High Availabil
 - **Data Plane**  
 All traffic flowing through your protected infrastructure is the Data Plane. All products and services by Haltdos are built as Apps in hdPlatform. These apps include Anti-DDoS, Web Application Firewall, Server Load Balancer, Global Server Load Balancer, Link Load Balancer, etc.  
 
+## Deployment
+
+1. **Hardware**: Haltdos Platform can be deployed as a dedicated hardware appliance for environments requiring high performance, isolation, and on-premise control.
+
+2. **Virtual Machine**: The platform supports deployment on virtual machines, enabling flexible installation across private cloud, public cloud, and data center environments.
+
+3. **MSSP**: Haltdos Platform supports MSSP deployments, allowing service providers to centrally manage and deliver security services to multiple tenants.
+
+4. **SAAS**: The platform is available in a SaaS model, providing fully managed security services with minimal infrastructure overhead for customers.
+
+5. **Containers**: Haltdos Platform can be deployed in containerized environments, supporting modern orchestration platforms for scalable and dynamic deployments.
