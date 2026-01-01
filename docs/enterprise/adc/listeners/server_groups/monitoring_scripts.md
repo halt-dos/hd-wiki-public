@@ -462,3 +462,119 @@ else
   echo 1
 fi
 ```
+
+### 20. PPO 3 Health Check (pop3_check.sh)
+
+```
+#!/bin/bash
+# POP3 Health Check (Plain or SSL)
+# Usage: ./pop3_check.sh <HOST> [PORT] <plain|ssl>
+
+HOST=$1
+PORT=$2
+MODE=$3
+
+[[ -z "$HOST" || -z "$MODE" ]] && echo "CRITICAL: usage <HOST> [PORT] <plain|ssl>" && exit 1
+
+if [[ "$MODE" == "plain" ]]; then
+    PORT=${PORT:-110}
+
+    OUTPUT=$(timeout 10 nc "$HOST" "$PORT" 2>/dev/null)
+
+    if echo "$OUTPUT" | grep -q '^\+OK'; then
+        echo "INFO: TCP connection established to $HOST:$PORT"
+        echo "INFO: POP3 banner received"
+        echo "OK: POP3 service healthy (plain)"
+        echo "0"
+    else
+        echo "CRITICAL: POP3 banner not received"
+        echo "1"
+    fi
+
+elif [[ "$MODE" == "ssl" ]]; then
+    PORT=${PORT:-995}
+
+    OUTPUT=$(timeout 15 openssl s_client \
+        -connect "$HOST:$PORT" \
+        -servername "$HOST" \
+        2>&1 </dev/null)
+
+    if ! echo "$OUTPUT" | grep -q "CONNECTED"; then
+        echo "CRITICAL: TCP connection failed"
+        echo "1"
+        exit 1
+    fi
+
+    if ! echo "$OUTPUT" | grep -q "Verify return code: 0"; then
+        echo "CRITICAL: TLS handshake or certificate verification failed"
+        echo "1"
+        exit 1
+    fi
+
+    echo "OK: POP3 service healthy (SSL)"
+    echo "0"
+else
+    echo "CRITICAL: mode must be 'plain' or 'ssl'"
+    echo "1"
+fi
+```
+
+### 21. SMTP Health Check (smtp_check.sh)
+
+```
+#!/bin/bash
+# SMTP Health Check (Plain or SSL)
+# Usage: ./smtp_check.sh <HOST> [PORT] <plain|ssl>
+
+HOST=$1
+PORT=$2
+MODE=$3
+
+[[ -z "$HOST" || -z "$MODE" ]] && echo "CRITICAL: usage <HOST> [PORT] <plain|ssl>" && exit 1
+
+if [[ "$MODE" == "plain" ]]; then
+    PORT=${PORT:-25}
+
+    OUTPUT=$(timeout 10 nc "$HOST" "$PORT" 2>/dev/null)
+
+    if echo "$OUTPUT" | grep -qE '^220'; then
+        echo "INFO: TCP connection established to $HOST:$PORT"
+        echo "INFO: SMTP banner received"
+        echo "OK: SMTP service healthy (plain)"
+        echo "0"
+    else
+        echo "CRITICAL: SMTP banner not received"
+        echo "1"
+    fi
+
+elif [[ "$MODE" == "ssl" ]]; then
+    PORT=${PORT:-587}
+
+    OUTPUT=$(timeout 15 openssl s_client \
+        -connect "$HOST:$PORT" \
+        -starttls smtp \
+        -servername "$HOST" \
+        2>&1 </dev/null)
+
+    if ! echo "$OUTPUT" | grep -q "CONNECTED"; then
+        echo "CRITICAL: TCP connection failed"
+        echo "1"
+        exit 1
+    fi
+
+    if ! echo "$OUTPUT" | grep -q "Verify return code: 0"; then
+        echo "CRITICAL: TLS handshake or certificate verification failed"
+        echo "1"
+        exit 1
+    fi
+
+    SERVER_ID=$(echo "$OUTPUT" | grep -m1 "subject=")
+    [[ -n "$SERVER_ID" ]] && echo "INFO: Server certificate $SERVER_ID"
+
+    echo "OK: SMTP service healthy (SSL)"
+    echo "0"
+else
+    echo "CRITICAL: mode must be 'plain' or 'ssl'"
+    echo "1"
+fi
+```
