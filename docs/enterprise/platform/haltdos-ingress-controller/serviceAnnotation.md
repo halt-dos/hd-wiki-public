@@ -53,11 +53,9 @@ Allows injecting advanced HAProxy backend directives directly for a specific ser
 - Fine-tune backend behavior without global impact
 
 #### Supported Annotation
-
+```
 haproxy.org/backend-config-snippet
-
-smali
-Copy code
+```
 
 This annotation accepts one or more valid HAProxy backend directives.
 
@@ -74,14 +72,13 @@ Controls health monitoring of backend pods.
 
 #### Supported Annotations
 
+```
 haproxy.org/check
 haproxy.org/check-http
 haproxy.org/check-interval
 haproxy.org/timeout-check
 haproxy.org/timeout-server
-
-yaml
-Copy code
+```
 
 These annotations ensure traffic is routed only to healthy pods.
 
@@ -98,10 +95,9 @@ Controls how traffic is distributed across backend pods.
 
 #### Supported Annotation
 
+```
 haproxy.org/load-balance
-
-markdown
-Copy code
+```
 
 Supported algorithms include:
 - `roundrobin`
@@ -124,12 +120,10 @@ Ensures consistent routing of client sessions to the same backend pod.
 - Multi-controller safe session persistence
 
 #### Supported Annotations
-
+```
 haproxy.org/cookie-persistence
 haproxy.org/cookie-persistence-no-dynamic
-
-yaml
-Copy code
+```
 
 These annotations insert cookies to track backend pod selection.
 
@@ -146,10 +140,9 @@ Controls the number of concurrent connections allowed per backend pod.
 
 #### Supported Annotation
 
+```
 haproxy.org/pod-maxconn
-
-yaml
-Copy code
+```
 
 > When multiple ingress controller replicas are running, the configured value is automatically divided across instances.
 
@@ -165,10 +158,9 @@ Allows conditional routing to backends using custom ACL logic.
 
 #### Supported Annotation
 
+```
 haproxy.org/route-acl
-
-yaml
-Copy code
+```
 
 This annotation accepts a valid HAProxy ACL expression.
 
@@ -185,10 +177,9 @@ Controls how many backend server slots are pre-provisioned.
 
 #### Supported Annotation
 
+```
 haproxy.org/scale-server-slots
-
-yaml
-Copy code
+```
 
 ---
 
@@ -202,10 +193,11 @@ Preserves client source information when forwarding requests.
 
 #### Supported Annotation
 
+```
 haproxy.org/forwarded-for
 
 pgsql
-Copy code
+```
 
 ---
 
@@ -220,16 +212,14 @@ Controls encrypted communication between ingress controller and backend pods.
 - Pass encrypted traffic directly to pods
 
 #### Supported Annotations
-
+```
 haproxy.org/server-ssl
 haproxy.org/server-ca
 haproxy.org/server-crt
 haproxy.org/server-proto
 haproxy.org/send-proxy-protocol
 haproxy.org/ssl-passthrough
-
-yaml
-Copy code
+```
 
 These annotations enable secure, compliant backend communication patterns.
 
@@ -246,10 +236,9 @@ Ensures backend configuration isolation when multiple ingresses reference the sa
 
 #### Supported Annotation
 
+```
 haproxy.org/standalone-backend
-
-yaml
-Copy code
+```
 
 ---
 
