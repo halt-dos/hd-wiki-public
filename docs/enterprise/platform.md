@@ -40,7 +40,7 @@ Reporting in the Haltdos Platform is provided as a centralized platform service 
 Haltdos Platform is divided into multiple planes - each with its dedicated functions and purpose.  
 
 - **Management Plane**  
-Covers all managerial aspects of installing, managing, and operating solutions provided by Haltdos. Operations such as updating policy, user management, installing updates, and reporting are done in this plane. This plane also exposes GUI, CLI, and API interfaces for user interaction and integration with 3rd party tools. For security reasons, except user creation, deletion, and change of user permission and administrator capabilities, all functionality of GUI can be managed through CLI as well.  
+Covers all managerial aspects of installing, managing, and operating solutions provided by Haltdos. Operations such as updating policy, user management, installing updates, and reporting are performed through this plane. Instance-level settings, including syslog forwarding, SNMP, NTP, and management-plane access control lists (ACLs), are also managed within this plane. This plane exposes GUI, CLI, and API interfaces for user interaction and integration with third-party tools. For security reasons, except for user creation, deletion, and changes to user permissions and administrator capabilities, all GUI functionality can also be managed through the CLI. 
 
 - **Enforcement Plane**  
 Enforcement of policies is done through this plane. This plane connects to Management Plane for retrieving updates, policies. and procedures.  
