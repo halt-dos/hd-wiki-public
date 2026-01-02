@@ -74,11 +74,11 @@ Specifies the duration (in seconds) that a DNS record is cached by a DNS resolve
 
 
 ```
-    Accepted values: Least Connection / Least Response Time / Proximity / Round Robin / None
+    Accepted values: Least Response Time / Proximity / Round Robin / None
 
     Default: None
 ```
-
+For more information regarding the Proximity please refer to this link: [Proximity](/enterprise/gslb/listener/records/proximity)
 
 #### Record Values
 
