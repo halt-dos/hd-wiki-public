@@ -41,43 +41,43 @@ kubectl get crd tcps.ingress.v1.haproxy.org
 
 Use TCP CRD when you need to:
 
-Expose non-HTTP services through the ingress controller
+- Expose non-HTTP services through the ingress controller
 
-Load balance TCP-based applications
+- Load balance TCP-based applications
 
-Apply SSL/TLS termination or passthrough at Layer 4
+- Apply SSL/TLS termination or passthrough at Layer 4
 
-Perform advanced TCP inspection, routing, or rate control
+- Perform advanced TCP inspection, routing, or rate control
 
-Enable enterprise-grade observability for TCP traffic
+- Enable enterprise-grade observability for TCP traffic
 
-Resource Structure
+### Resource Structure
 A TCP CRD consists of three logical components:
 
-Frontend – Defines how the controller listens for and processes incoming TCP connections
+- Frontend – Defines how the controller listens for and processes incoming TCP connections
 
-Service – Maps traffic to a Kubernetes Service and port
+- Service – Maps traffic to a Kubernetes Service and port
 
-Rules & Filters – Optional logic for inspection, routing, logging, and enforcement
+- Rules & Filters – Optional logic for inspection, routing, logging, and enforcement
 
-Frontend Configuration
+### Frontend Configuration
 Frontend configuration controls how TCP connections are accepted, secured, optimized, and logged.
 
-Connection Handling & Lifecycle
+### Connection Handling & Lifecycle
 Controls how client TCP connections are established, maintained, and closed.
 
-Capabilities
-Connection backlog control
+### Capabilities
+- Connection backlog control
 
-Client timeouts and FIN handling
+- Client timeouts and FIN handling
 
-Graceful connection termination
+- Graceful connection termination
 
-Idle connection cleanup
+- Idle connection cleanup
 
-Underlying Engine Directives (Advanced)
-nginx
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 backlog
 client_timeout
 client_fin_timeout
@@ -85,19 +85,23 @@ idle_close_on_response
 nolinger
 maxconn
 tcp_user_timeout
-TCP Optimization & Performance
+```
+
+### TCP Optimization & Performance
 Optimizes low-level TCP behavior for high-throughput and long-lived connections.
 
-Capabilities
-Smart accept behavior
+### Capabilities
+- Smart accept behavior
 
-TCP keepalive tuning
+- TCP keepalive tuning
 
-Zero-copy forwarding
+- Zero-copy forwarding
 
-Kernel-level optimization
+- Kernel-level optimization
 
-Underlying Engine Directives (Advanced)
+**Underlying Engine Directives (Advanced)**
+
+```
 autohotkey
 Copy code
 tcp_smart_accept
@@ -109,23 +113,25 @@ clitcpka_intvl
 splice_auto
 splice_request
 splice_response
-SSL / TLS & Secure TCP Communication
+```
+
+### SSL / TLS & Secure TCP Communication
 Enables encrypted TCP communication and fine-grained TLS control.
 
-Capabilities
-TCP-level SSL termination
+**Capabilities**
+- TCP-level SSL termination
 
-Protocol version enforcement
+- Protocol version enforcement
 
-Cipher and curve selection
+- Cipher and curve selection
 
-Mutual TLS (mTLS)
+- Mutual TLS (mTLS)
 
-Strict SNI enforcement
+- Strict SNI enforcement
 
-Underlying Engine Directives (Advanced)
-smali
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 ssl
 ssl_certificate
 ssl_cafile
@@ -144,39 +150,43 @@ no_tlsv12
 no_tlsv13
 prefer_client_ciphers
 tls_ticket_keys
-QUIC & Modern Transport Support
+```
+
+### QUIC & Modern Transport Support
 Controls QUIC behavior when TCP listeners are QUIC-enabled.
 
-Capabilities
-QUIC retry enforcement
+**Capabilities**
+- QUIC retry enforcement
 
-Congestion control selection
+- Congestion control selection
 
-Socket handling modes
+- Socket handling modes
 
-Underlying Engine Directives (Advanced)
-perl
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 quic-force-retry
 quic-cc-algo
 quic-socket
-Binding & Listener Configuration
+```
+
+### Binding & Listener Configuration
 Defines where and how TCP listeners bind to network interfaces.
 
-Capabilities
-Port and port-range binding
+**Capabilities**
+- Port and port-range binding
 
-IPv4/IPv6 behavior
+- IPv4/IPv6 behavior
 
-Interface binding
+- Interface binding
 
-Thread and process pinning
+- Thread and process pinning
 
-Transparent proxying
+- Transparent proxying
 
-Underlying Engine Directives (Advanced)
-angelscript
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 address
 port
 port-range-end
@@ -187,38 +197,41 @@ transparent
 thread
 process
 bind_process
-Access Control & ACL Processing
+```
+
+## Access Control & ACL Processing
 Allows conditional traffic acceptance based on TCP attributes.
 
-Capabilities
-ACL-based traffic decisions
+**Capabilities**
+- ACL-based traffic decisions
 
-Conditional backend switching
+- Conditional backend switching
 
-Protocol inspection and routing
+- Protocol inspection and routing
 
-Underlying Engine Directives (Advanced)
-nginx
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 acl_list
 backend_switching_rule_list
 cond
 cond_test
-TCP Request Rules & Traffic Manipulation
+```
+### TCP Request Rules & Traffic Manipulation
 Provides deep inspection and control of TCP sessions.
 
-Capabilities
-Rate limiting and bandwidth control
+**Capabilities**
+- Rate limiting and bandwidth control
 
-Marking, tracking, and variable handling
+- Marking, tracking, and variable handling
 
-SPOE integration
+- SPOE integration
 
-Connection tracking and enforcement
+- Connection tracking and enforcement
 
-Underlying Engine Directives (Advanced)
-dsconfig
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 tcp_request_rule_list
 track_table
 track_key
@@ -228,21 +241,23 @@ sc-inc
 bandwidth_limit
 spoe_engine
 spoe_group_name
-Filters & Traffic Processing
+```
+
+### Filters & Traffic Processing
 Applies traffic filters and processing modules.
 
-Capabilities
-Bandwidth limiting
+**Capabilities**
+- Bandwidth limiting
 
-Caching
+- Caching
 
-Compression
+- Compression
 
-Tracing and diagnostics
+- Tracing and diagnostics
 
-Underlying Engine Directives (Advanced)
-mipsasm
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 filter_list
 bandwidth_limit_name
 cache_name
@@ -251,23 +266,26 @@ trace_name
 trace_hexdump
 trace_rnd_forwarding
 trace_rnd_parsing
-Logging & Observability
+```
+
+### Logging & Observability
+
 Controls logging behavior and operational visibility for TCP traffic.
 
-Capabilities
-TCP and HTTP-style logging
+**Capabilities**
+- TCP and HTTP-style logging
 
-Structured log formats
+- Structured log formats
 
-Early logging
+- Early logging
 
-Log sampling and filtering
+- Log sampling and filtering
 
-Unique request identification
+- Unique request identification
 
-Underlying Engine Directives (Advanced)
-nginx
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 tcplog
 httplog
 clflog
@@ -281,21 +299,23 @@ dontlognull
 unique_id_format
 unique_id_header
 socket_stats
-Error Handling & Monitoring
+```
+
+### Error Handling & Monitoring
 Defines how errors are detected, logged, and reported.
 
-Capabilities
-Custom error handling
+**Capabilities**
+- Custom error handling
 
-Monitor endpoints
+- Monitor endpoints
 
-Email alerting
+- Email alerting
 
-Error redirection
+- Error redirection
 
-Underlying Engine Directives (Advanced)
-csharp
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 error_files
 error_log_format
 errorfiles_from_http_errors
@@ -305,46 +325,52 @@ monitor_uri
 monitor_fail
 email_alert
 from
-Statistics & Administrative Endpoints
+```
+
+### Statistics & Administrative Endpoints
 Exposes runtime statistics and administrative controls.
 
-Capabilities
-Stats UI and APIs
+**Capabilities**
+- Stats UI and APIs
 
-Authentication and authorization
+- Authentication and authorization
 
-Connection and rate visibility
+- Connection and rate visibility
 
-Underlying Engine Directives (Advanced)
-nginx
-Copy code
+**Underlying Engine Directives (Advanced)**
+
+```
 stats_options
 contstats
-Service Mapping
+```
+
+### Service Mapping
 Defines the Kubernetes Service to which TCP traffic is forwarded.
 
-Capabilities
-Service name mapping
+**Capabilities**
+- Service name mapping
 
-Port forwarding
+- Port forwarding
 
-Configuration Fields
-elm
-Copy code
+**Configuration Fields**
+
+```
 service.name
 service.port
-Best Practices
-Use TCP CRD for non-HTTP workloads only
+```
 
-Prefer HTTP Ingress resources when possible
+### Best Practices
+- Use TCP CRD for non-HTTP workloads only
 
-Keep rule sets minimal and well-documented
+- Prefer HTTP Ingress resources when possible
 
-Avoid deep packet inspection unless required
+- Keep rule sets minimal and well-documented
 
-Validate changes in staging before production
+- Avoid deep packet inspection unless required
 
-Summary
+- Validate changes in staging before production
+
+### Summary
 The TCP CRD provides a powerful, Kubernetes-native mechanism for managing Layer 4 traffic using the Haltdos Ingress Controller. By combining clear conceptual guidance with transparent engine-level mappings, it enables both platform engineers and advanced operators to securely expose, optimize, and observe TCP services at scale.
 
 This documentation intentionally balances approachability for non-HAProxy users with full configurability for advanced HAProxy practitioners, ensuring operational clarity, performance, and long-term maintainability.
