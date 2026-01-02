@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-enterprise/platform/haltdos-ingress-controller/tcp-crd" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">TCP CRD | Haltdos Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.haltdos.com/enterprise/platform/haltdos-ingress-controller/tcp-crd"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="TCP CRD | Haltdos Docs"><meta data-rh="true" name="description" content="---"><meta data-rh="true" property="og:description" content="---"><link data-rh="true" rel="icon" href="/img/logo/icon_light.ico"><link data-rh="true" rel="canonical" href="https://docs.haltdos.com/enterprise/platform/haltdos-ingress-controller/tcp-crd"><link data-rh="true" rel="alternate" href="https://docs.haltdos.com/enterprise/platform/haltdos-ingress-controller/tcp-crd" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.haltdos.com/enterprise/platform/haltdos-ingress-controller/tcp-crd" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://1ZIELJEF8N-dsn.algolia.net" crossorigin="anonymous"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Haltdos Platform","item":"https://docs.haltdos.com/enterprise/platform"},{"@type":"ListItem","position":2,"name":"Haltdos Ingress Controller","item":"https://docs.haltdos.com/enterprise/platform/haltdos-ingress-controller/"},{"@type":"ListItem","position":3,"name":"TCP CRD","item":"https://docs.haltdos.com/enterprise/platform/haltdos-ingress-controller/tcp-crd"}]}</script><link rel="search" type="application/opensearchdescription+xml" title="Haltdos Docs" href="/opensearch.xml">
+
+
+<link rel="icon" href="/img/logo/icon_light.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="rgb(37, 194, 160)">
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LR1VFLJXS"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-5LR1VFLJXS",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.585a41ed.css">
+<script src="/assets/js/runtime~main.1340496c.js" defer="defer"></script>
+<script src="/assets/js/main.634ead84.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo/dark_doc_logo.png" alt="Haltdos" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo/light_doc_logo.png" alt="Haltdos" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href="/community/introduction">Community</a><a class="navbar__item navbar__link" href="/professional/introduction">Professional</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/enterprise">Enterprise</a><a class="navbar__item navbar__link" href="/cloud">Cloud</a><a class="navbar__item navbar__link" href="/mssp">MSSP</a><a class="navbar__item navbar__link" href="/api">Haltdos API</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link custom">More</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/kb">Knowledge Base</a></li><li><a class="dropdown__link" href="/glossary">Glossary</a></li><li><a href="https://www.haltdos.com/blogs" target="_blank" class="dropdown__link">Blogs<svg width="12" height="12" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://haltdos.com" target="_blank" class="navbar__item navbar__link haltdos">Haltdos<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts="Meta+k"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle><path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button" href="/enterprise/platform/haltdos-ingress-controller/tcp-crd">v8</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/enterprise/platform/haltdos-ingress-controller/tcp-crd">v8</a></li><li><a class="dropdown__link" href="/v7/enterprise/waf">v7</a></li><li><a class="dropdown__link" href="/v6/enterprise/waf">v6</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/enterprise/platform"><span title="Haltdos Platform" class="categoryLinkLabel_W154">Haltdos Platform</span></a><button aria-label="Collapse sidebar category &#x27;Haltdos Platform&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/enterprise/platform/stacks/"><span title="Stacks" class="categoryLinkLabel_W154">Stacks</span></a><button aria-label="Expand sidebar category &#x27;Stacks&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/enterprise/platform/system/"><span title="System" class="categoryLinkLabel_W154">System</span></a><button aria-label="Expand sidebar category &#x27;System&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/"><span title="Haltdos Ingress Controller" class="categoryLinkLabel_W154">Haltdos Ingress Controller</span></a><button aria-label="Collapse sidebar category &#x27;Haltdos Ingress Controller&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/configMap-options"><span title="Configuration Guide" class="linkLabel_WmDU">Configuration Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/backend-crd"><span title="Backend CRD" class="linkLabel_WmDU">Backend CRD</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/default-crd"><span title="Defaults CRD" class="linkLabel_WmDU">Defaults CRD</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/global-crd"><span title="Global CRD" class="linkLabel_WmDU">Global CRD</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/ingressAnnotations"><span title="Ingress Annotations" class="linkLabel_WmDU">Ingress Annotations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/ingressClass"><span title="IngressClass" class="linkLabel_WmDU">IngressClass</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/serviceAnnotation"><span title="Service Annotations" class="linkLabel_WmDU">Service Annotations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/tcp-crd"><span title="TCP CRD" class="linkLabel_WmDU">TCP CRD</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/haltdos-ingress-controller/helm-values-files"><span title="Helm Values Files" class="linkLabel_WmDU">Helm Values Files</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/virtualization"><span title="Virtualization" class="linkLabel_WmDU">Virtualization</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/api-Integration"><span title="API Integration" class="linkLabel_WmDU">API Integration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/enterprise/platform/cluster-deployment"><span title="Cluster Deployment" class="linkLabel_WmDU">Cluster Deployment</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menuHtmlItem_M9Kj menu__list-item sidebar-title"><br><br></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menuHtmlItem_M9Kj menu__list-item sidebar-title"><br>Knowledge Base<br></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/kb/platform/"><span title="Platform" class="linkLabel_WmDU">Platform</span></a></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="custom_doc_item_wrapper custom_doc_item_wrapper_SmwM"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/enterprise/platform"><span>Haltdos Platform</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/enterprise/platform/haltdos-ingress-controller/"><span>Haltdos Ingress Controller</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">TCP CRD</span></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: v8</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>TCP CRD</h1></header>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>The <strong>TCP Custom Resource (CRD)</strong> extends the Kubernetes API to enable <strong>Layer 4 (TCP) load balancing</strong> using the Haltdos Ingress Controller. It allows administrators to expose TCP listening ports and define how raw TCP traffic is handled, routed, secured, and monitored.</p>
+<p>Unlike standard Ingress resources, which focus on HTTP/HTTPS (Layer 7), the TCP CRD is designed for <strong>protocol-agnostic workloads</strong> such as databases, message queues, custom services, and legacy applications.</p>
+<p>The TCP CRD provides deep control over frontend behavior, security, performance, logging, and backend routing using Kubernetes-native declarative configuration. </p><div>oaicite:1</div><p></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="availability--installation">Availability &amp; Installation<a href="#availability--installation" class="hash-link" aria-label="Direct link to Availability &amp; Installation" title="Direct link to Availability &amp; Installation" translate="no">​</a></h2>
+<ul>
+<li class="">Available since <strong>Ingress Controller v3.0</strong></li>
+<li class="">Current documented version: <strong>CRD v3.1</strong></li>
+<li class="">API Version: <code>ingress.v1.haproxy.org/v1</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="installation">Installation<a href="#installation" class="hash-link" aria-label="Direct link to Installation" title="Direct link to Installation" translate="no">​</a></h3>
+<p>If the ingress controller is installed using <strong>Helm</strong>, the TCP CRD is installed automatically.</p>
+<p>For manual installations:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl apply -f ingress.v1.haproxy.org_tcps.yaml</span><br></span></code></pre></div></div>
+<p>Verify installation:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get crd tcps.ingress.v1.haproxy.org</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-to-use-tcp-crd">When to Use TCP CRD<a href="#when-to-use-tcp-crd" class="hash-link" aria-label="Direct link to When to Use TCP CRD" title="Direct link to When to Use TCP CRD" translate="no">​</a></h3>
+<p>Use TCP CRD when you need to:</p>
+<ul>
+<li class="">
+<p>Expose non-HTTP services through the ingress controller</p>
+</li>
+<li class="">
+<p>Load balance TCP-based applications</p>
+</li>
+<li class="">
+<p>Apply SSL/TLS termination or passthrough at Layer 4</p>
+</li>
+<li class="">
+<p>Perform advanced TCP inspection, routing, or rate control</p>
+</li>
+<li class="">
+<p>Enable enterprise-grade observability for TCP traffic</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-structure">Resource Structure<a href="#resource-structure" class="hash-link" aria-label="Direct link to Resource Structure" title="Direct link to Resource Structure" translate="no">​</a></h3>
+<p>A TCP CRD consists of three logical components:</p>
+<ul>
+<li class="">
+<p>Frontend – Defines how the controller listens for and processes incoming TCP connections</p>
+</li>
+<li class="">
+<p>Service – Maps traffic to a Kubernetes Service and port</p>
+</li>
+<li class="">
+<p>Rules &amp; Filters – Optional logic for inspection, routing, logging, and enforcement</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="frontend-configuration">Frontend Configuration<a href="#frontend-configuration" class="hash-link" aria-label="Direct link to Frontend Configuration" title="Direct link to Frontend Configuration" translate="no">​</a></h3>
+<p>Frontend configuration controls how TCP connections are accepted, secured, optimized, and logged.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="connection-handling--lifecycle">Connection Handling &amp; Lifecycle<a href="#connection-handling--lifecycle" class="hash-link" aria-label="Direct link to Connection Handling &amp; Lifecycle" title="Direct link to Connection Handling &amp; Lifecycle" translate="no">​</a></h3>
+<p>Controls how client TCP connections are established, maintained, and closed.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="capabilities">Capabilities<a href="#capabilities" class="hash-link" aria-label="Direct link to Capabilities" title="Direct link to Capabilities" translate="no">​</a></h3>
+<ul>
+<li class="">
+<p>Connection backlog control</p>
+</li>
+<li class="">
+<p>Client timeouts and FIN handling</p>
+</li>
+<li class="">
+<p>Graceful connection termination</p>
+</li>
+<li class="">
+<p>Idle connection cleanup</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">backlog</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">client_timeout</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">client_fin_timeout</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">idle_close_on_response</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">nolinger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">maxconn</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tcp_user_timeout</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tcp-optimization--performance">TCP Optimization &amp; Performance<a href="#tcp-optimization--performance" class="hash-link" aria-label="Direct link to TCP Optimization &amp; Performance" title="Direct link to TCP Optimization &amp; Performance" translate="no">​</a></h3>
+<p>Optimizes low-level TCP behavior for high-throughput and long-lived connections.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="capabilities-1">Capabilities<a href="#capabilities-1" class="hash-link" aria-label="Direct link to Capabilities" title="Direct link to Capabilities" translate="no">​</a></h3>
+<ul>
+<li class="">
+<p>Smart accept behavior</p>
+</li>
+<li class="">
+<p>TCP keepalive tuning</p>
+</li>
+<li class="">
+<p>Zero-copy forwarding</p>
+</li>
+<li class="">
+<p>Kernel-level optimization</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">autohotkey</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Copy code</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tcp_smart_accept</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tcpka</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">clitcpka</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">clitcpka_cnt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">clitcpka_idle</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">clitcpka_intvl</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">splice_auto</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">splice_request</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">splice_response</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ssl--tls--secure-tcp-communication">SSL / TLS &amp; Secure TCP Communication<a href="#ssl--tls--secure-tcp-communication" class="hash-link" aria-label="Direct link to SSL / TLS &amp; Secure TCP Communication" title="Direct link to SSL / TLS &amp; Secure TCP Communication" translate="no">​</a></h3>
+<p>Enables encrypted TCP communication and fine-grained TLS control.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>TCP-level SSL termination</p>
+</li>
+<li class="">
+<p>Protocol version enforcement</p>
+</li>
+<li class="">
+<p>Cipher and curve selection</p>
+</li>
+<li class="">
+<p>Mutual TLS (mTLS)</p>
+</li>
+<li class="">
+<p>Strict SNI enforcement</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ssl</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ssl_certificate</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ssl_cafile</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ssl_min_ver</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ssl_max_ver</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ciphers</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ciphersuites</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">curves</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sigalgs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">client_sigalgs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">verify</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">strict_sni</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">no_tlsv10</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">no_tlsv11</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">no_tlsv12</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">no_tlsv13</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">prefer_client_ciphers</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tls_ticket_keys</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="quic--modern-transport-support">QUIC &amp; Modern Transport Support<a href="#quic--modern-transport-support" class="hash-link" aria-label="Direct link to QUIC &amp; Modern Transport Support" title="Direct link to QUIC &amp; Modern Transport Support" translate="no">​</a></h3>
+<p>Controls QUIC behavior when TCP listeners are QUIC-enabled.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>QUIC retry enforcement</p>
+</li>
+<li class="">
+<p>Congestion control selection</p>
+</li>
+<li class="">
+<p>Socket handling modes</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">quic-force-retry</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">quic-cc-algo</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">quic-socket</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="binding--listener-configuration">Binding &amp; Listener Configuration<a href="#binding--listener-configuration" class="hash-link" aria-label="Direct link to Binding &amp; Listener Configuration" title="Direct link to Binding &amp; Listener Configuration" translate="no">​</a></h3>
+<p>Defines where and how TCP listeners bind to network interfaces.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>Port and port-range binding</p>
+</li>
+<li class="">
+<p>IPv4/IPv6 behavior</p>
+</li>
+<li class="">
+<p>Interface binding</p>
+</li>
+<li class="">
+<p>Thread and process pinning</p>
+</li>
+<li class="">
+<p>Transparent proxying</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">address</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">port</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">port-range-end</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">interface</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">v4v6</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">v6only</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">transparent</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">thread</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">process</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">bind_process</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="access-control--acl-processing">Access Control &amp; ACL Processing<a href="#access-control--acl-processing" class="hash-link" aria-label="Direct link to Access Control &amp; ACL Processing" title="Direct link to Access Control &amp; ACL Processing" translate="no">​</a></h2>
+<p>Allows conditional traffic acceptance based on TCP attributes.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>ACL-based traffic decisions</p>
+</li>
+<li class="">
+<p>Conditional backend switching</p>
+</li>
+<li class="">
+<p>Protocol inspection and routing</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">acl_list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">backend_switching_rule_list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cond</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cond_test</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tcp-request-rules--traffic-manipulation">TCP Request Rules &amp; Traffic Manipulation<a href="#tcp-request-rules--traffic-manipulation" class="hash-link" aria-label="Direct link to TCP Request Rules &amp; Traffic Manipulation" title="Direct link to TCP Request Rules &amp; Traffic Manipulation" translate="no">​</a></h3>
+<p>Provides deep inspection and control of TCP sessions.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>Rate limiting and bandwidth control</p>
+</li>
+<li class="">
+<p>Marking, tracking, and variable handling</p>
+</li>
+<li class="">
+<p>SPOE integration</p>
+</li>
+<li class="">
+<p>Connection tracking and enforcement</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">tcp_request_rule_list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">track_table</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">track_key</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">track_stick_counter</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">set-var</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sc-inc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">bandwidth_limit</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">spoe_engine</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">spoe_group_name</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filters--traffic-processing">Filters &amp; Traffic Processing<a href="#filters--traffic-processing" class="hash-link" aria-label="Direct link to Filters &amp; Traffic Processing" title="Direct link to Filters &amp; Traffic Processing" translate="no">​</a></h3>
+<p>Applies traffic filters and processing modules.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>Bandwidth limiting</p>
+</li>
+<li class="">
+<p>Caching</p>
+</li>
+<li class="">
+<p>Compression</p>
+</li>
+<li class="">
+<p>Tracing and diagnostics</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">filter_list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">bandwidth_limit_name</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cache_name</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">compression</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">trace_name</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">trace_hexdump</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">trace_rnd_forwarding</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">trace_rnd_parsing</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="logging--observability">Logging &amp; Observability<a href="#logging--observability" class="hash-link" aria-label="Direct link to Logging &amp; Observability" title="Direct link to Logging &amp; Observability" translate="no">​</a></h3>
+<p>Controls logging behavior and operational visibility for TCP traffic.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>TCP and HTTP-style logging</p>
+</li>
+<li class="">
+<p>Structured log formats</p>
+</li>
+<li class="">
+<p>Early logging</p>
+</li>
+<li class="">
+<p>Log sampling and filtering</p>
+</li>
+<li class="">
+<p>Unique request identification</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">tcplog</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">httplog</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">clflog</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">log_format</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">log_format_sd</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">log_target_list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">log_tag</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">logasap</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dontlog_normal</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dontlognull</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">unique_id_format</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">unique_id_header</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">socket_stats</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="error-handling--monitoring">Error Handling &amp; Monitoring<a href="#error-handling--monitoring" class="hash-link" aria-label="Direct link to Error Handling &amp; Monitoring" title="Direct link to Error Handling &amp; Monitoring" translate="no">​</a></h3>
+<p>Defines how errors are detected, logged, and reported.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>Custom error handling</p>
+</li>
+<li class="">
+<p>Monitor endpoints</p>
+</li>
+<li class="">
+<p>Email alerting</p>
+</li>
+<li class="">
+<p>Error redirection</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">error_files</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">error_log_format</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">errorfiles_from_http_errors</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">errorloc302</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">errorloc303</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">monitor_uri</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">monitor_fail</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">email_alert</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">from</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="statistics--administrative-endpoints">Statistics &amp; Administrative Endpoints<a href="#statistics--administrative-endpoints" class="hash-link" aria-label="Direct link to Statistics &amp; Administrative Endpoints" title="Direct link to Statistics &amp; Administrative Endpoints" translate="no">​</a></h3>
+<p>Exposes runtime statistics and administrative controls.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>Stats UI and APIs</p>
+</li>
+<li class="">
+<p>Authentication and authorization</p>
+</li>
+<li class="">
+<p>Connection and rate visibility</p>
+</li>
+</ul>
+<p><strong>Underlying Engine Directives (Advanced)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">stats_options</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">contstats</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="service-mapping">Service Mapping<a href="#service-mapping" class="hash-link" aria-label="Direct link to Service Mapping" title="Direct link to Service Mapping" translate="no">​</a></h3>
+<p>Defines the Kubernetes Service to which TCP traffic is forwarded.</p>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li class="">
+<p>Service name mapping</p>
+</li>
+<li class="">
+<p>Port forwarding</p>
+</li>
+</ul>
+<p><strong>Configuration Fields</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">service.name</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">service.port</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h3>
+<ul>
+<li class="">
+<p>Use TCP CRD for non-HTTP workloads only</p>
+</li>
+<li class="">
+<p>Prefer HTTP Ingress resources when possible</p>
+</li>
+<li class="">
+<p>Keep rule sets minimal and well-documented</p>
+</li>
+<li class="">
+<p>Avoid deep packet inspection unless required</p>
+</li>
+<li class="">
+<p>Validate changes in staging before production</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary" translate="no">​</a></h3>
+<p>The TCP CRD provides a powerful, Kubernetes-native mechanism for managing Layer 4 traffic using the Haltdos Ingress Controller. By combining clear conceptual guidance with transparent engine-level mappings, it enables both platform engineers and advanced operators to securely expose, optimize, and observe TCP services at scale.</p>
+<p>This documentation intentionally balances approachability for non-HAProxy users with full configurability for advanced HAProxy practitioners, ensuring operational clarity, performance, and long-term maintainability.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/enterprise/platform/haltdos-ingress-controller/serviceAnnotation"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Service Annotations</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/enterprise/platform/haltdos-ingress-controller/helm-values-files"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Helm Values Files</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#availability--installation" class="table-of-contents__link toc-highlight">Availability &amp; Installation</a><ul><li><a href="#installation" class="table-of-contents__link toc-highlight">Installation</a></li><li><a href="#when-to-use-tcp-crd" class="table-of-contents__link toc-highlight">When to Use TCP CRD</a></li><li><a href="#resource-structure" class="table-of-contents__link toc-highlight">Resource Structure</a></li><li><a href="#frontend-configuration" class="table-of-contents__link toc-highlight">Frontend Configuration</a></li><li><a href="#connection-handling--lifecycle" class="table-of-contents__link toc-highlight">Connection Handling &amp; Lifecycle</a></li><li><a href="#capabilities" class="table-of-contents__link toc-highlight">Capabilities</a></li><li><a href="#tcp-optimization--performance" class="table-of-contents__link toc-highlight">TCP Optimization &amp; Performance</a></li><li><a href="#capabilities-1" class="table-of-contents__link toc-highlight">Capabilities</a></li><li><a href="#ssl--tls--secure-tcp-communication" class="table-of-contents__link toc-highlight">SSL / TLS &amp; Secure TCP Communication</a></li><li><a href="#quic--modern-transport-support" class="table-of-contents__link toc-highlight">QUIC &amp; Modern Transport Support</a></li><li><a href="#binding--listener-configuration" class="table-of-contents__link toc-highlight">Binding &amp; Listener Configuration</a></li></ul></li><li><a href="#access-control--acl-processing" class="table-of-contents__link toc-highlight">Access Control &amp; ACL Processing</a><ul><li><a href="#tcp-request-rules--traffic-manipulation" class="table-of-contents__link toc-highlight">TCP Request Rules &amp; Traffic Manipulation</a></li><li><a href="#filters--traffic-processing" class="table-of-contents__link toc-highlight">Filters &amp; Traffic Processing</a></li><li><a href="#logging--observability" class="table-of-contents__link toc-highlight">Logging &amp; Observability</a></li><li><a href="#error-handling--monitoring" class="table-of-contents__link toc-highlight">Error Handling &amp; Monitoring</a></li><li><a href="#statistics--administrative-endpoints" class="table-of-contents__link toc-highlight">Statistics &amp; Administrative Endpoints</a></li><li><a href="#service-mapping" class="table-of-contents__link toc-highlight">Service Mapping</a></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a></li></ul></li></ul></div></div></div><div class="custom_doc_item_footer_xzT7"><footer class="custom-footer-wrapper_e3DT"><div class="logo-wrapper_Rlsk"><img src="/img/logo/logo_dark.png" class="dark-theme-logo_PnSy"><img src="/img/logo/logo_light.png" class="light-theme-logo_LXf_"></div><div class="copyright_S0cy">© 2026 Haltdos, Inc. All rights reserved</div><div class="footerSocialIconsWrapper_h8nV"><div class="socialBrands_HY8t"><a href="https://twitter.com/halt_dos" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" viewBox="0 0 24 20"><path fill="#74818A" d="M24 2.294a9.8 9.8 0 0 1-2.822.792 4.93 4.93 0 0 0 2.157-2.73 9.9 9.9 0 0 1-3.12 1.204C19.307.574 18.034 0 16.588 0c-2.696 0-4.899 2.203-4.899 4.922 0 .39.046.768.126 1.124A14 14 0 0 1 1.675.906a4.87 4.87 0 0 0-.665 2.467c0 1.71.86 3.224 2.19 4.084-.814 0-1.57-.23-2.236-.574v.035a4.925 4.925 0 0 0 3.946 4.83 4.84 4.84 0 0 1-2.214.08c.62 1.939 2.42 3.384 4.589 3.419a9.78 9.78 0 0 1-6.115 2.11q-.585 0-1.17-.068a13.93 13.93 0 0 0 7.549 2.214c9.04 0 14.007-7.503 14.007-14.008 0-.218 0-.424-.011-.642A9.8 9.8 0 0 0 24 2.294"></path></svg></a></div><div class="socialBrands_HY8t"><a href="https://www.youtube.com/@Haltdoscybersecurity" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" fill="none" viewBox="0 0 28 20"><path fill="#74818A" d="m11.2 14 7.266-4.2L11.2 5.6zM27.384 3.038c.182.658.308 1.54.392 2.66.098 1.12.14 2.086.14 2.926L28 9.8c0 3.066-.224 5.32-.616 6.762-.35 1.26-1.162 2.072-2.422 2.422-.658.182-1.862.308-3.71.392a93 93 0 0 1-5.026.14L14 19.6c-5.866 0-9.52-.224-10.962-.616-1.26-.35-2.072-1.162-2.422-2.422-.182-.658-.308-1.54-.392-2.66a34 34 0 0 1-.14-2.926L0 9.8c0-3.066.224-5.32.616-6.762C.966 1.778 1.778.966 3.038.616 3.696.434 4.9.308 6.748.224a93 93 0 0 1 5.026-.14L14 0c5.866 0 9.52.224 10.962.616 1.26.35 2.072 1.162 2.422 2.422"></path></svg></a></div><div class="socialBrands_HY8t"><a href="https://www.linkedin.com/company/haltdos" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#74818A" d="M21.333 0A2.667 2.667 0 0 1 24 2.667v18.666A2.667 2.667 0 0 1 21.333 24H2.667A2.667 2.667 0 0 1 0 21.333V2.667A2.667 2.667 0 0 1 2.667 0zm-.666 20.667V13.6a4.347 4.347 0 0 0-4.347-4.347c-1.133 0-2.453.694-3.093 1.734v-1.48h-3.72v11.16h3.72v-6.574a1.86 1.86 0 0 1 1.853-1.866 1.866 1.866 0 0 1 1.867 1.866v6.574zM5.173 7.413a2.24 2.24 0 0 0 2.24-2.24c0-1.24-1-2.253-2.24-2.253A2.253 2.253 0 0 0 2.92 5.173c0 1.24 1.013 2.24 2.253 2.24m1.854 13.254V9.507H3.333v11.16z"></path></svg></a></div></div></footer></div></div></div></main></div></div></div></div>
+</body>
+</html>
