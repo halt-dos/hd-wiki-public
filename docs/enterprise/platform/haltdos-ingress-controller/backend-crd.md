@@ -1,255 +1,359 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Backend CRD Configuration Guide
+# Backend CRD
 
 ---
 
 ## Overview
 
-The **Backend Custom Resource (CRD)** extends the Kubernetes API to provide fine-grained control over how traffic is load balanced, secured, and managed across backend pods. It allows administrators to define backend-specific behavior independently of Ingress resources, enabling advanced traffic management, health checks, SSL handling, and performance tuning.
+The **Backend Custom Resource (CRD)** extends the Kubernetes API to provide **fine-grained control over backend traffic behavior** for services managed by the Haltdos Ingress Controller.
 
-The Backend CRD is designed for scenarios where application-level requirements exceed the capabilities of standard Ingress configuration and require deeper control over backend behavior.
+While Ingress resources define *how traffic is routed*, the Backend CRD defines *how traffic is handled once it reaches backend pods*. This includes load-balancing logic, health checks, connection handling, SSL behavior, persistence rules, and performance tuning.
 
-If the Haltdos Ingress Controller is installed using Helm, the Backend CRD is installed and managed automatically. :contentReference[oaicite:0]{index=0}
-
----
-
-## Why Use the Backend CRD
-
-The Backend CRD enables:
-
-- Advanced backend-level traffic control
-- Precise load-balancing behavior per service
-- Custom health checks and failover strategies
-- Backend SSL and protocol customization
-- Performance tuning for high-throughput workloads
-- Decoupling backend behavior from routing rules
-
-This makes it especially useful for **enterprise applications**, **stateful services**, and **non-HTTP workloads**.
+Backend CRD is ideal for applications that require **advanced backend behavior**, **stateful traffic handling**, or **protocol-specific tuning**, beyond what standard Ingress configuration provides. :contentReference[oaicite:1]{index=1}
 
 ---
 
-## Backend CRD Installation
+## When to Use Backend CRD
 
-Before using the Backend CRD, its definition must be installed in the Kubernetes cluster.
+Use Backend CRD when you need to:
 
-- When installed via **Helm**, the CRD is applied automatically
-- When installed manually, the CRD can be applied using `kubectl`
-
-Once installed, Backend resources become available as native Kubernetes objects and can be managed using standard Kubernetes workflows.
-
----
-
-## Backend CRD Usage Model
-
-The Backend CRD follows a **declare-and-attach** model:
-
-1. **Declare** backend behavior using a `Backend` custom resource  
-2. **Attach** the Backend resource to traffic using:
-   - A global ConfigMap
-   - An Ingress annotation
-   - A Service annotation
-
-This allows backend behavior to be applied globally, per application, or per service.
+- Customize load balancing behavior per application or service
+- Configure advanced health checks
+- Enable session persistence or stickiness
+- Control backend SSL/TLS behavior
+- Tune backend-specific timeouts and retries
+- Optimize performance for high-traffic or stateful services
 
 ---
 
-## Example: Backend Resource Definition
+## Installation & Availability
 
-```yaml
-apiVersion: ingress.haltdos.io/v1
-kind: Backend
-metadata:
-  name: example-backend
-  namespace: default
-spec:
-  config:
-    balance:
-      algorithm: leastconn
+- If the Haltdos Ingress Controller is installed using **Helm**, the Backend CRD is installed automatically.
+- For manual installations, the CRD must be applied once per cluster.
+
+Once installed, Backend becomes a native Kubernetes resource and can be managed using standard `kubectl` workflows. :contentReference[oaicite:2]{index=2}
+
+---
+
+## Configuration Scope & Attachment
+
+A Backend CRD can be applied at different scopes:
+
+### Global (All Services)
+Applied via controller ConfigMap using `cr-backend`.
+
+### Ingress Level
+Applied using annotations on an Ingress resource, affecting all services routed by that Ingress.
+
+### Service Level
+Applied using annotations on a specific Service, affecting only that backend.
+
+This allows precise backend behavior control with predictable precedence.
+
+---
+
+## Load Balancing & Traffic Distribution
+
+Controls how requests are distributed across backend pods.
+
+### Capabilities
+- Multiple load-balancing algorithms
+- Hash-based routing
+- Cookie-based persistence
+- Backup server selection
+- Retry and redispatch behavior
+
+#### Underlying Engine Directives (Advanced)
+
+```
+balance
+hash_type
+hash_balance_factor
+cookie
+dynamic_cookie_key
+persist
+persist_rule
+prefer_last_server
+allbackups
+default_server
+redispatch
+retries
+retry_on
+smali
 ```
 
-This example configures backend traffic to use a least-connections load-balancing algorithm.
+---
 
-## Applying Backend Configuration
-### Apply to All Services (Global)
-A Backend CRD can be applied globally by referencing it in the ingress controller ConfigMap.
+## Health Checks & Backend Availability
 
-```
-  cr-backend: default/example-backend
-```
-This ensures the backend configuration applies to all services managed by the ingress controller.
+Ensures traffic is routed only to healthy backend pods.
 
-### Apply via Ingress Resource
-Backend behavior can be applied to all services routed by a specific Ingress using annotations.
+### Capabilities
+- HTTP, TCP, and protocol-specific checks
+- Custom check endpoints
+- External health check scripts
+- Failure detection and recovery thresholds
 
-```
-metadata:
-  annotations:
-    haltdos.io/cr-backend: default/example-backend
-```
-This approach applies backend rules only to traffic handled by that Ingress.
-
-### Apply to a Specific Service
-To apply backend behavior to a single service, annotate the Service definition.
+#### Underlying Engine Directives (Advanced)
 
 ```
-yaml
-metadata:
-  annotations:
-    haltdos.io/cr-backend: default/example-backend
+adv_check
+checkcache
+http-check
+httpchk_params
+external_check
+external_check_command
+external_check_path
+mysql_check_params
+pgsql_check_params
+smtpchk_params
+spop_check
+monitor_uri
 ```
-This allows precise backend customization for individual services.
 
-Backend Configuration Capabilities
-The Backend CRD supports a wide range of configuration capabilities, grouped into the following functional areas.
+---
+
+## Connection Lifecycle & Timeout Handling
+
+Controls how backend connections are opened, maintained, and closed.
+
+### Capabilities
+- Connection establishment timeouts
+- Queue and tunnel handling
+- Graceful shutdown behavior
+- Resource protection during backend overload
+
+#### Underlying Engine Directives (Advanced)
+
+```
+abortonclose
+connect_timeout
+check_timeout
+queue_timeout
+server_timeout
+server_fin_timeout
+tunnel_timeout
+fullconn
+maxconn
+nolinger
+```
 
-Load Balancing Behavior
-Backend traffic distribution can be customized using multiple algorithms and strategies, including:
+---
 
-Round-robin and least-connections algorithms
+## SSL / TLS & Secure Backend Communication
 
-Hash-based load balancing
+Controls encrypted communication between ingress and backend services.
 
-Cookie-based session persistence
+### Capabilities
+- Backend SSL enablement
+- TLS protocol and cipher control
+- mTLS support
+- ALPN and SNI handling
+- Certificate verification and reuse
 
-Preference for previously selected backend servers
+#### Underlying Engine Directives (Advanced)
 
-These options help optimize traffic distribution based on application characteristics.
+```
+ssl
+ssl_certificate
+ssl_cafile
+verify
+verifyhost
+ssl_min_ver
+ssl_max_ver
+tls_tickets
+independent_streams
+disable_h2_upgrade
+```
 
-Health Checks and Availability
-The Backend CRD supports advanced health checking mechanisms to ensure traffic is routed only to healthy backend pods.
+---
 
-Capabilities include:
+## HTTP Behavior & Protocol Control
 
-TCP and HTTP health checks
+Defines how HTTP traffic is handled at the backend.
 
-Custom health check endpoints
+### Capabilities
+- HTTP connection modes
+- Request buffering
+- Header validation and forwarding
+- Protocol compatibility handling
 
-Check intervals and timeouts
+#### Underlying Engine Directives (Advanced)
+
+```
+accept_invalid_http_response
+http-buffer-request
+http_connection_mode
+http_keep_alive_timeout
+http_request_timeout
+http_no_delay
+http_use_htx
+http_restrict_req_hdr_names
+http_send_name_header
+http_pretend_keepalive
+h1_case_adjust_bogus_server
+```
 
-Rise and fall thresholds
+---
 
-External and protocol-specific health checks
+## Session Persistence & Stickiness
 
-This ensures high availability and rapid failure detection.
+Ensures consistent routing for stateful applications.
 
-SSL and Backend Security
-Backend-level SSL and security behavior can be controlled independently of ingress-level SSL termination.
+### Capabilities
+- Cookie-based stickiness
+- Conditional persistence rules
+- Stick tables and tracking
+- Ignore/force persistence conditions
 
-Supported capabilities include:
+#### Underlying Engine Directives (Advanced)
 
-Backend SSL enablement
+```
+persist
+persist_rule
+force_persist
+force_persist_list
+ignore_persist
+ignore_persist_list
+stick_table
+```
 
-Certificate and CA validation
+---
 
-TLS protocol and cipher configuration
+## Compression & Response Optimization
 
-Mutual TLS (mTLS) between ingress and backend
+Optimizes bandwidth usage and response delivery.
 
-SNI and ALPN configuration
+### Capabilities
+- Request and response compression
+- Algorithm selection
+- Offloading compression tasks
 
-These features are essential for secure, compliance-driven deployments.
+#### Underlying Engine Directives (Advanced)
 
-Connection Handling and Timeouts
-Backend connection behavior can be tuned to suit different traffic patterns and workloads.
+```
+compression
+```
 
-Configuration options include:
+---
 
-Backend connection timeouts
+## Logging, Statistics & Observability
 
-Request and response timeouts
+Provides backend-level visibility and operational insight.
 
-Queue timeouts
+### Capabilities
+- Health check logging
+- Custom log tagging
+- Backend statistics endpoints
+- Administrative access controls
 
-Tunnel and long-lived connection handling
+#### Underlying Engine Directives (Advanced)
 
-Retry and redispatch behavior
+```
+log_health_checks
+log_tag
+stats_options
+contstats
+```
 
-This allows fine control over latency, retries, and resource usage.
+---
 
-HTTP Behavior and Protocol Control
-For HTTP-based workloads, the Backend CRD supports:
+## TCP Optimization & Performance
 
-HTTP connection reuse and keep-alive tuning
+Low-level TCP optimizations for high-throughput and long-lived connections.
 
-Header handling and forwarding behavior
+### Capabilities
+- TCP keepalive tuning
+- Smart connection handling
+- Zero-copy forwarding
+- Reduced kernel overhead
 
-Path and request manipulation
+#### Underlying Engine Directives (Advanced)
 
-Protocol-specific optimizations (HTTP/1.1, HTTP/2)
+```
+tcp_smart_connect
+tcpka
+srvtcpka
+srvtcpka_cnt
+srvtcpka_idle
+srvtcpka_intvl
+splice_auto
+splice_request
+splice_response
+```
 
-Buffering and request handling behavior
+---
 
-These settings help optimize application performance and compatibility.
+## Source IP Preservation & Transparency
 
-Session Persistence and State Management
-Stateful applications can leverage backend persistence features such as:
+Preserves original client identity when forwarding traffic.
 
-Cookie-based session stickiness
+#### Underlying Engine Directives (Advanced)
 
-Persistence rules and conditions
+```
+forwardfor
+originalto
+source
+transparent
+```
 
-Stick tables for tracking client state
+---
 
-Forced or ignored persistence behavior
+## Error Handling & Custom Responses
 
-This ensures consistent routing for session-dependent applications.
+Controls how backend errors are handled and presented.
 
-Logging, Observability, and Debugging
-The Backend CRD provides backend-specific observability capabilities, including:
+### Capabilities
+- Custom error pages
+- Redirect-based error handling
+- Alerting and notification support
 
-Backend log tagging
+#### Underlying Engine Directives (Advanced)
 
-Health check logging
+```
+error_files
+errorfiles_from_http_errors
+errorloc302
+errorloc303
+email_alert
+from
+```
 
-Error handling and custom error responses
+---
 
-Statistics and administrative visibility
+## Administrative & Metadata Controls
 
-Integration with monitoring and logging systems
+Controls backend metadata and operational state.
 
-These features assist in troubleshooting and operational monitoring.
+#### Underlying Engine Directives (Advanced)
 
-Performance and Scaling Controls
-Backend performance can be tuned using:
+```
+name
+description
+id
+enabled
+disabled
+load_server_state_from_file
+server_state_file_name
+bind_process
+mode
+```
 
-Maximum connection limits per backend
+---
 
-Server weight and capacity tuning
+## Best Practices
 
-Connection reuse and pooling behavior
+- Use Backend CRD for **backend-specific behavior only**
+- Keep routing logic in Ingress resources
+- Apply Backend CRD at the **narrowest scope required**
+- Version-control Backend manifests
+- Validate changes in staging before production rollout
 
-Thread and process binding options
+---
 
-Slow start and ramp-up behavior
+## Summary
 
-These options enable backend scaling and performance optimization.
-
-Configuration Scope and Precedence
-When Backend CRD configuration overlaps with other configuration layers, precedence is applied as follows:
-
-Service-level Backend CRD attachment
-
-Ingress-level Backend CRD attachment
-
-Global Backend CRD configuration
-
-Default controller behavior
-
-This ensures precise control without unintended overrides.
-
-Best Practices
-Use Backend CRDs for advanced backend requirements only
-
-Prefer Ingress configuration for routing and simple policies
-
-Apply Backend CRDs at the narrowest scope required
-
-Validate changes in staging before production rollout
-
-Monitor backend health and logs after configuration updates
-
-Summary
-The Backend CRD provides a powerful and flexible mechanism for defining backend-specific behavior within the Haltdos Ingress Controller. By separating backend configuration from routing logic, it enables precise control over load balancing, health checks, SSL security, and performance tuning, making it well suited for complex and enterprise-grade Kubernetes deployments.
+The Backend CRD enables precise, backend-specific control over traffic handling in the Haltdos Ingress Controller. By combining clear, human-readable explanations with explicit engine-level directive mapping, this documentation supports both **non-HAProxy users** and **advanced HAProxy practitioners**, while maintaining clarity, transparency, and operational confidence. :contentReference[oaicite:3]{index=3}
