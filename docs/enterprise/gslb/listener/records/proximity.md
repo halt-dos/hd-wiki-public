@@ -29,15 +29,15 @@ This approach is suitable for environments where server locations are static and
 
 ### Dynamic Network Proximity
 
-Dynamic Network Proximity measures the distance between the client and data resources based on **network latency** rather than physical location. The GSLB continuously monitors real-time network conditions and directs client requests to the most optimal site.
+Dynamic Network Proximity measures the distance between the client and data resources based on **network latency** and **connectivity failures (packet loss ratio)** rather than physical location. The GSLB periodically monitors real-time network conditions and directs client requests to the most optimal site.
 
-This method uses **Round Trip Time (RTT)** as the primary metric to determine proximity.
+This method eventually calculates **Round Trip Time (RTT)** which is then used to determine proximity.
 
 ---
 
 ## RTT Measurement Mechanism
 
-When RTT information is not already available, the GSLB virtual IP initially selects a site using the **Round Robin** method and forwards the client request to that site. The system then begins calculating RTT between the client’s Local DNS (LDNS) and the selected GSLB site.
+When RTT information is not already available, the GSLB virtual IP initially selects a site using the **Round Robin** method and forwards the client request to that site. The system then begins calculating RTT between the client and the selected GSLB site.
 
 RTT is calculated using the following fallback sequence:
 
@@ -64,8 +64,8 @@ RTT is calculated using the following fallback sequence:
 
 ## Load Balancing Decision
 
-Once RTT metrics are populated, client requests are load balanced based on the **least RTT**, ensuring traffic is routed to the site offering the best network performance.
+Once RTT metrics are populated between each site and remote client, client requests are load balanced based on the **least RTT**, ensuring traffic is routed to the site offering the best network performance. For the first time, as these measurements are not available, the solution falls back to round-robin.
 
-The GSLB solution also **periodically shares RTT metrics** across sites to maintain accurate and consistent proximity-based routing decisions.
+The GSLB solution also **periodically measures and share RTT metrics** across sites to maintain accurate and consistent proximity-based routing decisions.
 
 ---
