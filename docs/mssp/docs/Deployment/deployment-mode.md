@@ -27,3 +27,7 @@ The solution can be configured in N-arm mode as a reverse proxy. In N-arm mode, 
 In this mode of deployment, the solution will run in detection mode only (passive / promiscuous). The solution will receive traffic either via SPAN port(Switched Port Analyzer) in which the Router (or the switch) will send mirrored traffic via Span port for detecting application layer attacks.
 
 ![offline-mode](/img/mssp/v8/docs/offline-mode.png)
+
+:::note Note
+Reset packets were sent from both the client and the server to terminate the session.
+:::
