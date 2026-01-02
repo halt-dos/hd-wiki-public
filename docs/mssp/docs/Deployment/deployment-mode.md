@@ -29,5 +29,5 @@ In this mode of deployment, the solution will run in detection mode only (passiv
 ![offline-mode](/img/mssp/v8/docs/offline-mode.png)
 
 :::note Note
-Reset packets were sent from both the client and the server to terminate the session.
+Reset packets are sent to the client and the server side to terminate the session.
 :::
