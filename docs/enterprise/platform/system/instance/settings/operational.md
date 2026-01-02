@@ -64,6 +64,9 @@ Choose the instance mode of operation. Requires reboot
     Default: Inline Mode 
 ```
 
+:::note Note
+Reset packets were sent from both the client and the server to terminate the session.
+:::
 
 **CPU Affinity**
 
