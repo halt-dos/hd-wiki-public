@@ -33,12 +33,6 @@ This table provides a complete and structured reference for all supported metric
 | BIND | HTTP BIND method |
 | bucket_0 | Histogram bucket zero |
 | bucket_1 | Histogram bucket one |
-| bucket_2 | Histogram bucket two |
-| bucket_3 | Histogram bucket three |
-| bucket_4 | Histogram bucket four |
-| bucket_5 | Histogram bucket five |
-| bucket_6 | Histogram bucket six |
-| bucket_7 | Histogram bucket seven |
 | CHECKOUT | HTTP CHECKOUT method |
 | clean_map_data_pool_available | Clean map data pool available |
 | clean_map_data_pool_used | Clean map data pool used |
