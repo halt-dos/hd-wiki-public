@@ -15,49 +15,28 @@ paths:
           required: true
           schema:
             type: string
+        - name: Name
+          in: query
+          description: Shows the content name
+          required: true
+          schema:
+            type: string
         - name: Content Id
           in: query
           description: Shows the content Id
           required: true
           schema:
             type: string
-        - name: Content Name
+        - name: Scope
           in: query
-          description: Shows the content name
-          required: false
-          schema:
-            type: string
-        - name: App
-          in: query
-          description: Shows the App Name
-          required: false
-          schema:
-            type: string
-            enum:
-              - NONE
-              - ADC
-              - DNS
-              - RDNS
-              - CDN
-              - DDOS
-              - LLB
-              - SCAN
-              - APM
-              - SLB
-              - WAF
-              - BLK
-              - VPN
-              - SWG
-        - name: Reference Id
-          in: query
-          description: Shows the reference Id
-          required: false
-          schema:
-            type: string
-        - name: Content Data
-          in: query
-          description: Shows the content data
+          description: Shows the scope of the resource content
           required: true
+          schema:
+            type: string
+        - name: Content
+          in: query
+          description: Shows the Resource Content
+          required: false
           schema:
             type: string
         - name: Metadata
@@ -81,7 +60,7 @@ paths:
     post:
       tags:
         - Management
-      description: Add resource content
+      description: Add new resource content
       operationId: addContent
       parameters:
         - name: stackId
@@ -109,6 +88,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Reference Id
           in: query
@@ -119,6 +101,12 @@ paths:
         - name: Content Name
           in: query
           description: Shows the name of the contenet Id
+          required: true
+          schema:
+            type: string
+        - name: Content Id
+          in: query
+          description: Shows the contenet Id
           required: true
           schema:
             type: string
@@ -147,6 +135,7 @@ paths:
               - IP_FEED
               - RPZ
               - HEALTH_SCRIPT
+              - IP_POOL
         - name: Metadata
           in: query
           description: >-
@@ -155,6 +144,16 @@ paths:
           required: false
           schema:
             type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  description: Shows the file
+                  format: binary
       responses:
         '200':
           description: OK
@@ -192,6 +191,300 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/ssl-certs/export:
+    post:
+      tags:
+        - Management
+      description: Export the ssl certificate in excel
+      operationId: exportSslCertificates
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: ExportPassword
+          in: query
+          description: Shows the export ssl Password
+          required: true
+          schema:
+            type: string
+        - name: Export Content Id
+          in: query
+          description: Shows the export Content Id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /v1/stack/{stackId}/config-sync:
+    post:
+      tags:
+        - Management
+      description: Triggers immediate configuration synchronization for a specific stack.
+      operationId: syncNow
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          description: Stack identifier
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/config-sync/test:
+    post:
+      tags:
+        - Management
+      description: Tests the configuration sync connection for a specific stack.
+      operationId: testConnection
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          description: Stack identifier
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/license/update:
+    post:
+      tags:
+        - Management
+      description: Checks for updates to the license.
+      operationId: checkForUpdates
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/license/upgrade:
+    post:
+      tags:
+        - Management
+      description: Checks for upgrade availability for the license.
+      operationId: checkForUpgrade
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/ssl/status:
+    get:
+      tags:
+        - Management
+      description: Fetches certificate status using the provided domain and order ID.
+      operationId: fetchCertOrderStatus
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          description: Stack identifier
+          schema:
+            type: string
+        - name: OrderId
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+  /v1/stack/{stackId}/ssl/{contentId}/autorenew:
+    post:
+      tags:
+        - Management
+      operationId: generateOrderCertificate
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          description: Stack identifier
+          schema:
+            type: string
+        - name: contentId
+          in: path
+          required: true
+          description: Content identifier
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/ssl/validate:
+    post:
+      tags:
+        - Management
+      description: >-
+        Validates an SSL certificate order for a specified domain using the
+        provided order ID and private key.
+      operationId: validateCertOrder
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          description: Stack identifier
+          schema:
+            type: string
+        - name: Domain
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: OrderId
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: PrivateKey
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: Type
+          in: query
+          required: true
+          schema:
+            type: string
+            enum:
+              - HTTP
+              - DNS
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/ssl/order:
+    post:
+      tags:
+        - Management
+      description: >-
+        Generates an SSL certificate order for a specified domain within a
+        stack.
+      operationId: generateCertOrder
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          description: Stack identifier
+          schema:
+            type: string
+        - name: Domain
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+  /v1/stack/{stackId}/ssl/issue:
+    post:
+      tags:
+        - Management
+      description: >-
+        Issues an SSL certificate for a specified domain using the provided
+        order ID and private key.
+      operationId: issueCertificate
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          description: Stack identifier
+          schema:
+            type: string
+        - name: Name
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: Domain
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: OrderId
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: PrivateKey
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: App
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: Resource
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
   /v1/stack/{stackId}/waf:
     get:
       tags:
@@ -299,6 +592,158 @@ paths:
         - name: Path
           in: query
           description: Shows the Path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/adc:
+    get:
+      tags:
+        - Application Delivery Controller
+      description: Retrieves a module based on the provided stack and reference IDs.
+      operationId: getAdcModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: ReferenceId
+          in: query
+          description: Shows the Reference Id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+    post:
+      tags:
+        - Application Delivery Controller
+      description: >-
+        Updates a module's configuration and action based on the specified
+        parameters.
+      operationId: updateAdcModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: referenceId
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+        - name: Action
+          in: query
+          description: Shows the Action
+          required: true
+          schema:
+            type: string
+            enum:
+              - ADD
+              - EDIT
+              - RESET
+              - DELETE
+              - RELOAD
+        - name: Configuration
+          in: query
+          description: Shows the Configuration
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/ddos:
+    get:
+      tags:
+        - Anti-DDoS
+      description: >-
+        Retrieves the current DDoS settings for a specified stack and reference
+        ID.
+      operationId: getDdosSettings
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: ReferenceId
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+    post:
+      tags:
+        - Anti-DDoS
+      description: >-
+        Updates the DDoS module configuration for a specified stack and
+        reference ID based on the provided action and configuration.
+      operationId: updateDdosModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: ReferenceId
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+        - name: Action
+          in: query
+          description: Shows the Action
+          required: true
+          schema:
+            type: string
+            enum:
+              - ADD
+              - EDIT
+              - RESET
+              - DELETE
+              - RELOAD
+        - name: Configuration
+          in: query
+          description: Shows the configuration
           required: true
           schema:
             type: string
@@ -536,6 +981,12 @@ paths:
           required: true
           schema:
             type: string
+        - name: referenceId
+          in: path
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
         - name: Page
           in: query
           description: Shows the Number of Page
@@ -570,6 +1021,12 @@ paths:
       parameters:
         - name: stackId
           in: path
+          required: true
+          schema:
+            type: string
+        - name: referenceId
+          in: path
+          description: Shows the Id of the Reference
           required: true
           schema:
             type: string
@@ -618,6 +1075,12 @@ paths:
       parameters:
         - name: stackId
           in: path
+          required: true
+          schema:
+            type: string
+        - name: referenceId
+          in: path
+          description: Shows the Id of the Reference
           required: true
           schema:
             type: string
@@ -680,7 +1143,7 @@ paths:
   /v1/stack/{stackId}/slb:
     get:
       tags:
-        - Serial Load Balancer
+        - Server Load Balancer
       description: >-
         Retrieves SLB (Server Load Balancer) module configuration for the
         specified stack and reference ID.
@@ -709,7 +1172,7 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Serial Load Balancer
+        - Server Load Balancer
       description: >-
         Updates the SLB module configuration for the specified stack, reference
         ID, and action.
@@ -757,12 +1220,17 @@ paths:
   /v1/stack/{stackId}/slb/bot/key-generate:
     post:
       tags:
-        - Serial Load Balancer
+        - Server Load Balancer
       description: >-
         Generates an encryption key for a listener in the specified stack and
         listener ID.
       operationId: generateEncryptionKey
       parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
         - name: Full Name
           in: query
           description: It shows the Full Name
@@ -890,6 +1358,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: ReferenceId
           in: query
@@ -1128,7 +1599,7 @@ paths:
               - RELOAD
         - name: Configuration
           in: query
-          description: Shows the COnfiguration
+          description: Shows the Configuration
           required: true
           schema:
             type: string
@@ -1271,6 +1742,337 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseHashMapStringCoreRule'
+  /v1/stack/{stackId}/acdn:
+    get:
+      tags:
+        - Advanced CDN
+      description: Retrieves the ACDN configuration for a specified stack and reference ID.
+      operationId: getAcdnModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Reference Id
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+    post:
+      tags:
+        - Advanced CDN
+      description: >-
+        Updates the ACDN configuration for a specified stack and reference ID
+        based on the provided action.
+      operationId: updateAcdnModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Reference Id
+          in: query
+          description: Show the ID of the Reference
+          required: true
+          schema:
+            type: string
+        - name: Action Configuration
+          in: query
+          description: Shows the Action Configuration
+          required: true
+          schema:
+            type: string
+            enum:
+              - ADD
+              - EDIT
+              - RESET
+              - DELETE
+              - RELOAD
+        - name: Configuration
+          in: query
+          description: Shows the Configuration
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/blk:
+    get:
+      tags:
+        - Broker
+      description: Retrieves the settings for a specified stack and reference ID
+      operationId: getBlkSettings
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Reference Id
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+    post:
+      tags:
+        - Broker
+      description: >-
+        Updates the configuration for a specified stack and reference ID based
+        on the given action.
+      operationId: updateBlkModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Reference Id
+          in: query
+          description: Show the ID of the Reference
+          required: true
+          schema:
+            type: string
+        - name: Action Configuration
+          in: query
+          description: Shows the Action Configuration
+          required: true
+          schema:
+            type: string
+            enum:
+              - ADD
+              - EDIT
+              - RESET
+              - DELETE
+              - RELOAD
+        - name: Configuration
+          in: query
+          description: Shows the Configuration
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/cache/download:
+    post:
+      tags:
+        - CDN
+      description: Retrieves the file from cache pushzone
+      operationId: downloadCacheFile
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: bucket
+          in: query
+          description: Shows the name of bucket
+          required: true
+          schema:
+            type: string
+        - name: Object
+          in: query
+          description: Shows the path of object
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /v1/stack/{stackId}/cache:
+    get:
+      tags:
+        - CDN
+      description: >-
+        Retrieves CACHE module configuration for the specified stack and
+        reference ID. ReferenceId can be SETTINGS, LISTENER, CACHE_SETTINGS,
+        etc.
+      operationId: getCacheModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: referenceId
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+    post:
+      tags:
+        - CDN
+      description: >-
+        Updates the CACHE module configuration for the specified stack,
+        reference ID, and action.
+      operationId: UpdateCacheModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Reference Id
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+        - name: Action Configuration
+          in: query
+          description: Shows the configuration of the Action
+          required: true
+          schema:
+            type: string
+            enum:
+              - ADD
+              - EDIT
+              - RESET
+              - DELETE
+              - RELOAD
+        - name: Configuration
+          in: query
+          description: Shows the configuration
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              required:
+                - file
+              type: object
+              properties:
+                file:
+                  type: string
+                  description: Shows the File
+                  format: binary
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/cache/purge:
+    get:
+      tags:
+        - CDN
+      description: Purges the cache for the specified CACHE configuration.
+      operationId: purgeCache
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Configuration
+          in: query
+          description: Shows the configuration
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/cache/bot/key-generate:
+    get:
+      tags:
+        - CDN
+      description: >-
+        Generates an encryption key for a listener in the specified stack and
+        listener ID
+      operationId: generateCacheEncryptionKey
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Name
+          in: query
+          description: Shows the name of encryption key
+          required: true
+          schema:
+            type: string
+        - name: Listener Id
+          in: query
+          description: Shows the id of the listener Id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
   /v1/stack/{stackId}/incidents:
     get:
       tags:
@@ -1303,6 +2105,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Refernce Id
           in: query
@@ -1393,6 +2198,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Reference Id
           in: query
@@ -1451,6 +2259,7 @@ paths:
             type: string
         - name: reference Id
           in: query
+          description: Shows the Id of the Reference
           required: true
           schema:
             type: string
@@ -1479,6 +2288,7 @@ paths:
             type: string
         - name: Reference Id
           in: query
+          description: Shows the Id of the Reference
           required: true
           schema:
             type: string
@@ -1495,6 +2305,7 @@ paths:
               - RELOAD
         - name: Configuration
           in: query
+          description: Shows the Configuration
           required: true
           schema:
             type: string
@@ -1508,21 +2319,19 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
-  /v1/stack/{stackId}/ddos:
+  /v1/stack/{stackId}/ipam:
     get:
       tags:
-        - Anti-DDoS
-      description: >-
-        Retrieves the current DDoS settings for a specified stack and reference
-        ID.
-      operationId: getDdosSettings
+        - IPAM
+      description: Retrieves a module based on the provided stack and reference IDs.
+      operationId: getIpamModule
       parameters:
         - name: stackId
           in: path
           required: true
           schema:
             type: string
-        - name: ReferenceId
+        - name: reference Id
           in: query
           description: Shows the Id of the Reference
           required: true
@@ -1540,26 +2349,25 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Anti-DDoS
+        - IPAM
       description: >-
-        Updates the DDoS module configuration for a specified stack and
-        reference ID based on the provided action and configuration.
-      operationId: updateDdosModule
+        Updates a module's configuration and action based on the specified
+        parameters.
+      operationId: updateIpamModule
       parameters:
         - name: stackId
           in: path
           required: true
           schema:
             type: string
-        - name: ReferenceId
+        - name: Reference Id
           in: query
           description: Shows the Id of the Reference
           required: true
           schema:
             type: string
-        - name: Action
+        - name: Action Configuration
           in: query
-          description: Shows the Action
           required: true
           schema:
             type: string
@@ -1571,7 +2379,115 @@ paths:
               - RELOAD
         - name: Configuration
           in: query
-          description: Shows the configuration
+          description: Shows the Configuration
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/ipam/subnet:
+    get:
+      tags:
+        - IPAM
+      description: >-
+        Scan the network subnet based on Network Id and Subnet (network address
+        and mask)
+      operationId: scanSubnet
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: reference Id
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+        - name: subnet
+          in: query
+          description: Shows the Subnet
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/ipam/network/address:
+    get:
+      tags:
+        - IPAM
+      description: Fetch a network address based on network id (network address and mask)
+      operationId: getNetworkAddresses
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: reference Id
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListResponseHashMapStringObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ListResponseHashMapStringObject'
+    post:
+      tags:
+        - IPAM
+      description: Updates a network address based on network id (network address and mask)
+      operationId: updateIpamModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Reference Id
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+        - name: Action Configuration
+          in: query
+          required: true
+          schema:
+            type: string
+            enum:
+              - ADD
+              - EDIT
+              - RESET
+              - DELETE
+              - RELOAD
+        - name: Configuration
+          in: query
+          description: Shows the Configuration
           required: true
           schema:
             type: string
@@ -1775,21 +2691,53 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
-  /v1/stack/{stackId}/adc:
+  /v1/stack/{stackId}/cdn/download/{zoneId}:
     get:
       tags:
-        - Application Delivery Controller
-      description: Retrieves a module based on the provided stack and reference IDs.
-      operationId: getAdcModule
+        - Content Delivery Network
+      description: Retrieves the file from cdn pushzone
+      operationId: downloadFile
       parameters:
         - name: stackId
           in: path
           required: true
           schema:
             type: string
-        - name: ReferenceId
+        - name: zoneId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: path
           in: query
-          description: Shows the Reference Id
+          description: Relative path of the file inside the CDN pushzone
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/octet-stream:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+  /v1/stack/{stackId}/swg:
+    get:
+      tags:
+        - Forwarder
+      description: >-
+        Retrieves the SWG (Secure Web Gateway) module configuration for the
+        specified stack and reference ID.
+      operationId: getSwgModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Reference Id
+          in: query
+          description: Shows the Id of the Reference
           required: true
           schema:
             type: string
@@ -1805,26 +2753,26 @@ paths:
                 $ref: '#/components/schemas/DataResponseObject'
     post:
       tags:
-        - Application Delivery Controller
+        - Forwarder
       description: >-
-        Updates a module's configuration and action based on the specified
-        parameters.
-      operationId: updateAdcModule
+        Updates the SWG module configuration for the specified stack, reference
+        ID, action, and configuration.
+      operationId: saveSwgConfiguration
       parameters:
         - name: stackId
           in: path
           required: true
           schema:
             type: string
-        - name: referenceId
+        - name: Reference Id
           in: query
           description: Shows the Id of the Reference
           required: true
           schema:
             type: string
-        - name: Action
+        - name: Configuration Action
           in: query
-          description: Shows the Action
+          description: Shows the configuration of Action
           required: true
           schema:
             type: string
@@ -1836,7 +2784,7 @@ paths:
               - RELOAD
         - name: Configuration
           in: query
-          description: Shows the Configuration
+          description: JSON Serialized configuration object
           required: true
           schema:
             type: string
@@ -1850,6 +2798,125 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/vpn:
+    get:
+      tags:
+        - VPN
+      description: >-
+        Fetches the VPN module configuration for the specified stack and
+        reference ID.
+      operationId: getVpnModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Reference Id
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+    post:
+      tags:
+        - VPN
+      description: >-
+        Updates the VPN module configuration based on the provided action and
+        configuration.
+      operationId: updateVpnModule
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Reference Id
+          in: query
+          description: Shows the Id of the Reference
+          required: true
+          schema:
+            type: string
+        - name: Configuration Action
+          in: query
+          description: Shows the configuration of Action
+          required: true
+          schema:
+            type: string
+            enum:
+              - ADD
+              - EDIT
+              - RESET
+              - DELETE
+              - RELOAD
+        - name: Configuration
+          in: query
+          description: JSON Serialized configuration object
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/peers:
+    get:
+      tags:
+        - VPN
+      description: Fetches a paginated list of peers for a specific stack and network
+      operationId: getVpnPeers
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Page
+          in: query
+          description: Shows the page number
+          required: false
+          schema:
+            type: integer
+            format: int32
+        - name: size
+          in: query
+          description: Shows the size of a page
+          required: false
+          schema:
+            type: integer
+            format: int32
+        - name: Reference Id
+          in: query
+          description: Shows the Id of the Reference
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
   /v1/stack/{stackId}/adc/upload/scan:
     post:
       tags:
@@ -2329,6 +3396,192 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponsePermissionDto'
+    put:
+      tags:
+        - Management
+      description: >-
+        Updates the name of the specified stack, ensuring it meets naming
+        criteria
+      operationId: updateStack
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: name
+          in: query
+          description: New name for the stack
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+    delete:
+      tags:
+        - Management
+      description: Delete stack
+      operationId: deleteStack
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/mappings:
+    get:
+      tags:
+        - Management
+      description: Get stack mappings
+      operationId: getMappings
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: App
+          in: query
+          description: Shows the App
+          required: false
+          schema:
+            type: string
+            enum:
+              - NONE
+              - ADC
+              - DNS
+              - RDNS
+              - CDN
+              - DDOS
+              - LLB
+              - SCAN
+              - APM
+              - SLB
+              - WAF
+              - BLK
+              - VPN
+              - IPAM
+              - CACHE
+              - ACDN
+              - SWG
+        - name: Path
+          in: query
+          description: Shows the path
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+  /v1/stack/{stackId}/data/{database}/query:
+    get:
+      tags:
+        - Management
+      description: Execute stack query
+      operationId: executeQuery
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Query
+          in: query
+          description: Shows the stack Query
+          required: true
+          schema:
+            type: string
+        - name: database
+          in: path
+          description: Shows the database name
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+  /v1/stack/{stackId}/webhook:
+    get:
+      tags:
+        - Management
+      description: Test webhook API
+      operationId: testWebhook
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: data
+          in: query
+          description: Shows the webhook Id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/ifaces:
+    get:
+      tags:
+        - Management
+      description: Get stack instance interfaces
+      operationId: getInstanceIfaces
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
   /v1/stack/{stackId}/waf/tools/mf:
     get:
       tags:
@@ -2613,6 +3866,11 @@ paths:
       description: Gets list of tasks
       operationId: getTasks
       parameters:
+        - name: Stack Id
+          in: path
+          required: true
+          schema:
+            type: string
         - name: Reference Id
           in: query
           description: Shows the Id of the Reference
@@ -2725,6 +3983,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Reference Id
           in: query
@@ -2782,6 +4043,294 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseSession'
+  /v1/templates:
+    get:
+      tags:
+        - Management
+      description: Get all VM templates
+      operationId: getVMTemplates
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListResponseMetadata'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ListResponseMetadata'
+  /v1/template/{templateId}:
+    get:
+      tags:
+        - Management
+      description: Get specific VM template
+      operationId: getTemplate
+      parameters:
+        - name: templateId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListResponseMetadata'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ListResponseMetadata'
+    delete:
+      tags:
+        - Management
+      description: Delete template
+      operationId: deleteTemplate
+      parameters:
+        - name: templateId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/template/{templateId}/sync:
+    get:
+      tags:
+        - Management
+      description: Sync template
+      operationId: syncTemplate
+      parameters:
+        - name: templateId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/template/{templateId}/download:
+    get:
+      tags:
+        - Management
+      description: Download template
+      operationId: downloadTemplate
+      parameters:
+        - name: templateId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/template/instance/{instanceId}:
+    get:
+      tags:
+        - Management
+      description: Get instance template
+      operationId: getInstanceTemplate
+      parameters:
+        - name: instanceId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListResponseMetadata'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ListResponseMetadata'
+  /v1/template/fetch:
+    get:
+      tags:
+        - Management
+      description: Check for templates
+      operationId: checkForTemplates
+      parameters:
+        - name: templateId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+  /v1/update/versions:
+    get:
+      tags:
+        - Management
+      description: >-
+        Retrieves a list of available update versions for instances in the
+        system
+      operationId: getInstanceVersions
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListResponseHashMapStringObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ListResponseHashMapStringObject'
+  /v1/users:
+    get:
+      tags:
+        - Management
+      description: Get users list
+      operationId: getUsers
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ListResponseObject'
+  /v1/user:
+    post:
+      tags:
+        - Management
+      description: Add new user
+      operationId: addUser
+      parameters:
+        - name: Name
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: UserName
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: Email
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: Password
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: LoginMode
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+    delete:
+      tags:
+        - Management
+      description: Delete user
+      operationId: deleteUser
+      parameters:
+        - name: UserName
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/user/enable-2fa/otp:
+    post:
+      tags:
+        - Management
+      description: Enables two-factor authentication (2FA) using the provided OTP
+      operationId: enable2fa
+      parameters:
+        - name: Otp
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/user/enable-2fa:
+    post:
+      tags:
+        - Management
+      description: Changes the status of two-factor authentication (2FA) for the user
+      operationId: change2FaStatus
+      parameters:
+        - name: IsEnabled
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
   /v1/stack/{stackId}/scans:
     get:
       tags:
@@ -2834,6 +4383,51 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseEvent'
+  /v1/stack:
+    get:
+      tags:
+        - Management
+      description: Creates a new stack using the provided stack ID
+      operationId: createStack
+      parameters:
+        - name: stackId
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/vStack:
+    get:
+      tags:
+        - Management
+      description: Create virtual stack
+      operationId: createVirtualStack
+      parameters:
+        - name: parent
+          in: path
+          description: Parent Stack ID
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
   /v1/stack/{stackId}/plan:
     get:
       tags:
@@ -2930,6 +4524,76 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseSignaturesStatus'
+  /v1/stack/{stackId}/incidents/count:
+    get:
+      tags:
+        - Management
+      description: Get incident details
+      operationId: getIncidentsCount
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: App
+          in: query
+          description: Shows the App
+          required: true
+          schema:
+            type: string
+            enum:
+              - NONE
+              - ADC
+              - DNS
+              - RDNS
+              - CDN
+              - DDOS
+              - LLB
+              - SCAN
+              - APM
+              - SLB
+              - WAF
+              - BLK
+              - VPN
+              - IPAM
+              - CACHE
+              - ACDN
+              - SWG
+        - name: Refernce Id
+          in: query
+          description: ID of the Reference
+          required: false
+          schema:
+            type: string
+        - name: Incident Category
+          in: query
+          description: Category of the Incident
+          required: false
+          schema:
+            type: string
+        - name: Matching Criteria
+          in: query
+          description: Matching Criteria
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+        - name: Start Timestamp
+          in: query
+          description: Time stamp of Starting
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: End Timestamp
+          in: query
+          description: Time Stamp of Ending
+          required: false
+          schema:
+            type: integer
+            format: int64
   /v1/stack/{stackId}/incident/{incidentId}:
     get:
       tags:
@@ -2937,9 +4601,19 @@ paths:
       description: Get incident details
       operationId: getIncident
       parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
         - name: incidentId
           in: path
           required: true
+          schema:
+            type: string
+        - name: zoneId
+          in: query
+          required: false
           schema:
             type: string
       responses:
@@ -2984,6 +4658,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Reference Id
           in: query
@@ -3059,6 +4736,17 @@ paths:
           required: true
           schema:
             type: string
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: zoneId
+          in: query
+          description: Shows the zone Id
+          required: false
+          schema:
+            type: string
       responses:
         '200':
           description: OK
@@ -3069,6 +4757,30 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseEvent'
+  /v1/stack/{stackId}/event/{eventId}/json:
+    get:
+      tags:
+        - Management
+      description: Retrieves the JSON representation of a specific event for a given stack
+      operationId: getEventJson
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
   /v1/stack/{stackId}/event/{eventId}/download:
     get:
       tags:
@@ -3280,6 +4992,11 @@ paths:
       description: Retrieves list of dashboards
       operationId: getDashboards
       parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
         - name: App
           in: query
           description: Shows the App
@@ -3300,6 +5017,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Instance
           in: query
@@ -3364,6 +5084,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Dashboard Id
           in: query
@@ -3425,6 +5148,7 @@ paths:
               - IP_FEED
               - RPZ
               - HEALTH_SCRIPT
+              - IP_POOL
       responses:
         '200':
           description: OK
@@ -3462,13 +5186,155 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/DataResponseResourceContent'
-  /v1/stack/{stackId}/analytics:
+  /v1/stack/{stackId}/content/generate:
     get:
       tags:
         - Management
-      description: Gets populated dashboard
-      operationId: getDashboardAnalytics
+      description: >-
+        Generates and adds a self-signed certificate for the specified stack
+        with optional parameters
+      operationId: addSelfSignedCert
       parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Params
+          in: query
+          description: Shows the parameters
+          required: false
+          schema:
+            type: string
+        - name: Content Type
+          in: query
+          description: Shows the type of the Content
+          required: false
+          schema:
+            type: string
+            enum:
+              - SSL_CERTIFICATE
+              - PUBLIC_PRIVATE_KEY
+              - CERTIFICATE_AUTHORITY
+              - CACHE_POOL
+              - CREDENTIALS
+              - PAYLOAD
+              - CERT_REVOCATION_LIST
+              - CLIENT_CERTIFICATE
+              - ERROR_PAGE
+              - IP_FEED
+              - RPZ
+              - HEALTH_SCRIPT
+              - IP_POOL
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseObject'
+  /v1/stack/{stackId}/content/generate-csr:
+    get:
+      tags:
+        - Management
+      description: Generates csr key
+      operationId: generateCsrKey
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Csr Name
+          in: query
+          description: Shows the Csr Name
+          required: true
+          schema:
+            type: string
+        - name: Country Code
+          in: query
+          description: Shows the Csr Country Code
+          required: true
+          schema:
+            type: string
+        - name: State
+          in: query
+          description: Shows the Csr State
+          required: true
+          schema:
+            type: string
+        - name: Locality
+          in: query
+          description: Shows the Csr Locality
+          required: true
+          schema:
+            type: string
+        - name: Organization
+          in: query
+          description: Shows the Csr Organization
+          required: true
+          schema:
+            type: string
+        - name: Organization Unit
+          in: query
+          description: Shows the Csr Organization Unit
+          required: true
+          schema:
+            type: string
+        - name: Common Name
+          in: query
+          description: Shows the Csr Common Name
+          required: true
+          schema:
+            type: string
+        - name: Alternative Names
+          in: query
+          description: Shows the Csr Alternative Names
+          required: true
+          schema:
+            type: string
+        - name: CertKeyLength
+          in: query
+          description: Shows the Csr Cert Key Size
+          required: true
+          schema:
+            type: string
+            enum:
+              - KEY_4096
+              - KEY_3072
+              - KEY_2048
+      responses:
+        '200':
+          description: OK
+  /v1/stack/{stackId}/content/pfx:
+    post:
+      tags:
+        - Management
+      description: >-
+        Uploads a PFX file for the specified stack, along with its name,
+        password, and optional metadata
+      operationId: uploadPfx
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Name
+          in: query
+          description: Shows the Name
+          required: true
+          schema:
+            type: string
+        - name: Password
+          in: query
+          description: Shows the Password
+          required: true
+          schema:
+            type: string
         - name: App
           in: query
           description: Shows the App
@@ -3489,6 +5355,178 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
+              - SWG
+        - name: Resource
+          in: query
+          description: Shows the Resource
+          required: false
+          schema:
+            type: string
+        - name: Metadata
+          in: query
+          description: Shows the Metadata
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              required:
+                - pfxFile
+              type: object
+              properties:
+                pfxFile:
+                  type: string
+                  description: Shows the pfx file
+                  format: binary
+                intermediateFile:
+                  type: string
+                  description: Shows the intermediate file
+                  format: binary
+                caBundleFile:
+                  type: string
+                  description: Shows the caBundle file
+                  format: binary
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseResourceContent'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseResourceContent'
+  /v1/stack/{stackId}/content/pem:
+    post:
+      tags:
+        - Management
+      description: >-
+        Uploads PEM files (public, private, intermediate, and CA bundle) for the
+        specified stack along with the necessary identifiers
+      operationId: uploadPem
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Name
+          in: query
+          description: Shows the Name
+          required: true
+          schema:
+            type: string
+        - name: App
+          in: query
+          description: Shows the App
+          required: false
+          schema:
+            type: string
+            enum:
+              - NONE
+              - ADC
+              - DNS
+              - RDNS
+              - CDN
+              - DDOS
+              - LLB
+              - SCAN
+              - APM
+              - SLB
+              - WAF
+              - BLK
+              - VPN
+              - IPAM
+              - CACHE
+              - ACDN
+              - SWG
+        - name: Resource
+          in: query
+          description: Shows the Resource
+          required: false
+          schema:
+            type: string
+        - name: Metadata
+          in: query
+          description: Shows the Metadata
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              required:
+                - publicFile
+                - privateFile
+              type: object
+              properties:
+                publicFile:
+                  type: string
+                  description: Shows the public file
+                  format: binary
+                privateFile:
+                  type: string
+                  description: Shows the private file
+                  format: binary
+                intermediateFile:
+                  type: string
+                  description: Shows the intermediate file
+                  format: binary
+                caBundleFile:
+                  type: string
+                  description: Shows the caBundle file
+                  format: binary
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponseResourceContent'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/DataResponseResourceContent'
+  /v1/stack/{stackId}/analytics:
+    get:
+      tags:
+        - Management
+      description: Gets populated dashboard
+      operationId: getDashboardAnalytics
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: App
+          in: query
+          description: Shows the App
+          required: false
+          schema:
+            type: string
+            enum:
+              - NONE
+              - ADC
+              - DNS
+              - RDNS
+              - CDN
+              - DDOS
+              - LLB
+              - SCAN
+              - APM
+              - SLB
+              - WAF
+              - BLK
+              - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Dashboard Id
           in: query
@@ -3533,12 +5571,6 @@ paths:
           schema:
             type: integer
             format: int64
-        - name: Timezone (defaults to UTC)
-          in: query
-          description: Shows the Timezone
-          required: false
-          schema:
-            type: string
       responses:
         '200':
           description: OK
@@ -3556,6 +5588,11 @@ paths:
       description: Gets populated metrics
       operationId: getMetricAnalytics
       parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
         - name: App
           in: query
           description: Shows the App
@@ -3576,6 +5613,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Reference Id
           in: query
@@ -3641,6 +5681,162 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/ListResponseDashboardGraph'
+  /v1/stack/{stackId}/audit/export:
+    post:
+      tags:
+        - Management
+      description: >-
+        Exports the audit data table for the specified stack and app, filtered
+        by time range and optional matching criteria.
+      operationId: downloadAuditTable
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: App
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: Start
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: End
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: ReferenceId
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: Match
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+  /v1/stack/{stackId}/audit-rules:
+    get:
+      tags:
+        - Management
+      description: Fetches audit rules.
+      operationId: getAuditRules
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: App
+          in: query
+          required: true
+          schema:
+            type: string
+            enum:
+              - NONE
+              - ADC
+              - DNS
+              - RDNS
+              - CDN
+              - DDOS
+              - LLB
+              - SCAN
+              - APM
+              - SLB
+              - WAF
+              - BLK
+              - VPN
+              - SWG
+              - IPAM
+              - CACHE
+              - ACDN
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListResponseHashMapStringObject'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ListResponseHashMapStringObject'
+    post:
+      tags:
+        - Management
+      description: Update audit rule.
+      operationId: updateAuditRules
+      parameters:
+        - name: stackId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: App
+          in: query
+          required: true
+          schema:
+            type: string
+            enum:
+              - NONE
+              - ADC
+              - DNS
+              - RDNS
+              - CDN
+              - DDOS
+              - LLB
+              - SCAN
+              - APM
+              - SLB
+              - WAF
+              - BLK
+              - VPN
+              - SWG
+              - IPAM
+              - CACHE
+              - ACDN
+        - name: Action
+          in: query
+          required: true
+          schema:
+            type: string
+            enum:
+              - ADD
+              - EDIT
+              - RESET
+              - DELETE
+              - RELOAD
+        - name: filter
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SimpleResponse'
   /v1/stack/{stackId}/adc/tools/mf:
     get:
       tags:
@@ -3871,6 +6067,9 @@ paths:
               - WAF
               - BLK
               - VPN
+              - IPAM
+              - CACHE
+              - ACDN
               - SWG
         - name: Stack Id
           in: query
@@ -4045,6 +6244,16 @@ paths:
           required: true
           schema:
             type: string
+        - name: task
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
         '200':
           description: OK
@@ -4126,6 +6335,7 @@ components:
             - IP_FEED
             - RPZ
             - HEALTH_SCRIPT
+            - IP_POOL
         active:
           type: boolean
         name:
@@ -4311,6 +6521,9 @@ components:
             - WAF
             - BLK
             - VPN
+            - IPAM
+            - CACHE
+            - ACDN
             - SWG
     DataResponseHashMapStringCoreRule:
       type: object
@@ -4560,7 +6773,7 @@ components:
           type: boolean
         mfaMode:
           type: string
-        accountLocked:
+        Locked:
           type: boolean
         createdBy:
           type: string
@@ -5586,6 +7799,9 @@ components:
             - WAF
             - BLK
             - VPN
+            - IPAM
+            - CACHE
+            - ACDN
             - SWG
         timestamp:
           type: integer
