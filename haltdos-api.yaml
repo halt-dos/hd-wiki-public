@@ -300,7 +300,6 @@ paths:
     get:
       tags:
         - Management
-      summary: Check status of Lets Encrypt requested certificate
       description: Fetches certificate status using the provided domain and order ID.
       operationId: fetchCertOrderStatus
       parameters:
@@ -5707,7 +5706,6 @@ paths:
     get:
       tags:
         - Management
-      summary: Get audit rules
       description: Fetches audit rules.
       operationId: getAuditRules
       parameters:
@@ -5752,7 +5750,6 @@ paths:
     post:
       tags:
         - Management
-      summary: Update audit rule
       description: Update audit rule.
       operationId: updateAuditRules
       parameters:
