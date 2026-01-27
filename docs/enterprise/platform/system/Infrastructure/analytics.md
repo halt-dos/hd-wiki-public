@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Analytics
@@ -8,7 +8,7 @@ sidebar_position: 3
 
 The Analytics page allows users to monitor the dashboard of all the listeners together or individually.   
 
-![Analytics](/img/platform/v8/docs/Sys_analytcs.png)
+![Analytics](/img/platform/v8/docs/sysAnalytics.png)
 
 #### **Other Features**
 **Auto Refresh**
