@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 8
 ---
 
 # Password Policy
@@ -37,7 +37,7 @@ Specify the default password for system loginmode for new user.
 ```
     Accepted values: String
 
-    Default: Blank 
+    Default: Haltdos#123 
 ```
 
 

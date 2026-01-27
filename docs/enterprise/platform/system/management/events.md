@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Events
@@ -22,20 +22,21 @@ Depending upon the type of event, clicking on any Event shows details of the inc
 
 Further to detailing the incident through Events, users can perform various actions. For example, virtual patching functionality is implemented through actions in Event Details. Virtual Patching is the ability to create custom WAF rules from the result of a security scan.
 
-![stackevents](/img/platform/v8/docs/sysEvents.png)
+![Events](/img/platform/v8/docs/sysMgmtEvents.png)
 
 ### Event Types
 
-| Type         | Description                                           | App  | Email | Actions                                                                   |
-|--------------|-------------------------------------------------------|------|-------|---------------------------------------------------------------------------|
-| All         | Displays all the events for configured Resoruce                  | ALL  | No    | --                                                                        |
-| Alarm        | Displays details of configured alarms triggered       | ALL  | Yes   | --                                                                        |
-| Download     | Displays all the file download events                 | --   | Yes   | --                                                                        |
-| Report       | Displays the report generated to be downloaded        | ALL  | Yes   | --                                                                        |
-| Instance     | Displays details of any instance notification         | --   | No    | --                                                                        |
-| Jobs         | Displays the events for failed jobs                   | ALL  | No    | --                                                                        |
-| Backup       | Displays the events for backup                        | ALL  | No    | --                                                                        |
+Here is the table with the **last column removed** and formatting corrected:
 
+| Type     | Description                                     | App | Email |
+| -------- | ----------------------------------------------- | --- | ----- |
+| All      | Displays all the events for configured resource | ALL | No    |
+| Alarm    | Displays details of configured alarms triggered | ALL | Yes   |
+| Download | Displays all the file download events           | --  | Yes   |
+| Report   | Displays the report generated to be downloaded  | ALL | Yes   |
+| Instance | Displays details of any instance notification   | --  | No    |
+| Jobs     | Displays the events for failed jobs             | ALL | No    |
+| Backup   | Displays the events for backup                  | ALL | No    |
 
 
 **Filter**

@@ -1,20 +1,20 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Administrators
+# Users
 
-Managing Administrators on Haltdos Platform
+Managing Users on Haltdos Platform
 
 ---
 
 Haltdos supports having multiple administrators for managing Haltdos appliances. This section describes how to add / delete and update administrators on Haltdos GUI.
 
-![users](/img/platform/v8/docs/mang_admin.png)
+![users](/img/platform/v8/docs/sysMgmtUsers.png)
 
 **How to Use:**
 
-1. Go to **Management** then **Administrator**.
+1. Go to **Management** then **Users**.
 2. Configure your settings
 3. Click **Save Changes**
 
@@ -23,7 +23,7 @@ Haltdos supports having multiple administrators for managing Haltdos appliances.
 #### **Name**
 
 Enter the name
-
+```
     Accepted Value: String 
 
     Default: Blank
@@ -33,7 +33,7 @@ Enter the name
 #### **Username**
 
 Enter the username
-
+```
     Accepted Value: String 
 
     Default: Blank
@@ -43,19 +43,23 @@ Enter the username
 #### **Email**
 
 Enter the username
-
+```
     Accepted Value: String 
 
     Default: Blank
 ```
 
 
-#### **Password**
+#### **Login Mode**
 
-Enter the password
+Select the Login Mode
+```
+    Accepted Value: SYSTEM / LDAP / RADIUS / TACACS / ISE
 
-    Accepted Value: String 
-
-    Default: Blank
+    Default: SYSTEM
 ```
 
+### Action Bar
+Following operations can be performed-
+1. Name, Email, Login Mode can be changed.
+2. User can be deleted.

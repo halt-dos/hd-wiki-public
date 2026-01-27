@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Audit Logs
@@ -11,11 +11,11 @@ Managing Administrators on Haltdos Platform
 This shows the list of audits along with its timestamp, User, Source, Reference, Activity and Actions.  
 User can export the list of audit trails by clicking the export button
 
-![users](/img/platform/v8/docs/sysAuditLogs.png)
+![Audit Logs](/img/platform/v8/docs/sysMgmtAuditLogs.png)
 
 **How to Use:**
 
-1. Go to **Management** then **Audit Logs**.
+1. Go to **System** > **Management** > **Audit Logs**.
 2. Configure your settings
 3. Click **Save Changes**
 
