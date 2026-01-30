@@ -44,8 +44,8 @@ This argument is optional and only required for user-groups with the reporting f
 #### 4. access
 This mandatory argument specifies the user-access role required for successful authorization. Users can log in with only one user-access role at a time.
 ```
-    Accepted Values: READ / READ_WRITE / ADMIN
-    Example : READ_WRITE 
+    Accepted Values: VISIBLE / READ / READ_WRITE / ADMIN
+    Example : READ
 ```
 
 1. **READ**- Users with this role can only view certain information but cannot execute any commands or make any changes.  
@@ -76,6 +76,7 @@ This field is optional.
     authority: USER
     stacks: ADDFG56SBC
     access: READ_WRITE
+    disable_report: false
 ```
 ##### 3. Below is a sample script to login with **ADMIN** access with enable report.
 ```
