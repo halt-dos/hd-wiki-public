@@ -62,12 +62,12 @@ Used to disable report for user.
 ```
 
 This field is optional.
-##### 1. Below is a sample script to login with **ADMIN** access with enable report.
+##### 1. Below is a sample script to login with **READ** access with enable report.
 ```
     authority: USER
     stacks: SAD56SDBC
     emailId: test@haltdos.com
-    access: ADMIN
+    access: READ
     disable_report: false
 ```
 
@@ -79,7 +79,7 @@ This field is optional.
 ```
 ##### 3. Below is a sample script to login with **ADMIN** access with enable report.
 ```
-    authority: ADMIN
+    authority: SYSTEM
     stacks: WAFYAW24B
     emailId: test@haltdos.com
     access: ADMIN
