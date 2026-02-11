@@ -7,3 +7,4 @@ This section describes the knowledge base of how to use Haltdos WAF Professional
 3. [ How to enable Caching using WAF PE?](kb/kb-7003)
 4. [How to enable Compression using WAF PE?](kb/kb-7004)
 5. [ How to enable the Redirection Rule using WAF PE?](kb/kb-7005)
+6. [ How to use custom SSL certificate with Haltdos GUI / Controller?](kb/kb-7006)
