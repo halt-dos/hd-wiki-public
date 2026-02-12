@@ -6,7 +6,9 @@ sidebar_position: 7
 These are in-built rules of WAF.
 
 ### Overview 
-Signatures contain rules that are evaluated for each request that passes through WAF. The rules offer protection from many different types of attacks for Web Service/API including OWASP top 10 as well as it can help users to specify the behavior for their application. The WAF has multiple types of Rules designed to target specific use cases.
+Signatures contain rules that are evaluated for each request that passes through WAF. The rules offer protection from many different types of attacks for Web Service/API including OWASP top 10, and they can also help users specify the behavior for their application. The WAF has multiple types of rules designed to target specific use cases.
+
+These signatures include OS-specific rule sets (such as UNIX/Linux and Windows) for broader coverage; however, signature functionality is not dependent on the deployed operating system and can be applied consistently across environments.
 
 #### Signature Capabilities  
 
