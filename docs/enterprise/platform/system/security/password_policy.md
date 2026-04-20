@@ -31,16 +31,6 @@ Enable organization specific password policy
 ```
 
 
-##### **Default Password**
-Specify the default password for system loginmode for new user.
-
-```
-    Accepted values: String
-
-    Default: Blank 
-```
-
-
 ##### **Minimum Length**
 Specify the minimum length of password.
 
@@ -91,7 +81,7 @@ Specify if the password must compulsory contain special characters
 ```
 
 
-##### **Contain NUmbers**
+##### **Contain Numbers**
 Specify if the password must compulsory contain numbers	
 
 ```
