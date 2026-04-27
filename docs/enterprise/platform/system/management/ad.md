@@ -14,6 +14,8 @@ When AD authentication is enabled, login requests are validated against the conf
 Before enabling AD, ensure the Haltdos appliance has network reachability to the Active Directory server on the required port (default: 389 for LDAP, 636 for LDAPS).
 :::
 
+![Active Directory](/img/platform/v8/docs/ad.png)
+
 ---
 
 ## How to Use

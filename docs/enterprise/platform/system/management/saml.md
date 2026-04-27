@@ -14,6 +14,8 @@ When SAML is enabled, users are redirected to the configured IdP for authenticat
 Before configuring SAML, you must register Haltdos as a Service Provider (SP) in your Identity Provider. You will need the **SP Public Key** and **SP Private Key** from Haltdos, and you will receive the **IDP EntityId**, **SSO URI**, **SLO URI**, and **IDP Public Key** from your IdP.
 :::
 
+![Active Directory](/img/platform/v8/docs/saml.png)
+
 ---
 
 ## How to Use
