@@ -53,11 +53,11 @@ Default         : SYSTEM
 | Mode | How it works | When to use |
 |---|---|---|
 | **SYSTEM** | Username + password stored locally on the Haltdos appliance | Default for standalone deployments; no external auth server needed |
-| **AD** | User authenticated against Microsoft Active Directory | When your org manages identities through Windows Active Directory |
-| **LDAP** | User authenticated against an LDAP/Active Directory server | When your org uses AD/LDAP for centralized identity management |
-| **RADIUS** | User authenticated against a RADIUS server | Network-centric orgs; supports 2FA via RADIUS |
-| **TACACS** | User authenticated via TACACS+ protocol | Common in network device management environments |
-| **SAML** | User authenticated via SAML 2.0 Single Sign-On | When your org uses an Identity Provider (Okta, Azure AD, ADFS, etc.) for SSO |
+| [**AD**](../../platform/system/management/ad) | User authenticated against Microsoft Active Directory | When your org manages identities through Windows Active Directory |
+| [**LDAP**](../../platform/system/management/ldap) | User authenticated against an LDAP/Active Directory server | When your org uses AD/LDAP for centralized identity management |
+| [**RADIUS**](../../platform/system/management/radius) | User authenticated against a RADIUS server | Network-centric orgs; supports 2FA via RADIUS |
+| [**TACACS**](../../platform/system/management/tacacs) | User authenticated via TACACS+ protocol | Common in network device management environments |
+| [**SAML**](../../platform/system/management/saml) | User authenticated via SAML 2.0 Single Sign-On | When your org uses an Identity Provider (Okta, Azure AD, ADFS, etc.) for SSO |
 
 :::info
 For LDAP, RADIUS, and TACACS modes to work, the respective server must first be configured under **System > Management > AD / LDAP / RADIUS / TACACS / SAML**. Without that configuration, login will fail for those modes.
