@@ -166,6 +166,49 @@ In the SNMP user section the version can be assigned with the respective users t
 - **SNMPv3**: Introduces strong security features, including authentication and encryption.
 
 
+#### SNMP Traps
+
+SNMP traps send automatic alerts to the NMS when events occur on the device.
+
+##### **Trap Type**:
+
+Users can select the type of event for which the trap should be generated.
+
+```
+    Accepted values:
+
+    Link Detection
+    CPU Usage
+    Low Memory
+    High Memory
+    Disk Usage
+    High Temperature
+    Low Temperature
+```
+
+##### **Trap Value**:
+
+Defines the threshold value for the selected trap type.
+
+```
+    Accepted values: Integer
+```
+
+##### **Trap Message**:
+
+Users can define a custom message that will be sent when the trap is triggered.
+
+```
+    Accepted values: String
+
+    Default: Blank
+```
+
+
+
+
+
+
 
 
 
