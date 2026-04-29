@@ -37,7 +37,7 @@ Accepted values : Enable / Disable
 Default         : Disable
 ```
 
-When **disabled**, SAML login is not available and users must authenticate using other configured methods (SYSTEM, LDAP, RADIUS, or TACACS).
+When **disabled**, SAML login is not available and users must authenticate using other configured methods (SYSTEM, [**LDAP**](../../system/management/ldap), [**RADIUS**](../../system/management/radius), or [**TACACS**](../../system/management/tacacs)).
 
 ---
 

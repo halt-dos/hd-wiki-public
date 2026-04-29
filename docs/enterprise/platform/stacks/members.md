@@ -52,7 +52,7 @@ Default         : SYSTEM
 
 | Mode | How it works | When to use |
 |---|---|---|
-| **SYSTEM** | Username + password stored locally on the Haltdos appliance | Default for standalone deployments; no external auth server needed |
+| [**SYSTEM**](../../platform/system/) | Username + password stored locally on the Haltdos appliance | Default for standalone deployments; no external auth server needed |
 | [**AD**](../../platform/system/management/ad) | User authenticated against Microsoft Active Directory | When your org manages identities through Windows Active Directory |
 | [**LDAP**](../../platform/system/management/ldap) | User authenticated against an LDAP/Active Directory server | When your org uses AD/LDAP for centralized identity management |
 | [**RADIUS**](../../platform/system/management/radius) | User authenticated against a RADIUS server | Network-centric orgs; supports 2FA via RADIUS |
