@@ -6,20 +6,113 @@ sidebar_position: 4
 
 ---
 
-The TACACS+ script is used for authorization purposes and should be configured on an AAA server. This process determines what actions or roles a user is allowed to perform on a Haltdos solution device after they have been authenticated by the AAA server. Typically, this is done by sending an authorization request to a TACACS+ server, which then decides if the user has the necessary permissions to log in to the Haltdos GUI console.
+TACACS+ (Terminal Access Controller Access-Control System Plus) is a protocol used to control who can log into the Haltdos Management Console and what they are allowed to do after logging in. It separates authentication (who are you?), authorization (what can you do?), and accounting (what did you do?) — commonly referred to as **AAA**.
+
+When TACACS+ is enabled, Haltdos sends the login credentials to an external TACACS+ server. The server authenticates the user and returns authorization attributes that determine the user's access level inside Haltdos.
 
 In this process, an authentication request will be generated from the Haltdos solution to the AAA server, which will then authenticate the request and respond back to the Haltdos solution device. After authentication, the Haltdos device will generate an authorization request to the AAA server. In response, the AAA server should return the necessary attributes to complete the authorization. Based on the values received from the AAA server, the Haltdos device will approve login access.
 
 There are various arguments that need to be configured on the authorization server (AAA server), as mentioned below.
 
 
-| Authorization Attribute      | Mandatory |
-| ----------- | ----------- |
-| authority      | Yes       |
-| stacks | yes    |
-| emailId   | No        |
-| access   | Yes     |
-| disable_report | No    |
+| Authorization Attribute | Mandatory |
+| ----------------------- | --------- |
+| authority               | Yes       |
+| stacks                  | Yes       |
+| emailId                 | No        |
+| access                  | Yes       |
+| disable\_report         | No        |
+
+---
+
+## How to Use
+
+1. Go to **Management** > **TACACS**
+2. Configure the TACACS server settings (see Field Descriptions below)
+3. Click **Save Changes**
+4. Go to **Management** > **Administrators** and add a new administrator with **Login Mode** set to `TACACS`
+5. Log out and log back in using the TACACS username and password
+
+---
+
+## Field Descriptions
+
+![TACACS Settings Page](/img/platform/v8/docs/tacacs.png)
+
+### Enabled
+
+Enable or disable login through the TACACS+ server. When enabled, users with Login Mode set to TACACS in the Administrators section will be authenticated via the TACACS+ server.
+
+```
+Accepted Values: Enable / Disable
+Default: Disable
+```
+
+### Endpoint
+
+The IP address or hostname of your TACACS+ server.
+
+```
+Accepted Values: IP address or hostname
+Example: 172.16.0.124
+Default: Blank
+```
+
+### Port
+
+The port on which the TACACS+ server is listening. The standard port for TACACS+ is **49**.
+
+```
+Accepted Values: Integer
+Example: 49
+Default: Blank
+```
+
+:::note
+TACACS+ uses port **49** by default. This is different from RADIUS which uses port 1812. Ensure the TACACS+ server is configured to listen on the same port entered here.
+:::
+
+### Secret Key
+
+A shared secret key configured on both the Haltdos device and the TACACS+ server. This key is used to encrypt communication between them. Both sides must use the **exact same** secret key, or authentication will fail.
+
+```
+Accepted Values: String
+Default: Blank
+```
+
+:::caution
+The Secret Key must match exactly between Haltdos and the TACACS+ server configuration. A mismatch will cause all TACACS+ logins to fail with an authentication error.
+:::
+
+### Authorization Protocol
+
+The protocol used to send the user's password to the TACACS+ server during authentication.
+
+```
+Accepted Values: CHAP / PAP
+Default: Blank
+```
+
+- **PAP (Password Authentication Protocol)** — Sends the password in plain text. Simpler to configure but less secure.
+- **CHAP (Challenge Handshake Authentication Protocol)** — Uses a challenge-response mechanism. The password is never sent directly. More secure than PAP.
+
+:::note
+The protocol selected here must match the password type defined for the user in the TACACS+ server configuration file. If the user is defined with `chap = cleartext "password"` on the server, then CHAP must be selected in Haltdos.
+:::
+
+### Timeout
+
+The time (in milliseconds) Haltdos will wait for a response from the TACACS+ server before considering the login attempt failed.
+
+```
+Accepted Values: Integer
+Example: 5000 (5 seconds)
+Default: Blank
+Metric: Milliseconds
+```
+
+---
 
 ### Description
 
@@ -86,3 +179,13 @@ This field is optional.
     access: ADMIN
     disable_report: false
 ```
+
+## Connection to Other Features
+
+| Feature | Relationship |
+| ------- | ------------ |
+| **Management > Administrators** | Every TACACS+ user must also be added here with Login Mode set to TACACS. The username must match exactly. |
+| **Stack License ID** | The `stacks` attribute in the TACACS+ server must contain your Haltdos stack license ID. |
+| **Email Integration** | If `emailId` and `disable_report: false` are configured, the Email integration must be set up under System > Integrations > Email for report delivery to work. |
+
+---
