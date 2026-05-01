@@ -35,25 +35,37 @@ Configure machine label for identification
 
 ##### Management IP
 
-Configure instance management IP address
+The IP address of the instance used to access the Haltdos Management Console. This must be an IP address already assigned to one of the instance's network interfaces.
 
 ```
-    Accepted values: IP
+    Accepted values: Valid IPv4 address (format: A.B.C.D)
 
     Default: Blank
 ```
 
+**Example:** `192.168.0.100`
+
+:::caution
+Changing the Management IP will immediately change the address used to access the console. If you enter an incorrect or unreachable IP, you will lose access to the Management Console. Verify the IP is reachable before saving.
+:::
+
+---
 
 **Management Port**
 
-Configure instance management port
+The TCP port on which the Haltdos Management Console listens for browser-based access.
 
 ```
-    Accepted values: Integer
+    Accepted values: Integer (valid port range: 1–65535)
 
     Default: 9000
 ```
 
+**Example:** `9000`
+
+:::caution
+Changing the Management Port will immediately change the URL used to access the console. Ensure the new port is not blocked by a firewall and is not already in use by another service on the instance.
+:::
 
 **SSL Engine**
 
@@ -65,6 +77,16 @@ Specify the engine to be used for SSL Offloading. Requires reboot
     Default: Software Engine
 ```
 
+| Option | When to use |
+|---|---|
+| **Software Engine** | General-purpose deployments; SSL processing handled by the CPU |
+| **Hardware Engine** | Instances with a dedicated SSL hardware accelerator (HSM or crypto card); provides higher SSL throughput and lower CPU load |
+
+:::note
+Select **Hardware Engine** only if the physical appliance has a supported SSL hardware accelerator installed. Using this option on an appliance without the hardware will cause SSL offloading to fail after reboot.
+:::
+
+---
 
 **Operational Mode**
 
@@ -76,6 +98,13 @@ Choose the instance mode of operation. Requires reboot
     Default: Inline Mode 
 ```
 
+| Mode | How traffic flows | Typical use case |
+|---|---|---|
+| **Inline Mode** | Traffic physically passes through the Haltdos instance. The instance can inspect, block, and modify traffic in real time | Production deployments where active protection and load balancing is required |
+| **Offline Mode** | Traffic does not pass through the instance. The instance monitors a copy of traffic (e.g., via SPAN/TAP port) and can only detect, not block | Passive monitoring, traffic analysis, or initial evaluation without impacting live traffic |
+
+---
+
 **CPU Affinity**
 
 Configure CPU affinity for optimization. Requires reboot
@@ -86,6 +115,11 @@ Configure CPU affinity for optimization. Requires reboot
     Default: Blank
 ```
 
+:::note
+Leaving this blank lets the OS automatically manage CPU scheduling, which is suitable for most deployments. Configure CPU Affinity only when you need deterministic, high-throughput performance tuning on bare-metal appliances with many cores.
+:::
+
+---
 
 **Huge Pages**
 
@@ -100,12 +134,12 @@ Configure Huge Pages for optimization. Requires reboot
 
 **Public Certificate File**
 
-Upload public file
+Upload the public SSL/TLS certificate for the Haltdos Management Console's HTTPS interface. This is the certificate that browsers will see when accessing the console.
 
 ```
-    Accepted values: Select File to upload
+    Accepted values: File upload — PEM format (.pem or .crt)
 
-    Default: Blank
+    Default: Blank (uses built-in self-signed certificate)
 ```
 
 
@@ -114,7 +148,7 @@ Upload public file
 Upload intermediate file
 
 ```
-    Accepted values: Select File to upload
+    Accepted values: File upload — PEM format (.pem or .crt)
 
     Default: Blank
 ```
@@ -125,7 +159,7 @@ Upload intermediate file
 Upload CA bundle
 
 ```
-    Accepted values: Select File to upload
+    Accepted values: File upload — PEM format (.pem or .crt)
 
     Default: Blank
 ```
@@ -133,10 +167,10 @@ Upload CA bundle
 
 **Private Key File**
 
-Upload private file
+Upload the private key corresponding to the uploaded Public Certificate File. The private key is required for the Management Console to establish SSL/TLS sessions.
 
 ```
-    Accepted values: Select File to upload
+    Accepted values: File upload — PEM format (.pem or .key)
 
     Default: Blank
 ```

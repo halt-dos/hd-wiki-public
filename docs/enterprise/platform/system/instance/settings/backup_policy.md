@@ -113,10 +113,6 @@ Default         : Blank
 
 **Example:** A strong secret key of sufficient length, e.g. `MyS3cur3B@ckupK3y!2024`
 
-:::danger
-Store this key in a secure location (e.g., a password manager or secrets vault). If the key is lost, encrypted backup files cannot be decrypted and the data will be unrecoverable.
-:::
-
 ---
 
 
@@ -305,11 +301,6 @@ The AWS Secret Access Key corresponding to the S3 Access Key. This is used to au
 Accepted values : String — alphanumeric and special characters (typically 40 characters for AWS)
 Default         : Blank
 ```
-
-:::danger
-Never share or expose the S3 Secret Key. Store it securely. If compromised, rotate the key immediately in AWS IAM and update this field.
-:::
-
 ---
 
 **S3 URL**
