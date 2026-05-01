@@ -7,7 +7,7 @@ sidebar_position: 1
 ---
 It shows the health status of the Instances, user can select whether to enable the health check or not.
 
-![Monitor](/img/platform/v8/docs/sysoperen.png)  
+![Operational](/img/platform/v8/docs/sysoperen.png)  
 
 ---
 
