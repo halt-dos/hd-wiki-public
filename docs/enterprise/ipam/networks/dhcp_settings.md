@@ -12,6 +12,8 @@ The **DHCP Settings** page allows administrators to enable and configure a DHCP 
 
 ### How to Use:
 
+![DHCP Settings](/img/ipam/dhcp_settings.png)
+
 1. Go to **Stack** > **IPAM** > **Networks** > select a network > **DHCP Settings**.
 2. Toggle **Enable DHCP** to activate the DHCP server.
 3. Fill in the DHCP parameters.

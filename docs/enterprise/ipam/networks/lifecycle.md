@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 8
 ---
 
 # Lifecycle
@@ -13,6 +13,8 @@ The **Lifecycle** page provides a full audit trail of IP address assignments wit
 This page is useful for compliance, troubleshooting, and understanding historical IP utilization patterns.
 
 ### How to Use:
+
+![Lifecycle](/img/ipam/lifecycle.png)
 
 1. Go to **Stack** > **IPAM** > **Networks** > select a network > **Lifecycle**.
 2. Use the filters to narrow results by IP address, keyword, or date range.

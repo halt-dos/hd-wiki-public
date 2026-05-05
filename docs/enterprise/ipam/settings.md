@@ -12,6 +12,8 @@ The **Settings** page contains global configuration options that apply to the DH
 
 ### How to Use:
 
+![Settings](/img/ipam/settings.png)
+
 1. Go to **Stack** > **IPAM** > **Settings**.
 2. Update the required fields.
 3. Click **Save Changes**.
@@ -20,22 +22,22 @@ The **Settings** page contains global configuration options that apply to the DH
 
 ##### **Default Lease Time**
 
-The default duration (in seconds) for which an IP address is leased to a device when the client does not request a specific lease duration.
+The default duration (in seconds) for which an IP address is leased to a device when the client does not request a specific lease duration. If left blank, the DHCP server uses its built-in default.
 
 ```
 Accepted values: Integer (seconds)
 
-Default: Blank
+Example: 86400  (24 hours)
 ```
 
 ##### **Max Lease Time**
 
-The maximum duration (in seconds) for which an IP address can be leased to a device, regardless of what the client requests.
+The maximum duration (in seconds) for which an IP address can be leased to a device, regardless of what the client requests. If left blank, no upper bound is enforced beyond the DHCP server's built-in limit.
 
 ```
 Accepted values: Integer (seconds)
 
-Default: Blank
+Example: 604800  (7 days)
 ```
 
 ##### **Match By Client ID**

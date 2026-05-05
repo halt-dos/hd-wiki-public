@@ -2,13 +2,15 @@
 sidebar_position: 3
 ---
 
-# IP Requests
+# IPAM Manager
 
 Track and manage IP address allocation requests submitted via IPAM Manager.
 
 ---
 
 The **IP Requests** page provides a centralized view of all IP address requests submitted to the IPAM system. Requests are raised programmatically by the **IPAM Manager (ipammgr)** agent and reviewed by administrators who can approve or reject them from this page.
+
+![IPAM Manager](/img/ipam/ipam_mgr.png)
 
 ---
 
@@ -40,6 +42,8 @@ IPAM Manager sends IP requests to the following internal endpoint:
 POST /v1/agent/ipam/request
 ```
 
+![Submit IP Request](/img/ipam/submit_ip_request.png)
+
 ### Parameters
 
 | Parameter | Required | Description |
@@ -61,10 +65,9 @@ POST /v1/agent/ipam/request
 
 ```http
 POST /v1/agent/ipam/request
-  ip=192.168.1.50
-  email=user@example.com
-  description=Required for new server deployment
-  region=datacenter-1
+Content-Type: application/x-www-form-urlencoded
+
+ip=192.168.1.50&email=user@example.com&description=Required+for+new+server+deployment&region=datacenter-1
 ```
 
 ### Response
@@ -94,6 +97,8 @@ If a pending request already exists for this IP:
 1. Go to **Stack** > **IPAM** > **IP Requests**.
 2. Review the list of pending requests.
 3. Click the **approve** (✓) or **reject** (✗) action icon for each request.
+
+![IP Requests](/img/ipam/ip_requests.png)
 
 ### Request Table Fields
 

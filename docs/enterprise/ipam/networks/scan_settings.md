@@ -12,6 +12,8 @@ The **Scan Settings** page allows administrators to schedule automated network s
 
 ### How to Use:
 
+![SCAN Settings](/img/ipam/scan_settings.png)
+
 1. Go to **Stack** > **IPAM** > **Networks** > select a network > **Scan Settings**.
 2. Select the scan frequency and specify the scan time.
 3. Choose the appropriate timezone.

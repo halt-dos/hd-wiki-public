@@ -14,10 +14,12 @@ This is useful for infrastructure devices such as servers, printers, cameras, an
 
 ### How to Use:
 
+![MAC Binding](/img/ipam/mac_binding.png)
+
 1. Go to **Stack** > **IPAM** > **Networks** > select a network > **MAC Binding**.
-2. Click **Add Binding**.
+2. Click **Add Binding** to open the binding form.
 3. Enter the MAC address, desired IP address, and an optional description.
-4. Click **Add Binding** to save.
+4. Click **Save** to create the binding.
 
 ### Description:
 

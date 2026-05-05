@@ -12,6 +12,8 @@ The **Networks** page lists all configured IP networks within the IPAM applicati
 
 ### How to Use:
 
+![Networks](/img/ipam/networks.png)
+
 1. Go to **Stack** > **IPAM** > **Networks**.
 2. Click **Add Network** to define a new network.
 3. Fill in the required fields and click **Save**.
@@ -68,3 +70,9 @@ Accepted values: Integer
 
 Default: 0
 ```
+
+### Add Network:
+
+Use this form to define a new network. Fill in the fields described above and click **Save** to create the network entry.
+
+![Add Network](/img/ipam/add_network.png)

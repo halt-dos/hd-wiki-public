@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 5
 ---
 
 # SNMP Settings
@@ -11,6 +11,8 @@ Configure SNMP-based discovery for a network.
 The **SNMP Settings** page configures Simple Network Management Protocol (SNMP) discovery for the selected network. When enabled, IPAM uses SNMP to query network devices and enrich discovery results with detailed device information such as device type, vendor, and interface data.
 
 ### How to Use:
+
+![SNMP Settings](/img/ipam/snmp_settings.png)
 
 1. Go to **Stack** > **IPAM** > **Networks** > select a network > **SNMP Settings**.
 2. Toggle **Enable SNMP Discovery**.
@@ -118,6 +120,8 @@ Accepted values: AES / DES
 
 Default: AES
 ```
+
+> **Note:** DES is cryptographically weak and considered deprecated. Use AES unless the target device does not support it.
 
 ##### **Privacy Password**
 

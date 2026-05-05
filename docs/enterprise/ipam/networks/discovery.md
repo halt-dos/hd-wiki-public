@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 # Discovery
@@ -11,6 +11,8 @@ Scan and view all devices discovered within a network.
 The **Discovery** page provides a real-time view of all devices detected within the selected network. Administrators can trigger a manual scan, filter results by status, type, category, and vendor, and export the discovered device list.
 
 ### How to Use:
+
+![discovery](/img/ipam/discovery.png)
 
 1. Go to **Stack** > **IPAM** > **Networks** > select a network > **Discovery**.
 2. Click **Scan** to run a network scan immediately.
@@ -80,3 +82,10 @@ Indicates whether the device is currently reachable on the network.
 ```
 Accepted values: Up / Down
 ```
+
+---
+
+### See Also
+
+- To edit network properties (name, IP/CIDR, VLAN), see [Networks](./networks.md).
+- To configure the automated scan schedule, see [Scan Settings](./scan_settings.md).
