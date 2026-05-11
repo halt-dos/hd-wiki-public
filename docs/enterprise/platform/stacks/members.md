@@ -164,25 +164,6 @@ Enabling notifications here is necessary but not sufficient. SMTP must also be c
 
 ---
 
-## Permission Roles Explained
-
-### Owner
-- Full control over the Stack: add/edit/delete all configuration, manage all members
-- Can invite and remove other members including Admins
-- **Warning:** If the last Owner removes themselves from the Stack, the Stack will have no Owner. Recovery requires contacting Haltdos Support.
-
-### Member
-- Can add, edit, and delete configurations on the Stack, Apps, and Listeners they have access to
-- Can remove their own membership
-- Cannot manage other members' permissions
-
-### Observer
-- View-only access to the Stack, Apps, and Listeners
-- Cannot make any configuration changes
-- Can remove their own membership
-
----
-
 ## Multi-Stack Access
 
 A single user account can be granted access to multiple Stacks. In a clustered setup, if a user with the same **username and email** is added to a second Stack (even with different permission levels), they automatically gain access to that Stack using their existing credentials.

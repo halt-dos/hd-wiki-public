@@ -39,9 +39,12 @@ Enable or disable the `conntrackd` service responsible for connection synchroniz
     Default: Disabled
 ```
 
+:::note
+Enable Sync on **both** the primary and secondary nodes. Enabling it only on one node will result in one-way synchronization which does not provide full failover protection.
+:::
+
 ##### **Interface Name**
-Specify the interface on which the `conntrackd` service should run.  
-For example: `ens33`.
+The name of the network interface on which the `conntrackd` service communicates between nodes. This should be a dedicated sync/HA interface, not the data interface carrying production traffic.
 
 ```
     Accepted values: String (Interface name)
@@ -49,14 +52,23 @@ For example: `ens33`.
     Default: Blank
 ```
 
+**Examples:** `ens33`, `ens192`, `bond0`, `eth1`
+
+---
+
 ##### **Current IP**
-Configure the current node’s IP address with subnet mask.
+
+The IP address of the current node on the sync interface, with subnet mask in CIDR notation. This is the IP that `conntrackd` binds to on this node.
 
 ```
     Accepted values: IP with CIDR (Ex. 10.0.0.101/24)
 
     Default: Blank
 ```
+
+**Example:** `10.0.0.101/24`
+
+---
 
 ##### **Peer IP**
 Configure the peer node’s IP address with subnet mask. This IP will be used for synchronizing connection information.
@@ -67,29 +79,75 @@ Configure the peer node’s IP address with subnet mask. This IP will be used fo
     Default: Blank
 ```
 
-##### **Send Buffer Size**
-Specify the buffer size allocated for sending synchronization messages.
+**Example:** `10.0.0.102/24`
+
+:::note
+**Current IP** and **Peer IP** must be on the same subnet and must be reachable from each other on the configured **Interface Name**. Verify connectivity between the two nodes before enabling sync.
+:::
+
+---
+
+**Port**
+
+The UDP port on which `conntrackd` listens and sends connection synchronization messages between nodes.
 
 ```
-    Accepted values: Bytes (Ex. 1249280)
-    
-    Default: 1249280
+Accepted values : Integer (valid port range: 1–65535)
+Default         : 3780
 ```
+
+**Example:** `3780`
+
+:::note
+Port `3780` is the default `conntrackd` port. If this port is already in use or blocked by a firewall between nodes, change it to an available port and ensure the same port is configured on both nodes.
+:::
+
+---
+
+##### **Send Buffer Size**
+
+The size of the kernel buffer allocated for **sending** synchronization messages, in bytes. Larger buffer sizes reduce the chance of message drops under high connection rates.
+
+```
+Accepted values : Integer (in bytes)
+Default         : 65536
+```
+
+**Example:** `65536` (64 KB — suitable for most deployments)
+
+:::note
+Increase the Send Buffer Size if you observe connection sync drops during high-traffic periods. Values like `131072` (128 KB) or `262144` (256 KB) can be used for high-throughput environments.
+:::
+
+---
 
 ##### **Receive Buffer Size**
-Specify the buffer size allocated for receiving synchronization messages.
+
+The size of the kernel buffer allocated for **receiving** synchronization messages, in bytes.
 
 ```
-    Accepted values: Bytes (Ex. 1249280)
-
-    Default: 1249280
+Accepted values : Integer (in bytes)
+Default         : 65536
 ```
+
+**Example:** `65536` (64 KB — suitable for most deployments)
+
+:::note
+Send Buffer Size and Receive Buffer Size should generally be set to the same value on both nodes to ensure symmetric communication.
+:::
+
+---
 
 ##### **Disable External Cache**
-Enable or disable the external cache feature of `conntrackd`.
+
+When enabled, `conntrackd` operates in **no-external-cache** mode, writing connection state updates directly to the kernel conntrack table without buffering them in an in-memory cache first. This reduces memory usage but may increase CPU load.
 
 ```
-    Accepted values: Enable / Disable
-
-    Default: Enable
+Accepted values : Enable / Disable
+Default         : Enable
 ```
+
+| Setting | Behaviour |
+|---|---|
+| **Enable** (default) | External cache disabled — updates written directly to kernel conntrack table |
+| **Disable** | External cache enabled — updates buffered in memory before writing to kernel |
