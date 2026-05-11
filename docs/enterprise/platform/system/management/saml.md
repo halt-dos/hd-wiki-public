@@ -169,11 +169,6 @@ Default         : Blank
 <base64-encoded private key content>
 -----END RSA PRIVATE KEY-----
 ```
-
-:::danger
-Keep the SP Private Key strictly confidential. Do not share it with anyone, including your IdP. Only the SP Public Key (certificate) is shared with the IdP.
-:::
-
 ---
 
 ## How SAML Authentication Works
