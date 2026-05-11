@@ -22,21 +22,6 @@ It shows the health status of the Instances, user can select whether to enable t
 ### Description
 
 **Hostname**
-<<<<<<< HEAD
-=======
-
-Configure machine label for identification
-
-```
-    Accepted values: String
-
-    Default: Blank  
-
-    Example: haltdos-miti1.local or haltdos-mgmt.test
-```
-
-##### Management IP
->>>>>>> origin/main
 
 Configure machine label for identification
 
