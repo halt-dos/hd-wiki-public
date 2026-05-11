@@ -113,6 +113,13 @@ Default         : Blank
 
 **Example:** A strong secret key of sufficient length, e.g. `MyS3cur3B@ckupK3y!2024`
 
+<<<<<<< HEAD
+=======
+:::danger
+Store this key in a secure location (e.g., a password manager or secrets vault). If the key is lost, encrypted backup files cannot be decrypted and the data will be unrecoverable.
+:::
+
+>>>>>>> origin/main
 ---
 
 
@@ -300,6 +307,7 @@ The AWS Secret Access Key corresponding to the S3 Access Key. This is used to au
 ```
 Accepted values : String — alphanumeric and special characters (typically 40 characters for AWS)
 Default         : Blank
+<<<<<<< HEAD
 ```
 ---
 
@@ -314,6 +322,27 @@ Accepted values : String — valid HTTPS URL
 Default         : Blank (uses default AWS S3 endpoint)
 ```
 
+=======
+```
+
+:::danger
+Never share or expose the S3 Secret Key. Store it securely. If compromised, rotate the key immediately in AWS IAM and update this field.
+:::
+
+---
+
+**S3 URL**
+
+*(Visible only when S3 Backup Enabled = ON)*
+
+The endpoint URL of the S3 service. For standard AWS S3, this can be left as the default AWS endpoint. For S3-compatible storage providers (MinIO, Wasabi, etc.), enter the provider's specific endpoint URL.
+
+```
+Accepted values : String — valid HTTPS URL
+Default         : Blank (uses default AWS S3 endpoint)
+```
+
+>>>>>>> origin/main
 **Examples:**
 - AWS S3: `https://s3.amazonaws.com`
 - MinIO (self-hosted): `https://minio.company.com`
