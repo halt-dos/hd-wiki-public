@@ -362,6 +362,16 @@ This option specify aliases means familiar name for the listener.
     Default: Blank  
 ```
      
+##### **Domain / Virtual IPs**
+
+This field specifies the fully qualified name of the website for protection. Ensure to keep it empty while adding the root domain. Listener with a specific domain name can be respectively configured for protection.
+
+```
+    Accepted values: String
+
+    Default: Blank  
+```
+
 ##### **Add Port**
 This option helps you to add HTTP/S ports for Advance Settings. Here you can be unique port either HTTP or HTTPS enabled configuration without changing backend server port.
 
