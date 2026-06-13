@@ -117,6 +117,8 @@ This drop-down is used to clone an existing profile with the same configuration 
 
 
 :::note Note
-User can clone existing profile with the same configuration to a new profile on the new user-specified URI.
+* User can clone existing profile with the same configuration to a new profile on the new user-specified URI.
 Following configurations are present under Security Profile.
+
+* Number of Security Profile configurations depend on the license. Please ensure your license covers the required features.
 :::
