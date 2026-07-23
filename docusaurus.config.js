@@ -7,7 +7,11 @@ const config = {
   title: 'Haltdos Docs',
   tagline: 'User Guide',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
+  },
   favicon: 'img/logo/icon_light.ico',
   url: 'https://docs.haltdos.com',
   baseUrl: '/',

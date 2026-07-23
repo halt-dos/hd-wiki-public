@@ -18,7 +18,7 @@ Network Rules are user-configured rules performed on network interfaces like IP,
 
 4. Save the file.
 
-![network_rukes](\img\ddos\v6\docs\ddos19.png)
+![network_rukes](/img/ddos/v6/docs/ddos19.png)
 
 | Settings    | Accepted Values  | Default |
 |-------------|------------------|---------|

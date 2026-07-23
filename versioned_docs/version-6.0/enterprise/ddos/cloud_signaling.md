@@ -8,7 +8,7 @@ sidebar_position: 5
 
 A Faster, Automated Approach to Comprehensive DDoS Mitigation Enterprises need comprehensive, integrated protection from the data center edge to the service provider cloud. For example, when data center operators discover they are under a service-disrupting DDoS attack, they should be able to quickly mitigate the attack in the cloud by triggering a signal to upstream infrastructure of their provider’s network. 
 
-![signaling_settings](\img\ddos\v6\docs\ddos24.png)
+![signaling_settings](/img/ddos/v6/docs/ddos24.png)
 
 ### **How to Use:**
 

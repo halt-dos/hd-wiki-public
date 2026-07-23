@@ -8,7 +8,7 @@ sidebar_position: 4
 
 In addition to DDoS mitigation, the Offload mechanism can be used for features like SSL offloading, WAF, DNS Server Protection, just add the TCP/UDP stream specifying the server IP, Source port and Destination port.
 
-![offload_stream](\img\ddos\v6\docs\ddos23.png)
+![offload_stream](/img/ddos/v6/docs/ddos23.png)
 
 ### **How to Use:**
 

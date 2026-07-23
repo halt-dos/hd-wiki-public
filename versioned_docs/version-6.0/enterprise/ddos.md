@@ -13,7 +13,7 @@ DDoS is a type of attack on a network that is designed to bringing the network/s
 
 From a high level, a DDoS attack is like an unexpected traffic jam clogging up the highway, preventing regular traffic from arriving at its destination.
 
-![example_of_ddos_attack](\img\ddos\v6\docs\ddos1.png)
+![example_of_ddos_attack](/img/ddos/v6/docs/ddos1.png)
 
 ### **Anti DDOS Benefits:**
 

@@ -12,9 +12,9 @@ In today’s networks, cyber-attacks cause damage or theft and disrupt services 
 
 Haltdos supports pattern scoring on the behalf of the behavior of the packet.
 
-![](\img\ddos\v6\docs\ddos27.png)
+![](/img/ddos/v6/docs/ddos27.png)
 
-![](\img\ddos\v6\docs\ddos28.png)
+![](/img/ddos/v6/docs/ddos28.png)
 
 ### **How to Use:**
 
@@ -24,7 +24,7 @@ Haltdos supports pattern scoring on the behalf of the behavior of the packet.
 
 3. Click on Save Changes.
 
-![](\img\ddos\v6\docs\ddos29.png)
+![](/img/ddos/v6/docs/ddos29.png)
 
 | Parameter                        | Accepted Values   | Description                                    |
 |----------------------------------|-------------------|------------------------------------------------|
@@ -60,4 +60,4 @@ Haltdos supports pattern scoring on the behalf of the behavior of the packet.
 | DNS RARE QUERY TYPE              | LOW, MEDIUM, HIGH | Specify suspicion score as LOW, MEDIUM or HIGH |
 
 
-![](\img\ddos\v6\docs\ddos30.png)
+![](/img/ddos/v6/docs/ddos30.png)

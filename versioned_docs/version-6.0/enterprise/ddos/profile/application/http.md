@@ -11,7 +11,7 @@ It helps in stopping different kinds of HTTP flood attacks.
 
 The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web and is used to load web pages using hypertext links. HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a client machine making a request to a server, which then sends a response message.
 
-![http_settings](\img\ddos\v6\docs\ddos14.png)
+![http_settings](/img/ddos/v6/docs/ddos14.png)
 
 ### **How to go to HTTP:**
 
@@ -40,7 +40,7 @@ The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web a
 | URL       | String/Regex     | --      |
 | Threshold | Integer          | 0       |
 
-![url_threshold](\img\ddos\v6\docs\ddos15.png)
+![url_threshold](/img/ddos/v6/docs/ddos15.png)
 
 ### **Description:**
 
