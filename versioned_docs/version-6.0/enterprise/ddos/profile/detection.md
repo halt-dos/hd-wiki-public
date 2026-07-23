@@ -10,11 +10,11 @@ DDoS Alaram
 
 Haltdos Device supports flood detection in which is default mechanism for alarm creation.
 
-![ddos_detection_alaram_type](\img\ddos\v6\docs\ddos5.png)
+![ddos_detection_alaram_type](/img/ddos/v6/docs/ddos5.png)
 
-![ddos_detection_alaram_type](\img\ddos\v6\docs\ddos6.png)
+![ddos_detection_alaram_type](/img/ddos/v6/docs/ddos6.png)
 
-![ddos_detection_alaram_type](\img\ddos\v6\docs\ddos7.png)
+![ddos_detection_alaram_type](/img/ddos/v6/docs/ddos7.png)
 
 | Alarms Types                         |
 |--------------------------------------|

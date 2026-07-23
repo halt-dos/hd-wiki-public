@@ -10,7 +10,7 @@ For High Availability
 
 DDOS Protection support high availability, for two compatible DDoS Protector devices to operate in Active – Active, Active – Passive, Cluster mode.
 
-![ha_settings](\img\ddos\v6\docs\ddos31.png)
+![ha_settings](/img/ddos/v6/docs/ddos31.png)
 
 ### **How To Use:**
 
@@ -20,7 +20,7 @@ DDOS Protection support high availability, for two compatible DDoS Protector dev
 
 3. Click on Save Settings
 
-![ha_settings](\img\ddos\v6\docs\ddos32.png)
+![ha_settings](/img/ddos/v6/docs/ddos32.png)
 
 | Settings                    | Accepted Values | Defaults |
 |-----------------------------|-----------------|----------|

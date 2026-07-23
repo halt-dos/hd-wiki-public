@@ -6,9 +6,9 @@ Configure profile level configurations
 
 DDos Profile helps to differentiate the network by dividing the network into different segments based on IP address. This division helps you configure each segment as per your requirement and monitor the stats on particular network segment. By default, Root profile is created.
 
-![network_profile](\img\ddos\v6\docs\ddos2.png)
+![network_profile](/img/ddos/v6/docs/ddos2.png)
 
-![add_profile](\img\ddos\v6\docs\ddos3.png)
+![add_profile](/img/ddos/v6/docs/ddos3.png)
 
 ### **To configure the profile settings:**
 
