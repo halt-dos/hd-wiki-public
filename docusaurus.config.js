@@ -50,17 +50,18 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
+              label: 'v9',
+            },
+            '8.0': {
               label: 'v8',
+              banner: 'none',
+              path: 'v8',
+              badge: true,
             },
             '7.0': {
               label: 'v7',
               banner: 'none',
               path: 'v7',
-              badge: true,
-            },
-            '6.0': {
-              label: 'v6',
-              path: 'v6',
               badge: true,
             },
           },
