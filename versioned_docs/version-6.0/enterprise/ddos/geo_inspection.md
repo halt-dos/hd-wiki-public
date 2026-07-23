@@ -10,7 +10,7 @@ Overview
 
 Geo Filtering is an ability to filter out request coming from different geographical locations and taking actions to block the Country & IP address if required. In the Geo-filtering settings, we can configure Blacklisted Countries, Blacklisted IP Prefixes, and Whitelisted IP Prefixes.
 
-![geo_filtering](\img\ddos\v6\docs\ddos21.png)
+![geo_filtering](/img/ddos/v6/docs/ddos21.png)
 
 ### **How to Use:**
 

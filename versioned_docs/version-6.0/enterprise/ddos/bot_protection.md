@@ -10,7 +10,7 @@ Overview
 
 Bot protection protects your device from external malicious activities, authenticate from human activity and protect the customer from brute force login attempt and probing the applications.
 
-![bot_protection](\img\ddos\v6\docs\ddos22.png)
+![bot_protection](/img/ddos/v6/docs/ddos22.png)
 
 ### **How to Go:**
 

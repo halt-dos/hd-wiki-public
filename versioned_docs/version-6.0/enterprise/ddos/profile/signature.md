@@ -8,7 +8,7 @@ sidebar_position: 6
 
 These are in-built rules for DDoS. These are the inbuilt DDoS signatures which help in stopping different types of DDoS Attacks. User can enable/ disable it as per the requirement.
 
-![signatures](\img\ddos\v6\docs\ddos20.png)
+![signatures](/img/ddos/v6/docs/ddos20.png)
 
 ### **How to Use:**
 
