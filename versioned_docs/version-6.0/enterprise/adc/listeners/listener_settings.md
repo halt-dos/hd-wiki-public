@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Listener Settings | Haltdos Docs"
+description: "Standard configuration rules detailing timeouts, maximum buffers, keep-alive windows, and port configurations."
 ---
 
 # Listener Settings

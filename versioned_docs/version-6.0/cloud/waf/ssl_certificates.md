@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "SSL Certificates | Haltdos Docs"
+description: "Management portal steps to provision Let's Encrypt automated pairs or upload external production certificates."
 ---
 # SSL Certificates
 

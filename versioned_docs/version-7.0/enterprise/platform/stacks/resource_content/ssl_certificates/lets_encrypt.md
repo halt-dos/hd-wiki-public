@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Let's Encrypt Certificates | Haltdos Enterprise"
+description: "Configure and automatically renew free Let's Encrypt SSL certificates for secure HTTPS communication."
 ---
 
 

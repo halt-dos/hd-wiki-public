@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 pagination_prev: null
+title: "Application Delivery Controller (ADC) | Haltdos Enterprise"
+description: "Learn how Haltdos ADC delivers high availability, load balancing, traffic optimization, and application security."
 ---
 
 # Application Delivery Controller

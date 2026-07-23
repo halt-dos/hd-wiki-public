@@ -1,5 +1,7 @@
 ---
 pagination_prev: null
+title: "Global Server Load Balancer (GSLB) | Haltdos Enterprise"
+description: "Learn how Haltdos Global Server Load Balancer (GSLB) delivers intelligent DNS traffic management, automatic failover, and high availability."
 ---
 
 # Global Server Load Balancer

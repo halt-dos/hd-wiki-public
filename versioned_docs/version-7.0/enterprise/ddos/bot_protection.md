@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Bot Protection | Haltdos Enterprise Anti-DDoS"
+description: "Detect, challenge, and mitigate malicious bot traffic while allowing legitimate automated access."
 ---
 
 # Bot Protection

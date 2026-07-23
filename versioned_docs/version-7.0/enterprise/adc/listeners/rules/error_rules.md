@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Error Rules | Haltdos Enterprise ADC"
+description: "Configure custom error responses and pages to improve user experience and hide backend application details."
 ---
 
 # Error Rules

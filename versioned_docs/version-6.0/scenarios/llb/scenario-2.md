@@ -1,3 +1,8 @@
+---
+title: "LLB Deployment Scenario 2 | Haltdos Docs"
+description: "Configure Local Load Balancer using Scenario 2 for optimized traffic distribution."
+---
+
 # Scenario 2
 
 LLB configuration under different Scenarios

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Haltdos Troubleshooting Guide | WAF, ADC & Platform"
+description: "Find troubleshooting guides for Haltdos WAF, ADC, load balancing, SSL, deployments, and common configuration issues."
 ---
 
 # Troubleshooting

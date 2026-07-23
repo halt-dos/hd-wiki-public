@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "SSL Settings | Haltdos Docs"
+description: "Configures secure connection options on listeners, protocol negotiations, backend cipher arrays, and TLS profiles."
 ---
 # SSL Settings
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "VPN access Groups | Haltdos Docs"
+description: "Collects user definitions into logical cluster groups to enforce explicit conditional network access pathways."
 ---
 
 # VPN Group

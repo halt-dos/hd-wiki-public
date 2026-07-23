@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "VPN Security Ciphers | Haltdos Docs"
+description: "Selects algorithmic encryption levels, phase handshake parameters, hashing methods, and pre-shared key targets."
 ---
 
 # Security

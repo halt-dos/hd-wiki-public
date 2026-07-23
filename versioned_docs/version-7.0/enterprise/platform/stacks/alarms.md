@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Platform Alarms | Haltdos Enterprise"
+description: "Configure and monitor alarms to receive real-time notifications for security events, system health, and infrastructure issues."
 ---
 
 # Alarms

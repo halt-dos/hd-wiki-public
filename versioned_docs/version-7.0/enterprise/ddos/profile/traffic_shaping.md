@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Traffic Shaping Configuration | Haltdos Docs"
+description: "Control bandwidth usage, prioritize traffic, and mitigate DDoS attacks using traffic shaping policies."
 ---
 
 # Traffic Shaping

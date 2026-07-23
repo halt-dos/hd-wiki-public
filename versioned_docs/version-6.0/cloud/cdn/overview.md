@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Haltdos CDN Overview | Content Delivery Network"
+description: "Learn how Haltdos CDN accelerates website performance with globally distributed edge servers, caching, and secure content delivery."
 ---
 
 # Overview

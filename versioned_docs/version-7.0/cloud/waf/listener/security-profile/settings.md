@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Security Profile Settings | Haltdos Cloud WAF"
+description: "Configure application server details, operating system information, and profile-specific settings."
 ---
 
 # Settings

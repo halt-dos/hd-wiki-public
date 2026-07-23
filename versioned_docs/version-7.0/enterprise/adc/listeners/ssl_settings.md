@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "SSL Settings | Haltdos Enterprise ADC"
+description: "Configure SSL certificates, TLS settings, cipher suites, and SSL offloading for secure application delivery."
 ---
 
 # SSL Settings

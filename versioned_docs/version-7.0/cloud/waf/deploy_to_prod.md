@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Deploy to Production | Haltdos Cloud WAF"
+description: "Learn how to validate configurations and safely deploy WAF changes from staging to production."
 ---
 # Deploy to Production
 

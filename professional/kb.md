@@ -1,3 +1,8 @@
+---
+title: "Knowledge Base | Haltdos Professional WAF"
+description: "Browse technical documentation, troubleshooting guides, deployment tutorials, and best practices for Haltdos Professional WAF."
+---
+
 # WAF PE Knowledge Base
 
 This section describes the knowledge base of how to use Haltdos WAF Professional Edition for multiple use cases.

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "High Availability (HA) Sync | Haltdos Docs"
+description: "Synchronizes cluster memory states and configuration profiles between primary active and secondary standby boxes."
 ---
 
 # High Availiability

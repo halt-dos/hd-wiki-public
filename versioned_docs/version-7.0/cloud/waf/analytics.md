@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "WAF Analytics Dashboard | Haltdos Cloud"
+description: "Monitor security events, attack trends, traffic analytics, and web application performance using the analytics dashboard."
 ---
 # Analytics
 

@@ -1,3 +1,8 @@
+---
+title: "Header Manipulation Rules | Haltdos Docs"
+description: "Injects, updates, or strips transactional meta parameters inside client or back-end connection flows."
+---
+
 # Header Rules
 Helps to modify headers, cookies, and arguments in the request sent to the back-end server as well as modifying response sent to the client.
 

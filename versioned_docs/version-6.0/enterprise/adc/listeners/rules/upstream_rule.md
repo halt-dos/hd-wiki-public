@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Upstream Rules | Haltdos Docs"
+description: "Maps specialized conditional patterns to dynamically alter default destination pool routing choices."
 ---
 
 # Upstream Rule

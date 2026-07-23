@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "IPv4 Protocol Inspection | Haltdos DPI Settings"
+description: "Inspect IPv4 packets to validate headers, detect anomalies, and improve network security enforcement."
 ---
 
 # IPV4 Protocol

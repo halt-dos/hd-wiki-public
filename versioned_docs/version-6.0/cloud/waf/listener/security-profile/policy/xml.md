@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "XML Content Profile | Haltdos Docs"
+description: "Guards parsing resources against malicious structure expansions, XXE attacks, and entity manipulation tricks."
 ---
 
 # XML Policy

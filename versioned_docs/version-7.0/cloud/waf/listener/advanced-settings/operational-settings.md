@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Operational Settings | Haltdos Cloud WAF"
+description: "Configure timeout, connection handling, protocol behavior, and operational settings for WAF listeners."
 ---
 # Operational Settings
 

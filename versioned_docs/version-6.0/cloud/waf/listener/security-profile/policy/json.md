@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "JSON Content Profile | Haltdos Docs"
+description: "Intercepts attacks disguised inside application/json requests by restricting element nested layers and total payload lengths."
 ---
 
 # JSON Policy

@@ -1,3 +1,8 @@
+---
+title: "LLB Health Monitors | Haltdos Enterprise"
+description: "Configure health monitors to continuously monitor WAN links and automatically switch traffic during failures."
+---
+
 # Monitor
 
 Link monitoring in Haltdos LLB

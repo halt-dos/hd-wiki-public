@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Advanced Listener Settings | Haltdos Cloud WAF"
+description: "Configure advanced listener settings including networking, security, timeout, and optimization options."
 ---
 # Advanced Settings
 

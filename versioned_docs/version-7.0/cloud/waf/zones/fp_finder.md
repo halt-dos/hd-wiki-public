@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "False Positive Finder | Haltdos Cloud WAF"
+description: "Identify and analyze false positives to fine-tune WAF security rules and reduce unwanted blocking."
 ---
 # FP Finder
 

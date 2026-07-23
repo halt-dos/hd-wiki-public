@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Geo Inspection | Haltdos Docs"
+description: "Limits volumetric risk vectors by quickly dropping incoming transport flows arriving from high-threat countries."
 ---
 
 # Geo Inspection

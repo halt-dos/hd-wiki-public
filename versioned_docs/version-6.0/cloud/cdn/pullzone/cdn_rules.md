@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "CDN Rules | Haltdos Cloud CDN"
+description: "Configure CDN rules to control caching, redirects, headers, access policies, and content delivery behavior for your pull zones."
 ---
 
 # CDN Rules

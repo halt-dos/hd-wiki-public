@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "GSLB Sites Configuration | Haltdos Enterprise"
+description: "Configure global sites and data centers to optimize DNS routing, failover, and application availability across multiple locations."
 ---
 
 # Sites

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Firewall Rules | Haltdos Professional WAF"
+description: "Create firewall rules to allow, block, challenge, or log requests based on custom security policies."
 ---
 # Firewall Rules
 

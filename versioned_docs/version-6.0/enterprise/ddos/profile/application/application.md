@@ -1,3 +1,8 @@
+---
+title: "Application Layer Profiles | Haltdos Docs"
+description: "Focuses protection mechanisms onto specific user-facing applications against application flood techniques."
+---
+
 # Application
 
 ---

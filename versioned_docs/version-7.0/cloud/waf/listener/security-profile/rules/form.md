@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Form Validation | Haltdos Cloud WAF"
+description: "Configure form validation rules to protect web forms from malicious input and abuse."
 ---
 
 # Form Validation

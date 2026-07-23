@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Server Groups | Haltdos Cloud WAF"
+description: "Organize backend servers into server groups for load balancing, failover, and high availability."
 ---
 
 # Interface Groups

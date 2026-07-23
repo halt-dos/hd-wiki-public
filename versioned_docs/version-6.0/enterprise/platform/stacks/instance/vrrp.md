@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "VRRP Redundancy Groups | Haltdos Docs"
+description: "Binds multiple clustered machine interfaces onto single shared Virtual IP tracking states to secure link failover triggers."
 ---
 
 # VRRP

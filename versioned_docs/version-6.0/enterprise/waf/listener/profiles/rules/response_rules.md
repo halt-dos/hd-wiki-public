@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Data Leak Response Rules | Haltdos Docs"
+description: "Scrapes and masks sensitive compliance information (such as identity details or card numbers) from outflow traffic."
 ---
 # Response Rule
 ### Overview

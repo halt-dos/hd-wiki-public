@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "DNS Zones | Haltdos Cloud DNS"
+description: "Create, configure, and manage DNS zones for reliable domain resolution and centralized DNS management."
 ---
 # Zone
 

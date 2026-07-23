@@ -1,3 +1,8 @@
+---
+title: "WAF Rules Configuration | Haltdos Community WAF"
+description: "Create and manage firewall, redirection, header, rate limiting, and custom security rules to protect web applications."
+---
+
 # Rules
 
 Haltdos WAF supports various types of rules for users to configure WAF as per their network requirements. Users can set error rules, redirection as well as upstream rules. Here we have mentioned the list of rules users can create in listeners.

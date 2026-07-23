@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "XML Security Policy | Haltdos Community WAF"
+description: "Secure XML-based web services by validating XML documents and preventing malicious payloads and oversized requests."
 ---
 # XML Policy
 

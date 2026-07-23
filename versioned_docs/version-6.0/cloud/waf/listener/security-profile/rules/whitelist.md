@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Core Bypass Whitelists | Haltdos Docs"
+description: "Permits trusted partner APIs, specific internal systems, or payment hooks to completely avoid threat scanning."
 ---
 
 # Whitelist Rules

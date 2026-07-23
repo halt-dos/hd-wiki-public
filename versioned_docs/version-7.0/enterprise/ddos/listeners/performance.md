@@ -1,3 +1,8 @@
+---
+title: "Performance Optimization | Haltdos Enterprise Anti-DDoS"
+description: "Improve application performance using caching, compression, and traffic optimization features."
+---
+
 # Performance
 How to enable and configure caching and compression of responses received?
 

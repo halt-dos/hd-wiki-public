@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Custom Web Pages | Haltdos Professional WAF"
+description: "Create and manage custom error pages, maintenance pages, and response templates for your protected web applications."
 ---
 
 

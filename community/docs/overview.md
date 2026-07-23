@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Application Dashboard Overview | Haltdos Community WAF"
+description: "View traffic analytics, security events, bandwidth usage, and application insights from the Haltdos Community WAF dashboard."
 ---
 # Overview
 

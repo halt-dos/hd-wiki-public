@@ -1,5 +1,7 @@
 ---
 sidebar_position: 10
+title: "DNS Protocol Inspection | Haltdos DPI Settings"
+description: "Configure DNS inspection rules to detect floods, amplification attacks, and malformed DNS query traffic."
 ---
 
 # DNS Protocol

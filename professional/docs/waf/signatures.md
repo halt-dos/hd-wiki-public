@@ -1,5 +1,7 @@
 ---
 sidebar_position: 12
+title: "WAF Signatures | Haltdos Professional WAF"
+description: "Configure built-in WAF signatures to detect OWASP Top 10 threats, malware, exploits, and emerging web attacks."
 ---
 
 

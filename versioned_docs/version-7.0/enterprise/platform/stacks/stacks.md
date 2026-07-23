@@ -1,6 +1,8 @@
 ---
 sidebar_position: 0
 pagination_prev: null
+title: "Platform Stacks | Haltdos Enterprise"
+description: "Manage infrastructure stacks, deployments, and system resources from the centralized Haltdos Enterprise Platform."
 ---
 
 # Stacks

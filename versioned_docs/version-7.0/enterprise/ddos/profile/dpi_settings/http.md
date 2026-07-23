@@ -1,5 +1,7 @@
 ---
 sidebar_position: 11
+title: "HTTP Protocol Inspection | Haltdos DPI Settings"
+description: "Inspect HTTP traffic to detect malicious requests, enforce protocol compliance, and protect web applications."
 ---
 
 # HTTP Protocol

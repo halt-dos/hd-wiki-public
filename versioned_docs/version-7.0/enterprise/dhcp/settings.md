@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "DHCP Settings | Haltdos Enterprise Docs"
+description: "Configure DHCP settings, lease duration, DNS options, gateway settings, and address pools for efficient IP management."
 ---
 
 # Settings

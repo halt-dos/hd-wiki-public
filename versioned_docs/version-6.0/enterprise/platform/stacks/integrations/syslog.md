@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Syslog Configuration | Haltdos Docs"
+description: "Setting instructions for forwarding system audit logs and security event trails to remote SIEM or log management servers."
 ---
 
 # Syslog

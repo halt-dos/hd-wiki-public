@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Client Certificates | Haltdos Docs"
+description: "Manual covering the upload and tracking of client-side CA bundles used to enforce mTLS (Mutual TLS) handshakes."
 ---
 
 # Client Certificates

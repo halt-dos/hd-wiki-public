@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Custom Error Rules | Haltdos Docs"
+description: "Masks stack traces and customizes default error states (4xx/5xx responses) with elegant corporate pages."
 ---
 # Error Rules
 

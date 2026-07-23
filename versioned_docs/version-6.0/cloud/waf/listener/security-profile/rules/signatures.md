@@ -1,5 +1,7 @@
 ---
 sidebar_position: 10
+title: "Core Signature Pools | Haltdos Docs"
+description: "Manages a broad repository of precompiled matching structures targeting known vulnerabilities, exploits, and CVE risks."
 ---
 
 #Signatures

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Policy Compliance Rules | Haltdos Docs"
+description: "Sets runtime barriers to validate request sanity, content-length limits, and protocol formatting rules."
 ---
 
 # Policy Rules

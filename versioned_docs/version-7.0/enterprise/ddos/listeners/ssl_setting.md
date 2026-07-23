@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "SSL Settings | Haltdos Enterprise Anti-DDoS"
+description: "Enable SSL offloading and configure encryption settings to secure client-server communication."
 ---
 
 # SSL Settings

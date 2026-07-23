@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "IP Feeds | Haltdos Enterprise"
+description: "Configure custom IP feeds to automatically import trusted or malicious IP addresses into security policies."
 ---
 
 # IP Feeds

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Anti-DDoS Protection | Haltdos Cloud WAF"
+description: "Protect websites against volumetric, protocol, and Layer 7 DDoS attacks with always-on cloud-based mitigation."
 ---
 # Anti-DDoS
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Task Scheduler | Haltdos Docs"
+description: "Oversees scheduling loops execution parameters for internal maintenance, script tasks, or routine log purges."
 ---
 
 # Scheduler

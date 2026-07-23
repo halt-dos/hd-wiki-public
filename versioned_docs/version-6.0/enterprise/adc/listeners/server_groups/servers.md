@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Backend Server Nodes | Haltdos Docs"
+description: "Operational steps to declare cluster host targets, operational states, and connection constraints."
 ---
 
 # Servers

@@ -1,3 +1,8 @@
+---
+title: "Local Load Balancer (LLB) Deployment Scenarios | Haltdos Docs"
+description: "Explore Local Load Balancer deployment scenarios with configuration examples and best practices."
+---
+
 # Haltdos LLB Deployment Scenarios
 
 LLB configuration under different Scenarios

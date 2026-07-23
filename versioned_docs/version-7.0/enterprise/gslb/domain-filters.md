@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Domain Filters | Haltdos GSLB"
+description: "Configure domain filtering policies to control DNS traffic, apply domain-specific routing, and improve security and performance."
 ---
 
 # Domain Filters

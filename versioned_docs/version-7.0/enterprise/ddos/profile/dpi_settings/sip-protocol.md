@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "SIP Protocol Inspection | Haltdos DPI Settings"
+description: "Protect VoIP systems by inspecting SIP traffic for anomalies, attacks, and protocol violations."
 ---
 
 # SIP Protocol

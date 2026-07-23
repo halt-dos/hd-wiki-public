@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Redirection Rules | Haltdos Enterprise Anti-DDoS"
+description: "Configure redirection rules to route users to specific pages or endpoints based on traffic conditions."
 ---
 
 # Redirection Rules

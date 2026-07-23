@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Real User Monitoring (RUM) | Haltdos Cloud WAF"
+description: "Monitor real user experience with browser performance metrics and page load analytics."
 ---
 # RUM Metric
 

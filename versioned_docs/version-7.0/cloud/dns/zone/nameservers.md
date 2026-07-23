@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "DNS Nameservers | Haltdos Cloud DNS"
+description: "Learn how to configure authoritative nameservers and update NS records for your domain."
 ---
 
 # NameServers

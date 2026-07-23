@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Correlation Rules | Haltdos Docs"
+description: "Ties independent minor anomalies together into logical alert states to flag multivector breach attempts."
 ---
 # Correlation Rules
    

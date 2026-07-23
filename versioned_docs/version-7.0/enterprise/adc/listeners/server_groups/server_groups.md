@@ -1,3 +1,8 @@
+---
+title: "Server Groups | Haltdos Enterprise ADC"
+description: "Configure server groups and load balancing settings for high availability and optimized application delivery."
+---
+
 # Server Groups
 
 User can determine load balancing mechanism and specify Server Groups.

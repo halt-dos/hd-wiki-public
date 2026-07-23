@@ -1,3 +1,8 @@
+---
+title: "Connection Management | Haltdos Enterprise Anti-DDoS"
+description: "Configure connection handling settings to optimize performance and improve DDoS resilience."
+---
+
 # Connections
 
 ---

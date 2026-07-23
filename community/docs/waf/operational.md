@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Operational Settings | Haltdos Community WAF"
+description: "Configure listener behavior, operational settings, request handling, and system-wide application parameters."
 ---
 
 # Operational Settings

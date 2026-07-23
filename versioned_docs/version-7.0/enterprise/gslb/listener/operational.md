@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "GSLB Operational Settings | Haltdos Enterprise"
+description: "Configure listener operational settings, DNS behavior, timeout values, failover policies, and service parameters."
 ---
 
 # Operational

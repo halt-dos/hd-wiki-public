@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Incident Management | Haltdos Community WAF"
+description: "Monitor security incidents, attack alerts, audit logs, and real-time events to identify and respond to threats quickly."
 ---
 # Incidents
    

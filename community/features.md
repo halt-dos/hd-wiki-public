@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 sidebar_label: Features
+title: "Haltdos Community WAF Features | Free Web Application Firewall"
+description: "Discover the features of Haltdos Community WAF, including web application security, SSL offloading, bot protection, load balancing, and more."
 ---
 
 # Haltdos CE Features

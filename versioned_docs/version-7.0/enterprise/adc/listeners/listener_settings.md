@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "ADC Listener Settings | Haltdos Enterprise"
+description: "Configure listener ports, protocols, and origin server settings for secure application delivery."
 ---
 
 # Listener Settings

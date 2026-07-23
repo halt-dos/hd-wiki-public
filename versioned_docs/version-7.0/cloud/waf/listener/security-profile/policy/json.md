@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "JSON Security Policy | Haltdos Cloud WAF"
+description: "Configure JSON API security policies for REST services with request validation and protection."
 ---
 
 # JSON Policy

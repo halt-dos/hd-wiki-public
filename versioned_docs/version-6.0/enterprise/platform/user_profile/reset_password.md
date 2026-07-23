@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Reset Password | Haltdos Docs"
+description: "Recovery workflow parameters used to handle account lockouts or initiate credential reset recovery procedures."
 ---
 
 # Reset Password

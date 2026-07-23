@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Access Rules | Haltdos Cloud WAF"
+description: "Configure access control rules to allow, block, or challenge traffic based on IP addresses, countries, headers, and custom conditions."
 ---
 
 # Aggressive Aging

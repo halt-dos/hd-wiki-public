@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "IPv6 Protocol Inspection | Haltdos DPI Settings"
+description: "Validate IPv6 traffic, detect malformed packets, and strengthen security for IPv6-enabled networks."
 ---
 
 # IPV6 Protocol

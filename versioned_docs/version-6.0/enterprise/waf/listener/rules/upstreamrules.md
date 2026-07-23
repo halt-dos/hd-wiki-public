@@ -1,3 +1,8 @@
+---
+title: "Upstream Pool Routing | Haltdos Docs"
+description: "Selects custom back-end target arrays by matching specialized inbound user parameter trends."
+---
+
 # Upstream Rules 
 You can switch between your server groups by creating upstream rules.
 

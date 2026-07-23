@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Whitelist Rules | Haltdos Cloud WAF"
+description: "Allow trusted IP addresses, applications, and services to bypass selected WAF security policies safely."
 ---
 
 # SSL Offloading

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Correlation Rules | Haltdos Cloud WAF"
+description: "Configure correlation rules to detect complex attack patterns across multiple requests."
 ---
 
 # Correlation Rules

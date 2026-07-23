@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Header Modification Rules | Haltdos Docs"
+description: "Instructions on injecting, dropping, or evaluating variables located inside HTTP transactional headers."
 ---
 
 # Header Rules

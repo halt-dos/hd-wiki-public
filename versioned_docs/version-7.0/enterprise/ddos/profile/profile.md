@@ -1,3 +1,8 @@
+---
+title: "Profile Configuration | Haltdos Enterprise Anti-DDoS"
+description: "Configure profile-level settings to define security, traffic handling, and performance behavior."
+---
+
 # Profile
 
 Configure profile level configurations

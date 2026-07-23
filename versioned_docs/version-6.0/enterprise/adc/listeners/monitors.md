@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Health Monitors | Haltdos Docs"
+description: "Configures active synthetic probes checking real-time response strings and link parameters across backend nodes."
 ---
 
 # Monitors

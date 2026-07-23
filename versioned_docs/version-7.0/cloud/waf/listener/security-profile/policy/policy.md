@@ -1,3 +1,8 @@
+---
+title: "Security Policy Configuration | Haltdos Cloud WAF"
+description: "Configure web application security policies to protect websites and APIs from modern attacks."
+---
+
 # Policy
 
 Define security policy for your website

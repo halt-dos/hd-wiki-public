@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Variable Assignment Rules | Haltdos Docs"
+description: "Declares custom operational tracking parameters derived from specific transaction string parts."
 ---
 # Variable Rules
 

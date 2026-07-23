@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "SSL Settings | Haltdos Cloud WAF"
+description: "Configure SSL certificates, TLS settings, HTTPS termination, and secure encryption policies."
 ---
 # SSL Settings
 

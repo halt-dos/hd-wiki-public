@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Fixed Routing Policies | Haltdos Docs"
+description: "Locks designated critical transaction types or applications onto a single specified physical internet service provider link."
 ---
 
 # Fixed Routing

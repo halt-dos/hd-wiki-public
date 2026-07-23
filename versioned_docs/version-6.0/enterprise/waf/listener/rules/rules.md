@@ -1,3 +1,8 @@
+---
+title: "Pre-Routing Listener Rules | Haltdos Docs"
+description: "Navigation index covering structural layer-7 manipulation rules running ahead of core firewall scanning profiles."
+---
+
 # Rules
 
 Haltdos WAF supports various types of rules for users to configure WAF as per their network requirements. Users can set error rules, redirection as well as upstream rules. Here we have mentioned the list of rules users can create in listeners.

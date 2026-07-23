@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 pagination_prev: null
+title: "Enterprise Anti-DDoS Overview | Haltdos"
+description: "Protect networks and applications with enterprise-grade DDoS mitigation, traffic inspection, and attack prevention."
 ---
 
 # Anti-DDOS

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Encryption Keys Management | Haltdos Docs"
+description: "Secures the management, rotation, and usage bounds of cryptographic secrets and token signing keys across the cluster."
 ---
 
 # Encryption Key

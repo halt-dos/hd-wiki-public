@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Match Finder | Haltdos Cloud WAF"
+description: "Analyze rule matches and request patterns to troubleshoot security events and optimize WAF policies."
 ---
 # Match Finder
 

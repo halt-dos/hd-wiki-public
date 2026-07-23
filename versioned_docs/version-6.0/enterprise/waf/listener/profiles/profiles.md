@@ -1,3 +1,8 @@
+---
+title: "Security Profiles | Haltdos Docs"
+description: "Master directory outlining structural policy blueprints containing customized behavioral rulesets and inspection thresholds."
+---
+
 # Profiles
 Create different security profiles for different sub-sections of your website.
 ### Overview

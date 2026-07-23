@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Webhooks Integration | Haltdos Enterprise"
+description: "Configure webhooks to send real-time alerts, notifications, and security events to external applications and automation platforms."
 ---
 
 # Webhooks

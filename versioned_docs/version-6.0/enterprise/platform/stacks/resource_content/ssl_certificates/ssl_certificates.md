@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "SSL Certificates Directory | Haltdos Docs"
+description: "Administrative panel used to categorize, check lifetimes, and distribute standard TLS certificate-key pairs across application handlers."
 ---
 
 # SSL Certificates

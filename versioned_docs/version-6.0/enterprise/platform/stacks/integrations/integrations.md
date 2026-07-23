@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Stack Integrations | Haltdos Docs"
+description: "Central directory for managing third-party plugins, hooks, SIEM feeds, and configuration integrations."
 ---
 
 # Integrations

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Redirection Rules | Haltdos Docs"
+description: "Implements patterns evaluating matching URLs and issuing redirect instructions (301/302) to standard visitors."
 ---
 # Redirection Rules
 

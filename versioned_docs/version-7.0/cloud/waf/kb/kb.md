@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Haltdos WAF Knowledge Base | Cloud Security Guides"
+description: "Browse WAF knowledge base articles, deployment guides, troubleshooting resources, and best practices for securing web and API applications."
 ---
 
 # Knowledge Base

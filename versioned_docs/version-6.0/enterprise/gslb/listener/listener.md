@@ -1,3 +1,8 @@
+---
+title: "Bot Protection | Haltdos Cloud WAF"
+description: "Stop malicious bots, automated attacks, credential stuffing, and web scraping with advanced bot protection."
+---
+
 # Listener
 
 ---

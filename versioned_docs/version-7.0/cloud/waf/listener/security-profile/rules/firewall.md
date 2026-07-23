@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Firewall Rules | Haltdos Cloud WAF"
+description: "Configure custom firewall rules using a negative security model to block malicious requests."
 ---
 
 # Firewall Rules

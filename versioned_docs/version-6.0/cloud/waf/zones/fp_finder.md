@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "False Positive Finder | Haltdos Docs"
+description: "Diagnostic tool tracking drop alerts to easily isolate and generate exceptions for benign application operations."
 ---
 # FP Finder
 

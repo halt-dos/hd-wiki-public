@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Bot Protection Settings | Haltdos Cloud WAF"
+description: "Configure advanced bot detection and mitigation settings to stop malicious automated traffic."
 ---
 # Bot Settings
 

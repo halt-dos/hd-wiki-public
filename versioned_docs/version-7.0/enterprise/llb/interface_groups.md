@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Interface Groups | Haltdos Link Load Balancer"
+description: "Configure WAN interface groups to manage multiple internet links, redundancy, and intelligent traffic distribution."
 ---
 
 # Interface Groups

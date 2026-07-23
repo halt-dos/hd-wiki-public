@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Stack Global Settings | Haltdos Docs"
+description: "System index pointing to administrative routines controlling backups, global access boundaries, and cluster behaviors."
 ---
 
 # Stack Settings

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Admin Users Provisioning | Haltdos Docs"
+description: "Controls creating localized accounts, setting access scopes, and viewing user operational logs."
 ---
 
 # Admin Users

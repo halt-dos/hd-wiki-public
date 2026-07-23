@@ -1,3 +1,8 @@
+---
+title: "Load Balancing Matrix | Haltdos Docs"
+description: "Reviews performance variations for Weighted, Least-Connections, and Priority traffic routing choices."
+---
+
 # Load Balancing  
 
 Load Balancing mechanism used for WAF

@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 pagination_prev: null
+title: "Application Delivery Controller | Haltdos Docs"
+description: "Haltdos ADC is an enterprise-grade Server Load Balancer solution providing high-speed load balancing, NAT, routing, and low-and-slow DDoS protection."
 ---
 
 # Application Delivery Controller

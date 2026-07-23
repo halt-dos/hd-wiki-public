@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "DDoS Attack Incidents | Haltdos Docs"
+description: "Centralized notification log breaking down caught volumetric, protocol, or amplification flood events."
 ---
 
 # Incidents

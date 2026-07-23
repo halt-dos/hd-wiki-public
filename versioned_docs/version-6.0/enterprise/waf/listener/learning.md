@@ -1,5 +1,7 @@
 ---
 sidebar_position: 12
+title: "Learning Engine Diagnostics | Haltdos Docs"
+description: "Tracks ongoing false-positive flags, providing automated feedback logs to optimize system tuning rules."
 ---
 
 # Learning

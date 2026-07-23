@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "VPN Network Configuration | Haltdos Docs"
+description: "Configures dynamic address pool leasing, routing flags, internal DNS options, and split-tunnel boundaries."
 ---
 
 # Networking

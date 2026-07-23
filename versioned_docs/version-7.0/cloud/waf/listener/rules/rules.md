@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Listener Rules | Haltdos Cloud WAF"
+description: "Configure listener rules to control traffic routing, request processing, and application behavior."
 ---
 # Rules
 

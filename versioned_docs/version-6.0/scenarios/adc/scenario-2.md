@@ -1,3 +1,8 @@
+---
+title: "ADC Deployment Scenario 2 | Haltdos Docs"
+description: "Configure Haltdos ADC using Scenario 2 for optimized application delivery and high availability."
+---
+
 # Scenario 2
 
 SLB configuration under different Scenarios

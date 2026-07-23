@@ -1,3 +1,8 @@
+---
+title: "Application Proxy Caching | Haltdos Docs"
+description: "Controls fine-grain asset expiration boundaries to offload recurrent resource loads from upstream targets."
+---
+
 # Caching
 How to enable and configure caching of responses received?
 

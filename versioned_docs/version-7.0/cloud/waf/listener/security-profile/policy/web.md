@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Web Security Policy | Haltdos Cloud WAF"
+description: "Protect HTML websites with advanced web security policies, protocol validation, and OWASP protection."
 ---
 
 # Web Policy

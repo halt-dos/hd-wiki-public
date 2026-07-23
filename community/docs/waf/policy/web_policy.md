@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Web Security Policy | Haltdos Community WAF"
+description: "Configure web security policies to protect websites against malicious requests, OWASP attacks, and application-layer threats."
 ---
 # WEB Policy
 

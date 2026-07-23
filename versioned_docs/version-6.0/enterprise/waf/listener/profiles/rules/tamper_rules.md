@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Anti-Tamper Profiling | Haltdos Docs"
+description: "Shields critical static files from unauthorized site adjustments or remote defacement alterations."
 ---
 
 # Tamper Rules

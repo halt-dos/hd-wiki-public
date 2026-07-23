@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Cloud Signaling | Haltdos Enterprise Anti-DDoS"
+description: "Configure cloud signaling to enable automated DDoS attack detection and cloud-based traffic mitigation."
 ---
 
 # Cloud Signaling

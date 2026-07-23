@@ -1,3 +1,8 @@
+---
+title: "Listeners | Haltdos Enterprise Anti-DDoS"
+description: "Configure listeners to accept traffic on specific ports, inspect requests, and mitigate DDoS attacks before they reach your applications."
+---
+
 # Listeners
 Make DDOS listen on specific ports to accept connections and mitigate the attacks.
 

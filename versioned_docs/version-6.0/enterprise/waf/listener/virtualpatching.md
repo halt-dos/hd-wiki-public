@@ -1,5 +1,7 @@
 ---
 sidebar_position: 11
+title: "Virtual Patching Actions | Haltdos Docs"
+description: "Explains immediate deployment of temporary signature rules to shield newly discovered application flaws."
 ---
 # Virtual Patching 
 Integration with SAST / DAST scanners

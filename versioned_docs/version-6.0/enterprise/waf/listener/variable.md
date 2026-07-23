@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Global Variables Dictionary | Haltdos Docs"
+description: "Glossary reference documenting default built-in platform tags used inside custom rule engines."
 ---
 
 # Variables

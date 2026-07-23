@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Backend Servers | Haltdos Community WAF"
+description: "Add, configure, and manage backend application servers for secure traffic routing and load balancing."
 ---
 # Servers
 

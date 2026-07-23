@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "User Groups | Haltdos Docs"
+description: "Defines RBAC parameters, multi-tenant administrative roles, and scope permissions for zone resources."
 ---
 # User Group
 

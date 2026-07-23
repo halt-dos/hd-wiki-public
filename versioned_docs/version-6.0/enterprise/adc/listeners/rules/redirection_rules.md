@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Redirection Rules | Haltdos Docs"
+description: "Processes pattern matching scripts to quickly return 301/302 location status lines to client requests."
 ---
 
 # Redirection Rule

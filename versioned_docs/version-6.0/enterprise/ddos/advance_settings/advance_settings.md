@@ -1,3 +1,8 @@
+---
+title: "Advanced DDoS Settings | Haltdos Docs"
+description: "Tweak options for intricate behavioral heuristics, flood tracking values, and memory pool allocations."
+---
+
 # Advance Settings
 
 ---

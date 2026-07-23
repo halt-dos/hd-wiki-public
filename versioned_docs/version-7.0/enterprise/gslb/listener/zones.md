@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "GSLB DNS Zones | Haltdos Enterprise"
+description: "Create and manage DNS zones and records for intelligent global traffic routing, failover, and high availability using Haltdos GSLB."
 ---
 
 # Zones

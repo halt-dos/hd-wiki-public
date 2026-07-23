@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Correlation Rules | Haltdos Community WAF"
+description: "Detect complex cyberattacks by correlating multiple security events and applying advanced threat detection rules."
 ---
 
 # Correlation Rules

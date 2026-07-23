@@ -1,3 +1,8 @@
+---
+title: "VPN Parameter Groups | Haltdos Docs"
+description: "Portal index detailing routing options, gateway criteria, and cryptographic bounds for enterprise tunnels."
+---
+
 # Settings
 
 ---

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "SSL Certificates | Haltdos Professional WAF"
+description: "Upload, renew, and manage SSL certificates to secure HTTPS traffic and encrypt communication between users and applications."
 ---
 
 

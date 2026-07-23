@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 sidebar_label: About Professional WAF
+title: "About Haltdos Professional WAF | Enterprise Web Security"
+description: "Learn about Haltdos Professional WAF, designed to protect business-critical web applications with advanced security, performance, and management features."
 ---
 
 # About Professional WAF

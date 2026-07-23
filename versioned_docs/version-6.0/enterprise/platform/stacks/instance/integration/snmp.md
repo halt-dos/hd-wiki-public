@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "SNMP Telemetry Exporters | Haltdos Docs"
+description: "Directives allowing remote corporate monitoring tools to poll hardware tracking metrics via standard SNMP loops."
 ---
 
 # SNMP

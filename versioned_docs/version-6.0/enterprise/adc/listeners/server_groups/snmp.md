@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "SNMP Monitoring | Haltdos Docs"
+description: "Configures integration paths to pull hardware and throughput telemetry from targets via SNMP protocols."
 ---
 
 # SNMP

@@ -1,3 +1,8 @@
+---
+title: "Server Groups | Haltdos Docs"
+description: "Guide on structuring pool nodes into logically isolated operational targets for the load balancer."
+---
+
 # Server Groups
 
 User can determine load balancing mechanism and specify Server Groups.

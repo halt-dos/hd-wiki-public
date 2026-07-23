@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Action Scripts | Haltdos Enterprise"
+description: "Create and manage action scripts to automate security operations, workflows, and administrative tasks across the platform."
 ---
 
 # Actions

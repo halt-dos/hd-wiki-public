@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Traffic Shaper & QoS | Haltdos Link Load Balancer"
+description: "Configure Quality of Service (QoS) and traffic shaping policies to prioritize critical applications and optimize bandwidth."
 ---
 
 # Traffic Shaper / QoS

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 11
+title: "Custom Programmable Scripts | Haltdos Docs"
+description: "Allows engineers to develop programmatic flow controls to intercept non-standard operational contexts."
 ---
 # Script Rule
    

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Policy-Based Routing (PBR) | Haltdos Docs"
+description: "Forges runtime outbound routing choices derived from precise layer-7 source applications or precise internal subnets."
 ---
 
 # Policy Routing

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Header Rules | Haltdos Cloud WAF"
+description: "Inspect, modify, and validate HTTP request and response headers to strengthen application security."
 ---
 
 # General Settings

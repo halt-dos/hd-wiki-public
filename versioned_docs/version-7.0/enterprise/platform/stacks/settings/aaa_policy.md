@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "AAA Policy | Haltdos Enterprise"
+description: "Configure Authentication, Authorization, and Accounting (AAA) policies to secure administrative access and integrate external identity providers."
 ---
 
 # AAA Policy

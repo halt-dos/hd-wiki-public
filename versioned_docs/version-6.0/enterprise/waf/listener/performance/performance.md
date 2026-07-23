@@ -1,3 +1,8 @@
+---
+title: "Performance Tuning Index | Haltdos Docs"
+description: "Index pointing to processing optimization layers designed to scale traffic handling capabilities."
+---
+
 # Performance
 
 Web server optimization allows for improved performance and speed required for end-user satisfaction. Haltdos WAF uses multiple metrics to improve the performance of the backend server. Here are the articles in this section:

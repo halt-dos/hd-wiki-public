@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "UDP Protocol Inspection | Haltdos DPI Settings"
+description: "Detect UDP floods, malformed packets, and amplification attacks through UDP protocol inspection."
 ---
 
 # UDP Protocol

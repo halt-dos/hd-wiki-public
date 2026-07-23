@@ -1,3 +1,8 @@
+---
+title: "Payload Compression Rules | Haltdos Docs"
+description: "Administers asset transmission size savings using compression schemes like Gzip or Brotli stream handling."
+---
+
 # Compression
 Configure compression or decompression of responses
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Vulnerability Scanner Overview | Haltdos Cloud"
+description: "Discover Haltdos cloud vulnerability scanning to identify security risks, misconfigurations, and application vulnerabilities."
 ---
 # Overview
 

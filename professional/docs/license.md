@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "License Management | Haltdos Professional WAF"
+description: "Manage software licenses, product activation, updates, renewals, and version control for Haltdos Professional WAF."
 ---
 
 

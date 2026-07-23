@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Policy Rules | Haltdos Enterprise Anti-DDoS"
+description: "Configure policy rules to enforce security controls, traffic handling, and application protection policies."
 ---
 # Policy Rules
 

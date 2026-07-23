@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "WAF Zones | Haltdos Docs"
+description: "Structural guide on isolating configurations, allocating quotas, and partitioning application instances into logical zones."
 ---
 # Zones
 

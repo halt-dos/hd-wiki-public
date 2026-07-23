@@ -1,5 +1,7 @@
 ---
 sidebar_position: 14
+title: "Action Scripts Room | Haltdos Docs"
+description: "Integrates sandbox programming blocks directly into the WAF listener logic to process intricate flow manipulation."
 ---
 
 # Action Script

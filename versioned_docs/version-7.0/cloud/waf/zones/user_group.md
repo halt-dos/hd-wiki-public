@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "User Groups | Haltdos Cloud WAF"
+description: "Create and manage user groups to simplify access control and role-based administration."
 ---
 # User Group
 

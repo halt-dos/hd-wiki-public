@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "SSL Termination Settings | Haltdos Docs"
+description: "Controls hardware-accelerated SSL/TLS decryption keys, cipher preferences, and handshake settings."
 ---
 
 # SSL Settings

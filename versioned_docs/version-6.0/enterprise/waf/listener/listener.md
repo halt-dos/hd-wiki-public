@@ -1,3 +1,8 @@
+---
+title: "WAF Listeners Setup | Haltdos Docs"
+description: "Directive steps to assign high-capacity web proxy entry points on virtual host interfaces."
+---
+
 # Listener 
 Make WAF listen on specific ports to accept connections and distribute across one or multiple origin servers
 

@@ -1,3 +1,8 @@
+---
+title: "Listener Rules | Haltdos Enterprise Anti-DDoS"
+description: "Configure listener rules for traffic routing, request handling, redirection, upstream selection, and DDoS mitigation policies."
+---
+
 # Rules
 
 Haltdos Anti-DDOS solution supports various types of rules for users to configure DDOS as per their network requirements. Users can set error rules, redirection as well as upstream rules. Here we have mentioned the list of rules users can create in listeners.

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Geo Filtering Profile | Haltdos Docs"
+description: "Restricts application interface access depending on user country origins or localized network coordinates."
 ---
 
 # Geo Filtering

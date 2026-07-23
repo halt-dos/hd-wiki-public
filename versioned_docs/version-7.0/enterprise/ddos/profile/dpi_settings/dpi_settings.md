@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Deep Packet Inspection (DPI) Settings | Haltdos"
+description: "Configure DPI settings to inspect network traffic, enforce protocol validation, and strengthen DDoS protection."
 ---
 
 # DPI Settings

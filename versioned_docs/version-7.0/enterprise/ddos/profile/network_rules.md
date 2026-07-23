@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Network Rules Configuration | Haltdos Docs"
+description: "Create and manage network rules to filter traffic, enforce policies, and control packet processing behavior."
 ---
 
 # Network Rules

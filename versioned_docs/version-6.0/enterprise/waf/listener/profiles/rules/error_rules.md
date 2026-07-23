@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Custom Error Rules | Haltdos Docs"
+description: "Blocks internal back-end server traces by overlaying native clean error pages across intercept codes."
 ---
 # Error Rules
 ### Overview

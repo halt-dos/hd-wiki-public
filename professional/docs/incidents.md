@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Incident Management | Haltdos Professional WAF"
+description: "Monitor cyber threats, investigate security incidents, analyze attack logs, and respond quickly using Haltdos incident management tools."
 ---
 
 

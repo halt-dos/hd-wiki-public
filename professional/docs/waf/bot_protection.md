@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Bot Protection | Haltdos Professional WAF"
+description: "Detect, challenge, and block malicious bots, scrapers, and automated attacks while allowing legitimate users."
 ---
 
 

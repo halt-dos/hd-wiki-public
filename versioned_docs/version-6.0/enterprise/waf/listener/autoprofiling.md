@@ -1,5 +1,7 @@
 ---
 sidebar_position: 11
+title: "Automatic Profiling Engine | Haltdos Docs"
+description: "Evaluates transactional trends over time to dynamically compile tailored positive-security compliance exceptions."
 ---
 
 # Auto Profiling 

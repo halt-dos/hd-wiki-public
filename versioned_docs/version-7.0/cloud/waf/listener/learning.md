@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Learning Mode | Haltdos Cloud WAF"
+description: "Learn how WAF Learning Mode analyzes application traffic to generate optimized security policies."
 ---
 # Learning
 

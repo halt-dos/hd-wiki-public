@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Anti-Virus Profile | Haltdos Docs"
+description: "Setup guidelines for anti-virus scrubbing hooks designed to block malicious file attachments at the application edge."
 ---
 
 # Antivirus 

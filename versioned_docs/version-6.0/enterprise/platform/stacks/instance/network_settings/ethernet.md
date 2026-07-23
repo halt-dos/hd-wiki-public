@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Physical Ethernet Ports | Haltdos Docs"
+description: "Configures interface speeds, duplex choices, MTU bounds, and physical layer hardware bindings."
 ---
 
 # Ethernet

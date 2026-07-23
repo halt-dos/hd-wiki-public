@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Executive Reporting Engine | Haltdos Docs"
+description: "Settings governing scheduled, automated generation of comprehensive PDF/CSV analytics summaries and compliance auditing reports."
 ---
 
 # Reports

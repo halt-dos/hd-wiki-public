@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Custom Pages | Haltdos Docs"
+description: "Configures central corporate assets, injection templates, and error splash pages displayed during proxy intercepts."
 ---
 # Custom Pages
 

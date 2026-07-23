@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "CDN Rules | Haltdos Cloud CDN"
+description: "Create custom CDN rules for caching, redirects, request handling, headers, and edge delivery optimization."
 ---
 
 # CDN Rules

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Operational Settings | Haltdos Professional WAF"
+description: "Configure operational settings, listener behavior, request handling, and global WAF configuration options."
 ---
 
 

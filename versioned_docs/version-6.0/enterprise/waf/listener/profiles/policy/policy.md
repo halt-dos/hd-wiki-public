@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Policy Management | Haltdos Docs"
+description: "Index defining layout parsing rules across various content encoding strategies (Web, JSON, XML)."
 ---
 
 # Policy

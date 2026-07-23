@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Load Balancing Rules | Haltdos Link Load Balancer"
+description: "Configure load balancing rules to distribute network traffic across multiple WAN links for optimal performance."
 ---
 
 # Load Balancing

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "System Power & Tuning | Haltdos Docs"
+description: "Directives to handle remote machine reboots, update patches, and control specialized core microcode flags."
 ---
 
 # Operational Settings

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Bot Protection | Haltdos Community WAF"
+description: "Detect, challenge, and block malicious bots, crawlers, and automated attacks while allowing legitimate traffic."
 ---
 # Bot Protection
 

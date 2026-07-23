@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Upstream Rules | Haltdos Enterprise ADC"
+description: "Route application requests to backend server groups using intelligent upstream routing rules."
 ---
 
 # Upstream Rule

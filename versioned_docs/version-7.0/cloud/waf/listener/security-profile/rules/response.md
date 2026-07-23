@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Response Filtering Rules | Haltdos Cloud WAF"
+description: "Prevent sensitive data exposure by filtering application responses before delivery."
 ---
 
 # Response Filtering

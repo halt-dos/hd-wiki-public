@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Embedded VM Hypervisor | Haltdos Docs"
+description: "Manual detailing hypervisor allocation controls used to host secondary software nodes inside isolated platform instances."
 ---
 
 # Virtual Machines

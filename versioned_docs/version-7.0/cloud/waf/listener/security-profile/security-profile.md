@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Security Profiles | Haltdos Cloud WAF"
+description: "Configure comprehensive security profiles to protect websites and APIs from cyber threats."
 ---
 # Security Profile
 

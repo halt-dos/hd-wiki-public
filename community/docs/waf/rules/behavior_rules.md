@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Behavior Rules | Haltdos Community WAF"
+description: "Configure behavior-based security rules to detect suspicious activity and stop malicious user behavior automatically."
 ---
 # Behavior Rules
 

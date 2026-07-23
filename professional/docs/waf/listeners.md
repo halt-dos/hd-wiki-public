@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Configure WAF Listeners | Haltdos Professional WAF"
+description: "Configure listeners to securely receive web traffic, map domains, and route requests to backend server groups."
 ---
 
 

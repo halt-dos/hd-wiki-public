@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Redirection Rules | Haltdos Professional WAF"
+description: "Configure HTTP 301 and 302 redirects based on URLs, domains, or request conditions to improve user experience and SEO."
 ---
 # Redirectional Rules
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Security Logs | Haltdos Cloud WAF"
+description: "Review security logs, blocked requests, audit records, and application events for troubleshooting and compliance."
 ---
 
 # Monitor Scripts

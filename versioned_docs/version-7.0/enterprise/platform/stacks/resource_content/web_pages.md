@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Custom Web Pages | Haltdos Enterprise"
+description: "Create and manage custom web pages for error handling, maintenance mode, redirects, and branded user experiences."
 ---
 
 # Web pages

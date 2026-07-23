@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Correlation Rules | Haltdos Professional WAF"
+description: "Detect sophisticated attacks by correlating multiple security events using advanced correlation rules."
 ---
 # Correlation Rules
    

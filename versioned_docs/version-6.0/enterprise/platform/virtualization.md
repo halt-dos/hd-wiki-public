@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Hypervisor Virtualization | Haltdos Docs"
+description: "Operational details tracking virtual switch models, resource assignments, and virtualization container allocations."
 ---
 
 # Virtualization

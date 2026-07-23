@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Platform Analytics | Haltdos Enterprise"
+description: "Analyze dashboards, reports, and performance metrics to monitor security, network activity, and infrastructure health."
 ---
 
 # Analytics

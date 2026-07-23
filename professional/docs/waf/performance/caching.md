@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Web Caching | Haltdos Professional WAF"
+description: "Improve website performance with caching rules that reduce server load and accelerate content delivery."
 ---
 
 

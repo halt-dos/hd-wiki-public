@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Deception Honeypots | Haltdos Docs"
+description: "Embeds invisible trap links and mock assets within responses to instantly trap and block automated scanners."
 ---
 
 # Deception Rules

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "TCP Shield Configuration | Haltdos Docs"
+description: "Configure TCP Shield to protect applications from SYN floods, TCP connection exhaustion, and other TCP-based DDoS attacks."
 ---
 
 # TCP Shield

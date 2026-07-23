@@ -1,3 +1,8 @@
+---
+title: "LLB Rules Configuration | Haltdos Enterprise"
+description: "Create and manage NAT, routing, QoS, and traffic management rules for Link Load Balancer deployments."
+---
+
 # Rules
 
 Custom Rules for NAT, Static & Policy-based routing, QoS

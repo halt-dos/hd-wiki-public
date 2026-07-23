@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Caching | Haltdos Cloud WAF"
+description: "Configure edge caching to reduce backend load, improve website speed, and accelerate content delivery."
 ---
 # Caching
 

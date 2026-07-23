@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Server Groups | Haltdos Professional WAF"
+description: "Create and manage server groups to organize backend servers for load balancing, failover, and high availability."
 ---
 
 

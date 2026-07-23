@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Correlation Rules | Haltdos Cloud WAF"
+description: "Identify advanced threats by correlating multiple security events and applying intelligent detection rules."
 ---
 
 # TCP Shield

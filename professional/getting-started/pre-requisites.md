@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Installation Prerequisites | Haltdos Professional WAF"
+description: "Review hardware, software, networking, and system requirements before installing Haltdos Professional WAF."
 ---
 
 # Pre-Requisites

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Health Monitors | Haltdos Cloud WAF"
+description: "Configure health monitors to detect server failures and automatically restore healthy origin servers."
 ---
 # Monitors
 

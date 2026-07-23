@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Telemetry Analytics | Haltdos Docs"
+description: "Displays hardware metric aggregators, total computing utilization trails, and memory allocation summaries."
 ---
 
 # Analytics

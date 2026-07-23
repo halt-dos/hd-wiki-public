@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Threat Intelligence | Haltdos Cloud"
+description: "Explore Haltdos Threat Intelligence for real-time indicators of compromise, attack insights, and global threat visibility."
 ---
 
 # Threat Intelligence

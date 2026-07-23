@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "TCP Settings | Haltdos Enterprise Anti-DDoS"
+description: "Configure TCP-level parameters to optimize network performance and strengthen DDoS protection."
 ---
 
 # TCP Settings

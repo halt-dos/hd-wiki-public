@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Installation Prerequisites | Haltdos Community WAF"
+description: "Review the hardware, software, network, and operating system requirements before installing Haltdos Community WAF."
 ---
 
 # Pre-Requisites

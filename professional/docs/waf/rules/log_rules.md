@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Logging Rules | Haltdos Professional WAF"
+description: "Configure logging rules to capture security events, audit activity, and troubleshoot web application issues."
 ---
 # Log Rules
    

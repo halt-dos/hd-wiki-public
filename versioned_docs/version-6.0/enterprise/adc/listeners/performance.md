@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Performance Optimization | Haltdos Docs"
+description: "Guides for applying compression bounds, proxy-side asset caching, and TCP stack optimization rules."
 ---
 
 # Performance

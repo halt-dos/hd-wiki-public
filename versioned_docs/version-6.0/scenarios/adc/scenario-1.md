@@ -1,3 +1,8 @@
+---
+title: "ADC Deployment Scenario 1 | Haltdos Docs"
+description: "Learn how to deploy Haltdos ADC using Scenario 1 with step-by-step configuration guidance."
+---
+
 # Scenario 1
 
 SLB configuration under different Scenarios

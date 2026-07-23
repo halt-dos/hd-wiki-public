@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Web Pages Templates | Haltdos Docs"
+description: "Central script editor housing custom block, injection, challenge, and notification pages used to substitute standard error states."
 ---
 
 # Web pages

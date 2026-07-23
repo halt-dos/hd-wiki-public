@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "DDoS Clustering | Haltdos Docs"
+description: "Explains cluster syncing logic, high-availability status heartbeats, and shared state lookup tables."
 ---
 
 # Cluster

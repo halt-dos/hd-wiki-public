@@ -1,3 +1,8 @@
+---
+title: "LLB Deployment Scenario 3 | Haltdos Docs"
+description: "Follow Scenario 3 to configure Haltdos Local Load Balancer in production environments."
+---
+
 # Scenario 3
 
 LLB configuration under different Scenarios

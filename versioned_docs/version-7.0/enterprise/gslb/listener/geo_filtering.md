@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "GSLB Geo Filtering | Haltdos Enterprise"
+description: "Configure geo-filtering policies to route or restrict DNS traffic based on client location, IP address, and regional requirements."
 ---
 
 # Geo Filtering

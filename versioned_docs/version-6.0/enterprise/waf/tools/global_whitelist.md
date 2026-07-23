@@ -2,6 +2,8 @@
 
 sidebar_position: 1
 
+title: "Global Whitelist Settings | Haltdos Docs"
+description: "Establishes a broad, baseline exception array shielding safe IPs or services across all profiles."
 ---
 
 # Global Whitelist

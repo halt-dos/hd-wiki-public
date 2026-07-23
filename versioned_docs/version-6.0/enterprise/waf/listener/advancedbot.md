@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Advanced Bot Protection | Haltdos Docs"
+description: "Tracks execution behavior, mouse navigation flags, and active challenges to neutralize modern distributed bots."
 ---
 # Advanced Bot
 User can specify advanced bot settings on this page for Listener

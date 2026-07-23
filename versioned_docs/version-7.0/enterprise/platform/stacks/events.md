@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Platform Events | Haltdos Enterprise"
+description: "View and investigate security events, system alerts, and operational activities from the Haltdos Enterprise Platform."
 ---
 
 # Events

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Quality of Service (QoS) | Haltdos Docs"
+description: "Sets traffic prioritization rules, defining low-latency lanes for voice protocols and throttling low-priority downloads."
 ---
 
 # Traffic Shaper / QoS

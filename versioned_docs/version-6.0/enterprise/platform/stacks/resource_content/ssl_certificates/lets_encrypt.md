@@ -1,3 +1,8 @@
+---
+title: "Let's Encrypt Automation | Haltdos Docs"
+description: "Outlines defining domain ownership validations (HTTP/DNS challenges) to automate Let's Encrypt lifecycle renewals."
+---
+
 # Lets Encrypt Certificates
 
 Certificates used for providing security for online communications.

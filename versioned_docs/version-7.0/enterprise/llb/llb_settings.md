@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "LLB Settings | Haltdos Enterprise"
+description: "Configure Link Load Balancer settings for traffic management, failover, WAN optimization, and high availability."
 ---
 
 

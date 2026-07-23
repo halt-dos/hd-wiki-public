@@ -1,3 +1,8 @@
+---
+title: "Global Server Load Balancing Knowledge Base | Haltdos Docs"
+description: "Browse GSLB knowledge base articles covering DNS load balancing, failover, monitoring, traffic management, and deployment best practices."
+---
+
 # Global Server Load Balancing
 
 This section describes the knowledge base of how to use Haltdos Global Server Load Balancing for the various use cases.

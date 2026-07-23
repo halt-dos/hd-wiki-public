@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Error Rules | Haltdos Docs"
+description: "Replaces raw backend application drop codes with corporate custom notification pages at the load balancer layer."
 ---
 
 # Error Rules

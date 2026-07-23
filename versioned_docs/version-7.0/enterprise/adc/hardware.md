@@ -1,3 +1,8 @@
+---
+title: "ADC Hardware Specifications | Haltdos Enterprise"
+description: "Review Haltdos ADC hardware models and specifications to choose the right deployment for your infrastructure."
+---
+
 # Hardware Specs
 Haltdos hardware specs page introduce customers about various range of models along with their hardware specifications.
 

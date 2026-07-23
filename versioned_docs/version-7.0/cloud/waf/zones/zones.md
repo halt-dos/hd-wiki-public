@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Zones Configuration | Haltdos Cloud WAF"
+description: "Configure zones, domains, and subdomains to manage web application security and traffic delivery."
 ---
 # Zones
 

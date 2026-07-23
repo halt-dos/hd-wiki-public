@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Access Control (RBAC) | Haltdos Docs"
+description: "Establishes role-based permission templates restricting administrative user access boundaries to explicit network objects."
 ---
 
 # Access Control

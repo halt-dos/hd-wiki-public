@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Webhooks | Haltdos Docs"
+description: "Configures real-time outbound HTTP POST notifications triggered automatically when specific network or security events occur."
 ---
 
 # Webhooks

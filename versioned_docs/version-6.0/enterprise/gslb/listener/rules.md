@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "SSL & TLS Settings | Haltdos Cloud WAF"
+description: "Configure SSL certificates, TLS versions, cipher suites, and HTTPS security policies for your applications."
 ---
 
 # Rules

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Platform Resources | Haltdos Enterprise"
+description: "Manage shared resources including certificates, cache pools, scripts, encryption keys, and reusable security assets."
 ---
 
 # Resources

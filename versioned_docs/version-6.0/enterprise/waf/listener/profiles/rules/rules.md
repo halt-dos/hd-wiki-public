@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Security Profile Rules | Haltdos Docs"
+description: "Operational index detailing precise parameter tracking mechanisms used to catch exploit actions."
 ---
 
 # Rules

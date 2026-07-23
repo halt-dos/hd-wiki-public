@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Active Directory Integration | Haltdos Docs"
+description: "Outlines linking the platform to enterprise LDAP/Active Directory catalogs to enable unified single-sign-on (SSO) credentials."
 ---
 
 # Active Directory

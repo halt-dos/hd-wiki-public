@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Resource Content | Haltdos Docs"
+description: "Master asset directory housing shared templates, scripts, certificates, and reusable configurations across the system stack."
 ---
 
 # Resource Content

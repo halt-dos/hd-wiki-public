@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Dashboard Overview | Haltdos Professional WAF"
+description: "View application analytics, traffic insights, security events, bandwidth usage, and system performance from the WAF dashboard."
 ---
 
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "AI Machine Learning Engine | Haltdos Docs"
+description: "Details real-time algorithmic behavioral baseline tracking designed to spot subtle advanced persistent threats."
 ---
 
 # Machine Learning

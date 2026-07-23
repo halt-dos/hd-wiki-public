@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Geo Filtering | Haltdos Docs"
+description: "Establishes infrastructure routing policies or drop actions relative to visitor geolocation coordinates."
 ---
 
 # Geo Filtering

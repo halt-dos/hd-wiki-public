@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Upstream Rules | Haltdos Cloud WAF"
+description: "Route requests to different server groups using intelligent upstream routing rules."
 ---
 # Upstream rules
 

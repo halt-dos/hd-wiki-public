@@ -1,6 +1,8 @@
 ---
 sidebar_position: 0
 pagination_prev: null
+title: "Enterprise WAF Home | Haltdos Docs"
+description: "Central landing directory for local high-availability on-premise Enterprise Web Application Firewall deployment setups."
 ---
 
 # Web Application Firewall (WAF)

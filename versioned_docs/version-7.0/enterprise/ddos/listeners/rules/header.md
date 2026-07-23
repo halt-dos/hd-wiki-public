@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Header Rules | Haltdos Enterprise Anti-DDoS"
+description: "Modify request and response headers, cookies, and parameters to control traffic behavior and enhance security."
 ---
 
 # Header Rules

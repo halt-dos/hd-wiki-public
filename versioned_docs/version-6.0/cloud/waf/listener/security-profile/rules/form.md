@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Form Field Verification | Haltdos Docs"
+description: "Applies exact parameter type masks, mandatory inclusions, and length barriers onto web request variables."
 ---
 
 # Form Validation

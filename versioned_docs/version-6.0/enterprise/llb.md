@@ -1,6 +1,8 @@
 ---
 sidebar_position: 0
 pagination_prev: null
+title: "XML Security Policy | Haltdos Cloud WAF"
+description: "Protect XML APIs and web services by validating XML requests and preventing malicious payload attacks."
 ---
 
 # Link Load Balancer (LLB)

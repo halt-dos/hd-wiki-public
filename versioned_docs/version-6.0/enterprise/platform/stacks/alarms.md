@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "System Alarms & Logs | Haltdos Docs"
+description: "Threshold configuration console tracking critical hardware errors, excessive CPU temperatures, and storage faults."
 ---
 
 # Alarms

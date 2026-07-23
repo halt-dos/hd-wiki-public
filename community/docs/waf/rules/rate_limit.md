@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Rate Limiting Rules | Haltdos Community WAF"
+description: "Protect applications against abuse and DDoS attacks by configuring request rate limits and burst control policies."
 ---
 # Rate Limit Rules
 ### Overview

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Aggressive Aging | Haltdos Enterprise Anti-DDoS"
+description: "Configure aggressive session cleanup settings to efficiently manage active connections under high load."
 ---
 
 # Aggressive Aging

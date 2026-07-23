@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Network Incidents | Haltdos Enterprise Anti-DDoS"
+description: "Analyze network-layer DDoS incidents, traffic anomalies, and mitigation events for improved network protection."
 ---
 
 # Network

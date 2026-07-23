@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "SSL Settings | Haltdos Community WAF"
+description: "Configure TLS protocols, SSL ciphers, HTTPS settings, and secure encryption policies for your protected web applications."
 ---
 
 # SSL Settings

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "WAF Listeners | Haltdos Cloud WAF"
+description: "Configure WAF listeners to receive traffic, map domains, manage ports, and route requests to backend servers."
 ---
 
 # Listener

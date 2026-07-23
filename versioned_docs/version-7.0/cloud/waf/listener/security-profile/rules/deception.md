@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Deception Rules | Haltdos Cloud WAF"
+description: "Configure deception techniques to detect attackers and strengthen web application security."
 ---
 
 # Deception Rules

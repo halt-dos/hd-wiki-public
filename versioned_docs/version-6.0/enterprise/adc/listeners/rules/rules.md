@@ -1,3 +1,8 @@
+---
+title: "ADC Routing Rules | Haltdos Docs"
+description: "Functional landing page indexing custom rules applied to incoming streams on the load balancer."
+---
+
 # Rules
 
 ---

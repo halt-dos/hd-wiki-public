@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "VLAN Tagging (802.1Q) | Haltdos Docs"
+description: "Configures virtual sub-interface layers to segregate traffic pathways across distinct corporate VLAN identifiers."
 ---
 
 # Virtual LAN

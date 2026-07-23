@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Behavior Rules | Haltdos Cloud WAF"
+description: "Detect suspicious user behavior and automatically apply security actions to reduce abuse and malicious activity."
 ---
 
 # TCP Settings

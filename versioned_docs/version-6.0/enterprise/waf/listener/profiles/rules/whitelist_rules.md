@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Security Whitelists | Haltdos Docs"
+description: "Explicitly excludes verified integration platforms, payment channels, and internal testing resources from inspection."
 ---
 
 # Whitelist Rule

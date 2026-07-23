@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "API Tokens | Haltdos Enterprise Platform"
+description: "Generate and manage API tokens to securely authenticate applications and automate Haltdos Enterprise platform operations."
 ---
 
 # API Tokens 

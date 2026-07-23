@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "WAF Security Profiles | Haltdos Docs"
+description: "Root structure housing deep security rulesets, positive compliance controls, and threat matching options."
 ---
 # Security Profile
 

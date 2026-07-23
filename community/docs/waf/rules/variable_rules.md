@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Variable Rules | Haltdos Community WAF"
+description: "Configure variable-based conditions to create flexible security policies and advanced traffic filtering rules."
 ---
 
 # Variable Rules

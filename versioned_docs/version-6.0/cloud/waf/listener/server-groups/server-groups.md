@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Server Groups | Haltdos Docs"
+description: "Guide to grouping backend target pools to map granular application traffic streams correctly."
 ---
 # Server Groups
 

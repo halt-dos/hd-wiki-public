@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Performance Optimization | Haltdos Enterprise ADC"
+description: "Improve application performance using caching, compression, connection optimization, and traffic acceleration."
 ---
 
 # Performance

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "SSL Certificates | Haltdos Cloud WAF"
+description: "Configure SSL certificates to secure HTTPS connections, enable TLS encryption, and protect web applications."
 ---
 # SSL Certificates
 

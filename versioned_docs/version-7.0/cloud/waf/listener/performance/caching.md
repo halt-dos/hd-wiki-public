@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Caching Configuration | Haltdos Cloud WAF"
+description: "Configure response caching to reduce origin load and accelerate website performance."
 ---
 # Caching
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Bot Shield Profiles | Haltdos Docs"
+description: "Coordinates automated browser discovery, bad client fingerprint blocks, and crypto validation layers."
 ---
 
 # Bot Protection

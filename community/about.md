@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 sidebar_label: About Community WAF
+title: "About Haltdos Community WAF | Free Web Application Firewall"
+description: "Learn about Haltdos Community WAF, a free web application firewall that protects websites against OWASP Top 10 attacks, SQL injection, XSS, and bots."
 ---
 
 # About Community WAF

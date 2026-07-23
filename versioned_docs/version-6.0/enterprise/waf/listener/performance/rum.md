@@ -1,3 +1,8 @@
+---
+title: "Real User Monitoring (RUM) | Haltdos Docs"
+description: "Configures scripts injected at the proxy layer to measure client-side page rendering speeds and transaction delivery times."
+---
+
 # RUM Metric
 Real User Monitoring (RUM) helps in analyzing website performance (till page metrics) on client side.
 

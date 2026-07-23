@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "SMTP Alert Gateways | Haltdos Docs"
+description: "Links infrastructure components to remote corporate email notification relays to distribute automated alert messages."
 ---
 
 # E-Mail Integration (SMTP)

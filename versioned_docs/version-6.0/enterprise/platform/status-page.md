@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Status Page Configuration | Haltdos Docs"
+description: "Guides configuration rules to map status nodes to custom domains and template alert text choices."
 ---
 
 # Status Page

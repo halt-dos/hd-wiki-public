@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "SSL Certificates | Haltdos Enterprise"
+description: "Upload, manage, and deploy SSL/TLS certificates to secure websites, APIs, and enterprise applications."
 ---
 
 # SSL Certificates

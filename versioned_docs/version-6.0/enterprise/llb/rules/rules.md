@@ -1,3 +1,8 @@
+---
+title: "Security Reports & Analytics | Haltdos Cloud WAF"
+description: "Generate detailed security reports and analytics to monitor attacks, traffic trends, and application performance."
+---
+
 # Rules
 
 Custom Rules for NAT, Static & Policy-based routing, QoS

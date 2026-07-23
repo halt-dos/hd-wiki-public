@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Security Events | Haltdos Cloud WAF"
+description: "Review security events, blocked attacks, rule violations, and audit logs for comprehensive threat analysis."
 ---
 # Events
 

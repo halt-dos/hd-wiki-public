@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Bot Protection | Haltdos Docs"
+description: "Employs stateless structural verification challenges to detect and mitigate massive scripted infrastructure botnets."
 ---
 
 # Bot Protection

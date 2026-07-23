@@ -1,3 +1,8 @@
+---
+title: "GSLB Listener Configuration | Haltdos Enterprise"
+description: "Configure GSLB listeners to manage DNS traffic, routing policies, load balancing, and global application availability."
+---
+
 # Listener
 
 ---

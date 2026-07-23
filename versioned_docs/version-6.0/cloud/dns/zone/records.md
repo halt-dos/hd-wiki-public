@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "DNS Records | Haltdos Cloud DNS"
+description: "Add and manage A, AAAA, CNAME, MX, TXT, SRV, and other DNS records for reliable domain resolution."
 ---
 
 # Records

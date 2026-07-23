@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Backup Policies | Haltdos Docs"
+description: "Configures local or automated remote schedules to back up system configurations, states, and telemetry data."
 ---
 
 # Backup Policy

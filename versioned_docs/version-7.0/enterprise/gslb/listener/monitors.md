@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "GSLB Health Monitors | Haltdos Enterprise"
+description: "Configure health monitors to continuously check application endpoints and automatically trigger DNS failover when required."
 ---
 
 # Monitors

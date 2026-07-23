@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "API Protection | Haltdos Cloud WAF"
+description: "Secure REST and GraphQL APIs with schema validation, rate limiting, authentication controls, and attack protection."
 ---
 
 # Domain Filters

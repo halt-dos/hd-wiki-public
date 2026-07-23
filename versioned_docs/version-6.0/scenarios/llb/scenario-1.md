@@ -1,3 +1,8 @@
+---
+title: "LLB Deployment Scenario 1 | Haltdos Docs"
+description: "Learn how to deploy Haltdos Local Load Balancer using Scenario 1 configuration."
+---
+
 # Scenario 1
 
 LLB configuration under different Scenarios

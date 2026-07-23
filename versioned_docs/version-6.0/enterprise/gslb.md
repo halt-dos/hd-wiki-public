@@ -1,6 +1,8 @@
 ---
 pagination_prev: null
 sidebar_position: 0
+title: "Security Settings | Haltdos Cloud WAF"
+description: "Configure core WAF security settings, protection modes, security policies, and threat mitigation options."
 ---
 
 # Global Server Load Balancer

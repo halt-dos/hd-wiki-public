@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Policy Rules | Haltdos Enterprise ADC"
+description: "Configure policy rules to control traffic handling, request processing, and application delivery."
 ---
 
 # Policy Rules

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Operational Event Log | Haltdos Docs"
+description: "Tracking ledger logging administrative access history, profile changes, and orchestration runtime tasks."
 ---
 
 # Events

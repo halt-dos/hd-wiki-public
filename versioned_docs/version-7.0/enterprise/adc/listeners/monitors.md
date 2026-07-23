@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Health Monitors | Haltdos Enterprise ADC"
+description: "Configure health monitors to detect backend server failures and automatically restore healthy services."
 ---
 
 # Monitors

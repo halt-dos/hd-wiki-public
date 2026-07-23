@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Load Balancing Configuration | Haltdos Cloud WAF"
+description: "Configure load balancing algorithms to distribute traffic across healthy application servers."
 ---
 # Load Balancing
 

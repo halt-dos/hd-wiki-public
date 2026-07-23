@@ -1,5 +1,7 @@
 ---
 sidebar_position : 12
+title: "Custom Log Rules | Haltdos Docs"
+description: "Directs specific event data segments to custom analytics indices or centralized enterprise SIEM endpoints."
 ---
 # Log Rules
    

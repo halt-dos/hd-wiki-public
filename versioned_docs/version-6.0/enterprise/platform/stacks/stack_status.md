@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Stack Status Telemetry | Haltdos Docs"
+description: "Displays real-time computing resource footprints, engine execution loads, and node health flags across the cluster."
 ---
 
 # Stack Status

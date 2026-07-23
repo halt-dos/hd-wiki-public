@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Upstream Health Monitors | Haltdos Docs"
+description: "Schedules active synthetic testing patterns assessing operational response health across backend application pools."
 ---
 
 # Monitors

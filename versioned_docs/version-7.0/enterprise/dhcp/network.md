@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "DHCP Network Configuration | Haltdos Enterprise"
+description: "Configure Haltdos Enterprise as a DHCP server to assign IP addresses, manage address pools, and simplify enterprise network administration."
 ---
 
 # Network

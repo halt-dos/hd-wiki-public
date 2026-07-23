@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Load Balancing | Haltdos Professional WAF"
+description: "Configure load balancing algorithms to distribute application traffic efficiently across multiple backend servers."
 ---
 
 

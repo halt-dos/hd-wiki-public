@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Behavior Rules | Haltdos Docs"
+description: "Monitors individual client session trends to catch hidden malicious application logic patterns."
 ---
 
 # Behavior Rule

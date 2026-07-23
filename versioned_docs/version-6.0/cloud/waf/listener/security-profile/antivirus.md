@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "ICAP Antivirus Scanning | Haltdos Docs"
+description: "Integrates file upload validation engines to isolate and scrub malware payloads attached to multipart files."
 ---
 
 # Antivirus

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "GSLB Rules Configuration | Haltdos Enterprise"
+description: "Create and manage GSLB routing rules to optimize DNS traffic distribution, failover, and global application performance."
 ---
 
 # Rules

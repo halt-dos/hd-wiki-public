@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Security Incidents Ledger | Haltdos Docs"
+description: "Analytical tracker cataloging dropped web requests, detailing payload parameters and specific rule violations."
 ---
 
 # Incidents

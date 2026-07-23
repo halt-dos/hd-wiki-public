@@ -1,3 +1,8 @@
+---
+title: "Knowledge Base | Haltdos Community WAF"
+description: "Browse technical articles, troubleshooting guides, best practices, and configuration tutorials for Haltdos Community WAF."
+---
+
 # WAF CE Knowledge Base
 
 This section describes the knowledge base of how to use Haltdos WAF Community Edition for multiple use cases.

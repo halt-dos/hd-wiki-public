@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Geo Filtering | Haltdos Cloud WAF"
+description: "Control access by country or region using Geo Filtering policies to improve security and regulatory compliance."
 ---
 
 # Geo Filtering

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Server Groups | Haltdos Cloud WAF"
+description: "Configure origin server groups and load balancing settings for high availability applications."
 ---
 # Server Groups
 

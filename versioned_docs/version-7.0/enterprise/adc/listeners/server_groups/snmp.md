@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "SNMP Monitoring | Haltdos Enterprise ADC"
+description: "Configure SNMP monitoring to collect performance metrics and monitor application delivery infrastructure."
 ---
 
 # SNMP

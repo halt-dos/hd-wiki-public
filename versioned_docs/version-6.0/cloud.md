@@ -2,6 +2,8 @@
 sidebar_position: 0
 sidebar_label: Haltdos Cloud
 pagination_prev: null
+title: "Haltdos Cloud v6 | Cloud Security Platform"
+description: "Learn about Haltdos Cloud v6, including cloud security architecture, distributed protection, and centralized management capabilities."
 ---
 
 # Haltdos Cloud

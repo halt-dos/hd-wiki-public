@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Load Balancing Configuration | Haltdos Enterprise ADC"
+description: "Configure load balancing algorithms to distribute application traffic across healthy backend servers."
 ---
 
 # Load Balancing

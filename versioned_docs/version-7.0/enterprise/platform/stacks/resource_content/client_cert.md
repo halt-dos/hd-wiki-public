@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Client Certificates | Haltdos Enterprise"
+description: "Upload and manage client certificates for mutual TLS (mTLS), client authentication, and secure communications."
 ---
 
 # Client Certificates

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Header Rules | Haltdos Cloud WAF"
+description: "Modify HTTP headers, cookies, and request or response parameters before reaching backend servers."
 ---
 # Header Rules
 

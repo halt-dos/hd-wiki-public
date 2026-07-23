@@ -1,5 +1,7 @@
 ---
 pagination_prev: null
+title: "Enterprise VPN Core | Haltdos Docs"
+description: "Deep implementation guide for provisioning secure remote entry tunnels using standard IPsec or SSL VPN architectures."
 ---
 
 # Remote Access Gateway

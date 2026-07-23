@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Destination NAT (DNAT) | Haltdos Link Load Balancer"
+description: "Configure Destination NAT (DNAT) rules to redirect inbound traffic to internal servers securely and efficiently."
 ---
 
 # Destination NAT

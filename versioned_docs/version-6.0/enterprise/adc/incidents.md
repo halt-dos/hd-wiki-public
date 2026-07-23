@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "ADC Incidents | Haltdos Docs"
+description: "Audit ledger logging performance errors, backend host timeouts, health check failures, and mitigation events."
 ---
 
 # Incidents

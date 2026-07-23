@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Header Rules | Haltdos Community WAF"
+description: "Create header rules to inspect, modify, validate, or remove HTTP request and response headers securely."
 ---
 
 # Header Rules

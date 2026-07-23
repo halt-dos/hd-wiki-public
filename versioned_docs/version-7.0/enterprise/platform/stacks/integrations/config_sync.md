@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Configuration Sync | Haltdos Enterprise"
+description: "Synchronize configurations across Haltdos management nodes to ensure consistent security policies and centralized administration."
 ---
 
 # Config Sync

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Account Settings | Haltdos Community WAF Docs"
+description: "Manage your Haltdos Community WAF account settings, update your profile, change passwords, and configure user preferences securely."
 ---
 
 # Account

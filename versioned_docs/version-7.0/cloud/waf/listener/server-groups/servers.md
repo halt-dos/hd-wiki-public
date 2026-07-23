@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Origin Servers | Haltdos Cloud WAF"
+description: "Add, configure, and monitor backend application servers for secure traffic delivery."
 ---
 # Servers
 

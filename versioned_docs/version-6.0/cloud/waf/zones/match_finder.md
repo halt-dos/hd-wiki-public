@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Match Finder | Haltdos Docs"
+description: "Analytical utility to run custom regex scripts against log trails to test threat signature accuracy."
 ---
 # Match Finder
 

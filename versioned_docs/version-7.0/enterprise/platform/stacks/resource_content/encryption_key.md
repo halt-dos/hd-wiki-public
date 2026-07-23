@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Encryption Keys | Haltdos Enterprise"
+description: "Generate and manage encryption keys to protect sensitive data, secure communications, and strengthen platform security."
 ---
 
 # Encryption Key

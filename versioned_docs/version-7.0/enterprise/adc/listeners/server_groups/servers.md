@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Backend Servers | Haltdos Enterprise ADC"
+description: "Add, configure, and monitor backend servers for reliable and secure application delivery."
 ---
 
 # Servers

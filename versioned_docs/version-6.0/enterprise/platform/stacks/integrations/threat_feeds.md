@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Threat Feeds Integration | Haltdos Docs"
+description: "Configures ingestion pathways for third-party STIX/TAXII or custom IP reputation threat intelligence feeds."
 ---
 
 # Threat Feeds

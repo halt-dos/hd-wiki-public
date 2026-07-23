@@ -1,3 +1,8 @@
+---
+title: "Diagnostic Tools Room | Haltdos Docs"
+description: "Core index referencing troubleshooting workflows, false-positive filters, and pattern testers."
+---
+
 # Tools
 
 ---

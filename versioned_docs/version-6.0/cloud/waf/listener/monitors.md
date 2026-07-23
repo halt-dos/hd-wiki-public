@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Backend Health Monitors | Haltdos Cloud WAF"
+description: "Configure health monitoring, availability checks, and automatic failover for backend application servers."
 ---
 # Monitors
 

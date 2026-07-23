@@ -1,6 +1,8 @@
 ---
 sidebar_position: 0
 pagination_prev: null
+title: "Core Appliance Platform | Haltdos Docs"
+description: "Hardware administration guide managing bare-metal appliances, core operating layers, hypervisor parameters, and baseline frames."
 ---
 
 # Haltdos Platform

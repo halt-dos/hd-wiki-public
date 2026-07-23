@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Rate Limit Rules | Haltdos Enterprise Anti-DDoS"
+description: "Define rate limiting rules to control request frequency, prevent abuse, and mitigate DDoS attacks."
 ---
 
 # Rate Limit Rules

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Platform Integrations | Haltdos Enterprise"
+description: "Explore supported integrations for Haltdos Enterprise, including APIs, Syslog, webhooks, threat intelligence, and configuration synchronization."
 ---
 
 # Integrations

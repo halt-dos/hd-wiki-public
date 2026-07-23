@@ -1,3 +1,8 @@
+---
+title: "Mitigation Profiles | Haltdos Docs"
+description: "Structural repository housing network behavior baselines and specialized layer-to-layer filtering thresholds."
+---
+
 # Profile
 
 Configure profile level configurations

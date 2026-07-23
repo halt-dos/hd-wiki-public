@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Anti-DDoS Protection | Haltdos Cloud v7"
+description: "Protect websites and APIs against Layer 3, Layer 4, and Layer 7 DDoS attacks with always-on, real-time mitigation."
 ---
 # Anti-DDoS
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Fixed Routing Rules | Haltdos Link Load Balancer"
+description: "Configure fixed routing rules to direct network traffic through specific WAN interfaces and gateways."
 ---
 
 # Fixed Routing

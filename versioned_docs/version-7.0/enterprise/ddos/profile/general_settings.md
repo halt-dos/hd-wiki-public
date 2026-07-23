@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "DDoS Profile Settings | Haltdos Documentation"
+description: "Configure DDoS profile settings to define inspection behavior, security policies, and traffic handling rules."
 ---
 
 # Profile Settings

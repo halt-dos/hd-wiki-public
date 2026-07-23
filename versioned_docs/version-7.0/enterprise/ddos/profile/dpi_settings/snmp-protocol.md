@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "SNMP Protocol Inspection | Haltdos DPI Settings"
+description: "Monitor SNMP traffic for suspicious activity, unauthorized requests, and management protocol abuse."
 ---
 
 # SNMP Protocol

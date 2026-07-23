@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Rate Limiting Rules | Haltdos Docs"
+description: "Sets execution frequency ceilings across sliding tracking timelines to suppress continuous transaction loops."
 ---
 # Rate Limit Rules
 ### Overview

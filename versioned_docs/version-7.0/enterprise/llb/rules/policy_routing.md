@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Policy-Based Routing | Haltdos Link Load Balancer"
+description: "Configure policy-based routing to direct network traffic based on source, destination, protocol, or application policies."
 ---
 
 # Policy Routing

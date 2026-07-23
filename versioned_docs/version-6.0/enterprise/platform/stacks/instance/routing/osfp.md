@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "OSPF Area Configurations | Haltdos Docs"
+description: "Establishes OSPF backbone areas, interface cost metrics, hello timings, and path distribution constraints."
 ---
 
 # OSFP

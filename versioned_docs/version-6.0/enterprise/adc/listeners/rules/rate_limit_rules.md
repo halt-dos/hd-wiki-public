@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Rate Limit Rules | Haltdos Docs"
+description: "Sets request velocity limits over sliding timelines to prevent api abuse and brute-force events."
 ---
 
 # Rate Limit Rules

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Request Throttling & Limiting | Haltdos Docs"
+description: "Mitigates brute-force attacks by limiting max requests inside sliding windows per user identifier or source IP."
 ---
 
 # Rate Limiting

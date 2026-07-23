@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Core Listener Settings | Haltdos Docs"
+description: "Manages network connection bounds, keep-alive times, request size barriers, and binding configurations."
 ---
 
 # Settings

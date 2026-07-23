@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "AAA Authentication Policies | Haltdos Docs"
+description: "Defines centralized user validation criteria, configuring RADIUS, TACACS+, or local multi-factor auth parameters."
 ---
 
 # AAA Policy

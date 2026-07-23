@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Multi-Vector Correlation Rules | Haltdos Docs"
+description: "Employs stateful logic tracking multiple independent minor anomalies across a timeline to surface a single severe incident."
 ---
 
 # Correlation Rules

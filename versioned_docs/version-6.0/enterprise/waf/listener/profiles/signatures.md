@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Attack Signature Pools | Haltdos Docs"
+description: "Coordinates platform validation matches targeting public vulnerabilities, zero-day hazards, and common web threats."
 ---
 
 # Signatures

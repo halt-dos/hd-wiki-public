@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Regex Match Finder | Haltdos Docs"
+description: "Diagnostic terminal evaluating custom validation expressions against mock logs to verify rules."
 ---
 # Match Finder
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Layer-3 Core Routing | Haltdos Docs"
+description: "Structural portal guiding engineers through standard dynamic routing engine parameters."
 ---
 
 # Routing

@@ -1,3 +1,8 @@
+---
+title: "ADC Deployment Scenario 3 | Haltdos Docs"
+description: "Follow Scenario 3 to deploy Haltdos ADC for secure traffic management and load balancing."
+---
+
 # Scenario 3
 
 SLB configuration under different Scenarios

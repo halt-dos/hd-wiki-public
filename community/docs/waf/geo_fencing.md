@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Geo Fencing | Haltdos Community WAF"
+description: "Restrict website access by country or region using Geo Fencing policies to improve security and compliance."
 ---
 
 # Geo Fencing

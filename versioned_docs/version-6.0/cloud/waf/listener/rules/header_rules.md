@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Header Alteration Rules | Haltdos Docs"
+description: "Manipulates flow variables by adding, matching, or stripping key-value markers inside HTTP stream headers."
 ---
 # Header Rules
 

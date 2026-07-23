@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Firewall Rules | Haltdos Community WAF"
+description: "Configure firewall rules to allow, deny, challenge, or log HTTP requests based on custom security conditions."
 ---
 
 # Firewall Rules

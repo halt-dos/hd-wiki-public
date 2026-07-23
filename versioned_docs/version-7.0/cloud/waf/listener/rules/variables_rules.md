@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Variables Rules | Haltdos Cloud WAF"
+description: "Configure dynamic variables for advanced traffic handling and application security policies."
 ---
 # Variable Rules
 

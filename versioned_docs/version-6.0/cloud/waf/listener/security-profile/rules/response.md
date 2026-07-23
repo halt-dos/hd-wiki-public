@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Response Inspection Rules | Haltdos Docs"
+description: "Inspects egress traffic streams to prevent data leaks by sanitizing sensitive patterns like SSNs or credit card records."
 ---
 
 # Response Filtering

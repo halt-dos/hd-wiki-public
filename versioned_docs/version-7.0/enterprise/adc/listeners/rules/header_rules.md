@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Header Rules | Haltdos Enterprise ADC"
+description: "Modify HTTP request and response headers to improve security, routing, and application behavior."
 ---
 
 # Header Rules

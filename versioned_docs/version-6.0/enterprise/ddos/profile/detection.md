@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Firewall Rules | Haltdos Cloud WAF"
+description: "Create firewall rules to allow, block, challenge, or log requests based on custom security conditions."
 ---
 
 # Detection

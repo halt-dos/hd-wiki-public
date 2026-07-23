@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "NTP Protocol Inspection | Haltdos DPI Settings"
+description: "Detect NTP abuse, reflection attacks, and malformed packets through advanced protocol inspection rules."
 ---
 
 # NTP Protocol

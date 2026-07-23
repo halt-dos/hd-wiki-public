@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Session Table | Haltdos Link Load Balancer"
+description: "Monitor and manage active network sessions, connection states, and traffic flows within the Link Load Balancer."
 ---
 
 

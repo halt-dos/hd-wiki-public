@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Operational Settings | Haltdos Cloud WAF"
+description: "Configure listener operational settings including request limits, keep-alive, buffers, and connection handling."
 ---
 # Operational Settings
 

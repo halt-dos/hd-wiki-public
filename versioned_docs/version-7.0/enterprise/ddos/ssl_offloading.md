@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "SSL Offloading Configuration | Haltdos Docs"
+description: "Improve performance by offloading SSL/TLS encryption and reducing backend server processing load."
 ---
 
 # SSL Offloading

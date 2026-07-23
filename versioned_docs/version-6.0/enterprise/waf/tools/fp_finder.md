@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "False Positive Finder | Haltdos Docs"
+description: "Traces log streams to spot valid interactions inadvertently caught by rigid signature constraints."
 ---
 
 # FP Finder

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 10
+title: "Rule Staging Mode | Haltdos Docs"
+description: "Safely evaluates rule adaptations inside a non-blocking mode to measure true alerts before activation."
 ---
 
 # Rule Staging

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Haltdos Cloud Web Application Firewall (WAF) Overview"
+description: "Discover Haltdos Cloud WAF and WAAP with enterprise-grade web application security, API protection, bot mitigation, and always-on DDoS protection."
 ---
 # Overview
 

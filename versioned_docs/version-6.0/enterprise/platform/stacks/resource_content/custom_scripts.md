@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Custom Scripts Room | Haltdos Docs"
+description: "Central portal used to upload or code bespoke Lua or regex parsing routines for unique traffic manipulation requirements."
 ---
 
 # Custom Scripts

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "RIP Routing Settings | Haltdos Docs"
+description: "Basic destination routing ruleset adjustments for legacy or small isolated network spaces."
 ---
 
 # RIP

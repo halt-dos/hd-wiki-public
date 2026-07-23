@@ -1,3 +1,8 @@
+---
+title: "Custom Security Rules | Haltdos Cloud WAF"
+description: "Create custom security rules to protect web applications against sophisticated attacks."
+---
+
 # Rules
 
 Configure custom rules for your website

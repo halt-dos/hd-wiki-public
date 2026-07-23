@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "NTP Time Synchronization | Haltdos Docs"
+description: "Enforces precise system timestamp alignment by binding the security stack node onto reliable upstream network time servers."
 ---
 
 # NTP

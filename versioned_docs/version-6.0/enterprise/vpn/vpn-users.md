@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "VPN User Directory | Haltdos Docs"
+description: "Administers remote employee VPN credential sheets, authentication profiles, and historical session logs."
 ---
 
 # VPN Users

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "WAF Signatures | Haltdos Community WAF"
+description: "Configure built-in WAF signatures to detect and block OWASP Top 10 attacks, malicious payloads, and known web application threats."
 ---
 # Signatures
 

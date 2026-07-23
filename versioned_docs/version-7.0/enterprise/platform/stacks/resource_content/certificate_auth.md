@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Certificate Authorities (CA) | Haltdos Enterprise"
+description: "Manage trusted Certificate Authorities (CA) to establish secure SSL/TLS communication and certificate validation."
 ---
 
 # Certificate Authorities

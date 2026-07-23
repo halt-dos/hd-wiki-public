@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Whitelist Rules | Haltdos Cloud WAF"
+description: "Configure whitelist exceptions for trusted users, IP addresses, and managed security rules."
 ---
 
 # Whitelist Rules

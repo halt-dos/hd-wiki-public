@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "User Access Groups | Haltdos Docs"
+description: "Dictates permission roles and RBAC scopes for local security operators inside the WAF console."
 ---
 
 # User Groups

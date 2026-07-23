@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Cache Pools | Haltdos Enterprise"
+description: "Configure cache pools to optimize content delivery, improve application performance, and efficiently manage cached resources."
 ---
 
 # Cache Pools

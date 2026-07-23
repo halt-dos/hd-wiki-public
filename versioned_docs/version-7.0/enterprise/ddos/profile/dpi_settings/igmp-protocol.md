@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "IGMP Protocol Inspection | Haltdos DPI Settings"
+description: "Validate IGMP multicast traffic and detect abnormal or malicious IGMP packets in network environments."
 ---
 
 # IGMP Protocol

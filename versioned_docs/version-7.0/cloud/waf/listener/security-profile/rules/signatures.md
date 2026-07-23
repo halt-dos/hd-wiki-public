@@ -1,5 +1,7 @@
 ---
 sidebar_position: 10
+title: "Managed WAF Signatures | Haltdos Cloud WAF"
+description: "Configure built-in WAF signatures to detect and block known web application attacks."
 ---
 
 #Signatures

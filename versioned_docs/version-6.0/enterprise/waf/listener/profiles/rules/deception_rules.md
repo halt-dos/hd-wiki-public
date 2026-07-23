@@ -1,5 +1,7 @@
 ---
 sidebar_position: 10
+title: "Deception Honeypots | Haltdos Docs"
+description: "Employs invisible traps and fake application inputs to identify and isolate background vulnerability scanners."
 ---
 # Deception Rules
    

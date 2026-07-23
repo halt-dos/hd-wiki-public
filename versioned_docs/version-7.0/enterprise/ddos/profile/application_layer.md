@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Application Layer Profile | Haltdos Enterprise Anti-DDoS"
+description: "Configure application-layer protection settings for detecting and mitigating advanced threats."
 ---
 
 # Application Layer

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Error Rules | Haltdos Enterprise Anti-DDoS"
+description: "Configure custom error pages to mask application exceptions, enhance security, and improve the user experience during attacks."
 ---
 
 # Error Rules

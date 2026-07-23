@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "CDN General Settings | Haltdos Cloud CDN"
+description: "Configure origin servers, cache behavior, domains, and general settings for optimized CDN performance."
 ---
 
 # General Settings

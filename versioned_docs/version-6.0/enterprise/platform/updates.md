@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Platform Updates & Patches | Haltdos Docs"
+description: "Management console details used to stage, verify, and apply firmware updates, hotfixes, and system microcode revisions."
 ---
 
 # Updates

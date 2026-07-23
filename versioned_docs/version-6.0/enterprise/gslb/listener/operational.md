@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "WAF Signatures | Haltdos Cloud WAF"
+description: "Configure signature-based protection to detect OWASP Top 10 attacks, exploits, and malicious web requests."
 ---
 
 # Operational

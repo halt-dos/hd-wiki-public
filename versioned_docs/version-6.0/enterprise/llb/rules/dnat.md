@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Destination NAT Rules | Haltdos Docs"
+description: "Maps inbound public interface request destinations onto specific internal server network addresses."
 ---
 
 # Destination NAT

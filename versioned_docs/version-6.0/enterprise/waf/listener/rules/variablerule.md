@@ -1,3 +1,8 @@
+---
+title: "Variable Tracking Rules | Haltdos Docs"
+description: "Declares localized transaction markers parsed from distinct string positions within live request streams."
+---
+
 # Variable Rules
 
 ## Overview

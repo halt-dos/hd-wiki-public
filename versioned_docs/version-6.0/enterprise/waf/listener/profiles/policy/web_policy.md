@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Web Policy Configuration | Haltdos Docs"
+description: "Enforces general standard HTTP sanity boundaries and structure configurations for inbound client interactions."
 ---
 
 # WEB Policy

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Account Settings | Haltdos Professional WAF"
+description: "Manage user accounts, credentials, profile settings, and administrative access within Haltdos Professional WAF."
 ---
 
 

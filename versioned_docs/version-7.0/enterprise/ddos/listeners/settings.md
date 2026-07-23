@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Listener Settings | Haltdos Enterprise Anti-DDoS"
+description: "Configure operational settings for listeners including ports, protocols, and traffic handling behavior."
 ---
 
 #  Settings

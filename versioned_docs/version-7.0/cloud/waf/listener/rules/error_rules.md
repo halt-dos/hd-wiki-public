@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Error Rules | Haltdos Cloud WAF"
+description: "Configure custom error pages to mask application exceptions and improve user experience."
 ---
 # Error Rules
 

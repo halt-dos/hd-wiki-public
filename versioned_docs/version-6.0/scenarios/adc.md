@@ -1,5 +1,7 @@
 ---
 pagination_prev: null
+title: "ADC Deployment Scenarios | Haltdos Documentation"
+description: "Explore Application Delivery Controller (ADC) deployment scenarios, architectures, and configuration examples for enterprise environments."
 ---
 
 # Haltdos ADC Deployment Scenarios

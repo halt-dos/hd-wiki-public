@@ -1,6 +1,8 @@
 ---
 sidebar_position: 0
 pagination_prev: null
+title: "Haltdos Enterprise Platform Overview"
+description: "Explore the Haltdos Enterprise Platform for centralized security management, monitoring, analytics, and infrastructure administration."
 ---
 
 # Haltdos Platform

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "DNS Mitigation Profile | Haltdos Docs"
+description: "Implements query rate-limiting, source validation challenges, and cache-miss defense against DNS floods."
 ---
 
 # DNS

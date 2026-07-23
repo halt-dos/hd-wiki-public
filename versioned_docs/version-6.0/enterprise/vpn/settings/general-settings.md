@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "VPN General Settings | Haltdos Docs"
+description: "Sets basic tunnel modes, listening bindings, keep-alive loops, and master operational state options."
 ---
 
 # General Settings

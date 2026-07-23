@@ -1,3 +1,8 @@
+---
+title: "WAF Rules | Haltdos Cloud WAF"
+description: "Create and manage WAF rules to inspect, filter, and protect web application traffic against malicious requests."
+---
+
 # Connections
 
 ---

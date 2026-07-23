@@ -1,3 +1,8 @@
+---
+title: "Platform Members | Haltdos Enterprise"
+description: "Manage platform users, roles, permissions, and access control for secure administration across Haltdos Enterprise deployments."
+---
+
 # Members
 
 ---

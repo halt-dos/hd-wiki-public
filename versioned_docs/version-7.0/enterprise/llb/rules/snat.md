@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Source NAT (SNAT) | Haltdos Link Load Balancer"
+description: "Configure Source NAT (SNAT) rules to translate private IP addresses and securely manage outbound network traffic."
 ---
 
 # Source NAT

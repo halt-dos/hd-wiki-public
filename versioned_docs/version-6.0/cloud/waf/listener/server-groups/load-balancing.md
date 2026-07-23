@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Load Balancing | Haltdos Docs"
+description: "Overview of layer-7 traffic scheduling policies (Weighted Round-Robin, IP Hash, Least Connections) across origin groups."
 ---
 # Load Balancing
 

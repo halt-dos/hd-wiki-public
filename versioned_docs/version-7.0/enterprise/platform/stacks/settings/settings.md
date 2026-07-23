@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Stack Settings | Haltdos Enterprise"
+description: "Configure global stack settings to manage platform behavior, networking, security, and system-wide preferences."
 ---
 
 # Settings

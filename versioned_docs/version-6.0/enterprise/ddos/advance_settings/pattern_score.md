@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Pattern Scoring Engine | Haltdos Docs"
+description: "Explains scoring heuristics applied to abnormal traffic clusters to automatically derive transient block filters."
 ---
 
 # Pattern Score

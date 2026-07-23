@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Geo Filtering | Haltdos Enterprise ADC"
+description: "Control application access by country, region, or IP location using geo-filtering policies."
 ---
 
 # Geo Filtering

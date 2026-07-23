@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Session Table | Haltdos Enterprise ADC"
+description: "Monitor active sessions and analyze connection details, client requests, and traffic using session table filters."
 ---
 
 # Session Table

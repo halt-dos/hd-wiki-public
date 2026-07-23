@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Cloud Signaling | Haltdos Docs"
+description: "Integrates localized appliances with upstream cloud scrubbing nodes to shift mitigation during overwhelming link saturation."
 ---
 
 # Cloud Signaling

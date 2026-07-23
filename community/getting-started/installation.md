@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 sidebar_label: Installation
+title: "Install Haltdos Community WAF | Installation Guide"
+description: "Follow this step-by-step installation guide to deploy and configure Haltdos Community WAF on your Linux server."
 ---
 
 # Installation Steps

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Host Interface Networking | Haltdos Docs"
+description: "Root index detailing parameters used to control physical hardware ports and underlying network layers."
 ---
 
 # Network Settings

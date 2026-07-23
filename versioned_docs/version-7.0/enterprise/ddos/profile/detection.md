@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "DDoS Detection Settings | Haltdos Docs"
+description: "Configure detection rules to identify anomalies, malicious traffic patterns, and real-time DDoS attack behavior."
 ---
 
 # Detection

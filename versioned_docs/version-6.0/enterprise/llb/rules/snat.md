@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Source NAT (Masquerading) | Haltdos Docs"
+description: "Translates localized private internal target source paths into valid public egress WAN interface IPs."
 ---
 
 # Source NAT

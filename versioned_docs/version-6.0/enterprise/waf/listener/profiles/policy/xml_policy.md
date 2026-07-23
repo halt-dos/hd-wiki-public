@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "XML Policy Configuration | Haltdos Docs"
+description: "Prevents entity expansion faults, malformed document parsing errors, and XXE injection traps across XML flows."
 ---
 
 # XML Policy

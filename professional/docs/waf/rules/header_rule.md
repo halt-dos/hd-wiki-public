@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Header Rules | Haltdos Professional WAF"
+description: "Inspect, modify, validate, and secure HTTP request and response headers using custom header rules."
 ---
 
 # Header Rules

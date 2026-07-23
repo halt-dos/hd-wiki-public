@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "ADC Incidents & Alerts | Haltdos Enterprise"
+description: "Monitor incidents, alerts, and operational events to maintain application availability and performance."
 ---
 
 # Incidents

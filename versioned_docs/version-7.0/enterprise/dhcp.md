@@ -1,3 +1,8 @@
+---
+title: "DHCP Configuration | Haltdos Enterprise Docs"
+description: "Learn how to configure DHCP services in Haltdos Enterprise for automatic IP address allocation, lease management, and network configuration."
+---
+
 # DHCP
 
 Configuring DHCP settings on Haltdos solution

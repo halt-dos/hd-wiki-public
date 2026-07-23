@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Appliance Stack Instance | Haltdos Docs"
+description: "Step-by-step documentation focusing on configuring local host parameters, node names, and baseline services."
 ---
 
 # Instance

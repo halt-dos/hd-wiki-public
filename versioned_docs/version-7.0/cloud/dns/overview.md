@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Haltdos Cloud DNS Overview | Managed DNS"
+description: "Learn about Haltdos Cloud DNS with Anycast infrastructure, high availability, DNS failover, and global traffic management."
 ---
 
 # Overview

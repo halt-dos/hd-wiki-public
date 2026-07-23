@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Access Log Rules | Haltdos Cloud WAF"
+description: "Protect sensitive information by configuring secure logging and masking confidential fields."
 ---
 
 # Access Log Rules

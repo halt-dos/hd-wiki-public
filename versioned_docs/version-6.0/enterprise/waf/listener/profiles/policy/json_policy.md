@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "JSON Policy Configuration | Haltdos Docs"
+description: "Blocks injection payload patterns embedded inside web application JSON bodies or API input parameters."
 ---
 
 # JSON Policy

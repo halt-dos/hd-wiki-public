@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "CDN Security Settings | Haltdos Cloud CDN"
+description: "Configure edge security with IP filtering, country restrictions, referrer validation, and access control policies."
 ---
 
 # Security

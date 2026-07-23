@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Log Rules | Haltdos Link Load Balancer"
+description: "Configure log rules to capture, monitor, and analyze network packet activity for troubleshooting and auditing."
 ---
 
 

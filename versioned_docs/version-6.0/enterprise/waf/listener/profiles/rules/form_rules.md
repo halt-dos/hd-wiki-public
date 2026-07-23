@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Form Input Rules | Haltdos Docs"
+description: "Enforces standard validation constraints (length caps, regular expression checks) over web interface data boxes."
 ---
 # Form Rule 
 ### Overview

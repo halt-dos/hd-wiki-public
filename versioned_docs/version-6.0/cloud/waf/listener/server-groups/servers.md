@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Backend Servers | Haltdos Docs"
+description: "Directives on assigning destination pool member IPs, setting weights, and defining connection limits per node."
 ---
 # Servers
 

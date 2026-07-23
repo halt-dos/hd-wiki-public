@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Antivirus Protection | Haltdos Cloud WAF"
+description: "Scan uploaded files for malware before they reach your application using integrated antivirus protection."
 ---
 
 # Antivirus

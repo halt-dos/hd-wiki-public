@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "WAF Rules Routing | Haltdos Docs"
+description: "Structural portal index containing specific pre-routing layer-7 request modification and verification strategies."
 ---
 # Rules
 

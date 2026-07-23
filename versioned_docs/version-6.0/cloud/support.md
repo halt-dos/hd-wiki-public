@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Support & Ticketing | Haltdos Cloud"
+description: "Submit support tickets, track issue status, and contact the Haltdos technical support team for assistance."
 ---
 
 # Support & Ticketing

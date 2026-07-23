@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Bot Protection Settings | Haltdos Cloud WAF"
+description: "Configure bot protection policies, CAPTCHA, JavaScript challenges, and automated bot detection settings."
 ---
 # Bot Settings
 

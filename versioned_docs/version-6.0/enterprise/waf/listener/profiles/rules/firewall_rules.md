@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "L7 Firewall Rules | Haltdos Docs"
+description: "Applies instant block decisions evaluating absolute network address blocks, URI segments, or method choices."
 ---
 # Firewall Rule
 

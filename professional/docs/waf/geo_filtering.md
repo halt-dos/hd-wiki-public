@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Geo Filtering | Haltdos Professional WAF"
+description: "Restrict or allow website traffic by country or region using Geo Filtering rules to enhance security and compliance."
 ---
 
 

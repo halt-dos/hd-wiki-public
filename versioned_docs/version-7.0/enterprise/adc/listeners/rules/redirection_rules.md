@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Redirection Rules | Haltdos Enterprise ADC"
+description: "Configure URL redirection rules to route users and applications efficiently and securely."
 ---
 
 # Redirection Rules

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Geo IP Fencing | Haltdos Docs"
+description: "Dictates handling patterns for requests arriving outside specified trusted country coordinates or whitelisted IP scopes."
 ---
 
 # Geo Filtering

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Load Balancing Algorithms | Haltdos Docs"
+description: "Explains implementing network scheduling variations including Round-Robin, Least Response Time, and Hash schemes."
 ---
 
 # Load Balancing

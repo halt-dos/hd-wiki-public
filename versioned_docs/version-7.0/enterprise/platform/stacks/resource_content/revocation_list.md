@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Certificate Revocation Lists (CRL) | Haltdos Enterprise"
+description: "Manage Certificate Revocation Lists (CRLs) to revoke compromised or expired SSL/TLS certificates and maintain secure communications."
 ---
 
 # Revocation List 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Profile Settings | Haltdos Docs"
+description: "General configuration options for activating a profile, managing default rule actions, and setting mitigation severity flags."
 ---
 
 # Settings

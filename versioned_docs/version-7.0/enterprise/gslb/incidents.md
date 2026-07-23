@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "GSLB Incidents & Alerts | Haltdos Enterprise"
+description: "Monitor GSLB incidents, DNS alerts, health events, and failover notifications to maintain high application availability."
 ---
 
 # Incidents

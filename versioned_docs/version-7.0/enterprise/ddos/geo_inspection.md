@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Geo Filtering | Haltdos Enterprise Anti-DDoS"
+description: "Restrict or allow traffic by country, region, and IP location to reduce attack exposure and strengthen network security."
 ---
 
 # Geo Filtering

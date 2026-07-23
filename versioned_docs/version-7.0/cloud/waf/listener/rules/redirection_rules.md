@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Redirection Rules | Haltdos Cloud WAF"
+description: "Configure URL redirects and traffic routing rules for websites and web applications."
 ---
 # Redirection Rules
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Rate Limiting Rules | Haltdos Professional WAF"
+description: "Prevent abuse, brute-force attempts, and DDoS attacks by configuring request rate limiting policies."
 ---
 # Rate Limit Rules
 ### Overview

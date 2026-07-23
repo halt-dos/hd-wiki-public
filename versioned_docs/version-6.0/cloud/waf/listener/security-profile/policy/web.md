@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "HTTP Compliance Policy | Haltdos Docs"
+description: "Assures arriving web sessions strictly adhere to valid standard RFC specifications before processing further rules."
 ---
 
 # Web Policy

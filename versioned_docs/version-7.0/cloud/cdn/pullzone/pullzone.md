@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "CDN Pull Zones | Haltdos Cloud CDN"
+description: "Configure CDN Pull Zones to cache content from origin servers and deliver it efficiently through the global edge network."
 ---
 
 # Pullzone

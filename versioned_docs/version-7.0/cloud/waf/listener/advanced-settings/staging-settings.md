@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Rule Staging Settings | Haltdos Cloud WAF"
+description: "Test and validate WAF security rules in staging before deploying them to production."
 ---
 # Staging Settings
 

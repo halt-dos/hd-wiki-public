@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "WAF Listener Configuration | Haltdos Cloud"
+description: "Configure WAF listeners, ports, domains, and origin servers to securely publish web applications."
 ---
 
 # Listener

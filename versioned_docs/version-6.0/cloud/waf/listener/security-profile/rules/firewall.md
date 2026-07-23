@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Network Firewall Rules | Haltdos Docs"
+description: "Implements quick access decisions blocking or allowing packets based directly on CIDR boundaries or protocol layers."
 ---
 
 # Firewall Rules

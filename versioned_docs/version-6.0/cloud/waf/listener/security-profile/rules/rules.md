@@ -1,3 +1,8 @@
+---
+title: "Policy Matching Rules | Haltdos Docs"
+description: "Central index referencing precise granular criteria applied to incoming web data to catch attack patterns."
+---
+
 # Rules
 
 Configure custom rules for your website

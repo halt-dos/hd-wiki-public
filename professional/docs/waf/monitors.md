@@ -1,5 +1,7 @@
 ---
 sidebar_position: 10
+title: "Backend Server Monitoring | Haltdos Professional WAF"
+description: "Configure health checks and monitor backend server availability to improve uptime and ensure automatic failover."
 ---
 
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Pattern Score | Haltdos Enterprise Anti-DDoS"
+description: "Analyze pattern-based scoring to detect and classify suspicious or malicious traffic behavior."
 ---
 
 # Pattern Score

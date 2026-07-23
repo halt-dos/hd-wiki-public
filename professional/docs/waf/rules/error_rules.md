@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Error Rules | Haltdos Professional WAF"
+description: "Configure custom error pages to improve user experience while preventing sensitive application information disclosure."
 ---
 # Error Rules
 ### Overview

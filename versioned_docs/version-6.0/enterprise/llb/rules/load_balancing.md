@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Multi-WAN Scheduling | Haltdos Docs"
+description: "Dictates algorithmic traffic splitting parameters (Ratio, Round-Robin, Spillover thresholds) across active ISP paths."
 ---
 
 # Load Balancing

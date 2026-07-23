@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "LACP Link Aggregation | Haltdos Docs"
+description: "Blends multiple physical network ports into single logical bond channels to scale throughput and provide interface redundancy."
 ---
 
 # Link Bonds

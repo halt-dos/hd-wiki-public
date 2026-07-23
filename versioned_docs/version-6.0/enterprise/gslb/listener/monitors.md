@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "IP Reputation Filtering | Haltdos Cloud WAF"
+description: "Block malicious IP addresses using reputation intelligence to reduce attacks and unwanted traffic."
 ---
 
 # Monitors

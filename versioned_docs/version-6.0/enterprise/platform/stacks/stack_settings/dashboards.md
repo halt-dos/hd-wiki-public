@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Custom Dashboards | Haltdos Docs"
+description: "User guide detailing how to rearrange analytics windows, compile tailored tracking spaces, and adjust graph intervals."
 ---
 
 # Dashboards

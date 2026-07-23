@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Cloud WAF Overview | Haltdos Docs"
+description: "High-level architectural guide for deploying multi-tenant, cloud-managed application firewalls across distributed nodes."
 ---
 # Overview
 

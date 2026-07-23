@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+title: "Web Application Firewall Knowledge Base | Haltdos Docs"
+description: "Browse WAF knowledge base articles covering web application security, API protection, OWASP Top 10, SSL, bot protection, and deployment."
 ---
 
 # WAF

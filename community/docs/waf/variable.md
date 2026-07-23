@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "System Variables | Haltdos Community WAF"
+description: "Learn how to use system variables when creating firewall rules, policies, and advanced traffic filtering conditions."
 ---
 
 # Variables

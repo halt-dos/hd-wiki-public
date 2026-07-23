@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Developer Scripts | Haltdos Cloud WAF"
+description: "Create custom developer scripts to automate security logic and advanced request handling."
 ---
 
 # Developer Script

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Custom Logging Profiles | Haltdos Docs"
+description: "Tracks transaction parts by piping explicit request elements to specific analytical dashboards or SIEM endpoints."
 ---
 
 # Access Log Rules

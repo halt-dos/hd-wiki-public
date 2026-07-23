@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "CDN Rules | Haltdos Docs"
+description: "Setup documentation to configure specific rewrite, caching override, and edge routing regulations within an active CDN pullzone."
 ---
 
 # Pullzone

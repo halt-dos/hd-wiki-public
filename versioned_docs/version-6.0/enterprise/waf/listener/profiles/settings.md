@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "General Profile Settings | Haltdos Docs"
+description: "Administers overall operational flags, toggle triggers, default block mechanisms, and severity levels."
 ---
 
 # Settings

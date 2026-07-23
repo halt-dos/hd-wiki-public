@@ -1,5 +1,7 @@
 ---
 sidebar_position: 13
+title: "Rule Conditions | Haltdos Enterprise ADC"
+description: "Create rule conditions to match requests and apply traffic management or security actions."
 ---
 
 # Rule Condition

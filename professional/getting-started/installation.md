@@ -2,6 +2,8 @@
 sidebar_position: 2
 sidebar_label: Installation
 hide-version-badge: true
+title: "Install Haltdos Professional WAF | Installation Guide"
+description: "Follow this installation guide to deploy, configure, and activate Haltdos Professional WAF for enterprise web application security."
 ---
 
 # Haltdos PE WAF Setup

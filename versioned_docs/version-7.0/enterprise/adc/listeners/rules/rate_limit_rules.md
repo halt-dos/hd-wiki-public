@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Rate Limiting Rules | Haltdos Enterprise ADC"
+description: "Configure rate limiting policies to prevent abuse, mitigate attacks, and control client request rates."
 ---
 
 # Rate Limit Rules

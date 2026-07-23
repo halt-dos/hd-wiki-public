@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Top Talkers Analytics | Haltdos Docs"
+description: "High-velocity tracking dashboard showing highest real-time bandwidth consuming source IPs and network blocks."
 ---
 
 # Top Talkers

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Miscellaneous Services | Haltdos Docs"
+description: "Protects custom or lesser-known protocols (such as SMTP, FTP, etc.) from transactional saturation."
 ---
 
 # Miscellaneous

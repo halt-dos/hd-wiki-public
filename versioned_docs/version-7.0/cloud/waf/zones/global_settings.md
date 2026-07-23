@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Global Settings | Haltdos Cloud WAF"
+description: "Configure global zone settings that apply security, networking, and operational policies across applications."
 ---
 # Global Settings
 

@@ -1,6 +1,8 @@
 ---
 sidebar_position: 3
 sidebar_label: Features
+title: "Haltdos Professional WAF Features | Advanced Web Security"
+description: "Explore advanced Haltdos Professional WAF features, including bot protection, caching, compression, SSL management, and API security."
 ---
 
 # Haltdos PE Features

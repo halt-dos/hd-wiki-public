@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Upstream Dynamic Routing | Haltdos Docs"
+description: "Controls advanced reverse-proxy routing logic to split, distribute, or isolate paths to alternate web targets."
 ---
 # Upstream rules
 

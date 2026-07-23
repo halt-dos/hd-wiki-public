@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Form Field Rules | Haltdos Professional WAF"
+description: "Validate form inputs, enforce field requirements, and prevent malicious data submissions using form security rules."
 ---
 # Form Rules 
 ### Overview

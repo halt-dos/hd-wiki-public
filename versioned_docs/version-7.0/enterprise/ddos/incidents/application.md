@@ -1,3 +1,8 @@
+---
+title: "Application Incidents | Haltdos Enterprise Anti-DDoS"
+description: "Monitor application-layer security incidents, attack events, and mitigation actions to maintain service availability."
+---
+
 # Application
 
 ### Overview

@@ -1,3 +1,8 @@
+---
+title: "Logical Server Groups | Haltdos Docs"
+description: "Groups target nodes into logical pools to ease individual application flow routing tasks."
+---
+
 # Server Groups
 
 User can select the Load Balancing mechanism and specify Origin Server IPs on this screen

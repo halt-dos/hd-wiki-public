@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 pagination_prev: null
+title: "DDoS Mitigation Core | Haltdos Docs"
+description: "Deep infrastructure deployment guide for standalone anti-DDoS scrubbing nodes protecting network fabric layers."
 ---
 
 # Anti-DDOS

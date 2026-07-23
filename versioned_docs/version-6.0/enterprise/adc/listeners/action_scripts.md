@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Action Scripts | Haltdos Docs"
+description: "Allows engineers to load custom programmatic control routines to evaluate or alter traffic layers dynamically."
 ---
 
 # Action Scripts

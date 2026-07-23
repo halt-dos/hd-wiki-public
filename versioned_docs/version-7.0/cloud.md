@@ -2,6 +2,8 @@
 sidebar_position: 0
 sidebar_label: Haltdos Cloud
 pagination_prev: null
+title: "Haltdos Cloud v7 Overview | Cloud Security Platform"
+description: "Discover Haltdos Cloud v7, a unified cloud security platform providing WAF, DDoS protection, CDN, DNS, and threat intelligence."
 ---
 
 # Haltdos Cloud

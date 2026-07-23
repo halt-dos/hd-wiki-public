@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Whitelist Rules | Haltdos Community WAF"
+description: "Allow trusted IP addresses, APIs, payment gateways, and services to bypass selected security checks safely."
 ---
 
 # Whitelist Rules

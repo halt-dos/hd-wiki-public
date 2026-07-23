@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "URL Rewrite Rules | Haltdos Cloud WAF"
+description: "Rewrite URLs and modify incoming requests to improve routing, compatibility, and application performance."
 ---
 
 # Traffic Shaping

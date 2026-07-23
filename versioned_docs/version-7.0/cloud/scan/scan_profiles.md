@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Scan Profiles | Haltdos Vulnerability Scanner"
+description: "Create and manage scan profiles, schedules, scan depth, and automated vulnerability assessments."
 ---
 
 # Scan Profiles

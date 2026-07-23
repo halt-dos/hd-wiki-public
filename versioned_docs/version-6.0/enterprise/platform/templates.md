@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Configuration Templates | Haltdos Docs"
+description: "Explains saving and replicating pre-built template configurations to scale baseline profiles rapidly."
 ---
 
 # OS Templates

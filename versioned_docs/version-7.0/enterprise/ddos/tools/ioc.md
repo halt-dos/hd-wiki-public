@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "DHCP Configuration | Haltdos Docs"
+description: "Manage IP address allocation and DHCP settings to simplify and control network configuration efficiently."
 ---
 
 # IOC

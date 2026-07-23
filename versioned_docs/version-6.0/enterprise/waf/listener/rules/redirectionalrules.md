@@ -1,3 +1,8 @@
+---
+title: "URL Redirection Rules | Haltdos Docs"
+description: "Matches inbound paths and issues instant redirect states (301/302) to standard application visitors."
+---
+
 # Redirectional Rules
 
 These rules allow you to configure redirection for your application pages

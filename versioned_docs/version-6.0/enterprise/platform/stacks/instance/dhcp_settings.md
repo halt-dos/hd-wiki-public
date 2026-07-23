@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "DHCP Server Configurations | Haltdos Docs"
+description: "Guides for provisioning internal address leasing scopes, reservation blocks, and client option overrides."
 ---
 
 # DHCP Settings

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Operational Status Page | Haltdos Docs"
+description: "Outlines managing dedicated customer-facing status environments to publish current operational availability statements."
 ---
 
 # Status Page

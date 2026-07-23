@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Web Security Policy | Haltdos Cloud WAF"
+description: "Protect websites with customizable web security policies that defend against common web application attacks."
 ---
 
 # Zones

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "API Tokens | Haltdos Docs"
+description: "Outlines generating, revoking, and managing scoped access tokens for secure, automated REST API interactions with the stack."
 ---
 
 # API Tokens

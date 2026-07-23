@@ -1,5 +1,7 @@
 ---
 sidebar_position: 11
+title: "Technical Glossary | Haltdos Docs"
+description: "Definition matrix covering cybersecurity parameters, load-balancing vocabulary, and Haltdos platform phrases."
 ---
 
 # Glossary

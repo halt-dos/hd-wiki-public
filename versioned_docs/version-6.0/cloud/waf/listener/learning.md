@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+title: "Learning Mode | Haltdos Cloud WAF"
+description: "Use learning mode to identify normal application behavior and automatically recommend WAF rule improvements."
 ---
 # Learning
 

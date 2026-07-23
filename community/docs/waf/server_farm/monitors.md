@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Server Health Monitoring | Haltdos Community WAF"
+description: "Configure health checks and monitor backend server availability to improve uptime and failover reliability."
 ---
 
 # Server Monitors

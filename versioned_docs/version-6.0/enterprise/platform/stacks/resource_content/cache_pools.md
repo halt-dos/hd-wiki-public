@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Cache Pools | Haltdos Docs"
+description: "Details constructing proxy-side memory allocation ceilings and duration rules for accelerated content caching."
 ---
 
 # Cache Pools

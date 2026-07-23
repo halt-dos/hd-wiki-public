@@ -1,6 +1,8 @@
 ---
 sidebar_position: 0
 pagination_prev: null
+title: "Link Load Balancer (LLB) | Haltdos Enterprise"
+description: "Configure Haltdos Link Load Balancer (LLB) to improve WAN performance, network resilience, and internet link availability."
 ---
 
 # Link Load Balancer (LLB)

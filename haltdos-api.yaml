@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
-  title: Haltdos API
-  description: Haltdos Platform API
+  title: Haltdos API Documentation
+  description: Explore the Haltdos documentation to automate security management, integrate applications, and manage WAF services programmatically.
 paths:
   /v1/stack/{stackId}/content:
     put:

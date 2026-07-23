@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Custom Pages | Haltdos Cloud WAF"
+description: "Create and customize error pages, block pages, and challenge pages for a consistent user experience."
 ---
 # Custom Pages
 

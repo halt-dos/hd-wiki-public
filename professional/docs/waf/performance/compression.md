@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Gzip & Brotli Compression | Haltdos Professional WAF"
+description: "Configure Gzip and Brotli compression to reduce bandwidth usage and improve website loading speed."
 ---
 
 

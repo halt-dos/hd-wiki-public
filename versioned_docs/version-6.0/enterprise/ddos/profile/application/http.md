@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "HTTP Flood Mitigation | Haltdos Docs"
+description: "Tracks transaction anomalies, slowloris patterns, and excessive request frequencies targeting web backends."
 ---
 
 # HTTP

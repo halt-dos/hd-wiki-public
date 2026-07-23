@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "DDoS Signatures Configuration | Haltdos Docs"
+description: "Configure attack signatures to detect known threats and improve protection against DDoS attack patterns."
 ---
 
 # Signatures

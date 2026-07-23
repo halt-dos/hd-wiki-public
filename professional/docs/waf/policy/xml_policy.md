@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "XML Security Policy | Haltdos Professional WAF"
+description: "Secure XML-based APIs and web services by validating XML requests and blocking malicious payloads."
 ---
 
 

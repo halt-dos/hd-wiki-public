@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "BGP Dynamic Routing | Haltdos Docs"
+description: "Configures Autonomous System paths, peering neighbors, prefix advertisements, and community filters."
 ---
 
 # BGP

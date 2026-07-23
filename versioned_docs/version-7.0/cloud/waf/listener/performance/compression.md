@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Compression Settings | Haltdos Cloud WAF"
+description: "Enable Gzip and Brotli compression to reduce bandwidth usage and improve page load speed."
 ---
 # Compression
 

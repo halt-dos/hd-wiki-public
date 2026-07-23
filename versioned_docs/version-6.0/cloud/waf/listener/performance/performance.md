@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Performance Optimization | Haltdos Cloud WAF"
+description: "Improve website speed with performance optimization features including caching, compression, and traffic acceleration."
 ---
 # Performance
 

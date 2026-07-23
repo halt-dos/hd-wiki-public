@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "TCP Protocol Inspection | Haltdos DPI Settings"
+description: "Validate TCP connections, detect anomalies, and mitigate TCP-based DDoS attacks using DPI rules."
 ---
 
 # TCP Protocol

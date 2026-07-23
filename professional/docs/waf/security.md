@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "WAF Security Settings | Haltdos Professional WAF"
+description: "Configure core WAF security settings, protection modes, threat mitigation actions, and application security policies."
 ---
 
 

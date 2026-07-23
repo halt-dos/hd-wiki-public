@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Bot Protection Profile | Haltdos Docs"
+description: "Sets up automated scrapers filtering using credential-stuffing defense blocks, browser challenges, and rate rules."
 ---
 # Bot Protection 
 Detect and Block malicious bots in real-time

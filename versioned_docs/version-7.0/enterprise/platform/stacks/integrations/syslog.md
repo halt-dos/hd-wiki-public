@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Syslog Integration | Haltdos Enterprise"
+description: "Configure Syslog integration to forward security events, system logs, and audit records to external SIEM and monitoring platforms."
 ---
 
 # Syslog

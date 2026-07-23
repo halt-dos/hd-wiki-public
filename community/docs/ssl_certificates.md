@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "SSL Certificates Configuration | Haltdos Community WAF"
+description: "Configure SSL certificates, enable HTTPS, manage TLS encryption, and secure web applications using Haltdos Community WAF."
 ---
 
 # SSL Certificates

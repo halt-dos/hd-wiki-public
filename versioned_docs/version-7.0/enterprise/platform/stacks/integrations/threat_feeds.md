@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Threat Intelligence Feeds | Haltdos Enterprise"
+description: "Integrate third-party threat intelligence feeds to strengthen threat detection and automate security policy updates."
 ---
 
 # Threat Feeds

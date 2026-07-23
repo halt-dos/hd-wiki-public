@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Configuration Synchronization | Haltdos Docs"
+description: "Explains cluster-wide database synchronization controls that pass running configurations seamlessly to secondary passive nodes."
 ---
 
 # Config Synchronization

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "Backend Servers | Haltdos Professional WAF"
+description: "Add, configure, and manage backend application servers to ensure secure routing and reliable application delivery."
 ---
 
 

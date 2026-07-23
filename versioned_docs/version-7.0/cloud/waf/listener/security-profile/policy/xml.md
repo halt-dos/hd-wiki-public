@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "XML Security Policy | Haltdos Cloud WAF"
+description: "Configure XML security policies to validate XML requests and secure SOAP and XML APIs."
 ---
 
 # XML Policy

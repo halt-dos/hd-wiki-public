@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Redirection Rules | Haltdos Cloud WAF"
+description: "Configure HTTP 301 and 302 redirects based on URLs, domains, or request conditions for optimized traffic routing."
 ---
 
 # Signature

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Rate Limiting Rules | Haltdos Cloud WAF"
+description: "Configure rate limiting policies to prevent brute-force attacks and API abuse."
 ---
 
 # Rate Limiting

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Password Complexity Policies | Haltdos Docs"
+description: "Configures compliance barriers enforcing minimum lengths, expiration timelines, and rotation constraints on local credentials."
 ---
 
 # Password Policy

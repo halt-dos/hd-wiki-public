@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "Global Settings | Haltdos Docs"
+description: "Administers system-wide connection limits, parsing limits, logging destinations, and global thresholds."
 ---
 # Global Settings
 

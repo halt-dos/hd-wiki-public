@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Developer Lua/Sandboxed Scripts | Haltdos Docs"
+description: "Empowers engineers to write customized programmatic logic routines evaluating or mutating unique flow contexts."
 ---
 
 # Developer Script

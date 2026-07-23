@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Change Password | Haltdos Docs"
+description: "Individual user profile utility providing self-service steps to update active administrative passwords."
 ---
 
 # Change Password

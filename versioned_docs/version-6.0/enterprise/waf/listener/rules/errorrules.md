@@ -1,3 +1,8 @@
+---
+title: "Listener Error Overrides | Haltdos Docs"
+description: "Defines basic baseline response redirections for proxy-level communication dropped events."
+---
+
 # Error Rules
 These rules mask application exceptions and errors with custom pages.
 
