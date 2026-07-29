@@ -46,7 +46,13 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
+              label: 'v9',
+            },
+            '8.0': {
               label: 'v8',
+              banner: 'none',
+              path: 'v8',
+              badge: true,
             },
             '7.0': {
               label: 'v7',
@@ -172,9 +178,9 @@ const config = {
       items: [
         { to: 'community/introduction', label: 'Community', position: 'left' },
         { to: 'professional/introduction', label: 'Professional', position: 'left' },
-        { to: 'enterprise', label: 'Enterprise', position: 'left' },
-        { to: 'cloud', label: 'Cloud', position: 'left' },
-        { to: 'mssp', label: 'MSSP', position: 'left' },
+        { type: 'doc', docId: 'enterprise', label: 'Enterprise', position: 'left' },
+        { type: 'doc', docId: 'cloud', label: 'Cloud', position: 'left' },
+        { type: 'doc', docId: 'mssp', label: 'MSSP', position: 'left' },
         { href: '/api', label: 'Haltdos API', position: 'left' },
         {
           href: 'https://haltdos.com',
@@ -192,8 +198,8 @@ const config = {
           position: 'left',
           className: 'custom',
           items: [
-            { to: 'kb', label: 'Knowledge Base' },
-            { to: 'glossary', label: 'Glossary' },
+            { type: 'doc', docId: 'kb', label: 'Knowledge Base' },
+            { type: 'doc', docId: 'glossary', label: 'Glossary' },
             { href: 'https://www.haltdos.com/blogs', label: 'Blogs', target: '_blank', rel: null },
           ],
         },
