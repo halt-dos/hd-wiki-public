@@ -68,11 +68,6 @@
   "engines": {
     "node": ">=20.0"
   },
-  "resolutions": {
-    "js-yaml": "^4.3.0",
-    "serialize-javascript": "^7.0.5",
-    "uuid": "^11.1.1"
-  },
   "overrides": {
     "js-yaml": "^4.3.0",
     "serialize-javascript": "^7.0.5",
