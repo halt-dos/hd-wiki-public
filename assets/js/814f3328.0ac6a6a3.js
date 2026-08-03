@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhaltdos_wiki=globalThis.webpackChunkhaltdos_wiki||[]).push([[67472],{55513(s){s.exports=JSON.parse('{"title":"Recent posts","items":[]}')}}]);
