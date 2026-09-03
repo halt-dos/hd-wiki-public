@@ -31,6 +31,15 @@ This field specifies the fully qualified name of the website for protection. Ens
     Default: Blank 
 ```
 
+##### **Tags**
+
+This field allows you to assign a custom label to the listener for easy identification and management. Tags can be used to describe or categorize the listener based on its purpose, application, environment, or any other relevant context.
+
+```
+    Accepted values: String
+
+    Default: Blank 
+```
 
 ##### **Reference**
 
