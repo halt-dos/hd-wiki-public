@@ -12,7 +12,7 @@ When we add a website to WAF, we must include our backend server and its port nu
 
 ![Listener](/img/waf/v8/docs/listeners.png)
 
-![Listener](/img/waf/v7/docs/addinglisteners.png)
+![Listener](/img/waf/v8/docs/listeners_2.png)
 
 ### How to Use :
 1. Go to **Apps** > **WAF** > **Listeners**
@@ -24,6 +24,16 @@ When we add a website to WAF, we must include our backend server and its port nu
  
 ##### **Domain / Virtual IP**
 This option allows user to specify fully qualified domain name of the website. Whenever adding the root domain, ensure it is empty.
+
+```
+    Accepted values: String
+
+    Default: Blank 
+```
+
+##### **Tags**
+
+This field allows you to assign a custom label to the listener for easy identification and management. Tags can be used to describe or categorize the listener based on its purpose, application, environment, or any other relevant context.
 
 ```
     Accepted values: String
