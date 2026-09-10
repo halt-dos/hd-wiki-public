@@ -29,6 +29,12 @@ Users can either upload a certificate or generate a new certificate with Let's E
 Let's Encrypt certificate are valid for 3 months only. In order to renew, we have to re-issue the certificate with the same steps as mentioned above. This is applicable only for DNS validations. For certificates issued via HTTP validation, Haltdos automatically renews the certificates.
 :::
 
+#### Support for Post-Quantum Cryptography (PQC)
+ 
+Post-Quantum Cryptography (PQC) refers to cryptographic algorithms designed to remain secure against attacks from both classical computers and future large-scale quantum computers.
+ 
+Haltdos WAF provides SSL/TLS capabilities, including SSL certificate management and SSL/TLS offloading, through its underlying cryptographic framework. These capabilities provide a foundation for PQC readiness, enabling the platform's SSL/TLS architecture to evolve toward post-quantum cryptographic standards as they are adopted and supported by the underlying cryptographic ecosystem.
+
 ### **Types of supported SSL-Certificate**
 
 Haltdos supports various types of SSL certificates for a particular domain, which are as follows:

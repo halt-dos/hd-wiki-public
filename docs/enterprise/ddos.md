@@ -54,3 +54,10 @@ Haltdos Anti-DDoS Solution is based on machine learning and artificial intellige
 
 The DDoS solution supports 802.1Q VLAN tagging, L2TP, GRE, VPN, and similar encapsulated traffic without impacting performance. This is deployed without changin the MAC/IP details of inline traffic.
 
+- #### **Hardware Bypass Adapter**
+ 
+The Haltdos Anti-DDoS solution can be deployed with a specialized hardware bypass adapter to maintain network connectivity and service availability in the event of an appliance failure. The bypass adapter automatically allows traffic to pass directly between the network interfaces if the Haltdos Anti-DDoS device loses power, crashes, freezes, or becomes unavailable.
+This ensures that a failure of the inline Anti-DDoS appliance does not become a point of network disruption, allowing normal traffic to continue flowing while the device is being restored or serviced.
+ 
+**Key benefit**: The hardware bypass mechanism provides automatic fail-open connectivity, helping maintain network availability and minimizing service interruption during hardware or system failures.
+ 
