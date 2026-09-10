@@ -49,3 +49,6 @@ Haltdos WAF supports Regex engine for defining and enforcing rules and policies 
 
 This feature allows the customer to use Haltdos WAF to create dynamic and precise rules increasing the robustness and adaptability of the WAF solution to protect their Web Application.  
 
+- **TLS Fingerprinting**
+
+ HALTDOS uses TLS fingerprinting, including JA3 and JA4, as an additional security signal in its DDoS protection and WAF solutions to identify and correlate clients based on characteristics of their TLS handshake, such as TLS version, cipher suites, extensions, supported groups, and protocol behavior. By analyzing JA3/JA4 fingerprints alongside IP reputation, request rates, HTTP behavior, and other traffic signals, HALTDOS can detect abnormal or automated traffic, correlate attack patterns even when source IPs change, and take appropriate actions such as allowing, rate-limiting, challenging, or blocking suspicious requests.
