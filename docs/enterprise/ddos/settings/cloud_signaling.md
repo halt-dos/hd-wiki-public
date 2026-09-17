@@ -104,3 +104,34 @@ Users can specify the IP range
     Default: Blank
 ```
 
+### Implementation
+
+Under normal operating conditions, legitimate traffic is routed through the Haltdos Anti-DDoS solution, where traffic is inspected and analyzed before being forwarded to the firewall and protected server farm.
+
+In the event of a volumetric DDoS attack, the Haltdos Anti-DDoS solution detects the malicious traffic and triggers cloud signaling towards the ISP through API-based integration. The ISP then redirects the affected traffic towards its Scrubbing Centre/Clean Pipe infrastructure, where the malicious traffic is filtered and mitigated. The cleaned legitimate traffic is subsequently forwarded towards the protected infrastructure through the defined network path.
+
+Once the DDoS attack subsides and traffic returns to normal levels, the traffic can be automatically or administratively routed back through the normal path, and the cloud signaling towards the ISP can be withdrawn.
+
+![signaling_settings](/img/ddos/v8/ddos_cloud_signaling.png)
+
+#### Traffic Flow
+
+##### 1. Normal Traffic / Attack Detection
+
+Clean traffic and incoming DDoS traffic reach the Haltdos Anti-DDoS solution, which analyzes the traffic and performs applicable DDoS detection and mitigation.
+
+##### 2. Cloud Signaling to ISP
+
+Upon detection of a volumetric DDoS attack requiring upstream scrubbing, Haltdos initiates cloud signaling/API communication with the ISP, requesting activation of the Clean Pipe/Scrubbing service.
+
+##### 3. Traffic Diversion
+
+The ISP redirects the affected traffic towards its Scrubbing Centre, where volumetric and malicious traffic is filtered.
+
+##### 4. Clean Traffic Forwarding
+
+After mitigation, the Scrubbing Centre forwards the legitimate/clean traffic towards the protected infrastructure through the configured network path.
+
+##### 5. Return to Normal Operation
+
+Once the attack subsides, the traffic is routed back through the normal path via the Haltdos Anti-DDoS solution, and the temporary ISP scrubbing/cloud signaling is withdrawn.
