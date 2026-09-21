@@ -15,7 +15,6 @@ Haltdos hardware specs page introduce customers about various range of models al
 | SSL/TLS Connections per Second  | 22K (RSA 2K) & 15K (ECC) |
 | L4 Connection per Second        | 3M                       |
 | L7 Request per Second           | 1M                       |
-| L7 Transactions per Second      |                          |
 | DDoS Attack Flood Prevention Rate | 1M to 5M               |
 | Max Concurrent Connections      | 24 M                     |
 | Induced Latency                 | < 1 milli-second         |
@@ -36,7 +35,6 @@ Haltdos hardware specs page introduce customers about various range of models al
 | SSL/TLS Connections per Second | 40K (RSA 2K) 25K (ECC)   |
 | L4 Connection per Second       | 1.2M                     |
 | L7 Request per Second          | 3M                       |
-| L7 Transactions per Second     |                        |
 | DDoS Attack Flood Prevention Rate | 5M to 20M             |
 | Max Concurrent Connections     | 24M                      |
 | Induced Latency                | < 1 milli-second         |
@@ -57,7 +55,6 @@ Haltdos hardware specs page introduce customers about various range of models al
 | SSL/TLS Connections per Second  | 50K (RSA 2K) 25K (ECC)    |
 | L4 Connection per Second        | 7M                        |
 | L7 Request per Second           | 7M                        |
-| L7 Transactions per Second      |                         |
 | DDoS Attack Flood Prevention Rate | 10M to 30M              |
 | Max Concurrent Connections      | 56M                       |
 | Induced Latency                 | < 1 milli-second          |
@@ -78,7 +75,6 @@ Haltdos hardware specs page introduce customers about various range of models al
 | SSL/TLS Connections per Second | 100K (RSA 2K) 50K (ECC)   |
 | L4 Connection per Second       | 10M                       |
 | L7 Request per Second          | 10M                       |
-| L7 Transactions per Second     |                        |
 | DDoS Attack Flood Prevention Rate | 25M to 50M             |
 | Max Concurrent Connections     | 96M                       |
 | Induced Latency                | < 1 milli-second          |
@@ -99,7 +95,6 @@ Haltdos hardware specs page introduce customers about various range of models al
 | SSL/TLS Connections per Second  | 150K (RSA 2K) 75K (ECC)  |
 | L4 Connection per Second        | 12M                      |
 | L7 Request per Second           | 15M                      |
-| L7 Transactions per Second      |                       |
 | DDoS Attack Flood Prevention Rate | 50M to 80M             |
 | Max Concurrent Connections      | 160 M                    |
 | Induced Latency                 | < 1 milli-second         |
@@ -120,7 +115,6 @@ Haltdos hardware specs page introduce customers about various range of models al
 | SSL/TLS Connections per Second  | 200K (RSA 2K) 100K (ECC) |
 | L4 Connection per Second        | 15M                      |
 | L7 Request per Second           | 18M                      |
-| L7 Transactions per Second      |                       |
 | DDoS Attack Flood Prevention Rate | 50M to 80M             |
 | Max Concurrent Connections      | 192 M                    |
 | Induced Latency                 | < 1 milli-second         |
