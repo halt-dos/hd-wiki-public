@@ -12,4 +12,4 @@ pagination_prev: null
 
 - **Non Blocking Architecture**
 
-Haltdos WAF supports a non-blocking architecture, ensuring simultaneous traffic processing across multiple network interfaces without internal bandwidth bottlenecks, while maintaining optimal throughput, low latency, and consistent performance under the specified operating capacity.
+Haltdos WAF uses an event-driven, non-blocking architecture for simultaneous traffic processing. The architecture delivers high throughput, low latency, and consistent performance under the specified operating capacity.
