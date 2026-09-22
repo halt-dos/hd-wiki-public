@@ -52,3 +52,7 @@ This feature allows the customer to use Haltdos WAF to create dynamic and precis
 - **TLS Fingerprinting**
 
  HALTDOS uses TLS fingerprinting, including JA3 and JA4, as an additional security signal in its DDoS protection and WAF solutions to identify and correlate clients based on characteristics of their TLS handshake, such as TLS version, cipher suites, extensions, supported groups, and protocol behavior. By analyzing JA3/JA4 fingerprints alongside IP reputation, request rates, HTTP behavior, and other traffic signals, HALTDOS can detect abnormal or automated traffic, correlate attack patterns even when source IPs change, and take appropriate actions such as allowing, rate-limiting, challenging, or blocking suspicious requests.
+
+- **Non Blocking Architecture**
+
+Haltdos WAF supports a non-blocking architecture, ensuring simultaneous traffic processing across multiple network interfaces without internal bandwidth bottlenecks, while maintaining optimal throughput, low latency, and consistent performance under the specified operating capacity.
