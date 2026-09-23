@@ -126,6 +126,8 @@ Haltdos hardware specs page introduce customers about various range of models al
 
 ## HD-CAN Series
 
+The following **common features** are available across all **HD-CAN Series** models.
+
 | PLATFORM & TECHNOLOGY           |                          |
 |-------------------------------- |------------------------- |
 | Platform & Technology           | Haltdos Platform with Signature from Threat Intelligence & Machine Learning |
