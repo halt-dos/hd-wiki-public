@@ -7,7 +7,7 @@ Configure Operational settings of Listeners.
 
 ### Overview
 
-Users are allowed to configure many operational settings for the [Listeners](/docs/enterprise/waf/listener/listener.md).  
+Users are allowed to configure many operational settings for the [Listeners](/enterprise/waf/listener/listener.md).  
   
 
 ![Listener Operational Settings](/img/waf/v6/docs/settings_operational.png)  

@@ -1,0 +1,75 @@
+{
+  "docs": [
+    "introduction"
+  ],
+  "waf_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/waf",
+      "label": "Web Application Firewall"
+    }
+  ],
+  "adc_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/adc",
+      "label": "Application Delivery Controller"
+    }
+  ],
+  "platform_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/platform",
+      "label": "Haltdos Platform"
+    }
+  ],
+  "llb_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/llb",
+      "label": "Link Load Balancer"
+    }
+  ],
+  "scan_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/scan",
+      "label": "Haltdos Vulnerability Scanner"
+    }
+  ],
+  "plugins_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/plugins",
+      "label": "Haltdos Plugins"
+    }
+  ],
+  "ddos_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/ddos",
+      "label": "Anti-DDOS"
+    }
+  ],
+  "gslb_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/gslb",
+      "label": "Global Server Load Balancer"
+    }
+  ],
+  "vpn_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/vpn",
+      "label": "Remote Access Gateway"
+    }
+  ],
+  "ipam_sidebar": [
+    {
+      "type": "doc",
+      "id": "enterprise/ipam",
+      "label": "IPAM"
+    }
+  ]
+}

@@ -23,7 +23,7 @@ Geo Filtering is an ability to filter out request coming from different geograph
 
 ##### **Blacklisted Countries**
 
-This option allows users to select the list of countries from the drop-down list that will be permanently disallowed. The geo traffic blocking can be performed globally or per profile based. User need to check [Profile](/docs/enterprise/ddos/profile/general_settings.md) documents to configure profile based geo-blocking.
+This option allows users to select the list of countries from the drop-down list that will be permanently disallowed. The geo traffic blocking can be performed globally or per profile based. User need to check [Profile](/enterprise/ddos/profile/general_settings.md) documents to configure profile based geo-blocking.
 
 ```
     Accepted values: list of country as per ISO 3166-1 alpha-2 standard 2 letter country-code.
@@ -57,7 +57,7 @@ This option allows users to specify multiple IP prefixes or IP address (With CID
 
 ##### **Blacklist Intel Feed**
 
-This option allows users to configure and add custom threat intelligence to blacklist traffic generated from specific IP addresses or prefixes. Users can utilize the  [IP feeds](/docs/enterprise/platform/stacks/resource_content/ip_feeds.md) option to add IP feeds later, which can then be selected from the dropdown menu.
+This option allows users to configure and add custom threat intelligence to blacklist traffic generated from specific IP addresses or prefixes. Users can utilize the  [IP feeds](/enterprise/platform/stacks/resource_content/ip_feeds.md) option to add IP feeds later, which can then be selected from the dropdown menu.
 
 This feature also supports domain or FQDN-based blacklisting. By using domain blacklisting, users can safeguard the network from malware propagation attacks, block malicious redirections, and filter out harmful referrers or sources.
 
@@ -70,7 +70,7 @@ This feature also supports domain or FQDN-based blacklisting. By using domain bl
 
 
 ##### **Whitelist Intel Feed**
-This option allows users to configure and add custom threat intel to whitelist traffic coming from those IP addresses or IP prefixes. Users can use [IP feeds](/docs/enterprise/platform/stacks/resource_content/ip_feeds.md) option to add the IP feed later that can be added under this field using drop-down. This option also support domain/FQDN based whitelisting.
+This option allows users to configure and add custom threat intel to whitelist traffic coming from those IP addresses or IP prefixes. Users can use [IP feeds](/enterprise/platform/stacks/resource_content/ip_feeds.md) option to add the IP feed later that can be added under this field using drop-down. This option also support domain/FQDN based whitelisting.
 
 ```
     Accepted values: Select list of threat intel

@@ -66,7 +66,7 @@ This option allows users to change the profile mode from stateful to stateless m
 
 
 :::note Note
-To enable connection state tracking, we also need to enable [TCP Settings](/docs/enterprise/ddos/profile/connections/tcp_settings.md).
+To enable connection state tracking, we also need to enable [TCP Settings](/enterprise/ddos/profile/connections/tcp_settings.md).
 :::
 
 ##### **Parent**

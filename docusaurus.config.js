@@ -47,10 +47,17 @@ const config = {
       'classic',
       ({
         docs: {
-          lastVersion: 'current',
+          includeCurrentVersion: false,
+          lastVersion: '8.0',
           versions: {
-            current: {
+            '8.0': {
               label: 'v8',
+            },
+            '9.0': {
+              label: 'v9',
+              banner: 'none',
+              path: 'v9',
+              badge: true,
             },
             '7.0': {
               label: 'v7',
