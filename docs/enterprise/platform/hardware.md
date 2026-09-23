@@ -124,7 +124,7 @@ Haltdos hardware specs page introduce customers about various range of models al
 
 
 
-## CAN Series
+## HD-CAN Series
 
 | PLATFORM & TECHNOLOGY           |                          |
 |-------------------------------- |------------------------- |
