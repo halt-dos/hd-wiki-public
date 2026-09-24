@@ -68,3 +68,7 @@ This ensures that a failure of the inline Anti-DDoS appliance does not become a 
 - #### **Support for Traffic Redirection to Scrubbing / RTBH**
 
 The Haltdos Anti-DDoS Solution supports traffic redirection for scrubbing and mitigation through BGP FlowSpec, which is available only in the out-of-path deployment model. The solution receives traffic telemetry and visibility data from inline network devices via NetFlow v5, NetFlow v9, sFlow, IPFIX, or SPAN traffic. By analyzing the received traffic summaries or mirrored traffic, the platform can detect DDoS attacks in real time and automatically trigger mitigation actions. Once an attack is identified, mitigation can be initiated through cloud signaling for traffic diversion to a scrubbing center or through BGP FlowSpec for dynamic traffic filtering and enforcement, enabling rapid attack response while minimizing impact on legitimate traffic.
+
+- #### **Non Blocking Architecture**
+
+Haltdo Anti-DDOS is designed around a non-blocking, lockless architecture to achieve maximum packet processing throughput and ultra-low latency. Rather than relying on traditional operating system abstractions that cause blocking, Anti-DDoS utilizes a poll-mode driver (PMD) model and specialized lockless data structures to keep CPU cores running at 100% efficiency without waiting for resources.
