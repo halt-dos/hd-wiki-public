@@ -6,6 +6,8 @@ sidebar_position: 6
 
 Support for multi-tenancy in appliance with virtualization technology.
 
+HALTDOS provides isolated virtual instances with dedicated CPU, RAM, network interface and disk resources; however, the minimum CPU, RAM, and disk configuration per virtual instance is not specified. The OEM should clarify the minimum resource requirements per instance.
+
 ---
 :::note Note
 This virtualization feature is only available when your license supports virtualization.
@@ -27,6 +29,11 @@ The virtualization platform is built on top of Haltdos hypervisor technology tha
 In order to take advantage of virtualization technology, users will have to create a virtual stack to manage one or more virtual instances. To create virtual stack. Each virtual instance will support virtual network function(VNF) such as NAT, routes, and firewall policy. Like your licensed stack, virtual stack provides full capability and flexibility of licensed stack with separate administration, RBAC control, policy management, etc. To create virtual stack, refer to Stack section.  
 
 To create virtual instance, your license should support virtualization. On the original licensed stack, go to Instance section to create a Hypervisor VM (virtual instance). Please refer to Instance section for creating a VM. Once a VM has been created, you can assign that VM to a virtual stack. You have flexibility of choosing one or more virtual instances from different host machines (hypervisors). These pool of virtual instances will be configured to run all Apps configured on the instance (ADC, SLB, WAF, LLB, DDOS, etc.).  
+
+## Hardware Acceleration
+
+For hardware acceleration, Haltdos documents support for hardware engines and fast-path mechanisms to optimize traffic processing. These capabilities provide the architectural basis for hardware-assisted processing, including ASIC-based acceleration, while Haltdos maintains isolation between virtual instances through its virtualization and resource-isolation mechanisms.
+
 
 :::note Note
 Each virtual instance created requires a pre-built OS template that can be downloaded from OS Template section by administrator. Typical size of VM template ranges from **2 GB - 3 GB** depending upon the operating system and OS version.

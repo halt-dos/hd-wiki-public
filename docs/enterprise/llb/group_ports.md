@@ -61,7 +61,7 @@ This option species the WAN Load Balancing algorithm used to balance the load be
 It specifies the other network-based conditions for load balancing. Users can select from many options to figure out any network fluctuation in connectivity. Users can set their packet drop, jitter, latency, etc.
 
 ```
-    Accepted values: Select Criteria
+    Accepted values: LATENCY / PACKET LOSS / JITTER / NONE
 
     Default: Blank 
 ```
