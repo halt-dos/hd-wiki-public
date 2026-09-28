@@ -6,6 +6,8 @@ sidebar_position: 6
 
 Support for multi-tenancy in appliance with virtualization technology.
 
+HALTDOS provides isolated virtual instances with dedicated CPU, RAM, network interface and disk resources; however, the minimum CPU, RAM, and disk configuration per virtual instance is not specified. The OEM should clarify the minimum resource requirements per instance.
+
 ---
 :::note Note
 This virtualization feature is only available when your license supports virtualization.
