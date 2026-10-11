@@ -74,6 +74,26 @@ This option allows user to enable access logs in the case of service type HTTP &
 ```
 
 
+##### **Enable Session Logging**
+This option allows user to enable access logs for static files in the case of service type HTTP / TCP.
+
+```
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+```
+
+
+##### **Preserve Content Length**
+This option allows user to send content length header in the WAF response in the case of service type HTTP.
+
+```
+    Accepted values: Enable / Disable
+
+    Default: Disable 
+```
+
+
 ##### **Enable Static Extension Logging**
 This option allows user to specify whether to do log requests for static extension.
 
