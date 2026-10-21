@@ -216,7 +216,7 @@ It helps in stopping different kinds of SMTP flood attack.
 
 ---
 
-![miscellaneous_settings](\img\ddos\v7\docs\miscellaneous.png)
+![miscellaneous_settings](/img/ddos/v7/docs/miscellaneous.png)
 
 ### How to Use
 
