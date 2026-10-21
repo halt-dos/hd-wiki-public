@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhaltdos_wiki=globalThis.webpackChunkhaltdos_wiki||[]).push([[52634],{18396(t,i,o){o.r(i),o.d(i,{default:()=>l});var a=o(74848),n=(o(96540),o(56347)),h=o(32580);function l(){const t=(0,h.r7)(void 0),i=(null==t?void 0:t.path)&&"/"!==t.path?`${t.path.replace(/\/$/,"")}/introduction`:"/introduction";return(0,a.jsx)(n.rd,{to:i})}}}]);
