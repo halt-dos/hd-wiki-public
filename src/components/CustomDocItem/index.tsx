@@ -3,6 +3,31 @@ import ActualDocItem from '@theme/DocItem';
 import CustomFooter from '@site/src/components/CustomFooter';
 import styles from './styles.module.scss';
 
+const X_WIDE_PATHS = new Set([
+  '/introduction',
+  '/enterprise',
+  '/community/introduction',
+  '/professional/introduction',
+  '/v6/introduction',
+  '/v6/enterprise',
+  '/v7/introduction',
+  '/v7/enterprise',
+  '/v8/introduction',
+  '/v8/enterprise',
+  '/haltdos-wiki/introduction',
+  '/haltdos-wiki/enterprise',
+  '/haltdos-wiki/community',
+  '/haltdos-wiki/professional',
+  '/haltdos-wiki/v6/introduction',
+  '/haltdos-wiki/v6/enterprise',
+  '/haltdos-wiki/v7/introduction',
+  '/haltdos-wiki/v7/enterprise',
+  '/haltdos-wiki/v8/introduction',
+  '/haltdos-wiki/v8/enterprise',
+]);
+
+const isXWidePath = (pathname: string) => X_WIDE_PATHS.has(pathname);
+
 const CustomDocItem = props => {
   useEffect(() => {
     const tables = document.querySelectorAll('table');
@@ -19,31 +44,24 @@ const CustomDocItem = props => {
     });
   }, []);
 
+  const xWide = isXWidePath(props.location.pathname);
+
   return (
-        <div
-          className={
-              props.location.pathname === `/v7/introduction` || props.location.pathname === `/v7/enterprise` ||
-              props.location.pathname === `/v6/introduction` || props.location.pathname === `/v6/enterprise` ||
-              props.location.pathname === `/introduction` || props.location.pathname === `/enterprise` || props.location.pathname === `/community/introduction` || props.location.pathname === `/professional/introduction` ||
-              props.location.pathname === `/haltdos-wiki/introduction` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community` || props.location.pathname === `/haltdos-wiki/professional` ||
-              props.location.pathname === `/haltdos-wiki/v6/introduction` || props.location.pathname === `/haltdos-wiki/v6/enterprise`
-              ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
-              : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
-          }
-        >
-        <ActualDocItem {...props} />
-        <div
-          className={
-            props.location.pathname === `/v7/introduction` || props.location.pathname === `/v7/enterprise` ||
-              props.location.pathname === `/v6/introduction` || props.location.pathname === `/v6/enterprise` ||
-              props.location.pathname === `/introduction` || props.location.pathname === `/enterprise` || props.location.pathname === `/community/introduction` || props.location.pathname === `/professional/introduction` ||
-              props.location.pathname === `/haltdos-wiki/introduction` || props.location.pathname === `/haltdos-wiki/enterprise` || props.location.pathname === `/haltdos-wiki/community` || props.location.pathname === `/haltdos-wiki/professional` ||
-              props.location.pathname === `/haltdos-wiki/v6/introduction` || props.location.pathname === `/haltdos-wiki/v6/enterprise` ||
-              props.location.pathname === `/haltdos-wiki/v7/introduction` || props.location.pathname === `/haltdos-wiki/v7/enterprise`
-              ? `custom_doc_item_footer-x-wide`
-              : styles['custom_doc_item_footer']
-          }
-        >
+    <div
+      className={
+        xWide
+          ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
+          : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
+      }
+    >
+      <ActualDocItem {...props} />
+      <div
+        className={
+          xWide
+            ? `custom_doc_item_footer-x-wide`
+            : styles['custom_doc_item_footer']
+        }
+      >
         {/*<PageHelpful />*/}
         <CustomFooter />
       </div>
