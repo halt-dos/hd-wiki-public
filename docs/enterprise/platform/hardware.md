@@ -75,7 +75,7 @@ Haltdos hardware specs page introduce customers about various range of models al
 | SSL/TLS Connections per Second | 100K (RSA 2K) 50K (ECC)   |
 | L4 Connection per Second       | 10M                       |
 | L7 Request per Second          | 10M                       |
-| DDoS Attack Flood Prevention Rate | 25 to 50 Mpps          |
+| DDoS Attack Flood Prevention Rate | 30 to 60 Mpps          |
 | Max Concurrent Connections     | 96M                       |
 | Induced Latency                | < 1 milli-second          |
 | Operating Temperature Range (°C)| 0° to 40° C              |
@@ -95,7 +95,7 @@ Haltdos hardware specs page introduce customers about various range of models al
 | SSL/TLS Connections per Second  | 150K (RSA 2K) 75K (ECC)  |
 | L4 Connection per Second        | 12M                      |
 | L7 Request per Second           | 15M                      |
-| DDoS Attack Flood Prevention Rate | 50 to 80 Mpps          |
+| DDoS Attack Flood Prevention Rate | 60 to 90 Mpps          |
 | Max Concurrent Connections      | 160 M                    |
 | Induced Latency                 | < 1 milli-second         |
 | Operating Temperature Range (°C)| 0° to 40° C              |
@@ -115,7 +115,7 @@ Haltdos hardware specs page introduce customers about various range of models al
 | SSL/TLS Connections per Second  | 200K (RSA 2K) 100K (ECC) |
 | L4 Connection per Second        | 15M                      |
 | L7 Request per Second           | 18M                      |
-| DDoS Attack Flood Prevention Rate | 50 to 80 Mpps          |
+| DDoS Attack Flood Prevention Rate | 60 to 90 Mpps          |
 | Max Concurrent Connections      | 192 M                    |
 | Induced Latency                 | < 1 milli-second         |
 | Operating Temperature Range (°C)| 0° to 40° C              |
@@ -180,6 +180,7 @@ The following **common features** are available across all **HD-CAN Series** mod
 | Multiple Appliances             | N + 1 Active - Active or Active – Passive (VRRP) with floating MAC |
 | Management Modes                | Standalone / Centralized Management (VM or appliance) |
 | Secure Communication            | Secure communication between centralized management and HA appliances for full state synchronization |
+| HA Failover                | Less than 5 seconds |
 
 
 
